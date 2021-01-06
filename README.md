@@ -93,3 +93,11 @@ loss.backward()
     year    = {2021}
 }
 ```
+
+```bibtex
+@misc{unpublished2021clip,
+    title  = {CLIP: Connecting Text and Images},
+    author = {Alec Radford, Ilya Sutskever, Jong Wook Kim, Gretchen Krueger, Sandhini Agarwal},
+    year   = {2021}
+}
+```
