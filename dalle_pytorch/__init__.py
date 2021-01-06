@@ -1,1 +1,1 @@
-from dalle_pytorch.dalle_pytorch import DALLE, CLIP
+from dalle_pytorch.dalle_pytorch import DALLE, CLIP, DiscreteVAE
