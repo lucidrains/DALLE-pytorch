@@ -69,6 +69,8 @@ def generate_images(
 
     return images
 
+# discrete vae class
+
 class DiscreteVAE(nn.Module):
     def __init__(
         self,

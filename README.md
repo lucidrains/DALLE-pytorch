@@ -1,6 +1,8 @@
-## DALL-E Pytorch (wip)
+## DALL-E in Pytorch (wip)
 
 Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a>, OpenAI's Text to Image Transformer, in Pytorch. It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
+
+<a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
 
 ## Install
 
@@ -22,8 +24,9 @@ vae = DiscreteVAE(
     hidden_dim = 64
 )
 
-x = torch.randn(8, 3, 256, 256)
-loss = vae(x, return_recon_loss)
+images = torch.randn(8, 3, 256, 256)
+
+loss = vae(images, return_recon_loss = True)
 loss.backward()
 ```
 
@@ -103,7 +106,7 @@ text = torch.randint(0, 10000, (2, 256))
 images = torch.randn(2, 3, 256, 256) # train directly on raw images, VAE converts to proper embeddings
 mask = torch.ones_like(text).bool()
 
-loss = dalle(text, images, return_loss = True)
+loss = dalle(text, images, mask = mask, return_loss = True)
 loss.backward()
 ```
 
