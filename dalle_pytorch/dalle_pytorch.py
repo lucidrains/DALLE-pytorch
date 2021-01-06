@@ -111,7 +111,7 @@ class CLIP(nn.Module):
         image_emb = self.visual_emb(image)
         image_emb += self.visual_pos_emb(torch.arange(image.shape[1], device = device))
 
-        enc_text = self.text_transformer(text_emb)
+        enc_text = self.text_transformer(text_emb, mask = text_mask)
         enc_image = self.visual_transformer(image_emb)
 
         if exists(text_mask):
