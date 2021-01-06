@@ -50,9 +50,14 @@ class DiscreteVAE(nn.Module):
     def forward(
         self,
         img,
-        return_recon_loss = False
+        return_recon_loss = False,
+        return_logits = False
     ):
         logits = self.encoder(img)
+
+        if return_logits:
+            return logits # return logits for getting hard image indices for DALL-E training
+
         soft_one_hot = F.gumbel_softmax(logits, tau = 1.)
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
         out = self.decoder(sampled)
