@@ -17,7 +17,8 @@ import torch
 from dalle_pytorch import DiscreteVAE
 
 vae = DiscreteVAE(
-    num_tokens = 2000
+    num_tokens = 2000,
+    dim = 512
 )
 
 x = torch.randn(8, 3, 256, 256)
@@ -32,7 +33,15 @@ import torch
 from dalle_pytorch import CLIP
 
 clip = CLIP(
-    dim = 512
+    dim = 512,
+    num_text_tokens = 10000,
+    num_visual_tokens = 512,
+    text_enc_depth = 6,
+    visual_enc_depth = 6,
+    text_seq_len = 256,
+    visual_seq_len = 1024,
+    text_heads = 8,
+    visual_heads = 8
 )
 
 text = torch.randint(0, 10000, (2, 256))
@@ -50,7 +59,13 @@ import torch
 from dalle_pytorch import DALLE
 
 dalle = DALLE(
-    dim = 512
+    dim = 512,
+    num_text_tokens = 10000,
+    num_image_tokens = 512,
+    text_seq_len = 256,
+    image_seq_len = 1024,
+    depth = 6, # should be 64
+    heads = 8
 )
 
 text = torch.randint(0, 10000, (2, 256))
@@ -68,12 +83,19 @@ import torch
 from dalle_pytorch import DiscreteVAE, DALLE
 
 vae = DiscreteVAE(
-	num_tokens = 512
+    num_tokens = 512,
+    dim = 512
 )
 
 dalle = DALLE(
-	dim = 512,
-	vae = vae
+    dim = 512,
+    vae = vae,
+    num_text_tokens = 10000,
+    num_image_tokens = 512,
+    text_seq_len = 256,
+    image_seq_len = 1024,
+    depth = 6, # should be 64
+    heads = 8
 )
 
 text = torch.randint(0, 10000, (2, 256))
