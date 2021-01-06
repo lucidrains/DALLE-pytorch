@@ -45,6 +45,7 @@ class DiscreteVAE(nn.Module):
             nn.Conv2d(64, 3, 1)
         )
 
+        self.num_tokens = num_tokens
         self.codebook = nn.Embedding(num_tokens, dim)
 
     def forward(
@@ -140,7 +141,8 @@ class DALLE(nn.Module):
         text_seq_len = 256,
         image_seq_len = 1024,
         depth = 6, # should be 64
-        heads = 8
+        heads = 8,
+        vae = None
     ):
         super().__init__()
         self.text_emb = nn.Embedding(num_text_tokens, dim)
@@ -153,6 +155,8 @@ class DALLE(nn.Module):
         self.image_seq_len = image_seq_len
         self.total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
 
+        self.vae = vae
+        self.image_emb = vae.codebook
         self.transformer = Decoder(dim = dim, depth = depth, heads = heads)
 
         self.to_logits = nn.Sequential(
@@ -168,9 +172,16 @@ class DALLE(nn.Module):
         return_loss = False
     ):
         device = text.device
+        is_raw_image = len(image.shape) == 4
 
         text_emb = self.text_emb(text)
         text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
+
+        if is_raw_image:
+            assert exists(self.vae), 'VAE must be passed into constructor if you are to train directly on raw images'
+            image_logits = self.vae(image, return_logits = True)
+            codebook_indices = image_logits.argmax(dim = 1).flatten(1)
+            image = codebook_indices
 
         image_emb = self.image_emb(image)
         image_emb += self.image_pos_emb(torch.arange(image.shape[1], device = device))

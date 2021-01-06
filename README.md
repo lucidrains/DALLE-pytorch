@@ -61,6 +61,29 @@ loss = dalle(text, images, mask = mask, return_loss = True)
 loss.backward()
 ```
 
+Combine pretrained VAE with DALL-E, and pass in raw images
+
+```python
+import torch
+from dalle_pytorch import DiscreteVAE, DALLE
+
+vae = DiscreteVAE(
+	num_tokens = 512
+)
+
+dalle = DALLE(
+	dim = 512,
+	vae = vae
+)
+
+text = torch.randint(0, 10000, (2, 256))
+images = torch.randn(2, 3, 256, 256) # train directly on raw images, VAE converts to proper embeddings
+mask = torch.ones_like(text).bool()
+
+loss = dalle(text, images, return_loss = True)
+loss.backward()
+```
+
 ## Citations
 
 ```bibtex
