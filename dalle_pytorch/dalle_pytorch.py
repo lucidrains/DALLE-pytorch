@@ -146,16 +146,22 @@ class DALLE(nn.Module):
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
         self.image_seq_len = image_seq_len
+        self.total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
 
         self.transformer = Decoder(dim = dim, depth = depth, heads = heads)
 
-        total_tokens = num_text_tokens + num_image_tokens
         self.to_logits = nn.Sequential(
             nn.LayerNorm(dim),
-            nn.Linear(dim, total_tokens),
+            nn.Linear(dim, self.total_tokens),
         )
 
-    def forward(self, text, image, mask = None):
+    def forward(
+        self,
+        text,
+        image,
+        mask = None,
+        return_loss = False
+    ):
         device = text.device
 
         text_emb = self.text_emb(text)
@@ -170,4 +176,13 @@ class DALLE(nn.Module):
             mask = F.pad(mask, (0, self.image_seq_len), value = True)
 
         out = self.transformer(tokens, mask = mask)
-        return self.to_logits(out)
+        out = self.to_logits(out)
+
+        if not return_loss:
+            return out
+
+        offsetted_image = image + self.num_text_tokens
+        labels = torch.cat((text, offsetted_image), dim = 1)
+        labels = F.pad(labels, (0, 1), value = (self.total_tokens - 1)) # last token predicts EOS
+        loss = F.cross_entropy(out.transpose(1, 2), labels[:, 1:])
+        return loss
