@@ -37,7 +37,9 @@ import torch
 from dalle_pytorch import CLIP
 
 clip = CLIP(
-    dim = 512,
+    dim_text = 512,
+    dim_image = 512,
+    dim_latent = 512,
     num_text_tokens = 10000,
     num_visual_tokens = 512,
     text_enc_depth = 6,

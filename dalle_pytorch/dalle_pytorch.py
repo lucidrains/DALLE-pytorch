@@ -143,7 +143,9 @@ class CLIP(nn.Module):
     def __init__(
         self,
         *,
-        dim = 512,
+        dim_text = 512,
+        dim_image = 512,
+        dim_latent = 512,
         num_text_tokens = 10000,
         num_visual_tokens = 512,
         text_enc_depth = 6,
@@ -154,15 +156,17 @@ class CLIP(nn.Module):
         visual_heads = 8
     ):
         super().__init__()
-        self.scale = dim ** -0.5
-        self.text_emb = nn.Embedding(num_text_tokens, dim)
-        self.visual_emb = nn.Embedding(num_visual_tokens, dim)
+        self.text_emb = nn.Embedding(num_text_tokens, dim_text)
+        self.text_pos_emb = nn.Embedding(text_seq_len, dim_text)
+        self.text_transformer = Encoder(dim = dim_text, depth = text_enc_depth, heads = text_heads)
+        self.to_text_latent = nn.Linear(dim_text, dim_latent, bias = False)
 
-        self.text_pos_emb = nn.Embedding(text_seq_len, dim)
-        self.visual_pos_emb = nn.Embedding(visual_seq_len, dim)
+        self.visual_emb = nn.Embedding(num_visual_tokens, dim_image)
+        self.visual_pos_emb = nn.Embedding(visual_seq_len, dim_image)
+        self.visual_transformer = Encoder(dim = dim_image, depth = visual_enc_depth, heads = visual_heads)
+        self.to_visual_latent = nn.Linear(dim_image, dim_latent, bias = False)
 
-        self.text_transformer = Encoder(dim = dim, depth = text_enc_depth, heads = text_heads)
-        self.visual_transformer = Encoder(dim = dim, depth = visual_enc_depth, heads = visual_heads)
+        self.temperature = nn.Parameter(torch.tensor(1.))
 
     def forward(
         self,
@@ -189,7 +193,12 @@ class CLIP(nn.Module):
 
         image_latents = enc_image.mean(dim = 1)
 
-        sim = einsum('i d, j d -> i j', text_latents, image_latents) * self.scale
+        text_latents = self.to_text_latent(text_latents)
+        image_latents = self.to_visual_latent(image_latents)
+
+        text_latents, image_latents = map(lambda t: F.normalize(t, p = 2, dim = -1), (text_latents, image_latents))
+
+        sim = einsum('i d, j d -> i j', text_latents, image_latents) * self.temperature.exp()
 
         if not return_loss:
             return sim
