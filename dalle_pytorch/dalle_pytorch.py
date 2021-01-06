@@ -4,7 +4,7 @@ from torch import nn, einsum
 import torch.nn.functional as F
 
 from einops import rearrange
-from x_transformers import Encoder
+from x_transformers import Encoder, Decoder
 
 # helpers
 
@@ -76,6 +76,8 @@ class CLIP(nn.Module):
         visual_enc_depth = 6,
         text_seq_len = 256,
         visual_seq_len = 1024,
+        text_heads = 8,
+        visual_heads = 8
     ):
         super().__init__()
         self.scale = dim ** -0.5
@@ -85,8 +87,8 @@ class CLIP(nn.Module):
         self.text_pos_emb = nn.Embedding(text_seq_len, dim)
         self.visual_pos_emb = nn.Embedding(visual_seq_len, dim)
 
-        self.text_transformer = Encoder(dim = dim, depth = text_enc_depth)
-        self.visual_transformer = Encoder(dim = dim, depth = visual_enc_depth)
+        self.text_transformer = Encoder(dim = dim, depth = text_enc_depth, heads = text_heads)
+        self.visual_transformer = Encoder(dim = dim, depth = visual_enc_depth, heads = visual_heads)
 
     def forward(
         self,
@@ -122,16 +124,50 @@ class CLIP(nn.Module):
         loss = F.cross_entropy(sim, labels)
         return loss
 
+
 class DALLE(nn.Module):
     def __init__(
         self,
         *,
         dim,
-        num_text_tokens,
-        num_visual_tokens,
-        depth
+        num_text_tokens = 10000,
+        num_image_tokens = 512,
+        text_seq_len = 256,
+        image_seq_len = 1024,
+        depth = 6, # should be 64
+        heads = 8
     ):
         super().__init__()
+        self.text_emb = nn.Embedding(num_text_tokens, dim)
+        self.image_emb = nn.Embedding(num_image_tokens, dim)
 
-    def forward(self, x):
-        return x
+        self.text_pos_emb = nn.Embedding(text_seq_len, dim)
+        self.image_pos_emb = nn.Embedding(image_seq_len, dim)
+
+        self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
+        self.image_seq_len = image_seq_len
+
+        self.transformer = Decoder(dim = dim, depth = depth, heads = heads)
+
+        total_tokens = num_text_tokens + num_image_tokens
+        self.to_logits = nn.Sequential(
+            nn.LayerNorm(dim),
+            nn.Linear(dim, total_tokens),
+        )
+
+    def forward(self, text, image, mask = None):
+        device = text.device
+
+        text_emb = self.text_emb(text)
+        text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
+
+        image_emb = self.image_emb(image)
+        image_emb += self.image_pos_emb(torch.arange(image.shape[1], device = device))
+
+        tokens = torch.cat((text_emb, image_emb), dim = 1)
+
+        if exists(mask):
+            mask = F.pad(mask, (0, self.image_seq_len), value = True)
+
+        out = self.transformer(tokens, mask = mask)
+        return self.to_logits(out)
