@@ -122,6 +122,25 @@ images = generate_images(
 images.shape # (2, 3, 256, 256)
 ```
 
+To get the similarity scores from your trained Clipper, just do
+
+```python
+from dalle_pytorch import generate_images
+
+images, scores = generate_images(
+    dalle,
+    vae = vae,
+    text = text,
+    mask = mask,
+    clipper = clip
+)
+
+scores.shape # (2,)
+images.shape # (2, 3, 256, 256)
+
+# do your topk here, in paper they sampled 512 and chose top 32
+```
+
 ## Citations
 
 ```bibtex

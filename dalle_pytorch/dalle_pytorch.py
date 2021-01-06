@@ -32,6 +32,7 @@ def generate_images(
     model,
     vae,
     text,
+    clipper = None,
     mask = None,
     filter_thres = 0.9,
     temperature = 1.
@@ -55,10 +56,17 @@ def generate_images(
         if out.shape[1] <= text_seq_len:
             mask = F.pad(mask, (0, 1), value=True)
 
+    text_seq = torch.cat((x[:, :1], out[:, :(text_seq_len - 1)]), dim = 1)
     img_seq = out[:, -(image_seq_len + 1):-1]
     img_seq -= model.num_text_tokens
-    img_seq.clamp_(min = 0, max = (model.num_image_tokens - 1))
+    img_seq.clamp_(min = 0, max = (model.num_image_tokens - 1)) # extra insurance - todo: get rid of this at a future date and rely only on masking of logits
+
     images = vae.decode(img_seq)
+
+    if exists(clipper):
+        scores = clipper(text_seq, img_seq, return_loss = False)
+        return images, scores.diag()
+
     return images
 
 class DiscreteVAE(nn.Module):
