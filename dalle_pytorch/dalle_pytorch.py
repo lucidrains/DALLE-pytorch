@@ -4,11 +4,16 @@ from torch import nn, einsum
 import torch.nn.functional as F
 
 from einops import rearrange
+from x_transformers import Encoder
 
 # helpers
 
 def exists(val):
     return val is not None
+
+def masked_mean(t, mask, dim = 1):
+    t = t.masked_fill(~mask[:, :, None], 0.)
+    return t.sum(dim = 1) / mask.sum(dim = 1)[..., None]
 
 # classes
 
@@ -62,12 +67,60 @@ class DiscreteVAE(nn.Module):
 
 class CLIP(nn.Module):
     def __init__(
-        self
+        self,
+        *,
+        dim = 512,
+        num_text_tokens = 10000,
+        num_visual_tokens = 512,
+        text_enc_depth = 6,
+        visual_enc_depth = 6,
+        text_seq_len = 256,
+        visual_seq_len = 1024,
     ):
         super().__init__()
+        self.scale = dim ** -0.5
+        self.text_emb = nn.Embedding(num_text_tokens, dim)
+        self.visual_emb = nn.Embedding(num_visual_tokens, dim)
 
-    def forward(self, x):
-        return x
+        self.text_pos_emb = nn.Embedding(text_seq_len, dim)
+        self.visual_pos_emb = nn.Embedding(visual_seq_len, dim)
+
+        self.text_transformer = Encoder(dim = dim, depth = text_enc_depth)
+        self.visual_transformer = Encoder(dim = dim, depth = visual_enc_depth)
+
+    def forward(
+        self,
+        text,
+        image,
+        text_mask = None,
+        return_similarities = False
+    ):
+        b, device = text.shape[0], text.device
+
+        text_emb = self.text_emb(text)
+        text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
+
+        image_emb = self.visual_emb(image)
+        image_emb += self.visual_pos_emb(torch.arange(image.shape[1], device = device))
+
+        enc_text = self.text_transformer(text_emb)
+        enc_image = self.visual_transformer(image_emb)
+
+        if exists(text_mask):
+            text_latents = masked_mean(enc_text, text_mask, dim = 1)
+        else:
+            text_latents = enc_text.mean(dim = 1)
+
+        image_latents = enc_image.mean(dim = 1)
+
+        sim = einsum('i d, j d -> i j', text_latents, image_latents) * self.scale
+
+        if return_similarities:
+            return sim
+
+        labels = torch.arange(b, device = device)
+        loss = F.cross_entropy(sim, labels)
+        return loss
 
 class DALLE(nn.Module):
     def __init__(
