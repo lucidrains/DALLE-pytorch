@@ -22,27 +22,29 @@ class DiscreteVAE(nn.Module):
         self,
         num_tokens,
         dim = 512,
+        hidden_dim = 64
     ):
         super().__init__()
+        hdim = hidden_dim
 
         self.encoder = nn.Sequential(
-            nn.Conv2d(3, 64, 4, stride = 2, padding = 1),
+            nn.Conv2d(3, hdim, 4, stride = 2, padding = 1),
             nn.ReLU(),
-            nn.Conv2d(64, 64, 4, stride = 2, padding = 1),
+            nn.Conv2d(hdim, hdim, 4, stride = 2, padding = 1),
             nn.ReLU(),
-            nn.Conv2d(64, 64, 4, stride = 2, padding = 1),
+            nn.Conv2d(hdim, hdim, 4, stride = 2, padding = 1),
             nn.ReLU(),
-            nn.Conv2d(64, num_tokens, 1)
+            nn.Conv2d(hdim, num_tokens, 1)
         )
 
         self.decoder = nn.Sequential(
-            nn.ConvTranspose2d(dim, 64, 4, stride = 2, padding = 1),
+            nn.ConvTranspose2d(dim, hdim, 4, stride = 2, padding = 1),
             nn.ReLU(),
-            nn.ConvTranspose2d(64, 64, 4, stride = 2, padding = 1),
+            nn.ConvTranspose2d(hdim, hdim, 4, stride = 2, padding = 1),
             nn.ReLU(),
-            nn.ConvTranspose2d(64, 64, 4, stride = 2, padding = 1),
+            nn.ConvTranspose2d(hdim, hdim, 4, stride = 2, padding = 1),
             nn.ReLU(),
-            nn.Conv2d(64, 3, 1)
+            nn.Conv2d(hdim, 3, 1)
         )
 
         self.num_tokens = num_tokens

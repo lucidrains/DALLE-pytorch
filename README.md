@@ -18,7 +18,8 @@ from dalle_pytorch import DiscreteVAE
 
 vae = DiscreteVAE(
     num_tokens = 2000,
-    dim = 512
+    dim = 512,
+    hidden_dim = 64
 )
 
 x = torch.randn(8, 3, 256, 256)
