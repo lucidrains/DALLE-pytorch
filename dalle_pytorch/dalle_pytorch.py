@@ -100,7 +100,7 @@ class CLIP(nn.Module):
         text,
         image,
         text_mask = None,
-        return_similarities = False
+        return_loss = False
     ):
         b, device = text.shape[0], text.device
 
@@ -122,7 +122,7 @@ class CLIP(nn.Module):
 
         sim = einsum('i d, j d -> i j', text_latents, image_latents) * self.scale
 
-        if return_similarities:
+        if not return_loss:
             return sim
 
         labels = torch.arange(b, device = device)
