@@ -107,6 +107,21 @@ loss = dalle(text, images, return_loss = True)
 loss.backward()
 ```
 
+Finally, to generate images
+
+```python
+from dalle_pytorch import generate_images
+
+images = generate_images(
+    dalle,
+    vae = vae,
+    text = text,
+    mask = mask
+)
+
+images.shape # (2, 3, 256, 256)
+```
+
 ## Citations
 
 ```bibtex

@@ -1,4 +1,4 @@
-from math import log2
+from math import log2, sqrt
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
@@ -11,11 +11,55 @@ from x_transformers import Encoder, Decoder
 def exists(val):
     return val is not None
 
+def is_empty(t):
+    return t.nelement() == 0
+
 def masked_mean(t, mask, dim = 1):
     t = t.masked_fill(~mask[:, :, None], 0.)
     return t.sum(dim = 1) / mask.sum(dim = 1)[..., None]
 
-# classes
+# sampling helpers
+
+def top_k(logits, thres = 0.9):
+    k = int((1 - thres) * logits.shape[-1])
+    val, ind = torch.topk(logits, k)
+    probs = torch.full_like(logits, float('-inf'))
+    probs.scatter_(1, ind, val)
+    return probs
+
+@torch.no_grad()
+def generate_images(
+    model,
+    vae,
+    text,
+    mask = None,
+    filter_thres = 0.9,
+    temperature = 1.
+):
+    x = text
+    out = x
+
+    text_seq_len = model.text_seq_len
+    image_seq_len = model.image_seq_len
+    total_len = text_seq_len + model.image_seq_len - text.shape[1]
+
+    for _ in range(total_len):
+        text, image = x[:, :text_seq_len], x[:, text_seq_len:]
+        logits = model(text, image, mask = mask)[:, -1, :]
+        filtered_logits = top_k(logits, thres = filter_thres)
+        probs = F.softmax(filtered_logits / temperature, dim=-1)
+
+        sample = torch.multinomial(probs, 1)
+        out = torch.cat((out, sample), dim=-1)
+
+        if out.shape[1] <= text_seq_len:
+            mask = F.pad(mask, (0, 1), value=True)
+
+    img_seq = out[:, -(image_seq_len + 1):-1]
+    img_seq -= model.num_text_tokens
+    img_seq.clamp_(min = 0, max = (model.num_image_tokens - 1))
+    images = vae.decode(img_seq)
+    return images
 
 class DiscreteVAE(nn.Module):
     def __init__(
@@ -49,6 +93,18 @@ class DiscreteVAE(nn.Module):
 
         self.num_tokens = num_tokens
         self.codebook = nn.Embedding(num_tokens, dim)
+
+    def decode(
+        self,
+        img_seq
+    ):
+        image_embeds = self.codebook(img_seq)
+        b, n, d = image_embeds.shape
+        h = w = int(sqrt(n))
+
+        image_embeds = rearrange(image_embeds, 'b (h w) d -> b d h w', h = h, w = w)
+        images = self.decoder(image_embeds)
+        return images
 
     def forward(
         self,
@@ -154,6 +210,8 @@ class DALLE(nn.Module):
         self.image_pos_emb = nn.Embedding(image_seq_len, dim)
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
+        self.num_image_tokens = num_image_tokens
+        self.text_seq_len = text_seq_len
         self.image_seq_len = image_seq_len
         self.total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
 
@@ -169,38 +227,43 @@ class DALLE(nn.Module):
     def forward(
         self,
         text,
-        image,
+        image = None,
         mask = None,
         return_loss = False
     ):
         device = text.device
-        is_raw_image = len(image.shape) == 4
+        eos_token_id = self.total_tokens - 1
 
-        text_emb = self.text_emb(text)
-        text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
+        tokens = self.text_emb(text)
+        tokens += self.text_pos_emb(torch.arange(text.shape[1], device = device))
 
-        if is_raw_image:
-            assert exists(self.vae), 'VAE must be passed into constructor if you are to train directly on raw images'
-            image_logits = self.vae(image, return_logits = True)
-            codebook_indices = image_logits.argmax(dim = 1).flatten(1)
-            image = codebook_indices
+        if exists(image) and not is_empty(image):
+            is_raw_image = len(image.shape) == 4
 
-        image_emb = self.image_emb(image)
-        image_emb += self.image_pos_emb(torch.arange(image.shape[1], device = device))
+            if is_raw_image:
+                assert exists(self.vae), 'VAE must be passed into constructor if you are to train directly on raw images'
+                image_logits = self.vae(image, return_logits = True)
+                codebook_indices = image_logits.argmax(dim = 1).flatten(1)
+                image = codebook_indices
 
-        tokens = torch.cat((text_emb, image_emb), dim = 1)
+            image_emb = self.image_emb(image)
+            image_emb += self.image_pos_emb(torch.arange(image.shape[1], device = device))
 
-        if exists(mask):
-            mask = F.pad(mask, (0, self.image_seq_len), value = True)
+            tokens = torch.cat((tokens, image_emb), dim = 1)
+
+            if exists(mask):
+                mask = F.pad(mask, (0, image_emb.shape[1]), value = True)
 
         out = self.transformer(tokens, mask = mask)
-        out = self.to_logits(out)
+        logits = self.to_logits(out)
 
         if not return_loss:
-            return out
+            return logits
+
+        assert exists(image), 'when training, image must be supplied'
 
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text, offsetted_image), dim = 1)
-        labels = F.pad(labels, (0, 1), value = (self.total_tokens - 1)) # last token predicts EOS
-        loss = F.cross_entropy(out.transpose(1, 2), labels[:, 1:])
+        labels = F.pad(labels, (0, 1), value = eos_token_id) # last token predicts EOS
+        loss = F.cross_entropy(logits.transpose(1, 2), labels[:, 1:])
         return loss
