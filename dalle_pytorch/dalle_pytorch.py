@@ -214,9 +214,10 @@ class DALLE(nn.Module):
         self.text_seq_len = text_seq_len
         self.image_seq_len = image_seq_len
         self.total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
-
-        self.vae = vae
-        self.image_emb = vae.codebook
+        
+        if self.vae is not None:
+            self.vae = vae
+            self.image_emb = vae.codebook
         self.transformer = Decoder(dim = dim, depth = depth, heads = heads)
 
         self.to_logits = nn.Sequential(
