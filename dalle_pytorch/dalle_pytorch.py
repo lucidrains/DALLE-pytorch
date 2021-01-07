@@ -108,6 +108,11 @@ class DiscreteVAE(nn.Module):
         self.num_tokens = num_tokens
         self.codebook = nn.Embedding(num_tokens, dim)
 
+    def get_codebook_indices(self, images):
+        logits = self.forward(images, return_logits = True)
+        codebook_indices = logits.argmax(dim = 1).flatten(1)
+        return codebook_indices
+
     def decode(
         self,
         img_seq
@@ -157,7 +162,8 @@ class CLIP(nn.Module):
         text_seq_len = 256,
         visual_seq_len = 1024,
         text_heads = 8,
-        visual_heads = 8
+        visual_heads = 8,
+        vae = None
     ):
         super().__init__()
         self.text_emb = nn.Embedding(num_text_tokens, dim_text)
@@ -172,6 +178,11 @@ class CLIP(nn.Module):
 
         self.temperature = nn.Parameter(torch.tensor(1.))
 
+        self.vae = vae
+        if exists(self.vae):
+            self.vae = vae
+            self.visual_emb = vae.codebook
+
     def forward(
         self,
         text,
@@ -181,8 +192,12 @@ class CLIP(nn.Module):
     ):
         b, device = text.shape[0], text.device
 
+        if exists(self.vae):
+            image = self.vae.get_codebook_indices(image)
+
         text_emb = self.text_emb(text)
         text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
+
 
         image_emb = self.visual_emb(image)
         image_emb += self.visual_pos_emb(torch.arange(image.shape[1], device = device))
@@ -270,9 +285,7 @@ class DALLE(nn.Module):
 
             if is_raw_image:
                 assert exists(self.vae), 'VAE must be passed into constructor if you are to train directly on raw images'
-                image_logits = self.vae(image, return_logits = True)
-                codebook_indices = image_logits.argmax(dim = 1).flatten(1)
-                image = codebook_indices
+                image = self.vae.get_codebook_indices(image)
 
             image_emb = self.image_emb(image)
             image_emb += self.image_pos_emb(torch.arange(image.shape[1], device = device))

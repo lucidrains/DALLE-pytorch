@@ -19,6 +19,7 @@ import torch
 from dalle_pytorch import DiscreteVAE
 
 vae = DiscreteVAE(
+    num_layers = 3,
     num_tokens = 2000,
     dim = 512,
     hidden_dim = 64
@@ -58,6 +59,42 @@ loss = clip(text, images, text_mask = mask, return_loss = True)
 loss.backward()
 ```
 
+Combine pretrained VAE with CLIP, and train off raw images
+
+```python
+import torch
+from dalle_pytorch import DiscreteVAE, DiscreteVAE
+
+vae = DiscreteVAE(
+    num_layers = 3,
+    num_tokens = 2000,
+    dim = 512,
+    hidden_dim = 64
+)
+
+clip = CLIP(
+    dim_text = 512,
+    dim_image = 512,
+    dim_latent = 512,
+    num_text_tokens = 10000,
+    num_visual_tokens = 512,
+    text_enc_depth = 6,
+    visual_enc_depth = 6,
+    text_seq_len = 256,
+    visual_seq_len = 1024,
+    text_heads = 8,
+    visual_heads = 8,
+    vae = vae
+)
+
+text = torch.randint(0, 10000, (2, 256))
+images = torch.randn(2, 3, 256, 256) # raw images
+mask = torch.ones_like(text).bool()
+
+loss = clip(text, images, text_mask = mask, return_loss = True)
+loss.backward()
+```
+
 Train DALL-E
 
 ```python
@@ -82,7 +119,7 @@ loss = dalle(text, images, mask = mask, return_loss = True)
 loss.backward()
 ```
 
-Combine pretrained VAE with DALL-E, and pass in raw images
+Combine pretrained VAE with DALL-E, and train off raw images
 
 ```python
 import torch
