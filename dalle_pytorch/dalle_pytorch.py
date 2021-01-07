@@ -78,7 +78,8 @@ class DiscreteVAE(nn.Module):
         num_tokens = 512,
         dim = 512,
         hidden_dim = 64,
-        num_layers = 3
+        num_layers = 3,
+        channels = 3
     ):
         super().__init__()
         hdim = hidden_dim
@@ -88,7 +89,7 @@ class DiscreteVAE(nn.Module):
         encoder_layers = []
         decoder_layers = []
         for i in range(num_layers):
-            enc_in = 3 if i == 0 else hdim
+            enc_in = channels if i == 0 else hdim
             encoder_layers += [
                 nn.Conv2d(enc_in, hdim, 4, stride = 2, padding = 1),
                 nn.ReLU(),
@@ -101,7 +102,7 @@ class DiscreteVAE(nn.Module):
             ]
             
         encoder_layers.append(nn.Conv2d(hdim, num_tokens, 1))
-        decoder_layers.append(nn.Conv2d(hdim, 3, 1))
+        decoder_layers.append(nn.Conv2d(hdim, channels, 1))
 
         self.encoder = nn.Sequential(*encoder_layers)
         self.decoder = nn.Sequential(*decoder_layers)
