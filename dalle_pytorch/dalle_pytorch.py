@@ -256,6 +256,7 @@ class DALLE(nn.Module):
         self.text_seq_len = text_seq_len
         self.image_seq_len = image_seq_len
 
+        seq_len = text_seq_len + image_seq_len
         total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
         self.total_tokens = total_tokens
         
@@ -271,7 +272,7 @@ class DALLE(nn.Module):
             nn.Linear(dim, self.total_tokens),
         )
 
-        seq_range = torch.arange(text_seq_len + image_seq_len)
+        seq_range = torch.arange(seq_len)
         logits_range = torch.arange(total_tokens)
 
         seq_range = rearrange(seq_range, 'n -> () n ()')
@@ -280,7 +281,7 @@ class DALLE(nn.Module):
         logits_mask = (
             ((seq_range >= (text_seq_len - 1)) & (logits_range < num_text_tokens)) |
             ((seq_range < (text_seq_len - 1)) & (logits_range >= num_text_tokens)) |
-            (logits_range >= (total_tokens - 1))
+            ((seq_range != (seq_len - 1)) & (logits_range >= (total_tokens - 1)))
         )
 
         self.register_buffer('logits_mask', logits_mask)
