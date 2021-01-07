@@ -63,7 +63,7 @@ Combine pretrained VAE with CLIP, and train off raw images
 
 ```python
 import torch
-from dalle_pytorch import DiscreteVAE, DiscreteVAE
+from dalle_pytorch import DiscreteVAE, CLIP
 
 vae = DiscreteVAE(
     num_layers = 3,
