@@ -88,7 +88,6 @@ class DiscreteVAE(nn.Module):
         decoder_layers = []
         for i in range(num_layers):
             enc_in = 3 if i == 0 else hdim
-            dec_in = dim if i == 0 else hdim
             encoder_layers += [
                 nn.Conv2d(enc_in, hdim, 4, stride = 2, padding = 1),
                 nn.ReLU(),
