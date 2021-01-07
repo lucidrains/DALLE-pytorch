@@ -76,30 +76,35 @@ class DiscreteVAE(nn.Module):
         self,
         num_tokens,
         dim = 512,
-        hidden_dim = 64
+        hidden_dim = 64,
+        num_layers = 3
     ):
         super().__init__()
         hdim = hidden_dim
+        
+        assert num_layers >= 1
+        
+        encoder_layers = []
+        decoder_layers = []
+        for i in range(num_layers):
+            enc_in = 3 if i == 0 else hdim
+            dec_in = dim if i == 0 else hdim
+            encoder_layers += [
+                nn.Conv2d(enc_in, hdim, 4, stride = 2, padding = 1),
+                nn.ReLU(),
+            ]
+            
+            dec_in = dim if i == 0 else hdim
+            decoder_layers += [
+                nn.ConvTranspose2d(dec_in, hdim, 4, stride = 2, padding = 1),
+                nn.ReLU(),
+            ]
+            
+        encoder_layers.append(nn.Conv2d(hdim, num_tokens, 1))
+        decoder_layers.append(nn.Conv2d(hdim, 3, 1))
 
-        self.encoder = nn.Sequential(
-            nn.Conv2d(3, hdim, 4, stride = 2, padding = 1),
-            nn.ReLU(),
-            nn.Conv2d(hdim, hdim, 4, stride = 2, padding = 1),
-            nn.ReLU(),
-            nn.Conv2d(hdim, hdim, 4, stride = 2, padding = 1),
-            nn.ReLU(),
-            nn.Conv2d(hdim, num_tokens, 1)
-        )
-
-        self.decoder = nn.Sequential(
-            nn.ConvTranspose2d(dim, hdim, 4, stride = 2, padding = 1),
-            nn.ReLU(),
-            nn.ConvTranspose2d(hdim, hdim, 4, stride = 2, padding = 1),
-            nn.ReLU(),
-            nn.ConvTranspose2d(hdim, hdim, 4, stride = 2, padding = 1),
-            nn.ReLU(),
-            nn.Conv2d(hdim, 3, 1)
-        )
+        self.encoder = nn.Sequential(*encoder_layers)
+        self.decoder = nn.Sequential(*decoder_layers)
 
         self.num_tokens = num_tokens
         self.codebook = nn.Embedding(num_tokens, dim)
