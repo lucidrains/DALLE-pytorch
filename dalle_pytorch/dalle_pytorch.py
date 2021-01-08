@@ -222,7 +222,6 @@ class DALLE(nn.Module):
         text_seq_len = 256,
         depth = 6,
         heads = 8,
-        train_vae = True, # leave uncertainty for someone to explore
         vae_loss_coef = 1.
     ):
         super().__init__()
@@ -249,7 +248,6 @@ class DALLE(nn.Module):
         
         self.vae = vae
         self.vae_loss_coef = vae_loss_coef
-        self.train_vae = train_vae
         if exists(self.vae):
             self.vae = vae
             self.image_emb = vae.codebook
@@ -337,14 +335,10 @@ class DALLE(nn.Module):
             is_raw_image = len(image.shape) == 4
 
             if is_raw_image:
-                if self.train_vae:
-                    orig_image = image
-                    codebook_emb = self.vae(image, return_soft_embeddings = True)
-                    image_token_emb = rearrange(codebook_emb, 'b c h w -> b (h w) c')
-                    image = self.vae.get_codebook_indices(image)
-                else:
-                    image = self.vae.get_codebook_indices(image)
-                    image_token_emb = self.image_emb(image)
+                orig_image = image
+                codebook_emb = self.vae(image, return_soft_embeddings = True)
+                image_token_emb = rearrange(codebook_emb, 'b c h w -> b (h w) c')
+                image = self.vae.get_codebook_indices(image)
             else:
                 image_token_emb = self.image_emb(image)
 
@@ -375,9 +369,8 @@ class DALLE(nn.Module):
         labels = F.pad(labels, (0, 1), value = eos_token_id) # last token predicts EOS
         loss = F.cross_entropy(logits.transpose(1, 2), labels[:, 1:])
 
-        if self.train_vae:
-            recon_img = self.vae.decoder(codebook_emb)
-            vae_loss = F.mse_loss(recon_img, orig_image) * self.vae_loss_coef
-            loss = loss + vae_loss
+        recon_img = self.vae.decoder(codebook_emb)
+        vae_loss = F.mse_loss(recon_img, orig_image) * self.vae_loss_coef
+        loss = loss + vae_loss
 
         return loss

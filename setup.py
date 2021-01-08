@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-  name = 'dalle-pytorch',
+  name = 'dalle-pytorch-dev',
   packages = find_packages(),
-  version = '0.0.25',
+  version = '0.0.1',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',

@@ -6,35 +6,15 @@ Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E
 
 ## Install
 
+Development branch
+
 ```bash
-$ pip install dalle-pytorch
+$ pip install dalle-pytorch-dev
 ```
 
 ## Usage
 
-Train VAE
-
-```python
-import torch
-from dalle_pytorch import DiscreteVAE
-
-vae = DiscreteVAE(
-    image_size = 256,
-    num_layers = 3,
-    num_tokens = 1024,
-    codebook_dim = 512,
-    hidden_dim = 64
-)
-
-images = torch.randn(4, 3, 256, 256)
-
-loss = vae(images, return_recon_loss = True)
-loss.backward()
-
-# train with a lot of data to learn a good codebook
-```
-
-Train DALL-E with pretrained VAE from above
+Train DALL-E with VAE end-to-end
 
 ```python
 import torch
@@ -53,7 +33,8 @@ dalle = DALLE(
     num_text_tokens = 10000,    # vocab size for text
     text_seq_len = 256,         # text sequence length
     depth = 6,                  # should be 64
-    heads = 8
+    heads = 8,
+    vae_loss_coef = 1.          # multiplier for vae reconstruction loss
 )
 
 text = torch.randint(0, 10000, (4, 256))
@@ -113,6 +94,7 @@ images.shape # (2, 3, 256, 256)
 
 Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E
 
+```
 ## Citations
 
 ```bibtex
