@@ -1,4 +1,4 @@
-from math import sqrt
+from math import log2, sqrt
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
@@ -10,6 +10,9 @@ from x_transformers import Encoder, Decoder
 
 def exists(val):
     return val is not None
+
+def default(val, d):
+    return val if exists(val) else d
 
 def is_empty(t):
     return t.nelement() == 0
@@ -42,27 +45,36 @@ def top_k(logits, thres = 0.5):
 class DiscreteVAE(nn.Module):
     def __init__(
         self,
+        image_size = 256,
         num_tokens = 512,
-        dim = 512,
+        codebook_dim = 512,
         hidden_dim = 64,
         num_layers = 3,
         channels = 3
     ):
         super().__init__()
+        assert log2(image_size).is_integer(), 'image size must be a power of 2'
+        assert num_layers >= 1, 'number of layers must be greater than or equal to 1'
+
+        self.image_size = image_size
+        self.num_tokens = num_tokens
+        self.num_layers = num_layers
+        self.codebook = nn.Embedding(num_tokens, codebook_dim)
+        
         hdim = hidden_dim
-        
-        assert num_layers >= 1
-        
+
         encoder_layers = []
         decoder_layers = []
         for i in range(num_layers):
-            enc_in = channels if i == 0 else hdim
+            is_first = i == 0
+
+            enc_in = channels if is_first else hdim
             encoder_layers += [
                 nn.Conv2d(enc_in, hdim, 4, stride = 2, padding = 1),
                 nn.ReLU(),
             ]
             
-            dec_in = dim if i == 0 else hdim
+            dec_in = codebook_dim if is_first else hdim
             decoder_layers += [
                 nn.ConvTranspose2d(dec_in, hdim, 4, stride = 2, padding = 1),
                 nn.ReLU(),
@@ -73,9 +85,6 @@ class DiscreteVAE(nn.Module):
 
         self.encoder = nn.Sequential(*encoder_layers)
         self.decoder = nn.Sequential(*decoder_layers)
-
-        self.num_tokens = num_tokens
-        self.codebook = nn.Embedding(num_tokens, dim)
 
     @torch.no_grad()
     def get_codebook_indices(self, images):
@@ -134,8 +143,7 @@ class CLIP(nn.Module):
         visual_heads = 8,
         visual_image_size = 256,
         visual_patch_size = 32,
-        channels = 3,
-        vae = None
+        channels = 3
     ):
         super().__init__()
         self.text_emb = nn.Embedding(num_text_tokens, dim_text)
@@ -155,11 +163,6 @@ class CLIP(nn.Module):
 
         self.temperature = nn.Parameter(torch.tensor(1.))
 
-        self.vae = vae
-        if exists(self.vae):
-            self.vae = vae
-            self.visual_emb = vae.codebook
-
     def forward(
         self,
         text,
@@ -168,9 +171,6 @@ class CLIP(nn.Module):
         return_loss = False
     ):
         b, device, p = text.shape[0], text.device, self.visual_patch_size
-
-        if exists(self.vae):
-            image = self.vae.get_codebook_indices(image)
 
         text_emb = self.text_emb(text)
         text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
@@ -211,15 +211,18 @@ class DALLE(nn.Module):
         self,
         *,
         dim,
+        vae,
         num_text_tokens = 10000,
-        num_image_tokens = 512,
         text_seq_len = 256,
-        image_seq_len = 1024,
         depth = 6, # should be 64
-        heads = 8,
-        vae = None
+        heads = 8
     ):
         super().__init__()
+        assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
+
+        num_image_tokens = vae.num_tokens
+        image_seq_len = (vae.image_size // (2 ** vae.num_layers)) ** 2
+
         self.text_emb = nn.Embedding(num_text_tokens, dim)
         self.image_emb = nn.Embedding(num_image_tokens, dim)
 
@@ -228,6 +231,7 @@ class DALLE(nn.Module):
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
         self.num_image_tokens = num_image_tokens
+
         self.text_seq_len = text_seq_len
         self.image_seq_len = image_seq_len
 
@@ -265,14 +269,14 @@ class DALLE(nn.Module):
     @eval_decorator
     def generate_images(
         self,
-        vae,
         text,
-        clipper = None,
+        *,
+        clip = None,
         mask = None,
         filter_thres = 0.5,
         temperature = 1.
     ):
-        text_seq_len, image_seq_len, num_text_tokens = self.text_seq_len, self.image_seq_len, self.num_text_tokens
+        vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
 
         out = text
@@ -298,8 +302,8 @@ class DALLE(nn.Module):
         img_seq = out[:, -image_seq_len:]
         images = vae.decode(img_seq)
 
-        if exists(clipper):
-            scores = clipper(text_seq, images, return_loss = False)
+        if exists(clip):
+            scores = clip(text_seq, images, return_loss = False)
             return images, scores
 
         return images
@@ -321,18 +325,16 @@ class DALLE(nn.Module):
 
         if exists(image) and not is_empty(image):
             is_raw_image = len(image.shape) == 4
-            image_len = image.shape[1]
-            seq_len += image_len
-
             if is_raw_image:
-                assert exists(self.vae), 'VAE must be passed into constructor if you are to train directly on raw images'
                 image = self.vae.get_codebook_indices(image)
 
+            image_len = image.shape[1]
             image_emb = self.image_emb(image)
             image_emb += self.image_pos_emb(torch.arange(image_len, device = device))
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
 
+            seq_len += image_len
             if exists(mask):
                 mask = F.pad(mask, (0, image_emb.shape[1]), value = True)
 

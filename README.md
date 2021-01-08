@@ -19,17 +19,57 @@ import torch
 from dalle_pytorch import DiscreteVAE
 
 vae = DiscreteVAE(
+    image_size = 256,
     num_layers = 3,
-    num_tokens = 2000,
-    dim = 512,
+    num_tokens = 1024,
+    codebook_dim = 512,
     hidden_dim = 64
 )
 
-images = torch.randn(8, 3, 256, 256)
+images = torch.randn(4, 3, 256, 256)
 
 loss = vae(images, return_recon_loss = True)
 loss.backward()
+
+# train with a lot of data to learn a good codebook
 ```
+
+Train DALL-E with pretrained VAE from above
+
+```python
+import torch
+from dalle_pytorch import DiscreteVAE, DALLE
+
+vae = DiscreteVAE(
+    image_size = 256,
+    num_layers = 3,
+    num_tokens = 1024,
+    codebook_dim = 512
+)
+
+dalle = DALLE(
+    dim = 512,
+    vae = vae,                  # automatically infer (1) image sequence length and (2) number of image tokens. image embedding will automatically use VAE codebook
+    num_text_tokens = 10000,    # vocab size for text
+    text_seq_len = 256,         # text sequence length
+    depth = 6,                  # should be 64
+    heads = 8
+)
+
+text = torch.randint(0, 10000, (4, 256))
+images = torch.randn(4, 3, 256, 256)
+mask = torch.ones_like(text).bool()
+
+loss = dalle(text, images, mask = mask, return_loss = True)
+loss.backward()
+
+# do the above for a long time with a lot of data ... then
+
+images = dalle.generate_images(text, mask = mask)
+images.shape # (2, 3, 256, 256)
+```
+
+## Ranking the generations
 
 Train CLIP
 
@@ -52,97 +92,26 @@ clip = CLIP(
     visual_heads = 8
 )
 
-text = torch.randint(0, 10000, (2, 256))
-images = torch.randn(2, 3, 256, 256)
+text = torch.randint(0, 10000, (4, 256))
+images = torch.randn(4, 3, 256, 256)
 mask = torch.ones_like(text).bool()
 
 loss = clip(text, images, text_mask = mask, return_loss = True)
 loss.backward()
 ```
 
-Train DALL-E
-
-```python
-import torch
-from dalle_pytorch import DALLE
-
-dalle = DALLE(
-    dim = 512,
-    num_text_tokens = 10000,
-    num_image_tokens = 512,
-    text_seq_len = 256,
-    image_seq_len = 1024,
-    depth = 6, # should be 64
-    heads = 8
-)
-
-text = torch.randint(0, 10000, (2, 256))
-images = torch.randint(0, 512, (2, 1024))
-mask = torch.ones_like(text).bool()
-
-loss = dalle(text, images, mask = mask, return_loss = True)
-loss.backward()
-```
-
-Combine pretrained VAE with DALL-E, and train off raw images
-
-```python
-import torch
-from dalle_pytorch import DiscreteVAE, DALLE
-
-vae = DiscreteVAE(
-    num_tokens = 512,
-    dim = 512
-)
-
-dalle = DALLE(
-    dim = 512,
-    vae = vae,
-    num_text_tokens = 10000,
-    num_image_tokens = 512,
-    text_seq_len = 256,
-    image_seq_len = 1024,
-    depth = 6, # should be 64
-    heads = 8
-)
-
-text = torch.randint(0, 10000, (2, 256))
-images = torch.randn(2, 3, 256, 256) # train directly on raw images, VAE converts to proper embeddings
-mask = torch.ones_like(text).bool()
-
-loss = dalle(text, images, mask = mask, return_loss = True)
-loss.backward()
-```
-
-Finally, to generate images
-
-```python
-
-dalle.generate_images(
-    vae = vae,
-    text = text,
-    mask = mask
-)
-
-images.shape # (2, 3, 256, 256)
-```
-
 To get the similarity scores from your trained Clipper, just do
 
 ```python
-
-images, scores = dalle.generate_images(
-    vae = vae,
-    text = text,
-    mask = mask,
-    clipper = clip
-)
+images, scores = dalle.generate_images(text, mask = mask, clip = clip)
 
 scores.shape # (2,)
 images.shape # (2, 3, 256, 256)
 
 # do your topk here, in paper they sampled 512 and chose top 32
 ```
+
+Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E
 
 ## Citations
 
