@@ -65,7 +65,7 @@ def generate_images(
     images = vae.decode(img_seq)
 
     if exists(clipper):
-        scores = clipper(text_seq, img_seq, return_loss = False)
+        scores = clipper(text_seq, images, return_loss = False)
         return images, scores
 
     return images
@@ -158,13 +158,15 @@ class CLIP(nn.Module):
         dim_image = 512,
         dim_latent = 512,
         num_text_tokens = 10000,
-        num_visual_tokens = 512,
         text_enc_depth = 6,
-        visual_enc_depth = 6,
         text_seq_len = 256,
-        visual_seq_len = 1024,
         text_heads = 8,
+        num_visual_tokens = 512,
+        visual_enc_depth = 6,
         visual_heads = 8,
+        visual_image_size = 256,
+        visual_patch_size = 32,
+        channels = 3,
         vae = None
     ):
         super().__init__()
@@ -173,8 +175,13 @@ class CLIP(nn.Module):
         self.text_transformer = Encoder(dim = dim_text, depth = text_enc_depth, heads = text_heads)
         self.to_text_latent = nn.Linear(dim_text, dim_latent, bias = False)
 
-        self.visual_emb = nn.Embedding(num_visual_tokens, dim_image)
-        self.visual_pos_emb = nn.Embedding(visual_seq_len, dim_image)
+        assert visual_image_size % visual_patch_size == 0, 'Image dimensions must be divisible by the patch size.'
+        num_patches = (visual_image_size // visual_patch_size) ** 2
+        patch_dim = channels * visual_patch_size ** 2
+
+        self.visual_patch_size = visual_patch_size
+        self.to_visual_embedding = nn.Linear(patch_dim, dim_image)
+        self.visual_pos_emb = nn.Embedding(num_patches, dim_image)
         self.visual_transformer = Encoder(dim = dim_image, depth = visual_enc_depth, heads = visual_heads)
         self.to_visual_latent = nn.Linear(dim_image, dim_latent, bias = False)
 
@@ -192,7 +199,7 @@ class CLIP(nn.Module):
         text_mask = None,
         return_loss = False
     ):
-        b, device = text.shape[0], text.device
+        b, device, p = text.shape[0], text.device, self.visual_patch_size
 
         if exists(self.vae):
             image = self.vae.get_codebook_indices(image)
@@ -200,9 +207,9 @@ class CLIP(nn.Module):
         text_emb = self.text_emb(text)
         text_emb += self.text_pos_emb(torch.arange(text.shape[1], device = device))
 
-
-        image_emb = self.visual_emb(image)
-        image_emb += self.visual_pos_emb(torch.arange(image.shape[1], device = device))
+        image_patches = rearrange(image, 'b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1 = p, p2 = p)
+        image_emb = self.to_visual_embedding(image_patches)
+        image_emb += self.visual_pos_emb(torch.arange(image_emb.shape[1], device = device))
 
         enc_text = self.text_transformer(text_emb, mask = text_mask)
         enc_image = self.visual_transformer(image_emb)
