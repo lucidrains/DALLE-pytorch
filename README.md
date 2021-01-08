@@ -94,7 +94,6 @@ images.shape # (2, 3, 256, 256)
 
 Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E
 
-```
 ## Citations
 
 ```bibtex
