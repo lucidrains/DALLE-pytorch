@@ -18,7 +18,7 @@ Train DALL-E with VAE end-to-end
 
 ```python
 import torch
-from dalle_pytorch import DiscreteVAE, DALLE
+from dalle_pytorch_dev import DiscreteVAE, DALLE
 
 vae = DiscreteVAE(
     image_size = 256,
