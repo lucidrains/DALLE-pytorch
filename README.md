@@ -117,10 +117,8 @@ loss.backward()
 Finally, to generate images
 
 ```python
-from dalle_pytorch import generate_images
 
-images = generate_images(
-    dalle,
+dalle.generate_images(
     vae = vae,
     text = text,
     mask = mask
@@ -132,10 +130,8 @@ images.shape # (2, 3, 256, 256)
 To get the similarity scores from your trained Clipper, just do
 
 ```python
-from dalle_pytorch import generate_images
 
-images, scores = generate_images(
-    dalle,
+images, scores = dalle.generate_images(
     vae = vae,
     text = text,
     mask = mask,

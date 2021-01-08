@@ -37,49 +37,6 @@ def top_k(logits, thres = 0.5):
     probs.scatter_(1, ind, val)
     return probs
 
-@torch.no_grad()
-@eval_decorator
-def generate_images(
-    model,
-    vae,
-    text,
-    clipper = None,
-    mask = None,
-    filter_thres = 0.5,
-    temperature = 1.
-):
-    x = text
-
-    text_seq_len = model.text_seq_len
-    image_seq_len = model.image_seq_len
-    total_len = text_seq_len + model.image_seq_len - text.shape[1]
-
-    out = x
-    for _ in range(total_len):
-        text, image = x[:, :text_seq_len], x[:, text_seq_len:]
-        logits = model(text, image, mask = mask)[:, -1, :]
-        filtered_logits = top_k(logits, thres = filter_thres)
-        probs = F.softmax(filtered_logits / temperature, dim=-1)
-
-        sample = torch.multinomial(probs, 1)
-        out = torch.cat((out, sample), dim=-1)
-
-        if out.shape[1] <= text_seq_len:
-            mask = F.pad(mask, (0, 1), value=True)
-
-    text_seq = torch.cat((x[:, :1], out[:, :(text_seq_len - 1)]), dim = 1)
-
-    img_seq = out[:, -image_seq_len:]
-    img_seq -= model.num_text_tokens
-
-    images = vae.decode(img_seq)
-
-    if exists(clipper):
-        scores = clipper(text_seq, images, return_loss = False)
-        return images, scores
-
-    return images
-
 # discrete vae class
 
 class DiscreteVAE(nn.Module):
@@ -303,6 +260,49 @@ class DALLE(nn.Module):
         )
 
         self.register_buffer('logits_mask', logits_mask)
+
+    @torch.no_grad()
+    @eval_decorator
+    def generate_images(
+        self,
+        vae,
+        text,
+        clipper = None,
+        mask = None,
+        filter_thres = 0.5,
+        temperature = 1.
+    ):
+        text_seq_len, image_seq_len, num_text_tokens = self.text_seq_len, self.image_seq_len, self.num_text_tokens
+        total_len = text_seq_len + image_seq_len
+
+        out = text
+        for cur_len in range(text.shape[1], total_len):
+            is_image = cur_len >= text_seq_len
+
+            text, image = out[:, :text_seq_len], out[:, text_seq_len:]
+
+            logits = self(text, image, mask = mask)[:, -1, :]
+
+            filtered_logits = top_k(logits, thres = filter_thres)
+            probs = F.softmax(filtered_logits / temperature, dim = -1)
+            sample = torch.multinomial(probs, 1)
+
+            sample -= (num_text_tokens if is_image else 0) # offset sampled token if it is an image token, since logit space is composed of text and then image tokens
+            out = torch.cat((out, sample), dim=-1)
+
+            if out.shape[1] <= text_seq_len:
+                mask = F.pad(mask, (0, 1), value = True)
+
+        text_seq = out[:, :text_seq_len]
+
+        img_seq = out[:, -image_seq_len:]
+        images = vae.decode(img_seq)
+
+        if exists(clipper):
+            scores = clipper(text_seq, images, return_loss = False)
+            return images, scores
+
+        return images
 
     def forward(
         self,
