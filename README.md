@@ -49,7 +49,7 @@ vae = DiscreteVAE(
 
 dalle = DALLE(
     dim = 512,
-    vae = vae,                  # automatically infer (1) image sequence length and (2) number of image tokens. image embedding will automatically use VAE codebook
+    vae = vae,                  # automatically infer (1) image sequence length and (2) number of image tokens
     num_text_tokens = 10000,    # vocab size for text
     text_seq_len = 256,         # text sequence length
     depth = 6,                  # should be 64
