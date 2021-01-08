@@ -1,4 +1,4 @@
-from math import log2, sqrt
+from math import sqrt
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
@@ -18,6 +18,15 @@ def masked_mean(t, mask, dim = 1):
     t = t.masked_fill(~mask[:, :, None], 0.)
     return t.sum(dim = 1) / mask.sum(dim = 1)[..., None]
 
+def eval_decorator(fn):
+    def inner(model, *args, **kwargs):
+        was_training = model.training
+        model.eval()
+        out = fn(model, *args, **kwargs)
+        model.train(was_training)
+        return out
+    return inner
+
 # sampling helpers
 
 def top_k(logits, thres = 0.5):
@@ -29,6 +38,7 @@ def top_k(logits, thres = 0.5):
     return probs
 
 @torch.no_grad()
+@eval_decorator
 def generate_images(
     model,
     vae,
@@ -110,6 +120,7 @@ class DiscreteVAE(nn.Module):
         self.num_tokens = num_tokens
         self.codebook = nn.Embedding(num_tokens, dim)
 
+    @torch.no_grad()
     def get_codebook_indices(self, images):
         logits = self.forward(images, return_logits = True)
         codebook_indices = logits.argmax(dim = 1).flatten(1)
