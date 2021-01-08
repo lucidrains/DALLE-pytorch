@@ -216,18 +216,16 @@ class DALLE(nn.Module):
         num_text_tokens = 10000,
         text_seq_len = 256,
         depth = 6,
-        heads = 8,
-        tie_image_embedding = False
+        heads = 8
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
-        assert not tie_image_embedding or (tie_image_embedding and dim == vae.codebook_dim), 'codebook dimension of VAE must match the mdoel dimensions of DALL-E if the image embedding is tied'
 
         num_image_tokens = vae.num_tokens
         image_seq_len = (vae.image_size // (2 ** vae.num_layers)) ** 2
 
         self.text_emb = nn.Embedding(num_text_tokens, dim)
-        self.image_emb = nn.Embedding(num_image_tokens, dim) if not tie_image_embedding else vae.codebook  # leave an area of uncertainty up to user to figure out
+        self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         self.text_pos_emb = nn.Embedding(text_seq_len, dim)
         self.image_pos_emb = nn.Embedding(image_seq_len, dim)
