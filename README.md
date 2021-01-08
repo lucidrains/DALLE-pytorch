@@ -130,3 +130,5 @@ Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP m
     year   = {2021}
 }
 ```
+
+*Those who do not want to imitate anything, produce nothing.* - Dali
