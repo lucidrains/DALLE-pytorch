@@ -115,7 +115,7 @@ class DiscreteVAE(nn.Module):
         if return_logits:
             return logits # return logits for getting hard image indices for DALL-E training
 
-        soft_one_hot = F.gumbel_softmax(logits, tau = 1., dim=1)
+        soft_one_hot = F.gumbel_softmax(logits, tau = 1., dim = 1)
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
         out = self.decoder(sampled)
 
