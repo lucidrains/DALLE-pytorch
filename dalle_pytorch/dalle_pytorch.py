@@ -205,6 +205,7 @@ class CLIP(nn.Module):
         loss = F.cross_entropy(sim, labels)
         return loss
 
+# main DALL-E class
 
 class DALLE(nn.Module):
     def __init__(
@@ -214,12 +215,13 @@ class DALLE(nn.Module):
         vae,
         num_text_tokens = 10000,
         text_seq_len = 256,
-        depth = 6, # should be 64
+        depth = 6,
         heads = 8,
         tie_image_embedding = False
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
+        assert not tie_image_embedding or (tie_image_embedding and dim == vae.codebook_dim), 'codebook dimension of VAE must match the mdoel dimensions of DALL-E if the image embedding is tied'
 
         num_image_tokens = vae.num_tokens
         image_seq_len = (vae.image_size // (2 ** vae.num_layers)) ** 2
