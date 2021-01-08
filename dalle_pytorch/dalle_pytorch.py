@@ -108,7 +108,8 @@ class DiscreteVAE(nn.Module):
         self,
         img,
         return_recon_loss = False,
-        return_logits = False
+        return_logits = False,
+        return_soft_embeddings = False
     ):
         logits = self.encoder(img)
 
@@ -117,6 +118,10 @@ class DiscreteVAE(nn.Module):
 
         soft_one_hot = F.gumbel_softmax(logits, tau = 1., dim = 1)
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
+
+        if return_soft_embeddings:
+            return sampled
+
         out = self.decoder(sampled)
 
         if not return_recon_loss:
@@ -216,7 +221,8 @@ class DALLE(nn.Module):
         num_text_tokens = 10000,
         text_seq_len = 256,
         depth = 6,
-        heads = 8
+        heads = 8,
+        train_vae_encoder = True # leave uncertainty for someone to explore
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -241,6 +247,7 @@ class DALLE(nn.Module):
         self.total_tokens = total_tokens
         
         self.vae = vae
+        self.train_vae_encoder = train_vae_encoder
         if exists(self.vae):
             self.vae = vae
             self.image_emb = vae.codebook
@@ -326,11 +333,17 @@ class DALLE(nn.Module):
 
         if exists(image) and not is_empty(image):
             is_raw_image = len(image.shape) == 4
-            if is_raw_image:
-                image = self.vae.get_codebook_indices(image)
 
-            image_len = image.shape[1]
-            image_emb = self.image_emb(image)
+            if is_raw_image:
+                if self.train_vae_encoder:
+                    image = self.vae.get_codebook_indices(image)
+                    image_emb = self.image_emb(image)
+                else:
+                    image_emb = self.vae(image, return_soft_embeddings = True)
+            else:
+                image_emb = self.image_emb(image)
+
+            image_len = image_emb.shape[1]
             image_emb += self.image_pos_emb(torch.arange(image_len, device = device))
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
