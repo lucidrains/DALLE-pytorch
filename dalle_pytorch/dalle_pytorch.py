@@ -222,7 +222,8 @@ class DALLE(nn.Module):
         text_seq_len = 256,
         depth = 6,
         heads = 8,
-        train_vae_encoder = True # leave uncertainty for someone to explore
+        train_vae = True, # leave uncertainty for someone to explore
+        vae_loss_coef = 1.
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -247,7 +248,8 @@ class DALLE(nn.Module):
         self.total_tokens = total_tokens
         
         self.vae = vae
-        self.train_vae_encoder = train_vae_encoder
+        self.vae_loss_coef = vae_loss_coef
+        self.train_vae = train_vae
         if exists(self.vae):
             self.vae = vae
             self.image_emb = vae.codebook
@@ -335,16 +337,19 @@ class DALLE(nn.Module):
             is_raw_image = len(image.shape) == 4
 
             if is_raw_image:
-                if self.train_vae_encoder:
+                if self.train_vae:
+                    orig_image = image
+                    codebook_emb = self.vae(image, return_soft_embeddings = True)
+                    image_token_emb = rearrange(codebook_emb, 'b c h w -> b (h w) c')
                     image = self.vae.get_codebook_indices(image)
-                    image_emb = self.image_emb(image)
                 else:
-                    image_emb = self.vae(image, return_soft_embeddings = True)
+                    image = self.vae.get_codebook_indices(image)
+                    image_token_emb = self.image_emb(image)
             else:
-                image_emb = self.image_emb(image)
+                image_token_emb = self.image_emb(image)
 
-            image_len = image_emb.shape[1]
-            image_emb += self.image_pos_emb(torch.arange(image_len, device = device))
+            image_len = image_token_emb.shape[1]
+            image_emb = image_token_emb + self.image_pos_emb(torch.arange(image_len, device = device))
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
 
@@ -369,4 +374,10 @@ class DALLE(nn.Module):
         labels = torch.cat((text, offsetted_image), dim = 1)
         labels = F.pad(labels, (0, 1), value = eos_token_id) # last token predicts EOS
         loss = F.cross_entropy(logits.transpose(1, 2), labels[:, 1:])
+
+        if self.train_vae:
+            recon_img = self.vae.decoder(codebook_emb)
+            vae_loss = F.mse_loss(recon_img, orig_image) * self.vae_loss_coef
+            loss = loss + vae_loss
+
         return loss
