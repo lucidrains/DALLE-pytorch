@@ -370,5 +370,5 @@ class DALLE(nn.Module):
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text, offsetted_image), dim = 1)
         labels = F.pad(labels, (0, 1), value = eos_token_id) # last token predicts EOS
-        loss = F.cross_entropy(logits.transpose(1, 2), labels[:, 1:])
+        loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels[:, 1:])
         return loss
