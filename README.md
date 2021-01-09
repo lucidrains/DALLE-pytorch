@@ -56,7 +56,10 @@ dalle = DALLE(
     num_text_tokens = 10000,    # vocab size for text
     text_seq_len = 256,         # text sequence length
     depth = 6,                  # should be 64
-    heads = 8
+    heads = 8,                  # attention heads
+    dim_head = 64,              # attention head dimension
+    attn_dropout = 0.1,         # attention dropout
+    ff_dropout = 0.1            # feedforward dropout
 )
 
 text = torch.randint(0, 10000, (4, 256))
@@ -118,7 +121,7 @@ Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP m
 
 ## Scaling depth
 
-In the blog post, they used 64 layers to achieve their results. I added reversible networks, from the <a href="https://github.com/lucidrains/reformer-pytorch">Reformer</a> paper, in order for users to attempt to scale depth at the cost of compute.
+In the blog post, they used 64 layers to achieve their results. I added reversible networks, from the <a href="https://github.com/lucidrains/reformer-pytorch">Reformer</a> paper, in order for users to attempt to scale depth at the cost of compute. Reversible networks allow you to scale to any depth at no memory cost, but a little over 2x compute cost (each layer is rerun on the backward pass).
 
 Simply set the `reversible` keyword to `True` for the `DALLE` class
 
