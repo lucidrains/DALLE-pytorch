@@ -4,7 +4,8 @@ from torch import nn, einsum
 import torch.nn.functional as F
 
 from einops import rearrange
-from x_transformers import Encoder, Decoder
+from x_transformers import Encoder
+from dalle_pytorch.transformer import Transformer
 
 # helpers
 
@@ -217,8 +218,12 @@ class DALLE(nn.Module):
         vae,
         num_text_tokens = 10000,
         text_seq_len = 256,
-        depth = 6,
-        heads = 8
+        depth,
+        heads = 8,
+        dim_head = 64,
+        reversible = False,
+        attn_dropout = 0.,
+        ff_dropout = 0
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -247,7 +252,16 @@ class DALLE(nn.Module):
             self.vae = vae
             self.image_emb = vae.codebook
 
-        self.transformer = Decoder(dim = dim, depth = depth, heads = heads)
+        self.transformer = Transformer(
+            dim = dim,
+            causal = True,
+            depth = depth,
+            heads = heads,
+            dim_head = dim_head,
+            reversible = reversible,
+            attn_dropout = attn_dropout,
+            ff_dropout = ff_dropout
+        )
 
         self.to_logits = nn.Sequential(
             nn.LayerNorm(dim),

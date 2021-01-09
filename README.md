@@ -116,6 +116,24 @@ images.shape # (2, 3, 256, 256)
 
 Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E
 
+## Scaling depth
+
+In the blog post, they used 64 layers to achieve their results. I added reversible networks, from the <a href="https://github.com/lucidrains/reformer-pytorch">Reformer</a> paper, in order for users to attempt to scale depth at the cost of compute.
+
+Simply set the `reversible` keyword to `True` for the `DALLE` class
+
+```python
+dalle = DALLE(
+    dim = 512,
+    vae = vae,
+    num_text_tokens = 10000,
+    text_seq_len = 256,
+    depth = 64,
+    heads = 8,
+    reversible = True  # <-- reversible networks https://arxiv.org/abs/2001.04451
+)
+```
+
 ## Citations
 
 ```bibtex
@@ -131,6 +149,17 @@ Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP m
     title  = {CLIP: Connecting Text and Images},
     author = {Alec Radford, Ilya Sutskever, Jong Wook Kim, Gretchen Krueger, Sandhini Agarwal},
     year   = {2021}
+}
+```
+
+```bibtex
+@misc{kitaev2020reformer,
+    title   = {Reformer: The Efficient Transformer},
+    author  = {Nikita Kitaev and Łukasz Kaiser and Anselm Levskaya},
+    year    = {2020},
+    eprint  = {2001.04451},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.LG}
 }
 ```
 
