@@ -50,7 +50,8 @@ class DiscreteVAE(nn.Module):
         codebook_dim = 512,
         hidden_dim = 64,
         num_layers = 3,
-        channels = 3
+        channels = 3,
+        temperature = 0.9
     ):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
@@ -59,6 +60,7 @@ class DiscreteVAE(nn.Module):
         self.image_size = image_size
         self.num_tokens = num_tokens
         self.num_layers = num_layers
+        self.temperature = temperature
         self.codebook = nn.Embedding(num_tokens, codebook_dim)
         
         hdim = hidden_dim
@@ -115,7 +117,7 @@ class DiscreteVAE(nn.Module):
         if return_logits:
             return logits # return logits for getting hard image indices for DALL-E training
 
-        soft_one_hot = F.gumbel_softmax(logits, tau = 1., dim = 1)
+        soft_one_hot = F.gumbel_softmax(logits, tau = self.temperature, dim = 1)
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
         out = self.decoder(sampled)
 
