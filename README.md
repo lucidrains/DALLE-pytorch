@@ -24,7 +24,8 @@ vae = DiscreteVAE(
     image_size = 256,
     num_layers = 3,
     num_tokens = 1024,
-    codebook_dim = 512
+    codebook_dim = 512,
+    temperature = 0.9
 )
 
 dalle = DALLE(
