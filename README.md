@@ -23,6 +23,7 @@ from dalle_pytorch import DiscreteVAE
 vae = DiscreteVAE(
     image_size = 256,
     num_layers = 3,         # number of downsamples - ex. 256 / (2 ** 3) = (32 x 32 feature map)
+    num_resnet_blocks = 1,  # number of residual blocks at each layer
     num_tokens = 1024,      # number of visual tokens. iGPT had 512, so probably should have more
     codebook_dim = 512,     # codebook dimension
     hidden_dim = 64,        # hidden dimension
@@ -46,6 +47,7 @@ from dalle_pytorch import DiscreteVAE, DALLE
 vae = DiscreteVAE(
     image_size = 256,
     num_layers = 3,
+    num_resnet_blocks = 1,
     num_tokens = 1024,
     codebook_dim = 512,
     hidden_dim = 64,
