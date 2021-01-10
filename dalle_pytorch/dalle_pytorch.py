@@ -4,6 +4,7 @@ from torch import nn, einsum
 import torch.nn.functional as F
 
 from einops import rearrange
+from axial_positional_embedding import AxialPositionalEmbedding
 from dalle_pytorch.transformer import Transformer
 
 # helpers
@@ -227,6 +228,7 @@ class DALLE(nn.Module):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
 
+        image_size = vae.image_size
         num_image_tokens = vae.num_tokens
         image_seq_len = (vae.image_size // (2 ** vae.num_layers)) ** 2
 
@@ -234,7 +236,7 @@ class DALLE(nn.Module):
         self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         self.text_pos_emb = nn.Embedding(text_seq_len, dim)
-        self.image_pos_emb = nn.Embedding(image_seq_len, dim)
+        self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_size, image_size))
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
         self.num_image_tokens = num_image_tokens
