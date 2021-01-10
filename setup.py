@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
-  version = '0.0.29',
+  version = '0.0.30',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -12,11 +12,11 @@ setup(
   keywords = [
     'artificial intelligence',
     'attention mechanism',
-    'axial_positional_embedding',
     'transformers',
     'text-to-image'
   ],
   install_requires=[
+    'axial_positional_embedding',
     'einops>=0.3',
     'torch>=1.6'
   ],
