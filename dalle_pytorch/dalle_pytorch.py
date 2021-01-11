@@ -86,7 +86,7 @@ class DiscreteVAE(nn.Module):
         num_tokens = 512,
         codebook_dim = 512,
         num_layers = 3,
-        num_resnet_blocks = 1,
+        num_resnet_blocks = 0,
         hidden_dim = 64,
         channels = 3,
         temperature = 0.9
@@ -383,7 +383,7 @@ class DALLE(nn.Module):
 
             image_len = image.shape[1]
             image_emb = self.image_emb(image)
-            image_emb += self.image_pos_emb(torch.arange(image_len, device = device))
+            image_emb += self.image_pos_emb(image_emb)
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
 

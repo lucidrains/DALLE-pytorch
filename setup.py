@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
-  version = '0.0.31',
+  version = '0.0.33',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
