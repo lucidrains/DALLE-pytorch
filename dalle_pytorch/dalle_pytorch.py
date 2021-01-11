@@ -77,6 +77,7 @@ class DiscreteVAE(nn.Module):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
         assert num_layers >= 1, 'number of layers must be greater than or equal to 1'
+        has_resblocks = num_resnet_blocks > 0
 
         self.image_size = image_size
         self.num_tokens = num_tokens
@@ -87,10 +88,12 @@ class DiscreteVAE(nn.Module):
         hdim = hidden_dim
 
         enc_chans = [hidden_dim] * num_layers
-        dec_chans = reversed(enc_chans)
+        dec_chans = list(reversed(enc_chans))
 
         enc_chans = [channels, *enc_chans]
-        dec_chans = [codebook_dim, *dec_chans]
+
+        dec_init_chan = codebook_dim if not has_resblocks else dec_chans[0]
+        dec_chans = [dec_init_chan, *dec_chans]
 
         enc_chans_io, dec_chans_io = map(lambda t: list(zip(t[:-1], t[1:])), (enc_chans, dec_chans))
 
@@ -102,8 +105,11 @@ class DiscreteVAE(nn.Module):
             dec_layers.append(nn.Sequential(nn.ConvTranspose2d(dec_in, dec_out, 4, stride = 2, padding = 1), nn.ReLU()))
 
         for _ in range(num_resnet_blocks):
+            dec_layers.insert(0, ResBlock(dec_chans[1]))
             enc_layers.append(ResBlock(enc_chans[-1]))
-            dec_layers.append(ResBlock(dec_chans[-1]))
+
+        if num_resnet_blocks > 0:
+            dec_layers.insert(0, nn.Conv2d(codebook_dim, dec_chans[1], 1))
 
         enc_layers.append(nn.Conv2d(enc_chans[-1], num_tokens, 1))
         dec_layers.append(nn.Conv2d(dec_chans[-1], channels, 1))
