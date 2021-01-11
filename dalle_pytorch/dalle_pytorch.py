@@ -86,7 +86,7 @@ class DiscreteVAE(nn.Module):
         num_tokens = 512,
         codebook_dim = 512,
         num_layers = 3,
-        num_resnet_blocks = 1,
+        num_resnet_blocks = 0,
         hidden_dim = 64,
         channels = 3,
         temperature = 0.9
