@@ -145,6 +145,36 @@ dalle = DALLE(
 )
 ```
 
+## Sparse Attention
+
+You can also train with Microsoft Deepspeed's Sparse Attention, with any combination of dense and sparse attention that you'd like. However, you will have to endure the installation process.
+
+First, you need to install Deepspeed with Sparse Attention
+
+```bash
+$ sh install_deepspeed.sh
+```
+
+Next, you need to install the pip package `triton`
+
+```bash
+$ pip install triton
+```
+
+If both of the above succeeded, now you can train with Sparse Attention!
+
+```python
+dalle = DALLE(
+    dim = 512,
+    vae = vae,
+    num_text_tokens = 10000,
+    text_seq_len = 256,
+    depth = 64,
+    heads = 8,
+    sparse_attn = (True, False) * 32  # interleave sparse and dense attention for 64 layers
+)
+```
+
 ## Citations
 
 ```bibtex

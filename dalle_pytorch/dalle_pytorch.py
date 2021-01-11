@@ -179,7 +179,7 @@ class CLIP(nn.Module):
         super().__init__()
         self.text_emb = nn.Embedding(num_text_tokens, dim_text)
         self.text_pos_emb = nn.Embedding(text_seq_len, dim_text)
-        self.text_transformer = Transformer(causal = False, dim = dim_text, depth = text_enc_depth, heads = text_heads)
+        self.text_transformer = Transformer(causal = False, seq_len = text_seq_len, dim = dim_text, depth = text_enc_depth, heads = text_heads)
         self.to_text_latent = nn.Linear(dim_text, dim_latent, bias = False)
 
         assert visual_image_size % visual_patch_size == 0, 'Image dimensions must be divisible by the patch size.'
@@ -189,7 +189,7 @@ class CLIP(nn.Module):
         self.visual_patch_size = visual_patch_size
         self.to_visual_embedding = nn.Linear(patch_dim, dim_image)
         self.visual_pos_emb = nn.Embedding(num_patches, dim_image)
-        self.visual_transformer = Transformer(causal = False, dim = dim_image, depth = visual_enc_depth, heads = visual_heads)
+        self.visual_transformer = Transformer(causal = False, seq_len = num_patches, dim = dim_image, depth = visual_enc_depth, heads = visual_heads)
         self.to_visual_latent = nn.Linear(dim_image, dim_latent, bias = False)
 
         self.temperature = nn.Parameter(torch.tensor(1.))
@@ -251,7 +251,8 @@ class DALLE(nn.Module):
         dim_head = 64,
         reversible = False,
         attn_dropout = 0.,
-        ff_dropout = 0
+        ff_dropout = 0,
+        sparse_attn = False
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -284,12 +285,14 @@ class DALLE(nn.Module):
         self.transformer = Transformer(
             dim = dim,
             causal = True,
+            seq_len = seq_len,
             depth = depth,
             heads = heads,
             dim_head = dim_head,
             reversible = reversible,
             attn_dropout = attn_dropout,
-            ff_dropout = ff_dropout
+            ff_dropout = ff_dropout,
+            sparse_attn = sparse_attn
         )
 
         self.to_logits = nn.Sequential(

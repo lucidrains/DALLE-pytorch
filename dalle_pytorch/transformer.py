@@ -1,7 +1,7 @@
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
-from einops import rearrange
+from einops import rearrange, repeat
 
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 
@@ -9,6 +9,9 @@ from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 
 def exists(val):
     return val is not None
+
+def cast_tuple(val, depth):
+    return val if isinstance(val, tuple) else (val,) * depth
 
 # classes
 
@@ -40,10 +43,11 @@ class FeedForward(nn.Module):
         return self.net(x)
 
 class Attention(nn.Module):
-    def __init__(self, dim, causal = True, heads = 8, dim_head = 64, dropout = 0.):
+    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0.):
         super().__init__()
         inner_dim = dim_head *  heads
         self.heads = heads
+        self.seq_len = seq_len
         self.scale = dim ** -0.5
         self.causal = causal
 
@@ -78,26 +82,67 @@ class Attention(nn.Module):
         out =  self.to_out(out)
         return out
 
+class SparseAttention(Attention):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        from deepspeed.ops.sparse_attention import SparseSelfAttention, VariableSparsityConfig
+
+        self.attn_fn = SparseSelfAttention(
+            sparsity_config = VariableSparsityConfig(
+                num_heads = self.heads,
+                block = 16,
+                attention = 'unidirectional' if self.causal else 'bidirectional'
+            ),
+            max_seq_length = self.seq_len,
+            attn_mask_mode = 'add'
+        )
+
+    def forward(self, x, mask = None):
+        b, n, _, h, device = *x.shape, self.heads, x.device
+        qkv = self.to_qkv(x).chunk(3, dim = -1)
+        q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
+
+        key_pad_mask = None
+        if exists(mask):
+            key_pad_mask = ~mask
+
+        attn_mask = None
+        if self.causal:
+            i, j = q.shape[-2], k.shape[-2]
+            mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
+            attn_mask = torch.zeros(i, j, device = device).to(q)
+            mask_value = -(torch.finfo(q.dtype).max / 2)
+            attn_mask.masked_fill_(mask, mask_value)
+
+        out = self.attn_fn(q, k, v, attn_mask = attn_mask, key_padding_mask = key_pad_mask)
+        out = rearrange(out, 'b h n d -> b n (h d)')
+        return self.to_out(out)
+
 class Transformer(nn.Module):
     def __init__(
         self,
         *,
         dim,
         depth,
+        seq_len,
         reversible = False,
         causal = True,
         heads = 8,
         dim_head = 64,
         ff_mult = 4,
         attn_dropout = 0.,
-        ff_dropout = 0.
+        ff_dropout = 0.,
+        sparse_attn = True
     ):
         super().__init__()
         layers = nn.ModuleList([])
+        sparse_layer = cast_tuple(sparse_attn, depth)
 
-        for _ in range(depth):
+        for _, sparse_attn in zip(range(depth), sparse_layer):
+            attn_class = Attention if not sparse_attn else SparseAttention
+
             layers.append(nn.ModuleList([
-                PreNorm(dim, Attention(dim, causal = causal, heads = heads, dim_head = dim_head, dropout = attn_dropout)),
+                PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)),
                 PreNorm(dim, FeedForward(dim, mult = ff_mult, dropout = ff_dropout))
             ]))
 
