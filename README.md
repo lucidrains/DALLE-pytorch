@@ -8,7 +8,7 @@ Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E
 
 ## Status
 
-<a href="https://github.com/htoyryla">Hannu</a> has managed to train a small 6 layer DALL-E on a dataset of just 2000 landscape images!
+<a href="https://github.com/htoyryla">Hannu</a> has managed to train a small 6 layer DALL-E on a dataset of just 2000 landscape images! (2048 visual tokens)
 
 <img src="./images/landscape.png"></img>
 
