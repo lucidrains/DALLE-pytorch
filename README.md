@@ -147,7 +147,7 @@ dalle = DALLE(
 
 ## Sparse Attention
 
-You can also train with Microsoft Deepspeed's Sparse Attention, with any combination of dense and sparse attention that you'd like. However, you will have to endure the installation process.
+You can also train with Microsoft Deepspeed's <a href="https://www.deepspeed.ai/news/2020/09/08/sparse-attention.html">Sparse Attention</a>, with any combination of dense and sparse attention that you'd like. However, you will have to endure the installation process.
 
 First, you need to install Deepspeed with Sparse Attention
 
