@@ -292,7 +292,8 @@ class DALLE(nn.Module):
             reversible = reversible,
             attn_dropout = attn_dropout,
             ff_dropout = ff_dropout,
-            sparse_attn = sparse_attn
+            sparse_attn = sparse_attn,
+            sparse_attn_global_indices = range(text_seq_len)
         )
 
         self.to_logits = nn.Sequential(

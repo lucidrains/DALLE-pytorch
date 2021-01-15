@@ -1,5 +1,7 @@
-import torch
+from functools import partial
 from inspect import isfunction
+
+import torch
 from torch import nn, einsum
 import torch.nn.functional as F
 from einops import rearrange, repeat
@@ -10,6 +12,9 @@ from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 
 def exists(val):
     return val is not None
+
+def uniq(arr):
+    return{el: True for el in arr}.keys()
 
 def default(val, d):
     if exists(val):
@@ -89,15 +94,18 @@ class Attention(nn.Module):
         return out
 
 class SparseAttention(Attention):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, sparse_attn_global_indices = [], block_size = 16, **kwargs):
         super().__init__(*args, **kwargs)
         from deepspeed.ops.sparse_attention import SparseSelfAttention, VariableSparsityConfig
-        self.block_size = 16
+
+        self.block_size = block_size
+        global_blocks = uniq(map(lambda t: t // self.block_size, sparse_attn_global_indices))
 
         self.attn_fn = SparseSelfAttention(
             sparsity_config = VariableSparsityConfig(
                 num_heads = self.heads,
                 block = self.block_size,
+                global_block_indices = global_blocks,
                 attention = 'unidirectional' if self.causal else 'bidirectional'
             ),
             max_seq_length = self.seq_len,
@@ -148,14 +156,15 @@ class Transformer(nn.Module):
         ff_mult = 4,
         attn_dropout = 0.,
         ff_dropout = 0.,
-        sparse_attn = True
+        sparse_attn = True,
+        sparse_attn_global_indices = []
     ):
         super().__init__()
         layers = nn.ModuleList([])
         sparse_layer = cast_tuple(sparse_attn, depth)
 
         for _, sparse_attn in zip(range(depth), sparse_layer):
-            attn_class = Attention if not sparse_attn else SparseAttention
+            attn_class = Attention if not sparse_attn else partial(SparseAttention, sparse_attn_global_indices = sparse_attn_global_indices)
 
             layers.append(nn.ModuleList([
                 PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)),
