@@ -94,17 +94,26 @@ class Attention(nn.Module):
         return out
 
 class SparseAttention(Attention):
-    def __init__(self, *args, sparse_attn_global_indices = [], block_size = 16, **kwargs):
+    def __init__(
+        self,
+        *args,
+        block_size = 16,
+        num_random_blocks = None,
+        sparse_attn_global_indices = [],
+        **kwargs
+    ):
         super().__init__(*args, **kwargs)
         from deepspeed.ops.sparse_attention import SparseSelfAttention, VariableSparsityConfig
-
         self.block_size = block_size
-        global_blocks = uniq(map(lambda t: t // self.block_size, sparse_attn_global_indices))
+
+        num_random_blocks = default(num_random_blocks, self.seq_len // block_size // 4)
+        global_blocks = uniq(map(lambda t: t // block_size, sparse_attn_global_indices))
 
         self.attn_fn = SparseSelfAttention(
             sparsity_config = VariableSparsityConfig(
                 num_heads = self.heads,
                 block = self.block_size,
+                num_random_blocks = num_random_blocks,
                 global_block_indices = global_blocks,
                 attention = 'unidirectional' if self.causal else 'bidirectional'
             ),
