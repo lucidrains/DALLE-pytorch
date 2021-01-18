@@ -256,6 +256,7 @@ class DALLE(nn.Module):
         ff_dropout = 0,
         sparse_attn = False,
         noncausal_attn_len = 0,
+        ignore_index = -100
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -279,7 +280,9 @@ class DALLE(nn.Module):
         seq_len = text_seq_len + image_seq_len
         total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
         self.total_tokens = total_tokens
-        
+
+        self.noncausal_attn_len = noncausal_attn_len
+
         self.vae = vae
         if exists(self.vae):
             self.vae = vae
@@ -318,6 +321,8 @@ class DALLE(nn.Module):
         )
 
         self.register_buffer('logits_mask', logits_mask)
+
+        self.ignore_index = ignore_index
 
     @torch.no_grad()
     @eval_decorator
@@ -404,9 +409,15 @@ class DALLE(nn.Module):
             return logits
 
         assert exists(image), 'when training, image must be supplied'
-
+        noncausal_attn_len = self.noncausal_attn_len
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text, offsetted_image), dim = 1)
+
+        if noncausal_attn_len > 0:
+            seq_range = torch.arange(seq_len, device = device)
+            mask = seq_range < (noncausal_attn_len - 1)
+            labels.masked_fill_(mask[None, :], -100) # -100 is the ignore index for cross entropy loss
+
         labels = F.pad(labels, (0, 1), value = eos_token_id) # last token predicts EOS
         loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels[:, 1:])
         return loss
