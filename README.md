@@ -6,7 +6,7 @@ Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E
 
 <a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
 
-Before we replicate this, we can settle for <a href="https://github.com/lucidrains/deep-daze">Deep Daze</a>
+Before we replicate this, we can settle for <a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a>
 
 ## Status
 
