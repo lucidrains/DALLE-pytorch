@@ -254,7 +254,8 @@ class DALLE(nn.Module):
         reversible = False,
         attn_dropout = 0.,
         ff_dropout = 0,
-        sparse_attn = False
+        sparse_attn = False,
+        noncausal_attn_len = 0,
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -294,6 +295,7 @@ class DALLE(nn.Module):
             reversible = reversible,
             attn_dropout = attn_dropout,
             ff_dropout = ff_dropout,
+            noncausal_attn_len = noncausal_attn_len,
             sparse_attn = sparse_attn,
             sparse_attn_global_indices = range(text_seq_len)
         )

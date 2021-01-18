@@ -54,13 +54,15 @@ class FeedForward(nn.Module):
         return self.net(x)
 
 class Attention(nn.Module):
-    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0.):
+    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0., noncausal_attn_len = 0):
         super().__init__()
         inner_dim = dim_head *  heads
         self.heads = heads
         self.seq_len = seq_len
         self.scale = dim ** -0.5
+
         self.causal = causal
+        self.noncausal_attn_len = noncausal_attn_len
 
         self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
         self.to_out = nn.Sequential(
@@ -84,6 +86,11 @@ class Attention(nn.Module):
         if self.causal:
             i, j = dots.shape[-2:]
             mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
+
+            if self.noncausal_attn_len > 0:
+                ind = slice(0, self.noncausal_attn_len)
+                mask[ind, ind] = False
+
             dots.masked_fill_(mask, mask_value)
 
         attn = dots.softmax(dim=-1)
@@ -146,6 +153,10 @@ class SparseAttention(Attention):
             mask_value = -(torch.finfo(q.dtype).max / 2)
             attn_mask.masked_fill_(mask, mask_value)
 
+            if self.noncausal_attn_len:
+                ind = slice(0, self.noncausal_attn_len)
+                attn_mask[ind, ind] = 0.
+
         out = self.attn_fn(q, k, v, attn_mask = attn_mask, key_padding_mask = key_pad_mask)
         out = rearrange(out, 'b h n d -> b n (h d)')
         out = self.to_out(out)
@@ -165,6 +176,7 @@ class Transformer(nn.Module):
         ff_mult = 4,
         attn_dropout = 0.,
         ff_dropout = 0.,
+        noncausal_attn_len = 0,
         sparse_attn = True,
         sparse_attn_global_indices = []
     ):
@@ -176,7 +188,7 @@ class Transformer(nn.Module):
             attn_class = Attention if not sparse_attn else partial(SparseAttention, sparse_attn_global_indices = sparse_attn_global_indices)
 
             layers.append(nn.ModuleList([
-                PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)),
+                PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout, noncausal_attn_len = noncausal_attn_len)),
                 PreNorm(dim, FeedForward(dim, mult = ff_mult, dropout = ff_dropout))
             ]))
 
