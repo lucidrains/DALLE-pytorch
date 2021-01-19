@@ -268,7 +268,7 @@ class DALLE(nn.Module):
         self.text_emb = nn.Embedding(num_text_tokens, dim)
         self.image_emb = nn.Embedding(num_image_tokens, dim)
 
-        self.text_pos_emb = nn.Embedding(text_seq_len, dim)
+        self.text_pos_emb = nn.Embedding(text_seq_len + 1, dim) # +1 for <bos>
         self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_size, image_size))
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
@@ -278,7 +278,7 @@ class DALLE(nn.Module):
         self.image_seq_len = image_seq_len
 
         seq_len = text_seq_len + image_seq_len
-        total_tokens = num_text_tokens + num_image_tokens + 1 # extra for EOS
+        total_tokens = num_text_tokens + num_image_tokens
         self.total_tokens = total_tokens
 
         self.noncausal_attn_len = noncausal_attn_len
@@ -315,9 +315,8 @@ class DALLE(nn.Module):
         logits_range = rearrange(logits_range, 'd -> () () d')
 
         logits_mask = (
-            ((seq_range >= (text_seq_len - 1)) & (logits_range < num_text_tokens)) |
-            ((seq_range < (text_seq_len - 1)) & (logits_range >= num_text_tokens)) |
-            ((seq_range != (seq_len - 1)) & (logits_range >= (total_tokens - 1)))
+            ((seq_range >= text_seq_len) & (logits_range < num_text_tokens)) |
+            ((seq_range < text_seq_len) & (logits_range >= num_text_tokens))
         )
 
         self.register_buffer('logits_mask', logits_mask)
@@ -338,7 +337,8 @@ class DALLE(nn.Module):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
 
-        out = text
+        out = F.pad(text, (1, 0), value = 0)
+
         for cur_len in range(text.shape[1], total_len):
             is_image = cur_len >= text_seq_len
 
@@ -375,8 +375,8 @@ class DALLE(nn.Module):
         return_loss = False
     ):
         device = text.device
-        eos_token_id = self.total_tokens - 1
 
+        text = F.pad(text, (1, 0), value = 0) # use padding as <bos>
         tokens = self.text_emb(text)
         tokens += self.text_pos_emb(torch.arange(text.shape[1], device = device))
 
@@ -393,11 +393,11 @@ class DALLE(nn.Module):
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
 
-            seq_len += image_len
+            seq_len += (image_len - 1)
             if exists(mask):
                 mask = F.pad(mask, (0, image_emb.shape[1]), value = True)
 
-        out = self.transformer(tokens, mask = mask)
+        out = self.transformer(tokens[:, :-1], mask = mask)
         logits = self.to_logits(out)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
@@ -411,13 +411,12 @@ class DALLE(nn.Module):
         assert exists(image), 'when training, image must be supplied'
         noncausal_attn_len = self.noncausal_attn_len
         offsetted_image = image + self.num_text_tokens
-        labels = torch.cat((text, offsetted_image), dim = 1)
+        labels = torch.cat((text[:, 1:], offsetted_image), dim = 1)
 
         if noncausal_attn_len > 0:
             seq_range = torch.arange(seq_len, device = device)
-            mask = seq_range < (noncausal_attn_len - 1)
+            mask = seq_range < noncausal_attn_len
             labels.masked_fill_(mask[None, :], -100) # -100 is the ignore index for cross entropy loss
 
-        labels = F.pad(labels, (0, 1), value = eos_token_id) # last token predicts EOS
-        loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels[:, 1:])
+        loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels)
         return loss
