@@ -87,7 +87,7 @@ class Attention(nn.Module):
             i, j = dots.shape[-2:]
             mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
 
-            if self.noncausal_attn_len > 0:
+            if self.noncausal_attn_len > 1:
                 ind = slice(0, self.noncausal_attn_len)
                 mask[ind, ind] = False
 

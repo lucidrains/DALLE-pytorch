@@ -374,7 +374,7 @@ class DALLE(nn.Module):
         mask = None,
         return_loss = False
     ):
-        device = text.device
+        device, ignore_index = text.device, self.ignore_index
 
         text = F.pad(text, (1, 0), value = 0) # use padding as <bos>
         tokens = self.text_emb(text)
@@ -401,9 +401,9 @@ class DALLE(nn.Module):
         logits = self.to_logits(out)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
-        mask = self.logits_mask[:, :seq_len]
+        logits_mask = self.logits_mask[:, :seq_len]
         max_neg_value = -torch.finfo(logits.dtype).max
-        logits.masked_fill_(mask, max_neg_value)
+        logits.masked_fill_(logits_mask, max_neg_value)
 
         if not return_loss:
             return logits
@@ -415,8 +415,9 @@ class DALLE(nn.Module):
 
         if noncausal_attn_len > 0:
             seq_range = torch.arange(seq_len, device = device)
-            mask = seq_range < noncausal_attn_len
-            labels.masked_fill_(mask[None, :], -100) # -100 is the ignore index for cross entropy loss
+            noncausal_attn_mask = seq_range < noncausal_attn_len
+            noncausal_attn_mask = rearrange(noncausal_attn_mask, 'n -> () n')
+            labels.masked_fill_(noncausal_attn_mask, ignore_index)
 
         loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels)
         return loss
