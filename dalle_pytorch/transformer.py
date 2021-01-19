@@ -177,7 +177,7 @@ class Transformer(nn.Module):
         attn_dropout = 0.,
         ff_dropout = 0.,
         noncausal_attn_len = 0,
-        sparse_attn = True,
+        sparse_attn = False,
         sparse_attn_global_indices = []
     ):
         super().__init__()
