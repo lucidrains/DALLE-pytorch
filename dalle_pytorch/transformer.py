@@ -59,7 +59,7 @@ class Attention(nn.Module):
         inner_dim = dim_head *  heads
         self.heads = heads
         self.seq_len = seq_len
-        self.scale = dim ** -0.5
+        self.scale = dim_head ** -0.5
 
         self.causal = causal
         self.noncausal_attn_len = noncausal_attn_len

@@ -280,6 +280,7 @@ class DALLE(nn.Module):
         seq_len = text_seq_len + image_seq_len
         total_tokens = num_text_tokens + num_image_tokens
         self.total_tokens = total_tokens
+        self.total_seq_len = seq_len
 
         self.noncausal_attn_len = noncausal_attn_len
 
@@ -337,7 +338,7 @@ class DALLE(nn.Module):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
 
-        out = F.pad(text, (1, 0), value = 0)
+        out = text
 
         for cur_len in range(text.shape[1], total_len):
             is_image = cur_len >= text_seq_len
@@ -374,9 +375,13 @@ class DALLE(nn.Module):
         mask = None,
         return_loss = False
     ):
-        device, ignore_index = text.device, self.ignore_index
+        device, ignore_index, total_seq_len = text.device, self.ignore_index, self.total_seq_len
 
         text = F.pad(text, (1, 0), value = 0) # use padding as <bos>
+
+        if exists(mask):
+            mask = F.pad(mask, (1, 0), value = True)
+
         tokens = self.text_emb(text)
         tokens += self.text_pos_emb(torch.arange(text.shape[1], device = device))
 
@@ -393,11 +398,20 @@ class DALLE(nn.Module):
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
 
-            seq_len += (image_len - 1)
+            seq_len += image_len
             if exists(mask):
                 mask = F.pad(mask, (0, image_emb.shape[1]), value = True)
 
-        out = self.transformer(tokens[:, :-1], mask = mask)
+        # when training, if the length exceeds the total text + image length
+        # remove the last token, since it needs not to be trained
+        if tokens.shape[1] > total_seq_len:
+            seq_len -= 1
+            tokens = tokens[:, :-1]
+
+            if exists(mask):
+                mask = mask[:, :-1]
+
+        out = self.transformer(tokens, mask = mask)
         logits = self.to_logits(out)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
