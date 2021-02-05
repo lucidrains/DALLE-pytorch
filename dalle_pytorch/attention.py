@@ -72,7 +72,7 @@ class Attention(nn.Module):
         return out
 
 class SparseConvCausalAttention(nn.Module):
-    def __init__(self, dim, seq_len, image_size = 32, kernel_size = 5, heads = 8, dim_head = 64, dropout = 0., **kwargs):
+    def __init__(self, dim, seq_len, image_size = 32, kernel_size = 5, dilation = 0, heads = 8, dim_head = 64, dropout = 0., **kwargs):
         super().__init__()
         assert kernel_size % 2 == 1, 'kernel size must be odd'
 
@@ -81,6 +81,7 @@ class SparseConvCausalAttention(nn.Module):
         self.scale = dim_head ** -0.5
         self.image_size = image_size
         self.kernel_size = kernel_size
+        self.dilation = dilation
 
         self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
 
@@ -90,7 +91,7 @@ class SparseConvCausalAttention(nn.Module):
         )
 
     def forward(self, x, mask = None):
-        b, n, _, h, img_size, kernel_size, device = *x.shape, self.heads, self.image_size, self.kernel_size, x.device
+        b, n, _, h, img_size, kernel_size, dilation, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, x.device
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
 
@@ -114,8 +115,11 @@ class SparseConvCausalAttention(nn.Module):
 
         # image attention
 
+        effective_kernel_size = (kernel_size - 1) * dilation + 1
+        padding = effective_kernel_size // 2
+
         k_img, v_img = map(lambda t: rearrange(t, 'b (h w) c -> b c h w', h = img_size), (k_img, v_img))
-        k_img, v_img = map(lambda t: F.unfold(t, kernel_size, padding = (kernel_size // 2)), (k_img, v_img))
+        k_img, v_img = map(lambda t: F.unfold(t, kernel_size, padding = padding, dilation = dilation), (k_img, v_img))
         k_img, v_img = map(lambda t: rearrange(t, 'b (j d) i -> b i j d', j = kernel_size ** 2), (k_img, v_img))
 
         k_text, v_text = map(lambda t: repeat(t, 'b j d -> b i j d', i = img_seq_len), (k_text, v_text))
@@ -132,8 +136,8 @@ class SparseConvCausalAttention(nn.Module):
         i, j = dots_image.shape[-2:]
         img_seq = torch.arange(img_seq_len, device = device)
         k_img_indices = rearrange(img_seq.float(), '(h w) -> () () h w', h = img_size)
-        k_img_indices = F.pad(k_img_indices, (kernel_size // 2,) * 4, value = img_seq_len)
-        k_img_indices = F.unfold(k_img_indices, kernel_size)
+        k_img_indices = F.pad(k_img_indices, (padding,) * 4, value = img_seq_len) # padding set to be max, so it is never attended to
+        k_img_indices = F.unfold(k_img_indices, kernel_size, dilation = dilation)
         k_img_indices = rearrange(k_img_indices, 'b j i -> b i j')
 
         # mask image attention
