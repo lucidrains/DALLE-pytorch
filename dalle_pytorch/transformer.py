@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from einops import rearrange, repeat
 
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
-from dalle_pytorch.attention import Attention, SparseAttention
+from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
 
 # helpers
 
