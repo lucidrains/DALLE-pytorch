@@ -73,7 +73,7 @@ class Attention(nn.Module):
 # sparse attention with convolutional pattern, as mentioned in the blog post. customizable kernel size and dilation
 
 class SparseConvCausalAttention(nn.Module):
-    def __init__(self, dim, seq_len, image_size = 32, kernel_size = 5, dilation = 0, heads = 8, dim_head = 64, dropout = 0., **kwargs):
+    def __init__(self, dim, seq_len, image_size = 32, kernel_size = 5, dilation = 1, heads = 8, dim_head = 64, dropout = 0., **kwargs):
         super().__init__()
         assert kernel_size % 2 == 1, 'kernel size must be odd'
 
