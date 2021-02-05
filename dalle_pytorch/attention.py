@@ -1,5 +1,4 @@
 from inspect import isfunction
-from math import sqrt
 
 import torch
 from torch import nn, einsum
@@ -70,6 +69,8 @@ class Attention(nn.Module):
         out = rearrange(out, 'b h n d -> b n (h d)')
         out =  self.to_out(out)
         return out
+
+# sparse attention with convolutional pattern, as mentioned in the blog post. customizable kernel size and dilation
 
 class SparseConvCausalAttention(nn.Module):
     def __init__(self, dim, seq_len, image_size = 32, kernel_size = 5, dilation = 0, heads = 8, dim_head = 64, dropout = 0., **kwargs):
@@ -159,7 +160,6 @@ class SparseConvCausalAttention(nn.Module):
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
         out =  self.to_out(out)
         return out
-
 
 # sparse axial causal attention
 
