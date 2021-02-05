@@ -235,7 +235,7 @@ class CLIP(nn.Module):
 
         sim = einsum('i d, j d -> i j', text_latents, image_latents) * temp
         labels = torch.arange(b, device = device)
-        loss = F.cross_entropy(sim, labels)
+        loss = (F.cross_entropy(sim, labels) + F.cross_entropy(sim.t(), labels)) / 2
         return loss
 
 # main DALL-E class
