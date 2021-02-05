@@ -156,6 +156,94 @@ class SparseConvCausalAttention(nn.Module):
         out =  self.to_out(out)
         return out
 
+
+# sparse axial causal attention
+
+class SparseAxialCausalAttention(nn.Module):
+    def __init__(self, dim, seq_len, image_size = 32, axis = 0, heads = 8, dim_head = 64, dropout = 0., **kwargs):
+        super().__init__()
+        assert axis in {0, 1}, 'axis must be either 0 (along height) or 1 (along width)'
+        self.axis = axis
+
+        inner_dim = dim_head *  heads
+        self.heads = heads
+        self.scale = dim_head ** -0.5
+        self.image_size = image_size
+
+        self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
+
+        self.to_out = nn.Sequential(
+            nn.Linear(inner_dim, dim),
+            nn.Dropout(dropout)
+        )
+
+    def forward(self, x, mask = None):
+        b, n, _, h, img_size, axis, device = *x.shape, self.heads, self.image_size, self.axis, x.device
+        qkv = self.to_qkv(x).chunk(3, dim = -1)
+        q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
+
+        q *= self.scale
+
+        img_seq_len = img_size ** 2
+        text_len = n - img_seq_len
+        ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, img_seq_len:], t[:, -img_seq_len:]), (q, k, v))
+
+        # text attention
+
+        dots_text = einsum('b i d, b j d -> b i j', q_text, k_text)
+        mask_value = max_neg_value(dots_text)
+
+        i, j = dots_text.shape[-2:]
+        mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
+        dots_text.masked_fill(mask, mask_value)
+
+        attn_text = dots_text.softmax(dim = -1)
+        out_text = einsum('b i j, b j d -> b i d', attn_text, v_text)
+
+        # image attention
+
+        split_axis_einops = 'b (h w) c -> (b h) w c' if axis == 0 else 'b (h w) c -> (b w) h c'
+        merge_axis_einops = '(b ax) n d -> b (ax n) d' if axis == 0 else '(b ax) n d -> b (n ax) d'
+
+        # split out axis
+
+        q_img, k_img, v_img = map(lambda t: rearrange(t, split_axis_einops, h = img_size), (q_img, k_img, v_img))
+
+        # prepare text key / values for the image tokens to attend to
+
+        k_text, v_text = map(lambda t: repeat(t, 'b n d -> (b ax) n d', ax = img_size), (k_text, v_text))
+        k_img = torch.cat((k_text, k_img), dim = 1)
+        v_img = torch.cat((v_text, v_img), dim = 1)
+
+        # similarity
+
+        dots_image = einsum('b i d, b j d -> b i j', q_img, k_img)
+
+        # mask so image has full attention to text, but causal along axis
+
+        i, j = dots_image.shape[-2:]
+        mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
+        dots_image.masked_fill_(mask, mask_value)
+
+        # attention.
+
+        attn_image = dots_image.softmax(dim = -1)
+        out_image = einsum('b i j, b j d -> b i d', attn_image, v_img)
+
+        # merge back axis
+
+        out_image = rearrange(out_image, merge_axis_einops, ax = img_size)
+
+        # combine attended values for both text and image
+
+        out = torch.cat((out_text, out_image), dim = 1)
+
+        out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
+        out =  self.to_out(out)
+        return out
+
+# microsoft sparse attention CUDA kernel
+
 class SparseAttention(Attention):
     def __init__(
         self,
