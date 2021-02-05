@@ -143,7 +143,8 @@ class SparseConvCausalAttention(nn.Module):
 
         # mask image attention
 
-        mask = rearrange(img_seq, 'i -> () i ()') <= k_img_indices
+        q_img_indices = rearrange(img_seq, 'i -> () i ()')
+        mask =  q_img_indices >= k_img_indices
 
         # image can attend to all of text
 
