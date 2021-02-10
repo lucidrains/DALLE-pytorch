@@ -17,7 +17,9 @@ def exists(val):
 def default(val, d):
     return val if exists(val) else d
 
-def cast_tuple(val, depth):
+def cast_tuple(val, depth = 1):
+    if isinstance(val, list):
+        val = tuple(val)
     return val if isinstance(val, tuple) else (val,) * depth
 
 # classes
@@ -72,7 +74,9 @@ class Transformer(nn.Module):
         super().__init__()
         layers = nn.ModuleList([])
         sparse_layer = cast_tuple(sparse_attn, depth)
+
         attn_types = default(attn_types, ('full',))
+        attn_types = cast_tuple(attn_types)
         attn_type_layer = islice(cycle(attn_types), depth)
 
         for _, sparse_attn, attn_type in zip(range(depth), sparse_layer, attn_type_layer):
