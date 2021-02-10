@@ -154,9 +154,9 @@ dalle = DALLE(
 
 The blogpost alluded to a mixture of different types of sparse attention, used mainly on the image (while the text presumably had full causal attention). I have done my best to replicate these types of sparse attention, on the scant details released. Primarily, it seems as though they are doing causal axial row / column attention, combined with a causal convolution-like attention.
 
-By default `DALLE` will use full attention for all layers, but you can specify the attention types as follows.
+By default `DALLE` will use full attention for all layers, but you can specify the attention type per layer as follows.
 
-- `full` stands for full attention
+- `full` full attention
 
 - `axial_row` axial attention, along the rows of the image feature map
 
@@ -164,6 +164,7 @@ By default `DALLE` will use full attention for all layers, but you can specify t
 
 - `conv_like` convolution-like attention, for the image feature map
 
+The sparse attention only applies to the image. Text will always receive full attention, as said in the blogpost.
 
 ```python
 d = DALLE(
@@ -174,7 +175,7 @@ d = DALLE(
     depth = 64,
     heads = 16,
     reversible = True,
-    attn_types = ['full', 'axial_row', 'axial_col', 'conv_like']  # cycles between these four types of attention
+    attn_types = ('full', 'axial_row', 'axial_col', 'conv_like')  # cycles between these four types of attention
 )
 ```
 
