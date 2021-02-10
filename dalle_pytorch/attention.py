@@ -97,9 +97,9 @@ class SparseConvCausalAttention(nn.Module):
 
         if n < seq_len:
             padding = seq_len - n
+            mask = default(mask, lambda: torch.ones(b, n, device = device).bool())
             x = F.pad(x, (0, 0, 0, padding), value = 0)
-            if exists(mask):
-                mask = F.pad(x, (0, padding), value = False)
+            mask = F.pad(x, (0, padding), value = False)
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
@@ -196,10 +196,9 @@ class SparseAxialCausalAttention(nn.Module):
 
         if n < seq_len:
             padding = seq_len - n
+            mask = default(mask, lambda: torch.ones(b, n, device = device).bool())
             x = F.pad(x, (0, 0, 0, padding), value = 0)
-
-            if exists(mask):
-                mask = F.pad(x, (0, padding), value = False)
+            mask = F.pad(x, (0, padding), value = False)
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
