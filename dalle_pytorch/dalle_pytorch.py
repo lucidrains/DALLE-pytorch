@@ -256,7 +256,8 @@ class DALLE(nn.Module):
         ff_dropout = 0,
         sparse_attn = False,
         noncausal_attn_len = 0,
-        ignore_index = -100
+        ignore_index = -100,
+        tie_codebook_image_emb = False
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
@@ -285,9 +286,12 @@ class DALLE(nn.Module):
         self.noncausal_attn_len = noncausal_attn_len
 
         self.vae = vae
+        self.tie_codebook_image_emb = tie_codebook_image_emb
         if exists(self.vae):
             self.vae = vae
-            self.image_emb = vae.codebook
+
+            if tie_codebook_image_emb:
+                self.image_emb = vae.codebook
 
         self.transformer = Transformer(
             dim = dim,
@@ -394,6 +398,10 @@ class DALLE(nn.Module):
 
             image_len = image.shape[1]
             image_emb = self.image_emb(image)
+
+            if self.tie_codebook_image_emb:
+                image_emb.detach_()
+
             image_emb += self.image_pos_emb(image_emb)
 
             tokens = torch.cat((tokens, image_emb), dim = 1)
