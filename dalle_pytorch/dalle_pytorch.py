@@ -257,14 +257,16 @@ class DALLE(nn.Module):
         sparse_attn = False,
         noncausal_attn_len = 0,
         ignore_index = -100,
-        tie_codebook_image_emb = False
+        attn_types = None,
+        tie_codebook_image_emb = False,
     ):
         super().__init__()
         assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
 
         image_size = vae.image_size
         num_image_tokens = vae.num_tokens
-        image_seq_len = (vae.image_size // (2 ** vae.num_layers)) ** 2
+        image_fmap_size = (vae.image_size // (2 ** vae.num_layers))
+        image_seq_len = image_fmap_size ** 2
 
         self.text_emb = nn.Embedding(num_text_tokens, dim)
         self.image_emb = nn.Embedding(num_image_tokens, dim)
@@ -304,6 +306,8 @@ class DALLE(nn.Module):
             attn_dropout = attn_dropout,
             ff_dropout = ff_dropout,
             noncausal_attn_len = (noncausal_attn_len + 1),
+            attn_types = attn_types,
+            image_fmap_size = image_fmap_size,
             sparse_attn = sparse_attn,
             sparse_attn_global_indices = range(text_seq_len)
         )

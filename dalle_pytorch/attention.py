@@ -78,6 +78,7 @@ class SparseConvCausalAttention(nn.Module):
         assert kernel_size % 2 == 1, 'kernel size must be odd'
 
         inner_dim = dim_head *  heads
+        self.seq_len = seq_len
         self.heads = heads
         self.scale = dim_head ** -0.5
         self.image_size = image_size
@@ -92,14 +93,21 @@ class SparseConvCausalAttention(nn.Module):
         )
 
     def forward(self, x, mask = None):
-        b, n, _, h, img_size, kernel_size, dilation, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, x.device
+        b, n, _, h, img_size, kernel_size, dilation, seq_len, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, self.seq_len, x.device
+
+        if n < seq_len:
+            padding = seq_len - n
+            x = F.pad(x, (0, 0, 0, padding), value = 0)
+            if exists(mask):
+                mask = F.pad(x, (0, padding), value = False)
+
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
 
         q *= self.scale
 
         img_seq_len = img_size ** 2
-        text_len = n - img_seq_len
+        text_len = seq_len - img_seq_len
         ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, img_seq_len:], t[:, -img_seq_len:]), (q, k, v))
 
         # text attention
@@ -160,7 +168,7 @@ class SparseConvCausalAttention(nn.Module):
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
         out =  self.to_out(out)
-        return out
+        return out[:, :n]
 
 # sparse axial causal attention
 
@@ -171,6 +179,7 @@ class SparseAxialCausalAttention(nn.Module):
         self.axis = axis
 
         inner_dim = dim_head *  heads
+        self.seq_len = seq_len
         self.heads = heads
         self.scale = dim_head ** -0.5
         self.image_size = image_size
@@ -183,14 +192,23 @@ class SparseAxialCausalAttention(nn.Module):
         )
 
     def forward(self, x, mask = None):
-        b, n, _, h, img_size, axis, device = *x.shape, self.heads, self.image_size, self.axis, x.device
+        b, n, _, h, img_size, axis, seq_len, device = *x.shape, self.heads, self.image_size, self.axis, self.seq_len, x.device
+
+        if n < seq_len:
+            padding = seq_len - n
+            x = F.pad(x, (0, 0, 0, padding), value = 0)
+
+            if exists(mask):
+                mask = F.pad(x, (0, padding), value = False)
+
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
 
         q *= self.scale
 
         img_seq_len = img_size ** 2
-        text_len = n - img_seq_len
+        text_len = seq_len - img_seq_len
+
         ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, img_seq_len:], t[:, -img_seq_len:]), (q, k, v))
 
         # text attention
@@ -245,7 +263,7 @@ class SparseAxialCausalAttention(nn.Module):
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
         out =  self.to_out(out)
-        return out
+        return out[:, :n]
 
 # microsoft sparse attention CUDA kernel
 

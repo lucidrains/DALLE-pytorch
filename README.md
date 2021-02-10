@@ -152,6 +152,34 @@ dalle = DALLE(
 
 ## Sparse Attention
 
+The blogpost alluded to a mixture of different types of sparse attention, used mainly on the image (while the text presumably had full causal attention). I have done my best to replicate these types of sparse attention, on the scant details released. Primarily, it seems as though they are doing causal axial row / column attention, combined with a causal convolution-like attention.
+
+By default `DALLE` will use full attention for all layers, but you can specify the attention types as follows.
+
+- `full` stands for full attention
+
+- `axial_row` axial attention, along the rows of the image feature map
+
+- `axial_col` axial attention, along the columns of the image feature map
+
+- `conv_like` convolution-like attention, for the image feature map
+
+
+```python
+d = DALLE(
+    dim = 1024,
+    vae = vae,
+    num_text_tokens = 10000,
+    text_seq_len = 256,
+    depth = 64,
+    heads = 16,
+    reversible = True,
+    attn_types = ['full', 'axial_row', 'axial_col', 'conv_like']  # cycles between these four types of attention
+)
+```
+
+## Deepspeed Sparse Attention
+
 You can also train with Microsoft Deepspeed's <a href="https://www.deepspeed.ai/news/2020/09/08/sparse-attention.html">Sparse Attention</a>, with any combination of dense and sparse attention that you'd like. However, you will have to endure the installation process.
 
 First, you need to install Deepspeed with Sparse Attention
@@ -176,7 +204,7 @@ dalle = DALLE(
     text_seq_len = 256,
     depth = 64,
     heads = 8,
-    sparse_attn = (True, False) * 32  # interleave sparse and dense attention for 64 layers
+    attn_types = ('full', 'sparse')  # interleave sparse and dense attention for 64 layers
 )
 ```
 

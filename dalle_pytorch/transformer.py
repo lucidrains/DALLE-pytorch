@@ -1,14 +1,21 @@
 from functools import partial
+from itertools import islice, cycle
 
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
-from einops import rearrange, repeat
+from einops import rearrange
 
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
 
 # helpers
+
+def exists(val):
+    return val is not None
+
+def default(val, d):
+    return val if exists(val) else d
 
 def cast_tuple(val, depth):
     return val if isinstance(val, tuple) else (val,) * depth
@@ -57,18 +64,33 @@ class Transformer(nn.Module):
         attn_dropout = 0.,
         ff_dropout = 0.,
         noncausal_attn_len = 0,
+        attn_types = None,
+        image_fmap_size = None,
         sparse_attn = False,
         sparse_attn_global_indices = []
     ):
         super().__init__()
         layers = nn.ModuleList([])
         sparse_layer = cast_tuple(sparse_attn, depth)
+        attn_types = default(attn_types, ('full',))
+        attn_type_layer = islice(cycle(attn_types), depth)
 
-        for _, sparse_attn in zip(range(depth), sparse_layer):
-            attn_class = Attention if not sparse_attn else partial(SparseAttention, sparse_attn_global_indices = sparse_attn_global_indices)
+        for _, sparse_attn, attn_type in zip(range(depth), sparse_layer, attn_type_layer):
+            if attn_type == 'full':
+                attn_class = partial(Attention, noncausal_attn_len = noncausal_attn_len)
+            elif attn_type == 'sparse':
+                attn_class = partial(SparseAttention, sparse_attn_global_indices = sparse_attn_global_indices)
+            elif attn_type == 'axial_row':
+                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size)
+            elif attn_type == 'axial_col':
+                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size)
+            elif attn_type == 'conv_like':
+                attn_class = partial(SparseConvCausalAttention, seq_len = seq_len, image_size = image_fmap_size)
+            else:
+                raise ValueError(f'attention type "{attn_type}" is not valid')
 
             layers.append(nn.ModuleList([
-                PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout, noncausal_attn_len = noncausal_attn_len)),
+                PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)),
                 PreNorm(dim, FeedForward(dim, mult = ff_mult, dropout = ff_dropout))
             ]))
 
