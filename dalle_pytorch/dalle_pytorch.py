@@ -255,7 +255,6 @@ class DALLE(nn.Module):
         attn_dropout = 0.,
         ff_dropout = 0,
         sparse_attn = False,
-        noncausal_attn_len = 0,
         ignore_index = -100,
         attn_types = None,
         tie_codebook_image_emb = False,
@@ -285,8 +284,6 @@ class DALLE(nn.Module):
         self.total_tokens = total_tokens
         self.total_seq_len = seq_len
 
-        self.noncausal_attn_len = noncausal_attn_len
-
         self.vae = vae
         self.tie_codebook_image_emb = tie_codebook_image_emb
         if exists(self.vae):
@@ -305,11 +302,9 @@ class DALLE(nn.Module):
             reversible = reversible,
             attn_dropout = attn_dropout,
             ff_dropout = ff_dropout,
-            noncausal_attn_len = (noncausal_attn_len + 1),
             attn_types = attn_types,
             image_fmap_size = image_fmap_size,
-            sparse_attn = sparse_attn,
-            sparse_attn_global_indices = range(text_seq_len)
+            sparse_attn = sparse_attn
         )
 
         self.to_logits = nn.Sequential(
@@ -435,15 +430,8 @@ class DALLE(nn.Module):
             return logits
 
         assert exists(image), 'when training, image must be supplied'
-        noncausal_attn_len = self.noncausal_attn_len
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text[:, 1:], offsetted_image), dim = 1)
-
-        if noncausal_attn_len > 0:
-            seq_range = torch.arange(seq_len, device = device)
-            noncausal_attn_mask = seq_range < noncausal_attn_len
-            noncausal_attn_mask = rearrange(noncausal_attn_mask, 'n -> () n')
-            labels.masked_fill_(noncausal_attn_mask, ignore_index)
 
         loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels)
         return loss

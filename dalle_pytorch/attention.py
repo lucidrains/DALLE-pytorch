@@ -24,7 +24,7 @@ def max_neg_value(t):
 # classes
 
 class Attention(nn.Module):
-    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0., noncausal_attn_len = 0):
+    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0.):
         super().__init__()
         inner_dim = dim_head *  heads
         self.heads = heads
@@ -32,7 +32,6 @@ class Attention(nn.Module):
         self.scale = dim_head ** -0.5
 
         self.causal = causal
-        self.noncausal_attn_len = noncausal_attn_len
 
         self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
         self.to_out = nn.Sequential(
@@ -56,10 +55,6 @@ class Attention(nn.Module):
         if self.causal:
             i, j = dots.shape[-2:]
             mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
-
-            if self.noncausal_attn_len > 1:
-                ind = slice(0, self.noncausal_attn_len)
-                mask[ind, ind] = False
 
             dots.masked_fill_(mask, mask_value)
 
@@ -272,7 +267,6 @@ class SparseAttention(Attention):
         *args,
         block_size = 16,
         num_random_blocks = None,
-        sparse_attn_global_indices = [],
         **kwargs
     ):
         super().__init__(*args, **kwargs)
@@ -280,14 +274,12 @@ class SparseAttention(Attention):
         self.block_size = block_size
 
         num_random_blocks = default(num_random_blocks, self.seq_len // block_size // 4)
-        global_blocks = uniq(map(lambda t: t // block_size, sparse_attn_global_indices))
 
         self.attn_fn = SparseSelfAttention(
             sparsity_config = VariableSparsityConfig(
                 num_heads = self.heads,
                 block = self.block_size,
                 num_random_blocks = num_random_blocks,
-                global_block_indices = global_blocks,
                 attention = 'unidirectional' if self.causal else 'bidirectional'
             ),
             max_seq_length = self.seq_len,
