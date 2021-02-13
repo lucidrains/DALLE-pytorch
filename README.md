@@ -169,7 +169,7 @@ By default `DALLE` will use full attention for all layers, but you can specify t
 The sparse attention only applies to the image. Text will always receive full attention, as said in the blogpost.
 
 ```python
-d = DALLE(
+dalle = DALLE(
     dim = 1024,
     vae = vae,
     num_text_tokens = 10000,
