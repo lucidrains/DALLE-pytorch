@@ -310,10 +310,6 @@ class SparseAttention(Attention):
             mask_value = max_neg_value(q) / 2
             attn_mask.masked_fill_(mask, mask_value)
 
-            if self.noncausal_attn_len:
-                ind = slice(0, self.noncausal_attn_len)
-                attn_mask[ind, ind] = 0.
-
         out = self.attn_fn(q, k, v, attn_mask = attn_mask, key_padding_mask = key_pad_mask)
         out = rearrange(out, 'b h n d -> b n (h d)')
         out = self.to_out(out)
