@@ -48,7 +48,7 @@ class Attention(nn.Module):
         mask_value = max_neg_value(dots)
 
         if exists(mask):
-            mask = rearrange(mask, 'b i -> b () i ()') * rearrange(mask, 'b j -> b () () j')
+            mask = rearrange(mask, 'b j -> b () () j')
             dots.masked_fill_(~mask, mask_value)
             del mask
 
