@@ -73,7 +73,8 @@ class DiscreteVAE(nn.Module):
         hidden_dim = 64,
         channels = 3,
         temperature = 0.9,
-        straight_through = False
+        straight_through = False,
+        kl_div_loss_weight = 1.
     ):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
@@ -119,6 +120,8 @@ class DiscreteVAE(nn.Module):
         self.encoder = nn.Sequential(*enc_layers)
         self.decoder = nn.Sequential(*dec_layers)
 
+        self.kl_div_loss_weight = kl_div_loss_weight
+
     @torch.no_grad()
     def get_codebook_indices(self, images):
         logits = self.forward(images, return_logits = True)
@@ -140,9 +143,11 @@ class DiscreteVAE(nn.Module):
     def forward(
         self,
         img,
-        return_recon_loss = False,
+        return_loss = False,
         return_logits = False
     ):
+        num_tokens, kl_div_loss_weight = self.num_tokens, self.kl_div_loss_weight
+
         logits = self.encoder(img)
 
         if return_logits:
@@ -152,11 +157,22 @@ class DiscreteVAE(nn.Module):
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
         out = self.decoder(sampled)
 
-        if not return_recon_loss:
+        if not return_loss:
             return out
 
-        loss = F.mse_loss(img, out)
-        return loss
+        # reconstruction loss
+
+        recon_loss = F.mse_loss(img, out)
+
+        # kl divergence
+
+        logits = rearrange(logits, 'b n h w -> b (h w) n')
+        qy = F.softmax(logits, dim = -1)
+        log_qy = torch.log(qy + 1e-20)
+        g = torch.log(torch.Tensor([1. / num_tokens]))
+        kl_div = (qy * (log_qy - g)).sum(dim = (1, 2)).mean()
+
+        return recon_loss + (kl_div * kl_div_loss_weight)
 
 # main classes
 
