@@ -146,7 +146,7 @@ class DiscreteVAE(nn.Module):
         return_loss = False,
         return_logits = False
     ):
-        num_tokens, kl_div_loss_weight = self.num_tokens, self.kl_div_loss_weight
+        device, num_tokens, kl_div_loss_weight = img.device, self.num_tokens, self.kl_div_loss_weight
 
         logits = self.encoder(img)
 
@@ -169,7 +169,7 @@ class DiscreteVAE(nn.Module):
         logits = rearrange(logits, 'b n h w -> b (h w) n')
         qy = F.softmax(logits, dim = -1)
         log_qy = torch.log(qy + 1e-20)
-        g = torch.log(torch.Tensor([1. / num_tokens]))
+        g = torch.log(torch.tensor([1. / num_tokens], device = device))
         kl_div = (qy * (log_qy - g)).sum(dim = (1, 2)).mean()
 
         return recon_loss + (kl_div * kl_div_loss_weight)
