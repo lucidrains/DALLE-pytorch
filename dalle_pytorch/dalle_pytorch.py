@@ -166,10 +166,11 @@ class DiscreteVAE(nn.Module):
 
         # kl divergence
 
+        logits = rearrange(logits, 'b n h w -> b (h w) n')
         qy = F.softmax(logits, dim = -1)
         log_qy = torch.log(qy + 1e-20)
         g = torch.log(torch.Tensor([1. / num_tokens]))
-        kl_div = (qy * (log_qy - g)).sum(dim = -1).mean()
+        kl_div = (qy * (log_qy - g)).sum(dim = (1, 2)).mean()
 
         return recon_loss + (kl_div * kl_div_loss_weight)
 
