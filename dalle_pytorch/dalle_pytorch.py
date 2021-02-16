@@ -143,7 +143,7 @@ class DiscreteVAE(nn.Module):
     def forward(
         self,
         img,
-        return_recon_loss = False,
+        return_loss = False,
         return_logits = False
     ):
         num_tokens, kl_div_loss_weight = self.num_tokens, self.kl_div_loss_weight
@@ -157,7 +157,7 @@ class DiscreteVAE(nn.Module):
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
         out = self.decoder(sampled)
 
-        if not return_recon_loss:
+        if not return_loss:
             return out
 
         # reconstruction loss
