@@ -168,9 +168,10 @@ class DiscreteVAE(nn.Module):
 
         logits = rearrange(logits, 'b n h w -> b (h w) n')
         qy = F.softmax(logits, dim = -1)
+
         log_qy = torch.log(qy + 1e-20)
-        g = torch.log(torch.tensor([1. / num_tokens], device = device))
-        kl_div = (qy * (log_qy - g)).sum(dim = (1, 2)).mean()
+        log_uniform = torch.log(torch.tensor([1. / num_tokens], device = device))
+        kl_div = F.kl_div(log_uniform, log_qy, None, None, 'sum', log_target = True)
 
         return recon_loss + (kl_div * kl_div_loss_weight)
 
