@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
-  version = '0.1.7',
+  version = '0.1.8',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -18,7 +18,8 @@ setup(
   install_requires=[
     'axial_positional_embedding',
     'einops>=0.3',
-    'torch>=1.6'
+    'torch>=1.6',
+    'vector-quantize-pytorch'
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
