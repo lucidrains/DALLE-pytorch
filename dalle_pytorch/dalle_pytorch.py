@@ -5,6 +5,7 @@ import torch.nn.functional as F
 
 from einops import rearrange
 from axial_positional_embedding import AxialPositionalEmbedding
+from vector_quantize_pytorch import VectorQuantize
 from dalle_pytorch.transformer import Transformer
 
 # helpers
@@ -123,6 +124,7 @@ class DiscreteVAE(nn.Module):
         self.kl_div_loss_weight = kl_div_loss_weight
 
     @torch.no_grad()
+    @eval_decorator
     def get_codebook_indices(self, images):
         logits = self.forward(images, return_logits = True)
         codebook_indices = logits.argmax(dim = 1).flatten(1)
@@ -174,6 +176,117 @@ class DiscreteVAE(nn.Module):
         kl_div = F.kl_div(log_uniform, log_qy, None, None, 'sum', log_target = True)
 
         return recon_loss + (kl_div * kl_div_loss_weight)
+
+class VQVAE(nn.Module):
+    def __init__(
+        self,
+        image_size = 256,
+        num_tokens = 512,
+        codebook_dim = 512,
+        num_layers = 3,
+        num_resnet_blocks = 0,
+        hidden_dim = 64,
+        channels = 3,
+        vq_decay = 0.8,
+        commitment_weight = 1.
+    ):
+        super().__init__()
+        assert log2(image_size).is_integer(), 'image size must be a power of 2'
+        assert num_layers >= 1, 'number of layers must be greater than or equal to 1'
+        has_resblocks = num_resnet_blocks > 0
+
+        self.image_size = image_size
+        self.num_tokens = num_tokens
+        self.num_layers = num_layers
+
+        self.vq = VectorQuantize(
+            dim = codebook_dim,
+            n_embed = num_tokens,
+            decay = vq_decay,
+            commitment = commitment_weight
+        )
+
+        hdim = hidden_dim
+
+        enc_chans = [hidden_dim] * num_layers
+        dec_chans = list(reversed(enc_chans))
+
+        enc_chans = [channels, *enc_chans]
+
+        dec_init_chan = codebook_dim if not has_resblocks else dec_chans[0]
+        dec_chans = [dec_init_chan, *dec_chans]
+
+        enc_chans_io, dec_chans_io = map(lambda t: list(zip(t[:-1], t[1:])), (enc_chans, dec_chans))
+
+        enc_layers = []
+        dec_layers = []
+
+        for (enc_in, enc_out), (dec_in, dec_out) in zip(enc_chans_io, dec_chans_io):
+            enc_layers.append(nn.Sequential(nn.Conv2d(enc_in, enc_out, 4, stride = 2, padding = 1), nn.ReLU()))
+            dec_layers.append(nn.Sequential(nn.ConvTranspose2d(dec_in, dec_out, 4, stride = 2, padding = 1), nn.ReLU()))
+
+        for _ in range(num_resnet_blocks):
+            dec_layers.insert(0, ResBlock(dec_chans[1]))
+            enc_layers.append(ResBlock(enc_chans[-1]))
+
+        if num_resnet_blocks > 0:
+            dec_layers.insert(0, nn.Conv2d(codebook_dim, dec_chans[1], 1))
+
+        enc_layers.append(nn.Conv2d(enc_chans[-1], codebook_dim, 1))
+        dec_layers.append(nn.Conv2d(dec_chans[-1], channels, 1))
+
+        self.encoder = nn.Sequential(*enc_layers)
+        self.decoder = nn.Sequential(*dec_layers)
+
+    @torch.no_grad()
+    @eval_decorator
+    def get_codebook_indices(self, images):
+        encoded = self.forward(images, return_encoded = True)
+        encoded = rearrange(encoded, 'b c h w -> b (h w) c')
+        _, indices, _ = self.vq(encoded)
+        return indices
+
+    def decode(
+        self,
+        img_seq
+    ):
+        codebook = rearrange(self.vq.embed, 'd n -> n d')
+        image_embeds = codebook[img_seq]
+        b, n, d = image_embeds.shape
+        h = w = int(sqrt(n))
+
+        image_embeds = rearrange(image_embeds, 'b (h w) d -> b d h w', h = h, w = w)
+        images = self.decoder(image_embeds)
+        return images
+
+    def forward(
+        self,
+        img,
+        return_loss = False,
+        return_encoded = False
+    ):
+        shape, device = img.shape, img.device
+
+        encoded = self.encoder(img)
+
+        if return_encoded:
+            return encoded
+
+        h, w = encoded.shape[-2:]
+
+        encoded = rearrange(encoded, 'b c h w -> b (h w) c')
+        quantized, _, commit_loss = self.vq(encoded)
+        quantized = rearrange(quantized, 'b (h w) c -> b c h w', h = h, w = w)
+        out = self.decoder(quantized)
+
+        if not return_loss:
+            return out
+
+        # reconstruction loss and VQ commitment loss
+
+        recon_loss = F.mse_loss(img, out)
+
+        return recon_loss + commit_loss
 
 # main classes
 
@@ -273,11 +386,10 @@ class DALLE(nn.Module):
         ff_dropout = 0,
         sparse_attn = False,
         ignore_index = -100,
-        attn_types = None,
-        tie_codebook_image_emb = False,
+        attn_types = None
     ):
         super().__init__()
-        assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
+        assert isinstance(vae, (DiscreteVAE, VQVAE)), 'vae must be an instance of DiscreteVAE or VQVAE'
 
         image_size = vae.image_size
         num_image_tokens = vae.num_tokens
@@ -302,12 +414,6 @@ class DALLE(nn.Module):
         self.total_seq_len = seq_len
 
         self.vae = vae
-        self.tie_codebook_image_emb = tie_codebook_image_emb
-        if exists(self.vae):
-            self.vae = vae
-
-            if tie_codebook_image_emb:
-                self.image_emb = vae.codebook
 
         self.transformer = Transformer(
             dim = dim,
@@ -414,9 +520,6 @@ class DALLE(nn.Module):
 
             image_len = image.shape[1]
             image_emb = self.image_emb(image)
-
-            if self.tie_codebook_image_emb:
-                image_emb.detach_()
 
             image_emb += self.image_pos_emb(image_emb)
 
