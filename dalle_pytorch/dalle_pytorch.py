@@ -74,7 +74,7 @@ class DiscreteVAE(nn.Module):
         channels = 3,
         temperature = 0.9,
         straight_through = False,
-        kl_div_loss_weight = 1.
+        kl_div_loss_weight = 0.1
     ):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
