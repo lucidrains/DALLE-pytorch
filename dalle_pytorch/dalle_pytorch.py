@@ -148,6 +148,7 @@ class DiscreteVAE(nn.Module):
         self,
         img,
         return_loss = False,
+        return_recons = False,
         return_logits = False
     ):
         device, num_tokens, kl_div_loss_weight = img.device, self.num_tokens, self.kl_div_loss_weight
@@ -177,7 +178,12 @@ class DiscreteVAE(nn.Module):
         log_uniform = torch.log(torch.tensor([1. / num_tokens], device = device))
         kl_div = F.kl_div(log_uniform, log_qy, None, None, 'batchmean', log_target = True)
 
-        return recon_loss + (kl_div * kl_div_loss_weight)
+        loss = recon_loss + (kl_div * kl_div_loss_weight)
+
+        if not return_recons:
+            return loss
+
+        return loss, out
 
 class VQVAE(nn.Module):
     def __init__(
@@ -268,6 +274,7 @@ class VQVAE(nn.Module):
         self,
         img,
         return_loss = False,
+        return_recons = False,
         return_encoded = False
     ):
         shape, device = img.shape, img.device
@@ -291,7 +298,12 @@ class VQVAE(nn.Module):
 
         recon_loss = self.loss_fn(img, out)
 
-        return recon_loss + commit_loss
+        loss = recon_loss + commit_loss
+
+        if not return_recons:
+            return loss
+
+        return loss, out
 
 # main classes
 
