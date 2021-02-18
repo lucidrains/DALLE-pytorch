@@ -39,7 +39,6 @@ vae = DiscreteVAE(
     num_resnet_blocks = 1,    # number of resnet blocks
     temperature = 0.9,        # gumbel softmax temperature, the lower this is, the harder the discretization
     straight_through = False, # straight-through for gumbel softmax. unclear if it is better one way or the other
-    kl_div_loss_weight = 0.1  # weight for kl div loss, for preventing codebook collapse. unsure of what the right value is here, but has been suggested it should be non-zero
 )
 
 images = torch.randn(4, 3, 256, 256)

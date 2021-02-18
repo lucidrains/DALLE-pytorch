@@ -73,9 +73,10 @@ class DiscreteVAE(nn.Module):
         num_resnet_blocks = 0,
         hidden_dim = 64,
         channels = 3,
+        smooth_l1_loss = False,
         temperature = 0.9,
         straight_through = False,
-        kl_div_loss_weight = 0.1
+        kl_div_loss_weight = 0.
     ):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
@@ -121,6 +122,7 @@ class DiscreteVAE(nn.Module):
         self.encoder = nn.Sequential(*enc_layers)
         self.decoder = nn.Sequential(*dec_layers)
 
+        self.loss_fn = F.smooth_l1_loss if smooth_l1_loss else F.mse_loss
         self.kl_div_loss_weight = kl_div_loss_weight
 
     @torch.no_grad()
@@ -164,7 +166,7 @@ class DiscreteVAE(nn.Module):
 
         # reconstruction loss
 
-        recon_loss = F.mse_loss(img, out)
+        recon_loss = self.loss_fn(img, out)
 
         # kl divergence
 
@@ -187,6 +189,7 @@ class VQVAE(nn.Module):
         num_resnet_blocks = 0,
         hidden_dim = 64,
         channels = 3,
+        smooth_l1_loss = False,
         vq_decay = 0.8,
         commitment_weight = 1.
     ):
@@ -238,6 +241,8 @@ class VQVAE(nn.Module):
         self.encoder = nn.Sequential(*enc_layers)
         self.decoder = nn.Sequential(*dec_layers)
 
+        self.loss_fn = F.smooth_l1_loss if smooth_l1_loss else F.mse_loss
+
     @torch.no_grad()
     @eval_decorator
     def get_codebook_indices(self, images):
@@ -284,7 +289,7 @@ class VQVAE(nn.Module):
 
         # reconstruction loss and VQ commitment loss
 
-        recon_loss = F.mse_loss(img, out)
+        recon_loss = self.loss_fn(img, out)
 
         return recon_loss + commit_loss
 
