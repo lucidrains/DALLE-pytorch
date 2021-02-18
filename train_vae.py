@@ -4,6 +4,7 @@ import argparse
 
 import torch
 from torch.optim import Adam
+from torch.optim.lr_scheduler import ExponentialLR
 
 # vision imports
 
@@ -23,16 +24,20 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--image_folder', type = str, required = True,
                     help='path to your folder of images for learning the discrete VAE and its codebook')
 
+parser.add_argument('--image_size', type = int, required = False, default = 128,
+                    help='image size')
+
 args = parser.parse_args()
 
 # constants
 
-IMAGE_SIZE = 128
+IMAGE_SIZE = args.image_size
 IMAGE_PATH = args.image_folder
 
 EPOCHS = 20
 BATCH_SIZE = 8
 LEARNING_RATE = 1e-3
+LR_DECAY_RATE = 0.98
 
 NUM_TOKENS = 8192
 NUM_LAYERS = 2
@@ -40,6 +45,7 @@ NUM_RESNET_BLOCKS = 2
 SMOOTH_L1_LOSS = False
 EMB_DIM = 512
 HID_DIM = 256
+KL_LOSS_WEIGHT = 0
 
 STARTING_TEMP = 1.
 TEMP_MIN = 0.5
@@ -68,7 +74,8 @@ vae = DiscreteVAE(
     codebook_dim = EMB_DIM,
     hidden_dim   = HID_DIM,
     smooth_l1_loss = SMOOTH_L1_LOSS,
-    num_resnet_blocks = NUM_RESNET_BLOCKS
+    num_resnet_blocks = NUM_RESNET_BLOCKS,
+    kl_div_loss_weight = KL_LOSS_WEIGHT
 ).cuda()
 
 
@@ -77,7 +84,8 @@ print(f'{len(ds)} images found for training')
 
 # optimizer
 
-opt = Adam(vae.parameters(), lr=LEARNING_RATE)
+opt = Adam(vae.parameters(), lr = LEARNING_RATE)
+sched = ExponentialLR(optimizer = opt, gamma = LR_DECAY_RATE)
 
 # weights & biases experiment tracking
 
@@ -86,6 +94,7 @@ import wandb
 wandb.config.num_tokens = NUM_TOKENS
 wandb.config.smooth_l1_loss = SMOOTH_L1_LOSS
 wandb.config.num_resnet_blocks = NUM_RESNET_BLOCKS
+wandb.config.kl_loss_weight = KL_LOSS_WEIGHT
 
 wandb.init(project='dalle_train_vae')
 
@@ -132,17 +141,23 @@ for epoch in range(EPOCHS):
             torch.save(vae.state_dict(), f'vae.pt')
             wandb.save('./vae.pt')
 
-            # update temperature for annealing
+            # temperature anneal
 
             temp = max(temp * math.exp(-ANNEAL_RATE * global_step), TEMP_MIN)
 
+            # lr decay
+
+            sched.step()
+
         if i % 10 == 0:
-            print(epoch, i, loss.item())
+            lr = sched.get_last_lr()[0]
+            print(epoch, i, f'lr - {lr:6f} loss - {loss.item()}')
 
             wandb.log({
                 'epoch': epoch,
                 'iter': i,
-                'loss': loss.item()
+                'loss': loss.item(),
+                'lr': lr
             })
 
         global_step += 1
