@@ -21,7 +21,7 @@ from dalle_pytorch import DiscreteVAE, VQVAE
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--image_folder', type = str, required = True,
-                    help='path to your folder of images for self-supervised learning')
+                    help='path to your folder of images for learning the discrete VAE and its codebook')
 
 args = parser.parse_args()
 
