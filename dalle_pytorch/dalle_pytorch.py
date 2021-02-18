@@ -149,7 +149,8 @@ class DiscreteVAE(nn.Module):
         img,
         return_loss = False,
         return_recons = False,
-        return_logits = False
+        return_logits = False,
+        temp = None
     ):
         device, num_tokens, kl_div_loss_weight = img.device, self.num_tokens, self.kl_div_loss_weight
 
@@ -158,7 +159,8 @@ class DiscreteVAE(nn.Module):
         if return_logits:
             return logits # return logits for getting hard image indices for DALL-E training
 
-        soft_one_hot = F.gumbel_softmax(logits, tau = self.temperature, dim = 1, hard = self.straight_through)
+        temp = default(temp, self.temperature)
+        soft_one_hot = F.gumbel_softmax(logits, tau = temp, dim = 1, hard = self.straight_through)
         sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
         out = self.decoder(sampled)
 

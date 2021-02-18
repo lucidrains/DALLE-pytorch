@@ -211,6 +211,44 @@ dalle = DALLE(
 )
 ```
 
+## Training (wip)
+
+This section will outline how to train the discrete variational autoencoder as well as the final multi-modal transformer (DALL-E). We are going to use <a href="https://wandb.ai/">Weights & Biases</a> for all the experiment tracking.
+
+```bash
+$ pip install wandb
+```
+
+Followed by
+
+```bash
+$ wandb login
+```
+
+### VAE
+
+To train the VAE, you just need to run
+
+```python
+$ python train_vae.py --image_folder /path/to/your/images
+```
+
+If you installed everything correctly, a link to the experiments page should show up in your terminal. You can follow your link there and customize your experiment, like the example layout below.
+
+<img src="./images/wb.png" width="700px"></img>
+
+Model will be saved periodically to `./vae.pt`
+
+You will have to monitor the hard reconstruction, as we are essentially teaching the network to compress images into discrete visual tokens for use in the transformer as a visual vocabulary.
+
+Weights and Biases will allow you to monitor the temperature annealing, image reconstructions (encoder and decoder working properly), as well as to watch out for codebook collapse (where the network decides to only use a few tokens out of what you provide it).
+
+Once you have trained a decent VAE to your satisfaction, you can move on to the next step with your model weights at `./vae.pt`.
+
+### DALL-E
+
+Todo
+
 ## Citations
 
 ```bibtex
