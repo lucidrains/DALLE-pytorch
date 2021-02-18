@@ -506,6 +506,7 @@ class DALLE(nn.Module):
         mask = None,
         return_loss = False
     ):
+        assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
         device, ignore_index, total_seq_len = text.device, self.ignore_index, self.total_seq_len
 
         text = F.pad(text, (1, 0), value = 0) # use padding as <bos>
