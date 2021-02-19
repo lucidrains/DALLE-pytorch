@@ -152,7 +152,8 @@ class DiscreteVAE(nn.Module):
         return_logits = False,
         temp = None
     ):
-        device, num_tokens, kl_div_loss_weight = img.device, self.num_tokens, self.kl_div_loss_weight
+        device, num_tokens, image_size, kl_div_loss_weight = img.device, self.num_tokens, self.image_size, self.kl_div_loss_weight
+        assert img.shape[-1] == image_size and img.shape[-2] == image_size, f'input must have the correct image size {image_size}'
 
         logits = self.encoder(img)
 
@@ -535,6 +536,7 @@ class DALLE(nn.Module):
 
         if exists(image) and not is_empty(image):
             is_raw_image = len(image.shape) == 4
+
             if is_raw_image:
                 image = self.vae.get_codebook_indices(image)
 
