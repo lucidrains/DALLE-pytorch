@@ -5,7 +5,7 @@ import torch.nn.functional as F
 
 from einops import rearrange
 from axial_positional_embedding import AxialPositionalEmbedding
-from vector_quantize_pytorch import VectorQuantize
+# from vector_quantize_pytorch import VectorQuantize
 from dalle_pytorch.transformer import Transformer
 
 # helpers
@@ -187,6 +187,56 @@ class DiscreteVAE(nn.Module):
 
         return loss, out
 
+import torch
+from torch import nn
+import torch.nn.functional as F
+
+def ema_inplace(moving_avg, new, decay):
+    moving_avg.data.mul_(decay).add_(new, alpha = (1 - decay))
+
+def laplace_smoothing(x, n_categories, eps=1e-5):
+    return (x + eps) / (x.sum() + n_categories * eps)
+
+class VectorQuantize(nn.Module):
+    def __init__(self, dim, n_embed, decay=0.8, commitment=1., eps=1e-5):
+        super().__init__()
+
+        self.dim = dim
+        self.n_embed = n_embed
+        self.decay = decay
+        self.eps = eps
+        self.commitment = commitment
+
+        embed = torch.randn(dim, n_embed)
+        self.register_buffer('embed', embed)
+        self.register_buffer('cluster_size', torch.zeros(n_embed))
+        self.register_buffer('embed_avg', embed.clone())
+
+    def forward(self, input):
+        dtype = input.dtype
+        flatten = input.reshape(-1, self.dim)
+        dist = (
+            flatten.pow(2).sum(1, keepdim=True)
+            - 2 * flatten @ self.embed
+            + self.embed.pow(2).sum(0, keepdim=True)
+        )
+        _, embed_ind = (-dist).max(1)
+        embed_onehot = F.one_hot(embed_ind, self.n_embed).type(dtype)
+        embed_ind = embed_ind.view(*input.shape[:-1])
+
+        logits = F.gumbel_softmax(-dist, dim = 1, tau = 0.9, hard = False)
+        soft_out = logits.view(*input.shape[:-1], -1) @ self.embed.t()
+
+        if self.training:
+            ema_inplace(self.cluster_size, embed_onehot.sum(0), self.decay)
+            embed_sum = flatten.transpose(0, 1) @ embed_onehot
+            ema_inplace(self.embed_avg, embed_sum, self.decay)
+            cluster_size = laplace_smoothing(self.cluster_size, self.n_embed, self.eps) * self.cluster_size.sum()
+            embed_normalized = self.embed_avg / cluster_size.unsqueeze(0)
+            self.embed.data.copy_(embed_normalized)
+
+        return soft_out, embed_ind
+
 class VQVAE(nn.Module):
     def __init__(
         self,
@@ -256,7 +306,7 @@ class VQVAE(nn.Module):
     def get_codebook_indices(self, images):
         encoded = self.forward(images, return_encoded = True)
         encoded = rearrange(encoded, 'b c h w -> b (h w) c')
-        _, indices, _ = self.vq(encoded)
+        _, indices = self.vq(encoded)
         return indices
 
     def decode(
@@ -289,7 +339,7 @@ class VQVAE(nn.Module):
         h, w = encoded.shape[-2:]
 
         encoded = rearrange(encoded, 'b c h w -> b (h w) c')
-        quantized, _, commit_loss = self.vq(encoded)
+        quantized, _ = self.vq(encoded)
         quantized = rearrange(quantized, 'b (h w) c -> b c h w', h = h, w = w)
         out = self.decoder(quantized)
 
@@ -300,7 +350,7 @@ class VQVAE(nn.Module):
 
         recon_loss = self.loss_fn(img, out)
 
-        loss = recon_loss + commit_loss
+        loss = recon_loss
 
         if not return_recons:
             return loss
