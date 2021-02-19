@@ -15,7 +15,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle classes
 
-from dalle_pytorch import DiscreteVAE, VQVAE
+from dalle_pytorch import DiscreteVAE
 
 # argument parsing
 
@@ -67,14 +67,18 @@ ds = ImageFolder(
 
 dl = DataLoader(ds, BATCH_SIZE, shuffle = True)
 
-vae = DiscreteVAE(
+vae_params = dict(
     image_size = IMAGE_SIZE,
     num_layers = NUM_LAYERS,
     num_tokens = NUM_TOKENS,
     codebook_dim = EMB_DIM,
     hidden_dim   = HID_DIM,
+    num_resnet_blocks = NUM_RESNET_BLOCKS
+)
+
+vae = DiscreteVAE(
+    **vae_params,
     smooth_l1_loss = SMOOTH_L1_LOSS,
-    num_resnet_blocks = NUM_RESNET_BLOCKS,
     kl_div_loss_weight = KL_LOSS_WEIGHT
 ).cuda()
 
@@ -119,6 +123,8 @@ for epoch in range(EPOCHS):
         loss.backward()
         opt.step()
 
+        logs = {}
+
         if i % 100 == 0:
             k = NUM_IMAGES_SAVE
 
@@ -130,15 +136,21 @@ for epoch in range(EPOCHS):
             images, recons, hard_recons, codes = map(lambda t: t.detach().cpu(), (images, recons, hard_recons, codes))
             images, recons, hard_recons = map(lambda t: make_grid(t, nrow = int(sqrt(k)), normalize = True, range = (-1, 1)), (images, recons, hard_recons))
 
-            wandb.log({
+            logs = {
+                **logs,
                 'sample images': wandb.Image(images, caption = 'original images'),
                 'reconstructions': wandb.Image(recons, caption = 'reconstructions'),
                 'hard reconstructions': wandb.Image(hard_recons, caption = 'hard reconstructions'),
                 'codebook_indices': wandb.Histogram(codes),
                 'temperature': temp
-            })
+            }
 
-            torch.save(vae.state_dict(), f'vae.pt')
+            save_obj = {
+                'hparams': vae_params,
+                'weights': vae.state_dict()
+            }
+
+            torch.save(save_obj, f'vae.pt')
             wandb.save('./vae.pt')
 
             # temperature anneal
@@ -153,17 +165,24 @@ for epoch in range(EPOCHS):
             lr = sched.get_last_lr()[0]
             print(epoch, i, f'lr - {lr:6f} loss - {loss.item()}')
 
-            wandb.log({
+            logs = {
+                **logs,
                 'epoch': epoch,
                 'iter': i,
                 'loss': loss.item(),
                 'lr': lr
-            })
+            }
 
+        wandb.log(logs)
         global_step += 1
 
 # save final vae and cleanup
 
-torch.save(vae.state_dict(), 'vae-final.pt')
+save_obj = {
+    'hparams': vae_params,
+    'weights': vae.state_dict()
+}
+
+torch.save(save_obj, 'vae-final.pt')
 wandb.save('./vae-final.pt')
 wandb.finish()
