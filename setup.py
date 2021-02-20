@@ -19,7 +19,7 @@ setup(
   install_requires=[
     'axial_positional_embedding',
     'einops>=0.3',
-    'pillow,'
+    'pillow',
     'torch>=1.6',
     'torchvision',
     'vector-quantize-pytorch'
