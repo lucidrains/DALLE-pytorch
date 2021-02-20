@@ -255,6 +255,7 @@ The dataset I am currently working with contains a folder of images and text fil
 
 ex.
 
+```
 📂image-and-text-data
  ┣ 📜cat.png
  ┣ 📜cat.txt
@@ -262,6 +263,7 @@ ex.
  ┣ 📜dog.txt
  ┣ 📜turtle.jpeg
  ┗ 📜turtle.txt
+```
 
 ex. `cat.txt`
 
