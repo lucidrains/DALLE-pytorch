@@ -4,7 +4,7 @@ setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.1.18',
+  version = '0.1.19',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -19,6 +19,7 @@ setup(
   install_requires=[
     'axial_positional_embedding',
     'einops>=0.3',
+    'pillow,'
     'torch>=1.6',
     'torchvision',
     'vector-quantize-pytorch'

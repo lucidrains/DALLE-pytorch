@@ -87,7 +87,7 @@ loss.backward()
 # do the above for a long time with a lot of data ... then
 
 images = dalle.generate_images(text, mask = mask)
-images.shape # (2, 3, 256, 256)
+images.shape # (4, 3, 256, 256)
 ```
 
 ## Ranking the generations
@@ -249,7 +249,15 @@ Once you have trained a decent VAE to your satisfaction, you can move on to the 
 
 ### DALL-E
 
-Todo
+Now you just have to invoke the `./train_dalle.py` script, indicating which VAE model you would like to use, as well as the path to your folder if images and text.
+
+The dataset I am currently working with contains a folder of images and text files, where text file name corresponds with the image name, and where each text file contains multiple descriptions, delimited by newlines.
+
+If you have a dataset with its own format for tying together image and text descriptions, do let me know in the issues, and I'll accomodate dataset creation logic for you.
+
+```python
+$ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
+```
 
 ## Citations
 
