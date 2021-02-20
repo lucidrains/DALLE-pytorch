@@ -251,9 +251,27 @@ Once you have trained a decent VAE to your satisfaction, you can move on to the 
 
 Now you just have to invoke the `./train_dalle.py` script, indicating which VAE model you would like to use, as well as the path to your folder if images and text.
 
-The dataset I am currently working with contains a folder of images and text files, where text file name corresponds with the image name, and where each text file contains multiple descriptions, delimited by newlines.
+The dataset I am currently working with contains a folder of images and text files, arbitraily nested in subfolders, where text file name corresponds with the image name, and where each text file contains multiple descriptions, delimited by newlines. The script will find and pair all the image and text files with the same names, and randomly select one of the textual descriptions during batch creation.
 
-If you have a dataset with its own format for tying together image and text descriptions, do let me know in the issues, and I'll accomodate dataset creation logic for you.
+ex.
+
+📂image-and-text-data
+ ┣ 📜cat.png
+ ┣ 📜cat.txt
+ ┣ 📜dog.jpg
+ ┣ 📜dog.txt
+ ┣ 📜turtle.jpeg
+ ┗ 📜turtle.txt
+
+ex. `cat.txt`
+
+```text
+A black and white cat curled up next to the fireplace
+A fireplace, with a cat sleeping next to it
+A black cat with a red collar napping
+```
+
+If you have a dataset with its own directory structure for tying together image and text descriptions, do let me know in the issues, and I'll see if I can accommodate it in the script.
 
 ```python
 $ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
