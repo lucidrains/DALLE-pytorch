@@ -4,7 +4,7 @@ setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.1.20',
+  version = '0.1.21',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -22,6 +22,7 @@ setup(
     'pillow',
     'torch>=1.6',
     'torchvision',
+    'tqdm',
     'vector-quantize-pytorch'
   ],
   classifiers=[
