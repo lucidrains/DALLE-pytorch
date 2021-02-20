@@ -211,7 +211,7 @@ dalle = DALLE(
 )
 ```
 
-## Training (wip)
+## Training
 
 This section will outline how to train the discrete variational autoencoder as well as the final multi-modal transformer (DALL-E). We are going to use <a href="https://wandb.ai/">Weights & Biases</a> for all the experiment tracking.
 
