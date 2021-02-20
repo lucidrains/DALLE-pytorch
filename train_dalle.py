@@ -40,9 +40,9 @@ assert vae_path.exists(), 'VAE model file does not exist'
 
 loaded_obj = torch.load(str(vae_path))
 
-hparams, weights = loaded_obj['hparams'], loaded_obj['weights']
+vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
 
-vae = DiscreteVAE(**hparams)
+vae = DiscreteVAE(**vae_params)
 vae.load_state_dict(weights)
 
 # constants
@@ -125,14 +125,18 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 # initialize DALL-E
 
-dalle = DALLE(
-    vae = vae,
+dalle_params = dict(
     num_text_tokens = VOCAB_SIZE,
     text_seq_len = TEXT_SEQ_LEN,
     dim = MODEL_DIM,
     depth = DEPTH,
     heads = HEADS,
     dim_head = DIM_HEAD
+)
+
+dalle = DALLE(
+    **dalle_params,
+    vae = vae
 ).cuda()
 
 # optimizer
@@ -142,6 +146,11 @@ opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
 # experiment tracker
 
 import wandb
+
+wandb.config.depth = DEPTH
+wandb.config.heads = HEADS
+wandb.config.dim_head = DIM_HEAD
+
 wandb.init(project = 'dalle_train_transformer')
 
 # training
@@ -181,7 +190,13 @@ for epoch in range(EPOCHS):
                 filter_thres = 0.9    # topk sampling at 0.9
             )
 
-            torch.save(dalle.state_dict(), f'./dalle.pt')
+            save_obj = {
+                'hparams': dalle_params,
+                'vae_params': vae_params,
+                'weights': dalle.state_dict()
+            }
+
+            torch.save(save_obj, f'./dalle.pt')
 
             log = {
                 **log,
@@ -190,5 +205,11 @@ for epoch in range(EPOCHS):
 
         wandb.log(log)
 
-torch.save(dalle.state_dict(), f'./dalle.pt')
+save_obj = {
+    'hparams': dalle_params,
+    'vae_params': vae_params,
+    'weights': dalle.state_dict()
+}
+
+torch.save(dalle.state_dict(), f'./dalle-final.pt')
 wandb.finish()

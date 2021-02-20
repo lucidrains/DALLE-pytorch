@@ -279,6 +279,12 @@ If you have a dataset with its own directory structure for tying together image 
 $ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
 ```
 
+### Generation (todo)
+
+```python
+$ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under a full moon'
+```
+
 ## Citations
 
 ```bibtex
