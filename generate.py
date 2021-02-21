@@ -69,8 +69,8 @@ text = repeat(text, '() n -> b n', b = args.num_images)
 outputs = []
 
 for text_chunk in tqdm(text.split(args.batch_size), desc = 'generating images'):
-	output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
-	outputs.append(output)
+    output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
+    outputs.append(output)
 
 outputs = torch.cat(outputs)
 
@@ -80,6 +80,6 @@ outputs_dir = Path(args.outputs_dir) / args.text.replace(' ', '_')
 outputs_dir.mkdir(parents = True, exist_ok = True)
 
 for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
-	save_image(image, outputs_dir / f'{i}.jpg')
+    save_image(image, outputs_dir / f'{i}.jpg')
 
 print(f'created {args.num_images} images at "{str(outputs_dir)}"')

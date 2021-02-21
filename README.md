@@ -1,4 +1,4 @@
-<img src="./banner.jpg" width="500px"></img>
+<img src="./images/banner.jpg" width="500px"></img>
 
 ## DALL-E in Pytorch
 
@@ -280,6 +280,8 @@ $ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
 ```
 
 ### Generation
+
+Once you have successfully trained DALL-E, you can then used the saved model for generation!
 
 ```python
 $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under a full moon'
