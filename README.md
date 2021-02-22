@@ -279,6 +279,12 @@ If you have a dataset with its own directory structure for tying together image 
 $ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
 ```
 
+You likely will not finish DALL-E training as quickly as you did your Discrete VAE. To resume from where you left off, just run the same script, but with the path to your DALL-E checkpoints.
+
+```python
+$ python train_dalle.py --dalle_path ./dalle.pt --image_text_folder /path/to/data
+```
+
 ### Generation
 
 Once you have successfully trained DALL-E, you can then used the saved model for generation!

@@ -25,36 +25,23 @@ from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--vae_path', type = str, required = True,
+group = parser.add_mutually_exclusive_group(required = True)
+
+group.add_argument('--vae_path', type = str,
                     help='path to your trained discrete VAE')
+
+group.add_argument('--dalle_path', type = str,
+                    help='path to your partially trained DALL-E')
 
 parser.add_argument('--image_text_folder', type = str, required = True,
                     help='path to your folder of images and text for learning the DALL-E')
 
 args = parser.parse_args()
 
-# reconstitute vae
-
-vae_path = Path(args.vae_path)
-assert vae_path.exists(), 'VAE model file does not exist'
-
-loaded_obj = torch.load(str(vae_path))
-
-vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
-
-vae = DiscreteVAE(**vae_params)
-vae.load_state_dict(weights)
-
 # helpers
 
-def save_model(path):
-    save_obj = {
-        'hparams': dalle_params,
-        'vae_params': vae_params,
-        'weights': dalle.state_dict()
-    }
-
-    torch.save(save_obj, path)
+def exists(val):
+    return val is not None
 
 # constants
 
@@ -69,7 +56,58 @@ DEPTH = 2
 HEADS = 4
 DIM_HEAD = 64
 
-IMAGE_SIZE = vae.image_size
+# reconstitute vae
+
+if exists(args.vae_path):
+    vae_path = Path(args.vae_path)
+    assert vae_path.exists(), 'VAE model file does not exist'
+
+    loaded_obj = torch.load(str(vae_path))
+
+    vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
+
+    vae = DiscreteVAE(**vae_params)
+    vae.load_state_dict(weights)
+
+    dalle_params = dict(
+        vae = vae,
+        num_text_tokens = VOCAB_SIZE,
+        text_seq_len = TEXT_SEQ_LEN,
+        dim = MODEL_DIM,
+        depth = DEPTH,
+        heads = HEADS,
+        dim_head = DIM_HEAD
+    )
+
+    IMAGE_SIZE = vae.image_size
+
+elif exists(args.dalle_path):
+    dalle_path = Path(args.dalle_path)
+    assert dalle_path.exists(), 'DALL-E model file does not exist'
+
+    loaded_obj = torch.load(args.dalle_path)
+
+    dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
+
+    vae = DiscreteVAE(**vae_params)
+
+    dalle_params = dict(
+        vae = vae,
+        **dalle_params
+    )
+
+    IMAGE_SIZE = vae_params['image_size']
+
+# helpers
+
+def save_model(path):
+    save_obj = {
+        'hparams': dalle_params,
+        'vae_params': vae_params,
+        'weights': dalle.state_dict()
+    }
+
+    torch.save(save_obj, path)
 
 # dataset loading
 
@@ -137,19 +175,10 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 # initialize DALL-E
 
-dalle_params = dict(
-    num_text_tokens = VOCAB_SIZE,
-    text_seq_len = TEXT_SEQ_LEN,
-    dim = MODEL_DIM,
-    depth = DEPTH,
-    heads = HEADS,
-    dim_head = DIM_HEAD
-)
+dalle = DALLE(**dalle_params).cuda()
 
-dalle = DALLE(
-    **dalle_params,
-    vae = vae
-).cuda()
+if exists(args.dalle_path):
+    dalle.load_state_dict(weights)
 
 # optimizer
 
@@ -163,7 +192,7 @@ wandb.config.depth = DEPTH
 wandb.config.heads = HEADS
 wandb.config.dim_head = DIM_HEAD
 
-wandb.init(project = 'dalle_train_transformer')
+wandb.init(project = 'dalle_train_transformer', resume = exists(args.dalle_path))
 
 # training
 
