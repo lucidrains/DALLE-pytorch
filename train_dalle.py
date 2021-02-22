@@ -45,6 +45,17 @@ vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
 vae = DiscreteVAE(**vae_params)
 vae.load_state_dict(weights)
 
+# helpers
+
+def save_model(path):
+    save_obj = {
+        'hparams': dalle_params,
+        'vae_params': vae_params,
+        'weights': dalle.state_dict()
+    }
+
+    torch.save(save_obj, path)
+
 # constants
 
 EPOCHS = 20
@@ -120,6 +131,7 @@ ds = TextImageDataset(
 )
 
 assert len(ds) > 0, 'dataset is empty'
+print(f'{len(ds)} image-text pairs found for training')
 
 dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
@@ -190,13 +202,8 @@ for epoch in range(EPOCHS):
                 filter_thres = 0.9    # topk sampling at 0.9
             )
 
-            save_obj = {
-                'hparams': dalle_params,
-                'vae_params': vae_params,
-                'weights': dalle.state_dict()
-            }
-
-            torch.save(save_obj, f'./dalle.pt')
+            save_model(f'./dalle.pt')
+            wandb.save(f'./dalle.pt')
 
             log = {
                 **log,
@@ -205,11 +212,6 @@ for epoch in range(EPOCHS):
 
         wandb.log(log)
 
-save_obj = {
-    'hparams': dalle_params,
-    'vae_params': vae_params,
-    'weights': dalle.state_dict()
-}
-
-torch.save(dalle.state_dict(), f'./dalle-final.pt')
+save_model(f'./dalle-final.pt')
+wandb.save('./dalle-final.pt')
 wandb.finish()

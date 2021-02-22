@@ -86,6 +86,14 @@ vae = DiscreteVAE(
 assert len(ds) > 0, 'folder does not contain any images'
 print(f'{len(ds)} images found for training')
 
+def save_model(path):
+    save_obj = {
+        'hparams': vae_params,
+        'weights': vae.state_dict()
+    }
+
+    torch.save(save_obj, path)
+
 # optimizer
 
 opt = Adam(vae.parameters(), lr = LEARNING_RATE)
@@ -101,7 +109,6 @@ wandb.config.num_resnet_blocks = NUM_RESNET_BLOCKS
 wandb.config.kl_loss_weight = KL_LOSS_WEIGHT
 
 wandb.init(project='dalle_train_vae')
-
 
 # starting temperature
 
@@ -119,7 +126,7 @@ for epoch in range(EPOCHS):
             temp = temp
         )
 
-        opt.zero_grad()    
+        opt.zero_grad()
         loss.backward()
         opt.step()
 
@@ -134,7 +141,7 @@ for epoch in range(EPOCHS):
 
             images, recons = map(lambda t: t[:k], (images, recons))
             images, recons, hard_recons, codes = map(lambda t: t.detach().cpu(), (images, recons, hard_recons, codes))
-            images, recons, hard_recons = map(lambda t: make_grid(t, nrow = int(sqrt(k)), normalize = True, range = (-1, 1)), (images, recons, hard_recons))
+            images, recons, hard_recons = map(lambda t: make_grid(t.float(), nrow = int(sqrt(k)), normalize = True, range = (-1, 1)), (images, recons, hard_recons))
 
             logs = {
                 **logs,
@@ -145,12 +152,7 @@ for epoch in range(EPOCHS):
                 'temperature': temp
             }
 
-            save_obj = {
-                'hparams': vae_params,
-                'weights': vae.state_dict()
-            }
-
-            torch.save(save_obj, f'vae.pt')
+            save_model(f'./vae.pt')
             wandb.save('./vae.pt')
 
             # temperature anneal
@@ -178,11 +180,6 @@ for epoch in range(EPOCHS):
 
 # save final vae and cleanup
 
-save_obj = {
-    'hparams': vae_params,
-    'weights': vae.state_dict()
-}
-
-torch.save(save_obj, 'vae-final.pt')
+save_model('./vae-final.pt')
 wandb.save('./vae-final.pt')
 wandb.finish()
