@@ -45,6 +45,10 @@ def exists(val):
 
 # constants
 
+VAE_PATH = args.vae_path
+DALLE_PATH = args.dalle_path
+RESUME = exists(DALLE_PATH)
+
 EPOCHS = 20
 BATCH_SIZE = 4
 LEARNING_RATE = 3e-4
@@ -58,8 +62,25 @@ DIM_HEAD = 64
 
 # reconstitute vae
 
-if exists(args.vae_path):
-    vae_path = Path(args.vae_path)
+if RESUME:
+    dalle_path = Path(DALLE_PATH)
+    assert dalle_path.exists(), 'DALL-E model file does not exist'
+
+    loaded_obj = torch.load(str(dalle_path))
+
+    dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
+
+    vae = DiscreteVAE(**vae_params)
+
+    dalle_params = dict(
+        vae = vae,
+        **dalle_params
+    )
+
+    IMAGE_SIZE = vae_params['image_size']
+
+else:
+    vae_path = Path(VAE_PATH)
     assert vae_path.exists(), 'VAE model file does not exist'
 
     loaded_obj = torch.load(str(vae_path))
@@ -81,23 +102,6 @@ if exists(args.vae_path):
 
     IMAGE_SIZE = vae.image_size
 
-elif exists(args.dalle_path):
-    dalle_path = Path(args.dalle_path)
-    assert dalle_path.exists(), 'DALL-E model file does not exist'
-
-    loaded_obj = torch.load(args.dalle_path)
-
-    dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
-
-    vae = DiscreteVAE(**vae_params)
-
-    dalle_params = dict(
-        vae = vae,
-        **dalle_params
-    )
-
-    IMAGE_SIZE = vae_params['image_size']
-
 # helpers
 
 def save_model(path):
@@ -114,7 +118,7 @@ def save_model(path):
 class TextImageDataset(Dataset):
     def __init__(self, folder, text_len = 256, image_size = 128):
         super().__init__()
-        path = Path(args.image_text_folder)
+        path = Path(folder)
 
         text_files = [*path.glob('**/*.txt')]
 
@@ -177,7 +181,7 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 dalle = DALLE(**dalle_params).cuda()
 
-if exists(args.dalle_path):
+if RESUME:
     dalle.load_state_dict(weights)
 
 # optimizer
@@ -192,7 +196,7 @@ wandb.config.depth = DEPTH
 wandb.config.heads = HEADS
 wandb.config.dim_head = DIM_HEAD
 
-wandb.init(project = 'dalle_train_transformer', resume = exists(args.dalle_path))
+wandb.init(project = 'dalle_train_transformer', resume = RESUME)
 
 # training
 
