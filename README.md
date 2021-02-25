@@ -327,6 +327,14 @@ You likely will not finish DALL-E training as quickly as you did your Discrete V
 $ python train_dalle.py --dalle_path ./dalle.pt --image_text_folder /path/to/data
 ```
 
+### DALL-E with OpenAI's VAE
+
+You can now also train DALL-E without having to train the Discrete VAE at all, courtesy to their open-sourcing their model. You simply have to invoke the `train_dalle.py` script without specifying the `--vae_path`
+
+```python
+$ python train_dalle.py --image_text_folder /path/to/coco/dataset
+```
+
 ### Generation
 
 Once you have successfully trained DALL-E, you can then used the saved model for generation!

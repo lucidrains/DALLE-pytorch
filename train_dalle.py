@@ -18,14 +18,14 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
-from dalle_pytorch import DiscreteVAE, DALLE
+from dalle_pytorch import OpenAIDiscreteVAE, DiscreteVAE, DALLE
 from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
 # argument parsing
 
 parser = argparse.ArgumentParser()
 
-group = parser.add_mutually_exclusive_group(required = True)
+group = parser.add_mutually_exclusive_group(required = False)
 
 group.add_argument('--vae_path', type = str,
                     help='path to your trained discrete VAE')
@@ -80,15 +80,23 @@ if RESUME:
     IMAGE_SIZE = vae_params['image_size']
 
 else:
-    vae_path = Path(VAE_PATH)
-    assert vae_path.exists(), 'VAE model file does not exist'
+    if exists(VAE_PATH):
+        vae_path = Path(VAE_PATH)
+        assert vae_path.exists(), 'VAE model file does not exist'
 
-    loaded_obj = torch.load(str(vae_path))
+        loaded_obj = torch.load(str(vae_path))
 
-    vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
+        vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
 
-    vae = DiscreteVAE(**vae_params)
-    vae.load_state_dict(weights)
+        vae = DiscreteVAE(**vae_params)
+        vae.load_state_dict(weights)
+    else:
+        print('using OpenAIs pretrained VAE for encoding images to tokens')
+        vae_params = None
+
+        vae = OpenAIDiscreteVAE()
+
+    IMAGE_SIZE = vae.image_size
 
     dalle_params = dict(
         vae = vae,
@@ -99,8 +107,6 @@ else:
         heads = HEADS,
         dim_head = DIM_HEAD
     )
-
-    IMAGE_SIZE = vae.image_size
 
 # helpers
 
