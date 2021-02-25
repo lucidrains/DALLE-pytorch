@@ -1,4 +1,5 @@
 from inspect import isfunction
+from math import ceil
 
 import torch
 from torch import nn, einsum
@@ -287,6 +288,7 @@ class SparseAttention(Attention):
         self,
         *args,
         block_size = 16,
+        text_seq_len = 256,
         num_random_blocks = None,
         **kwargs
     ):
@@ -301,6 +303,7 @@ class SparseAttention(Attention):
                 num_heads = self.heads,
                 block = self.block_size,
                 num_random_blocks = num_random_blocks,
+                global_block_indices = list(range(ceil(text_seq_len / block_size))),
                 attention = 'unidirectional' if self.causal else 'bidirectional'
             ),
             max_seq_length = self.seq_len,
