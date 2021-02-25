@@ -3,9 +3,8 @@ import torch
 from torch import nn, einsum
 import torch.nn.functional as F
 
-from einops import rearrange
 from axial_positional_embedding import AxialPositionalEmbedding
-from vector_quantize_pytorch import VectorQuantize
+from einops import rearrange
 from dalle_pytorch.transformer import Transformer
 
 # helpers
@@ -186,126 +185,6 @@ class DiscreteVAE(nn.Module):
 
         return loss, out
 
-class VQVAE(nn.Module):
-    def __init__(
-        self,
-        image_size = 256,
-        num_tokens = 512,
-        codebook_dim = 512,
-        num_layers = 3,
-        num_resnet_blocks = 0,
-        hidden_dim = 64,
-        channels = 3,
-        smooth_l1_loss = False,
-        vq_decay = 0.8,
-        commitment_weight = 1.
-    ):
-        super().__init__()
-        assert log2(image_size).is_integer(), 'image size must be a power of 2'
-        assert num_layers >= 1, 'number of layers must be greater than or equal to 1'
-        has_resblocks = num_resnet_blocks > 0
-
-        self.image_size = image_size
-        self.num_tokens = num_tokens
-        self.num_layers = num_layers
-
-        self.vq = VectorQuantize(
-            dim = codebook_dim,
-            n_embed = num_tokens,
-            decay = vq_decay,
-            commitment = commitment_weight
-        )
-
-        hdim = hidden_dim
-
-        enc_chans = [hidden_dim] * num_layers
-        dec_chans = list(reversed(enc_chans))
-
-        enc_chans = [channels, *enc_chans]
-
-        dec_init_chan = codebook_dim if not has_resblocks else dec_chans[0]
-        dec_chans = [dec_init_chan, *dec_chans]
-
-        enc_chans_io, dec_chans_io = map(lambda t: list(zip(t[:-1], t[1:])), (enc_chans, dec_chans))
-
-        enc_layers = []
-        dec_layers = []
-
-        for (enc_in, enc_out), (dec_in, dec_out) in zip(enc_chans_io, dec_chans_io):
-            enc_layers.append(nn.Sequential(nn.Conv2d(enc_in, enc_out, 4, stride = 2, padding = 1), nn.ReLU()))
-            dec_layers.append(nn.Sequential(nn.ConvTranspose2d(dec_in, dec_out, 4, stride = 2, padding = 1), nn.ReLU()))
-
-        for _ in range(num_resnet_blocks):
-            dec_layers.insert(0, ResBlock(dec_chans[1]))
-            enc_layers.append(ResBlock(enc_chans[-1]))
-
-        if num_resnet_blocks > 0:
-            dec_layers.insert(0, nn.Conv2d(codebook_dim, dec_chans[1], 1))
-
-        enc_layers.append(nn.Conv2d(enc_chans[-1], codebook_dim, 1))
-        dec_layers.append(nn.Conv2d(dec_chans[-1], channels, 1))
-
-        self.encoder = nn.Sequential(*enc_layers)
-        self.decoder = nn.Sequential(*dec_layers)
-
-        self.loss_fn = F.smooth_l1_loss if smooth_l1_loss else F.mse_loss
-
-    @torch.no_grad()
-    @eval_decorator
-    def get_codebook_indices(self, images):
-        encoded = self.forward(images, return_encoded = True)
-        encoded = rearrange(encoded, 'b c h w -> b (h w) c')
-        _, indices, _ = self.vq(encoded)
-        return indices
-
-    def decode(
-        self,
-        img_seq
-    ):
-        codebook = rearrange(self.vq.embed, 'd n -> n d')
-        image_embeds = codebook[img_seq]
-        b, n, d = image_embeds.shape
-        h = w = int(sqrt(n))
-
-        image_embeds = rearrange(image_embeds, 'b (h w) d -> b d h w', h = h, w = w)
-        images = self.decoder(image_embeds)
-        return images
-
-    def forward(
-        self,
-        img,
-        return_loss = False,
-        return_recons = False,
-        return_encoded = False
-    ):
-        shape, device = img.shape, img.device
-
-        encoded = self.encoder(img)
-
-        if return_encoded:
-            return encoded
-
-        h, w = encoded.shape[-2:]
-
-        encoded = rearrange(encoded, 'b c h w -> b (h w) c')
-        quantized, _, commit_loss = self.vq(encoded)
-        quantized = rearrange(quantized, 'b (h w) c -> b c h w', h = h, w = w)
-        out = self.decoder(quantized)
-
-        if not return_loss:
-            return out
-
-        # reconstruction loss and VQ commitment loss
-
-        recon_loss = self.loss_fn(img, out)
-
-        loss = recon_loss + commit_loss
-
-        if not return_recons:
-            return loss
-
-        return loss, out
-
 # main classes
 
 class CLIP(nn.Module):
@@ -407,7 +286,7 @@ class DALLE(nn.Module):
         attn_types = None
     ):
         super().__init__()
-        assert isinstance(vae, (DiscreteVAE, VQVAE)), 'vae must be an instance of DiscreteVAE or VQVAE'
+        assert isinstance(vae, DiscreteVAE), 'vae must be an instance of DiscreteVAE'
 
         image_size = vae.image_size
         num_image_tokens = vae.num_tokens
@@ -418,7 +297,7 @@ class DALLE(nn.Module):
         self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         self.text_pos_emb = nn.Embedding(text_seq_len + 1, dim) # +1 for <bos>
-        self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_size, image_size))
+        self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_fmap_size, image_fmap_size))
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
         self.num_image_tokens = num_image_tokens
