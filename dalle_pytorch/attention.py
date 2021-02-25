@@ -297,13 +297,14 @@ class SparseAttention(Attention):
         self.block_size = block_size
 
         num_random_blocks = default(num_random_blocks, self.seq_len // block_size // 4)
+        global_block_indices = list(range(ceil(text_seq_len / block_size)))
 
         self.attn_fn = SparseSelfAttention(
             sparsity_config = VariableSparsityConfig(
                 num_heads = self.heads,
                 block = self.block_size,
                 num_random_blocks = num_random_blocks,
-                global_block_indices = list(range(ceil(text_seq_len / block_size))),
+                global_block_indices = global_block_indices,
                 attention = 'unidirectional' if self.causal else 'bidirectional'
             ),
             max_seq_length = self.seq_len,
