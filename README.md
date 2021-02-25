@@ -2,7 +2,7 @@
 
 ## DALL-E in Pytorch
 
-Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a>, OpenAI's Text to Image Transformer, in Pytorch. It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
+Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch. It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
 
 <a href="https://github.com/sdtblck">Sid</a>, <a href="http://github.com/kingoflolz">Ben</a>, and <a href="https://github.com/AranKomat">Aran</a> over at <a href="https://www.eleuther.ai/">Eleuther AI</a> are working on <a href="https://github.com/EleutherAI/DALLE-mtf">DALL-E for Mesh Tensorflow</a>! Please lend them a hand if you would like to see DALL-E trained on TPUs.
 
@@ -304,10 +304,13 @@ You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
 ## Citations
 
 ```bibtex
-@misc{unpublished2021dalle,
-    title   = {DALL·E: Creating Images from Text},
-    author  = {Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, Scott Gray},
-    year    = {2021}
+@misc{ramesh2021zeroshot,
+    title   = {Zero-Shot Text-to-Image Generation}, 
+    author  = {Aditya Ramesh and Mikhail Pavlov and Gabriel Goh and Scott Gray and Chelsea Voss and Alec Radford and Mark Chen and Ilya Sutskever},
+    year    = {2021},
+    eprint  = {2102.12092},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CV}
 }
 ```
 
