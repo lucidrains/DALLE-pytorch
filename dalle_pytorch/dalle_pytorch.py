@@ -175,9 +175,7 @@ class DiscreteVAE(nn.Module):
         # kl divergence
 
         logits = rearrange(logits, 'b n h w -> b (h w) n')
-        qy = F.softmax(logits, dim = -1)
-
-        log_qy = torch.log(qy + 1e-10)
+        log_qy = F.log_softmax(logits, dim = -1)
         log_uniform = torch.log(torch.tensor([1. / num_tokens], device = device))
         kl_div = F.kl_div(log_uniform, log_qy, None, None, 'batchmean', log_target = True)
 
