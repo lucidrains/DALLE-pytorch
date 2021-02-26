@@ -284,7 +284,6 @@ class DALLE(nn.Module):
         attn_dropout = 0.,
         ff_dropout = 0,
         sparse_attn = False,
-        ignore_index = -100,
         attn_types = None
     ):
         super().__init__()
@@ -347,8 +346,6 @@ class DALLE(nn.Module):
 
         self.register_buffer('logits_mask', logits_mask)
 
-        self.ignore_index = ignore_index
-
     @torch.no_grad()
     @eval_decorator
     def generate_images(
@@ -401,7 +398,7 @@ class DALLE(nn.Module):
         return_loss = False
     ):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
-        device, ignore_index, total_seq_len = text.device, self.ignore_index, self.total_seq_len
+        device, total_seq_len = text.device, self.total_seq_len
 
         text = F.pad(text, (1, 0), value = 0) # use padding as <bos>
 
@@ -454,5 +451,5 @@ class DALLE(nn.Module):
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text[:, 1:], offsetted_image), dim = 1)
 
-        loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels)
+        loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels, ignore_index = 0)
         return loss
