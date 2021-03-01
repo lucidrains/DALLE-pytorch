@@ -79,6 +79,7 @@ class OpenAIDiscreteVAE(nn.Module):
 
     @torch.no_grad()
     def get_codebook_indices(self, img):
+        img = map_pixels(img)
         z_logits = self.enc(img)
         z = torch.argmax(z_logits, dim = 1)
         return rearrange(z, 'b h w -> b (h w)')
