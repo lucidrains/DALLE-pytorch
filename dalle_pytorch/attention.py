@@ -117,7 +117,7 @@ class SparseConvCausalAttention(nn.Module):
 
         i, j = dots_text.shape[-2:]
         text_causal_mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
-        dots_text.masked_fill(text_causal_mask, mask_value)
+        dots_text.masked_fill_(text_causal_mask, mask_value)
 
         attn_text = dots_text.softmax(dim = -1)
         out_text = einsum('b i j, b j d -> b i d', attn_text, v_text)
@@ -226,7 +226,7 @@ class SparseAxialCausalAttention(nn.Module):
 
         i, j = dots_text.shape[-2:]
         text_causal_mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
-        dots_text.masked_fill(text_causal_mask, mask_value)
+        dots_text.masked_fill_(text_causal_mask, mask_value)
 
         attn_text = dots_text.softmax(dim = -1)
         out_text = einsum('b i j, b j d -> b i d', attn_text, v_text)
