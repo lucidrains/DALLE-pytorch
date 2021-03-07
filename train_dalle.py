@@ -144,6 +144,7 @@ class TextImageDataset(Dataset):
         self.image_files = {k: v for k, v in image_files.items() if k in keys}
 
         self.image_tranform = T.Compose([
+            T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
             T.CenterCrop(image_size),
             T.Resize(image_size),
             T.ToTensor(),
