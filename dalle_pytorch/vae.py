@@ -7,8 +7,11 @@ import warnings
 import os
 import hashlib
 import urllib
+import yaml
+from pathlib import Path
 from tqdm import tqdm
 from math import sqrt
+from omegaconf import OmegaConf
 
 import torch
 from torch import nn
@@ -18,25 +21,35 @@ from einops import rearrange
 
 # constants
 
-ENCODER_PATH = 'https://cdn.openai.com/dall-e/encoder.pkl'
-DECODER_PATH = 'https://cdn.openai.com/dall-e/decoder.pkl'
-EPS = 0.1
+CACHE_PATH = os.path.expanduser("~/.cache/dalle")
+
+OPENAI_VAE_ENCODER_PATH = 'https://cdn.openai.com/dall-e/encoder.pkl'
+OPENAI_VAE_DECODER_PATH = 'https://cdn.openai.com/dall-e/decoder.pkl'
+
+VQGAN_VAE_PATH = 'https://heibox.uni-heidelberg.de/f/140747ba53464f49b476/?dl=1'
+VQGAN_VAE_CONFIG_PATH = 'https://heibox.uni-heidelberg.de/f/6ecf2af6c658432c8298/?dl=1'
 
 # helpers methods
+
+def exists(val):
+    return val is not None
+
+def default(val, d):
+    return val if exists(val) else d
 
 def load_model(path):
     with open(path, 'rb') as f:
         return torch.load(f, map_location = torch.device('cpu'))
 
-def map_pixels(x):
-    return (1 - 2 * EPS) * x + EPS
+def map_pixels(x, eps = 0.1):
+    return (1 - 2 * eps) * x + eps
 
-def unmap_pixels(x):
-    return torch.clamp((x - EPS) / (1 - 2 * EPS), 0, 1)
+def unmap_pixels(x, eps = 0.1):
+    return torch.clamp((x - eps) / (1 - 2 * eps), 0, 1)
 
-def download(url, root=os.path.expanduser("~/.cache/dalle")):
-    os.makedirs(root, exist_ok=True)
-    filename = os.path.basename(url)
+def download(url, filename = None, root = CACHE_PATH):
+    os.makedirs(root, exist_ok = True)
+    filename = default(filename, os.path.basename(url))
 
     download_target = os.path.join(root, filename)
     download_target_tmp = os.path.join(root, f'tmp.{filename}')
@@ -60,7 +73,7 @@ def download(url, root=os.path.expanduser("~/.cache/dalle")):
     os.rename(download_target_tmp, download_target)
     return download_target
 
-# adapter class
+# pretrained Discrete VAE from OpenAI
 
 class OpenAIDiscreteVAE(nn.Module):
     def __init__(self):
@@ -71,8 +84,8 @@ class OpenAIDiscreteVAE(nn.Module):
             print(f'you need to "pip install git+https://github.com/openai/DALL-E.git" before you can use the pretrained OpenAI Discrete VAE')
             sys.exit()
 
-        self.enc = load_model(download(ENCODER_PATH))
-        self.dec = load_model(download(DECODER_PATH))
+        self.enc = load_model(download(OPENAI_VAE_ENCODER_PATH))
+        self.dec = load_model(download(OPENAI_VAE_DECODER_PATH))
         self.num_layers = 3
         self.image_size = 256
         self.num_tokens = 8192
@@ -93,6 +106,56 @@ class OpenAIDiscreteVAE(nn.Module):
         x_stats = self.dec(z).float()
         x_rec = unmap_pixels(torch.sigmoid(x_stats[:, :3]))
         return x_rec
+
+    def forward(self, img):
+        raise NotImplemented
+
+# VQGAN from Taming Transformers paper
+# https://arxiv.org/abs/2012.09841
+
+class VQGanVAE1024(nn.Module):
+    def __init__(self):
+        super().__init__()
+        try:
+            from taming.models.vqgan import VQModel
+        except:
+            print(f'you need to "pip install git+https://github.com/CompVis/taming-transformers.git" before you can use the pretrained VQGAN from the Taming Transformers paper')
+            exit()
+
+        model_filename = 'vqgan.1024.model.ckpt'
+        config_filename = 'vqgan.1024.config.yml'
+
+        download(VQGAN_VAE_CONFIG_PATH, config_filename)
+        download(VQGAN_VAE_PATH, model_filename)
+
+        config = OmegaConf.load(str(Path(CACHE_PATH) / config_filename))
+        model = VQModel(**config.model.params)
+
+        state = torch.load(str(PATH(CACHE_PATH) / model_filename), map_location = 'cpu')['state_dict']
+        model.load_state_dict(state, strict = False)
+
+        self.model = model
+
+        self.num_layers = 3
+        self.image_size = 256
+        self.num_tokens = 1024
+
+    @torch.no_grad()
+    def get_codebook_indices(self, img):
+        img = (2 * img) - 1
+        _, _, [_, _, indices] = model.encode(img)
+        return rearrange(indices, 'n b -> b n')
+
+    def decode(self, img_seq):
+        b, n = img_seq.shape
+        one_hot_indices = F.one_hot(img_seq, num_classes = self.num_tokens)
+        z = (one_hot_indices.t().float() @ self.model.quantize.embedding.weight)
+
+        z = rearrange(z, '(h w) b c -> b c h w', h = int(sqrt(n)))
+        img = self.model.decode(z)
+
+        img = (img.clamp(-1., 1.) + 1) * 0.5
+        return img
 
     def forward(self, img):
         raise NotImplemented

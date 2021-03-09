@@ -377,4 +377,15 @@ You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
 }
 ```
 
+```bibtex
+@misc{esser2021taming,
+    title   = {Taming Transformers for High-Resolution Image Synthesis},
+    author  = {Patrick Esser and Robin Rombach and Björn Ommer},
+    year    = {2021},
+    eprint  = {2012.09841},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CV}
+}
+```
+
 *Those who do not want to imitate anything, produce nothing.* - Dali
