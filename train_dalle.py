@@ -147,9 +147,7 @@ class TextImageDataset(Dataset):
             T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
             T.CenterCrop(image_size),
             T.Resize(image_size),
-            T.ToTensor(),
-            T.Lambda(lambda t: t.expand(3, -1, -1)),
-            T.Normalize((0.5,) * 3, (0.5,) * 3)
+            T.ToTensor()
         ])
 
     def __len__(self):
