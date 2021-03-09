@@ -77,7 +77,8 @@ class DiscreteVAE(nn.Module):
         smooth_l1_loss = False,
         temperature = 0.9,
         straight_through = False,
-        kl_div_loss_weight = 0.
+        kl_div_loss_weight = 0.,
+        normalization = ((0.5,) * 3, (0.5,) * 3)
     ):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
@@ -126,6 +127,19 @@ class DiscreteVAE(nn.Module):
         self.loss_fn = F.smooth_l1_loss if smooth_l1_loss else F.mse_loss
         self.kl_div_loss_weight = kl_div_loss_weight
 
+        # take care of normalization within class
+        self.normalization = normalization
+
+    def norm(self, images):
+        if not exists(self.normalization):
+            return images
+
+        means, stds = map(lambda t: torch.as_tensor(t).to(images), self.normalization)
+        means, stds = map(lambda t: rearrange(t, 'c -> () c () ()'), (means, stds))
+        images = images.clone()
+        images.sub_(means).div_(stds)
+        return images
+
     @torch.no_grad()
     @eval_decorator
     def get_codebook_indices(self, images):
@@ -155,6 +169,8 @@ class DiscreteVAE(nn.Module):
     ):
         device, num_tokens, image_size, kl_div_loss_weight = img.device, self.num_tokens, self.image_size, self.kl_div_loss_weight
         assert img.shape[-1] == image_size and img.shape[-2] == image_size, f'input must have the correct image size {image_size}'
+
+        img = self.norm(img)
 
         logits = self.encoder(img)
 

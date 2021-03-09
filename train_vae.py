@@ -58,10 +58,10 @@ NUM_IMAGES_SAVE = 4
 ds = ImageFolder(
     IMAGE_PATH,
     T.Compose([
+        T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
         T.Resize(IMAGE_SIZE),
         T.CenterCrop(IMAGE_SIZE),
-        T.ToTensor(),
-        T.Normalize((0.5,) * 3, (0.5,) * 3)
+        T.ToTensor()
     ])
 )
 
