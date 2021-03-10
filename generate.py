@@ -15,7 +15,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
-from dalle_pytorch import DiscreteVAE, DALLE
+from dalle_pytorch import DiscreteVAE, OpenAIDiscreteVAE, DALLE
 from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
 # argument parsing
@@ -52,7 +52,7 @@ assert dalle_path.exists(), 'trained DALL-E must exist'
 load_obj = torch.load(str(dalle_path))
 dalle_params, vae_params, weights = load_obj.pop('hparams'), load_obj.pop('vae_params'), load_obj.pop('weights')
 
-vae = DiscreteVAE(**vae_params)
+vae = DiscreteVAE(**vae_params) if vae_params is not None else OpenAIDiscreteVAE()
 
 dalle = DALLE(vae = vae, **dalle_params).cuda()
 
