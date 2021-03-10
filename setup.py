@@ -22,6 +22,7 @@ setup(
     'einops>=0.3',
     'ftfy',
     'pillow',
+    'taming-transformers',
     'torch>=1.6',
     'torchvision',
     'tqdm'

@@ -122,6 +122,18 @@ loss = dalle(text, images, mask = mask, return_loss = True)
 loss.backward()
 ```
 
+## Taming Transformer's Pretrained VQGAN VAE
+
+You can also use the pretrained VAE offered by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>! Currently only the VAE with a codebook size of 1024 is offered, with the hope that it may train a little faster than OpenAI's, which has a size of 8192.
+
+```python
+from dalle_pytorch import VQGanVAE1024
+
+vae = VQGanVAE1024()
+
+# the rest is the same as the above example
+```
+
 ## Ranking the generations
 
 Train CLIP
@@ -368,6 +380,17 @@ You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
     eprint  = {2001.04451},
     archivePrefix = {arXiv},
     primaryClass = {cs.LG}
+}
+```
+
+```bibtex
+@misc{esser2021taming,
+    title   = {Taming Transformers for High-Resolution Image Synthesis},
+    author  = {Patrick Esser and Robin Rombach and Björn Ommer},
+    year    = {2021},
+    eprint  = {2012.09841},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CV}
 }
 ```
 

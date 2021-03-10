@@ -18,7 +18,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
-from dalle_pytorch import OpenAIDiscreteVAE, DiscreteVAE, DALLE
+from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
 from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
 # argument parsing
@@ -35,6 +35,8 @@ group.add_argument('--dalle_path', type = str,
 
 parser.add_argument('--image_text_folder', type = str, required = True,
                     help='path to your folder of images and text for learning the DALL-E')
+
+parser.add_argument('--taming', dest='taming', action='store_true')
 
 args = parser.parse_args()
 
@@ -91,10 +93,11 @@ else:
         vae = DiscreteVAE(**vae_params)
         vae.load_state_dict(weights)
     else:
-        print('using OpenAIs pretrained VAE for encoding images to tokens')
+        print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
-        vae = OpenAIDiscreteVAE()
+        vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
+        vae = vae_klass()
 
     IMAGE_SIZE = vae.image_size
 
