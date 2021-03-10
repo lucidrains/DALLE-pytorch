@@ -94,13 +94,7 @@ images.shape # (4, 3, 256, 256)
 
 ## OpenAI's Pretrained VAE
 
-You can also skip the training of the VAE altogether, using the pretrained model released by OpenAI! You will first have to run the following.
-
-```bash
-$ pip install git+https://github.com/openai/DALL-E.git
-```
-
-Then just import and instantiate `OpenAIDiscreteVAE`. It should take care of downloading and caching the model for you auto-magically.
+You can also skip the training of the VAE altogether, using the pretrained model released by OpenAI! The wrapper class should take care of downloading and caching the model for you auto-magically.
 
 ```python
 import torch

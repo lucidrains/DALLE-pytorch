@@ -54,11 +54,11 @@ load_obj = torch.load(str(dalle_path))
 dalle_params, vae_params, weights = load_obj.pop('hparams'), load_obj.pop('vae_params'), load_obj.pop('weights')
 
 if vae_params is not None:
-	vae = DiscreteVAE(**vae_params)
+	  vae = DiscreteVAE(**vae_params)
 elif not args.taming:
-	vae = OpenAIDiscreteVAE()
+	  vae = OpenAIDiscreteVAE()
 else:
-	vae = VQGanVAE1024()
+    vae = VQGanVAE1024()
 
 dalle = DALLE(vae = vae, **dalle_params).cuda()
 

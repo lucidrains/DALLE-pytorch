@@ -82,6 +82,7 @@ class OpenAIDiscreteVAE(nn.Module):
 
         self.enc = load_model(download(OPENAI_VAE_ENCODER_PATH))
         self.dec = load_model(download(OPENAI_VAE_DECODER_PATH))
+
         self.num_layers = 3
         self.image_size = 256
         self.num_tokens = 8192

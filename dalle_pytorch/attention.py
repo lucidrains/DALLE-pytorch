@@ -108,7 +108,7 @@ class SparseConvCausalAttention(nn.Module):
 
         q *= self.scale
 
-        ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, img_seq_len:], t[:, -img_seq_len:]), (q, k, v))
+        ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, :-img_seq_len], t[:, -img_seq_len:]), (q, k, v))
 
         # text attention
 
@@ -217,7 +217,7 @@ class SparseAxialCausalAttention(nn.Module):
 
         q *= self.scale
 
-        ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, img_seq_len:], t[:, -img_seq_len:]), (q, k, v))
+        ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, :-img_seq_len], t[:, -img_seq_len:]), (q, k, v))
 
         # text attention
 

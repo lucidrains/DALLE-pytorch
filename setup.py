@@ -4,7 +4,7 @@ setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.2.5',
+  version = '0.2.8',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -18,6 +18,7 @@ setup(
   ],
   install_requires=[
     'axial_positional_embedding',
+    'DALL-E',
     'einops>=0.3',
     'ftfy',
     'pillow',
