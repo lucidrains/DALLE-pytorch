@@ -12,6 +12,7 @@ from pathlib import Path
 from tqdm import tqdm
 from math import sqrt
 from omegaconf import OmegaConf
+from taming.models.vqgan import VQModel
 
 import torch
 from torch import nn
@@ -78,11 +79,6 @@ def download(url, filename = None, root = CACHE_PATH):
 class OpenAIDiscreteVAE(nn.Module):
     def __init__(self):
         super().__init__()
-        try:
-            import dall_e
-        except:
-            print(f'you need to "pip install git+https://github.com/openai/DALL-E.git" before you can use the pretrained OpenAI Discrete VAE')
-            sys.exit()
 
         self.enc = load_model(download(OPENAI_VAE_ENCODER_PATH))
         self.dec = load_model(download(OPENAI_VAE_DECODER_PATH))
@@ -116,11 +112,6 @@ class OpenAIDiscreteVAE(nn.Module):
 class VQGanVAE1024(nn.Module):
     def __init__(self):
         super().__init__()
-        try:
-            from taming.models.vqgan import VQModel
-        except:
-            print(f'you need to "pip install git+https://github.com/CompVis/taming-transformers.git" before you can use the pretrained VQGAN from the Taming Transformers paper')
-            exit()
 
         model_filename = 'vqgan.1024.model.ckpt'
         config_filename = 'vqgan.1024.config.yml'
@@ -131,7 +122,7 @@ class VQGanVAE1024(nn.Module):
         config = OmegaConf.load(str(Path(CACHE_PATH) / config_filename))
         model = VQModel(**config.model.params)
 
-        state = torch.load(str(PATH(CACHE_PATH) / model_filename), map_location = 'cpu')['state_dict']
+        state = torch.load(str(Path(CACHE_PATH) / model_filename), map_location = 'cpu')['state_dict']
         model.load_state_dict(state, strict = False)
 
         self.model = model
@@ -143,15 +134,15 @@ class VQGanVAE1024(nn.Module):
     @torch.no_grad()
     def get_codebook_indices(self, img):
         img = (2 * img) - 1
-        _, _, [_, _, indices] = model.encode(img)
+        _, _, [_, _, indices] = self.model.encode(img)
         return rearrange(indices, 'n b -> b n')
 
     def decode(self, img_seq):
         b, n = img_seq.shape
-        one_hot_indices = F.one_hot(img_seq, num_classes = self.num_tokens)
-        z = (one_hot_indices.t().float() @ self.model.quantize.embedding.weight)
+        one_hot_indices = F.one_hot(img_seq, num_classes = self.num_tokens).float()
+        z = (one_hot_indices @ self.model.quantize.embedding.weight)
 
-        z = rearrange(z, '(h w) b c -> b c h w', h = int(sqrt(n)))
+        z = rearrange(z, 'b (h w) c -> b c h w', h = int(sqrt(n)))
         img = self.model.decode(z)
 
         img = (img.clamp(-1., 1.) + 1) * 0.5

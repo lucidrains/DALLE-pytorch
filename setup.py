@@ -20,9 +20,8 @@ setup(
     'axial_positional_embedding',
     'einops>=0.3',
     'ftfy',
-    'omegaconf',
     'pillow',
-    'pytorch-lightning',
+    'taming-transformers',
     'torch>=1.6',
     'torchvision',
     'tqdm'
