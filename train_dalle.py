@@ -72,10 +72,12 @@ if RESUME:
 
     dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
 
-    vae = DiscreteVAE(**vae_params)
+    if vae_params is not None:
+        vae = DiscreteVAE(**vae_params)
+    else:
+        vae = OpenAIDiscreteVAE()
 
-    dalle_params = dict(
-        vae = vae,
+    dalle_params = dict(        
         **dalle_params
     )
 
@@ -102,7 +104,6 @@ else:
     IMAGE_SIZE = vae.image_size
 
     dalle_params = dict(
-        vae = vae,
         num_text_tokens = VOCAB_SIZE,
         text_seq_len = TEXT_SEQ_LEN,
         dim = MODEL_DIM,
@@ -187,7 +188,7 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 # initialize DALL-E
 
-dalle = DALLE(**dalle_params).cuda()
+dalle = DALLE(vae = vae, **dalle_params).cuda()
 
 if RESUME:
     dalle.load_state_dict(weights)
