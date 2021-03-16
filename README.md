@@ -126,6 +126,8 @@ loss.backward()
 
 You can also use the pretrained VAE offered by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>! Currently only the VAE with a codebook size of 1024 is offered, with the hope that it may train a little faster than OpenAI's, which has a size of 8192.
 
+In contrast to OpenAI's VAE, it also has an extra layer of downsampling, so the image sequence length is 256 instead of 1024. Whether it will generalize as well as the original DALL-E is up to the citizen scientists out there to discover.
+
 ```python
 from dalle_pytorch import VQGanVAE1024
 
