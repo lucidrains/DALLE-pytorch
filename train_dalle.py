@@ -203,11 +203,13 @@ opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
 
 import wandb
 
-wandb.config.depth = DEPTH
-wandb.config.heads = HEADS
-wandb.config.dim_head = DIM_HEAD
+model_config = dict(
+    depth = DEPTH,
+    heads = HEADS,
+    dim_head = DIM_HEAD
+)
 
-wandb.init(project = 'dalle_train_transformer', resume = RESUME)
+run = wandb.init(project = 'dalle_train_transformer', resume = RESUME, config = model_config)
 
 # training
 
@@ -256,6 +258,16 @@ for epoch in range(EPOCHS):
 
         wandb.log(log)
 
+    # save trained model to wandb as an artifact every epoch's end
+
+    model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
+    model_artifact.add_file('dalle.pt')
+    run.log_artifact(model_artifact)
+
 save_model(f'./dalle-final.pt')
 wandb.save('./dalle-final.pt')
+model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
+model_artifact.add_file('dalle-final.pt')
+run.log_artifact(model_artifact)
+
 wandb.finish()
