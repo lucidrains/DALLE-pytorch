@@ -128,15 +128,16 @@ class VQGanVAE1024(nn.Module):
 
         self.model = model
 
-        self.num_layers = 3
+        self.num_layers = 4
         self.image_size = 256
         self.num_tokens = 1024
 
     @torch.no_grad()
     def get_codebook_indices(self, img):
+        b = img.shape[0]
         img = (2 * img) - 1
         _, _, [_, _, indices] = self.model.encode(img)
-        return rearrange(indices, 'n b -> b n')
+        return rearrange(indices, '(b n) () -> b n', b = b)
 
     def decode(self, img_seq):
         b, n = img_seq.shape
