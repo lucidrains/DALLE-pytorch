@@ -15,10 +15,11 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 ## Status
 
 - <a href="https://github.com/htoyryla">Hannu</a> has managed to train a small 6 layer DALL-E on a dataset of just 2000 landscape images! (2048 visual tokens)
-- <a href="https://github.com/kobiso">Kobiso</a>, a research engineer from Naver, has trained on both the CUBS and COCO dataset <a href="https://github.com/lucidrains/DALLE-pytorch/issues/38#issuecomment-778735034">here</a>, using full and deepspeed sparse attention
-- <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a 32 layer reversible DALL-E <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
 
 <img src="./images/landscape.png"></img>
+
+- <a href="https://github.com/kobiso">Kobiso</a>, a research engineer from Naver, has trained on both the CUBS and COCO dataset <a href="https://github.com/lucidrains/DALLE-pytorch/issues/38#issuecomment-778735034">here</a>, using full and deepspeed sparse attention
+- <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a 32 layer reversible DALL-E <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
 
 ## Install
 
