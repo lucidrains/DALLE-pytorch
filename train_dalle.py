@@ -61,6 +61,7 @@ TEXT_SEQ_LEN = 256
 DEPTH = 2
 HEADS = 4
 DIM_HEAD = 64
+REVERSIBLE = True
 
 # reconstitute vae
 
@@ -109,7 +110,8 @@ else:
         dim = MODEL_DIM,
         depth = DEPTH,
         heads = HEADS,
-        dim_head = DIM_HEAD
+        dim_head = DIM_HEAD,
+        reversible = REVERSIBLE
     )
 
 # helpers

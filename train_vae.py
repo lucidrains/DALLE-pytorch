@@ -103,12 +103,18 @@ sched = ExponentialLR(optimizer = opt, gamma = LR_DECAY_RATE)
 
 import wandb
 
-wandb.config.num_tokens = NUM_TOKENS
-wandb.config.smooth_l1_loss = SMOOTH_L1_LOSS
-wandb.config.num_resnet_blocks = NUM_RESNET_BLOCKS
-wandb.config.kl_loss_weight = KL_LOSS_WEIGHT
+model_config = dict(
+    num_tokens = NUM_TOKENS,
+    smooth_l1_loss = SMOOTH_L1_LOSS,
+    num_resnet_blocks = NUM_RESNET_BLOCKS,
+    kl_loss_weight = KL_LOSS_WEIGHT
+)
 
-wandb.init(project='dalle_train_vae')
+run = wandb.init(
+    project = 'dalle_train_vae',
+    job_type = 'train_model',
+    config = model_config
+)
 
 # starting temperature
 
@@ -145,11 +151,11 @@ for epoch in range(EPOCHS):
 
             logs = {
                 **logs,
-                'sample images': wandb.Image(images, caption = 'original images'),
-                'reconstructions': wandb.Image(recons, caption = 'reconstructions'),
+                'sample images':        wandb.Image(images, caption = 'original images'),
+                'reconstructions':      wandb.Image(recons, caption = 'reconstructions'),
                 'hard reconstructions': wandb.Image(hard_recons, caption = 'hard reconstructions'),
-                'codebook_indices': wandb.Histogram(codes),
-                'temperature': temp
+                'codebook_indices':     wandb.Histogram(codes),
+                'temperature':          temp
             }
 
             save_model(f'./vae.pt')
@@ -178,8 +184,19 @@ for epoch in range(EPOCHS):
         wandb.log(logs)
         global_step += 1
 
+    # save trained model to wandb as an artifact every epoch's end
+
+    model_artifact = wandb.Artifact('trained-vae', type = 'model', metadata = dict(model_config))
+    model_artifact.add_file('vae.pt')
+    run.log_artifact(model_artifact)
+
 # save final vae and cleanup
 
 save_model('./vae-final.pt')
 wandb.save('./vae-final.pt')
+
+model_artifact = wandb.Artifact('trained-vae', type = 'model', metadata = dict(model_config))
+model_artifact.add_file('vae-final.pt')
+run.log_artifact(model_artifact)
+
 wandb.finish()
