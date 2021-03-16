@@ -7,6 +7,7 @@ from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
 
 from dalle_pytorch.vae import OpenAIDiscreteVAE
+from dalle_pytorch.vae import VQGanVAE1024
 from dalle_pytorch.transformer import Transformer
 
 # helpers
@@ -303,7 +304,7 @@ class DALLE(nn.Module):
         attn_types = None
     ):
         super().__init__()
-        assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE)), 'vae must be an instance of DiscreteVAE'
+        assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024)), 'vae must be an instance of DiscreteVAE'
 
         image_size = vae.image_size
         num_image_tokens = vae.num_tokens
