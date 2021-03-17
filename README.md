@@ -95,6 +95,21 @@ images = dalle.generate_images(text, mask = mask)
 images.shape # (4, 3, 256, 256)
 ```
 
+To prime with a starting crop of an image, simply pass two more arguments
+
+```python
+img_prime = torch.randn(4, 3, 256, 256)
+
+images = dalle.generate_images(
+    text,
+    mask = mask,
+    img = img_prime,
+    num_init_img_tokens = (14 * 32)  # you can set the size of the initial crop, defaults to a little less than ~1/2 of the tokens, as done in the paper
+)
+
+images.shape # (4, 3, 256, 256)
+```
+
 ## OpenAI's Pretrained VAE
 
 You can also skip the training of the VAE altogether, using the pretrained model released by OpenAI! The wrapper class should take care of downloading and caching the model for you auto-magically.
