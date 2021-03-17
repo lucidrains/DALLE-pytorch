@@ -150,8 +150,7 @@ class TextImageDataset(Dataset):
 
         self.image_tranform = T.Compose([
             T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
-            T.Resize(image_size),
-            T.CenterCrop(image_size),
+            T.RandomResizedCrop(image_size, scale = (0.6, 1.), ratio = (1, 1)),
             T.ToTensor()
         ])
 
