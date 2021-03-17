@@ -76,14 +76,13 @@ if RESUME:
     if vae_params is not None:
         vae = DiscreteVAE(**vae_params)
     else:
-        vae = OpenAIDiscreteVAE()
-
+        vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
+        vae = vae_klass()
+        
     dalle_params = dict(        
         **dalle_params
     )
-
-    IMAGE_SIZE = vae_params['image_size']
-
+    IMAGE_SIZE = vae.image_size
 else:
     if exists(VAE_PATH):
         vae_path = Path(VAE_PATH)
