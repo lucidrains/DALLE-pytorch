@@ -379,10 +379,14 @@ class DALLE(nn.Module):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
 
+        text = text[:, :text_seq_len] # make sure text is within bounds
         out = text
 
         if exists(img):
-            indices = self.vae.get_codebook_indices(img)
+            image_size = vae.image_size
+            assert img.shape[1] == 3 and img.shape[2] == image_size and img.shape[3] == image_size, f'input image must have the correct image size {image_size}'
+
+            indices = vae.get_codebook_indices(img)
             num_img_tokens = default(num_init_img_tokens, int(0.4375 * image_seq_len))  # OpenAI used 14 * 32 initial tokens to prime
             assert num_img_tokens < image_seq_len, 'number of initial image tokens for priming must be less than the total image token sequence length'
 
