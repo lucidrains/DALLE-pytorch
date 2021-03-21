@@ -24,20 +24,21 @@ def cast_tuple(val, depth = 1):
 
 # classes
 
-class ScaleNorm(nn.Module):
-    def __init__(self, dim, eps = 1e-5):
+class RMSNorm(nn.Module):
+    def __init__(self, dim, eps = 1e-8):
         super().__init__()
+        self.scale = dim ** -0.5
         self.eps = eps
-        self.g = nn.Parameter(torch.ones(1))
+        self.g = nn.Parameter(torch.ones(dim))
 
     def forward(self, x):
-        n = torch.norm(x, dim = -1, keepdim = True).clamp(min = self.eps)
-        return x / n * self.g
+        norm = torch.norm(x, dim = -1, keepdim = True) * self.scale
+        return x / norm.clamp(min = self.eps) * self.g
 
 class PreNorm(nn.Module):
     def __init__(self, dim, fn):
         super().__init__()
-        self.norm = ScaleNorm(dim)
+        self.norm = RMSNorm(dim)
         self.fn = fn
 
     def forward(self, x, **kwargs):

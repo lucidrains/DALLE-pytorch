@@ -8,7 +8,7 @@ from einops import rearrange
 
 from dalle_pytorch.vae import OpenAIDiscreteVAE
 from dalle_pytorch.vae import VQGanVAE1024
-from dalle_pytorch.transformer import Transformer, ScaleNorm
+from dalle_pytorch.transformer import Transformer, RMSNorm
 
 # helpers
 
@@ -346,7 +346,7 @@ class DALLE(nn.Module):
         )
 
         self.to_logits = nn.Sequential(
-            ScaleNorm(dim),
+            RMSNorm(dim),
             nn.Linear(dim, self.total_tokens),
         )
 
