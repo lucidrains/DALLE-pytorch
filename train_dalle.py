@@ -166,7 +166,8 @@ class TextImageDataset(Dataset):
         descriptions = text_file.read_text().split('\n')
         descriptions = list(filter(lambda t: len(t) > 0, descriptions))
         description = choice(descriptions)
-
+        description = " ".join(description.split(" ")[:TEXT_SEQ_LEN-1]) # Trim captions longer than TOKEN_LENGTH
+        
         tokenized_text = tokenize(description).squeeze(0)
         mask = tokenized_text != 0
 
