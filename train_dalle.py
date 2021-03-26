@@ -147,6 +147,7 @@ class TextImageDataset(Dataset):
         self.keys = list(keys)
         self.text_files = {k: v for k, v in text_files.items() if k in keys}
         self.image_files = {k: v for k, v in image_files.items() if k in keys}
+        self.text_len = text_len
 
         self.image_tranform = T.Compose([
             T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
@@ -167,7 +168,7 @@ class TextImageDataset(Dataset):
         descriptions = list(filter(lambda t: len(t) > 0, descriptions))
         description = choice(descriptions)
 
-        tokenized_text = tokenize(description).squeeze(0)
+        tokenized_text = tokenize(description, self.text_len).squeeze(0)
         mask = tokenized_text != 0
 
         image_tensor = self.image_tranform(image)
