@@ -74,11 +74,13 @@ image_size = vae.image_size
 text = tokenize([args.text], dalle.text_seq_len).cuda()
 
 text = repeat(text, '() n -> b n', b = args.num_images)
+# create masks
+mask = text != 0
 
 outputs = []
 
-for text_chunk in tqdm(text.split(args.batch_size), desc = 'generating images'):
-    output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
+for text_chunk, mask in tqdm(zip(text.split(args.batch_size), mask.split(args.batch_size)), desc = 'generating images'):
+    output = dalle.generate_images(text_chunk, mask = mask, filter_thres = args.top_k)
     outputs.append(output)
 
 outputs = torch.cat(outputs)
