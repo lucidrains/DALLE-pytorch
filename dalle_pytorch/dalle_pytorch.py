@@ -302,7 +302,7 @@ class DALLE(nn.Module):
         ff_dropout = 0,
         sparse_attn = False,
         attn_types = None,
-        loss_img_weight=7
+        loss_img_weight = 7
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024)), 'vae must be an instance of DiscreteVAE'
