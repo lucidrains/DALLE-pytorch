@@ -301,7 +301,8 @@ class DALLE(nn.Module):
         attn_dropout = 0.,
         ff_dropout = 0,
         sparse_attn = False,
-        attn_types = None
+        attn_types = None,
+        loss_img_weight=7
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024)), 'vae must be an instance of DiscreteVAE'
@@ -362,6 +363,7 @@ class DALLE(nn.Module):
         )
 
         self.register_buffer('logits_mask', logits_mask)
+        self.loss_img_weight = loss_img_weight
 
     @torch.no_grad()
     @eval_decorator
@@ -488,5 +490,8 @@ class DALLE(nn.Module):
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text[:, 1:], offsetted_image), dim = 1)
 
-        loss = F.cross_entropy(rearrange(logits, 'b n c -> b c n'), labels, ignore_index = 0)
+        logits = rearrange(logits, 'b n c -> b c n')
+        loss_text = F.cross_entropy(logits[:, :, :self.text_seq_len], labels[:, :self.text_seq_len], ignore_index=0)
+        loss_img = F.cross_entropy(logits[:, :, self.text_seq_len:], labels[:, self.text_seq_len:], ignore_index=0)
+        loss = (loss_text + self.loss_img_weight * loss_img) / (self.loss_img_weight + 1)
         return loss
