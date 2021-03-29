@@ -364,7 +364,7 @@ $ python train_dalle.py --image_text_folder /path/to/coco/dataset
 
 ### Generation
 
-Once you have successfully trained DALL-E, you can then used the saved model for generation!
+Once you have successfully trained DALL-E, you can then use the saved model for generation!
 
 ```python
 $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under a full moon'
