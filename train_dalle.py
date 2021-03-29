@@ -62,6 +62,7 @@ DEPTH = 2
 HEADS = 4
 DIM_HEAD = 64
 REVERSIBLE = True
+LOSS_IMG_WEIGHT = 7
 
 # reconstitute vae
 
@@ -110,7 +111,8 @@ else:
         depth = DEPTH,
         heads = HEADS,
         dim_head = DIM_HEAD,
-        reversible = REVERSIBLE
+        reversible = REVERSIBLE,
+        loss_img_weight = LOSS_IMG_WEIGHT
     )
 
 # helpers
