@@ -18,6 +18,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
+from dalle_pytorch import deepspeed_utils
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
 from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
@@ -37,6 +38,8 @@ parser.add_argument('--image_text_folder', type = str, required = True,
                     help='path to your folder of images and text for learning the DALL-E')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
+
+parser = deepspeed_utils.wrap_arg_parser(parser)
 
 args = parser.parse_args()
 
@@ -118,6 +121,9 @@ else:
 # helpers
 
 def save_model(path):
+    if args.local_rank > 0:
+        return
+
     save_obj = {
         'hparams': dalle_params,
         'vae_params': vae_params,
@@ -212,19 +218,40 @@ model_config = dict(
 
 run = wandb.init(project = 'dalle_train_transformer', resume = RESUME, config = model_config)
 
+# distribute
+
+deepspeed_config = {'train_batch_size': BATCH_SIZE}
+
+(distr_dalle, opt, _, _) = deepspeed_utils.maybe_init_deepspeed(
+    args=args,
+    model=dalle,
+    optimizer=opt,
+    model_parameters=dalle.parameters(),
+    training_data=ds if args.deepspeed else dl,
+    config_params=deepspeed_config,
+)
+
 # training
 
 for epoch in range(EPOCHS):
     for i, (text, images, mask) in enumerate(dl):
         text, images, mask = map(lambda t: t.cuda(), (text, images, mask))
 
-        loss = dalle(text, images, mask = mask, return_loss = True)
+        loss = distr_dalle(text, images, mask = mask, return_loss = True)
 
-        loss.backward()
-        clip_grad_norm_(dalle.parameters(), GRAD_CLIP_NORM)
+        if args.deepspeed:
+            distr_dalle.backward(loss)
+        else:
+            loss.backward()
 
-        opt.step()
-        opt.zero_grad()
+        clip_grad_norm_(distr_dalle.parameters(), GRAD_CLIP_NORM)
+
+        if args.deepspeed:
+            distr_dalle.step()
+            # Gradients are automatically zeroed after the step
+        else:
+            opt.step()
+            opt.zero_grad()
 
         log = {}
 
