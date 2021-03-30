@@ -129,6 +129,19 @@ def save_model(path):
 
     torch.save(save_obj, path)
 
+def group_weight(model):
+    group_decay, group_no_decay = [], []
+    for params in model.named_parameters():
+        if 'transformer' in params[0]:
+            if 'bias' in params[0] or 'norm' in params[0]:
+                group_no_decay.append(params[1])
+                continue
+        group_decay.append(params[1])
+
+    assert len(list(model.parameters())) == len(group_decay) + len(group_no_decay)
+    groups = [dict(params=group_decay), dict(params=group_no_decay, weight_decay=.0)]
+    return groups
+
 # dataset loading
 
 class TextImageDataset(Dataset):
@@ -202,7 +215,7 @@ if RESUME:
 # optimizer
 
 if OPTIMIZER is 'adamw':
-    opt = AdamW(dalle.parameters(), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
+    opt = AdamW(group_weight(dalle), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
 else:
     opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
 
