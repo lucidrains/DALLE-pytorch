@@ -253,7 +253,7 @@ for epoch in range(EPOCHS):
                 'epoch': epoch,
                 'iter': i,
                 'loss': loss.item(),
-                'lr': opt.param_groups[0]["lr"].item()*100
+                'lr': opt.param_groups[0]["lr"]
             }
 
         if i % 100 == 0:
