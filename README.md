@@ -372,6 +372,14 @@ $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under 
 
 You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
 
+### Distributed Training with DeepSpeed
+
+You can replace any `$ python <file>.py [args...]` command with
+```sh
+$ deepspeed <file>.py [args...] --deepspeed
+```
+to use the aforementioned DeepSpeed library for distributed training, speeding up your experiments.
+
 ## Citations
 
 ```bibtex
