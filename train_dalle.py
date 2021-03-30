@@ -5,8 +5,9 @@ from pathlib import Path
 # torch
 
 import torch
-from torch.optim import Adam
+from torch.optim import Adam, AdamW
 from torch.nn.utils import clip_grad_norm_
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 # vision imports
 
@@ -63,6 +64,8 @@ HEADS = 4
 DIM_HEAD = 64
 REVERSIBLE = True
 LOSS_IMG_WEIGHT = 7
+OPTIMIZER = "adam"
+LR_DECAY = False
 
 # reconstitute vae
 
@@ -198,7 +201,21 @@ if RESUME:
 
 # optimizer
 
-opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
+if OPTIMIZER is 'adamw':
+    opt = AdamW(dalle.parameters(), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
+else:
+    opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
+
+if LR_DECAY:
+    scheduler = ReduceLROnPlateau(
+        opt,
+        mode = "min",
+        factor = 0.5,
+        patience = 10,
+        cooldown = 10,
+        min_lr = 1e-6,
+        verbose = True,
+    )
 
 # experiment tracker
 
@@ -235,7 +252,8 @@ for epoch in range(EPOCHS):
                 **log,
                 'epoch': epoch,
                 'iter': i,
-                'loss': loss.item()
+                'loss': loss.item(),
+                'lr': opt.param_groups[0]["lr"].item()*100
             }
 
         if i % 100 == 0:
@@ -258,6 +276,9 @@ for epoch in range(EPOCHS):
             }
 
         wandb.log(log)
+
+    if LR_DECAY:
+        scheduler.step(loss)
 
     # save trained model to wandb as an artifact every epoch's end
 
