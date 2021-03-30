@@ -2,6 +2,8 @@ import math
 from math import sqrt
 import argparse
 
+# torch
+
 import torch
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ExponentialLR
@@ -13,8 +15,9 @@ from torch.utils.data import DataLoader
 from torchvision.datasets import ImageFolder
 from torchvision.utils import make_grid, save_image
 
-# dalle classes
+# dalle classes and utils
 
+from dalle_pytorch import deepspeed_utils
 from dalle_pytorch import DiscreteVAE
 
 # argument parsing
@@ -26,6 +29,8 @@ parser.add_argument('--image_folder', type = str, required = True,
 
 parser.add_argument('--image_size', type = int, required = False, default = 128,
                     help='image size')
+
+parser = deepspeed_utils.wrap_arg_parser(parser)
 
 args = parser.parse_args()
 
@@ -87,6 +92,9 @@ assert len(ds) > 0, 'folder does not contain any images'
 print(f'{len(ds)} images found for training')
 
 def save_model(path):
+    if args.local_rank > 0:
+        return
+
     save_obj = {
         'hparams': vae_params,
         'weights': vae.state_dict()
@@ -116,6 +124,19 @@ run = wandb.init(
     config = model_config
 )
 
+# distribute with deepspeed
+
+deepspeed_config = {'train_batch_size': BATCH_SIZE}
+
+(distr_vae, opt, dl, _) = deepspeed_utils.maybe_init_deepspeed(
+    args=args,
+    model=vae,
+    optimizer=opt,
+    model_parameters=vae.parameters(),
+    training_data=ds if args.deepspeed else dl,
+    config_params=deepspeed_config,
+)
+
 # starting temperature
 
 global_step = 0
@@ -125,16 +146,21 @@ for epoch in range(EPOCHS):
     for i, (images, _) in enumerate(dl):
         images = images.cuda()
 
-        loss, recons = vae(
+        loss, recons = distr_vae(
             images,
             return_loss = True,
             return_recons = True,
             temp = temp
         )
 
-        opt.zero_grad()
-        loss.backward()
-        opt.step()
+        if args.deepspeed:
+            # Gradients are automatically zeroed after the step
+            distr_vae.backward(loss)
+            distr_vae.step()
+        else:
+            opt.zero_grad()
+            loss.backward()
+            opt.step()
 
         logs = {}
 
