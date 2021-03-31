@@ -1,3 +1,7 @@
+import torch.distributed
+
+ROOT_RANK = 0
+
 using_deepspeed = None
 
 
@@ -46,6 +50,23 @@ def require_init():
     assert using_deepspeed is not None, \
         ('DeepSpeed has not been initialized; please call '
          '`deepspeed_utils.init_deepspeed` at the start of your script')
+
+
+def get_rank():
+    """Return the global rank of the calling worker process."""
+    require_init()
+    if not using_deepspeed:
+        return ROOT_RANK
+
+    assert torch.distributed.is_initialized(), \
+        ('torch.distributed is not initialized; please call '
+         '`deepspeed_utils.init_deepspeed` at the start of your script')
+    return torch.distributed.get_rank()
+
+
+def is_root_worker():
+    """Return whether the calling worker has the root rank."""
+    return get_rank() == ROOT_RANK
 
 
 def maybe_distribute(
