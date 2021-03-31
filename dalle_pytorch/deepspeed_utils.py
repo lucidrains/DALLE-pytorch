@@ -1,3 +1,5 @@
+import os
+
 import torch.distributed
 
 ROOT_RANK = 0
@@ -82,11 +84,30 @@ def get_rank():
     return torch.distributed.get_rank()
 
 
+def get_local_rank():
+    """Return the local rank of the calling worker process.
+    The local rank is the rank based on a single node's processes.
+    """
+    require_init()
+    if not using_deepspeed:
+        return ROOT_RANK
+
+    require_torch_distributed_init()
+    return int(os.environ['LOCAL_RANK'])
+
+
 def is_root_worker():
     """Return whether the calling worker has the root rank.
     This is always True when DeepSpeed is disabled.
     """
     return get_rank() == ROOT_RANK
+
+
+def is_local_root_worker():
+    """Return whether the calling worker has the root rank on this node.
+    This is always True when DeepSpeed is disabled.
+    """
+    return get_local_rank() == ROOT_RANK
 
 
 def local_barrier():
