@@ -67,6 +67,10 @@ DIM_HEAD = 64
 REVERSIBLE = True
 LOSS_IMG_WEIGHT = 7
 
+# initialize deepspeed
+
+deepspeed_utils.init_deepspeed(args.deepspeed)
+
 # reconstitute vae
 
 if RESUME:
@@ -222,7 +226,7 @@ run = wandb.init(project = 'dalle_train_transformer', resume = RESUME, config = 
 
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_dalle, opt, _, _) = deepspeed_utils.maybe_init_deepspeed(
+(distr_dalle, opt, _, _) = deepspeed_utils.maybe_distribute(
     args=args,
     model=dalle,
     optimizer=opt,

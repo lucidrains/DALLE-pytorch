@@ -58,6 +58,10 @@ ANNEAL_RATE = 1e-6
 
 NUM_IMAGES_SAVE = 4
 
+# initialize deepspeed
+
+deepspeed_utils.init_deepspeed(args.deepspeed)
+
 # data
 
 ds = ImageFolder(
@@ -128,7 +132,7 @@ run = wandb.init(
 
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_vae, opt, dl, _) = deepspeed_utils.maybe_init_deepspeed(
+(distr_vae, opt, dl, _) = deepspeed_utils.maybe_distribute(
     args=args,
     model=vae,
     optimizer=opt,

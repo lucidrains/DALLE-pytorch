@@ -1,3 +1,6 @@
+using_deepspeed = None
+
+
 def has_deepspeed():
     """Return whether the DeepSpeed module is now imported."""
     global deepspeed
@@ -29,7 +32,23 @@ def wrap_arg_parser(parser):
     return parser
 
 
-def maybe_init_deepspeed(
+def init_deepspeed(do_init):
+    """Initialize the DeepSpeed distributed backend."""
+    global using_deepspeed
+    using_deepspeed = do_init
+
+    if not do_init:
+        return
+    deepspeed.init_distributed()
+
+
+def require_init():
+    assert using_deepspeed is not None, \
+        ('DeepSpeed has not been initialized; please call '
+         '`deepspeed_utils.init_deepspeed` at the start of your script')
+
+
+def maybe_distribute(
         args=None,
         model=None,
         optimizer=None,
@@ -45,7 +64,8 @@ def maybe_init_deepspeed(
 
     For the other arguments, see `deepspeed.initialize`.
     """
-    if not args.deepspeed:
+    require_init()
+    if not using_deepspeed:
         return (model, optimizer, training_data, lr_scheduler)
 
     return deepspeed.initialize(
