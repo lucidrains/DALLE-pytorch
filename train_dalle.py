@@ -226,7 +226,7 @@ run = wandb.init(project = 'dalle_train_transformer', resume = RESUME, config = 
 
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_dalle, opt, _, _) = deepspeed_utils.maybe_distribute(
+(distr_dalle, opt, dl, _) = deepspeed_utils.maybe_distribute(
     args=args,
     model=dalle,
     optimizer=opt,
