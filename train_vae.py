@@ -96,7 +96,7 @@ assert len(ds) > 0, 'folder does not contain any images'
 print(f'{len(ds)} images found for training')
 
 def save_model(path):
-    if args.local_rank > 0:
+    if not deepspeed_utils.is_root_worker():
         return
 
     save_obj = {

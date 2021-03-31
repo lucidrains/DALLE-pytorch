@@ -125,7 +125,7 @@ else:
 # helpers
 
 def save_model(path):
-    if args.local_rank > 0:
+    if not deepspeed_utils.is_root_worker():
         return
 
     save_obj = {
