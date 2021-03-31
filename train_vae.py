@@ -130,6 +130,7 @@ run = wandb.init(
 
 # distribute with deepspeed
 
+deepspeed_utils.check_batch_size(BATCH_SIZE)
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
 (distr_vae, opt, dl, _) = deepspeed_utils.maybe_distribute(

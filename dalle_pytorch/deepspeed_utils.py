@@ -118,3 +118,9 @@ def maybe_distribute(
         training_data=training_data,
         **kwargs,
     )
+
+
+def check_batch_size(batch_size):
+    assert batch_size >= get_world_size(), \
+        (f"batch size can't be smaller than number of processes "
+         f'({batch_size} < {get_world_size()})')
