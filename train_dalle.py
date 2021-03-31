@@ -70,6 +70,10 @@ LOSS_IMG_WEIGHT = 7
 OPTIMIZER = "adam"
 LR_DECAY = False
 
+# initialize deepspeed
+
+deepspeed_utils.init_deepspeed(args.deepspeed)
+
 # reconstitute vae
 
 if RESUME:
@@ -102,7 +106,8 @@ else:
         vae = DiscreteVAE(**vae_params)
         vae.load_state_dict(weights)
     else:
-        print('using pretrained VAE for encoding images to tokens')
+        if deepspeed_utils.is_root_worker():
+            print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
         vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
@@ -124,7 +129,7 @@ else:
 # helpers
 
 def save_model(path):
-    if args.local_rank > 0:
+    if not deepspeed_utils.is_root_worker():
         return
 
     save_obj = {
@@ -207,7 +212,8 @@ ds = TextImageDataset(
 )
 
 assert len(ds) > 0, 'dataset is empty'
-print(f'{len(ds)} image-text pairs found for training')
+if deepspeed_utils.is_root_worker():
+    print(f'{len(ds)} image-text pairs found for training')
 
 dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
@@ -236,23 +242,29 @@ if LR_DECAY:
         verbose = True,
     )
 
-# experiment tracker
+if deepspeed_utils.is_root_worker():
+    # experiment tracker
 
-import wandb
+    import wandb
 
-model_config = dict(
-    depth = DEPTH,
-    heads = HEADS,
-    dim_head = DIM_HEAD
-)
+    model_config = dict(
+        depth = DEPTH,
+        heads = HEADS,
+        dim_head = DIM_HEAD
+    )
 
-run = wandb.init(project = 'dalle_train_transformer', resume = RESUME, config = model_config)
+    run = wandb.init(
+        project = 'dalle_train_transformer',
+        resume = RESUME,
+        config = model_config,
+    )
 
 # distribute
 
+deepspeed_utils.check_batch_size(BATCH_SIZE)
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_dalle, opt, _, _) = deepspeed_utils.maybe_init_deepspeed(
+(distr_dalle, opt, dl, _) = deepspeed_utils.maybe_distribute(
     args=args,
     model=dalle,
     optimizer=opt,
@@ -283,53 +295,55 @@ for epoch in range(EPOCHS):
             opt.step()
             opt.zero_grad()
 
-        log = {}
+        if deepspeed_utils.is_root_worker():
+            log = {}
 
-        if i % 10 == 0:
-            print(epoch, i, f'loss - {loss.item()}')
+            if i % 10 == 0:
+                print(epoch, i, f'loss - {loss.item()}')
 
-            log = {
-                **log,
-                'epoch': epoch,
-                'iter': i,
-                'loss': loss.item(),
-                'lr': opt.param_groups[0]["lr"]
-            }
+                log = {
+                    **log,
+                    'epoch': epoch,
+                    'iter': i,
+                    'loss': loss.item()
+                }
 
-        if i % 100 == 0:
-            sample_text = text[:1]
-            token_list = sample_text.masked_select(sample_text != 0).tolist()
-            decoded_text = tokenizer.decode(token_list)
+            if i % 100 == 0:
+                sample_text = text[:1]
+                token_list = sample_text.masked_select(sample_text != 0).tolist()
+                decoded_text = tokenizer.decode(token_list)
 
-            image = dalle.generate_images(
-                text[:1],
-                mask = mask[:1],
-                filter_thres = 0.9    # topk sampling at 0.9
-            )
+                image = dalle.generate_images(
+                    text[:1],
+                    mask = mask[:1],
+                    filter_thres = 0.9    # topk sampling at 0.9
+                )
 
-            save_model(f'./dalle.pt')
-            wandb.save(f'./dalle.pt')
+                save_model(f'./dalle.pt')
+                wandb.save(f'./dalle.pt')
 
-            log = {
-                **log,
-                'image': wandb.Image(image, caption = decoded_text)
-            }
+                log = {
+                    **log,
+                    'image': wandb.Image(image, caption = decoded_text)
+                }
 
-        wandb.log(log)
+            wandb.log(log)
 
     if LR_DECAY:
         scheduler.step(loss)
 
-    # save trained model to wandb as an artifact every epoch's end
+    if deepspeed_utils.is_root_worker():
+        # save trained model to wandb as an artifact every epoch's end
 
+        model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
+        model_artifact.add_file('dalle.pt')
+        run.log_artifact(model_artifact)
+
+if deepspeed_utils.is_root_worker():
+    save_model(f'./dalle-final.pt')
+    wandb.save('./dalle-final.pt')
     model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
-    model_artifact.add_file('dalle.pt')
+    model_artifact.add_file('dalle-final.pt')
     run.log_artifact(model_artifact)
 
-save_model(f'./dalle-final.pt')
-wandb.save('./dalle-final.pt')
-model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
-model_artifact.add_file('dalle-final.pt')
-run.log_artifact(model_artifact)
-
-wandb.finish()
+    wandb.finish()

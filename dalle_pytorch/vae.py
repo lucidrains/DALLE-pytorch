@@ -20,6 +20,8 @@ import torch.nn.functional as F
 
 from einops import rearrange
 
+from dalle_pytorch import deepspeed_utils
+
 # constants
 
 CACHE_PATH = os.path.expanduser("~/.cache/dalle")
@@ -49,7 +51,8 @@ def unmap_pixels(x, eps = 0.1):
     return torch.clamp((x - eps) / (1 - 2 * eps), 0, 1)
 
 def download(url, filename = None, root = CACHE_PATH):
-    os.makedirs(root, exist_ok = True)
+    if deepspeed_utils.is_local_root_worker():
+        os.makedirs(root, exist_ok = True)
     filename = default(filename, os.path.basename(url))
 
     download_target = os.path.join(root, filename)
@@ -57,6 +60,10 @@ def download(url, filename = None, root = CACHE_PATH):
 
     if os.path.exists(download_target) and not os.path.isfile(download_target):
         raise RuntimeError(f"{download_target} exists and is not a regular file")
+
+    if not deepspeed_utils.is_local_root_worker() and not os.path.isfile(download_target):
+        # If the file doesn't exist yet, wait until it's downloaded by the root worker.
+        deepspeed_utils.local_barrier()
 
     if os.path.isfile(download_target):
         return download_target
@@ -72,6 +79,8 @@ def download(url, filename = None, root = CACHE_PATH):
                 loop.update(len(buffer))
 
     os.rename(download_target_tmp, download_target)
+    if deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker():
+        deepspeed_utils.local_barrier()
     return download_target
 
 # pretrained Discrete VAE from OpenAI
