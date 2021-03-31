@@ -15,7 +15,6 @@ from omegaconf import OmegaConf
 from taming.models.vqgan import VQModel
 
 import torch
-import torch.distributed
 from torch import nn
 import torch.nn.functional as F
 
@@ -64,7 +63,7 @@ def download(url, filename = None, root = CACHE_PATH):
 
     if not deepspeed_utils.is_root_worker() and not os.path.isfile(download_target):
         # If the file doesn't exist yet, wait until it's downloaded by the root worker.
-        torch.distributed.barrier()
+        deepspeed_utils.local_barrier()
 
     if os.path.isfile(download_target):
         return download_target
@@ -81,7 +80,7 @@ def download(url, filename = None, root = CACHE_PATH):
 
     os.rename(download_target_tmp, download_target)
     if deepspeed_utils.using_deepspeed and deepspeed_utils.is_root_worker():
-        torch.distributed.barrier()
+        deepspeed_utils.local_barrier()
     return download_target
 
 # pretrained Discrete VAE from OpenAI

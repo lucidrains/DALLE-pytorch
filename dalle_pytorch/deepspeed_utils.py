@@ -89,6 +89,16 @@ def is_root_worker():
     return get_rank() == ROOT_RANK
 
 
+def local_barrier():
+    """Wait until all processes on this node have called this function."""
+    require_init()
+    if not using_deepspeed:
+        return
+
+    require_torch_distributed_init()
+    torch.distributed.barrier()
+
+
 def maybe_distribute(
         args=None,
         model=None,
