@@ -47,6 +47,7 @@ def init_deepspeed(do_init):
 
 
 def require_init():
+    """Raise an error when DeepSpeed has not been initialized yet."""
     assert using_deepspeed is not None, \
         ('DeepSpeed has not been initialized; please call '
          '`deepspeed_utils.init_deepspeed` at the start of your script')
@@ -65,7 +66,9 @@ def get_rank():
 
 
 def is_root_worker():
-    """Return whether the calling worker has the root rank."""
+    """Return whether the calling worker has the root rank.
+    This is always True when DeepSpeed is disabled.
+    """
     return get_rank() == ROOT_RANK
 
 
@@ -79,11 +82,12 @@ def maybe_distribute(
         **kwargs,
 ):
     """Return a model engine, optimizer, dataloader, and learning rate
-    scheduler. These are obtained by importing and initializing the
-    given values on DeepSpeed, depending on `args`.
-    If DeepSpeed is not desired, return them unchanged.
+    scheduler. These are obtained by wrapping the given values with
+    DeepSpeed, depending on whether it is used.
+    If DeepSpeed is disabled, return them unchanged.
 
-    For the other arguments, see `deepspeed.initialize`.
+    For the other or other possible arguments,
+    see `deepspeed.initialize`.
     """
     require_init()
     if not using_deepspeed:
