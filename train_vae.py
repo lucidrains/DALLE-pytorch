@@ -133,12 +133,13 @@ run = wandb.init(
 deepspeed_utils.check_batch_size(BATCH_SIZE)
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_vae, opt, dl, _) = deepspeed_utils.maybe_distribute(
+(distr_vae, opt, dl, sched) = deepspeed_utils.maybe_distribute(
     args=args,
     model=vae,
     optimizer=opt,
     model_parameters=vae.parameters(),
     training_data=ds if args.deepspeed else dl,
+    lr_scheduler=sched,
     config_params=deepspeed_config,
 )
 
