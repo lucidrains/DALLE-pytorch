@@ -5,8 +5,9 @@ from pathlib import Path
 # torch
 
 import torch
-from torch.optim import Adam
+from torch.optim import Adam, AdamW
 from torch.nn.utils import clip_grad_norm_
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 # vision imports
 
@@ -66,6 +67,8 @@ HEADS = 4
 DIM_HEAD = 64
 REVERSIBLE = True
 LOSS_IMG_WEIGHT = 7
+OPTIMIZER = "adam"
+LR_DECAY = False
 
 # initialize deepspeed
 
@@ -136,6 +139,19 @@ def save_model(path):
     }
 
     torch.save(save_obj, path)
+
+def group_weight(model):
+    group_decay, group_no_decay = [], []
+    for params in model.named_parameters():
+        if 'transformer' in params[0]:
+            if 'bias' in params[0] or 'norm' in params[0]:
+                group_no_decay.append(params[1])
+                continue
+        group_decay.append(params[1])
+
+    assert len(list(model.parameters())) == len(group_decay) + len(group_no_decay)
+    groups = [dict(params=group_decay), dict(params=group_no_decay, weight_decay=.0)]
+    return groups
 
 # dataset loading
 
@@ -210,7 +226,21 @@ if RESUME:
 
 # optimizer
 
-opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
+if OPTIMIZER is 'adamw':
+    opt = AdamW(group_weight(dalle), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
+else:
+    opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
+
+if LR_DECAY:
+    scheduler = ReduceLROnPlateau(
+        opt,
+        mode = "min",
+        factor = 0.5,
+        patience = 10,
+        cooldown = 10,
+        min_lr = 1e-6,
+        verbose = True,
+    )
 
 if deepspeed_utils.is_root_worker():
     # experiment tracker
@@ -298,6 +328,9 @@ for epoch in range(EPOCHS):
                 }
 
             wandb.log(log)
+
+    if LR_DECAY:
+        scheduler.step(loss)
 
     if deepspeed_utils.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end

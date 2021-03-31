@@ -395,9 +395,6 @@ class DALLE(nn.Module):
             indices = indices[:, :num_img_tokens]
             out = torch.cat((out, indices), dim = -1)
 
-            if exists(mask):
-                mask = F.pad(mask, (0, num_img_tokens), value = True)
-
         for cur_len in range(out.shape[1], total_len):
             is_image = cur_len >= text_seq_len
 
