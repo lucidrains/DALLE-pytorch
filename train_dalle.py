@@ -264,12 +264,13 @@ if deepspeed_utils.is_root_worker():
 deepspeed_utils.check_batch_size(BATCH_SIZE)
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_dalle, opt, dl, _) = deepspeed_utils.maybe_distribute(
+(distr_dalle, opt, dl, scheduler) = deepspeed_utils.maybe_distribute(
     args=args,
     model=dalle,
     optimizer=opt,
     model_parameters=dalle.parameters(),
     training_data=ds if args.deepspeed else dl,
+    lr_scheduler=scheduler if LR_DECAY else None,
     config_params=deepspeed_config,
 )
 
