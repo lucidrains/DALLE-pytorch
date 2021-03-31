@@ -53,15 +53,32 @@ def require_init():
          '`deepspeed_utils.init_deepspeed` at the start of your script')
 
 
+def require_torch_distributed_init():
+    """Raise an error when `torch.distributed` has not been
+    initialized yet.
+    """
+    assert torch.distributed.is_initialized(), \
+        ('torch.distributed is not initialized; please call '
+         '`deepspeed_utils.init_deepspeed` at the start of your script')
+
+
+def get_world_size():
+    """Return the amount of distributed processes."""
+    require_init()
+    if not using_deepspeed:
+        return 1
+
+    require_torch_distributed_init()
+    return torch.distributed.get_world_size()
+
+
 def get_rank():
     """Return the global rank of the calling worker process."""
     require_init()
     if not using_deepspeed:
         return ROOT_RANK
 
-    assert torch.distributed.is_initialized(), \
-        ('torch.distributed is not initialized; please call '
-         '`deepspeed_utils.init_deepspeed` at the start of your script')
+    require_torch_distributed_init()
     return torch.distributed.get_rank()
 
 
