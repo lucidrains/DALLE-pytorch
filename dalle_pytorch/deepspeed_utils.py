@@ -116,6 +116,7 @@ def maybe_distribute(
         optimizer=optimizer,
         model_parameters=model_parameters,
         training_data=training_data,
+        lr_scheduler=lr_scheduler,
         **kwargs,
     )
 
