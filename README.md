@@ -1,6 +1,6 @@
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. Please go to that repo for status updates on training efforts and probably other features as well, although I will attempt to merge their changes downstream as often as possible.
 
-## DALL-E in Pytorch
+## An Attempt at Replicating the DALL-E architecture by OpenAI in Pytorch
 
 ## Dependencies
 - llvm-9-dev
