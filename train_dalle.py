@@ -43,6 +43,8 @@ parser.add_argument('--truncate_captions', dest='truncate_captions',
 
 parser.add_argument('--taming', dest='taming', action='store_true')
 
+parser.add_argument('--fp16', action='store_true')
+
 parser = deepspeed_utils.wrap_arg_parser(parser)
 
 args = parser.parse_args()
@@ -128,6 +130,10 @@ else:
         reversible = REVERSIBLE,
         loss_img_weight = LOSS_IMG_WEIGHT
     )
+
+# configure OpenAI VAE for float16s
+if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
+    vae.enc.blocks.output.conv.use_float16 = True
 
 # helpers
 
@@ -222,7 +228,10 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 # initialize DALL-E
 
-dalle = DALLE(vae = vae, **dalle_params).cuda()
+dalle = DALLE(vae = vae, **dalle_params)
+if args.fp16:
+    dalle = dalle.half()
+dalle = dalle.cuda()
 
 if RESUME:
     dalle.load_state_dict(weights)
@@ -265,7 +274,12 @@ if deepspeed_utils.is_root_worker():
 # distribute
 
 deepspeed_utils.check_batch_size(BATCH_SIZE)
-deepspeed_config = {'train_batch_size': BATCH_SIZE}
+deepspeed_config = {
+    'train_batch_size': BATCH_SIZE,
+    'fp16': {
+        'enabled': args.fp16,
+    },
+}
 
 (distr_dalle, opt, dl, scheduler) = deepspeed_utils.maybe_distribute(
     args=args,
@@ -276,11 +290,14 @@ deepspeed_config = {'train_batch_size': BATCH_SIZE}
     lr_scheduler=scheduler if LR_DECAY else None,
     config_params=deepspeed_config,
 )
+avoid_model_calls = args.deepspeed and args.fp16
 
 # training
 
 for epoch in range(EPOCHS):
     for i, (text, images, mask) in enumerate(dl):
+        if args.fp16:
+            images = images.half()
         text, images, mask = map(lambda t: t.cuda(), (text, images, mask))
 
         loss = distr_dalle(text, images, mask = mask, return_loss = True)
@@ -317,19 +334,22 @@ for epoch in range(EPOCHS):
                 token_list = sample_text.masked_select(sample_text != 0).tolist()
                 decoded_text = tokenizer.decode(token_list)
 
-                image = dalle.generate_images(
-                    text[:1],
-                    mask = mask[:1],
-                    filter_thres = 0.9    # topk sampling at 0.9
-                )
+                if not avoid_model_calls:
+                    # CUDA index errors when we don't guard this
+                    image = dalle.generate_images(
+                        text[:1],
+                        mask = mask[:1],
+                        filter_thres = 0.9    # topk sampling at 0.9
+                    )
 
                 save_model(f'./dalle.pt')
                 wandb.save(f'./dalle.pt')
 
                 log = {
                     **log,
-                    'image': wandb.Image(image, caption = decoded_text)
                 }
+                if not avoid_model_calls:
+                    log['image'] = wandb.Image(image, caption = decoded_text)
 
             wandb.log(log)
 
