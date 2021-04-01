@@ -17,29 +17,6 @@ This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at re
 
 I have not been able to test this code out on Windows 10 yet. I hope that it works using the conda instructions, but please file an issue if it doesn't. 
 
-## Dependencies
-- llvm-9-dev
-- cmake
-- gcc
-- python3.7.x
-- pytorch=1.6.0
-- cudatoolkit=10.1
-
-## Installation
-
-https://github.com/afiaka87/perugia/wiki/Installation
-
-## Training From Scratch
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
-- https://github.com/afiaka87/perugia/wiki/Train-with-your-Own-Dataset
-
-## Generate images from text
-(WIP)
-
-## VRAM Optimizations:
-https://github.com/afiaka87/perugia/wiki/Memory-Speed-Optimizations
+## Usage
 
 
-## Citations
-
-https://github.com/afiaka87/perugia/wiki/Citations
