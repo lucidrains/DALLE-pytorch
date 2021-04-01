@@ -4,9 +4,9 @@ This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch des
 
 "Those who do not want to imitate anything, produce nothing." - Dali
 
-**disclaimer**: 
+## Disclaimer
 
-There is often confusion surrounding this. This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at recreating its architecture based on the details released by those researchers. There's not a pretrained model yet, but I believe one is right around the corner.
+This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at recreating its architecture based on the details released by those researchers. There's not a pretrained model yet, but I believe one is right around the corner.
 
 
 ## Dependencies
