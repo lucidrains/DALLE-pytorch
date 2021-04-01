@@ -136,44 +136,21 @@ Assuming you have installed all dependencies -
 # source ~/.virtualenvs/dalle_pytorch_afiaka87
 ```
 
-Now you just have to invoke the `./train_dalle.py` script, indicating which VAE model you would like to use, as well as the path to your folder if images and text.
+Begin training:
 
-The dataset I am currently working with contains a folder of images and text files, arbitraily nested in subfolders, where text file name corresponds with the image name, and where each text file contains multiple descriptions, delimited by newlines. The script will find and pair all the image and text files with the same names, and randomly select one of the textual descriptions during batch creation.
-
-ex.
-
-```
-📂image-and-text-data
- ┣ 📜cat.png
- ┣ 📜cat.txt
- ┣ 📜dog.jpg
- ┣ 📜dog.txt
- ┣ 📜turtle.jpeg
- ┗ 📜turtle.txt
+```sh
+# Leave off the `-taming` parameter to use OpenAI's VAE
+python train_dalle.py --image_text_folder /path/to/data -taming
 ```
 
-ex. `cat.txt`
-
-```text
-A black and white cat curled up next to the fireplace
-A fireplace, with a cat sleeping next to it
-A black cat with a red collar napping
+You can stop anytime you'd like and resume later:
+```sh
+python train_dalle.py --image_text_folder /path/to/data -taming --dalle_path ./dalle.pt 
 ```
-
-If you have a dataset with its own directory structure for tying together image and text descriptions, do let me know in the issues, and I'll see if I can accommodate it in the script.
-
-```python
-$ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
-```
-
-You likely will not finish DALL-E training as quickly as you did your Discrete VAE. To resume from where you left off, just run the same script, but with the path to your DALL-E checkpoints.
-
-```python
-$ python train_dalle.py --dalle_path ./dalle.pt --image_text_folder /path/to/data
-```
-
 
 ### Generate Images from Text 
+
+Finally - the cool part.
 
 ** You will need a pretrained `dalle.pt` checkpoint in order to run this. You may attempt to train one yourself but so far there are none worth releasing. **
 
@@ -182,14 +159,6 @@ $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under 
 ```
 
 You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
-
-### Distributed Training with DeepSpeed
-
-You can replace any `$ python <file>.py [args...]` command with
-```sh
-$ deepspeed <file>.py [args...] --deepspeed
-```
-to use the aforementioned DeepSpeed library for distributed training, speeding up your experiments.
 
 ## Citations
 
