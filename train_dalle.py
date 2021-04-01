@@ -226,7 +226,7 @@ if RESUME:
 
 # optimizer
 
-if OPTIMIZER is 'adamw':
+if OPTIMIZER == 'adamw':
     opt = AdamW(group_weight(dalle), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
 else:
     opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
