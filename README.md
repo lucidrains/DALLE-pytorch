@@ -6,7 +6,11 @@
 `perugia` is a text-to-image generator. 
 
 Give it a phrase - it tries to recreate an image. 
+## Usage
 
+https://github.com/afiaka87/perugia/wiki/Getting-Started
+
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
 
 ## Disclaimer
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch designed to be a bit easier to use.
@@ -17,6 +21,7 @@ This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at re
 
 I have not been able to test this code out on Windows 10 yet. I hope that it works using the conda instructions, but please file an issue if it doesn't. 
 
-## Usage
 
+## Citations
 
+https://github.com/afiaka87/perugia/wiki/Citations
