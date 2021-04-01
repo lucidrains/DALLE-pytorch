@@ -17,6 +17,11 @@ If you got your hands on a checkpoint (don't ask, dont have one), or would like 
 
 - [![Original DALLE-pytorch Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing)  Original DALLE-pytorch Notebook
 
+## Discord
+
+Is for chumps. This project lives on app.element.io:
+https://app.element.io/#/group/+afiaka87-perugia:matrix.org
+
 ## Disclaimer
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch designed to be a bit easier to use.
 
