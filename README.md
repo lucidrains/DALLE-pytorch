@@ -1,13 +1,7 @@
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. Please go to that repo for status updates on training efforts and probably other features as well, although I will attempt to merge their changes downstream as often as possible.
 
 ## DALL-E in Pytorch
-    num_text_tokens = 10000,    # vocab size for text
-    text_seq_len = 256,         # text sequence length
-    depth = 1,                  # should aim to be 64
-    heads = 16,                 # attention heads
-    dim_head = 64,              # attention head dimension
-    attn_dropout = 0.1,         # attention dropout
-    ff_dropout = 0.1            # feedforward dropout
+
 ## Dependencies
 - llvm-9-dev
 - cmake
