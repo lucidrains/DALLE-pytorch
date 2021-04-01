@@ -16,11 +16,11 @@ https://github.com/afiaka87/text_to_image/wiki/Installation
 
 ## Usage
 
-### Training
+#### Training
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
 - https://github.com/afiaka87/text_to_image/wiki/Train-with-your-Own-Dataset
 
-### Generate images from text
+#### Generate images from text
 (WIP)
 
 ## VRAM Optimizations:
