@@ -12,8 +12,6 @@ setup(
   url = 'https://github.com/afiaka87/perugia',
   keywords = [
     'artificial intelligence',
-    'attention mechanism',
-    'transformers',
     'text-to-image'
   ],
   install_requires=[
