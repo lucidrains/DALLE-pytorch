@@ -3,7 +3,7 @@
 > "Those who do not want to imitate anything, produce nothing."
 >  \- Dali
 
-`perugia` is a text-to-image generator. 
+`perugia` is a text-to-image generator. This project is a developer-oriented fork of @lucidrains wonderful DALLE-pytorch project. 
 
 Give it a phrase - it tries to recreate an image. 
 
