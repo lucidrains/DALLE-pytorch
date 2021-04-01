@@ -15,19 +15,19 @@ This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch des
 
 ## Installation
 
-https://github.com/afiaka87/text_to_image/wiki/Installation
+https://github.com/afiaka87/perugia/wiki/Installation
 
 ## Training From Scratch
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
-- https://github.com/afiaka87/text_to_image/wiki/Train-with-your-Own-Dataset
+- https://github.com/afiaka87/perugia/wiki/Train-with-your-Own-Dataset
 
 ## Generate images from text
 (WIP)
 
 ## VRAM Optimizations:
-https://github.com/afiaka87/text_to_image/wiki/Memory-Speed-Optimizations
+https://github.com/afiaka87/perugia/wiki/Memory-Speed-Optimizations
 
 
 ## Citations
 
-https://github.com/afiaka87/peruggia/wiki/Citations
+https://github.com/afiaka87/perugia/wiki/Citations
