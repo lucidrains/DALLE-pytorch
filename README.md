@@ -11,7 +11,7 @@ I've changed the name to reflect my position that this isn't the exact same thin
 
 This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at recreating its architecture based on the details released by those researchers. There's not a pretrained model yet, but I believe one is right around the corner.
 
-I have not been able to test this code out on Windows 7 yet. I hope that it works using the conda instructions, but please file an issue if it doesn't. 
+I have not been able to test this code out on Windows 10 yet. I hope that it works using the conda instructions, but please file an issue if it doesn't. 
 
 ## Dependencies
 - llvm-9-dev
