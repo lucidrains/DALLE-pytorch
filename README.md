@@ -1,4 +1,4 @@
-This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. Please go to that repo for status updates on training efforts and probably other features as well, although I will attempt to merge their changes downstream as often as possible.
+This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch meant to simpler to use.
 
 **disclaimer**: There is often confusion surrounding this. This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at recreating its architecture based on the details released by those researchers. There's not a pretrained model yet, but I believe one is right around the corner.
 
