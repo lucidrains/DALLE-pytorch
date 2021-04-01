@@ -16,7 +16,7 @@ This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch con
 
 ## Installation instructions for Ubuntu 20.04 (Python3.7 is required)
 
-First - install dependencies
+### First - install dependencies
 ```sh
 sudo apt-get -y install llvm-9-dev cmake
 git clone https://github.com/microsoft/DeepSpeed.git /tmp/Deepspeed
@@ -25,7 +25,7 @@ pip install triton
 cd ~
 ```
 
-# Conda
+### Conda
 ```bash
 #!/bin/bash
 
@@ -35,7 +35,7 @@ conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
 pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
 ```
 
-# Pip
+### Pip
 ```bash
 #!/bin/bash
 
