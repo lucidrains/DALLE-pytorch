@@ -12,36 +12,7 @@ This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch des
 
 ## Installation instructions for Ubuntu 20.04 (Python3.7 is required)
 
-### First - install dependencies
-```sh
-sudo apt-get -y install llvm-9-dev cmake
-git clone https://github.com/microsoft/DeepSpeed.git /tmp/Deepspeed
-cd /tmp/Deepspeed && DS_BUILD_SPARSE_ATTN=1 ./install.sh -s
-pip install triton
-cd ~
-```
-
-### Conda
-```bash
-#!/bin/bash
-
-conda create -n dalle_pytorch_afiaka87 python=3.7
-conda activate dalle_pytorch_afiaka87
-conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
-pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
-```
-
-### Pip
-```bash
-#!/bin/bash
-
-python -m pip install virtualenv
-python -m virtualenv -p=python3.7 ~/.virtualenvs/dalle_pytorch_afiaka87
-source ~/.virtualenvs/dalle_pytorch_afiaka87/bin/activate
-# Make sure your terminal shows that you're inside the virtual environment - and then run:
-pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
-```
+https://github.com/afiaka87/text_to_image/wiki/Installation
 
 ## Usage
 
