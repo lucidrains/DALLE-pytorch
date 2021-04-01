@@ -10,50 +10,17 @@ This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch des
 - gcc
 - python3.7.x
 
-## Installation instructions for Ubuntu 20.04 (Python3.7 is required)
+## Installation
 
 https://github.com/afiaka87/text_to_image/wiki/Installation
 
 ## Usage
 
-There are two pretrained VAE's to choose from. You may also train one yourself - you can find instructions on lucidrains repo. 
+### Training
+https://github.com/afiaka87/text_to_image/wiki/Train-with-your-Own-Dataset
 
-### taming.VQGanVAE1024
+### Generate images from text
 
-#### Low VRAM/Fairly Accurate
-
-Offered generously by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>
-This VAE is capable of generalizing and is also quite a bit easier to run than OpenAI's pretrained VAE (see below)
-A theoretical speedup of 16x is possible - although it seems to be more in the range of 2-4x in my experience. 
-VRAM savings are substantial.
-
-```python
-from dalle_pytorch import VQGanVAE1024
-vae = VQGanVAE1024()
-```
-
-### dalle_pytorch.OpenAIDiscreteVAE
-#### (Accurate - More VRAM)
-```python
-from dalle_pytorch import OpenAIDiscreteVAE, DALLE
-vae = OpenAIDiscreteVAE()
-```
-
-### Instantiate DALLE with your VAE of choice
-dalle = DALLE(
-    dim = 1024,
-    vae = vae,
-)
-
-###
-```python
-text = torch.randint(0, 10000, (4, 256))
-images = torch.randn(4, 3, 256, 256)
-mask = torch.ones_like(text).bool()
-
-loss = dalle(text, images, mask = mask, return_loss = True)
-loss.backward()
-```
 
 ## Ranking the generations
 
