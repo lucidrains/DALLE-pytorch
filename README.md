@@ -1,9 +1,9 @@
 # `perugia`
 
-This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch designed to be a bit easier to use.
-
 > "Those who do not want to imitate anything, produce nothing."
 >  \- Dali
+
+This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch designed to be a bit easier to use.
 
 ## Disclaimer
 
