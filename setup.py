@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-  name = 'dalle-pytorch',
+  name = 'peruggia',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.7.3',
+  version = '0.0.1',
   license='MIT',
-  description = 'DALL-E - Pytorch',
+  description = 'perruggia - generate images from text with machine learning (gpu needed)',
   author = 'Sam Sepiol',
   author_email = 'samsepi0l@fastmail.com',
   url = 'https://github.com/afiaka87/peruggia',
@@ -29,10 +29,8 @@ setup(
     'tqdm'
   ],
   classifiers=[
-    'Development Status :: 4 - Beta',
-    'Intended Audience :: Developers',
     'Topic :: Scientific/Engineering :: Artificial Intelligence',
     'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
   ],
 )
