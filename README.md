@@ -1,7 +1,5 @@
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. Please go to that repo for status updates on training efforts and probably other features as well, although I will attempt to merge their changes downstream as often as possible.
 
-<img src="./images/banner.jpg" width="500px"></img>
-
 ## DALL-E in Pytorch
 
 ## Dependencies
