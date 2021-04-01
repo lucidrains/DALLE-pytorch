@@ -6,10 +6,10 @@ setup(
   include_package_data = True,
   version = '0.0.1',
   license='MIT',
-  description = 'perruggia - generate images from text with machine learning (gpu needed)',
+  description = 'perugia - generate images from text with machine learning (gpu needed)',
   author = 'Sam Sepiol',
   author_email = 'samsepi0l@fastmail.com',
-  url = 'https://github.com/afiaka87/peruggia',
+  url = 'https://github.com/afiaka87/perugia',
   keywords = [
     'artificial intelligence',
     'attention mechanism',
