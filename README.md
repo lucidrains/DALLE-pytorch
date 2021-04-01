@@ -1,122 +1,64 @@
-This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. 
+This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. Please go to that repo for status updates on training efforts and probably other features as well, although I will attempt to merge their changes downstream as often as possible.
 
 <img src="./images/banner.jpg" width="500px"></img>
 
 ## DALL-E in Pytorch
 
-Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch. It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
+## Dependencies
+- llvm-9-dev
+- cmake
+- gcc
+- python3.7.x
 
-<a href="https://github.com/sdtblck">Sid</a>, <a href="http://github.com/kingoflolz">Ben</a>, and <a href="https://github.com/AranKomat">Aran</a> over at <a href="https://www.eleuther.ai/">Eleuther AI</a> are working on <a href="https://github.com/EleutherAI/DALLE-mtf">DALL-E for Mesh Tensorflow</a>! Please lend them a hand if you would like to see DALL-E trained on TPUs.
+## Installation instructions for Ubuntu 20.04 (Python3.7 is required)
 
-<a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
+First - install dependencies
+```sh
+sudo apt-get -y install llvm-9-dev cmake
+git clone https://github.com/microsoft/DeepSpeed.git /tmp/Deepspeed
+cd /tmp/Deepspeed && DS_BUILD_SPARSE_ATTN=1 ./install.sh -s
+pip install triton
+cd ~
+```
 
-Before we replicate this, we can settle for <a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a>
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
-
-## Status
-
-- <a href="https://github.com/htoyryla">Hannu</a> has managed to train a small 6 layer DALL-E on a dataset of just 2000 landscape images! (2048 visual tokens)
-
-<img src="./images/landscape.png"></img>
-
-- <a href="https://github.com/kobiso">Kobiso</a>, a research engineer from Naver, has trained on the CUB200 dataset <a href="https://github.com/lucidrains/DALLE-pytorch/discussions/131">here</a>, using full and deepspeed sparse attention
-- <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a 32 layer reversible DALL-E <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
-- <a href="https://github.com/robvanvolt">robvanvolt</a> has started a <a href="https://discord.gg/R64srpKJ">Discord channel</a> for replication efforts
-
-## Install
-
+# Conda
 ```bash
-$ pip install dalle-pytorch
+#!/bin/bash
+
+conda create -n dalle_pytorch_afiaka87 python=3.7
+conda activate dalle_pytorch_afiaka87
+conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
+pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
+```
+
+# Pip
+```bash
+#!/bin/bash
+
+python -m pip install virtualenv
+python -m virtualenv -p=python3.7 ~/.virtualenvs/dalle_pytorch_afiaka87
+source ~/.virtualenvs/dalle_pytorch_afiaka87/bin/activate
+# Make sure your terminal shows that you're inside the virtual environment - and then run:
+pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
 ```
 
 ## Usage
 
-Train VAE
+## Taming Transformer's Pretrained VQGAN VAE (See below for the VAE released by OpenAI)
+
+You can use the pretrained VAE offered by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>!
+
+This VAE is capable of generalizing and is also quite a bit easier to run than. A theoretical speedup of 16x is possible - although it's probably something lower in reality.
 
 ```python
-import torch
-from dalle_pytorch import DiscreteVAE
+from dalle_pytorch import VQGanVAE1024
 
-vae = DiscreteVAE(
-    image_size = 256,
-    num_layers = 3,           # number of downsamples - ex. 256 / (2 ** 3) = (32 x 32 feature map)
-    num_tokens = 8192,        # number of visual tokens. in the paper, they used 8192, but could be smaller for downsized projects
-    codebook_dim = 512,       # codebook dimension
-    hidden_dim = 64,          # hidden dimension
-    num_resnet_blocks = 1,    # number of resnet blocks
-    temperature = 0.9,        # gumbel softmax temperature, the lower this is, the harder the discretization
-    straight_through = False, # straight-through for gumbel softmax. unclear if it is better one way or the other
-)
+vae = VQGanVAE1024()
 
-images = torch.randn(4, 3, 256, 256)
+# the rest is the same as the above example
 
-loss = vae(images, return_loss = True)
-loss.backward()
-
-# train with a lot of data to learn a good codebook
-```
-
-Train DALL-E with pretrained VAE from above
-
-```python
-import torch
-from dalle_pytorch import DiscreteVAE, DALLE
-
-vae = DiscreteVAE(
-    image_size = 256,
-    num_layers = 3,
-    num_tokens = 8192,
-    codebook_dim = 1024,
-    hidden_dim = 64,
-    num_resnet_blocks = 1,
-    temperature = 0.9
-)
-
-dalle = DALLE(
-    dim = 1024,
-    vae = vae,                  # automatically infer (1) image sequence length and (2) number of image tokens
-    num_text_tokens = 10000,    # vocab size for text
-    text_seq_len = 256,         # text sequence length
-    depth = 12,                 # should aim to be 64
-    heads = 16,                 # attention heads
-    dim_head = 64,              # attention head dimension
-    attn_dropout = 0.1,         # attention dropout
-    ff_dropout = 0.1            # feedforward dropout
-)
-
-text = torch.randint(0, 10000, (4, 256))
-images = torch.randn(4, 3, 256, 256)
-mask = torch.ones_like(text).bool()
-
-loss = dalle(text, images, mask = mask, return_loss = True)
-loss.backward()
-
-# do the above for a long time with a lot of data ... then
-
-images = dalle.generate_images(text, mask = mask)
-images.shape # (4, 3, 256, 256)
-```
-
-To prime with a starting crop of an image, simply pass two more arguments
-
-```python
-img_prime = torch.randn(4, 3, 256, 256)
-
-images = dalle.generate_images(
-    text,
-    mask = mask,
-    img = img_prime,
-    num_init_img_tokens = (14 * 32)  # you can set the size of the initial crop, defaults to a little less than ~1/2 of the tokens, as done in the paper
-)
-
-images.shape # (4, 3, 256, 256)
-```
-
-## OpenAI's Pretrained VAE
-
-You can also skip the training of the VAE altogether, using the pretrained model released by OpenAI! The wrapper class should take care of downloading and caching the model for you auto-magically.
-
+## OpenAI's Pretrained VAE (Accurate - More VRAM)
 ```python
 import torch
 from dalle_pytorch import OpenAIDiscreteVAE, DALLE
@@ -143,68 +85,17 @@ loss = dalle(text, images, mask = mask, return_loss = True)
 loss.backward()
 ```
 
-## Taming Transformer's Pretrained VQGAN VAE
 
-You can also use the pretrained VAE offered by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>! Currently only the VAE with a codebook size of 1024 is offered, with the hope that it may train a little faster than OpenAI's, which has a size of 8192.
-
-In contrast to OpenAI's VAE, it also has an extra layer of downsampling, so the image sequence length is 256 instead of 1024 (this will lead to a 16 reduction in training costs, when you do the math). Whether it will generalize as well as the original DALL-E is up to the citizen scientists out there to discover.
-
-```python
-from dalle_pytorch import VQGanVAE1024
-
-vae = VQGanVAE1024()
-
-# the rest is the same as the above example
 ```
 
 ## Ranking the generations
 
-Train CLIP
+You can use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E. 
 
-```python
-import torch
-from dalle_pytorch import CLIP
+## VRAM Optimizations:
 
-clip = CLIP(
-    dim_text = 512,
-    dim_image = 512,
-    dim_latent = 512,
-    num_text_tokens = 10000,
-    text_enc_depth = 6,
-    text_seq_len = 256,
-    text_heads = 8,
-    num_visual_tokens = 512,
-    visual_enc_depth = 6,
-    visual_image_size = 256,
-    visual_patch_size = 32,
-    visual_heads = 8
-)
 
-text = torch.randint(0, 10000, (4, 256))
-images = torch.randn(4, 3, 256, 256)
-mask = torch.ones_like(text).bool()
-
-loss = clip(text, images, text_mask = mask, return_loss = True)
-loss.backward()
-```
-
-To get the similarity scores from your trained Clipper, just do
-
-```python
-images, scores = dalle.generate_images(text, mask = mask, clip = clip)
-
-scores.shape # (2,)
-images.shape # (2, 3, 256, 256)
-
-# do your topk here, in paper they sampled 512 and chose top 32
-```
-
-Or you can just use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E
-
-## Scaling depth
-
-In the blog post, they used 64 layers to achieve their results. I added reversible networks, from the <a href="https://github.com/lucidrains/reformer-pytorch">Reformer</a> paper, in order for users to attempt to scale depth at the cost of compute. Reversible networks allow you to scale to any depth at no memory cost, but a little over 2x compute cost (each layer is rerun on the backward pass).
-
+### Reversible
 Simply set the `reversible` keyword to `True` for the `DALLE` class
 
 ```python
@@ -219,21 +110,29 @@ dalle = DALLE(
 )
 ```
 
-## Sparse Attention
+### Sparse Attention (MS deepspeed)
 
-The blogpost alluded to a mixture of different types of sparse attention, used mainly on the image (while the text presumably had full causal attention). I have done my best to replicate these types of sparse attention, on the scant details released. Primarily, it seems as though they are doing causal axial row / column attention, combined with a causal convolution-like attention.
+```python
+dalle = DALLE(
+    dim = 1024,
+    vae = vae,
+    num_text_tokens = 10000,
+    text_seq_len = 256,
+    depth = 64,
+    heads = 16,
+    reversible = True,
+    attn_types = ('sparse')  # cycles between these four types of attention
+)
+
+
+### Other attetion layers:
 
 By default `DALLE` will use full attention for all layers, but you can specify the attention type per layer as follows.
 
 - `full` full attention
-
 - `axial_row` axial attention, along the rows of the image feature map
-
 - `axial_col` axial attention, along the columns of the image feature map
-
 - `conv_like` convolution-like attention, for the image feature map
-
-The sparse attention only applies to the image. Text will always receive full attention, as said in the blogpost.
 
 ```python
 dalle = DALLE(
@@ -252,30 +151,6 @@ dalle = DALLE(
 
 You can also train with Microsoft Deepspeed's <a href="https://www.deepspeed.ai/news/2020/09/08/sparse-attention.html">Sparse Attention</a>, with any combination of dense and sparse attention that you'd like. However, you will have to endure the installation process.
 
-First, you need to install Deepspeed with Sparse Attention
-
-```bash
-$ sh install_deepspeed.sh
-```
-
-Next, you need to install the pip package `triton`
-
-```bash
-$ pip install triton
-```
-
-If both of the above succeeded, now you can train with Sparse Attention!
-
-```python
-dalle = DALLE(
-    dim = 512,
-    vae = vae,
-    num_text_tokens = 10000,
-    text_seq_len = 256,
-    depth = 64,
-    heads = 8,
-    attn_types = ('full', 'sparse')  # interleave sparse and dense attention for 64 layers
-)
 ```
 
 ## Training
