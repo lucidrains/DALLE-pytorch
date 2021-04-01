@@ -18,6 +18,8 @@ I have not been able to test this code out on Windows 10 yet. I hope that it wor
 - cmake
 - gcc
 - python3.7.x
+- pytorch=1.6.0
+- cudatoolkit=10.1
 
 ## Installation
 
