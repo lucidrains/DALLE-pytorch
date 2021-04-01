@@ -51,7 +51,7 @@ pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
 
 There are two pretrained VAE's to choose from. You may also train one yourself - you can find instructions on lucidrains repo. 
 
-### `taming.VQGanVAE1024` 
+### taming.VQGanVAE1024
 
 #### Low VRAM/Fairly Accurate
 
@@ -65,7 +65,7 @@ from dalle_pytorch import VQGanVAE1024
 vae = VQGanVAE1024()
 ```
 
-### `dalle_pytorch.OpenAIDiscreteVAE`
+### dalle_pytorch.OpenAIDiscreteVAE
 #### (Accurate - More VRAM)
 ```python
 from dalle_pytorch import OpenAIDiscreteVAE, DALLE
