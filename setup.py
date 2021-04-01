@@ -7,9 +7,9 @@ setup(
   version = '0.7.3',
   license='MIT',
   description = 'DALL-E - Pytorch',
-  author = 'Phil Wang',
-  author_email = 'lucidrains@gmail.com',
-  url = 'https://github.com/lucidrains/dalle-pytorch',
+  author = 'Sam Sepiol',
+  author_email = 'samsepi0l@fastmail.com',
+  url = 'https://github.com/afiaka87/peruggia',
   keywords = [
     'artificial intelligence',
     'attention mechanism',
