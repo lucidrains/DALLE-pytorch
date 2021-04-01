@@ -45,11 +45,13 @@ pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
 
 ## Usage
 
-## Taming Transformer's Pretrained VQGAN VAE (See below for the VAE released by OpenAI)
+There are two pretrained VAE's to choose from. You may also train one yourself - you can find instructions on lucidrains repo. 
 
-You can use the pretrained VAE offered by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>!
-
-This VAE is capable of generalizing and is also quite a bit easier to run than. A theoretical speedup of 16x is possible - although it's probably something lower in reality.
+## Low VRAM/Fairly Accurate - `taming.VQGanVAE1024` 
+Offered generously by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>
+This VAE is capable of generalizing and is also quite a bit easier to run than OpenAI's pretrained VAE (see below)
+A theoretical speedup of 16x is possible - although it seems to be more in the range of 2-4x in my experience. 
+VRAM savings are substantial.
 
 ```python
 from dalle_pytorch import VQGanVAE1024
