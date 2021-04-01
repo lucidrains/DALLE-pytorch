@@ -1,3 +1,5 @@
+This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. 
+
 <img src="./images/banner.jpg" width="500px"></img>
 
 ## DALL-E in Pytorch
