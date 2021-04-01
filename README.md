@@ -29,7 +29,7 @@ https://app.element.io/#/group/+afiaka87-perugia:matrix.org
 
   - This is _not_ the same DALL-E that OpenAI have presented. It is an attempt at recreating its architecture based on the details released by those researchers. There's not a pretrained model yet, but I believe one is right around the corner.
   
-  - I have no affiliation with the group "EleutherAI"
+  - I have no affiliation with the group "EleutherAI". I am _not_ a researcher (nor do I want to be). I am a software engineer and lover of open source. That is all. 
   
   - I have not been able to test this code out on Windows 10 yet. I hope that it works using the conda instructions, but please file an issue if it doesn't. 
 
