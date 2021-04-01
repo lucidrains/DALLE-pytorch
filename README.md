@@ -19,7 +19,7 @@ If you got your hands on a checkpoint (don't ask, dont have one), or would like 
 
 ## Discord
 
-Is for chumps. This project lives on app.element.io:
+- Is for chumps. This project lives on app.element.io:
 https://app.element.io/#/group/+afiaka87-perugia:matrix.org
 
 ## Disclaimer
