@@ -1,4 +1,4 @@
-# Text to Image 
+# Peruggia
 
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch designed to be a bit easier to use.
 
