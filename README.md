@@ -17,86 +17,15 @@ https://github.com/afiaka87/text_to_image/wiki/Installation
 ## Usage
 
 ### Training
-https://github.com/afiaka87/text_to_image/wiki/Train-with-your-Own-Dataset
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
+- https://github.com/afiaka87/text_to_image/wiki/Train-with-your-Own-Dataset
 
 ### Generate images from text
-
-
-## Ranking the generations
-
-You can use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E. 
+(WIP)
 
 ## VRAM Optimizations:
+https://github.com/afiaka87/text_to_image/wiki/Memory-Speed-Optimizations
 
-### Reversible
-Simply set the `reversible` keyword to `True` for the `DALLE` class
-
-```python
-dalle = DALLE(
-    # ...
-    reversible = True  # <-- reversible networks https://arxiv.org/abs/2001.04451
-)
-```
-
-### Sparse Attention (MS deepspeed)
-
-```python
-dalle = DALLE(
-    # ...
-    attn_types = ('sparse')  # cycles between these four types of attention
-)
-
-
-### Other attetion layers:
-
-By default `DALLE` will use full attention for all layers, but you can specify the attention type per layer as follows.
-
-- `full` full attention
-- `axial_row` axial attention, along the rows of the image feature map
-- `axial_col` axial attention, along the columns of the image feature map
-- `conv_like` convolution-like attention, for the image feature map
-
-```python
-dalle = DALLE(
-    # ...
-    attn_types = ('full', 'axial_row', 'axial_col', 'conv_like')  # cycles between these four types of attention
-)
-```
-
-## Training
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
-
-Assuming you have installed all dependencies -
-```bash
-# Make sure you're in a virtual environment on either conda or python-virtualenv:
-# conda activate dalle_pytorch_afiaka87
-# source ~/.virtualenvs/dalle_pytorch_afiaka87
-```
-
-Begin training:
-
-```sh
-# Leave off the `-taming` parameter to use OpenAI's VAE
-python train_dalle.py --image_text_folder /path/to/data -taming
-```
-
-You can stop anytime you'd like and resume later:
-```sh
-python train_dalle.py --image_text_folder /path/to/data -taming --dalle_path ./dalle.pt 
-```
-
-### Generate Images from Text 
-
-Finally - the cool part.
-
-** You will need a pretrained `dalle.pt` checkpoint in order to run this. You may attempt to train one yourself but so far there are none worth releasing. **
-
-```python
-$ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under a full moon'
-```
-
-You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
 
 ## Citations
 
