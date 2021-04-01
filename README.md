@@ -30,45 +30,4 @@ https://github.com/afiaka87/text_to_image/wiki/Memory-Speed-Optimizations
 
 ## Citations
 
-```bibtex
-@misc{ramesh2021zeroshot,
-    title   = {Zero-Shot Text-to-Image Generation}, 
-    author  = {Aditya Ramesh and Mikhail Pavlov and Gabriel Goh and Scott Gray and Chelsea Voss and Alec Radford and Mark Chen and Ilya Sutskever},
-    year    = {2021},
-    eprint  = {2102.12092},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.CV}
-}
-```
-
-```bibtex
-@misc{unpublished2021clip,
-    title  = {CLIP: Connecting Text and Images},
-    author = {Alec Radford, Ilya Sutskever, Jong Wook Kim, Gretchen Krueger, Sandhini Agarwal},
-    year   = {2021}
-}
-```
-
-```bibtex
-@misc{kitaev2020reformer,
-    title   = {Reformer: The Efficient Transformer},
-    author  = {Nikita Kitaev and Łukasz Kaiser and Anselm Levskaya},
-    year    = {2020},
-    eprint  = {2001.04451},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.LG}
-}
-```
-
-```bibtex
-@misc{esser2021taming,
-    title   = {Taming Transformers for High-Resolution Image Synthesis},
-    author  = {Patrick Esser and Robin Rombach and Björn Ommer},
-    year    = {2021},
-    eprint  = {2012.09841},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.CV}
-}
-```
-
-*Those who do not want to imitate anything, produce nothing.* - Dali
+https://github.com/afiaka87/peruggia/wiki/Citations
