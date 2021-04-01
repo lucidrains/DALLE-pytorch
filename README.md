@@ -10,7 +10,7 @@ Give it a phrase - it tries to recreate an image.
 
 - [Getting Started](https://github.com/afiaka87/perugia/wiki/Getting-Started)
 
-- [![Original DALLE-pytorch Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
+- [![Original DALLE-pytorch Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing)  Original DALLE-pytorch Notebook
 
 ## Disclaimer
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch designed to be a bit easier to use.
