@@ -11,6 +11,8 @@ If you're looking for a version of this that, you know, actually works presently
 - [deep-daze](https://github.com/lucidrains/deep-daze)
 - [big-sleep](https://github.com/lucidrains/big-sleep)
 
+If you got your hands on a checkpoint (don't ask, dont have one), or would like to train the network yourself:
+
 - [Getting Started](https://github.com/afiaka87/perugia/wiki/Getting-Started)
 
 - [![Original DALLE-pytorch Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing)  Original DALLE-pytorch Notebook
