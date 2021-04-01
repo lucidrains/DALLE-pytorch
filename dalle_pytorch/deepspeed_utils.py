@@ -22,7 +22,7 @@ def wrap_arg_parser(parser):
     if not has_deepspeed():
         parser.add_argument(
             '--deepspeed',
-            action=lambda _: False,
+            type=lambda _: False,
             help="whether to use DeepSpeed (ignored since it's not available)",
         )
     else:
