@@ -38,6 +38,9 @@ group.add_argument('--dalle_path', type = str,
 parser.add_argument('--image_text_folder', type = str, required = True,
                     help='path to your folder of images and text for learning the DALL-E')
 
+parser.add_argument('--truncate_captions', dest='truncate_captions',
+                    help='Captions passed in which exceed the max token length will be truncated if this is set.')
+
 parser.add_argument('--taming', dest='taming', action='store_true')
 
 parser = deepspeed_utils.wrap_arg_parser(parser)
@@ -197,7 +200,7 @@ class TextImageDataset(Dataset):
         descriptions = list(filter(lambda t: len(t) > 0, descriptions))
         description = choice(descriptions)
 
-        tokenized_text = tokenize(description, self.text_len).squeeze(0)
+        tokenized_text = tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
         mask = tokenized_text != 0
 
         image_tensor = self.image_tranform(image)
