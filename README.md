@@ -6,7 +6,6 @@
 `perugia` is a text-to-image generator. 
 
 Give it a phrase - it tries to recreate an image. 
-## Usage
 
 - [Getting Started](https://github.com/afiaka87/perugia/wiki/Getting-Started)
 
