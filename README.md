@@ -1,6 +1,8 @@
 # `perugia`
 
-`perugia` is a text-to-image transformer. Once trained it will (hopefully) produce accurate images with nothing but a text description.
+`perugia` is a text-to-image generator. 
+
+Give it a phrase - it tries to recreate an image. 
 
 > "Those who do not want to imitate anything, produce nothing."
 >  \- Dali
