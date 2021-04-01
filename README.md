@@ -1,7 +1,13 @@
 This is a fork of the repository https://github.com/lucidrains/DALLE-pytorch containing additional features and bug fixes. Please go to that repo for status updates on training efforts and probably other features as well, although I will attempt to merge their changes downstream as often as possible.
 
 ## DALL-E in Pytorch
-
+    num_text_tokens = 10000,    # vocab size for text
+    text_seq_len = 256,         # text sequence length
+    depth = 1,                  # should aim to be 64
+    heads = 16,                 # attention heads
+    dim_head = 64,              # attention head dimension
+    attn_dropout = 0.1,         # attention dropout
+    ff_dropout = 0.1            # feedforward dropout
 ## Dependencies
 - llvm-9-dev
 - cmake
@@ -45,7 +51,10 @@ pip install "git+https://github.com:afiaka87/DALLE-pytorch.git"
 
 There are two pretrained VAE's to choose from. You may also train one yourself - you can find instructions on lucidrains repo. 
 
-## Low VRAM/Fairly Accurate - `taming.VQGanVAE1024` 
+### `taming.VQGanVAE1024` 
+
+#### Low VRAM/Fairly Accurate
+
 Offered generously by the authors of <a href="https://github.com/CompVis/taming-transformers">Taming Transformers</a>
 This VAE is capable of generalizing and is also quite a bit easier to run than OpenAI's pretrained VAE (see below)
 A theoretical speedup of 16x is possible - although it seems to be more in the range of 2-4x in my experience. 
@@ -53,30 +62,24 @@ VRAM savings are substantial.
 
 ```python
 from dalle_pytorch import VQGanVAE1024
-
 vae = VQGanVAE1024()
+```
 
-# the rest is the same as the above example
-
-## OpenAI's Pretrained VAE (Accurate - More VRAM)
+### `dalle_pytorch.OpenAIDiscreteVAE`
+#### (Accurate - More VRAM)
 ```python
-import torch
 from dalle_pytorch import OpenAIDiscreteVAE, DALLE
+vae = OpenAIDiscreteVAE()
+```
 
-vae = OpenAIDiscreteVAE()       # loads pretrained OpenAI VAE
-
+### Instantiate DALLE with your VAE of choice
 dalle = DALLE(
     dim = 1024,
-    vae = vae,                  # automatically infer (1) image sequence length and (2) number of image tokens
-    num_text_tokens = 10000,    # vocab size for text
-    text_seq_len = 256,         # text sequence length
-    depth = 1,                  # should aim to be 64
-    heads = 16,                 # attention heads
-    dim_head = 64,              # attention head dimension
-    attn_dropout = 0.1,         # attention dropout
-    ff_dropout = 0.1            # feedforward dropout
+    vae = vae,
 )
 
+###
+```python
 text = torch.randint(0, 10000, (4, 256))
 images = torch.randn(4, 3, 256, 256)
 mask = torch.ones_like(text).bool()
@@ -85,27 +88,18 @@ loss = dalle(text, images, mask = mask, return_loss = True)
 loss.backward()
 ```
 
-
-```
-
 ## Ranking the generations
 
 You can use the official <a href="https://github.com/openai/CLIP">CLIP model</a> to rank the images from DALL-E. 
 
 ## VRAM Optimizations:
 
-
 ### Reversible
 Simply set the `reversible` keyword to `True` for the `DALLE` class
 
 ```python
 dalle = DALLE(
-    dim = 1024,
-    vae = vae,
-    num_text_tokens = 10000,
-    text_seq_len = 256,
-    depth = 64,
-    heads = 16,
+    # ...
     reversible = True  # <-- reversible networks https://arxiv.org/abs/2001.04451
 )
 ```
@@ -114,13 +108,7 @@ dalle = DALLE(
 
 ```python
 dalle = DALLE(
-    dim = 1024,
-    vae = vae,
-    num_text_tokens = 10000,
-    text_seq_len = 256,
-    depth = 64,
-    heads = 16,
-    reversible = True,
+    # ...
     attn_types = ('sparse')  # cycles between these four types of attention
 )
 
@@ -136,64 +124,21 @@ By default `DALLE` will use full attention for all layers, but you can specify t
 
 ```python
 dalle = DALLE(
-    dim = 1024,
-    vae = vae,
-    num_text_tokens = 10000,
-    text_seq_len = 256,
-    depth = 64,
-    heads = 16,
-    reversible = True,
+    # ...
     attn_types = ('full', 'axial_row', 'axial_col', 'conv_like')  # cycles between these four types of attention
 )
 ```
 
-## Deepspeed Sparse Attention
-
-You can also train with Microsoft Deepspeed's <a href="https://www.deepspeed.ai/news/2020/09/08/sparse-attention.html">Sparse Attention</a>, with any combination of dense and sparse attention that you'd like. However, you will have to endure the installation process.
-
-```
-
 ## Training
-
-This section will outline how to train the discrete variational autoencoder as well as the final multi-modal transformer (DALL-E). We are going to use <a href="https://wandb.ai/">Weights & Biases</a> for all the experiment tracking.
-
-(You can also do everything in this section in a Google Colab, link below)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
 
+Assuming you have installed all dependencies -
 ```bash
-$ pip install wandb
+# Make sure you're in a virtual environment on either conda or python-virtualenv:
+# conda activate dalle_pytorch_afiaka87
+# source ~/.virtualenvs/dalle_pytorch_afiaka87
 ```
-
-Followed by
-
-```bash
-$ wandb login
-```
-
-### VAE
-
-To train the VAE, you just need to run
-
-```python
-$ python train_vae.py --image_folder /path/to/your/images
-```
-
-If you installed everything correctly, a link to the experiments page should show up in your terminal. You can follow your link there and customize your experiment, like the example layout below.
-
-<img src="./images/wb.png" width="700px"></img>
-
-You can of course open up the training script at `./train_vae.py`, where you can modify the constants, what is passed to Weights & Biases, or any other tricks you know to make the VAE learn better.
-
-Model will be saved periodically to `./vae.pt`
-
-In the experiment tracker, you will have to monitor the hard reconstruction, as we are essentially teaching the network to compress images into discrete visual tokens for use in the transformer as a visual vocabulary.
-
-Weights and Biases will allow you to monitor the temperature annealing, image reconstructions (encoder and decoder working properly), as well as to watch out for codebook collapse (where the network decides to only use a few tokens out of what you provide it).
-
-Once you have trained a decent VAE to your satisfaction, you can move on to the next step with your model weights at `./vae.pt`.
-
-### DALL-E
 
 Now you just have to invoke the `./train_dalle.py` script, indicating which VAE model you would like to use, as well as the path to your folder if images and text.
 
@@ -231,17 +176,10 @@ You likely will not finish DALL-E training as quickly as you did your Discrete V
 $ python train_dalle.py --dalle_path ./dalle.pt --image_text_folder /path/to/data
 ```
 
-### DALL-E with OpenAI's VAE
 
-You can now also train DALL-E without having to train the Discrete VAE at all, courtesy to their open-sourcing their model. You simply have to invoke the `train_dalle.py` script without specifying the `--vae_path`
+### Generate Images from Text 
 
-```python
-$ python train_dalle.py --image_text_folder /path/to/coco/dataset
-```
-
-### Generation
-
-Once you have successfully trained DALL-E, you can then use the saved model for generation!
+** You will need a pretrained `dalle.pt` checkpoint in order to run this. You may attempt to train one yourself but so far there are none worth releasing. **
 
 ```python
 $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under a full moon'
