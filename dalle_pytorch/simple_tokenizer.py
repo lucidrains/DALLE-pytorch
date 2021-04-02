@@ -122,12 +122,12 @@ class SimpleTokenizer(object):
 
 tokenizer = SimpleTokenizer()
 
-def tokenize(texts, context_length = 256, add_start_and_end = False, truncate_text=False):
+def tokenize(texts, context_length = 256, add_start = False, add_end = True, truncate_text = False):
     if isinstance(texts, str):
         texts = [texts]
 
-    sot_tokens = [tokenizer.encoder["<|startoftext|>"]] if add_start_and_end else []
-    eot_tokens = [tokenizer.encoder["<|endoftext|>"]] if add_start_and_end else []
+    sot_tokens = [tokenizer.encoder["<|startoftext|>"]] if add_start else []
+    eot_tokens = [tokenizer.encoder["<|endoftext|>"]] if add_end else []
     all_tokens = [sot_tokens + tokenizer.encode(text) + eot_tokens for text in texts]
     result = torch.zeros(len(all_tokens), context_length, dtype=torch.long)
 
