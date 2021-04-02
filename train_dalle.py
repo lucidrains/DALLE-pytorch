@@ -261,6 +261,7 @@ if deepspeed_utils.is_root_worker():
         resume = RESUME,
         config = model_config,
     )
+    torch.cuda.empty_cache()
 
 # distribute
 
@@ -303,6 +304,7 @@ for epoch in range(EPOCHS):
             log = {}
 
             if i % 10 == 0:
+                torch.cuda.empty_cache()
                 print(epoch, i, f'loss - {loss.item()}')
 
                 log = {
