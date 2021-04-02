@@ -221,7 +221,7 @@ if deepspeed_utils.is_root_worker():
 dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 # initialize DALL-E
-
+torch.cuda.empty_cache()
 dalle = DALLE(vae = vae, **dalle_params).cuda()
 
 if RESUME:
@@ -278,7 +278,7 @@ deepspeed_config = {'train_batch_size': BATCH_SIZE}
 )
 
 # training
-
+torch.cuda.empty_cache()
 for epoch in range(EPOCHS):
     for i, (text, images, mask) in enumerate(dl):
         text, images, mask = map(lambda t: t.cuda(), (text, images, mask))
@@ -300,6 +300,7 @@ for epoch in range(EPOCHS):
             opt.zero_grad()
 
         if deepspeed_utils.is_root_worker():
+            torch.cuda.empty_cache()
             log = {}
 
             if i % 10 == 0:
