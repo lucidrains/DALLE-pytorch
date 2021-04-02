@@ -233,6 +233,7 @@ if args.fp16:
     dalle = dalle.half()
 dalle = dalle.cuda()
 
+
 if RESUME:
     dalle.load_state_dict(weights)
 
@@ -293,7 +294,7 @@ deepspeed_config = {
 avoid_model_calls = args.deepspeed and args.fp16
 
 # training
-
+torch.cuda.empty_cache()
 for epoch in range(EPOCHS):
     for i, (text, images, mask) in enumerate(dl):
         if args.fp16:
@@ -317,6 +318,7 @@ for epoch in range(EPOCHS):
             opt.zero_grad()
 
         if deepspeed_utils.is_root_worker():
+            torch.cuda.empty_cache()
             log = {}
 
             if i % 10 == 0:
