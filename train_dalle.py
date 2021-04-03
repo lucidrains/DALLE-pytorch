@@ -207,10 +207,9 @@ class TextImageDataset(Dataset):
         description = choice(descriptions)
 
         tokenized_text = tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
-        mask = tokenized_text != 0
 
         image_tensor = self.image_tranform(image)
-        return tokenized_text, image_tensor, mask
+        return tokenized_text, image_tensor
 
 # create dataset and dataloader
 
@@ -296,12 +295,12 @@ avoid_model_calls = args.deepspeed and args.fp16
 # training
 torch.cuda.empty_cache()
 for epoch in range(EPOCHS):
-    for i, (text, images, mask) in enumerate(dl):
+    for i, (text, images) in enumerate(dl):
         if args.fp16:
             images = images.half()
-        text, images, mask = map(lambda t: t.cuda(), (text, images, mask))
+        text, images = map(lambda t: t.cuda(), (text, images))
 
-        loss = distr_dalle(text, images, mask = mask, return_loss = True)
+        loss = distr_dalle(text, images, return_loss = True)
 
         if args.deepspeed:
             distr_dalle.backward(loss)
@@ -341,11 +340,7 @@ for epoch in range(EPOCHS):
 
                 if not avoid_model_calls:
                     # CUDA index errors when we don't guard this
-                    image = dalle.generate_images(
-                        text[:1],
-                        mask = mask[:1],
-                        filter_thres = 0.9    # topk sampling at 0.9
-                    )
+                    image = dalle.generate_images(text[:1], filter_thres = 0.9) # topk sampling at 0.9
 
                 save_model(f'./dalle.pt')
                 wandb.save(f'./dalle.pt')
