@@ -125,7 +125,7 @@ class SimpleTokenizer(object):
 
 tokenizer = SimpleTokenizer()
 
-def tokenize(texts, context_length = 256, add_start = False, add_end = True, truncate_text = False):
+def tokenize(texts, context_length = 256, add_start = False, add_end = False, truncate_text = False):
     if isinstance(texts, str):
         texts = [texts]
 
