@@ -1,4 +1,6 @@
-<img src="./images/banner.jpg" width="500px"></img>
+<img src="./images/birds.png" width="500px"></img>
+
+** current best, trained by <a href="https://github.com/kobiso">Kobiso</a> **
 
 ## DALL-E in Pytorch
 
