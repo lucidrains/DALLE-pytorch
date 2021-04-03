@@ -312,6 +312,8 @@ class DALLE(nn.Module):
         image_fmap_size = (vae.image_size // (2 ** vae.num_layers))
         image_seq_len = image_fmap_size ** 2
 
+        num_text_tokens = num_text_tokens + text_seq_len  # reserve unique padding tokens for each position (text seq len)
+
         self.text_emb = nn.Embedding(num_text_tokens, dim)
         self.image_emb = nn.Embedding(num_image_tokens, dim)
 
@@ -433,10 +435,14 @@ class DALLE(nn.Module):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
         device, total_seq_len = text.device, self.total_seq_len
 
-        text = F.pad(text, (1, 0), value = 0) # use padding as <bos>
+        # make sure padding in text tokens get unique padding token id
 
-        if exists(mask):
-            mask = F.pad(mask, (1, 0), value = True)
+        text_range = torch.arange(self.text_seq_len, device = device) + (self.num_text_tokens - self.text_seq_len)
+        text = torch.where(text == 0, text_range, text)
+
+        # add <bos>
+
+        text = F.pad(text, (1, 0), value = 0)
 
         tokens = self.text_emb(text)
         tokens += self.text_pos_emb(torch.arange(text.shape[1], device = device))
@@ -460,22 +466,19 @@ class DALLE(nn.Module):
             tokens = torch.cat((tokens, image_emb), dim = 1)
 
             seq_len += image_len
-            if exists(mask):
-                mask = F.pad(mask, (0, image_emb.shape[1]), value = True)
 
         # when training, if the length exceeds the total text + image length
         # remove the last token, since it needs not to be trained
+
         if tokens.shape[1] > total_seq_len:
             seq_len -= 1
             tokens = tokens[:, :-1]
 
-            if exists(mask):
-                mask = mask[:, :-1]
-
-        out = self.transformer(tokens, mask = mask)
+        out = self.transformer(tokens)
         logits = self.to_logits(out)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
+
         logits_mask = self.logits_mask[:, :seq_len]
         max_neg_value = -torch.finfo(logits.dtype).max
         logits.masked_fill_(logits_mask, max_neg_value)
@@ -484,11 +487,14 @@ class DALLE(nn.Module):
             return logits
 
         assert exists(image), 'when training, image must be supplied'
+
         offsetted_image = image + self.num_text_tokens
         labels = torch.cat((text[:, 1:], offsetted_image), dim = 1)
 
         logits = rearrange(logits, 'b n c -> b c n')
-        loss_text = F.cross_entropy(logits[:, :, :self.text_seq_len], labels[:, :self.text_seq_len], ignore_index=0)
-        loss_img = F.cross_entropy(logits[:, :, self.text_seq_len:], labels[:, self.text_seq_len:], ignore_index=0)
+
+        loss_text = F.cross_entropy(logits[:, :, :self.text_seq_len], labels[:, :self.text_seq_len])
+        loss_img = F.cross_entropy(logits[:, :, self.text_seq_len:], labels[:, self.text_seq_len:])
+
         loss = (loss_text + self.loss_img_weight * loss_img) / (self.loss_img_weight + 1)
         return loss

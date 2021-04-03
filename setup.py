@@ -4,7 +4,7 @@ setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.8.3',
+  version = '0.9.0',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
