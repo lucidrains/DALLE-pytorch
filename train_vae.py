@@ -205,16 +205,19 @@ for epoch in range(EPOCHS):
 
             sched.step()
 
+        # Collective loss, averaged
+        avg_loss = deepspeed_utils.average_all(loss)
+
         if deepspeed_utils.is_root_worker():
             if i % 10 == 0:
                 lr = sched.get_last_lr()[0]
-                print(epoch, i, f'lr - {lr:6f} loss - {loss.item()}')
+                print(epoch, i, f'lr - {lr:6f} loss - {avg_loss.item()}')
 
                 logs = {
                     **logs,
                     'epoch': epoch,
                     'iter': i,
-                    'loss': loss.item(),
+                    'loss': avg_loss.item(),
                     'lr': lr
                 }
 

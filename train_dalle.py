@@ -317,18 +317,21 @@ for epoch in range(EPOCHS):
             opt.step()
             opt.zero_grad()
 
+        # Collective loss, averaged
+        avg_loss = deepspeed_utils.average_all(loss)
+
         if deepspeed_utils.is_root_worker():
             torch.cuda.empty_cache()
             log = {}
 
             if i % 10 == 0:
-                print(epoch, i, f'loss - {loss.item()}')
+                print(epoch, i, f'loss - {avg_loss.item()}')
 
                 log = {
                     **log,
                     'epoch': epoch,
                     'iter': i,
-                    'loss': loss.item()
+                    'loss': avg_loss.item()
                 }
 
             if i % 100 == 0:
