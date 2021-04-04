@@ -388,6 +388,16 @@ $ deepspeed <file>.py [args...] --deepspeed
 
 to use the aforementioned DeepSpeed library for distributed training, speeding up your experiments.
 
+Modify the `deepspeed_config` dictionary in `train_dalle.py` or
+`train_vae.py` according to the DeepSpeed settings you'd like to use
+for each one. See the [DeepSpeed configuration
+docs](https://www.deepspeed.ai/docs/config-json/) for more
+information.
+
+Note that for ZeRO optimizations, it's currently required to pass the
+`--fp16` flag as well to activate half-precision training. This is
+only supported for `train_dalle.py`.
+
 ## Citations
 
 ```bibtex
