@@ -51,8 +51,9 @@ def init_deepspeed(do_init):
 def require_init():
     """Raise an error when DeepSpeed has not been initialized yet."""
     assert using_deepspeed is not None, \
-        ('DeepSpeed has not been initialized; please call '
-         '`deepspeed_utils.init_deepspeed` at the start of your script')
+        ('`deepspeed_utils` have not been initialized; please call '
+         '`deepspeed_utils.init_deepspeed` at the start of your script to '
+         'allow optional DeepSpeed usage')
 
 
 def require_torch_distributed_init():
@@ -60,26 +61,26 @@ def require_torch_distributed_init():
     initialized yet.
     """
     assert torch.distributed.is_initialized(), \
-        ('torch.distributed is not initialized; please call '
+        ('`torch.distributed` is not initialized; please call '
          '`deepspeed_utils.init_deepspeed` at the start of your script')
 
 
 def get_world_size():
     """Return the amount of distributed processes."""
+    require_init()
     if not using_deepspeed:
         return 1
 
-    require_init()
     require_torch_distributed_init()
     return torch.distributed.get_world_size()
 
 
 def get_rank():
     """Return the global rank of the calling worker process."""
+    require_init()
     if not using_deepspeed:
         return ROOT_RANK
 
-    require_init()
     require_torch_distributed_init()
     return torch.distributed.get_rank()
 
@@ -88,10 +89,10 @@ def get_local_rank():
     """Return the local rank of the calling worker process.
     The local rank is the rank based on a single node's processes.
     """
+    require_init()
     if not using_deepspeed:
         return ROOT_RANK
 
-    require_init()
     require_torch_distributed_init()
     return int(os.environ['LOCAL_RANK'])
 
@@ -112,10 +113,10 @@ def is_local_root_worker():
 
 def local_barrier():
     """Wait until all processes on this node have called this function."""
+    require_init()
     if not using_deepspeed:
         return
 
-    require_init()
     require_torch_distributed_init()
     torch.distributed.barrier()
 
@@ -137,10 +138,10 @@ def maybe_distribute(
     For the other or other possible arguments,
     see `deepspeed.initialize`.
     """
+    require_init()
     if not using_deepspeed:
         return (model, optimizer, training_data, lr_scheduler)
 
-    require_init()
     return deepspeed.initialize(
         args=args,
         model=model,
@@ -160,10 +161,10 @@ def check_batch_size(batch_size):
 
 def average_all(tensor):
     """Return the average of `tensor` over all workers."""
+    require_init()
     if not using_deepspeed:
         return tensor
 
-    require_init()
     require_torch_distributed_init()
     # We copy because modification happens in-place
     averaged = tensor.detach().clone()
