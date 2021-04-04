@@ -51,8 +51,9 @@ def init_deepspeed(do_init):
 def require_init():
     """Raise an error when DeepSpeed has not been initialized yet."""
     assert using_deepspeed is not None, \
-        ('DeepSpeed has not been initialized; please call '
-         '`deepspeed_utils.init_deepspeed` at the start of your script')
+        ('`deepspeed_utils` have not been initialized; please call '
+         '`deepspeed_utils.init_deepspeed` at the start of your script to '
+         'allow optional DeepSpeed usage')
 
 
 def require_torch_distributed_init():
@@ -60,7 +61,7 @@ def require_torch_distributed_init():
     initialized yet.
     """
     assert torch.distributed.is_initialized(), \
-        ('torch.distributed is not initialized; please call '
+        ('`torch.distributed` is not initialized; please call '
          '`deepspeed_utils.init_deepspeed` at the start of your script')
 
 
