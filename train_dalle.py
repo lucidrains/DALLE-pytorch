@@ -6,7 +6,6 @@ from pathlib import Path
 
 import torch
 from torch.optim import Adam, AdamW
-from torch.nn.utils import clip_grad_norm_
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 # vision imports
@@ -276,6 +275,7 @@ if deepspeed_utils.is_root_worker():
 deepspeed_utils.check_batch_size(BATCH_SIZE)
 deepspeed_config = {
     'train_batch_size': BATCH_SIZE,
+    'gradient_clipping': GRAD_CLIP_NORM,
     'fp16': {
         'enabled': args.fp16,
     },
@@ -306,8 +306,6 @@ for epoch in range(EPOCHS):
             distr_dalle.backward(loss)
         else:
             loss.backward()
-
-        clip_grad_norm_(distr_dalle.parameters(), GRAD_CLIP_NORM)
 
         if args.deepspeed:
             distr_dalle.step()
