@@ -5,7 +5,7 @@ from pathlib import Path
 # torch
 
 import torch
-from torch.optim import Adam, AdamW
+from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 # vision imports
@@ -71,7 +71,6 @@ HEADS = 4
 DIM_HEAD = 64
 REVERSIBLE = True
 LOSS_IMG_WEIGHT = 7
-OPTIMIZER = "adam"
 LR_DECAY = False
 
 # initialize deepspeed
@@ -237,10 +236,7 @@ if RESUME:
 
 # optimizer
 
-if OPTIMIZER == 'adamw':
-    opt = AdamW(group_weight(dalle), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
-else:
-    opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
+opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
