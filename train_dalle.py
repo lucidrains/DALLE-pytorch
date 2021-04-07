@@ -173,7 +173,8 @@ class TextImageDataset(Dataset):
         image_files = [
             *path.glob('**/*.png'),
             *path.glob('**/*.jpg'),
-            *path.glob('**/*.jpeg')
+            *path.glob('**/*.jpeg'),
+            *path.glob('**/*.bmp')
         ]
 
         text_files = {t.stem: t for t in text_files}
