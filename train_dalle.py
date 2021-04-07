@@ -223,7 +223,7 @@ if deepspeed_utils.is_root_worker():
     print("Initializing `dalle-pytorch.DALLE`.)
     print("Note: If using deepspeed, you may encounter a bug causing memory allocation errors.")
     print("See https://github.com/lucidrains/DALLE-pytorch/issues/161 to help us resolve this.") #TODO Remove warning after issue resolved.
-    # initialize DALL-E
+# initialize DALL-E
 
 dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
