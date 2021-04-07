@@ -5,6 +5,7 @@ from pathlib import Path
 # torch
 
 import torch
+from torch.nn.utils import clip_grad_norm_
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
@@ -300,13 +301,11 @@ for epoch in range(EPOCHS):
 
         if args.deepspeed:
             distr_dalle.backward(loss)
-        else:
-            loss.backward()
-
-        if args.deepspeed:
             distr_dalle.step()
             # Gradients are automatically zeroed after the step
         else:
+            loss.backward()
+            clip_grad_norm_(distr_dalle.parameters(), GRAD_CLIP_NORM)
             opt.step()
             opt.zero_grad()
 
