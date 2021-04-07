@@ -220,10 +220,13 @@ ds = TextImageDataset(
 assert len(ds) > 0, 'dataset is empty'
 if deepspeed_utils.is_root_worker():
     print(f'{len(ds)} image-text pairs found for training')
+    print("Initializing `dalle-pytorch.DALLE`.)
+    print("Note: If using deepspeed, you may encounter a bug causing memory allocation errors.")
+    print("See https://github.com/lucidrains/DALLE-pytorch/issues/161 to help us resolve this.") #TODO Remove warning after issue resolved.
+    # initialize DALL-E
 
 dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
-# initialize DALL-E
 
 dalle = DALLE(vae = vae, **dalle_params)
 if args.fp16:
@@ -289,7 +292,8 @@ deepspeed_config = {
 avoid_model_calls = args.deepspeed and args.fp16
 
 # training
-torch.cuda.empty_cache()
+
+torch.cuda.synchronize()
 for epoch in range(EPOCHS):
     for i, (text, images) in enumerate(dl):
         if args.fp16:
@@ -314,7 +318,8 @@ for epoch in range(EPOCHS):
         avg_loss = deepspeed_utils.average_all(loss)
 
         if deepspeed_utils.is_root_worker():
-            torch.cuda.empty_cache()
+            # Consider un-commenting this line to solve out-of-memory errors at expense of runtime. See https://github.com/lucidrains/DALLE-pytorch/issues/161
+            # torch.cuda.empty_cache()
             log = {}
 
             if i % 10 == 0:
