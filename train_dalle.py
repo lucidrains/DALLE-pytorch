@@ -289,7 +289,7 @@ deepspeed_config = {
 avoid_model_calls = args.deepspeed and args.fp16
 
 # training
-torch.cuda.empty_cache()
+torch.cuda.empty_cache() # Avoid allocation error due to potential bug in deepspeed. See https://github.com/lucidrains/DALLE-pytorch/issues/161
 for epoch in range(EPOCHS):
     for i, (text, images) in enumerate(dl):
         if args.fp16:
@@ -314,8 +314,6 @@ for epoch in range(EPOCHS):
         avg_loss = deepspeed_utils.average_all(loss)
 
         if deepspeed_utils.is_root_worker():
-            if i < 1:
-              torch.cuda.empty_cache()
             log = {}
 
             if i % 10 == 0:
