@@ -314,7 +314,8 @@ for epoch in range(EPOCHS):
         avg_loss = deepspeed_utils.average_all(loss)
 
         if deepspeed_utils.is_root_worker():
-            torch.cuda.empty_cache()
+            if i < 1:
+              torch.cuda.empty_cache()
             log = {}
 
             if i % 10 == 0:
