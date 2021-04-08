@@ -24,7 +24,7 @@ from dalle_pytorch import deepspeed_utils
 
 # constants
 
-CACHE_PATH = os.path.expanduser("~/.cache/dalle")
+CACHE_PATH = os.path.realpath("/tmp/.cache/dalle")
 
 OPENAI_VAE_ENCODER_PATH = 'https://cdn.openai.com/dall-e/encoder.pkl'
 OPENAI_VAE_DECODER_PATH = 'https://cdn.openai.com/dall-e/decoder.pkl'
@@ -51,7 +51,7 @@ def unmap_pixels(x, eps = 0.1):
     return torch.clamp((x - eps) / (1 - 2 * eps), 0, 1)
 
 def download(url, filename = None, root = CACHE_PATH):
-    if deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker():
+    if deepspeed_utils.is_local_root_worker():
         os.makedirs(root, exist_ok = True)
     filename = default(filename, os.path.basename(url))
 
