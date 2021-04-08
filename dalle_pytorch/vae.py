@@ -51,7 +51,7 @@ def unmap_pixels(x, eps = 0.1):
     return torch.clamp((x - eps) / (1 - 2 * eps), 0, 1)
 
 def download(url, filename = None, root = CACHE_PATH):
-    if deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker():
+    if not deepspeed_utils.using_deepspeed or (deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker()):
         os.makedirs(root, exist_ok = True)
     filename = default(filename, os.path.basename(url))
 
