@@ -83,7 +83,7 @@ def download(url, filename = None, root = CACHE_PATH):
                 loop.update(len(buffer))
 
     os.rename(download_target_tmp, download_target)
-    if deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker():
+    if deepspeed_utils.using_deepspeed or deepspeed_utils.is_local_root_worker():
         deepspeed_utils.local_barrier()
     return download_target
 
