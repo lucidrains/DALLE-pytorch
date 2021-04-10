@@ -115,19 +115,25 @@ class SimpleTokenizer(object):
             bpe_tokens.extend(self.encoder[bpe_token] for bpe_token in self.bpe(token).split(' '))
         return bpe_tokens
 
-    def decode(self, tokens):
+    def decode(self, tokens, remove_start_end = True):
+        if remove_start_end:
+            tokens = [token for token in tokens if token not in (49406, 40407, 0)]
         text = ''.join([self.decoder[token] for token in tokens])
         text = bytearray([self.byte_decoder[c] for c in text]).decode('utf-8', errors="replace").replace('</w>', ' ')
         return text
 
 tokenizer = SimpleTokenizer()
 
+<<<<<<< HEAD
 def tokenize(texts, context_length = 256, add_start_and_end = False, truncate_text=False):
+=======
+def tokenize(texts, context_length = 256, add_start = False, add_end = False, truncate_text = False):
+>>>>>>> upstream/main
     if isinstance(texts, str):
         texts = [texts]
 
-    sot_tokens = [tokenizer.encoder["<|startoftext|>"]] if add_start_and_end else []
-    eot_tokens = [tokenizer.encoder["<|endoftext|>"]] if add_start_and_end else []
+    sot_tokens = [tokenizer.encoder["<|startoftext|>"]] if add_start else []
+    eot_tokens = [tokenizer.encoder["<|endoftext|>"]] if add_end else []
     all_tokens = [sot_tokens + tokenizer.encode(text) + eot_tokens for text in texts]
     result = torch.zeros(len(all_tokens), context_length, dtype=torch.long)
 

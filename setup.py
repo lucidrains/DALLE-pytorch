@@ -4,7 +4,7 @@ setup(
   name = 'perugia',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.0.1',
+  version = '0.9.6',
   license='MIT',
   description = 'perugia - generate images from text with machine learning (gpu needed)',
   author = 'Sam Sepiol',

@@ -51,7 +51,7 @@ def unmap_pixels(x, eps = 0.1):
     return torch.clamp((x - eps) / (1 - 2 * eps), 0, 1)
 
 def download(url, filename = None, root = CACHE_PATH):
-    if deepspeed_utils.is_local_root_worker():
+    if not deepspeed_utils.using_deepspeed or (deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker()):
         os.makedirs(root, exist_ok = True)
     filename = default(filename, os.path.basename(url))
 
@@ -61,7 +61,11 @@ def download(url, filename = None, root = CACHE_PATH):
     if os.path.exists(download_target) and not os.path.isfile(download_target):
         raise RuntimeError(f"{download_target} exists and is not a regular file")
 
-    if not deepspeed_utils.is_local_root_worker() and not os.path.isfile(download_target):
+    if (
+            deepspeed_utils.using_deepspeed
+            and not deepspeed_utils.is_local_root_worker()
+            and not os.path.isfile(download_target)
+    ):
         # If the file doesn't exist yet, wait until it's downloaded by the root worker.
         deepspeed_utils.local_barrier()
 
@@ -99,7 +103,7 @@ class OpenAIDiscreteVAE(nn.Module):
     @torch.no_grad()
     def get_codebook_indices(self, img):
         img = map_pixels(img)
-        z_logits = self.enc(img)
+        z_logits = self.enc.blocks(img)
         z = torch.argmax(z_logits, dim = 1)
         return rearrange(z, 'b h w -> b (h w)')
 

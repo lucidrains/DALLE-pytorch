@@ -1,4 +1,8 @@
 # `perugia`
+<img src="./images/birds.png" width="500px"></img>
+
+** current best, trained by <a href="https://github.com/kobiso">Kobiso</a> **
+>>>>>>> upstream/main
 
 > "Those who do not want to imitate anything, produce nothing."
 >  \- Dali
@@ -24,8 +28,3 @@ For now - there's no pretrained model. You can attempt to train one yourself how
   - This isn't he same DALL-E that OpenAI have presented. It is an attempt at recreating its architecture based on the details released by those researchers. There's not a pretrained model yet, but I believe one is right around the corner.
   
   - I have not been able to test this code out on Windows 10 yet. I hope that it works using the conda instructions, but please file an issue if it doesn't. 
-
-
-## Citations
-
-https://github.com/afiaka87/perugia/wiki/Citations

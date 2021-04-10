@@ -22,7 +22,7 @@ def wrap_arg_parser(parser):
     if not has_deepspeed():
         parser.add_argument(
             '--deepspeed',
-            action=lambda _: False,
+            type=lambda _: False,
             help="whether to use DeepSpeed (ignored since it's not available)",
         )
     else:
@@ -51,8 +51,9 @@ def init_deepspeed(do_init):
 def require_init():
     """Raise an error when DeepSpeed has not been initialized yet."""
     assert using_deepspeed is not None, \
-        ('DeepSpeed has not been initialized; please call '
-         '`deepspeed_utils.init_deepspeed` at the start of your script')
+        ('`deepspeed_utils` have not been initialized; please call '
+         '`deepspeed_utils.init_deepspeed` at the start of your script to '
+         'allow optional DeepSpeed usage')
 
 
 def require_torch_distributed_init():
@@ -60,7 +61,7 @@ def require_torch_distributed_init():
     initialized yet.
     """
     assert torch.distributed.is_initialized(), \
-        ('torch.distributed is not initialized; please call '
+        ('`torch.distributed` is not initialized; please call '
          '`deepspeed_utils.init_deepspeed` at the start of your script')
 
 
@@ -156,3 +157,17 @@ def check_batch_size(batch_size):
     assert batch_size >= get_world_size(), \
         (f"batch size can't be smaller than number of processes "
          f'({batch_size} < {get_world_size()})')
+
+
+def average_all(tensor):
+    """Return the average of `tensor` over all workers."""
+    require_init()
+    if not using_deepspeed:
+        return tensor
+
+    require_torch_distributed_init()
+    # We copy because modification happens in-place
+    averaged = tensor.detach().clone()
+    # We use `all_reduce` because it is better supported than `reduce`
+    torch.distributed.all_reduce(averaged, torch.distributed.ReduceOp.SUM)
+    return averaged / get_world_size()

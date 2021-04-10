@@ -5,8 +5,8 @@ from pathlib import Path
 # torch
 
 import torch
-from torch.optim import Adam, AdamW
 from torch.nn.utils import clip_grad_norm_
+from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 # vision imports
@@ -43,6 +43,8 @@ parser.add_argument('--truncate_captions', dest='truncate_captions',
 
 parser.add_argument('--taming', dest='taming', action='store_true')
 
+parser.add_argument('--fp16', action='store_true')
+
 parser = deepspeed_utils.wrap_arg_parser(parser)
 
 args = parser.parse_args()
@@ -70,7 +72,6 @@ HEADS = 4
 DIM_HEAD = 64
 REVERSIBLE = True
 LOSS_IMG_WEIGHT = 7
-OPTIMIZER = "adam"
 LR_DECAY = False
 
 # initialize deepspeed
@@ -129,6 +130,10 @@ else:
         loss_img_weight = LOSS_IMG_WEIGHT
     )
 
+# configure OpenAI VAE for float16s
+if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
+    vae.enc.blocks.output.conv.use_float16 = True
+
 # helpers
 
 def save_model(path):
@@ -168,7 +173,8 @@ class TextImageDataset(Dataset):
         image_files = [
             *path.glob('**/*.png'),
             *path.glob('**/*.jpg'),
-            *path.glob('**/*.jpeg')
+            *path.glob('**/*.jpeg'),
+            *path.glob('**/*.bmp')
         ]
 
         text_files = {t.stem: t for t in text_files}
@@ -201,10 +207,9 @@ class TextImageDataset(Dataset):
         description = choice(descriptions)
 
         tokenized_text = tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
-        mask = tokenized_text != 0
 
         image_tensor = self.image_tranform(image)
-        return tokenized_text, image_tensor, mask
+        return tokenized_text, image_tensor
 
 # create dataset and dataloader
 
@@ -222,17 +227,18 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
 
 # initialize DALL-E
 
-dalle = DALLE(vae = vae, **dalle_params).cuda()
+dalle = DALLE(vae = vae, **dalle_params)
+if args.fp16:
+    dalle = dalle.half()
+dalle = dalle.cuda()
+
 
 if RESUME:
     dalle.load_state_dict(weights)
 
 # optimizer
 
-if OPTIMIZER is 'adamw':
-    opt = AdamW(group_weight(dalle), lr = LEARNING_RATE, betas = (0.9, 0.96), eps = 1e-08, weight_decay = 4.5e-2, amsgrad = False)
-else:
-    opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
+opt = Adam(dalle.parameters(), lr = LEARNING_RATE)
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
@@ -266,7 +272,13 @@ if deepspeed_utils.is_root_worker():
 # distribute
 
 deepspeed_utils.check_batch_size(BATCH_SIZE)
-deepspeed_config = {'train_batch_size': BATCH_SIZE}
+deepspeed_config = {
+    'train_batch_size': BATCH_SIZE,
+    'gradient_clipping': GRAD_CLIP_NORM,
+    'fp16': {
+        'enabled': args.fp16,
+    },
+}
 
 (distr_dalle, opt, dl, scheduler) = deepspeed_utils.maybe_distribute(
     args=args,
@@ -277,41 +289,42 @@ deepspeed_config = {'train_batch_size': BATCH_SIZE}
     lr_scheduler=scheduler if LR_DECAY else None,
     config_params=deepspeed_config,
 )
+avoid_model_calls = args.deepspeed and args.fp16
 
 # training
-
+torch.cuda.empty_cache() # Avoid allocation error due to potential bug in deepspeed. See https://github.com/lucidrains/DALLE-pytorch/issues/161
 for epoch in range(EPOCHS):
-    for i, (text, images, mask) in enumerate(dl):
-        text, images, mask = map(lambda t: t.cuda(), (text, images, mask))
+    for i, (text, images) in enumerate(dl):
+        if args.fp16:
+            images = images.half()
+        text, images = map(lambda t: t.cuda(), (text, images))
 
-        loss = distr_dalle(text, images, mask = mask, return_loss = True)
+        loss = distr_dalle(text, images, return_loss = True)
 
         if args.deepspeed:
             distr_dalle.backward(loss)
-        else:
-            loss.backward()
-
-        clip_grad_norm_(distr_dalle.parameters(), GRAD_CLIP_NORM)
-
-        if args.deepspeed:
             distr_dalle.step()
             # Gradients are automatically zeroed after the step
         else:
+            loss.backward()
+            clip_grad_norm_(distr_dalle.parameters(), GRAD_CLIP_NORM)
             opt.step()
             opt.zero_grad()
+
+        # Collective loss, averaged
+        avg_loss = deepspeed_utils.average_all(loss)
 
         if deepspeed_utils.is_root_worker():
             log = {}
 
             if i % 10 == 0:
-                torch.cuda.empty_cache()
-                print(epoch, i, f'loss - {loss.item()}')
+                print(epoch, i, f'loss - {avg_loss.item()}')
 
                 log = {
                     **log,
                     'epoch': epoch,
                     'iter': i,
-                    'loss': loss.item()
+                    'loss': avg_loss.item()
                 }
 
             if i % 100 == 0:
@@ -319,19 +332,18 @@ for epoch in range(EPOCHS):
                 token_list = sample_text.masked_select(sample_text != 0).tolist()
                 decoded_text = tokenizer.decode(token_list)
 
-                image = dalle.generate_images(
-                    text[:1],
-                    mask = mask[:1],
-                    filter_thres = 0.9    # topk sampling at 0.9
-                )
+                if not avoid_model_calls:
+                    # CUDA index errors when we don't guard this
+                    image = dalle.generate_images(text[:1], filter_thres = 0.9) # topk sampling at 0.9
 
                 save_model(f'./dalle.pt')
                 wandb.save(f'./dalle.pt')
 
                 log = {
                     **log,
-                    'image': wandb.Image(image, caption = decoded_text)
                 }
+                if not avoid_model_calls:
+                    log['image'] = wandb.Image(image, caption = decoded_text)
 
             wandb.log(log)
 
