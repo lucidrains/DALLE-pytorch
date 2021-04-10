@@ -61,16 +61,16 @@ DALLE_PATH = args.dalle_path
 RESUME = exists(DALLE_PATH)
 
 EPOCHS = 20
-BATCH_SIZE = 4
+BATCH_SIZE = 16
 LEARNING_RATE = 3e-4
 GRAD_CLIP_NORM = 0.5
 
 MODEL_DIM = 512
 TEXT_SEQ_LEN = 256
-DEPTH = 2
-HEADS = 4
+DEPTH = 32
+HEADS = 16
 DIM_HEAD = 64
-REVERSIBLE = True
+REVERSIBLE = False
 LOSS_IMG_WEIGHT = 7
 LR_DECAY = False
 
@@ -127,7 +127,8 @@ else:
         heads = HEADS,
         dim_head = DIM_HEAD,
         reversible = REVERSIBLE,
-        loss_img_weight = LOSS_IMG_WEIGHT
+        loss_img_weight = LOSS_IMG_WEIGHT,
+        attn_types = ('full', 'sparse')
     )
 
 # configure OpenAI VAE for float16s
@@ -263,20 +264,34 @@ if deepspeed_utils.is_root_worker():
     )
 
     run = wandb.init(
-        project = 'dalle_train_transformer',
+        project = '4x3090RTX_sparse_fp16_stage2',
         resume = RESUME,
         config = model_config,
     )
-    torch.cuda.empty_cache()
 
 # distribute
+#NCCL_TREE_THRESHOLD=0
 
 deepspeed_utils.check_batch_size(BATCH_SIZE)
 deepspeed_config = {
+    "zero_optimization": {
+        "stage": 2,
+    },
+    "sparse_attention": {
+        "mode": "fixed",
+        "block": 16,
+        "different_layout_per_head": True,
+        "num_local_blocks": 4,
+        "num_global_blocks": 1,
+        "attention": "bidirectional",
+        "horizontal_global_attention": False,
+        "num_different_global_patterns": 4
+    },
     'train_batch_size': BATCH_SIZE,
     'gradient_clipping': GRAD_CLIP_NORM,
     'fp16': {
         'enabled': args.fp16,
+        'loss_scale': 0,
     },
 }
 
@@ -337,7 +352,7 @@ for epoch in range(EPOCHS):
                     image = dalle.generate_images(text[:1], filter_thres = 0.9) # topk sampling at 0.9
 
                 save_model(f'./dalle.pt')
-                wandb.save(f'./dalle.pt')
+                #wandb.save(f'./dalle.pt')
 
                 log = {
                     **log,
