@@ -227,7 +227,15 @@ assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
     print(f'{len(ds)} image-text pairs found for training')
 
-dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
+if distributed_utils.using_backend(distributed_utils.HorovodBackend):
+    data_sampler = torch.utils.data.distributed.DistributedSampler(
+        ds, num_replicas=distr_backend.get_world_size(),
+        rank=distr_backend.get_rank())
+else:
+    data_sampler = None
+
+dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = not data_sampler,
+                drop_last = True, sampler=data_sampler)
 
 # initialize DALL-E
 

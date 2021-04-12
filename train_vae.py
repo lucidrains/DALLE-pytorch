@@ -78,7 +78,14 @@ ds = ImageFolder(
     ])
 )
 
-dl = DataLoader(ds, BATCH_SIZE, shuffle = True)
+if distributed_utils.using_backend(distributed_utils.HorovodBackend):
+    data_sampler = torch.utils.data.distributed.DistributedSampler(
+        ds, num_replicas=distr_backend.get_world_size(),
+        rank=distr_backend.get_rank())
+else:
+    data_sampler = None
+
+dl = DataLoader(ds, BATCH_SIZE, shuffle = not data_sampler, sampler=data_sampler)
 
 vae_params = dict(
     image_size = IMAGE_SIZE,

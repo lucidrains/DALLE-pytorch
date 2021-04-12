@@ -13,7 +13,8 @@ function.
 
 from dalle_pytorch.distributed_backends import \
     DeepSpeedBackend, \
-    DummyBackend
+    DummyBackend, \
+    HorovodBackend
 
 _DEFAULT_BACKEND = DummyBackend()
 """Which backend to use by default. Assumed to be _not_ distributed."""
@@ -21,6 +22,7 @@ _DEFAULT_BACKEND = DummyBackend()
 BACKENDS = [
     _DEFAULT_BACKEND,
     DeepSpeedBackend(),
+    HorovodBackend(),
 ]
 
 is_distributed = None
