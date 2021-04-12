@@ -402,8 +402,12 @@ only supported for `train_dalle.py`.
 
 #### Horovod
 
-After installing [Horovod](https://horovod.ai), replace any `$ python
-<file>.py [args...]` command with
+[Horovod](https://horovod.ai) offers a stable way for data parallel
+training.
+
+After [installing
+Horovod](https://github.com/lucidrains/DALLE-pytorch/wiki/Horovod-Installation),
+replace any `$ python <file>.py [args...]` command with
 
 ```sh
 $ horovodrun -np <num-gpus> <file>.py [args...] --distributed_backend horovod
