@@ -376,7 +376,9 @@ $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under 
 
 You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
 
-### Distributed Training with DeepSpeed
+### Distributed Training
+
+#### DeepSpeed
 
 Thanks to <a href="https://github.com/janEbert">janEbert</a>, the repository is now equipped so you can train DALL-E with Microsoft's <a href="https://www.deepspeed.ai/">Deepspeed</a>!
 
@@ -397,6 +399,20 @@ information.
 Note that for ZeRO optimizations, it's currently required to pass the
 `--fp16` flag as well to activate half-precision training. This is
 only supported for `train_dalle.py`.
+
+#### Horovod
+
+After installing [Horovod](https://horovod.ai), replace any `$ python
+<file>.py [args...]` command with
+
+```sh
+$ horovodrun -np <num-gpus> <file>.py [args...] --distributed_backend horovod
+```
+
+to use the Horovod library for distributed training, speeding up your
+experiments. This will multiply your effective batch size per training
+step by `<num-gpus>`, so you may need to rescale the learning rate
+accordingly.
 
 ## Citations
 
