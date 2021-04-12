@@ -17,7 +17,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle classes and utils
 
-from dalle_pytorch import deepspeed_utils
+from dalle_pytorch import distributed_utils
 from dalle_pytorch import DiscreteVAE
 
 # argument parsing
@@ -30,7 +30,7 @@ parser.add_argument('--image_folder', type = str, required = True,
 parser.add_argument('--image_size', type = int, required = False, default = 128,
                     help='image size')
 
-parser = deepspeed_utils.wrap_arg_parser(parser)
+parser = distributed_utils.wrap_arg_parser(parser)
 
 args = parser.parse_args()
 
@@ -58,9 +58,13 @@ ANNEAL_RATE = 1e-6
 
 NUM_IMAGES_SAVE = 4
 
-# initialize deepspeed
+# initialize distributed backend
 
-deepspeed_utils.init_deepspeed(args.deepspeed)
+distr_backend = distributed_utils.set_backend_from_args(args)
+distr_backend.initialize()
+
+using_deepspeed = \
+    distributed_utils.using_backend(distributed_utils.DeepSpeedBackend)
 
 # data
 
@@ -93,11 +97,11 @@ vae = DiscreteVAE(
 
 
 assert len(ds) > 0, 'folder does not contain any images'
-if deepspeed_utils.is_root_worker():
+if distr_backend.is_root_worker():
     print(f'{len(ds)} images found for training')
 
 def save_model(path):
-    if not deepspeed_utils.is_root_worker():
+    if not distr_backend.is_root_worker():
         return
 
     save_obj = {
@@ -113,7 +117,7 @@ opt = Adam(vae.parameters(), lr = LEARNING_RATE)
 sched = ExponentialLR(optimizer = opt, gamma = LR_DECAY_RATE)
 
 
-if deepspeed_utils.is_root_worker():
+if distr_backend.is_root_worker():
     # weights & biases experiment tracking
 
     import wandb
@@ -131,17 +135,17 @@ if deepspeed_utils.is_root_worker():
         config = model_config
     )
 
-# distribute with deepspeed
+# distribute
 
-deepspeed_utils.check_batch_size(BATCH_SIZE)
+distr_backend.check_batch_size(BATCH_SIZE)
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_vae, opt, dl, sched) = deepspeed_utils.maybe_distribute(
+(distr_vae, opt, dl, sched) = distr_backend.distribute(
     args=args,
     model=vae,
     optimizer=opt,
     model_parameters=vae.parameters(),
-    training_data=ds if args.deepspeed else dl,
+    training_data=ds if using_deepspeed else dl,
     lr_scheduler=sched,
     config_params=deepspeed_config,
 )
@@ -162,7 +166,7 @@ for epoch in range(EPOCHS):
             temp = temp
         )
 
-        if args.deepspeed:
+        if using_deepspeed:
             # Gradients are automatically zeroed after the step
             distr_vae.backward(loss)
             distr_vae.step()
@@ -174,7 +178,7 @@ for epoch in range(EPOCHS):
         logs = {}
 
         if i % 100 == 0:
-            if deepspeed_utils.is_root_worker():
+            if distr_backend.is_root_worker():
                 k = NUM_IMAGES_SAVE
 
                 with torch.no_grad():
@@ -206,9 +210,9 @@ for epoch in range(EPOCHS):
             sched.step()
 
         # Collective loss, averaged
-        avg_loss = deepspeed_utils.average_all(loss)
+        avg_loss = distr_backend.average_all(loss)
 
-        if deepspeed_utils.is_root_worker():
+        if distr_backend.is_root_worker():
             if i % 10 == 0:
                 lr = sched.get_last_lr()[0]
                 print(epoch, i, f'lr - {lr:6f} loss - {avg_loss.item()}')
@@ -224,14 +228,14 @@ for epoch in range(EPOCHS):
             wandb.log(logs)
         global_step += 1
 
-    if deepspeed_utils.is_root_worker():
+    if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
 
         model_artifact = wandb.Artifact('trained-vae', type = 'model', metadata = dict(model_config))
         model_artifact.add_file('vae.pt')
         run.log_artifact(model_artifact)
 
-if deepspeed_utils.is_root_worker():
+if distr_backend.is_root_worker():
     # save final vae and cleanup
 
     save_model('./vae-final.pt')
