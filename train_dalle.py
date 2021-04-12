@@ -19,7 +19,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
-from dalle_pytorch import deepspeed_utils
+from dalle_pytorch import distributed_utils as deepspeed_utils
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
 from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
@@ -76,7 +76,8 @@ LR_DECAY = False
 
 # initialize deepspeed
 
-deepspeed_utils.init_deepspeed(args.deepspeed)
+backend = deepspeed_utils.backend_from_args(args)
+deepspeed_utils.init_deepspeed(backend)
 
 # reconstitute vae
 
@@ -224,7 +225,15 @@ assert len(ds) > 0, 'dataset is empty'
 if deepspeed_utils.is_root_worker():
     print(f'{len(ds)} image-text pairs found for training')
 
-dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
+if args.horovod:
+    data_sampler = torch.utils.data.distributed.DistributedSampler(
+        ds, num_replicas=deepspeed_utils.get_world_size(),
+        rank=deepspeed_utils.get_rank())
+else:
+    data_sampler = None
+
+dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = not args.horovod,
+                drop_last = True, sampler=data_sampler)
 
 # initialize DALL-E
 
@@ -329,11 +338,12 @@ for epoch in range(EPOCHS):
         # Collective loss, averaged
         avg_loss = deepspeed_utils.average_all(loss)
 
-        if deepspeed_utils.is_root_worker():
+        if args.horovod or deepspeed_utils.is_root_worker():
             log = {}
 
             if i % 10 == 0:
-                print(epoch, i, f'loss - {avg_loss.item()}')
+                if deepspeed_utils.is_root_worker():
+                    print(epoch, i, f'loss - {avg_loss.item()}')
 
                 log = {
                     **log,
@@ -351,16 +361,18 @@ for epoch in range(EPOCHS):
                     # CUDA index errors when we don't guard this
                     image = dalle.generate_images(text[:1], filter_thres = 0.9) # topk sampling at 0.9
 
-                save_model(f'./dalle.pt')
-                #wandb.save(f'./dalle.pt')
+                if deepspeed_utils.is_root_worker():
+                    save_model(f'./dalle.pt')
+                    wandb.save(f'./dalle.pt')
 
-                log = {
-                    **log,
-                }
-                if not avoid_model_calls:
-                    log['image'] = wandb.Image(image, caption = decoded_text)
+                    log = {
+                        **log,
+                    }
+                    if not avoid_model_calls:
+                        log['image'] = wandb.Image(image, caption = decoded_text)
 
-            wandb.log(log)
+            if deepspeed_utils.is_root_worker():
+                wandb.log(log)
 
     if LR_DECAY:
         scheduler.step(loss)

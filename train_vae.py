@@ -17,7 +17,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle classes and utils
 
-from dalle_pytorch import deepspeed_utils
+from dalle_pytorch import distributed_utils as deepspeed_utils
 from dalle_pytorch import DiscreteVAE
 
 # argument parsing
@@ -60,7 +60,8 @@ NUM_IMAGES_SAVE = 4
 
 # initialize deepspeed
 
-deepspeed_utils.init_deepspeed(args.deepspeed)
+backend = deepspeed_utils.backend_from_args(args)
+deepspeed_utils.init_deepspeed(backend)
 
 # data
 
@@ -74,7 +75,14 @@ ds = ImageFolder(
     ])
 )
 
-dl = DataLoader(ds, BATCH_SIZE, shuffle = True)
+if args.horovod:
+    data_sampler = torch.utils.data.distributed.DistributedSampler(
+        ds, num_replicas=deepspeed_utils.get_world_size(),
+        rank=deepspeed_utils.get_rank())
+else:
+    data_sampler = None
+
+dl = DataLoader(ds, BATCH_SIZE, shuffle = not args.horovod, sampler=data_sampler)
 
 vae_params = dict(
     image_size = IMAGE_SIZE,
@@ -174,7 +182,7 @@ for epoch in range(EPOCHS):
         logs = {}
 
         if i % 100 == 0:
-            if deepspeed_utils.is_root_worker():
+            if args.horovod or deepspeed_utils.is_root_worker():
                 k = NUM_IMAGES_SAVE
 
                 with torch.no_grad():
@@ -185,17 +193,18 @@ for epoch in range(EPOCHS):
                 images, recons, hard_recons, codes = map(lambda t: t.detach().cpu(), (images, recons, hard_recons, codes))
                 images, recons, hard_recons = map(lambda t: make_grid(t.float(), nrow = int(sqrt(k)), normalize = True, range = (-1, 1)), (images, recons, hard_recons))
 
-                logs = {
-                    **logs,
-                    'sample images':        wandb.Image(images, caption = 'original images'),
-                    'reconstructions':      wandb.Image(recons, caption = 'reconstructions'),
-                    'hard reconstructions': wandb.Image(hard_recons, caption = 'hard reconstructions'),
-                    'codebook_indices':     wandb.Histogram(codes),
-                    'temperature':          temp
-                }
+                if deepspeed_utils.is_root_worker():
+                    logs = {
+                        **logs,
+                        'sample images':        wandb.Image(images, caption = 'original images'),
+                        'reconstructions':      wandb.Image(recons, caption = 'reconstructions'),
+                        'hard reconstructions': wandb.Image(hard_recons, caption = 'hard reconstructions'),
+                        'codebook_indices':     wandb.Histogram(codes),
+                        'temperature':          temp
+                    }
 
-                save_model(f'./vae.pt')
-                wandb.save('./vae.pt')
+                    save_model(f'./vae.pt')
+                    wandb.save('./vae.pt')
 
             # temperature anneal
 

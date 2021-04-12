@@ -20,7 +20,7 @@ import torch.nn.functional as F
 
 from einops import rearrange
 
-from dalle_pytorch import deepspeed_utils
+from dalle_pytorch import distributed_utils as deepspeed_utils
 
 # constants
 

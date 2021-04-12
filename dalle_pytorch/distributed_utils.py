@@ -4,7 +4,14 @@ import torch.distributed
 
 ROOT_RANK = 0
 
+BACKENDS = [
+    'deepspeed',
+    'horovod',
+    'none',
+]
+
 using_deepspeed = None
+current_backend = None
 
 
 def has_deepspeed():
@@ -17,8 +24,31 @@ def has_deepspeed():
     return True
 
 
+def has_horovod():
+    """Return whether the Horovod module is now imported."""
+    global hvd
+    try:
+        import horovod.torch as hvd
+    except ModuleNotFoundError:
+        return False
+    return True
+
+
 def wrap_arg_parser(parser):
     """Add arguments to support optional DeepSpeed usage."""
+    if not has_horovod():
+        parser.add_argument(
+            '--horovod',
+            type=lambda _: False,
+            help="whether to use Horovod (ignored since it's not available)",
+        )
+    else:
+        parser.add_argument(
+            '--horovod',
+            action='store_true',
+            help="whether to use Horovod",
+        )
+
     if not has_deepspeed():
         parser.add_argument(
             '--deepspeed',
@@ -38,14 +68,39 @@ def wrap_arg_parser(parser):
     return parser
 
 
-def init_deepspeed(do_init):
+def backend_from_args(args):
+    if args.deepspeed and args.horovod:
+        raise ValueError('multiple backends selected; please only choose one')
+
+    if args.deepspeed:
+        return 'deepspeed'
+    elif args.horovod:
+        return 'horovod'
+    else:
+        return 'none'
+
+
+def init_deepspeed(backend):
     """Initialize the DeepSpeed distributed backend."""
     global using_deepspeed
+    global selected_backend
+
+    if not backend in BACKENDS:
+        raise KeyError(
+            'unsupported backend; please check `distributed_utils.BACKENDS`')
+
+    do_init = backend != 'none'
     using_deepspeed = do_init
+    selected_backend = backend
 
     if not do_init:
         return
-    deepspeed.init_distributed()
+    if selected_backend == 'deepspeed':
+        deepspeed.init_distributed()
+    elif selected_backend == 'horovod':
+        hvd.init()
+        if torch.cuda.is_available():
+            torch.cuda.set_device(hvd.local_rank())
 
 
 def require_init():
@@ -71,8 +126,11 @@ def get_world_size():
     if not using_deepspeed:
         return 1
 
-    require_torch_distributed_init()
-    return torch.distributed.get_world_size()
+    if selected_backend == 'deepspeed':
+        require_torch_distributed_init()
+        return torch.distributed.get_world_size()
+    if selected_backend == 'horovod':
+        return hvd.size()
 
 
 def get_rank():
@@ -81,8 +139,11 @@ def get_rank():
     if not using_deepspeed:
         return ROOT_RANK
 
-    require_torch_distributed_init()
-    return torch.distributed.get_rank()
+    if selected_backend == 'deepspeed':
+        require_torch_distributed_init()
+        return torch.distributed.get_rank()
+    elif selected_backend == 'horovod':
+        return hvd.rank()
 
 
 def get_local_rank():
@@ -93,8 +154,11 @@ def get_local_rank():
     if not using_deepspeed:
         return ROOT_RANK
 
-    require_torch_distributed_init()
-    return int(os.environ['LOCAL_RANK'])
+    if selected_backend == 'deepspeed':
+        require_torch_distributed_init()
+        return int(os.environ['LOCAL_RANK'])
+    elif selected_backend == 'horovod':
+        return hvd.local_rank()
 
 
 def is_root_worker():
@@ -117,8 +181,11 @@ def local_barrier():
     if not using_deepspeed:
         return
 
-    require_torch_distributed_init()
-    torch.distributed.barrier()
+    if selected_backend == 'deepspeed':
+        require_torch_distributed_init()
+        torch.distributed.barrier()
+    elif selected_backend == 'horovod':
+        hvd.join()
 
 
 def maybe_distribute(
@@ -142,15 +209,21 @@ def maybe_distribute(
     if not using_deepspeed:
         return (model, optimizer, training_data, lr_scheduler)
 
-    return deepspeed.initialize(
-        args=args,
-        model=model,
-        optimizer=optimizer,
-        model_parameters=model_parameters,
-        training_data=training_data,
-        lr_scheduler=lr_scheduler,
-        **kwargs,
-    )
+    if selected_backend == 'deepspeed':
+        return deepspeed.initialize(
+            args=args,
+            model=model,
+            optimizer=optimizer,
+            model_parameters=model_parameters,
+            training_data=training_data,
+            lr_scheduler=lr_scheduler,
+            **kwargs,
+        )
+    elif selected_backend == 'horovod':
+        optimizer = hvd.DistributedOptimizer(optimizer)
+        hvd.broadcast_parameters(model.state_dict(), root_rank=ROOT_RANK)
+        hvd.broadcast_optimizer_state(optimizer, root_rank=ROOT_RANK)
+        return (model, optimizer, training_data, lr_scheduler)
 
 
 def check_batch_size(batch_size):
@@ -165,9 +238,14 @@ def average_all(tensor):
     if not using_deepspeed:
         return tensor
 
-    require_torch_distributed_init()
-    # We copy because modification happens in-place
-    averaged = tensor.detach().clone()
-    # We use `all_reduce` because it is better supported than `reduce`
-    torch.distributed.all_reduce(averaged, torch.distributed.ReduceOp.SUM)
-    return averaged / get_world_size()
+    if selected_backend == 'deepspeed':
+        require_torch_distributed_init()
+        # We copy because modification happens in-place
+        averaged = tensor.detach().clone()
+        # We use `all_reduce` because it is better supported than `reduce`
+        torch.distributed.all_reduce(averaged, torch.distributed.ReduceOp.SUM)
+        return averaged / get_world_size()
+    elif selected_backend == 'horovod':
+        # Reduce op is average by default
+        averaged = hvd.allreduce(tensor)
+        return averaged
