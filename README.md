@@ -18,7 +18,9 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 
 **[Distributed Backends](https://github.com/lucidrains/DALLE-pytorch/wiki/Multi-GPU-and-Multi-Node) Multi-GPU Training**
 
-**[Specify Attention Types](https://github.com/lucidrains/DALLE-pytorch/wiki/Vast.ai-Sparse-Attention) Choose between various replicated attention layers**
+**[vast.ai](https://github.com/lucidrains/DALLE-pytorch/wiki/Vast.ai-Sparse-Attention) Sparse attention on vast.ai**
+
+**[Attention Layers](https://github.com/lucidrains/DALLE-pytorch/wiki/Attention-Layers) Specify various replicated attention layers**
 
 
 ## Status
