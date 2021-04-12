@@ -20,7 +20,7 @@ import torch.nn.functional as F
 
 from einops import rearrange
 
-from dalle_pytorch import deepspeed_utils
+from dalle_pytorch import distributed_utils
 
 # constants
 
@@ -51,7 +51,10 @@ def unmap_pixels(x, eps = 0.1):
     return torch.clamp((x - eps) / (1 - 2 * eps), 0, 1)
 
 def download(url, filename = None, root = CACHE_PATH):
-    if not deepspeed_utils.using_deepspeed or (deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker()):
+    if (
+            not distributed_utils.is_distributed
+            or distributed_utils.backend.is_local_root_worker()
+    ):
         os.makedirs(root, exist_ok = True)
     filename = default(filename, os.path.basename(url))
 
@@ -62,12 +65,12 @@ def download(url, filename = None, root = CACHE_PATH):
         raise RuntimeError(f"{download_target} exists and is not a regular file")
 
     if (
-            deepspeed_utils.using_deepspeed
-            and not deepspeed_utils.is_local_root_worker()
+            distributed_utils.is_distributed
+            and not distributed_utils.backend.is_local_root_worker()
             and not os.path.isfile(download_target)
     ):
         # If the file doesn't exist yet, wait until it's downloaded by the root worker.
-        deepspeed_utils.local_barrier()
+        distributed_utils.backend.local_barrier()
 
     if os.path.isfile(download_target):
         return download_target
@@ -83,8 +86,11 @@ def download(url, filename = None, root = CACHE_PATH):
                 loop.update(len(buffer))
 
     os.rename(download_target_tmp, download_target)
-    if deepspeed_utils.using_deepspeed and deepspeed_utils.is_local_root_worker():
-        deepspeed_utils.local_barrier()
+    if (
+            distributed_utils.is_distributed
+            and distributed_utils.backend.is_local_root_worker()
+    ):
+        distributed_utils.backend.local_barrier()
     return download_target
 
 # pretrained Discrete VAE from OpenAI

@@ -19,7 +19,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
-from dalle_pytorch import deepspeed_utils
+from dalle_pytorch import distributed_utils
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
 from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
 
@@ -45,7 +45,7 @@ parser.add_argument('--taming', dest='taming', action='store_true')
 
 parser.add_argument('--fp16', action='store_true')
 
-parser = deepspeed_utils.wrap_arg_parser(parser)
+parser = distributed_utils.wrap_arg_parser(parser)
 
 args = parser.parse_args()
 
@@ -74,9 +74,13 @@ REVERSIBLE = True
 LOSS_IMG_WEIGHT = 7
 LR_DECAY = False
 
-# initialize deepspeed
+# initialize distributed backend
 
-deepspeed_utils.init_deepspeed(args.deepspeed)
+distr_backend = distributed_utils.set_backend_from_args(args)
+distr_backend.initialize()
+
+using_deepspeed = \
+    distributed_utils.using_backend(distributed_utils.DeepSpeedBackend)
 
 # reconstitute vae
 
@@ -110,7 +114,7 @@ else:
         vae = DiscreteVAE(**vae_params)
         vae.load_state_dict(weights)
     else:
-        if deepspeed_utils.is_root_worker():
+        if distr_backend.is_root_worker():
             print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
@@ -137,7 +141,7 @@ if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
 # helpers
 
 def save_model(path):
-    if not deepspeed_utils.is_root_worker():
+    if not distr_backend.is_root_worker():
         return
 
     save_obj = {
@@ -220,7 +224,7 @@ ds = TextImageDataset(
 )
 
 assert len(ds) > 0, 'dataset is empty'
-if deepspeed_utils.is_root_worker():
+if distr_backend.is_root_worker():
     print(f'{len(ds)} image-text pairs found for training')
 
 dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = True, drop_last = True)
@@ -251,7 +255,7 @@ if LR_DECAY:
         verbose = True,
     )
 
-if deepspeed_utils.is_root_worker():
+if distr_backend.is_root_worker():
     # experiment tracker
 
     import wandb
@@ -270,7 +274,7 @@ if deepspeed_utils.is_root_worker():
 
 # distribute
 
-deepspeed_utils.check_batch_size(BATCH_SIZE)
+distr_backend.check_batch_size(BATCH_SIZE)
 deepspeed_config = {
     'train_batch_size': BATCH_SIZE,
     'gradient_clipping': GRAD_CLIP_NORM,
@@ -279,16 +283,16 @@ deepspeed_config = {
     },
 }
 
-(distr_dalle, opt, dl, scheduler) = deepspeed_utils.maybe_distribute(
+(distr_dalle, opt, dl, scheduler) = distr_backend.distribute(
     args=args,
     model=dalle,
     optimizer=opt,
     model_parameters=dalle.parameters(),
-    training_data=ds if args.deepspeed else dl,
+    training_data=ds if using_deepspeed else dl,
     lr_scheduler=scheduler if LR_DECAY else None,
     config_params=deepspeed_config,
 )
-avoid_model_calls = args.deepspeed and args.fp16
+avoid_model_calls = using_deepspeed and args.fp16
 
 # training
 torch.cuda.empty_cache() # Avoid allocation error due to potential bug in deepspeed. See https://github.com/lucidrains/DALLE-pytorch/issues/161
@@ -300,7 +304,7 @@ for epoch in range(EPOCHS):
 
         loss = distr_dalle(text, images, return_loss = True)
 
-        if args.deepspeed:
+        if using_deepspeed:
             distr_dalle.backward(loss)
             distr_dalle.step()
             # Gradients are automatically zeroed after the step
@@ -311,9 +315,9 @@ for epoch in range(EPOCHS):
             opt.zero_grad()
 
         # Collective loss, averaged
-        avg_loss = deepspeed_utils.average_all(loss)
+        avg_loss = distr_backend.average_all(loss)
 
-        if deepspeed_utils.is_root_worker():
+        if distr_backend.is_root_worker():
             log = {}
 
             if i % 10 == 0:
@@ -349,14 +353,14 @@ for epoch in range(EPOCHS):
     if LR_DECAY:
         scheduler.step(loss)
 
-    if deepspeed_utils.is_root_worker():
+    if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
 
         model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
         model_artifact.add_file('dalle.pt')
         run.log_artifact(model_artifact)
 
-if deepspeed_utils.is_root_worker():
+if distr_backend.is_root_worker():
     save_model(f'./dalle-final.pt')
     wandb.save('./dalle-final.pt')
     model_artifact = wandb.Artifact('trained-dalle', type = 'model', metadata = dict(model_config))
