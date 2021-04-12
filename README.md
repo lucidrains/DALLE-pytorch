@@ -14,6 +14,13 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
 
+**[Quick Start](https://github.com/lucidrains/DALLE-pytorch/wiki/Quick-Start) Install and Train DALLE-pytorch**
+
+**[Distributed Backends](https://github.com/lucidrains/DALLE-pytorch/wiki/Multi-GPU-and-Multi-Node) Multi-GPU Training**
+
+**[Specify Attention Types](https://github.com/lucidrains/DALLE-pytorch/wiki/Vast.ai-Sparse-Attention) Choose between various replicated attention layers**
+
+
 ## Status
 
 - <a href="https://github.com/htoyryla">Hannu</a> has managed to train a small 6 layer DALL-E on a dataset of just 2000 landscape images! (2048 visual tokens)
@@ -406,7 +413,7 @@ only supported for `train_dalle.py`.
 training.
 
 After [installing
-Horovod](https://github.com/lucidrains/DALLE-pytorch/wiki/Horovod-Installation),
+Horovod](https://github.com/lucidrains/DALLE-pytorch/wiki/Horovod),
 replace any `$ python <file>.py [args...]` command with
 
 ```sh
