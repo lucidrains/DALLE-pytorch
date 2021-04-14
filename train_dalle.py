@@ -207,6 +207,7 @@ class TextImageDataset(Dataset):
         image_file = self.image_files[key]
         try:
           image = Image.open(image_file)
+          image_tensor = self.image_tranform(image)
         catch PIL.UnidentifiedImageError, OSError: # Catch "truncated pngs" and other corrupted images.
           print(f'{image_file} was corrupt. Skipping.')
           return self.__getitem__(ind+1)
@@ -216,11 +217,7 @@ class TextImageDataset(Dataset):
         description = choice(descriptions)
 
         tokenized_text = tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
-        try:
-          image_tensor = self.image_tranform(image)
-        catch OSError: # Sometimes a corrupt image will pass PIL's test, but not torch's.
-          print(f'{image_file} was corrupt. Skipping.')
-          return self.__getitem__(ind+1)
+
         return tokenized_text, image_tensor
 
 # create dataset and dataloader
