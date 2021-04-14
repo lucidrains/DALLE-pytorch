@@ -11,6 +11,7 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 # vision imports
 
+import PIL
 from PIL import Image
 from torchvision import transforms as T
 from torch.utils.data import DataLoader, Dataset
@@ -204,15 +205,22 @@ class TextImageDataset(Dataset):
         key = self.keys[ind]
         text_file = self.text_files[key]
         image_file = self.image_files[key]
+        try:
+          image = Image.open(image_file)
+        catch PIL.UnidentifiedImageError, OSError: # Catch "truncated pngs" and other corrupted images.
+          print(f'{image_file} was corrupt. Skipping.')
+          return self.__getitem__(ind+1)
 
-        image = Image.open(image_file)
         descriptions = text_file.read_text().split('\n')
         descriptions = list(filter(lambda t: len(t) > 0, descriptions))
         description = choice(descriptions)
 
         tokenized_text = tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
-
-        image_tensor = self.image_tranform(image)
+        try:
+          image_tensor = self.image_tranform(image)
+        catch OSError: # Sometimes a corrupt image will pass PIL's test, but not torch's.
+          print(f'{image_file} was corrupt. Skipping.')
+          return self.__getitem__(ind+1)
         return tokenized_text, image_tensor
 
 # create dataset and dataloader
