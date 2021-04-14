@@ -208,7 +208,7 @@ class TextImageDataset(Dataset):
         try:
           image = Image.open(image_file)
           image_tensor = self.image_tranform(image)
-        except PIL.UnidentifiedImageError, OSError: # Catch "truncated pngs" and other corrupted images.
+        except (PIL.UnidentifiedImageError, OSError): # Catch "truncated pngs" and other corrupted images.
           print(f'{image_file} was corrupt. Skipping.')
           return self.__getitem__(ind+1)
 
