@@ -43,14 +43,23 @@ parser.add_argument('--outputs_dir', type = str, default = './outputs', required
 parser.add_argument('--bpe_path', type = str,
                     help='path to your huggingface BPE json file')
 
+parser.add_argument('--chinese', dest='chinese', action = 'store_true')
+
 parser.add_argument('--taming', dest='taming', action='store_true')
 
 args = parser.parse_args()
 
+# helper fns
+
+def exists(val):
+    return val is not None
+
 # tokenizer
 
-if args.bpe_path is not None:
+if exists(args.bpe_path):
     tokenizer = HugTokenizer(args.bpe_path)
+elif args.chinese:
+    tokenizer = ChineseTokenizer()
 
 # load DALL-E
 

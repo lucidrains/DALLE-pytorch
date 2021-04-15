@@ -2,7 +2,9 @@
 # to give users a quick easy start to training DALL-E without doing BPE
 
 import torch
+
 from tokenizers import Tokenizer
+from transformers import BertTokenizer
 
 import html
 import os
@@ -123,6 +125,7 @@ class SimpleTokenizer(object):
     def decode(self, tokens, remove_start_end = True):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
+
         if remove_start_end:
             tokens = [token for token in tokens if token not in (49406, 40407, 0)]
         text = ''.join([self.decoder[token] for token in tokens])
@@ -160,11 +163,49 @@ class HugTokenizer:
         self.vocab_size = tokenizer.get_vocab_size()
 
     def decode(self, tokens):
-        tokens = [token for token in tokens.tolist() if token not in (0,)]
+        if torch.is_tensor(tokens):
+            tokens = tokens.tolist()
+
+        tokens = [token for token in tokens if token not in (0,)]
         return self.tokenizer.decode(tokens, skip_special_tokens = True)
 
     def encode(self, text):
         return self.tokenizer.encode(text).ids
+
+    def tokenize(self, texts, context_length = 256, truncate_text = False):
+        if isinstance(texts, str):
+            texts = [texts]
+
+        all_tokens = [self.encode(text) for text in texts]
+
+        result = torch.zeros(len(all_tokens), context_length, dtype=torch.long)
+        for i, tokens in enumerate(all_tokens):
+            if len(tokens) > context_length:
+                if truncate_text:
+                    tokens = tokens[:context_length]
+                else:
+                    raise RuntimeError(f"Input {texts[i]} is too long for context length {context_length}")
+            result[i, :len(tokens)] = torch.tensor(tokens)
+
+        return result
+
+# chinese tokenizer
+
+class ChineseTokenizer:
+    def __init__(self):
+        tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')
+        self.tokenizer = tokenizer
+        self.vocab_size = tokenizer.vocab_size
+
+    def decode(self, tokens):
+        if torch.is_tensor(tokens):
+            tokens = tokens.tolist()
+
+        tokens = [token for token in tokens if token not in (0,)]
+        return self.tokenizer.decode(tokens)
+
+    def encode(self, text):
+        return torch.tensor(self.tokenizer.encode(text, add_special_tokens = False))
 
     def tokenize(self, texts, context_length = 256, truncate_text = False):
         if isinstance(texts, str):

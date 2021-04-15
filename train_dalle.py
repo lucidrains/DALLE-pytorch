@@ -21,7 +21,7 @@ from torchvision.utils import make_grid, save_image
 
 from dalle_pytorch import distributed_utils
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
-from dalle_pytorch.tokenizer import tokenizer, HugTokenizer
+from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer
 
 # argument parsing
 
@@ -40,6 +40,8 @@ parser.add_argument('--image_text_folder', type = str, required = True,
 
 parser.add_argument('--truncate_captions', dest='truncate_captions',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
+
+parser.add_argument('--chinese', dest='chinese', action = 'store_true')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
 
@@ -89,6 +91,8 @@ using_deepspeed = \
 
 if exists(args.bpe_path):
     tokenizer = HugTokenizer(args.bpe_path)
+elif args.chinese:
+    tokenizer = ChineseTokenizer()
 
 # reconstitute vae
 

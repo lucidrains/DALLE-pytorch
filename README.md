@@ -440,6 +440,20 @@ ex.
 $ python train_dalle.py --image_text_folder ./path/to/data --bpe_path ./path/to/bpe.json
 ```
 
+#### Chinese
+
+You can train with a <a href="https://huggingface.co/bert-base-chinese">pretrained chinese tokenizer</a> offered by Huggingface 🤗 by simply passing in an extra flag `--chinese`
+
+ex.
+
+```sh
+$ python train_dalle.py --chinese --image_text_folder ./path/to/data
+```
+
+```sh
+$ python generate.py --chinese --text '追老鼠的猫'
+```
+
 ## Citations
 
 ```bibtex
