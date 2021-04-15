@@ -2,6 +2,8 @@
 # to give users a quick easy start to training DALL-E without doing BPE
 
 import torch
+from tokenizers import Tokenizer
+
 import html
 import os
 from functools import lru_cache
@@ -9,7 +11,7 @@ from pathlib import Path
 import ftfy
 import regex as re
 
-VOCAB_SIZE = 49408
+# OpenAI simple tokenizer
 
 @lru_cache()
 def default_bpe():
@@ -58,6 +60,9 @@ class SimpleTokenizer(object):
         for merge in merges:
             vocab.append(''.join(merge))
         vocab.extend(['<|startoftext|>', '<|endoftext|>'])
+
+        self.vocab_size = 49408
+
         self.encoder = dict(zip(vocab, range(len(vocab))))
         self.decoder = {v: k for k, v in self.encoder.items()}
         self.bpe_ranks = dict(zip(merges, range(len(merges))))
@@ -116,29 +121,64 @@ class SimpleTokenizer(object):
         return bpe_tokens
 
     def decode(self, tokens, remove_start_end = True):
+        if torch.is_tensor(tokens):
+            tokens = tokens.tolist()
         if remove_start_end:
             tokens = [token for token in tokens if token not in (49406, 40407, 0)]
         text = ''.join([self.decoder[token] for token in tokens])
         text = bytearray([self.byte_decoder[c] for c in text]).decode('utf-8', errors="replace").replace('</w>', ' ')
         return text
 
+    def tokenize(self, texts, context_length = 256, truncate_text = False):
+        if isinstance(texts, str):
+            texts = [texts]
+
+        all_tokens = [self.encode(text) for text in texts]
+        result = torch.zeros(len(all_tokens), context_length, dtype=torch.long)
+
+        for i, tokens in enumerate(all_tokens):
+            if len(tokens) > context_length:
+                if truncate_text:
+                    tokens = tokens[:context_length]
+                else:
+                    raise RuntimeError(f"Input {texts[i]} is too long for context length {context_length}")
+            result[i, :len(tokens)] = torch.tensor(tokens)
+
+        return result
+
 tokenizer = SimpleTokenizer()
 
-def tokenize(texts, context_length = 256, add_start = False, add_end = False, truncate_text = False):
-    if isinstance(texts, str):
-        texts = [texts]
+# huggingface tokenizer
 
-    sot_tokens = [tokenizer.encoder["<|startoftext|>"]] if add_start else []
-    eot_tokens = [tokenizer.encoder["<|endoftext|>"]] if add_end else []
-    all_tokens = [sot_tokens + tokenizer.encode(text) + eot_tokens for text in texts]
-    result = torch.zeros(len(all_tokens), context_length, dtype=torch.long)
+class HugTokenizer:
+    def __init__(self, bpe_path = None):
+        bpe_path = Path(bpe_path)
+        assert bpe_path.exists(), f'BPE json path {str(bpe_path)} does not exist'
 
-    for i, tokens in enumerate(all_tokens):
-        if len(tokens) > context_length:
-            if truncate_text:
-                tokens = tokens[:context_length]
-            else:
-                raise RuntimeError(f"Input {texts[i]} is too long for context length {context_length}")
-        result[i, :len(tokens)] = torch.tensor(tokens)
+        tokenizer = Tokenizer.from_file(str(bpe_path))
+        self.tokenizer = tokenizer
+        self.vocab_size = tokenizer.get_vocab_size()
 
-    return result
+    def decode(self, tokens):
+        tokens = [token for token in tokens.tolist() if token not in (0,)]
+        return self.tokenizer.decode(tokens, skip_special_tokens = True)
+
+    def encode(self, text):
+        return self.tokenizer.encode(text).ids
+
+    def tokenize(self, texts, context_length = 256, truncate_text = False):
+        if isinstance(texts, str):
+            texts = [texts]
+
+        all_tokens = [self.encode(text) for text in texts]
+
+        result = torch.zeros(len(all_tokens), context_length, dtype=torch.long)
+        for i, tokens in enumerate(all_tokens):
+            if len(tokens) > context_length:
+                if truncate_text:
+                    tokens = tokens[:context_length]
+                else:
+                    raise RuntimeError(f"Input {texts[i]} is too long for context length {context_length}")
+            result[i, :len(tokens)] = torch.tensor(tokens)
+
+        return result

@@ -21,7 +21,7 @@ from torchvision.utils import make_grid, save_image
 
 from dalle_pytorch import distributed_utils
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
-from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
+from dalle_pytorch.tokenizer import tokenizer, HugTokenizer
 
 # argument parsing
 
@@ -42,6 +42,9 @@ parser.add_argument('--truncate_captions', dest='truncate_captions',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
+
+parser.add_argument('--bpe_path', type = str,
+                    help='path to your huggingface BPE json file')
 
 parser.add_argument('--fp16', action='store_true')
 
@@ -81,6 +84,11 @@ distr_backend.initialize()
 
 using_deepspeed = \
     distributed_utils.using_backend(distributed_utils.DeepSpeedBackend)
+
+# tokenizer
+
+if exists(args.bpe_path):
+    tokenizer = HugTokenizer(args.bpe_path)
 
 # reconstitute vae
 
@@ -124,7 +132,7 @@ else:
     IMAGE_SIZE = vae.image_size
 
     dalle_params = dict(
-        num_text_tokens = VOCAB_SIZE,
+        num_text_tokens = tokenizer.vocab_size,
         text_seq_len = TEXT_SEQ_LEN,
         dim = MODEL_DIM,
         depth = DEPTH,
@@ -135,6 +143,7 @@ else:
     )
 
 # configure OpenAI VAE for float16s
+
 if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
     vae.enc.blocks.output.conv.use_float16 = True
 
@@ -210,7 +219,7 @@ class TextImageDataset(Dataset):
         descriptions = list(filter(lambda t: len(t) > 0, descriptions))
         description = choice(descriptions)
 
-        tokenized_text = tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
+        tokenized_text = tokenizer.tokenize(description, self.text_len, truncate_text=args.truncate_captions).squeeze(0)
 
         image_tensor = self.image_tranform(image)
         return tokenized_text, image_tensor

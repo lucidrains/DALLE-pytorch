@@ -16,7 +16,7 @@ from torchvision.utils import make_grid, save_image
 # dalle related classes and utils
 
 from dalle_pytorch import DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024, DALLE
-from dalle_pytorch.simple_tokenizer import tokenize, tokenizer, VOCAB_SIZE
+from dalle_pytorch.simple_tokenizer import tokenizer, HugTokenizer
 
 # argument parsing
 
@@ -40,9 +40,17 @@ parser.add_argument('--top_k', type = float, default = 0.9, required = False,
 parser.add_argument('--outputs_dir', type = str, default = './outputs', required = False,
                     help='output directory')
 
+parser.add_argument('--bpe_path', type = str,
+                    help='path to your huggingface BPE json file')
+
 parser.add_argument('--taming', dest='taming', action='store_true')
 
 args = parser.parse_args()
+
+# tokenizer
+
+if args.bpe_path is not None:
+    tokenizer = HugTokenizer(args.bpe_path)
 
 # load DALL-E
 
@@ -71,16 +79,14 @@ dalle.load_state_dict(weights)
 
 image_size = vae.image_size
 
-text = tokenize([args.text], dalle.text_seq_len).cuda()
+text = tokenizer.tokenize([args.text], dalle.text_seq_len).cuda()
 
 text = repeat(text, '() n -> b n', b = args.num_images)
-# create masks
-mask = text != 0
 
 outputs = []
 
-for text_chunk, mask in tqdm(zip(text.split(args.batch_size), mask.split(args.batch_size)), desc = 'generating images'):
-    output = dalle.generate_images(text_chunk, mask = mask, filter_thres = args.top_k)
+for text_chunk in tqdm(text.split(args.batch_size), desc = 'generating images'):
+    output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
     outputs.append(output)
 
 outputs = torch.cat(outputs)
