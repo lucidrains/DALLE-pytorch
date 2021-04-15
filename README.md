@@ -386,6 +386,14 @@ $ python generate.py --dalle_path ./dalle.pt --text 'fireflies in a field under 
 
 You should see your images saved as `./outputs/{your prompt}/{image number}.jpg`
 
+To generate multiple images, just pass in your text with '|' character as a separator.
+
+ex.
+
+```python
+$ python generate.py --dalle_path ./dalle.pt --text 'a dog chewing a bone|a cat chasing mice|a frog eating a fly'
+```
+
 ### Distributed Training
 
 #### DeepSpeed

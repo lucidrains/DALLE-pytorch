@@ -88,24 +88,27 @@ dalle.load_state_dict(weights)
 
 image_size = vae.image_size
 
-text = tokenizer.tokenize([args.text], dalle.text_seq_len).cuda()
+texts = args.text.split('|')
 
-text = repeat(text, '() n -> b n', b = args.num_images)
+for text in tqdm(texts):
+    text = tokenizer.tokenize([args.text], dalle.text_seq_len).cuda()
 
-outputs = []
+    text = repeat(text, '() n -> b n', b = args.num_images)
 
-for text_chunk in tqdm(text.split(args.batch_size), desc = 'generating images'):
-    output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
-    outputs.append(output)
+    outputs = []
 
-outputs = torch.cat(outputs)
+    for text_chunk in tqdm(text.split(args.batch_size), desc = f'generating images for - {text}'):
+        output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
+        outputs.append(output)
 
-# save all images
+    outputs = torch.cat(outputs)
 
-outputs_dir = Path(args.outputs_dir) / args.text.replace(' ', '_')
-outputs_dir.mkdir(parents = True, exist_ok = True)
+    # save all images
 
-for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
-    save_image(image, outputs_dir / f'{i}.jpg', normalize=True)
+    outputs_dir = Path(args.outputs_dir) / args.text.replace(' ', '_')
+    outputs_dir.mkdir(parents = True, exist_ok = True)
 
-print(f'created {args.num_images} images at "{str(outputs_dir)}"')
+    for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
+        save_image(image, outputs_dir / f'{i}.jpg', normalize=True)
+
+    print(f'created {args.num_images} images at "{str(outputs_dir)}"')
