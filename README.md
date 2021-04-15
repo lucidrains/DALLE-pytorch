@@ -418,6 +418,18 @@ experiments. This will multiply your effective batch size per training
 step by `<num-gpus>`, so you may need to rescale the learning rate
 accordingly.
 
+#### Custom Tokenizer
+
+This repository supports <a href="https://huggingface.co/transformers/main_classes/tokenizer.html">Huggingface Tokenizers</a> if you wish to use it instead of the default simple tokenizer. Simply pass in an extra `--bpe_path` when invoking `train_dalle.py` and `generate.py`, with the path to your BPE json file.
+
+The only requirement is that you use `0` as the padding during tokenization
+
+ex.
+
+```sh
+$ python train_dalle.py --image_text_folder ./path/to/data --bpe_path ./path/to/bpe.json
+```
+
 ## Citations
 
 ```bibtex
