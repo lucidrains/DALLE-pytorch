@@ -22,6 +22,8 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 
 **[Attention Layers](https://github.com/lucidrains/DALLE-pytorch/wiki/Attention-Layers) Specify various replicated attention layers**
 
+**[Custom Tokenizer](https://github.com/lucidrains/DALLE-pytorch/wiki/Hugging-Faces-Tokenizer) Use tokenizers from `huggingfaces`
+
 
 ## Status
 
