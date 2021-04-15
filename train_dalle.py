@@ -291,7 +291,7 @@ deepspeed_config = {
     },
 }
 
-(distr_dalle, opt, dl, scheduler) = distr_backend.distribute(
+(distr_dalle, distr_opt, distr_dl, distr_scheduler) = distr_backend.distribute(
     args=args,
     model=dalle,
     optimizer=opt,
@@ -305,7 +305,7 @@ avoid_model_calls = using_deepspeed and args.fp16
 # training
 torch.cuda.empty_cache() # Avoid allocation error due to potential bug in deepspeed. See https://github.com/lucidrains/DALLE-pytorch/issues/161
 for epoch in range(EPOCHS):
-    for i, (text, images) in enumerate(dl):
+    for i, (text, images) in enumerate(distr_dl):
         if args.fp16:
             images = images.half()
         text, images = map(lambda t: t.cuda(), (text, images))
@@ -319,8 +319,8 @@ for epoch in range(EPOCHS):
         else:
             loss.backward()
             clip_grad_norm_(distr_dalle.parameters(), GRAD_CLIP_NORM)
-            opt.step()
-            opt.zero_grad()
+            distr_opt.step()
+            distr_opt.zero_grad()
 
         # Collective loss, averaged
         avg_loss = distr_backend.average_all(loss)
@@ -359,7 +359,7 @@ for epoch in range(EPOCHS):
             wandb.log(log)
 
     if LR_DECAY:
-        scheduler.step(loss)
+        distr_scheduler.step(loss)
 
     if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
