@@ -24,6 +24,16 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 - <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a 32 layer reversible DALL-E <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
 - <a href="https://github.com/robvanvolt">robvanvolt</a> has started a <a href="https://discord.gg/gVuU2YE5hd">Discord channel</a> for replication efforts
 
+- <a href="https://github.com/robvanvolt">TheodoreGalanos</a> has trained on 150k layouts with the following results
+
+`1 bed / 2 baths`
+
+<img src="./images/1bed-2bath.png" width="400px"></img>
+
+`4 bed / 1 bath`
+
+<img src="./images/4bed-1bath.png" width="400px"></img>
+
 ## Install
 
 ```bash
