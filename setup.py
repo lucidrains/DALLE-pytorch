@@ -4,7 +4,7 @@ setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.9.6',
+  version = '0.10.0',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -24,6 +24,7 @@ setup(
     'pillow',
     'regex',
     'taming-transformers',
+    'tokenizers',
     'torch>=1.6',
     'torchvision',
     'tqdm'
