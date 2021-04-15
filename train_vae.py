@@ -147,7 +147,7 @@ if distr_backend.is_root_worker():
 distr_backend.check_batch_size(BATCH_SIZE)
 deepspeed_config = {'train_batch_size': BATCH_SIZE}
 
-(distr_vae, opt, dl, sched) = distr_backend.distribute(
+(distr_vae, distr_opt, distr_dl, distr_sched) = distr_backend.distribute(
     args=args,
     model=vae,
     optimizer=opt,
@@ -163,7 +163,7 @@ global_step = 0
 temp = STARTING_TEMP
 
 for epoch in range(EPOCHS):
-    for i, (images, _) in enumerate(dl):
+    for i, (images, _) in enumerate(distr_dl):
         images = images.cuda()
 
         loss, recons = distr_vae(
@@ -178,9 +178,9 @@ for epoch in range(EPOCHS):
             distr_vae.backward(loss)
             distr_vae.step()
         else:
-            opt.zero_grad()
+            distr_opt.zero_grad()
             loss.backward()
-            opt.step()
+            distr_opt.step()
 
         logs = {}
 
@@ -214,14 +214,14 @@ for epoch in range(EPOCHS):
 
             # lr decay
 
-            sched.step()
+            distr_sched.step()
 
         # Collective loss, averaged
         avg_loss = distr_backend.average_all(loss)
 
         if distr_backend.is_root_worker():
             if i % 10 == 0:
-                lr = sched.get_last_lr()[0]
+                lr = distr_sched.get_last_lr()[0]
                 print(epoch, i, f'lr - {lr:6f} loss - {avg_loss.item()}')
 
                 logs = {
