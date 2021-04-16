@@ -21,6 +21,7 @@ setup(
     'DALL-E',
     'einops>=0.3',
     'ftfy',
+    'nonechucks',
     'pillow',
     'regex',
     'taming-transformers',

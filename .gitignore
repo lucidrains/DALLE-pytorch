@@ -130,3 +130,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/workspace.xml
+.vscode/
+taming/
+wandb/
