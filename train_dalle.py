@@ -41,6 +41,9 @@ parser.add_argument('--image_text_folder', type = str, required = True,
 parser.add_argument('--truncate_captions', dest='truncate_captions',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
 
+parser.add_argument('--random_resize_crop_lower_ratio', dest='resize_ratio', type = float, default = 0.75,
+                    help='Random resized crop lower ratio')
+
 parser.add_argument('--chinese', dest='chinese', action = 'store_true')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
@@ -206,7 +209,7 @@ class TextImageDataset(Dataset):
 
         self.image_tranform = T.Compose([
             T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
-            T.RandomResizedCrop(image_size, scale = (0.6, 1.), ratio = (1., 1.)),
+            T.RandomResizedCrop(image_size, scale = (args.resize_ratio, 1.), ratio = (1., 1.)),
             T.ToTensor()
         ])
 
