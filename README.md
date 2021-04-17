@@ -26,13 +26,9 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 
 - <a href="https://github.com/robvanvolt">TheodoreGalanos</a> has trained on 150k layouts with the following results
 
-`1 bed / 2 baths`
+<img src="./images/layouts-1.jpg" width="400px"></img>
 
-<img src="./images/1bed-2bath.png" width="400px"></img>
-
-`4 bed / 1 bath`
-
-<img src="./images/4bed-1bath.png" width="400px"></img>
+<img src="./images/layouts-2.jpg" width="400px"></img>
 
 ## Install
 
