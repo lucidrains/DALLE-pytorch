@@ -2,6 +2,7 @@ import argparse
 from pathlib import Path
 
 import torch
+
 from torch.nn.utils import clip_grad_norm_
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
@@ -9,10 +10,9 @@ from torch.utils.data import DataLoader
 import argparse
 
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
+from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch import distributed_utils
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
-
-from loader import TextImageDataset
 
 parser = argparse.ArgumentParser()
 
@@ -27,7 +27,7 @@ group.add_argument('--dalle_path', type = str,
 parser.add_argument('--image_text_folder', type = str, required = True,
     help='path to your folder of images and text for learning the DALL-E')
 
-parser.add_argument('--truncate_captions', dest='truncate_captions',
+parser.add_argument('--truncate_captions', dest='truncate_captions', action = 'store_true',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
 
 parser.add_argument('--random_resize_crop_lower_ratio', dest='resize_ratio', type = float, default = 0.75,
@@ -185,7 +185,9 @@ def group_weight(model):
 ds = TextImageDataset(
     args.image_text_folder,
     text_len=TEXT_SEQ_LEN,
-    image_size=IMAGE_SIZE
+    image_size=IMAGE_SIZE,
+    resize_ratio=args.resize_ratio,
+    tokenizer=tokenizer,
 )
 
 assert len(ds) > 0, 'dataset is empty'
