@@ -4,7 +4,7 @@ setup(
   name = 'dalle-pytorch',
   packages = find_packages(),
   include_package_data = True,
-  version = '0.10.2',
+  version = '0.10.3',
   license='MIT',
   description = 'DALL-E - Pytorch',
   author = 'Phil Wang',
@@ -28,7 +28,8 @@ setup(
     'torch>=1.6',
     'torchvision',
     'transformers',
-    'tqdm'
+    'tqdm',
+    'youtokentome'
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
