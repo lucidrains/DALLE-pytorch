@@ -8,12 +8,21 @@ from torchvision import transforms as T
 
 
 class TextImageDataset(Dataset):
-    def __init__(self, folder, text_len=256, image_size=128, truncate_captions=False, resize_ratio=0.75, tokenizer=None):
+    def __init__(self,
+                 folder,
+                 text_len=256,
+                 image_size=128,
+                 truncate_captions=False,
+                 resize_ratio=0.75,
+                 tokenizer=None,
+                 shuffle=False
+                 ):
         """
         @param folder: Folder containing images and text files matched by their paths' respective "stem"
         @param truncate_captions: Rather than throw an exception, captions which are too long will be truncated.
         """
         super().__init__()
+        self.shuffle = shuffle
         path = Path(folder)
 
         text_files = [*path.glob('**/*.txt')]
@@ -49,6 +58,16 @@ class TextImageDataset(Dataset):
     def random_sample(self):
         return self.__getitem__(randint(0, self.__len__() - 1))
 
+    def sequential_sample(self, ind):
+        if ind >= self.__len__() - 1:
+            return self.__getitem__(0)
+        return self.__getitem__(ind + 1)
+
+    def skip_sample(self, ind):
+        if self.shuffle:
+            return self.random_sample()
+        return self.sequential_sample(ind=ind)
+
     def __getitem__(self, ind):
         key = self.keys[ind]
 
@@ -62,7 +81,7 @@ class TextImageDataset(Dataset):
         except IndexError as zero_captions_in_file_ex:
             print(f"An exception occurred trying to load file {text_file}.")
             print(f"Skipping index {ind}")
-            return self.random_sample()
+            return self.skip_sample(ind)
 
         tokenized_text = self.tokenizer.tokenize(
             description,
@@ -74,7 +93,7 @@ class TextImageDataset(Dataset):
         except (PIL.UnidentifiedImageError, OSError) as corrupt_image_exceptions:
             print(f"An exception occurred trying to load file {image_file}.")
             print(f"Skipping index {ind}")
-            return self.random_sample()
+            return self.skip_sample(ind)
 
         # Success
         return tokenized_text, image_tensor

@@ -181,6 +181,7 @@ def group_weight(model):
 
 
 # create dataset and dataloader
+is_shuffle = distributed_utils.using_backend(distributed_utils.HorovodBackend)
 
 ds = TextImageDataset(
     args.image_text_folder,
@@ -188,21 +189,23 @@ ds = TextImageDataset(
     image_size=IMAGE_SIZE,
     resize_ratio=args.resize_ratio,
     tokenizer=tokenizer,
+    shuffle=is_shuffle,
 )
 
 assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
     print(f'{len(ds)} image-text pairs found for training')
 
-if distributed_utils.using_backend(distributed_utils.HorovodBackend):
+if is_shuffle:
     data_sampler = torch.utils.data.distributed.DistributedSampler(
-        ds, num_replicas=distr_backend.get_world_size(),
-        rank=distr_backend.get_rank())
+        ds,
+        num_replicas=distr_backend.get_world_size(),
+        rank=distr_backend.get_rank()
+    )
 else:
     data_sampler = None
 
-dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=not data_sampler,
-                drop_last=True, sampler=data_sampler)
+dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
 # initialize DALL-E
 
