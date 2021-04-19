@@ -50,6 +50,8 @@ parser.add_argument('--wandb_name', default='dalle_train_transformer',
 parser = distributed_utils.wrap_arg_parser(parser)
 args = parser.parse_args()
 
+# quit early if you used the wrong folder name
+assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
 
 # helpers
 
@@ -181,6 +183,7 @@ def group_weight(model):
 
 
 # create dataset and dataloader
+
 is_shuffle = distributed_utils.using_backend(distributed_utils.HorovodBackend)
 
 ds = TextImageDataset(
