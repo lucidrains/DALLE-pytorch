@@ -18,71 +18,35 @@ parser = argparse.ArgumentParser()
 
 group = parser.add_mutually_exclusive_group(required=False)
 
-parser.add_argument(
-    '--image_text_folder',
-    type=str,
-    required=True,
+group.add_argument('--vae_path', type = str,
+                    help='path to your trained discrete VAE')
+
+group.add_argument('--dalle_path', type = str,
+                    help='path to your partially trained DALL-E')
+
+parser.add_argument('--image_text_folder', type = str, required = True,
     help='path to your folder of images and text for learning the DALL-E')
 
-# Mutually exclusive arguments
-group = parser.add_mutually_exclusive_group(required=False)
-group.add_argument(
-    '--vae_path',
-    type=str,
-    help='path to your trained discrete VAE'
-)
-group.add_argument(
-    '--dalle_path',
-    type=str,
-    help='path to your partially trained DALL-E checkpoint'
-)
-# Optional arguments
-parser.add_argument(
-    '--wandb_name',
-    default='dalle_train_transformer',
-    help='Name W&B will use when saving results.\n' +
-         'e.g. `--wandb_name "coco2017-full-sparse"`',
-)
-parser.add_argument(
-    '--truncate_captions',
-    dest='truncate_captions',
-    help='Captions passed in which exceed the max token length will be truncated if this is set.'
-)
-parser.add_argument(
-    '--random_resize_crop_lower_ratio',
-    dest='resize_ratio',
-    type=float,
-    default=0.75,  # 320 px * 0.8 = 256 e.g. `previews`
-    help='Random resized crop lower ratio,\n' +
-         'Most effective when used with images larger than 256px',
-)
-parser.add_argument(
-    '--chinese',
-    dest='chinese',
-    action='store_true',
-    help='Train using chinese.',
-)
-parser.add_argument(
-    '--taming',
-    dest='taming',
-    action='store_true',
-    help='Use a 1024 Token VQGAN instead of OpenAI\'s 8192 token VAE',
-)
-parser.add_argument(
-    '--hug',
-    dest='hug',
-    action='store_true'
-)
-parser.add_argument(
-    '--bpe_path',
-    type=str,
-    help='path to your huggingface or yttm BPE json file',
-)
-parser.add_argument(
-    '--fp16',
-    action='store_true',
-    help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
+parser.add_argument('--truncate_captions', dest='truncate_captions',
+                    help='Captions passed in which exceed the max token length will be truncated if this is set.')
 
+parser.add_argument('--random_resize_crop_lower_ratio', dest='resize_ratio', type = float, default = 0.75,
+                    help='Random resized crop lower ratio')
+
+parser.add_argument('--chinese', dest='chinese', action = 'store_true')
+
+parser.add_argument('--taming', dest='taming', action='store_true')
+
+parser.add_argument('--hug', dest='hug', action = 'store_true')
+
+parser.add_argument('--bpe_path', type = str,
+                    help='path to your huggingface BPE json file')
+
+parser.add_argument('--fp16', action='store_true',
+                    help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
+
+parser.add_argument('--wandb_name', default='dalle_train_transformer',
+                    help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
 parser = distributed_utils.wrap_arg_parser(parser)
 args = parser.parse_args()
 
