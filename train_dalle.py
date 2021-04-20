@@ -2,16 +2,14 @@ import argparse
 from pathlib import Path
 
 import torch
-
 from torch.nn.utils import clip_grad_norm_
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
-import argparse
 
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
-from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch import distributed_utils
+from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
 parser = argparse.ArgumentParser()
