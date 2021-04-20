@@ -151,6 +151,21 @@ class VQGanVAE1024(nn.Module):
         self.image_size = 256
         self.num_tokens = 1024
 
+        self._register_external_parameters()
+
+    def _register_external_parameters(self):
+        """Register external parameters for DeepSpeed partitioning."""
+        if (
+                not distributed_utils.is_distributed
+                or not distributed_utils.using_backend(
+                    distributed_utils.DeepSpeedBackend)
+        ):
+            return
+
+        deepspeed = distributed_utils.backend.backend_module
+        deepspeed.zero.register_external_parameters(
+            self, self.model.quantize.embedding.weight)
+
     @torch.no_grad()
     def get_codebook_indices(self, img):
         b = img.shape[0]
