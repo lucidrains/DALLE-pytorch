@@ -182,7 +182,7 @@ def group_weight(model):
 
 # create dataset and dataloader
 
-is_shuffle = distributed_utils.using_backend(distributed_utils.HorovodBackend)
+is_shuffle = not distributed_utils.using_backend(distributed_utils.HorovodBackend)
 
 ds = TextImageDataset(
     args.image_text_folder,
