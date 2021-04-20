@@ -198,7 +198,7 @@ assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
     print(f'{len(ds)} image-text pairs found for training')
 
-if is_shuffle:
+if not is_shuffle:
     data_sampler = torch.utils.data.distributed.DistributedSampler(
         ds,
         num_replicas=distr_backend.get_world_size(),
