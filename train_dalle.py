@@ -259,9 +259,10 @@ dl = DataLoader(ds, batch_size = BATCH_SIZE, shuffle = not data_sampler,
 # initialize DALL-E
 
 dalle = DALLE(vae = vae, **dalle_params)
-if args.fp16:
-    dalle = dalle.half()
-dalle = dalle.cuda()
+if not using_deepspeed:
+    if args.fp16:
+        dalle = dalle.half()
+    dalle = dalle.cuda()
 
 
 if RESUME:

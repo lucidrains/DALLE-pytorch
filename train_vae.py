@@ -101,6 +101,8 @@ vae = DiscreteVAE(
     smooth_l1_loss = SMOOTH_L1_LOSS,
     kl_div_loss_weight = KL_LOSS_WEIGHT
 )
+if not using_deepspeed:
+    vae = vae.cuda()
 
 
 assert len(ds) > 0, 'folder does not contain any images'
