@@ -2,6 +2,7 @@ import argparse
 from pathlib import Path
 
 import torch
+import wandb  # Quit early if user doesn't have wandb installed.
 from torch.nn.utils import clip_grad_norm_
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
@@ -12,32 +13,34 @@ from dalle_pytorch import distributed_utils
 from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
+# argument parsing
+
 parser = argparse.ArgumentParser()
 
 group = parser.add_mutually_exclusive_group(required=False)
 
-group.add_argument('--vae_path', type = str,
-                    help='path to your trained discrete VAE')
+group.add_argument('--vae_path', type=str,
+                   help='path to your trained discrete VAE')
 
-group.add_argument('--dalle_path', type = str,
-                    help='path to your partially trained DALL-E')
+group.add_argument('--dalle_path', type=str,
+                   help='path to your partially trained DALL-E')
 
-parser.add_argument('--image_text_folder', type = str, required = True,
-    help='path to your folder of images and text for learning the DALL-E')
+parser.add_argument('--image_text_folder', type=str, required=True,
+                    help='path to your folder of images and text for learning the DALL-E')
 
-parser.add_argument('--truncate_captions', dest='truncate_captions', action = 'store_true',
+parser.add_argument('--truncate_captions', dest='truncate_captions', action='store_true',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
 
-parser.add_argument('--random_resize_crop_lower_ratio', dest='resize_ratio', type = float, default = 0.75,
+parser.add_argument('--random_resize_crop_lower_ratio', dest='resize_ratio', type=float, default=0.75,
                     help='Random resized crop lower ratio')
 
-parser.add_argument('--chinese', dest='chinese', action = 'store_true')
+parser.add_argument('--chinese', dest='chinese', action='store_true')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
 
-parser.add_argument('--hug', dest='hug', action = 'store_true')
+parser.add_argument('--hug', dest='hug', action='store_true')
 
-parser.add_argument('--bpe_path', type = str,
+parser.add_argument('--bpe_path', type=str,
                     help='path to your huggingface BPE json file')
 
 parser.add_argument('--fp16', action='store_true',
@@ -50,6 +53,7 @@ args = parser.parse_args()
 
 # quit early if you used the wrong folder name
 assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
+
 
 # helpers
 
@@ -212,11 +216,10 @@ dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, s
 # initialize DALL-E
 
 
-dalle = DALLE(vae = vae, **dalle_params)
-if not using_deepspeed:
-    if args.fp16:
-        dalle = dalle.half()
-    dalle = dalle.cuda()
+dalle = DALLE(vae=vae, **dalle_params)
+if not using_deepspeed and args.fp16:
+    dalle = dalle.half()
+dalle = dalle.cuda()
 
 if RESUME:
     dalle.load_state_dict(weights)
@@ -239,8 +242,6 @@ if LR_DECAY:
 if distr_backend.is_root_worker():
     # experiment tracker
 
-    import wandb
-
     model_config = dict(
         depth=DEPTH,
         heads=HEADS,
@@ -248,7 +249,7 @@ if distr_backend.is_root_worker():
     )
 
     run = wandb.init(
-        project=args.wandb_name,
+        project=args.wandb_name,  # 'dalle_train_transformer' by default
         resume=RESUME,
         config=model_config,
     )
@@ -276,7 +277,7 @@ deepspeed_config = {
 avoid_model_calls = using_deepspeed and args.fp16
 
 # training
-
+torch.cuda.empty_cache() # Avoid allocation error due to potential bug in deepspeed. See https://github.com/lucidrains/DALLE-pytorch/issues/161
 for epoch in range(EPOCHS):
     for i, (text, images) in enumerate(distr_dl):
         if args.fp16:
