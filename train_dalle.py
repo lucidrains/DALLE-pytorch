@@ -211,10 +211,12 @@ dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, s
 
 # initialize DALL-E
 
-dalle = DALLE(vae=vae, **dalle_params)
-if args.fp16:
-    dalle = dalle.half()
-dalle = dalle.cuda()
+
+dalle = DALLE(vae = vae, **dalle_params)
+if not using_deepspeed:
+    if args.fp16:
+        dalle = dalle.half()
+    dalle = dalle.cuda()
 
 if RESUME:
     dalle.load_state_dict(weights)
@@ -274,8 +276,7 @@ deepspeed_config = {
 avoid_model_calls = using_deepspeed and args.fp16
 
 # training
-# Avoid allocation error due to potential bug in deepspeed.
-# See https://github.com/lucidrains/DALLE-pytorch/issues/161
+
 for epoch in range(EPOCHS):
     for i, (text, images) in enumerate(distr_dl):
         if args.fp16:

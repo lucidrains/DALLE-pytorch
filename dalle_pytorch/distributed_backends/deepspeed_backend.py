@@ -34,6 +34,8 @@ class DeepSpeedBackend(DistributedBackend):
 
     def _initialize(self):
         self.backend_module.init_distributed()
+        if torch.cuda.is_available():
+            torch.cuda.set_device(self._get_local_rank())
 
     @staticmethod
     def _require_torch_distributed_init():
