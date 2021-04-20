@@ -216,7 +216,10 @@ for epoch in range(EPOCHS):
 
             # lr decay
 
-            distr_sched.step()
+            if not using_deepspeed:
+                # Scheduler is automatically progressed after the step
+                # when using DeepSpeed.
+                distr_sched.step()
 
         # Collective loss, averaged
         avg_loss = distr_backend.average_all(loss)
