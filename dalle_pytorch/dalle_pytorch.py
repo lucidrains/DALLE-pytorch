@@ -159,7 +159,7 @@ class DiscreteVAE(nn.Module):
     @torch.no_grad()
     @eval_decorator
     def get_codebook_indices(self, images):
-        logits = self.forward(images, return_logits = True)
+        logits = self(images, return_logits = True)
         codebook_indices = logits.argmax(dim = 1).flatten(1)
         return codebook_indices
 
