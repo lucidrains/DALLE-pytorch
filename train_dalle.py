@@ -378,7 +378,9 @@ for epoch in range(EPOCHS):
 
             wandb.log(log)
 
-    if LR_DECAY:
+    if LR_DECAY and not using_deepspeed:
+        # Scheduler is automatically progressed after the step when
+        # using DeepSpeed.
         distr_scheduler.step(loss)
 
     if distr_backend.is_root_worker():
