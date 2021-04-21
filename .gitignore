@@ -1,5 +1,8 @@
 # dall-e generation outputs
 outputs/
+*.pt
+taming/
+wandb/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
