@@ -120,7 +120,7 @@ class DeepSpeedBackend(DistributedBackend):
             )
             optimizer = None
 
-        if 'lr_scheduler' in config and lr_scheduler is not None:
+        if 'scheduler' in config and lr_scheduler is not None:
             print(
                 'WARNING: Learning rate scheduler encountered in both '
                 'DeepSpeed config and keyword arguments. Learning rate '
