@@ -1,6 +1,6 @@
 # dall-e generation outputs
 outputs/
-dalle.pt
+*.pt
 taming/
 wandb/
 
