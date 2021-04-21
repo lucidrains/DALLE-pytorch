@@ -217,9 +217,10 @@ dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, s
 
 
 dalle = DALLE(vae=vae, **dalle_params)
-if not using_deepspeed and args.fp16:
-    dalle = dalle.half()
-dalle = dalle.cuda()
+if not using_deepspeed:
+    if args.fp16:
+        dalle = dalle.half()
+    dalle = dalle.cuda()
 
 if RESUME:
     dalle.load_state_dict(weights)
