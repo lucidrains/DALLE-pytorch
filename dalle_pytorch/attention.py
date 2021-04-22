@@ -238,45 +238,47 @@ class SparseAxialCausalAttention(nn.Module):
 
         # image attention
 
-        split_axis_einops = 'b (h w) c -> (b h) w c' if axis == 0 else 'b (h w) c -> (b w) h c'
-        merge_axis_einops = '(b ax) n d -> b (ax n) d' if axis == 0 else '(b ax) n d -> b (n ax) d'
+        split_axis_einops = 'b (h w) c -> b h w c' if axis == 0 else 'b (h w) c -> b w h c'
+        merge_axis_einops = 'b x n d -> b (x n) d' if axis == 0 else 'b x n d -> b (n x) d'
 
         # split out axis
 
         q_img, k_img, v_img = map(lambda t: rearrange(t, split_axis_einops, h = img_size), (q_img, k_img, v_img))
 
-        # prepare text key / values for the image tokens to attend to
-
-        k_text, v_text = map(lambda t: repeat(t, 'b n d -> (b ax) n d', ax = img_size), (k_text, v_text))
-        k_img = torch.cat((k_text, k_img), dim = 1)
-        v_img = torch.cat((v_text, v_img), dim = 1)
-
         # similarity
 
-        dots_image = einsum('b i d, b j d -> b i j', q_img, k_img)
+        dots_image_to_image = einsum('b x i d, b x j d -> b x i j', q_img, k_img)
+        dots_image_to_text = einsum('b x i d, b j d -> b x i j', q_img, k_text)
+
+        dots = torch.cat((dots_image_to_text, dots_image_to_image), dim = -1)
 
         # mask so image has full attention to text, but causal along axis
 
-        bh, i, j = dots_image.shape
+        bh, x, i, j = dots.shape
         causal_mask = torch.ones(i, img_size, device = device).triu_(img_size - i + 1).bool()
-        causal_mask = repeat(causal_mask, 'i j -> b i j', b = bh)
+        causal_mask = repeat(causal_mask, 'i j -> b x i j', b = bh, x = x)
 
-        mask = repeat(mask, 'b j -> (b r) i j', r = (bh // b), i = i)
+        mask = repeat(mask, 'b j -> (b h) x i j', h = h, x = x, i = i)
         mask = torch.cat((~mask, causal_mask), dim = -1)
 
-        dots_image.masked_fill_(mask, mask_value)
+        dots.masked_fill_(mask, mask_value)
 
         # attention.
 
-        attn_image = dots_image.softmax(dim = -1)
+        attn = dots.softmax(dim = -1)
 
         # aggregate
 
-        out_image = einsum('b i j, b j d -> b i d', attn_image, v_img)
+        attn_image_to_text, attn_image_to_image = attn[..., :text_len], attn[..., text_len:]
+
+        out_image_to_image = einsum('b x i j, b x j d -> b x i d', attn_image_to_image, v_img)
+        out_image_to_text = einsum('b x i j, b j d -> b x i d', attn_image_to_text, v_text)
+
+        out_image = out_image_to_image + out_image_to_text
 
         # merge back axis
 
-        out_image = rearrange(out_image, merge_axis_einops, ax = img_size)
+        out_image = rearrange(out_image, merge_axis_einops, x = img_size)
 
         # combine attended values for both text and image
 
