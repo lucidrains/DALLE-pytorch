@@ -131,14 +131,10 @@ class SparseConvCausalAttention(nn.Module):
         k_img, v_img = map(lambda t: F.unfold(t, kernel_size, padding = padding, dilation = dilation), (k_img, v_img))
         k_img, v_img = map(lambda t: rearrange(t, 'b (d j) i -> b i j d', j = kernel_size ** 2), (k_img, v_img))
 
-        k_text, v_text = map(lambda t: repeat(t, 'b j d -> b i j d', i = img_seq_len), (k_text, v_text))
-
         # let image attend to all of text
 
-        k_img = torch.cat((k_text, k_img), dim = 2)
-        v_img = torch.cat((v_text, v_img), dim = 2)
-
         dots_image = einsum('b i d, b i j d -> b i j', q_img, k_img)
+        dots_image_to_text = einsum('b i d, b j d -> b i j', q_img, k_text)
 
         # calculate causal attention for local convolution
 
@@ -162,10 +158,19 @@ class SparseConvCausalAttention(nn.Module):
 
         # image can attend to all of text
 
-        dots_image.masked_fill_(mask, mask_value)
+        dots = torch.cat((dots_image_to_text, dots_image), dim = -1)
+        dots.masked_fill_(mask, mask_value)
 
-        attn_image = dots_image.softmax(dim = -1)
-        out_image = einsum('b i j, b i j d -> b i d', attn_image, v_img)
+        attn = dots.softmax(dim = -1)
+
+        # aggregate
+
+        attn_image_to_text, attn_image = attn[..., :text_len], attn[..., text_len:]
+
+        out_image_to_image = einsum('b i j, b i j d -> b i d', attn_image, v_img)
+        out_image_to_text = einsum('b i j, b j d -> b i d', attn_image_to_text, v_text)
+
+        out_image = out_image_to_image + out_image_to_text
 
         # combine attended values for both text and image
 
