@@ -10,20 +10,6 @@ class HorovodBackend(DistributedBackend):
     BACKEND_NAME = 'Horovod'
 
     def wrap_arg_parser(self, parser):
-        if not self.has_backend():
-            parser.add_argument(
-                '--horovod',
-                type=lambda _: False,
-                help=(
-                    "whether to use Horovod (ignored since it's not available)"
-                ),
-            )
-        else:
-            parser.add_argument(
-                '--horovod',
-                action='store_true',
-                help='whether to use Horovod',
-            )
         return parser
 
     def check_batch_size(self, batch_size):
