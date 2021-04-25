@@ -326,7 +326,7 @@ for epoch in range(EPOCHS):
 
                 if not avoid_model_calls:
                     # CUDA index errors when we don't guard this
-                    image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
+                    generated_image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
 
                 save_model(f'./dalle.pt')
                 wandb.save(f'./dalle.pt')
@@ -335,10 +335,10 @@ for epoch in range(EPOCHS):
                     **log,
                 }
                 if not avoid_model_calls:
-                    log['image'] = wandb.Image(image, caption=decoded_text)
+                    log['image'] = wandb.Image(generated_image, caption=decoded_text)
                     if args.use_tb:
                         writer.add_text('caption', decoded_text, epoch * len(distr_dl) + i)
-                        writer.add_images('image', images, epoch * len(distr_dl) + i)
+                        writer.add_images('image', generated_image, epoch * len(distr_dl) + i)
 
             wandb.log(log)
 
