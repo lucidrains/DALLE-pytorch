@@ -7,6 +7,7 @@ from torch.nn.utils import clip_grad_norm_
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
+from torch.utils.tensorboard import SummaryWriter
 
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
 from dalle_pytorch import distributed_utils
@@ -45,7 +46,7 @@ parser.add_argument('--bpe_path', type=str,
 
 parser.add_argument('--fp16', action='store_true',
                     help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
-
+parser.add_argument('--use_tb', dest='use_tb', action='store_true', help='Use tensorboard for logging.')
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
 parser = distributed_utils.wrap_arg_parser(parser)
@@ -278,6 +279,9 @@ deepspeed_config = {
 avoid_model_calls = using_deepspeed and args.fp16
 
 # training
+writer = None
+if args.use_tb:
+    writer = SummaryWriter()
 
 for epoch in range(EPOCHS):
     for i, (text, images) in enumerate(distr_dl):
@@ -312,6 +316,8 @@ for epoch in range(EPOCHS):
                     'iter': i,
                     'loss': avg_loss.item()
                 }
+                if args.use_tb:
+                    writer.add_scalar("loss", loss, epoch * len(distr_dl) + i)
 
             if i % 100 == 0:
                 sample_text = text[:1]
@@ -330,6 +336,9 @@ for epoch in range(EPOCHS):
                 }
                 if not avoid_model_calls:
                     log['image'] = wandb.Image(image, caption=decoded_text)
+                    if args.use_tb:
+                        writer.add_text('caption', decoded_text, epoch * len(distr_dl) + i)
+                        writer.add_images('image', images, epoch * len(distr_dl) + i)
 
             wandb.log(log)
 
@@ -344,6 +353,9 @@ for epoch in range(EPOCHS):
         model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
         model_artifact.add_file('dalle.pt')
         run.log_artifact(model_artifact)
+        if args.use_tb:
+            writer.add_graph(dalle)
+            writer.close()
 
 if distr_backend.is_root_worker():
     save_model(f'./dalle-final.pt')
