@@ -100,7 +100,9 @@ vae = DiscreteVAE(
     **vae_params,
     smooth_l1_loss = SMOOTH_L1_LOSS,
     kl_div_loss_weight = KL_LOSS_WEIGHT
-).cuda()
+)
+if not using_deepspeed:
+    vae = vae.cuda()
 
 
 assert len(ds) > 0, 'folder does not contain any images'
@@ -214,7 +216,10 @@ for epoch in range(EPOCHS):
 
             # lr decay
 
-            distr_sched.step()
+            if not using_deepspeed:
+                # Scheduler is automatically progressed after the step
+                # when using DeepSpeed.
+                distr_sched.step()
 
         # Collective loss, averaged
         avg_loss = distr_backend.average_all(loss)

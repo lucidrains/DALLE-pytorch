@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
 
+from dalle_pytorch import distributed_utils
 from dalle_pytorch.vae import OpenAIDiscreteVAE
 from dalle_pytorch.vae import VQGanVAE1024
 from dalle_pytorch.transformer import Transformer
@@ -131,6 +132,20 @@ class DiscreteVAE(nn.Module):
         # take care of normalization within class
         self.normalization = normalization
 
+        self._register_external_parameters()
+
+    def _register_external_parameters(self):
+        """Register external parameters for DeepSpeed partitioning."""
+        if (
+                not distributed_utils.is_distributed
+                or not distributed_utils.using_backend(
+                    distributed_utils.DeepSpeedBackend)
+        ):
+            return
+
+        deepspeed = distributed_utils.backend.backend_module
+        deepspeed.zero.register_external_parameters(self, self.codebook.weight)
+
     def norm(self, images):
         if not exists(self.normalization):
             return images
@@ -144,7 +159,7 @@ class DiscreteVAE(nn.Module):
     @torch.no_grad()
     @eval_decorator
     def get_codebook_indices(self, images):
-        logits = self.forward(images, return_logits = True)
+        logits = self(images, return_logits = True)
         codebook_indices = logits.argmax(dim = 1).flatten(1)
         return codebook_indices
 

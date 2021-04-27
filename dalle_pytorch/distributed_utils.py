@@ -62,6 +62,12 @@ def set_backend_from_args(args):
     for distr_backend in BACKENDS:
         if distr_backend.BACKEND_NAME.lower() == backend_name:
             backend = distr_backend
+            if not backend.has_backend():
+                raise ModuleNotFoundError(
+                    f'{backend.BACKEND_NAME} backend selected but '
+                    'module not available'
+                )
+
             print(f'Using {backend.BACKEND_NAME} for distributed execution')
             return backend
 

@@ -372,6 +372,14 @@ You can now also train DALL-E without having to train the Discrete VAE at all, c
 $ python train_dalle.py --image_text_folder /path/to/coco/dataset
 ```
 
+### DALL-E with Taming Transformer's VQVAE
+
+Just use the `--taming` flag. Highly recommended you use this VAE over the OpenAI one!
+
+```python
+$ python train_dalle.py --image_text_folder /path/to/coco/dataset --taming
+```
+
 ### Generation
 
 Once you have successfully trained DALL-E, you can then use the saved model for generation!
@@ -434,15 +442,29 @@ accordingly.
 
 #### Custom Tokenizer
 
-This repository supports <a href="https://huggingface.co/transformers/main_classes/tokenizer.html">Huggingface Tokenizers</a> if you wish to use it instead of the default simple tokenizer. Simply pass in an extra `--bpe_path` when invoking `train_dalle.py` and `generate.py`, with the path to your BPE json file.
+This repository supports custom tokenization with <a href="https://github.com/VKCOM/YouTokenToMe">YouTokenToMe</a>, if you wish to use it instead of the default simple tokenizer. Simply pass in an extra `--bpe_path` when invoking `train_dalle.py` and `generate.py`, with the path to your BPE model file.
 
 The only requirement is that you use `0` as the padding during tokenization
 
 ex.
 
 ```sh
-$ python train_dalle.py --image_text_folder ./path/to/data --bpe_path ./path/to/bpe.json
+$ python train_dalle.py --image_text_folder ./path/to/data --bpe_path ./path/to/bpe.model
 ```
+
+To create a BPE model file from scratch, firstly
+
+```bash
+$ pip install youtokentome
+```
+
+Then you need to prepare a big text file that is a representative sample of the type of text you want to encode. You can then invoke the `youtokentome` command-line tools. You'll also need to specify the vocab size you wish to use, in addition to the corpus of text.
+
+```bash
+$ yttm bpe --vocab_size 8000 --data ./path/to/big/text/file.txt --model ./path/to/bpe.model
+```
+
+That's it! The BPE model file is now saved to `./path/to/bpe.model` and you can begin training!
 
 #### Chinese
 

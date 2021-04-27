@@ -16,7 +16,7 @@ from torchvision.utils import make_grid, save_image
 # dalle related classes and utils
 
 from dalle_pytorch import DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024, DALLE
-from dalle_pytorch.tokenizer import tokenizer, HugTokenizer
+from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, YttmTokenizer, ChineseTokenizer
 
 # argument parsing
 
@@ -43,6 +43,8 @@ parser.add_argument('--outputs_dir', type = str, default = './outputs', required
 parser.add_argument('--bpe_path', type = str,
                     help='path to your huggingface BPE json file')
 
+parser.add_argument('--hug', dest='hug', action = 'store_true')
+
 parser.add_argument('--chinese', dest='chinese', action = 'store_true')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
@@ -57,7 +59,8 @@ def exists(val):
 # tokenizer
 
 if exists(args.bpe_path):
-    tokenizer = HugTokenizer(args.bpe_path)
+    klass = HugTokenizer if args.hug else YttmTokenizer
+    tokenizer = klass(args.bpe_path)
 elif args.chinese:
     tokenizer = ChineseTokenizer()
 
