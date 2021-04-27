@@ -372,6 +372,14 @@ You can now also train DALL-E without having to train the Discrete VAE at all, c
 $ python train_dalle.py --image_text_folder /path/to/coco/dataset
 ```
 
+### DALL-E with Taming Transformer's VQVAE
+
+Just use the `--taming` flag. Highly recommended you use this VAE over the OpenAI one!
+
+```python
+$ python train_dalle.py --image_text_folder /path/to/coco/dataset --taming
+```
+
 ### Generation
 
 Once you have successfully trained DALL-E, you can then use the saved model for generation!
