@@ -1,4 +1,5 @@
 import argparse
+import contextlib
 from pathlib import Path
 
 import torch
@@ -111,6 +112,28 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 
+def load_checkpoint(model, weights, path):
+    if not using_deepspeed:
+        dalle.load_state_dict(weights)
+    else:
+        cp_dir = cp_path_to_dir(path, 'ds')
+
+        if not cp_dir.is_dir():
+            def load_partitioned(module, prefix=''):
+                with distr_backend.backend_module.zero.GatheredParameters(
+                        list(dalle.parameters(recurse=False)),
+                        modifier_rank=distr_backend.ROOT_RANK,
+                ):
+                    if distr_backend.is_root_rank():
+                        module._load_from_state_dict(weights, prefix)
+
+                for name, child in module._modules.items():
+                    if child is not None:
+                        load_partitioned(child, prefix + name + '.')
+
+            load_partitioned(dalle)
+
+
 if RESUME:
     dalle_path = Path(DALLE_PATH)
     assert dalle_path.exists(), 'DALL-E model file does not exist'
@@ -220,14 +243,22 @@ dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, s
 # initialize DALL-E
 
 
-dalle = DALLE(vae=vae, **dalle_params)
+if using_deepspeed:
+    init_context = distr_backend.backend_module.zero.Init()
+else:
+    # We'd like to use `contextlib.nullcontext()` here but it's not
+    # available in Python 3.6.
+    init_context = contextlib.suppress()
+
+with init_context:
+    dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
     if args.fp16:
         dalle = dalle.half()
     dalle = dalle.cuda()
 
-if RESUME and not using_deepspeed:
-    dalle.load_state_dict(weights)
+if RESUME:
+    load_checkpoint(dalle, weights, DALLE_PATH)
 
 # optimizer
 
@@ -283,9 +314,8 @@ avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
     cp_dir = cp_path_to_dir(DALLE_PATH, 'ds')
-    assert cp_dir.is_dir(), \
-        f'DeepSpeed checkpoint directory {cp_dir} not found'
-    distr_dalle.load_checkpoint(str(cp_dir))
+    if cp_dir.is_dir():
+        distr_dalle.load_checkpoint(str(cp_dir))
 
 
 def save_model(path):
