@@ -295,7 +295,9 @@ def save_model(path):
         cp_dir = cp_path_to_dir(path, 'ds')
 
         distr_dalle.save_checkpoint(cp_dir, client_state=save_obj)
-        # We do not return so we do get a "normal" checkpoint to refer to.
+        # To get a standard checkpoint, look into consolidating
+        # DeepSpeed checkpoints.
+        return
 
     if not distr_backend.is_root_worker():
         return
