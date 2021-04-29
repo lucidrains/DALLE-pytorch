@@ -4,7 +4,7 @@ from pathlib import Path
 import torch
 import wandb  # Quit early if user doesn't have wandb installed.
 from torch.nn.utils import clip_grad_norm_
-from torch.optim import Adam
+from torch.optim import AdamW
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
@@ -227,7 +227,7 @@ if RESUME:
 
 # optimizer
 
-opt = Adam(dalle.parameters(), lr=LEARNING_RATE)
+opt = AdamW(dalle.parameters(), lr=LEARNING_RATE, betas=(0.9,0.96), weight_decay=4.5e-2, amsgrad=True)
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
