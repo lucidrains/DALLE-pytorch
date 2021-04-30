@@ -14,6 +14,7 @@ from math import sqrt
 from omegaconf import OmegaConf
 from taming.models.vqgan import VQModel
 
+import dall_e  # So DeepSpeed knows about the used classes.
 import torch
 from torch import nn
 import torch.nn.functional as F
