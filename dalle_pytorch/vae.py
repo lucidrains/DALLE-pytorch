@@ -13,8 +13,9 @@ from tqdm import tqdm
 from math import sqrt
 from omegaconf import OmegaConf
 from taming.models.vqgan import VQModel
+from taming.modules.losses.lpips import ScalingLayer
 
-import dall_e  # So DeepSpeed knows about the used classes.
+import dall_e
 import torch
 from torch import nn
 import torch.nn.functional as F
@@ -100,6 +101,8 @@ class OpenAIDiscreteVAE(nn.Module):
     def __init__(self):
         super().__init__()
 
+        self._adjust_classes()
+
         self.enc = load_model(download(OPENAI_VAE_ENCODER_PATH))
         self.dec = load_model(download(OPENAI_VAE_DECODER_PATH))
 
@@ -107,10 +110,24 @@ class OpenAIDiscreteVAE(nn.Module):
         self.image_size = 256
         self.num_tokens = 8192
 
+    @staticmethod
+    def _adjust_classes():
+        if (
+                not distributed_utils.is_distributed
+                or not  distributed_utils.using_backend(
+                    distributed_utils.DeepSpeedBackend)
+        ):
+            return
+
+        dall_e.Encoder.forward = lambda self, x: self.blocks(x)
+        dall_e.Decoder.forward = lambda self, x: self.blocks(x)
+        dall_e.utils.Conv2d.forward = lambda self, x: \
+            F.conv2d(x, self.w, self.b, padding=(self.kw - 1) // 2)
+
     @torch.no_grad()
     def get_codebook_indices(self, img):
         img = map_pixels(img)
-        z_logits = self.enc.blocks(img)
+        z_logits = self.enc(img)
         z = torch.argmax(z_logits, dim = 1)
         return rearrange(z, 'b h w -> b (h w)')
 
@@ -137,6 +154,8 @@ class VQGanVAE1024(nn.Module):
         model_filename = 'vqgan.1024.model.ckpt'
         config_filename = 'vqgan.1024.config.yml'
 
+        self._adjust_classes()
+
         download(VQGAN_VAE_CONFIG_PATH, config_filename)
         download(VQGAN_VAE_PATH, model_filename)
 
@@ -153,6 +172,25 @@ class VQGanVAE1024(nn.Module):
         self.num_tokens = 1024
 
         self._register_external_parameters()
+
+    @staticmethod
+    def _adjust_classes():
+        if (
+                not distributed_utils.is_distributed
+                or not distributed_utils.using_backend(
+                    distributed_utils.DeepSpeedBackend)
+        ):
+            return
+
+        def new_init(self):
+            # The original used `torch.Tensor` instead which doesn't work.
+            super(ScalingLayer, self).__init__()
+            self.register_buffer('shift', torch.tensor(
+                [-.030, -.088, -.188])[None, :, None, None])
+            self.register_buffer('scale', torch.tensor(
+                [.458, .448, .450])[None, :, None, None])
+
+        ScalingLayer.__init__ = new_init
 
     def _register_external_parameters(self):
         """Register external parameters for DeepSpeed partitioning."""
