@@ -112,26 +112,48 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 
-def load_checkpoint(model, weights, path):
-    if not using_deepspeed:
-        dalle.load_state_dict(weights)
-    else:
+def load_checkpoint(model, state_dict, path):
+    if using_deepspeed:
         cp_dir = cp_path_to_dir(path, 'ds')
 
-        if not cp_dir.is_dir():
-            def load_partitioned(module, prefix=''):
-                with distr_backend.backend_module.zero.GatheredParameters(
-                        list(dalle.parameters(recurse=False)),
-                        modifier_rank=distr_backend.ROOT_RANK,
-                ):
-                    if distr_backend.is_root_worker():
-                        module._load_from_state_dict(weights, prefix)
+        if cp_dir.is_dir():
+            # We can load a DeepSpeed checkpoint instead.
+            return
 
-                for name, child in module._modules.items():
-                    if child is not None:
-                        load_partitioned(child, prefix + name + '.')
+        missing_keys = []
+        unexpected_keys = []
+        error_msgs = []
 
-            load_partitioned(dalle)
+        metadata = getattr(state_dict, '_metadata', None)
+
+        def load_partitioned(module, prefix=''):
+            if metadata is None:
+                local_metadata = {}
+            else:
+                local_metadata = metadata.get(prefix[:-1], {})
+
+            with distr_backend.backend_module.zero.GatheredParameters(
+                    list(dalle.parameters(recurse=False)),
+                    modifier_rank=distr_backend.ROOT_RANK,
+            ):
+                if distr_backend.is_root_worker():
+                    module._load_from_state_dict(
+                        state_dict,
+                        prefix,
+                        local_metadata,
+                        True,
+                        missing_keys,
+                        unexpected_keys,
+                        error_msgs,
+                    )
+
+            for name, child in module._modules.items():
+                if child is not None:
+                    load_partitioned(child, prefix + name + '.')
+
+        load_partitioned(dalle)
+    else:
+        dalle.load_state_dict(state_dict)
 
 
 if RESUME:
