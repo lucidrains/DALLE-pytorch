@@ -133,7 +133,7 @@ def load_checkpoint(model, state_dict, path):
                 local_metadata = metadata.get(prefix[:-1], {})
 
             with distr_backend.backend_module.zero.GatheredParameters(
-                    list(dalle.parameters(recurse=False)),
+                    list(module.parameters(recurse=False)),
                     modifier_rank=distr_backend.ROOT_RANK,
             ):
                 if distr_backend.is_root_worker():
