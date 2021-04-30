@@ -124,7 +124,7 @@ def load_checkpoint(model, weights, path):
                         list(dalle.parameters(recurse=False)),
                         modifier_rank=distr_backend.ROOT_RANK,
                 ):
-                    if distr_backend.is_root_rank():
+                    if distr_backend.is_root_worker():
                         module._load_from_state_dict(weights, prefix)
 
                 for name, child in module._modules.items():
