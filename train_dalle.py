@@ -156,6 +156,13 @@ def load_checkpoint(model, state_dict, path):
         dalle.load_state_dict(state_dict)
 
 
+if using_deepspeed:
+    init_context = distr_backend.backend_module.zero.Init()
+else:
+    # We'd like to use `contextlib.nullcontext` here but it's not
+    # available in Python 3.6.
+    init_context = contextlib.suppress()
+
 if RESUME:
     dalle_path = Path(DALLE_PATH)
     assert dalle_path.exists(), 'DALL-E model file does not exist'
@@ -196,7 +203,8 @@ else:
         vae_params = None
 
         vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
-        vae = vae_klass()
+        with init_context:
+            vae = vae_klass()
 
     IMAGE_SIZE = vae.image_size
 
@@ -263,14 +271,6 @@ else:
 dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
 # initialize DALL-E
-
-
-if using_deepspeed:
-    init_context = distr_backend.backend_module.zero.Init()
-else:
-    # We'd like to use `contextlib.nullcontext()` here but it's not
-    # available in Python 3.6.
-    init_context = contextlib.suppress()
 
 with init_context:
     dalle = DALLE(vae=vae, **dalle_params)
