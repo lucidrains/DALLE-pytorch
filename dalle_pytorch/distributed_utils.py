@@ -69,6 +69,7 @@ def set_backend_from_args(args):
                 )
 
             print(f'Using {backend.BACKEND_NAME} for distributed execution')
+            is_distributed = True
             return backend
 
     raise ValueError(
