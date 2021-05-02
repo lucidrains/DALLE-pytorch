@@ -36,6 +36,18 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 $ pip install dalle-pytorch
 ```
 
+## Build a docker Container
+The Docker container will make sure that the version of pytorch and cuda are correct. It has only been tested for nvidia cuda gpus. <a href="https://docs.docker.com/get-docker/">Docker</a> and <a href='#'>Docker Container Runtime</a> installed.
+
+To build:
+```bash
+docker build -t dalle docker
+```
+To run in an interactive shell:
+```bash
+docker run --gpus all --mount repo_or_dataset:/dalle/any_subdirectory_that_you_will_access_it dalle:latest /bin/bash
+```
+
 ## Usage
 
 Train VAE
