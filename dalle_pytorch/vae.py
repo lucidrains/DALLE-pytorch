@@ -163,7 +163,7 @@ class VQGanVAE1024(nn.Module):
             return
 
         deepspeed = distributed_utils.backend.backend_module
-        deepspeed.zero.register_external_parameters(
+        deepspeed.zero.register_external_parameter(
             self, self.model.quantize.embedding.weight)
 
     @torch.no_grad()
