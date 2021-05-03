@@ -434,9 +434,10 @@ for each one. See the [DeepSpeed configuration
 docs](https://www.deepspeed.ai/docs/config-json/) for more
 information.
 
-Note that for ZeRO optimizations, it's currently required to pass the
-`--fp16` flag as well to activate half-precision training. This is
-only supported for `train_dalle.py`.
+As of DeepSpeed version 0.3.16, ZeRO optimizations can be used with
+single-precision floating point numbers. If you are using an older
+version, you'll have to pass the `--fp16` flag to be able to enable
+ZeRO optimizations.
 
 #### Horovod
 
