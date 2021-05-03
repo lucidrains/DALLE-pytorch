@@ -151,9 +151,9 @@ def load_checkpoint(model, state_dict, path):
                 if child is not None:
                     load_partitioned(child, prefix + name + '.')
 
-        load_partitioned(dalle)
+        load_partitioned(model)
     else:
-        dalle.load_state_dict(state_dict)
+        model.load_state_dict(state_dict)
 
 
 if using_deepspeed:
