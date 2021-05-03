@@ -112,44 +112,6 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 
-def load_checkpoint(model, state_dict):
-    if using_deepspeed:
-        missing_keys = []
-        unexpected_keys = []
-        error_msgs = []
-
-        metadata = getattr(state_dict, '_metadata', None)
-
-        def load_partitioned(module, prefix=''):
-            if metadata is None:
-                local_metadata = {}
-            else:
-                local_metadata = metadata.get(prefix[:-1], {})
-
-            with distr_backend.backend_module.zero.GatheredParameters(
-                    list(module.parameters(recurse=False)),
-                    modifier_rank=distr_backend.ROOT_RANK,
-            ):
-                if distr_backend.is_root_worker():
-                    module._load_from_state_dict(
-                        state_dict,
-                        prefix,
-                        local_metadata,
-                        True,
-                        missing_keys,
-                        unexpected_keys,
-                        error_msgs,
-                    )
-
-            for name, child in module._modules.items():
-                if child is not None:
-                    load_partitioned(child, prefix + name + '.')
-
-        load_partitioned(model)
-    else:
-        model.load_state_dict(state_dict)
-
-
 if using_deepspeed:
     init_context = distr_backend.backend_module.zero.Init()
 else:
@@ -278,7 +240,7 @@ if RESUME:
     # If this directory exists, we can load a DeepSpeed
     # checkpoint instead.
     if not using_deepspeed or not cp_dir.is_dir():
-        load_checkpoint(dalle, weights)
+        dalle.load_state_dict(weights)
 
 
 # optimizer
