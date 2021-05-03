@@ -144,7 +144,7 @@ class DiscreteVAE(nn.Module):
             return
 
         deepspeed = distributed_utils.backend.backend_module
-        deepspeed.zero.register_external_parameters(self, self.codebook.weight)
+        deepspeed.zero.register_external_parameter(self, self.codebook.weight)
 
     def norm(self, images):
         if not exists(self.normalization):
