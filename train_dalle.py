@@ -112,14 +112,8 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 
-def load_checkpoint(model, state_dict, path):
+def load_checkpoint(model, state_dict):
     if using_deepspeed:
-        cp_dir = cp_path_to_dir(path, 'ds')
-
-        if cp_dir.is_dir():
-            # We can load a DeepSpeed checkpoint instead.
-            return
-
         missing_keys = []
         unexpected_keys = []
         error_msgs = []
@@ -280,7 +274,12 @@ if not using_deepspeed:
     dalle = dalle.cuda()
 
 if RESUME:
-    load_checkpoint(dalle, weights, DALLE_PATH)
+    cp_dir = cp_path_to_dir(DALLE_PATH, 'ds')
+    # If this directory exists, we can load a DeepSpeed
+    # checkpoint instead.
+    if not using_deepspeed or not cp_dir.is_dir():
+        load_checkpoint(dalle, weights)
+
 
 # optimizer
 
