@@ -31,6 +31,10 @@ def masked_mean(t, mask, dim = 1):
     t = t.masked_fill(~mask[:, :, None], 0.)
     return t.sum(dim = 1) / mask.sum(dim = 1)[..., None]
 
+def set_requires_grad(model, value):
+    for param in model.parameters():
+        param.requires_grad = value
+
 def eval_decorator(fn):
     def inner(model, *args, **kwargs):
         was_training = model.training
@@ -347,6 +351,7 @@ class DALLE(nn.Module):
         self.total_seq_len = seq_len
 
         self.vae = vae
+        set_requires_grad(self.vae, False) # freeze VAE from being trained
 
         self.transformer = Transformer(
             dim = dim,

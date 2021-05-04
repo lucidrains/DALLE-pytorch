@@ -60,6 +60,8 @@ assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder
 def exists(val):
     return val is not None
 
+def get_trainable_params(model):
+    return [params for params in model.parameters() if params.requires_grad]
 
 # constants
 
@@ -229,7 +231,7 @@ if RESUME and not using_deepspeed:
 
 # optimizer
 
-opt = Adam(dalle.parameters(), lr=LEARNING_RATE)
+opt = Adam(get_trainable_params(dalle), lr=LEARNING_RATE)
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
@@ -272,7 +274,7 @@ deepspeed_config = {
     args=args,
     model=dalle,
     optimizer=opt,
-    model_parameters=dalle.parameters(),
+    model_parameters=get_trainable_params(dalle),
     training_data=ds if using_deepspeed else dl,
     lr_scheduler=scheduler if LR_DECAY else None,
     config_params=deepspeed_config,
