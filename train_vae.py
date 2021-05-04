@@ -1,6 +1,7 @@
 import math
 from math import sqrt
 import argparse
+from pathlib import Path
 
 # torch
 
@@ -109,17 +110,6 @@ assert len(ds) > 0, 'folder does not contain any images'
 if distr_backend.is_root_worker():
     print(f'{len(ds)} images found for training')
 
-def save_model(path):
-    if not distr_backend.is_root_worker():
-        return
-
-    save_obj = {
-        'hparams': vae_params,
-        'weights': vae.state_dict()
-    }
-
-    torch.save(save_obj, path)
-
 # optimizer
 
 opt = Adam(vae.parameters(), lr = LEARNING_RATE)
@@ -158,6 +148,28 @@ deepspeed_config = {'train_batch_size': BATCH_SIZE}
     lr_scheduler=sched,
     config_params=deepspeed_config,
 )
+
+def save_model(path):
+    save_obj = {
+        'hparams': vae_params,
+    }
+    if using_deepspeed:
+        cp_path = Path(path)
+        path_sans_extension = cp_path.parent / cp_path.stem
+        cp_dir = str(path_sans_extension) + '-ds-cp'
+
+        distr_vae.save_checkpoint(cp_dir, client_state=save_obj)
+        # We do not return so we do get a "normal" checkpoint to refer to.
+
+    if not distr_backend.is_root_worker():
+        return
+
+    save_obj = {
+        **save_obj,
+        'weights': vae.state_dict()
+    }
+
+    torch.save(save_obj, path)
 
 # starting temperature
 
@@ -207,8 +219,8 @@ for epoch in range(EPOCHS):
                     'temperature':          temp
                 }
 
-                save_model(f'./vae.pt')
                 wandb.save('./vae.pt')
+            save_model(f'./vae.pt')
 
             # temperature anneal
 
