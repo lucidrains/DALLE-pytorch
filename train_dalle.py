@@ -312,6 +312,8 @@ def save_model(path):
 # training
 
 for epoch in range(EPOCHS):
+    if data_sampler:
+        data_sampler.set_epoch(epoch)
     for i, (text, images) in enumerate(distr_dl):
         if args.fp16:
             images = images.half()
