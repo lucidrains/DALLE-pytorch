@@ -179,11 +179,6 @@ else:
         loss_img_weight=LOSS_IMG_WEIGHT
     )
 
-# configure OpenAI VAE for float16s
-
-if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
-    vae.enc.blocks.output.conv.use_float16 = True
-
 
 # helpers
 
