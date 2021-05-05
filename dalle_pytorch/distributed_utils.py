@@ -11,7 +11,7 @@ You can check whether a backend is in use with the `using_backend`
 function.
 """
 
-from torch import Module
+from torch.nn import Module
 
 from dalle_pytorch.distributed_backends import \
     DeepSpeedBackend, \
