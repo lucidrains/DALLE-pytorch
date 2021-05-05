@@ -11,6 +11,8 @@ You can check whether a backend is in use with the `using_backend`
 function.
 """
 
+from torch.nn import Module
+
 from dalle_pytorch.distributed_backends import \
     DeepSpeedBackend, \
     DummyBackend, \
@@ -29,6 +31,24 @@ is_distributed = None
 """Whether we are distributed."""
 backend = None
 """Backend in usage."""
+
+
+class ZeROLoading():
+    def __enter__(self):
+        if hasattr(Module, '_old_load_state_dict'):
+            return
+        Module._old_load_state_dict = Module.load_state_dict
+        Module.load_state_dict = load_checkpoint
+
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if not hasattr(Module, '_old_load_state_dict'):
+            return
+        Module.load_state_dict = Module._old_load_state_dict
+        del Module._old_load_state_dict
+
+        if exc_type is not None:
+            return False
 
 
 def wrap_arg_parser(parser):
@@ -94,3 +114,41 @@ def using_backend(test_backend):
     if isinstance(test_backend, str):
         return backend.BACKEND_NAME == test_backend
     return isinstance(backend, test_backend)
+
+
+def load_checkpoint(model, state_dict, strict=True):
+    if is_distributed and using_backend(DeepSpeedBackend):
+        missing_keys = []
+        unexpected_keys = []
+        error_msgs = []
+
+        metadata = getattr(state_dict, '_metadata', None)
+
+        def load_partitioned(module, prefix=''):
+            if metadata is None:
+                local_metadata = {}
+            else:
+                local_metadata = metadata.get(prefix[:-1], {})
+
+            with backend.backend_module.zero.GatheredParameters(
+                    list(module.parameters(recurse=False)),
+                    modifier_rank=backend.ROOT_RANK,
+            ):
+                if backend.is_root_worker():
+                    module._load_from_state_dict(
+                        state_dict,
+                        prefix,
+                        local_metadata,
+                        True,
+                        missing_keys,
+                        unexpected_keys,
+                        error_msgs,
+                    )
+
+            for name, child in module._modules.items():
+                if child is not None:
+                    load_partitioned(child, prefix + name + '.')
+
+        load_partitioned(model)
+    else:
+        model._old_load_state_dict(state_dict, strict)
