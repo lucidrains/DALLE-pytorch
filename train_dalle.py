@@ -113,11 +113,13 @@ def cp_path_to_dir(cp_path, tag):
 
 
 if using_deepspeed:
-    init_context = distr_backend.backend_module.zero.Init()
+    zero_init_context = distr_backend.backend_module.zero.Init()
+    zero_loading_context = distributed_utils.ZeROLoading()
 else:
     # We'd like to use `contextlib.nullcontext` here but it's not
     # available in Python 3.6.
-    init_context = contextlib.suppress()
+    zero_init_context = contextlib.suppress()
+    zero_loading_context = contextlib.suppress()
 
 if RESUME:
     dalle_path = Path(DALLE_PATH)
@@ -151,15 +153,17 @@ else:
 
         vae_params, weights = loaded_obj['hparams'], loaded_obj['weights']
 
-        vae = DiscreteVAE(**vae_params)
-        vae.load_state_dict(weights)
+        with zero_init_context:
+            vae = DiscreteVAE(**vae_params)
+        with zero_loading_context:
+            vae.load_state_dict(weights)
     else:
         if distr_backend.is_root_worker():
             print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
         vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
-        with init_context:
+        with zero_init_context, zero_loading_context:
             vae = vae_klass()
 
     IMAGE_SIZE = vae.image_size
@@ -228,7 +232,7 @@ dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, s
 
 # initialize DALL-E
 
-with init_context:
+with zero_init_context:
     dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
     if args.fp16:
@@ -240,7 +244,8 @@ if RESUME:
     # If this directory exists, we can load a DeepSpeed
     # checkpoint instead.
     if not using_deepspeed or not cp_dir.is_dir():
-        dalle.load_state_dict(weights)
+        with zero_loading_context:
+            dalle.load_state_dict(weights)
 
 
 # optimizer

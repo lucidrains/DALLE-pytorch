@@ -11,7 +11,7 @@ You can check whether a backend is in use with the `using_backend`
 function.
 """
 
-import torch
+from torch import Module
 
 from dalle_pytorch.distributed_backends import \
     DeepSpeedBackend, \
@@ -31,6 +31,24 @@ is_distributed = None
 """Whether we are distributed."""
 backend = None
 """Backend in usage."""
+
+
+class ZeROLoading():
+    def __enter__(self):
+        if hasattr(Module, '_old_load_state_dict'):
+            return
+        Module._old_load_state_dict = Module.load_state_dict
+        Module.load_state_dict = load_checkpoint
+
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if not hasattr(Module, '_old_load_state_dict'):
+            return
+        Module.load_state_dict = Module._old_load_state_dict
+        del Module._old_load_state_dict
+
+        if exc_type is not None:
+            return False
 
 
 def wrap_arg_parser(parser):
@@ -134,12 +152,3 @@ def load_checkpoint(model, state_dict, strict=True):
         load_partitioned(model)
     else:
         model._old_load_state_dict(state_dict, strict)
-
-
-def _adjust_classes():
-    if not hasattr(torch.nn.Module, '_old_load_state_dict'):
-        torch.nn.Module._old_load_state_dict = torch.nn.Module.load_state_dict
-        torch.nn.Module.load_state_dict = load_checkpoint
-
-
-_adjust_classes()
