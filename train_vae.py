@@ -33,6 +33,41 @@ parser.add_argument('--image_size', type = int, required = False, default = 128,
 
 parser = distributed_utils.wrap_arg_parser(parser)
 
+
+train_group = parser.add_argument_group('Training settings')
+
+train_group.add_argument('--epochs', type = int, default = 20, help = 'number of epochs')
+
+train_group.add_argument('--batch_size', type = int, default = 8, help = 'batch size')
+
+train_group.add_argument('--learning_rate', type = float, default = 1e-3, help = 'learning rate')
+
+train_group.add_argument('--lr_decay_rate', type = float, default = 0.98, help = 'learning rate decay')
+
+train_group.add_argument('--starting_temp', type = float, default = 1., help = 'starting temperature')
+
+train_group.add_argument('--temp_min', type = float, default = 0.5, help = 'minimum temperature to anneal to')
+
+train_group.add_argument('--anneal_rate', type = float, default = 1e-6, help = 'temperature annealing rate')
+
+train_group.add_argument('--num_images_save', type = int, default = 4, help = 'number of images to save')
+
+model_group = parser.add_argument_group('Model settings')
+
+model_group.add_argument('--num_tokens', type = int, default = 8192, help = 'number of image tokens')
+
+model_group.add_argument('--num_layers', type = int, default = 3, help = 'number of layers (should be 3 or above)')
+
+model_group.add_argument('--num_resnet_blocks', type = int, default = 2, help = 'number of residual net blocks')
+
+model_group.add_argument('--smooth_l1_loss', dest = 'smooth_l1_loss', action = 'store_true')
+
+model_group.add_argument('--emb_dim', type = int, default = 512, help = 'embedding dimension')
+
+model_group.add_argument('--hidden_dim', type = int, default = 256, help = 'hidden dimension')
+
+model_group.add_argument('--kl_loss_weight', type = float, default = 0., help = 'KL loss weight')
+
 args = parser.parse_args()
 
 # constants
@@ -40,24 +75,24 @@ args = parser.parse_args()
 IMAGE_SIZE = args.image_size
 IMAGE_PATH = args.image_folder
 
-EPOCHS = 20
-BATCH_SIZE = 8
-LEARNING_RATE = 1e-3
-LR_DECAY_RATE = 0.98
+EPOCHS = args.epochs
+BATCH_SIZE = args.batch_size
+LEARNING_RATE = args.learning_rate
+LR_DECAY_RATE = args.lr_decay_rate
 
-NUM_TOKENS = 8192
-NUM_LAYERS = 2
-NUM_RESNET_BLOCKS = 2
-SMOOTH_L1_LOSS = False
-EMB_DIM = 512
-HID_DIM = 256
-KL_LOSS_WEIGHT = 0
+NUM_TOKENS = args.num_tokens
+NUM_LAYERS = args.num_layers
+NUM_RESNET_BLOCKS = args.num_resnet_blocks
+SMOOTH_L1_LOSS = args.smooth_l1_loss
+EMB_DIM = args.emb_dim
+HIDDEN_DIM = args.hidden_dim
+KL_LOSS_WEIGHT = args.kl_loss_weight
 
-STARTING_TEMP = 1.
-TEMP_MIN = 0.5
-ANNEAL_RATE = 1e-6
+STARTING_TEMP = args.starting_temp
+TEMP_MIN = args.temp_min
+ANNEAL_RATE = args.anneal_rate
 
-NUM_IMAGES_SAVE = 4
+NUM_IMAGES_SAVE = args.num_images_save
 
 # initialize distributed backend
 
@@ -93,7 +128,7 @@ vae_params = dict(
     num_layers = NUM_LAYERS,
     num_tokens = NUM_TOKENS,
     codebook_dim = EMB_DIM,
-    hidden_dim   = HID_DIM,
+    hidden_dim   = HIDDEN_DIM,
     num_resnet_blocks = NUM_RESNET_BLOCKS
 )
 
