@@ -411,7 +411,7 @@ docker build -t dalle docker
 To run in an interactive shell:
 
 ```bash
-docker run --gpus all --mount repo_or_dataset:/dalle/any_subdirectory_that_you_will_access_it dalle:latest /bin/bash
+docker run --gpus all -it --mount src="$(pwd)",target=/workspace/dalle,type=bind dalle:latest bash
 ```
 
 ### Distributed Training
