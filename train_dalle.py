@@ -79,7 +79,7 @@ model_group.add_argument('--reversible', dest = 'reversible', action='store_true
 
 model_group.add_argument('--loss_img_weight', default = 7, type = int, help = 'Image loss weight')
 
-model_group.add_argument('--attn_types', default = "full", type = str, help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
+model_group.add_argument('--attn_types', default = 'full', type = str, help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
 
 args = parser.parse_args()
 
@@ -124,7 +124,7 @@ DIM_HEAD = args.dim_head
 REVERSIBLE = args.reversible
 LOSS_IMG_WEIGHT = args.loss_img_weight
 
-ATTN_TYPES = tuple(args.attn_types.split(","))
+ATTN_TYPES = tuple(args.attn_types.split(','))
 
 # initialize distributed backend
 
