@@ -108,7 +108,7 @@ for text in tqdm(texts):
 
     # save all images
 
-    outputs_dir = Path(args.outputs_dir) / args.text.replace(' ', '_')
+    outputs_dir = Path(args.outputs_dir) / args.text.replace(' ', '_')[:(100)]
     outputs_dir.mkdir(parents = True, exist_ok = True)
 
     for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
