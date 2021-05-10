@@ -30,6 +30,10 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 
 <img src="./images/layouts-2.jpg" width="400px"></img>
 
+- <a href="https://github.com/rom1504">Rom1504</a> has trained on 50k fashion images with captions with a really small DALL-E (2 layers) for just 24 hours with the following results
+
+<img src="./images/clothing.png" width="500px"></img>
+
 ## Install
 
 ```bash
