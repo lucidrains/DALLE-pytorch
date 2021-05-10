@@ -96,9 +96,13 @@ def get_trainable_params(model):
     return [params for params in model.parameters() if params.requires_grad]
 
 def cp_path_to_dir(cp_path, tag):
-    """Convert a checkpoint path to a directory with `tag` inserted."""
+    """Convert a checkpoint path to a directory with `tag` inserted.
+    If `cp_path` is already a directory, return it unchanged.
+    """
     if not isinstance(cp_path, Path):
         cp_path = Path(cp_path)
+    if cp_path.is_dir():
+        return cp_path
     path_sans_extension = cp_path.parent / cp_path.stem
     cp_dir = Path(f'{path_sans_extension}-{tag}-cp')
     return cp_dir
@@ -126,6 +130,8 @@ LOSS_IMG_WEIGHT = args.loss_img_weight
 
 ATTN_TYPES = tuple(args.attn_types.split(','))
 
+DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
+
 # initialize distributed backend
 
 distr_backend = distributed_utils.set_backend_from_args(args)
@@ -146,8 +152,13 @@ elif args.chinese:
 
 if RESUME:
     dalle_path = Path(DALLE_PATH)
-    assert dalle_path.exists(), 'DALL-E model file does not exist'
-
+    if using_deepspeed:
+        cp_dir = cp_path_to_dir(dalle_path, 'ds')
+        assert cp_dir.is_dir(), \
+            f'DeepSpeed checkpoint directory {cp_dir} not found'
+        dalle_path = cp_dir / DEEPSPEED_CP_AUX_FILENAME
+    else:
+        assert dalle_path.exists(), 'DALL-E model file does not exist'
     loaded_obj = torch.load(str(dalle_path), map_location='cpu')
 
     dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
@@ -316,9 +327,6 @@ deepspeed_config = {
 avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
-    cp_dir = cp_path_to_dir(DALLE_PATH, 'ds')
-    assert cp_dir.is_dir(), \
-        f'DeepSpeed checkpoint directory {cp_dir} not found'
     distr_dalle.load_checkpoint(str(cp_dir))
 
 
@@ -331,8 +339,22 @@ def save_model(path):
         cp_dir = cp_path_to_dir(path, 'ds')
 
         distr_dalle.save_checkpoint(cp_dir, client_state=save_obj)
-        # To get a standard checkpoint, look into consolidating
-        # DeepSpeed checkpoints.
+
+        if not distr_backend.is_root_worker():
+            return
+
+        # Save auxiliary values so we can reuse the standard routine
+        # for loading.
+        save_obj = {
+            **save_obj,
+            # Save a nonsense value that directs the user to
+            # further help.
+            'weights': (
+                'To get a working standard checkpoint, '
+                'look into consolidating DeepSpeed checkpoints.'
+            ),
+        }
+        torch.save(save_obj, str(cp_dir / DEEPSPEED_CP_AUX_FILENAME))
         return
 
     if not distr_backend.is_root_worker():
