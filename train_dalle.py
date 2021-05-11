@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+import time
 
 import torch
 import wandb  # Quit early if user doesn't have wandb installed.
@@ -378,6 +379,8 @@ for epoch in range(EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
     for i, (text, images) in enumerate(distr_dl):
+        if i % 10 == 0 and distr_backend.is_root_worker():
+            t = time.time()
         if args.fp16:
             images = images.half()
         text, images = map(lambda t: t.cuda(), (text, images))
@@ -426,6 +429,11 @@ for epoch in range(EPOCHS):
                 if not avoid_model_calls:
                     log['image'] = wandb.Image(image, caption=decoded_text)
 
+
+        if i % 10 == 9 and distr_backend.is_root_worker():
+            sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)
+            log["sample_per_sec"] = sample_per_sec
+            print(epoch, i, f'sample_per_sec - {sample_per_sec}')
 
         if distr_backend.is_root_worker():
             wandb.log(log)
