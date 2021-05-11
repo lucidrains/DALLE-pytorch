@@ -43,6 +43,9 @@ parser.add_argument('--hug', dest='hug', action='store_true')
 parser.add_argument('--bpe_path', type=str,
                     help='path to your BPE json file')
 
+parser.add_argument('--dalle_output_file_name', type=str, default = "dalle.pt",
+                    help='output_file_name')
+
 parser.add_argument('--fp16', action='store_true',
                     help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
 
@@ -108,6 +111,8 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 # constants
+
+DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name
 
 VAE_PATH = args.vae_path
 DALLE_PATH = args.dalle_path
@@ -403,7 +408,7 @@ for epoch in range(EPOCHS):
                 'iter': i,
                 'loss': avg_loss.item()
             }
-
+	
         if i % 100 == 0:
             if distr_backend.is_root_worker():
                 sample_text = text[:1]
@@ -414,7 +419,6 @@ for epoch in range(EPOCHS):
                     # CUDA index errors when we don't guard this
                     image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
 
-                wandb.save(f'./dalle.pt')
 
                 log = {
                     **log,
@@ -422,7 +426,6 @@ for epoch in range(EPOCHS):
                 if not avoid_model_calls:
                     log['image'] = wandb.Image(image, caption=decoded_text)
 
-            save_model(f'./dalle.pt')
 
         if distr_backend.is_root_worker():
             wandb.log(log)
@@ -432,18 +435,20 @@ for epoch in range(EPOCHS):
         # using DeepSpeed.
         distr_scheduler.step(loss)
 
+    save_model(DALLE_OUTPUT_FILE_NAME)
+    
     if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
 
         model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
-        model_artifact.add_file('dalle.pt')
+        model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
         run.log_artifact(model_artifact)
 
-save_model(f'./dalle-final.pt')
+save_model(DALLE_OUTPUT_FILE_NAME)
 if distr_backend.is_root_worker():
-    wandb.save('./dalle-final.pt')
+    wandb.save(DALLE_OUTPUT_FILE_NAME)
     model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
-    model_artifact.add_file('dalle-final.pt')
+    model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
     run.log_artifact(model_artifact)
 
     wandb.finish()
