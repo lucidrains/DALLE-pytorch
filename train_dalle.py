@@ -41,7 +41,7 @@ parser.add_argument('--taming', dest='taming', action='store_true')
 parser.add_argument('--hug', dest='hug', action='store_true')
 
 parser.add_argument('--bpe_path', type=str,
-                    help='path to your huggingface BPE json file')
+                    help='path to your BPE json file')
 
 parser.add_argument('--fp16', action='store_true',
                     help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')

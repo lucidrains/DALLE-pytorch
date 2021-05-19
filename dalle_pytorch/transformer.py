@@ -9,6 +9,8 @@ from einops import rearrange
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
 
+from g_mlp_pytorch import gMLPBlock
+
 # helpers
 
 def exists(val):
@@ -105,11 +107,18 @@ class Transformer(nn.Module):
                 attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size)
             elif attn_type == 'conv_like':
                 attn_class = partial(SparseConvCausalAttention, seq_len = seq_len, image_size = image_fmap_size)
+            elif attn_type == 'mlp':
+                attn_class = partial(gMLPBlock, seq_len = seq_len)
             else:
                 raise ValueError(f'attention type "{attn_type}" is not valid')
 
+            if attn_type != 'mlp':
+                attn = attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)
+            else:
+                attn = attn_class(dim = dim, causal = causal, dim_ff = dim * 4)
+
             layers.append(nn.ModuleList([
-                LayerScale(dim, ind + 1, PreNorm(dim, attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout))),
+                LayerScale(dim, ind + 1, PreNorm(dim, attn)),
                 LayerScale(dim, ind + 1, PreNorm(dim, FeedForward(dim, mult = ff_mult, dropout = ff_dropout)))
             ]))
 
