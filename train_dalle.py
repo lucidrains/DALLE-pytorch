@@ -43,7 +43,7 @@ parser.add_argument('--hug', dest='hug', action='store_true')
 parser.add_argument('--bpe_path', type=str,
                     help='path to your BPE json file')
 
-parser.add_argument('--dalle_output_file_name', type=str, default = "dalle.pt",
+parser.add_argument('--dalle_output_file_name', type=str, default = "dalle",
                     help='output_file_name')
 
 parser.add_argument('--fp16', action='store_true',
@@ -112,7 +112,7 @@ def cp_path_to_dir(cp_path, tag):
 
 # constants
 
-DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name
+DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name + ".pt"
 
 VAE_PATH = args.vae_path
 DALLE_PATH = args.dalle_path
@@ -360,7 +360,6 @@ def save_model(path):
             ),
         }
         torch.save(save_obj, str(cp_dir / DEEPSPEED_CP_AUX_FILENAME))
-        return
 
     if not distr_backend.is_root_worker():
         return
@@ -373,6 +372,11 @@ def save_model(path):
     torch.save(save_obj, path)
 
 # training
+
+# save the initial model
+# that makes sure saving is working, to avoid waiting
+# a long time and not getting any output
+save_model(DALLE_OUTPUT_FILE_NAME)
 
 for epoch in range(EPOCHS):
     if data_sampler:
