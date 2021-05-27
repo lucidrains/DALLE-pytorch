@@ -58,6 +58,8 @@ train_group = parser.add_argument_group('Training settings')
 
 train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of epochs')
 
+train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
+
 train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
 
 train_group.add_argument('--learning_rate', default = 3e-4, type = float, help = 'Learning rate')
@@ -124,6 +126,7 @@ BATCH_SIZE = args.batch_size
 LEARNING_RATE = args.learning_rate
 GRAD_CLIP_NORM = args.clip_grad_norm
 LR_DECAY = args.lr_decay
+SAVE_EVERY_N_STEPS = args.save_every_n_steps
 
 MODEL_DIM = args.dim
 TEXT_SEQ_LEN = args.text_seq_len
@@ -408,6 +411,9 @@ for epoch in range(EPOCHS):
                 'iter': i,
                 'loss': avg_loss.item()
             }
+
+        if i % SAVE_EVERY_N_STEPS == 0:
+            save_model(DALLE_OUTPUT_FILE_NAME)
 	
         if i % 100 == 0:
             if distr_backend.is_root_worker():
