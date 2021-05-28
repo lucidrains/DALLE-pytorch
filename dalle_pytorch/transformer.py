@@ -108,15 +108,15 @@ class Transformer(nn.Module):
 
         for ind, sparse_attn, attn_type in zip(range(depth), sparse_layer, attn_type_layer):
             if attn_type == 'full':
-                attn_class = Attention
+                attn_class = partial(Attention, stable = stable)
             elif attn_type == 'sparse':
                 attn_class = SparseAttention
             elif attn_type == 'axial_row':
-                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size)
+                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'axial_col':
-                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size)
+                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'conv_like':
-                attn_class = partial(SparseConvCausalAttention, seq_len = seq_len, image_size = image_fmap_size)
+                attn_class = partial(SparseConvCausalAttention, seq_len = seq_len, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'mlp':
                 attn_class = partial(gMLPBlock, seq_len = seq_len)
             else:
