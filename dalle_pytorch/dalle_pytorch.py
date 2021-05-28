@@ -370,8 +370,12 @@ class DALLE(nn.Module):
             stable = stable
         )
 
+        self.stable = stable
+
+        if stable:
+            self.norm_by_max = DivideMax(dim = -1)
+
         self.to_logits = nn.Sequential(
-            DivideMax(dim = -1) if stable else nn.Identity(),
             nn.LayerNorm(dim),
             nn.Linear(dim, self.total_tokens),
         )
@@ -498,6 +502,10 @@ class DALLE(nn.Module):
             tokens = tokens[:, :-1]
 
         out = self.transformer(tokens)
+
+        if self.stable:
+            out = self.norm_by_max(out)
+
         logits = self.to_logits(out)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
