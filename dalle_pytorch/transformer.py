@@ -26,6 +26,15 @@ def cast_tuple(val, depth = 1):
 
 # classes
 
+class DivideMax(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.dim = dim
+
+    def forward(self, x):
+        maxes = x.amax(dim = self.dim, keepdim = True)
+        return x / maxes
+
 # https://arxiv.org/abs/2103.17239
 class LayerScale(nn.Module):
     def __init__(self, dim, depth, fn):
@@ -86,7 +95,8 @@ class Transformer(nn.Module):
         ff_dropout = 0.,
         attn_types = None,
         image_fmap_size = None,
-        sparse_attn = False
+        sparse_attn = False,
+        stable = False
     ):
         super().__init__()
         layers = nn.ModuleList([])

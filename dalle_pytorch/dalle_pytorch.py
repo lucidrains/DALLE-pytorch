@@ -9,7 +9,7 @@ from einops import rearrange
 from dalle_pytorch import distributed_utils
 from dalle_pytorch.vae import OpenAIDiscreteVAE
 from dalle_pytorch.vae import VQGanVAE1024
-from dalle_pytorch.transformer import Transformer
+from dalle_pytorch.transformer import Transformer, DivideMax
 
 # helpers
 
@@ -322,6 +322,7 @@ class DALLE(nn.Module):
         sparse_attn = False,
         attn_types = None,
         loss_img_weight = 7,
+        stable = False
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024)), 'vae must be an instance of DiscreteVAE'
@@ -365,10 +366,12 @@ class DALLE(nn.Module):
             ff_dropout = ff_dropout,
             attn_types = attn_types,
             image_fmap_size = image_fmap_size,
-            sparse_attn = sparse_attn
+            sparse_attn = sparse_attn,
+            stable = stable
         )
 
         self.to_logits = nn.Sequential(
+            DivideMax(dim = -1) if stable else nn.Identity(),
             nn.LayerNorm(dim),
             nn.Linear(dim, self.total_tokens),
         )
