@@ -45,7 +45,9 @@ class Attention(nn.Module):
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
 
-        dots = torch.einsum('b h i d, b h j d -> b h i j', q, k) * self.scale
+        q = q * self.scale
+
+        dots = torch.einsum('b h i d, b h j d -> b h i j', q, k)
         mask_value = max_neg_value(dots)
 
         if exists(mask):
