@@ -447,7 +447,7 @@ for epoch in range(EPOCHS):
     if LR_DECAY and not using_deepspeed:
         # Scheduler is automatically progressed after the step when
         # using DeepSpeed.
-        distr_scheduler.step(loss)
+        distr_scheduler.step(avg_loss)
 
     save_model(DALLE_OUTPUT_FILE_NAME)
     
