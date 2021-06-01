@@ -30,7 +30,8 @@ setup(
     'torchvision',
     'transformers',
     'tqdm',
-    'youtokentome'
+    'youtokentome',
+    'WebDataset'
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
