@@ -14,6 +14,11 @@ from dalle_pytorch import distributed_utils
 from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
+import io
+import PIL
+import webdataset as wds
+from torchvision import transforms as T
+
 # argument parsing
 
 parser = argparse.ArgumentParser()
@@ -28,6 +33,8 @@ group.add_argument('--dalle_path', type=str,
 
 parser.add_argument('--image_text_folder', type=str, required=True,
                     help='path to your folder of images and text for learning the DALL-E')
+
+parser.add_argument('--wds', type = str, default='', help = 'comma separated list of WebDataset (1) image and (2) text column names. must contain 2 values.')
 
 parser.add_argument('--truncate_captions', dest='truncate_captions', action='store_true',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
@@ -114,6 +121,7 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 # constants
+WEBDATASET_IMAGE_TEXT_COLUMNS = tuple(args.wds.split(','))
 
 DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name
 
@@ -246,19 +254,61 @@ def group_weight(model):
 
 is_shuffle = not distributed_utils.using_backend(distributed_utils.HorovodBackend)
 
-ds = TextImageDataset(
-    args.image_text_folder,
-    text_len=TEXT_SEQ_LEN,
-    image_size=IMAGE_SIZE,
-    resize_ratio=args.resize_ratio,
-    truncate_captions=args.truncate_captions,
-    tokenizer=tokenizer,
-    shuffle=is_shuffle,
-)
+imagepreproc = T.Compose([
+    T.Lambda(lambda img: img.convert('RGB')
+    if img.mode != 'RGB' else img),
+    T.RandomResizedCrop(IMAGE_SIZE,
+                        scale=(args.resize_ratio, 1.),
+                        ratio=(1., 1.)),    
+    T.ToTensor(),
+])
+
+def imagetransform(b):
+    return PIL.Image.open(io.BytesIO(b))
+
+def tokenize(s):
+    return tokenizer.tokenize(
+        s.decode('utf-8'), 
+        TEXT_SEQ_LEN, 
+        truncate_text=args.truncate_captions).squeeze(0)
+
+# input(is_shuffle)
+
+# if is_shuffle:
+#     ds = wds.Dataset(args.image_text_folder) \
+#         .shuffle(8) \
+#         .map_dict(img=imagetransform, cap=tokenize) \
+#         .map_dict(img=imagepreproc).to_tuple("cap", "img")
+# else:
+if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
+    myimg, mycap = WEBDATASET_IMAGE_TEXT_COLUMNS
+    image_text_mapping = {
+        myimg: imagetransform, 
+        mycap: tokenize
+    }
+    image_mapping = {
+        myimg: imagepreproc
+    }
+    ds = wds.Dataset(args.image_text_folder) \
+        .map_dict(**image_text_mapping) \
+        .map_dict(**image_mapping).to_tuple(mycap, myimg)
+else:
+    ds = TextImageDataset(
+        args.image_text_folder,
+        text_len=TEXT_SEQ_LEN,
+        image_size=IMAGE_SIZE,
+        resize_ratio=args.resize_ratio,
+        truncate_captions=args.truncate_captions,
+        tokenizer=tokenizer,
+        shuffle=is_shuffle,
+    )
 
 assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
-    print(f'{len(ds)} image-text pairs found for training')
+    if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
+        print('Found webdataset .tar(.gz) file!')
+    else:
+        print(f'{len(ds)} image-text pairs found for training')
 
 if not is_shuffle:
     data_sampler = torch.utils.data.distributed.DistributedSampler(
@@ -269,7 +319,9 @@ if not is_shuffle:
 else:
     data_sampler = None
 
-dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
+dl = DataLoader(ds, batch_size=BATCH_SIZE, drop_last=True, sampler=data_sampler)
+
+# dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
 # initialize DALL-E
 
