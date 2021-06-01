@@ -272,14 +272,6 @@ def tokenize(s):
         TEXT_SEQ_LEN, 
         truncate_text=args.truncate_captions).squeeze(0)
 
-# input(is_shuffle)
-
-# if is_shuffle:
-#     ds = wds.Dataset(args.image_text_folder) \
-#         .shuffle(8) \
-#         .map_dict(img=imagetransform, cap=tokenize) \
-#         .map_dict(img=imagepreproc).to_tuple("cap", "img")
-# else:
 if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
     myimg, mycap = WEBDATASET_IMAGE_TEXT_COLUMNS
     image_text_mapping = {
@@ -319,12 +311,12 @@ if not is_shuffle:
 else:
     data_sampler = None
 
-dl = DataLoader(ds, batch_size=BATCH_SIZE, drop_last=True, sampler=data_sampler)
-
-# dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
+if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
+    dl = DataLoader(ds, batch_size=BATCH_SIZE, drop_last=True, sampler=data_sampler)
+else:
+    dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
 # initialize DALL-E
-
 
 dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
