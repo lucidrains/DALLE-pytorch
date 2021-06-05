@@ -50,6 +50,13 @@ parser.add_argument('--dalle_output_file_name', type=str, default = "dalle",
 parser.add_argument('--fp16', action='store_true',
                     help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
 
+
+parser.add_argument(
+	'--amp',
+	action='store_true',
+	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.'
+)
+
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
 
@@ -321,6 +328,10 @@ deepspeed_config = {
     'gradient_clipping': GRAD_CLIP_NORM,
     'fp16': {
         'enabled': args.fp16,
+    },
+    'amp': {
+        'enabled': args.amp,
+        'opt_level': 'O1',
     },
 }
 
