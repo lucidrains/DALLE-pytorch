@@ -331,7 +331,7 @@ deepspeed_config = {
     },
     'amp': {
         'enabled': args.amp,
-	'opt_level': 'O1',
+        'opt_level': 'O1',
     },
 }
 
