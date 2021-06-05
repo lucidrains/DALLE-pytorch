@@ -438,7 +438,7 @@ for each one. See the [DeepSpeed configuration
 docs](https://www.deepspeed.ai/docs/config-json/) for more
 information.
 
-#### DeepSpeed - 16 bit Precision
+#### DeepSpeed - 32 and 16 bit Precision
 As of DeepSpeed version 0.3.16, ZeRO optimizations can be used with
 single-precision floating point numbers. If you are using an older
 version, you'll have to pass the `--fp16` flag to be able to enable
