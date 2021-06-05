@@ -1,6 +1,9 @@
 import argparse
 from pathlib import Path
 import time
+from glob import glob
+import os
+import shutil
 
 import torch
 import wandb  # Quit early if user doesn't have wandb installed.
@@ -60,6 +63,8 @@ train_group = parser.add_argument_group('Training settings')
 train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of epochs')
 
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
+
+train_group.add_argument('--keep_n_checkpoints', default = None, type = int, help = 'Deletes old deepspeed checkpoints if there are more than n')
 
 train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
 
@@ -128,6 +133,7 @@ LEARNING_RATE = args.learning_rate
 GRAD_CLIP_NORM = args.clip_grad_norm
 LR_DECAY = args.lr_decay
 SAVE_EVERY_N_STEPS = args.save_every_n_steps
+KEEP_N_CHECKPOINTS = args.keep_n_checkpoints
 
 MODEL_DIM = args.dim
 TEXT_SEQ_LEN = args.text_seq_len
@@ -309,7 +315,7 @@ if distr_backend.is_root_worker():
 
     run = wandb.init(
         project=args.wandb_name,  # 'dalle_train_transformer' by default
-        resume=RESUME,
+        resume=False,
         config=model_config,
     )
 
@@ -346,6 +352,11 @@ def save_model(path):
     }
     if using_deepspeed:
         cp_dir = cp_path_to_dir(path, 'ds')
+
+        if KEEP_N_CHECKPOINTS is not None and distr_backend.is_root_worker():
+            checkpoints = sorted(glob(str(cp_dir / "global*")), key=os.path.getmtime, reverse=True)
+            for checkpoint in checkpoints[KEEP_N_CHECKPOINTS:]:
+                shutil.rmtree(checkpoint)
 
         distr_dalle.save_checkpoint(cp_dir, client_state=save_obj)
 
