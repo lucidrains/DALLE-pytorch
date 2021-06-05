@@ -448,12 +448,11 @@ ZeRO optimizations.
 #### DeepSpeed - Apex Automatic Mixed Precision.
 Automatic mixed precision is a stable alternative to fp16 which still provides a decent speedup.
 In order to run with Apex AMP (through DeepSpeed), you will need to install DeepSpeed using either the Dockerfile or the bash script.
-Then you will need to install apex from source:
+
+Then you will need to install apex from source. 
+This may take awhile and you may see some compilation warnings which can be ignored. 
 ```sh
-git clone https://github.com/NVIDIA/apex
-cd apex
-pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
-cd ..
+sh install_deepspeed.sh
 ```
 
 Now, run `train_dalle.py` with `deepspeed` instead of `python` as done here:
