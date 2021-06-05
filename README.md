@@ -452,7 +452,7 @@ In order to run with Apex AMP (through DeepSpeed), you will need to install Deep
 Then you will need to install apex from source. 
 This may take awhile and you may see some compilation warnings which can be ignored. 
 ```sh
-sh install_deepspeed.sh
+sh install_apex.sh
 ```
 
 Now, run `train_dalle.py` with `deepspeed` instead of `python` as done here:
