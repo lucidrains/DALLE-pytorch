@@ -438,10 +438,32 @@ for each one. See the [DeepSpeed configuration
 docs](https://www.deepspeed.ai/docs/config-json/) for more
 information.
 
+##### 16 bit Precision
 As of DeepSpeed version 0.3.16, ZeRO optimizations can be used with
 single-precision floating point numbers. If you are using an older
 version, you'll have to pass the `--fp16` flag to be able to enable
 ZeRO optimizations.
+
+
+##### Apex Automatic Mixed Precision.
+In order to run with Apex AMP (through DeepSpeed), you will need to install DeepSpeed using either the Dockerfile or the bash script. Then you will need to install apex from source:
+
+```sh
+git clone https://github.com/NVIDIA/apex
+cd apex
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+cd ..
+```
+
+Run `train_dalle.py` with `deepspeed` as done here:
+```sh
+deepspeed train_dalle.py --taming \
+    --image_text_folder Datasets \
+    --depth 8 \
+    --heads 8 \
+    --distr_backend deepspeed \
+    --amp
+```
 
 #### Horovod
 
