@@ -70,6 +70,8 @@ train_group.add_argument('--save_every_n_steps', default = 1000, type = int, hel
 
 train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
 
+train_group.add_argument('--ga_steps', default = 1, type = int, help = 'Number of steps to accumulate gradients across per each iteration. DeepSpeed only.')
+
 train_group.add_argument('--learning_rate', default = 3e-4, type = float, help = 'Learning rate')
 
 train_group.add_argument('--clip_grad_norm', default = 0.5, type = float, help = 'Clip gradient norm')
@@ -325,6 +327,7 @@ if distr_backend.is_root_worker():
 distr_backend.check_batch_size(BATCH_SIZE)
 deepspeed_config = {
     'train_batch_size': BATCH_SIZE,
+    'gradient_accumulation_steps': args.ga_steps,
     'gradient_clipping': GRAD_CLIP_NORM,
     'fp16': {
         'enabled': args.fp16,
