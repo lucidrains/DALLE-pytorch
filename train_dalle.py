@@ -51,11 +51,18 @@ parser.add_argument('--hug', dest='hug', action='store_true')
 parser.add_argument('--bpe_path', type=str,
                     help='path to your BPE json file')
 
-parser.add_argument('--dalle_output_file_name', type=str, default = "dalle.pt",
+parser.add_argument('--dalle_output_file_name', type=str, default = "dalle",
                     help='output_file_name')
 
 parser.add_argument('--fp16', action='store_true',
                     help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
+
+
+parser.add_argument(
+	'--amp',
+	action='store_true',
+	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.'
+)
 
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
@@ -69,6 +76,8 @@ train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
 
 train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
+
+train_group.add_argument('--ga_steps', default = 1, type = int, help = 'Number of steps to accumulate gradients across per each iteration. DeepSpeed only.')
 
 train_group.add_argument('--learning_rate', default = 3e-4, type = float, help = 'Learning rate')
 
@@ -123,7 +132,7 @@ def cp_path_to_dir(cp_path, tag):
 # constants
 WEBDATASET_IMAGE_TEXT_COLUMNS = tuple(args.wds.split(','))
 
-DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name
+DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name + ".pt"
 
 VAE_PATH = args.vae_path
 DALLE_PATH = args.dalle_path
@@ -362,11 +371,23 @@ if distr_backend.is_root_worker():
 distr_backend.check_batch_size(BATCH_SIZE)
 deepspeed_config = {
     'train_batch_size': BATCH_SIZE,
+    'gradient_accumulation_steps': args.ga_steps,
     'gradient_clipping': GRAD_CLIP_NORM,
     'fp16': {
         'enabled': args.fp16,
     },
+    'amp': {
+        'enabled': args.amp,
+        'opt_level': 'O1',
+    },
 }
+
+if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
+    print(f"Checkpoints made with DeepSpeed ZeRO Stages 2 and 3 will be stored in deepspeed checkpoint folder")
+    print(f"As such, they will require DeepSpeed as a dependency in order to resume from or generate with.")
+    print("See the deespeed conversion script for details on how to convert your ZeRO stage 2/3 checkpoint to a single file.")
+    print("If using a single GPU, consider running with apex automatic mixed precision instead for a similar speedup to ZeRO.")
+    time.sleep(2)
 
 (distr_dalle, distr_opt, distr_dl, distr_scheduler) = distr_backend.distribute(
     args=args,
@@ -408,7 +429,8 @@ def save_model(path):
             ),
         }
         torch.save(save_obj, str(cp_dir / DEEPSPEED_CP_AUX_FILENAME))
-        return
+        if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2: # see https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
+            return
 
     if not distr_backend.is_root_worker():
         return
@@ -421,6 +443,10 @@ def save_model(path):
     torch.save(save_obj, path)
 
 # training
+
+# Saves a checkpoint before training begins to fail early when mis-configured. 
+# See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
+save_model(DALLE_OUTPUT_FILE_NAME)
 
 for epoch in range(EPOCHS):
     if data_sampler:
