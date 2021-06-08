@@ -383,7 +383,6 @@ if distr_backend.is_root_worker():
         project=args.wandb_name,  # 'dalle_train_transformer' by default
         resume=RESUME,
         config=model_config,
-        mode='offline' ##### REMOVE FOR RELEASE
     )
 
 # distribute
