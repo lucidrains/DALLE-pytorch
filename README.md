@@ -330,7 +330,9 @@ Weights and Biases will allow you to monitor the temperature annealing, image re
 
 Once you have trained a decent VAE to your satisfaction, you can move on to the next step with your model weights at `./vae.pt`.
 
-### DALL-E
+### DALL-E Training
+
+## Training using an Image-Text-Folder
 
 Now you just have to invoke the `./train_dalle.py` script, indicating which VAE model you would like to use, as well as the path to your folder if images and text.
 
@@ -359,21 +361,40 @@ A black cat with a red collar napping
 If you have a dataset with its own directory structure for tying together image and text descriptions, do let me know in the issues, and I'll see if I can accommodate it in the script.
 
 ```python
-$ python train_dalle.py --vae_path ./vae.pt --image_text_folder /path/to/data
+$ python train_dalle.py --vae_path ./vae.pt --image_text_path /path/to/data
 ```
 
 You likely will not finish DALL-E training as quickly as you did your Discrete VAE. To resume from where you left off, just run the same script, but with the path to your DALL-E checkpoints.
 
 ```python
-$ python train_dalle.py --dalle_path ./dalle.pt --image_text_folder /path/to/data
+$ python train_dalle.py --dalle_path ./dalle.pt --image_text_path /path/to/data
 ```
+
+## Training using WebDataset
+
+WebDataset files are regular .tar(.gz) files which can be streamed and used for DALLE-pytorch training.
+You Just need to provide the image (first comma separated argument) and caption (second comma separated argument) 
+column key after the --wds argument. The ---image_text_path points to your .tar(.gz) file instead of the datafolder.
+
+```python
+$ python train_dalle.py --wds img,cap --image_text_path /path/to/data.tar(.gz)
+```
+
+Distributed training with deepspeed works the same way, e.g.:
+
+```python
+$ deepspeed train_dalle.py --wds img,cap --image_text_path /path/to/data.tar(.gz) --fp16 --deepspeed
+```
+
+In order to convert your image-text-folder to WebDataset format, you can make use of one of several methods
+(https://www.youtube.com/watch?v=v_PacO-3OGQ for 4 examples, or a little helper script https://github.com/robvanvolt/DALLE-datasets/blob/e62d2c74107c0ce6b77c84078b8f34a2cb2c5145/wds_create.py)
 
 ### DALL-E with OpenAI's VAE
 
 You can now also train DALL-E without having to train the Discrete VAE at all, courtesy to their open-sourcing their model. You simply have to invoke the `train_dalle.py` script without specifying the `--vae_path`
 
 ```python
-$ python train_dalle.py --image_text_folder /path/to/coco/dataset
+$ python train_dalle.py --image_text_path /path/to/coco/dataset
 ```
 
 ### DALL-E with Taming Transformer's VQVAE
@@ -381,7 +402,7 @@ $ python train_dalle.py --image_text_folder /path/to/coco/dataset
 Just use the `--taming` flag. Highly recommended you use this VAE over the OpenAI one!
 
 ```python
-$ python train_dalle.py --image_text_folder /path/to/coco/dataset --taming
+$ python train_dalle.py --image_text_path /path/to/coco/dataset --taming
 ```
 
 ### Generation
@@ -459,7 +480,7 @@ Now, run `train_dalle.py` with `deepspeed` instead of `python` as done here:
 ```sh
 deepspeed train_dalle.py \
     --taming \
-    --image_text_folder 'DatasetsDir' \
+    --image_text_path 'DatasetsDir' \
     --distr_backend 'deepspeed' \
     --amp
 ```
@@ -491,7 +512,7 @@ The only requirement is that you use `0` as the padding during tokenization
 ex.
 
 ```sh
-$ python train_dalle.py --image_text_folder ./path/to/data --bpe_path ./path/to/bpe.model
+$ python train_dalle.py --image_text_path ./path/to/data --bpe_path ./path/to/bpe.model
 ```
 
 To create a BPE model file from scratch, firstly
@@ -515,7 +536,7 @@ You can train with a <a href="https://huggingface.co/bert-base-chinese">pretrain
 ex.
 
 ```sh
-$ python train_dalle.py --chinese --image_text_folder ./path/to/data
+$ python train_dalle.py --chinese --image_text_path ./path/to/data
 ```
 
 ```sh

@@ -73,7 +73,7 @@ parser = distributed_utils.wrap_arg_parser(parser)
 
 train_group = parser.add_argument_group('Training settings')
 
-train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of epochs')
+train_group.add_argument('--epochs', default = 2, type = int, help = 'Number of epochs')
 
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
 
@@ -89,9 +89,9 @@ train_group.add_argument('--lr_decay', dest = 'lr_decay', action = 'store_true')
 
 model_group = parser.add_argument_group('Model settings')
 
-model_group.add_argument('--dim', default = 256, type = int, help = 'Model dimension')
+model_group.add_argument('--dim', default = 512, type = int, help = 'Model dimension')
 
-model_group.add_argument('--text_seq_len', default = 256, type = int, help = 'Text sequence length')
+model_group.add_argument('--text_seq_len', default = 128, type = int, help = 'Text sequence length')
 
 model_group.add_argument('--depth', default = 2, type = int, help = 'Model depth')
 
@@ -133,6 +133,7 @@ def cp_path_to_dir(cp_path, tag):
 
 # constants
 WEBDATASET_IMAGE_TEXT_COLUMNS = tuple(args.wds.split(','))
+ENABLE_WEBDATASET = True if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2 else False
 
 DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name + ".pt"
 
@@ -264,7 +265,6 @@ def group_weight(model):
 # create dataset and dataloader
 
 is_shuffle = not distributed_utils.using_backend(distributed_utils.HorovodBackend)
-# is_shuffle = False ### REMOVE THIS LINE FOR RELEASE
 
 imagepreproc = T.Compose([
     T.Lambda(lambda img: img.convert('RGB')
@@ -284,7 +284,9 @@ def tokenize(s):
         TEXT_SEQ_LEN,
         truncate_text=args.truncate_captions).squeeze(0)
 
-if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
+if ENABLE_WEBDATASET:
+    DATASET_SIZE = int(1e9) # You need to set a nominal length for the Dataset in order to avoid warnings from DataLoader
+
     myimg, mycap = WEBDATASET_IMAGE_TEXT_COLUMNS
     image_text_mapping = {
         myimg: imagetransform,
@@ -294,31 +296,16 @@ if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
         myimg: imagepreproc
     }
 
-    #### Not working for deepspeed
-
-    # ds = wds.Dataset(args.image_text_path) \
-    #     .map_dict(**image_text_mapping) \
-    #     .map_dict(**image_mapping).to_tuple(mycap, myimg) \
-    #     .batched(BATCH_SIZE)
-
-    # ds = ds.batched(BATCH_SIZE, partial=False)
-
-    # ds = wds.Dataset(args.image_text_path) \
-    #     .map_dict(**image_text_mapping) \
-    #     .map_dict(**image_mapping).to_tuple(mycap, myimg)
-
-    num_batches = 15 // BATCH_SIZE
+    num_batches = DATASET_SIZE // BATCH_SIZE
 
     ds = (
         wds.WebDataset(args.image_text_path, length=num_batches)
-        .shuffle(is_shuffle)
+        # .shuffle(is_shuffle) # This line for WebDataset, as the behaviour cannot be predicted yet
         .map_dict(**image_text_mapping)     
         .map_dict(**image_mapping)
         .to_tuple(mycap, myimg)
-        .batched(BATCH_SIZE, partial=False)
+        .batched(BATCH_SIZE, partial=False) # It is good to avoid partial batches when using Distributed training
     )
-
-
 else:
     ds = TextImageDataset(
         args.image_text_path,
@@ -332,7 +319,7 @@ else:
 
 assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
-    if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
+    if ENABLE_WEBDATASET:
         print('Found webdataset .tar(.gz) file (path: {})!'.format(args.image_text_path))
     else:
         print(f'{len(ds)} image-text pairs found for training')
@@ -346,22 +333,14 @@ if not is_shuffle:
 else:
     data_sampler = None
 
-if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
-    dl = wds.WebLoader(ds, batch_size=None, shuffle=False, num_workers=2)
-    number_of_batches = 15 // (BATCH_SIZE * distr_backend.get_world_size())
+if ENABLE_WEBDATASET:
+    # WebLoader for WebDataset and DeepSpeed compatibility
+    dl = wds.WebLoader(ds, batch_size=None, shuffle=False) # optionally add num_workers=2 or n argument
+    number_of_batches = DATASET_SIZE // (BATCH_SIZE * distr_backend.get_world_size())
     dl = dl.repeat(2).slice(number_of_batches)
     dl.length = number_of_batches
-
-    # dl = DataLoader(ds, batch_size=BATCH_SIZE, drop_last=True)
-
-    # dl = wds.WebLoader(ds, batch_size=None, shuffle=False)
-    # dataset_size = 15
-    # number_of_batches = dataset_size // (BATCH_SIZE * distr_backend.get_world_size())
-    # dl = dl.repeat(2).slice(number_of_batches)
-    # dl.length = number_of_batches
-
-    # dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 else:
+    # Regular DataLoader for image-text-folder datasets
     dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
 
@@ -492,8 +471,7 @@ save_model(DALLE_OUTPUT_FILE_NAME)
 for epoch in range(EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
-    for i, (text, images) in enumerate(dl):
-    # for i, (text, images) in enumerate(distr_dl):
+    for i, (text, images) in enumerate((dl if ENABLE_WEBDATASET else distr_dl)):
         if i % 10 == 0 and distr_backend.is_root_worker():
             t = time.time()
         if args.fp16:
