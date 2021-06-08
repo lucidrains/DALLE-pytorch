@@ -3,6 +3,7 @@ outputs/
 *.pt
 taming/
 wandb/
+dalle-ds-cp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

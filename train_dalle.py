@@ -14,10 +14,12 @@ from dalle_pytorch import distributed_utils
 from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
-import io
-import PIL
+# libraries needed for webdataset support
 import webdataset as wds
 from torchvision import transforms as T
+from PIL import Image
+from io import BytesIO
+
 
 # argument parsing
 
@@ -31,8 +33,8 @@ group.add_argument('--vae_path', type=str,
 group.add_argument('--dalle_path', type=str,
                    help='path to your partially trained DALL-E')
 
-parser.add_argument('--image_text_folder', type=str, required=True,
-                    help='path to your folder of images and text for learning the DALL-E')
+parser.add_argument('--image_text_path', type=str, required=True,
+                    help='path to your folder or dataset of images and text for learning the DALL-E')
 
 parser.add_argument('--wds', type = str, default='', help = 'comma separated list of WebDataset (1) image and (2) text column names. must contain 2 values.')
 
@@ -75,7 +77,7 @@ train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of
 
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
 
-train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
+train_group.add_argument('--batch_size', default = 2, type = int, help = 'Batch size')
 
 train_group.add_argument('--ga_steps', default = 1, type = int, help = 'Number of steps to accumulate gradients across per each iteration. DeepSpeed only.')
 
@@ -87,15 +89,15 @@ train_group.add_argument('--lr_decay', dest = 'lr_decay', action = 'store_true')
 
 model_group = parser.add_argument_group('Model settings')
 
-model_group.add_argument('--dim', default = 512, type = int, help = 'Model dimension')
+model_group.add_argument('--dim', default = 256, type = int, help = 'Model dimension')
 
 model_group.add_argument('--text_seq_len', default = 256, type = int, help = 'Text sequence length')
 
 model_group.add_argument('--depth', default = 2, type = int, help = 'Model depth')
 
-model_group.add_argument('--heads', default = 8, type = int, help = 'Model number of heads')
+model_group.add_argument('--heads', default = 4, type = int, help = 'Model number of heads')
 
-model_group.add_argument('--dim_head', default = 64, type = int, help = 'Model head dimension')
+model_group.add_argument('--dim_head', default = 16, type = int, help = 'Model head dimension')
 
 model_group.add_argument('--reversible', dest = 'reversible', action='store_true')
 
@@ -107,7 +109,7 @@ args = parser.parse_args()
 
 # quit early if you used the wrong folder name
 
-assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
+assert Path(args.image_text_path).exists(), f'The path {args.image_text_path} was not found.'
 
 # helpers
 
@@ -262,40 +264,64 @@ def group_weight(model):
 # create dataset and dataloader
 
 is_shuffle = not distributed_utils.using_backend(distributed_utils.HorovodBackend)
+# is_shuffle = False ### REMOVE THIS LINE FOR RELEASE
 
 imagepreproc = T.Compose([
     T.Lambda(lambda img: img.convert('RGB')
     if img.mode != 'RGB' else img),
     T.RandomResizedCrop(IMAGE_SIZE,
                         scale=(args.resize_ratio, 1.),
-                        ratio=(1., 1.)),    
+                        ratio=(1., 1.)),
     T.ToTensor(),
 ])
 
 def imagetransform(b):
-    return PIL.Image.open(io.BytesIO(b))
+    return Image.open(BytesIO(b))
 
 def tokenize(s):
     return tokenizer.tokenize(
-        s.decode('utf-8'), 
-        TEXT_SEQ_LEN, 
+        s.decode('utf-8'),
+        TEXT_SEQ_LEN,
         truncate_text=args.truncate_captions).squeeze(0)
 
 if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
     myimg, mycap = WEBDATASET_IMAGE_TEXT_COLUMNS
     image_text_mapping = {
-        myimg: imagetransform, 
+        myimg: imagetransform,
         mycap: tokenize
     }
     image_mapping = {
         myimg: imagepreproc
     }
-    ds = wds.Dataset(args.image_text_folder) \
-        .map_dict(**image_text_mapping) \
-        .map_dict(**image_mapping).to_tuple(mycap, myimg)
+
+    #### Not working for deepspeed
+
+    # ds = wds.Dataset(args.image_text_path) \
+    #     .map_dict(**image_text_mapping) \
+    #     .map_dict(**image_mapping).to_tuple(mycap, myimg) \
+    #     .batched(BATCH_SIZE)
+
+    # ds = ds.batched(BATCH_SIZE, partial=False)
+
+    # ds = wds.Dataset(args.image_text_path) \
+    #     .map_dict(**image_text_mapping) \
+    #     .map_dict(**image_mapping).to_tuple(mycap, myimg)
+
+    num_batches = 15 // BATCH_SIZE
+
+    ds = (
+        wds.WebDataset(args.image_text_path, length=num_batches)
+        .shuffle(is_shuffle)
+        .map_dict(**image_text_mapping)     
+        .map_dict(**image_mapping)
+        .to_tuple(mycap, myimg)
+        .batched(BATCH_SIZE, partial=False)
+    )
+
+
 else:
     ds = TextImageDataset(
-        args.image_text_folder,
+        args.image_text_path,
         text_len=TEXT_SEQ_LEN,
         image_size=IMAGE_SIZE,
         resize_ratio=args.resize_ratio,
@@ -307,7 +333,7 @@ else:
 assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
     if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
-        print('Found webdataset .tar(.gz) file!')
+        print('Found webdataset .tar(.gz) file (path: {})!'.format(args.image_text_path))
     else:
         print(f'{len(ds)} image-text pairs found for training')
 
@@ -321,9 +347,23 @@ else:
     data_sampler = None
 
 if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2:
-    dl = DataLoader(ds, batch_size=BATCH_SIZE, drop_last=True, sampler=data_sampler)
+    dl = wds.WebLoader(ds, batch_size=None, shuffle=False, num_workers=2)
+    number_of_batches = 15 // (BATCH_SIZE * distr_backend.get_world_size())
+    dl = dl.repeat(2).slice(number_of_batches)
+    dl.length = number_of_batches
+
+    # dl = DataLoader(ds, batch_size=BATCH_SIZE, drop_last=True)
+
+    # dl = wds.WebLoader(ds, batch_size=None, shuffle=False)
+    # dataset_size = 15
+    # number_of_batches = dataset_size // (BATCH_SIZE * distr_backend.get_world_size())
+    # dl = dl.repeat(2).slice(number_of_batches)
+    # dl.length = number_of_batches
+
+    # dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 else:
     dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
+
 
 # initialize DALL-E
 
@@ -364,6 +404,7 @@ if distr_backend.is_root_worker():
         project=args.wandb_name,  # 'dalle_train_transformer' by default
         resume=RESUME,
         config=model_config,
+        mode='offline' ##### REMOVE FOR RELEASE
     )
 
 # distribute
@@ -444,14 +485,15 @@ def save_model(path):
 
 # training
 
-# Saves a checkpoint before training begins to fail early when mis-configured. 
+# Saves a checkpoint before training begins to fail early when mis-configured.
 # See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
 save_model(DALLE_OUTPUT_FILE_NAME)
 
 for epoch in range(EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
-    for i, (text, images) in enumerate(distr_dl):
+    for i, (text, images) in enumerate(dl):
+    # for i, (text, images) in enumerate(distr_dl):
         if i % 10 == 0 and distr_backend.is_root_worker():
             t = time.time()
         if args.fp16:
@@ -487,7 +529,7 @@ for epoch in range(EPOCHS):
 
         if i % SAVE_EVERY_N_STEPS == 0:
             save_model(DALLE_OUTPUT_FILE_NAME)
-	
+
         if i % 100 == 0:
             if distr_backend.is_root_worker():
                 sample_text = text[:1]
@@ -520,7 +562,7 @@ for epoch in range(EPOCHS):
         distr_scheduler.step(avg_loss)
 
     save_model(DALLE_OUTPUT_FILE_NAME)
-    
+
     if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
 
