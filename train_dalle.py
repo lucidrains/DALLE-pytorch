@@ -64,7 +64,7 @@ train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of
 
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
 
-train_group.add_argument('--keep_n_checkpoints', default = None, type = int, help = 'Deletes old deepspeed checkpoints if there are more than n')
+train_group.add_argument('--keep_n_checkpoints', default = None, type = int, help = '(Careful) Deletes old deepspeed checkpoints if there are more than n')
 
 train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
 
