@@ -398,9 +398,9 @@ You can stream the data from a http server or gloogle cloud storage like this:
 $ deepspeed train_dalle.py --image_text_path "http://storage.googleapis.com/nvdata-openimages/openimages-train-{000000..000554}.tar" --wds jpg,json --taming --truncate_captions --random_resize_crop_lower_ratio=0.8 --attn_types=full --epochs=2 --fp16 --deepspeed
 ```
 
-In order to convert your image-text-folder to WebDataset format, you can make use of one of several methods
-(https://www.youtube.com/watch?v=v_PacO-3OGQ for 4 examples, or a little helper script which also supports splitting your dataset
-into shards of .tar.gz files https://github.com/robvanvolt/DALLE-datasets/blob/main/wds_create.py)
+In order to convert your image-text-folder to WebDataset format, you can make use of one of several methods.
+(https://www.youtube.com/watch?v=v_PacO-3OGQ here are given 4 examples, or a little helper script which also supports splitting your dataset
+into shards of .tar.gz files https://github.com/robvanvolt/DALLE-datasets/blob/main/wds_create_shards.py)
 
 ### DALL-E with OpenAI's VAE
 
