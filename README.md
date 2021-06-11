@@ -395,7 +395,7 @@ $ deepspeed train_dalle.py --wds img,cap --image_text_path /path/to/shardfolder 
 You can stream the data from a http server or gloogle cloud storage like this:
 
 ```python
-$ deepspeed train_dalle.py --image_text_folder "http://storage.googleapis.com/nvdata-openimages/openimages-train-{000000..000554}.tar" --wds jpg,json --taming --truncate_captions --random_resize_crop_lower_ratio=0.8 --attn_types=full --epochs=2 --fp16 --deepspeed
+$ deepspeed train_dalle.py --image_text_path "http://storage.googleapis.com/nvdata-openimages/openimages-train-{000000..000554}.tar" --wds jpg,json --taming --truncate_captions --random_resize_crop_lower_ratio=0.8 --attn_types=full --epochs=2 --fp16 --deepspeed
 ```
 
 In order to convert your image-text-folder to WebDataset format, you can make use of one of several methods

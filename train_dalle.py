@@ -34,7 +34,7 @@ group.add_argument('--dalle_path', type=str,
                    help='path to your partially trained DALL-E')
 
 parser.add_argument(
-    '--image_text_folder', 
+    '--image_text_path',
     type=str, 
     required=True,
     help='Path to your folder of images and texts for learning the DALL-E. \
@@ -173,24 +173,24 @@ DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
 
 if not ENABLE_WEBDATASET:
     # quit early if you used the wrong folder name
-    assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
+    assert Path(args.image_text_path).exists(), f'The path {args.image_text_path} was not found.'
 else:
     # quit early if no tar files were found
-    if Path(args.image_text_folder).is_dir():
-        DATASET = [str(p) for p in Path(args.image_text_folder).glob("**/*") if ".tar" in str(p).lower()] # .name
-        assert len(DATASET) > 0, 'The directory ({}) does not contain any WebDataset/.tar files.'.format(args.image_text_folder)
-        print('Found {} WebDataset .tar(.gz) file(s) under given path {}!'.format(len(DATASET), args.image_text_folder))
-    elif ('http://' in args.image_text_folder.lower()) | ('https://' in args.image_text_folder.lower()):
-        DATASET = f"pipe:curl -L -s {args.image_text_folder} || true"
-        print('Found http(s) link under given path {}!'.format(len(DATASET), args.image_text_folder))
-    elif 'gs://' in args.image_text_folder.lower():
-        DATASET = f"pipe:gsutil cat {args.image_text_folder} || true"
-        print('Found GCS link under given path {}!'.format(len(DATASET), args.image_text_folder))
-    elif '.tar' in args.image_text_folder:
-        DATASET = args.image_text_folder
-        print('Found WebDataset .tar(.gz) file under given path {}!'.format(args.image_text_folder))
+    if Path(args.image_text_path).is_dir():
+        DATASET = [str(p) for p in Path(args.image_text_path).glob("**/*") if ".tar" in str(p).lower()] # .name
+        assert len(DATASET) > 0, 'The directory ({}) does not contain any WebDataset/.tar files.'.format(args.image_text_path)
+        print('Found {} WebDataset .tar(.gz) file(s) under given path {}!'.format(len(DATASET), args.image_text_path))
+    elif ('http://' in args.image_text_path.lower()) | ('https://' in args.image_text_path.lower()):
+        DATASET = f"pipe:curl -L -s {args.image_text_path} || true"
+        print('Found http(s) link under given path {}!'.format(len(DATASET), args.image_text_path))
+    elif 'gs://' in args.image_text_path.lower():
+        DATASET = f"pipe:gsutil cat {args.image_text_path} || true"
+        print('Found GCS link under given path {}!'.format(len(DATASET), args.image_text_path))
+    elif '.tar' in args.image_text_path:
+        DATASET = args.image_text_path
+        print('Found WebDataset .tar(.gz) file under given path {}!'.format(args.image_text_path))
     else:
-        raise Exception('No folder, no .tar(.gz) and no url pointing to tar files provided under {}.'.format(args.image_text_folder))
+        raise Exception('No folder, no .tar(.gz) and no url pointing to tar files provided under {}.'.format(args.image_text_path))
 
 # initialize distributed backend
 
@@ -331,7 +331,7 @@ if ENABLE_WEBDATASET:
 
     ds = (
         wds.WebDataset(DATASET, length=num_batches)
-        # .shuffle(is_shuffle) # This line for WebDataset, as the behaviour cannot be predicted yet
+        # .shuffle(is_shuffle) # Commented out for WebDataset as the behaviour cannot be predicted yet
         .map_dict(**image_text_mapping)     
         .map_dict(**image_mapping)
         .to_tuple(mycap, myimg)
@@ -339,7 +339,7 @@ if ENABLE_WEBDATASET:
     )
 else:
     ds = TextImageDataset(
-        args.image_text_folder,
+        args.image_text_path,
         text_len=TEXT_SEQ_LEN,
         image_size=IMAGE_SIZE,
         resize_ratio=args.resize_ratio,
@@ -364,7 +364,7 @@ else:
 
 if ENABLE_WEBDATASET:
     # WebLoader for WebDataset and DeepSpeed compatibility
-    dl = wds.WebLoader(ds, batch_size=None, shuffle=False) # optionally add num_workers=2 or n argument
+    dl = wds.WebLoader(ds, batch_size=None, shuffle=False) # optionally add num_workers=2 (n) argument
     number_of_batches = DATASET_SIZE // (BATCH_SIZE * distr_backend.get_world_size())
     dl = dl.repeat(2).slice(number_of_batches)
     dl.length = number_of_batches
