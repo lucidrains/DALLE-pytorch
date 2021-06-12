@@ -20,17 +20,15 @@ parser = argparse.ArgumentParser()
 
 group = parser.add_mutually_exclusive_group(required=False)
 
-group.add_argument('--vae_path', type=str,
-                   help='path to your trained discrete VAE')
+group.add_argument('--vae_path', type=str, help='path to your trained discrete VAE')
 
-group.add_argument('--dalle_path', type=str,
-                   help='path to your partially trained DALL-E')
+group.add_argument('--dalle_path', type=str, help='path to your partially trained DALL-E')
 
-parser.add_argument('--image_text_folder', type=str, required=True,
-                    help='path to your folder of images and text for learning the DALL-E')
+parser.add_argument('--image_text_folder', type=str, required=True, 
+    help='path to your folder of images and text for learning the DALL-E')
 
 parser.add_argument('--truncate_captions', dest='truncate_captions', action='store_true',
-                    help='Captions passed in which exceed the max token length will be truncated if this is set.')
+    help='Captions passed in which exceed the max token length will be truncated if this is set.')
 
 parser.add_argument('--random_resize_crop_lower_ratio', dest='resize_ratio', type=float, default=0.75,
                     help='Random resized crop lower ratio')
@@ -42,23 +40,19 @@ parser.add_argument('--taming', dest='taming', action='store_true')
 parser.add_argument('--hug', dest='hug', action='store_true')
 
 parser.add_argument('--bpe_path', type=str,
-                    help='path to your BPE json file')
+    help='path to your BPE json file')
 
 parser.add_argument('--dalle_output_file_name', type=str, default = "dalle",
-                    help='output_file_name')
+    help='output_file_name')
 
 parser.add_argument('--fp16', action='store_true',
-                    help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
+    help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
 
+parser.add_argument('--amp', action='store_true',
+	help='DeepSpeed Stage 0 Only. Apex "O1" automatic mixed precision. More stable than 16 bit precision.')
 
-parser.add_argument(
-	'--amp',
-	action='store_true',
-	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.'
-)
-
-parser.add_argument('--wandb_name', default='dalle_train_transformer',
-                    help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
+parser.add_argument('--wandb_name', default='dalle_train_transformer', 
+    help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
 
 parser = distributed_utils.wrap_arg_parser(parser)
 
@@ -70,13 +64,18 @@ train_group.add_argument('--save_every_n_steps', default = 1000, type = int, hel
 
 train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
 
-train_group.add_argument('--ga_steps', default = 1, type = int, help = 'Number of steps to accumulate gradients across per each iteration. DeepSpeed only.')
+train_group.add_argument('--ga_steps', default = 1, type = int,
+    help = 'Number of steps to accumulate gradients across per each iteration. DeepSpeed only.')
 
 train_group.add_argument('--learning_rate', default = 3e-4, type = float, help = 'Learning rate')
 
 train_group.add_argument('--clip_grad_norm', default = 0.5, type = float, help = 'Clip gradient norm')
 
-train_group.add_argument('--lr_decay', dest = 'lr_decay', action = 'store_true')
+train_group.add_argument('--lr_decay', dest = 'lr_decay', action = 'store_true',
+    help = "Decay learning rate once the loss hits a plateau.")
+
+train_group.add_argument('--lr_warmup_decay', action='store_true',
+	help='DeepSpeed Stage 0-3. Warm up learning rate for 2% of training steps before decaying.")
 
 model_group = parser.add_argument_group('Model settings')
 
@@ -90,11 +89,14 @@ model_group.add_argument('--heads', default = 8, type = int, help = 'Model numbe
 
 model_group.add_argument('--dim_head', default = 64, type = int, help = 'Model head dimension')
 
-model_group.add_argument('--reversible', dest = 'reversible', action='store_true')
+model_group.add_argument('--reversible', dest = 'reversible', action='store_true', 
+     help = 'Scale depth at cost of compute by using reversible network.')
 
-model_group.add_argument('--loss_img_weight', default = 7, type = int, help = 'Image loss weight')
+model_group.add_argument('--loss_img_weight', default = 7, type = int, 
+     help = 'Image loss weight')
 
-model_group.add_argument('--attn_types', default = 'full', type = str, help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
+model_group.add_argument('--attn_types', default = 'full', type = str, 
+     help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
 
 args = parser.parse_args()
 
@@ -278,10 +280,9 @@ if not is_shuffle:
 else:
     data_sampler = None
 
-dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
+dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler) 
 
 # initialize DALL-E
-
 
 dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
@@ -296,7 +297,12 @@ if RESUME and not using_deepspeed:
 
 opt = Adam(get_trainable_params(dalle), lr=LEARNING_RATE)
 
-if LR_DECAY:
+# scheduler
+
+if args.lr_warmup_decay and using_deepspeed:
+    total_num_steps = int(len(ds) / BATCH_SIZE / args.ga_steps * EPOCHS) # TODO double check math.
+    warmup_num_steps = int(total_num_steps * 0.02)
+else if LR_DECAY:
     scheduler = ReduceLROnPlateau(
         opt,
         mode="min",
@@ -306,7 +312,7 @@ if LR_DECAY:
         min_lr=1e-6,
         verbose=True,
     )
-
+    
 if distr_backend.is_root_worker():
     # experiment tracker
 
@@ -336,6 +342,15 @@ deepspeed_config = {
         'enabled': args.amp,
         'opt_level': 'O1',
     },
+    "scheduler": {
+        "type": "WarmupDecayLR" if args.lr_warmup_decay and using_deepspeed else None,
+        "params": {
+            "total_num_steps": total_num_steps,
+            "warmup_min_lr": 0,
+            "warmup_max_lr": LEARNING_RATE,
+            "warmup_num_steps": 0, # total_num_steps * 0.02, # Warmup for two percent of all steps.
+        },
+    },
 }
 
 if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
@@ -358,7 +373,6 @@ avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
     distr_dalle.load_checkpoint(str(cp_dir))
-
 
 def save_model(path):
     save_obj = {
