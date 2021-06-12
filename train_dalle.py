@@ -167,7 +167,6 @@ elif args.chinese:
     tokenizer = ChineseTokenizer()
 
 # reconstitute vae
-
 if RESUME:
     dalle_path = Path(DALLE_PATH)
     if using_deepspeed:
@@ -179,7 +178,7 @@ if RESUME:
         assert dalle_path.exists(), 'DALL-E model file does not exist'
     loaded_obj = torch.load(str(dalle_path), map_location='cpu')
 
-    dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
+    dalle_params, vae_params, weights, opt_state = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights'], loaded_obj['opt_state']
 
     if vae_params is not None:
         vae = DiscreteVAE(**vae_params)
@@ -191,6 +190,7 @@ if RESUME:
         **dalle_params
     )
     IMAGE_SIZE = vae.image_size
+    resume_epoch = loaded_obj['epoch']
 else:
     if exists(VAE_PATH):
         vae_path = Path(VAE_PATH)
@@ -228,6 +228,7 @@ else:
         loss_img_weight=LOSS_IMG_WEIGHT,
         attn_types=ATTN_TYPES,
     )
+    resume_epoch = 0
 
 # configure OpenAI VAE for float16s
 
@@ -287,7 +288,7 @@ dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
     if args.fp16:
         dalle = dalle.half()
-    dalle = dalle.cuda()
+    # dalle = dalle.cuda()
 
 if RESUME and not using_deepspeed:
     dalle.load_state_dict(weights)
@@ -295,6 +296,8 @@ if RESUME and not using_deepspeed:
 # optimizer
 
 opt = Adam(get_trainable_params(dalle), lr=LEARNING_RATE)
+if RESUME:
+    opt.load_state_dict(opt_state)
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
@@ -360,10 +363,11 @@ if RESUME and using_deepspeed:
     distr_dalle.load_checkpoint(str(cp_dir))
 
 
-def save_model(path):
+def save_model(path, epoch=0):
     save_obj = {
         'hparams': dalle_params,
         'vae_params': vae_params,
+        'epoch': epoch,
     }
     if using_deepspeed:
         cp_dir = cp_path_to_dir(path, 'ds')
@@ -393,7 +397,8 @@ def save_model(path):
 
     save_obj = {
         **save_obj,
-        'weights': dalle.state_dict()
+        'weights': dalle.state_dict(),
+        'opt_state': opt.state_dict(),
     }
 
     torch.save(save_obj, path)
@@ -402,9 +407,9 @@ def save_model(path):
 
 # Saves a checkpoint before training begins to fail early when mis-configured. 
 # See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
-save_model(DALLE_OUTPUT_FILE_NAME)
+save_model(DALLE_OUTPUT_FILE_NAME, epoch=resume_epoch)
 
-for epoch in range(EPOCHS):
+for epoch in range(resume_epoch, EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
     for i, (text, images) in enumerate(distr_dl):
@@ -442,7 +447,7 @@ for epoch in range(EPOCHS):
             }
 
         if i % SAVE_EVERY_N_STEPS == 0:
-            save_model(DALLE_OUTPUT_FILE_NAME)
+            save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 	
         if i % 100 == 0:
             if distr_backend.is_root_worker():
@@ -475,7 +480,7 @@ for epoch in range(EPOCHS):
         # using DeepSpeed.
         distr_scheduler.step(avg_loss)
 
-    save_model(DALLE_OUTPUT_FILE_NAME)
+    save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
     
     if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
@@ -484,7 +489,7 @@ for epoch in range(EPOCHS):
         model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
         run.log_artifact(model_artifact)
 
-save_model(DALLE_OUTPUT_FILE_NAME)
+save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 if distr_backend.is_root_worker():
     wandb.save(DALLE_OUTPUT_FILE_NAME)
     model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
