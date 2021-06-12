@@ -178,7 +178,7 @@ if RESUME:
         assert dalle_path.exists(), 'DALL-E model file does not exist'
     loaded_obj = torch.load(str(dalle_path), map_location='cpu')
 
-    dalle_params, vae_params, weights, opt_state = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights'], loaded_obj['opt_state']
+    dalle_params, vae_params, weights, opt_state, scheduler_state = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights'], loaded_obj['opt_state'], loaded_obj['scheduler_state']
 
     if vae_params is not None:
         vae = DiscreteVAE(**vae_params)
@@ -288,7 +288,7 @@ dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
     if args.fp16:
         dalle = dalle.half()
-    # dalle = dalle.cuda()
+    dalle = dalle.cuda()
 
 if RESUME and not using_deepspeed:
     dalle.load_state_dict(weights)
@@ -309,6 +309,10 @@ if LR_DECAY:
         min_lr=1e-6,
         verbose=True,
     )
+    if RESUME:
+        scheduler.load_state_dict(scheduler_state_dict)
+else:
+    scheduler = None
 
 if distr_backend.is_root_worker():
     # experiment tracker
@@ -400,7 +404,7 @@ def save_model(path, epoch=0):
         'weights': dalle.state_dict(),
         'opt_state': opt.state_dict(),
     }
-
+    save_obj['scheduler_state'] = (scheduler.state_dict() if scheduler else None)
     torch.save(save_obj, path)
 
 # training
@@ -408,7 +412,6 @@ def save_model(path, epoch=0):
 # Saves a checkpoint before training begins to fail early when mis-configured. 
 # See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=resume_epoch)
-
 for epoch in range(resume_epoch, EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
