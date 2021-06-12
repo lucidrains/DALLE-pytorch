@@ -310,7 +310,7 @@ if LR_DECAY:
         verbose=True,
     )
     if RESUME:
-        scheduler.load_state_dict(scheduler_state_dict)
+        scheduler.load_state_dict(scheduler_state)
 else:
     scheduler = None
 
