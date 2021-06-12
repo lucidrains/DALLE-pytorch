@@ -463,7 +463,7 @@ for epoch in range(EPOCHS):
 
 
         if i % 10 == 9 and distr_backend.is_root_worker():
-            sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)
+            sample_per_sec = BATCH_SIZE * args.ga_steps * 10 / (time.time() - t)
             log["sample_per_sec"] = sample_per_sec
             print(epoch, i, f'sample_per_sec - {sample_per_sec}')
 
