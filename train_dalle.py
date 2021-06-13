@@ -34,7 +34,7 @@ group.add_argument('--dalle_path', type=str,
                    help='path to your partially trained DALL-E')
 
 parser.add_argument(
-    '--image_text_path',
+    '--image_text_folder',
     type=str, 
     required=True,
     help='Path to your folder of images and texts for learning the DALL-E. \
@@ -175,24 +175,24 @@ DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
 
 if not ENABLE_WEBDATASET:
     # quit early if you used the wrong folder name
-    assert Path(args.image_text_path).exists(), f'The path {args.image_text_path} was not found.'
+    assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
 else:
     # quit early if no tar files were found
-    if Path(args.image_text_path).is_dir():
-        DATASET = [str(p) for p in Path(args.image_text_path).glob("**/*") if ".tar" in str(p).lower()] # .name
-        assert len(DATASET) > 0, 'The directory ({}) does not contain any WebDataset/.tar files.'.format(args.image_text_path)
-        print('Found {} WebDataset .tar(.gz) file(s) under given path {}!'.format(len(DATASET), args.image_text_path))
-    elif ('http://' in args.image_text_path.lower()) | ('https://' in args.image_text_path.lower()):
-        DATASET = f"pipe:curl -L -s {args.image_text_path} || true"
-        print('Found http(s) link under given path {}!'.format(len(DATASET), args.image_text_path))
-    elif 'gs://' in args.image_text_path.lower():
-        DATASET = f"pipe:gsutil cat {args.image_text_path} || true"
-        print('Found GCS link under given path {}!'.format(len(DATASET), args.image_text_path))
-    elif '.tar' in args.image_text_path:
-        DATASET = args.image_text_path
-        print('Found WebDataset .tar(.gz) file under given path {}!'.format(args.image_text_path))
+    if Path(args.image_text_folder).is_dir():
+        DATASET = [str(p) for p in Path(args.image_text_folder).glob("**/*") if ".tar" in str(p).lower()] # .name
+        assert len(DATASET) > 0, 'The directory ({}) does not contain any WebDataset/.tar files.'.format(args.image_text_folder)
+        print('Found {} WebDataset .tar(.gz) file(s) under given path {}!'.format(len(DATASET), args.image_text_folder))
+    elif ('http://' in args.image_text_folder.lower()) | ('https://' in args.image_text_folder.lower()):
+        DATASET = f"pipe:curl -L -s {args.image_text_folder} || true"
+        print('Found http(s) link under given path {}!'.format(len(DATASET), args.image_text_folder))
+    elif 'gs://' in args.image_text_folder.lower():
+        DATASET = f"pipe:gsutil cat {args.image_text_folder} || true"
+        print('Found GCS link under given path {}!'.format(len(DATASET), args.image_text_folder))
+    elif '.tar' in args.image_text_folder:
+        DATASET = args.image_text_folder
+        print('Found WebDataset .tar(.gz) file under given path {}!'.format(args.image_text_folder))
     else:
-        raise Exception('No folder, no .tar(.gz) and no url pointing to tar files provided under {}.'.format(args.image_text_path))
+        raise Exception('No folder, no .tar(.gz) and no url pointing to tar files provided under {}.'.format(args.image_text_folder))
 
 # initialize distributed backend
 
@@ -341,7 +341,7 @@ if ENABLE_WEBDATASET:
     )
 else:
     ds = TextImageDataset(
-        args.image_text_path,
+        args.image_text_folder,
         text_len=TEXT_SEQ_LEN,
         image_size=IMAGE_SIZE,
         resize_ratio=args.resize_ratio,
