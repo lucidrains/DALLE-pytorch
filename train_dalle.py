@@ -91,7 +91,9 @@ train_group.add_argument('--epochs', default = 2, type = int, help = 'Number of 
 
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
 
-train_group.add_argument('--batch_size', default = 2, type = int, help = 'Batch size')
+train_group.add_argument('--keep_n_checkpoints', default = None, type = int, help = '(Careful) Deletes old deepspeed checkpoints if there are more than n')
+
+train_group.add_argument('--batch_size', default = 4, type = int, help = 'Batch size')
 
 train_group.add_argument('--ga_steps', default = 1, type = int, help = 'Number of steps to accumulate gradients across per each iteration. DeepSpeed only.')
 
