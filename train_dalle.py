@@ -184,10 +184,10 @@ else:
         print('Found {} WebDataset .tar(.gz) file(s) under given path {}!'.format(len(DATASET), args.image_text_folder))
     elif ('http://' in args.image_text_folder.lower()) | ('https://' in args.image_text_folder.lower()):
         DATASET = f"pipe:curl -L -s {args.image_text_folder} || true"
-        print('Found http(s) link under given path {}!'.format(len(DATASET), args.image_text_folder))
+        print('Found {} http(s) link under given path!'.format(len(DATASET), args.image_text_folder))
     elif 'gs://' in args.image_text_folder.lower():
         DATASET = f"pipe:gsutil cat {args.image_text_folder} || true"
-        print('Found GCS link under given path {}!'.format(len(DATASET), args.image_text_folder))
+        print('Found {} GCS link under given path!'.format(len(DATASET), args.image_text_folder))
     elif '.tar' in args.image_text_folder:
         DATASET = args.image_text_folder
         print('Found WebDataset .tar(.gz) file under given path {}!'.format(args.image_text_folder))
