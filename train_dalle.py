@@ -54,11 +54,8 @@ parser.add_argument('--fp16', action='store_true',
                     help='(experimental) - Enable DeepSpeed 16 bit precision. Reduces VRAM.')
 
 
-parser.add_argument(
-	'--amp',
-	action='store_true',
-	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.'
-)
+parser.add_argument('--amp', action='store_true',
+	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.')
 
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
@@ -66,6 +63,8 @@ parser.add_argument('--wandb_name', default='dalle_train_transformer',
 parser = distributed_utils.wrap_arg_parser(parser)
 
 train_group = parser.add_argument_group('Training settings')
+
+train_group.add_argument('--flops_profiler', dest = 'flops_profiler', action='store_true', help = 'Exits after printing detailed flops/runtime analysis of forward/backward')
 
 train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of epochs')
 
@@ -94,6 +93,10 @@ model_group.add_argument('--depth', default = 2, type = int, help = 'Model depth
 model_group.add_argument('--heads', default = 8, type = int, help = 'Model number of heads')
 
 model_group.add_argument('--dim_head', default = 64, type = int, help = 'Model head dimension')
+
+train_group.add_argument('--ff_dropout', default = 0.0, type = float, help = 'Feed forward dropout.')
+
+train_group.add_argument('--attn_dropout', default = 0.0, type = float, help = 'Feed forward dropout.')
 
 model_group.add_argument('--reversible', dest = 'reversible', action='store_true')
 
@@ -151,6 +154,8 @@ HEADS = args.heads
 DIM_HEAD = args.dim_head
 REVERSIBLE = args.reversible
 LOSS_IMG_WEIGHT = args.loss_img_weight
+FF_DROPOUT = args.ff_dropout
+ATTN_DROPOUT = args.attn_dropout
 
 ATTN_TYPES = tuple(args.attn_types.split(','))
 
@@ -233,6 +238,8 @@ else:
         reversible=REVERSIBLE,
         loss_img_weight=LOSS_IMG_WEIGHT,
         attn_types=ATTN_TYPES,
+        ff_dropout=FF_DROPOUT,
+        attn_dropout=ATTN_DROPOUT,
     )
 
 # configure OpenAI VAE for float16s
@@ -342,6 +349,14 @@ deepspeed_config = {
         'enabled': args.amp,
         'opt_level': 'O1',
     },
+    "flops_profiler": {
+        "enabled": args.flops_profiler,
+        "profile_step": 200,
+        "module_depth": -1,
+        "top_modules": 1,
+        "detailed": True,
+        "output_file": None # TODO Can't get this to work.
+    },
 }
 
 if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
@@ -419,6 +434,7 @@ for epoch in range(EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
     for i, (text, images) in enumerate(distr_dl):
+        
         if i % 10 == 0 and distr_backend.is_root_worker():
             t = time.time()
         if args.fp16:
@@ -472,7 +488,8 @@ for epoch in range(EPOCHS):
                 if not avoid_model_calls:
                     log['image'] = wandb.Image(image, caption=decoded_text)
 
-
+        if i == 201:
+            raise StopIteration("E
         if i % 10 == 9 and distr_backend.is_root_worker():
             sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)
             log["sample_per_sec"] = sample_per_sec
