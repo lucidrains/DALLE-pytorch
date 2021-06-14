@@ -180,9 +180,18 @@ deepspeed_config = {'train_batch_size': BATCH_SIZE}
     optimizer=opt,
     model_parameters=vae.parameters(),
     training_data=ds if using_deepspeed else dl,
-    lr_scheduler=sched,
+    lr_scheduler=sched if not using_deepspeed else None,
     config_params=deepspeed_config,
 )
+
+using_deepspeed_sched = False
+# Prefer scheduler in `deepspeed_config`.
+if distr_sched is None:
+    distr_sched = sched
+elif using_deepspeed:
+    # We are using a DeepSpeed LR scheduler and want to let DeepSpeed
+    # handle its scheduling.
+    using_deepspeed_sched = True
 
 def save_model(path):
     save_obj = {
@@ -263,9 +272,8 @@ for epoch in range(EPOCHS):
 
             # lr decay
 
-            if not using_deepspeed:
-                # Scheduler is automatically progressed after the step
-                # when using DeepSpeed.
+            # Do not advance schedulers from `deepspeed_config`.
+            if not using_deepspeed_sched:
                 distr_sched.step()
 
         # Collective loss, averaged
