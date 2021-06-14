@@ -357,9 +357,14 @@ if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
     optimizer=opt,
     model_parameters=get_trainable_params(dalle),
     training_data=ds if using_deepspeed else dl,
-    lr_scheduler=scheduler if LR_DECAY else None,
+    # Do not pass the LR scheduler to DeepSpeed so we can manually
+    # advance it.
+    lr_scheduler=scheduler if LR_DECAY and not using_deepspeed else None,
     config_params=deepspeed_config,
 )
+# Prefer scheduler in `deepspeed_config`.
+if LR_DECAY and distr_scheduler is None:
+    distr_scheduler = scheduler
 avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
@@ -481,9 +486,7 @@ for epoch in range(EPOCHS):
         if distr_backend.is_root_worker():
             wandb.log(log)
 
-    if LR_DECAY and not using_deepspeed:
-        # Scheduler is automatically progressed after the step when
-        # using DeepSpeed.
+    if LR_DECAY:
         distr_scheduler.step(avg_loss)
 
     save_model(DALLE_OUTPUT_FILE_NAME)
