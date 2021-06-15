@@ -178,7 +178,7 @@ if RESUME:
         assert dalle_path.exists(), 'DALL-E model file does not exist'
     loaded_obj = torch.load(str(dalle_path), map_location='cpu')
 
-    dalle_params, vae_params, weights= loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
+    dalle_params, vae_params, weights = loaded_obj['hparams'], loaded_obj['vae_params'], loaded_obj['weights']
     opt_state = loaded_obj.get('opt_state')
     scheduler_state = loaded_obj.get('scheduler_state')
 
