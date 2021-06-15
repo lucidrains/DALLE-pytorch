@@ -434,7 +434,9 @@ for epoch in range(EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
     for i, (text, images) in enumerate(distr_dl):
-        
+	if i == 201 and args.flops_profiler:
+            raise StopIteration("Profiler has finished running. Stopping training early.")
+
         if i % 10 == 0 and distr_backend.is_root_worker():
             t = time.time()
         if args.fp16:
@@ -488,8 +490,6 @@ for epoch in range(EPOCHS):
                 if not avoid_model_calls:
                     log['image'] = wandb.Image(image, caption=decoded_text)
 
-        if i == 201:
-            raise StopIteration("E
         if i % 10 == 9 and distr_backend.is_root_worker():
             sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)
             log["sample_per_sec"] = sample_per_sec
