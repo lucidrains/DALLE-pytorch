@@ -413,8 +413,7 @@ if distr_backend.is_root_worker():
     run = wandb.init(
         project=args.wandb_name,  # 'dalle_train_transformer' by default
         resume=RESUME,
-        config=model_config,
-        mode="offline"
+        config=model_config
     )
 
 # distribute
