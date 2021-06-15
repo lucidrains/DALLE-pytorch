@@ -434,7 +434,7 @@ for epoch in range(EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
     for i, (text, images) in enumerate(distr_dl):
-	if i == 201 and args.flops_profiler:
+        if i == 201 and args.flops_profiler:
             raise StopIteration("Profiler has finished running. Stopping training early.")
 
         if i % 10 == 0 and distr_backend.is_root_worker():
