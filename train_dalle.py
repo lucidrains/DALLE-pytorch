@@ -12,7 +12,7 @@ from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
-from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE1024, DiscreteVAE, DALLE
+from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE, DiscreteVAE, DALLE
 from dalle_pytorch import distributed_utils
 from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
@@ -28,6 +28,12 @@ group.add_argument('--vae_path', type=str,
 
 group.add_argument('--dalle_path', type=str,
                    help='path to your partially trained DALL-E')
+
+parser.add_argument('--vqgan_model_path', type=str, default = None,
+                   help='path to your trained VQGAN weights. This should be a .ckpt file. (only valid when taming option is enabled)')
+
+parser.add_argument('--vqgan_config_path', type=str, default = None,
+                   help='path to your trained VQGAN config. This should be a .yaml file. (only valid when taming option is enabled)')
 
 parser.add_argument('--image_text_folder', type=str, required=True,
                     help='path to your folder of images and text for learning the DALL-E')
@@ -135,6 +141,8 @@ def cp_path_to_dir(cp_path, tag):
 DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name + ".pt"
 
 VAE_PATH = args.vae_path
+VQGAN_MODEL_PATH = args.vqgan_model_path
+VQGAN_CONFIG_PATH = args.vqgan_config_path
 DALLE_PATH = args.dalle_path
 RESUME = exists(DALLE_PATH)
 
@@ -195,8 +203,10 @@ if RESUME:
     if vae_params is not None:
         vae = DiscreteVAE(**vae_params)
     else:
-        vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
-        vae = vae_klass()
+        if args.taming:
+            vae = VQGanVAE(VQGAN_MODEL_PATH, VQGAN_CONFIG_PATH)
+        else:
+            vae = OpenAIDiscreteVAE()
 
     dalle_params = dict(
         **dalle_params
@@ -223,8 +233,10 @@ else:
             print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
-        vae_klass = OpenAIDiscreteVAE if not args.taming else VQGanVAE1024
-        vae = vae_klass()
+        if args.taming:
+            vae = VQGanVAE(VQGAN_MODEL_PATH, VQGAN_CONFIG_PATH)
+        else:
+            vae = OpenAIDiscreteVAE()
 
     IMAGE_SIZE = vae.image_size
 

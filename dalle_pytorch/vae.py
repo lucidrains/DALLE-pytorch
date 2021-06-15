@@ -10,7 +10,7 @@ import urllib
 import yaml
 from pathlib import Path
 from tqdm import tqdm
-from math import sqrt
+from math import sqrt, log
 from omegaconf import OmegaConf
 from taming.models.vqgan import VQModel
 
@@ -129,27 +129,34 @@ class OpenAIDiscreteVAE(nn.Module):
 # VQGAN from Taming Transformers paper
 # https://arxiv.org/abs/2012.09841
 
-class VQGanVAE1024(nn.Module):
-    def __init__(self):
+class VQGanVAE(nn.Module):
+    def __init__(self, vqgan_model_path, vqgan_config_path):
         super().__init__()
 
-        model_filename = 'vqgan.1024.model.ckpt'
-        config_filename = 'vqgan.1024.config.yml'
+        if vqgan_model_path is None:
+            model_filename = 'vqgan.1024.model.ckpt'
+            config_filename = 'vqgan.1024.config.yml'
+            download(VQGAN_VAE_CONFIG_PATH, config_filename)
+            download(VQGAN_VAE_PATH, model_filename)
+            config_path = str(Path(CACHE_PATH) / config_filename)
+            model_path = str(Path(CACHE_PATH) / model_filename)
+        else:
+            model_path = vqgan_model_path
+            config_path = vqgan_config_path
 
-        download(VQGAN_VAE_CONFIG_PATH, config_filename)
-        download(VQGAN_VAE_PATH, model_filename)
-
-        config = OmegaConf.load(str(Path(CACHE_PATH) / config_filename))
+        config = OmegaConf.load(config_path)
         model = VQModel(**config.model.params)
 
-        state = torch.load(str(Path(CACHE_PATH) / model_filename), map_location = 'cpu')['state_dict']
+        state = torch.load(model_path, map_location = 'cpu')['state_dict']
         model.load_state_dict(state, strict = False)
+
+        print(f"Loaded VQGAN from {model_path} and {config_path}")
 
         self.model = model
 
-        self.num_layers = 4
+        self.num_layers = int(log(config.model.params.ddconfig.attn_resolutions[0])/log(2))
         self.image_size = 256
-        self.num_tokens = 1024
+        self.num_tokens = config.model.params.n_embed
 
         self._register_external_parameters()
 

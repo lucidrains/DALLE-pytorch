@@ -162,12 +162,14 @@ In contrast to OpenAI's VAE, it also has an extra layer of downsampling, so the 
 Update - <a href="https://github.com/lucidrains/DALLE-pytorch/discussions/131">it works!</a>
 
 ```python
-from dalle_pytorch import VQGanVAE1024
+from dalle_pytorch import VQGanVAE
 
-vae = VQGanVAE1024()
+vae = VQGanVAE()
 
 # the rest is the same as the above example
 ```
+
+The default VQGan is the codebook size 1024 one trained on imagenet. If you wish to use a different one, you can use the `vqgan_model_path` and `vqgan_config_path` to pass the .ckpt file and the .yaml file. These options can be used both in train-dalle script or as argument of VQGanVAE class. Other pretrained VQGAN can be found in [taming transformers readme](https://github.com/CompVis/taming-transformers#overview-of-pretrained-models). If you want to train a custom one you can [follow this guide](https://github.com/CompVis/taming-transformers/pull/54)
 
 ## Ranking the generations
 

@@ -15,7 +15,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
-from dalle_pytorch import DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE1024, DALLE
+from dalle_pytorch import DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE, DALLE
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, YttmTokenizer, ChineseTokenizer
 
 # argument parsing
@@ -24,6 +24,12 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--dalle_path', type = str, required = True,
                     help='path to your trained DALL-E')
+
+parser.add_argument('--vqgan_model_path', type=str, default = None,
+                   help='path to your trained VQGAN weights. This should be a .ckpt file. (only valid when taming option is enabled)')
+
+parser.add_argument('--vqgan_config_path', type=str, default = None,
+                   help='path to your trained VQGAN config. This should be a .yaml file.  (only valid when taming option is enabled)')
 
 parser.add_argument('--text', type = str, required = True,
                     help='your text prompt')
@@ -80,7 +86,7 @@ if vae_params is not None:
 elif not args.taming:
     vae = OpenAIDiscreteVAE()
 else:
-    vae = VQGanVAE1024()
+    vae = VQGanVAE(args.vqgan_model_path, args.vqgan_config_path)
 
 
 dalle = DALLE(vae = vae, **dalle_params).cuda()
