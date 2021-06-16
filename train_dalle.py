@@ -33,6 +33,12 @@ group.add_argument('--vae_path', type=str,
 group.add_argument('--dalle_path', type=str,
                    help='path to your partially trained DALL-E')
 
+parser.add_argument('--vqgan_model_path', type=str, default = None,
+                   help='path to your trained VQGAN weights. This should be a .ckpt file. (only valid when taming option is enabled)')
+
+parser.add_argument('--vqgan_config_path', type=str, default = None,
+                   help='path to your trained VQGAN config. This should be a .yaml file. (only valid when taming option is enabled)')
+
 parser.add_argument(
     '--image_text_folder',
     type=str, 
@@ -87,7 +93,9 @@ parser = distributed_utils.wrap_arg_parser(parser)
 
 train_group = parser.add_argument_group('Training settings')
 
-train_group.add_argument('--epochs', default = 2, type = int, help = 'Number of epochs')
+train_group.add_argument('--flops_profiler', dest = 'flops_profiler', action='store_true', help = 'Exits after printing detailed flops/runtime analysis of forward/backward')
+
+train_group.add_argument('--epochs', default = 20, type = int, help = 'Number of epochs')
 
 train_group.add_argument('--save_every_n_steps', default = 1000, type = int, help = 'Save a checkpoint every n steps')
 
@@ -412,7 +420,7 @@ if distr_backend.is_root_worker():
 
     run = wandb.init(
         project=args.wandb_name,  # 'dalle_train_transformer' by default
-        resume=RESUME,
+        resume=False,
         config=model_config
     )
 
@@ -454,7 +462,7 @@ if RESUME and using_deepspeed:
     distr_dalle.load_checkpoint(str(cp_dir))
 
 
-def save_model(path):
+def save_model(path, epoch=0):
     save_obj = {
         'hparams': dalle_params,
         'vae_params': vae_params,
@@ -536,7 +544,7 @@ for epoch in range(EPOCHS):
             }
 
         if i % SAVE_EVERY_N_STEPS == 0:
-            save_model(DALLE_OUTPUT_FILE_NAME)
+            save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 
         if i % 100 == 0:
             if distr_backend.is_root_worker():
@@ -569,7 +577,7 @@ for epoch in range(EPOCHS):
         # using DeepSpeed.
         distr_scheduler.step(avg_loss)
 
-    save_model(DALLE_OUTPUT_FILE_NAME)
+    save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 
     if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
@@ -578,7 +586,8 @@ for epoch in range(EPOCHS):
         model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
         run.log_artifact(model_artifact)
 
-save_model(DALLE_OUTPUT_FILE_NAME)
+save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
+
 if distr_backend.is_root_worker():
     wandb.save(DALLE_OUTPUT_FILE_NAME)
     model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
