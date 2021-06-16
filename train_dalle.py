@@ -39,17 +39,14 @@ parser.add_argument('--vqgan_model_path', type=str, default = None,
 parser.add_argument('--vqgan_config_path', type=str, default = None,
                    help='path to your trained VQGAN config. This should be a .yaml file. (only valid when taming option is enabled)')
 
-parser.add_argument(
-    '--image_text_folder',
-    type=str, 
-    required=True,
-    help='Path to your folder of images and texts for learning the DALL-E. \
-          If the --wds argument is provided additionally, you have the choice between a \
-          1. path to a .tar or a .tar.gz file \
-          2. folder containing .tar and/or .tar.gz files \
-          3. http URL pointing to .tar(.gz) files, e.g. https://mywebspace/dataset{00..20}.tar(.gz) \
-          4. GCS URL pointing to a file on GCS'
-)
+#   If the --wds argument is provided additionally, you have the choice between a \
+#   1. path to a .tar or a .tar.gz file \
+#   2. folder containing .tar and/or .tar.gz files \
+#   3. http URL pointing to .tar(.gz) files, e.g. https://mywebspace/dataset{00..20}.tar(.gz) \
+#   4. GCS URL pointing to a file on GCS'
+
+parser.add_argument('--image_text_folder', type=str, required=True,
+                    help='path to your folder of images and text for learning the DALL-E')
 
 parser.add_argument(
     '--wds', 
@@ -572,13 +569,11 @@ for epoch in range(EPOCHS):
         if distr_backend.is_root_worker():
             wandb.log(log)
 
-    if LR_DECAY and not using_deepspeed:
-        # Scheduler is automatically progressed after the step when
-        # using DeepSpeed.
+    if LR_DECAY:
         distr_scheduler.step(avg_loss)
 
     save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-
+    
     if distr_backend.is_root_worker():
         # save trained model to wandb as an artifact every epoch's end
 
