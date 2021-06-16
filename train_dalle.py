@@ -39,12 +39,6 @@ parser.add_argument('--vqgan_model_path', type=str, default = None,
 parser.add_argument('--vqgan_config_path', type=str, default = None,
                    help='path to your trained VQGAN config. This should be a .yaml file. (only valid when taming option is enabled)')
 
-#   If the --wds argument is provided additionally, you have the choice between a \
-#   1. path to a .tar or a .tar.gz file \
-#   2. folder containing .tar and/or .tar.gz files \
-#   3. http URL pointing to .tar(.gz) files, e.g. https://mywebspace/dataset{00..20}.tar(.gz) \
-#   4. GCS URL pointing to a file on GCS'
-
 parser.add_argument('--image_text_folder', type=str, required=True,
                     help='path to your folder of images and text for learning the DALL-E')
 
