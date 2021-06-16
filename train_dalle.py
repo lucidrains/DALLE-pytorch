@@ -421,7 +421,7 @@ if distr_backend.is_root_worker():
     run = wandb.init(
         project=args.wandb_name,  # 'dalle_train_transformer' by default
         resume=False,
-        config=model_config
+        config=model_config,
     )
 
 # distribute
@@ -545,7 +545,7 @@ for epoch in range(EPOCHS):
 
         if i % SAVE_EVERY_N_STEPS == 0:
             save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-
+	
         if i % 100 == 0:
             if distr_backend.is_root_worker():
                 sample_text = text[:1]
@@ -587,7 +587,6 @@ for epoch in range(EPOCHS):
         run.log_artifact(model_artifact)
 
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-
 if distr_backend.is_root_worker():
     wandb.save(DALLE_OUTPUT_FILE_NAME)
     model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
