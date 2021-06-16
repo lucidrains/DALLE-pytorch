@@ -332,7 +332,9 @@ Weights and Biases will allow you to monitor the temperature annealing, image re
 
 Once you have trained a decent VAE to your satisfaction, you can move on to the next step with your model weights at `./vae.pt`.
 
-### DALL-E
+### DALL-E Training
+
+## Training using an Image-Text-Folder
 
 Now you just have to invoke the `./train_dalle.py` script, indicating which VAE model you would like to use, as well as the path to your folder if images and text.
 
@@ -369,6 +371,38 @@ You likely will not finish DALL-E training as quickly as you did your Discrete V
 ```python
 $ python train_dalle.py --dalle_path ./dalle.pt --image_text_folder /path/to/data
 ```
+
+## Training using WebDataset
+
+WebDataset files are regular .tar(.gz) files which can be streamed and used for DALLE-pytorch training.
+You Just need to provide the image (first comma separated argument) and caption (second comma separated argument) 
+column key after the --wds argument. The ---image_text_folder points to your .tar(.gz) file instead of the datafolder.
+
+```python
+$ python train_dalle.py --wds img,cap --image_text_folder /path/to/data.tar(.gz)
+```
+
+Distributed training with deepspeed works the same way, e.g.:
+
+```python
+$ deepspeed train_dalle.py --wds img,cap --image_text_folder /path/to/data.tar(.gz) --fp16 --deepspeed
+```
+
+If you have containing shards (dataset split into several .tar(.gz) files), this is also supported:
+
+```python
+$ deepspeed train_dalle.py --wds img,cap --image_text_folder /path/to/shardfolder --fp16 --deepspeed
+```
+
+You can stream the data from a http server or gloogle cloud storage like this:
+
+```python
+$ deepspeed train_dalle.py --image_text_folder "http://storage.googleapis.com/nvdata-openimages/openimages-train-{000000..000554}.tar" --wds jpg,json --taming --truncate_captions --random_resize_crop_lower_ratio=0.8 --attn_types=full --epochs=2 --fp16 --deepspeed
+```
+
+In order to convert your image-text-folder to WebDataset format, you can make use of one of several methods.
+(https://www.youtube.com/watch?v=v_PacO-3OGQ here are given 4 examples, or a little helper script which also supports splitting your dataset
+into shards of .tar.gz files https://github.com/robvanvolt/DALLE-datasets/blob/main/wds_create_shards.py)
 
 ### DALL-E with OpenAI's VAE
 

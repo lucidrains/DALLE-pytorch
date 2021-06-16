@@ -3,6 +3,7 @@ outputs/
 *.pt
 taming/
 wandb/
+dalle-ds-cp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -89,6 +90,9 @@ ipython_config.py
 
 # pyenv
 .python-version
+
+# Visual Studio Code
+.vscode
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.

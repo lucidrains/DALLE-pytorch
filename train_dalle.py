@@ -17,6 +17,13 @@ from dalle_pytorch import distributed_utils
 from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
+# libraries needed for webdataset support
+import webdataset as wds
+from torchvision import transforms as T
+from PIL import Image
+from io import BytesIO
+
+
 # argument parsing
 
 parser = argparse.ArgumentParser()
@@ -37,6 +44,13 @@ parser.add_argument('--vqgan_config_path', type=str, default = None,
 
 parser.add_argument('--image_text_folder', type=str, required=True,
                     help='path to your folder of images and text for learning the DALL-E')
+
+parser.add_argument(
+    '--wds', 
+    type = str, 
+    default='', 
+    help = 'Comma separated list of WebDataset (1) image and (2) text column names. Must contain 2 values, e.g. img,cap.'
+)
 
 parser.add_argument('--truncate_captions', dest='truncate_captions', action='store_true',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
@@ -92,13 +106,13 @@ model_group = parser.add_argument_group('Model settings')
 
 model_group.add_argument('--dim', default = 512, type = int, help = 'Model dimension')
 
-model_group.add_argument('--text_seq_len', default = 256, type = int, help = 'Text sequence length')
+model_group.add_argument('--text_seq_len', default = 128, type = int, help = 'Text sequence length')
 
 model_group.add_argument('--depth', default = 2, type = int, help = 'Model depth')
 
-model_group.add_argument('--heads', default = 8, type = int, help = 'Model number of heads')
+model_group.add_argument('--heads', default = 4, type = int, help = 'Model number of heads')
 
-model_group.add_argument('--dim_head', default = 64, type = int, help = 'Model head dimension')
+model_group.add_argument('--dim_head', default = 16, type = int, help = 'Model head dimension')
 
 train_group.add_argument('--ff_dropout', default = 0.0, type = float, help = 'Feed forward dropout.')
 
@@ -111,10 +125,6 @@ model_group.add_argument('--loss_img_weight', default = 7, type = int, help = 'I
 model_group.add_argument('--attn_types', default = 'full', type = str, help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
 
 args = parser.parse_args()
-
-# quit early if you used the wrong folder name
-
-assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
 
 # helpers
 
@@ -137,6 +147,8 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 # constants
+WEBDATASET_IMAGE_TEXT_COLUMNS = tuple(args.wds.split(','))
+ENABLE_WEBDATASET = True if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2 else False
 
 DALLE_OUTPUT_FILE_NAME = args.dalle_output_file_name + ".pt"
 
@@ -168,6 +180,27 @@ ATTN_DROPOUT = args.attn_dropout
 ATTN_TYPES = tuple(args.attn_types.split(','))
 
 DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
+
+if not ENABLE_WEBDATASET:
+    # quit early if you used the wrong folder name
+    assert Path(args.image_text_folder).exists(), f'The path {args.image_text_folder} was not found.'
+else:
+    # quit early if no tar files were found
+    if Path(args.image_text_folder).is_dir():
+        DATASET = [str(p) for p in Path(args.image_text_folder).glob("**/*") if ".tar" in str(p).lower()] # .name
+        assert len(DATASET) > 0, 'The directory ({}) does not contain any WebDataset/.tar files.'.format(args.image_text_folder)
+        print('Found {} WebDataset .tar(.gz) file(s) under given path {}!'.format(len(DATASET), args.image_text_folder))
+    elif ('http://' in args.image_text_folder.lower()) | ('https://' in args.image_text_folder.lower()):
+        DATASET = f"pipe:curl -L -s {args.image_text_folder} || true"
+        print('Found {} http(s) link under given path!'.format(len(DATASET), args.image_text_folder))
+    elif 'gs://' in args.image_text_folder.lower():
+        DATASET = f"pipe:gsutil cat {args.image_text_folder} || true"
+        print('Found {} GCS link under given path!'.format(len(DATASET), args.image_text_folder))
+    elif '.tar' in args.image_text_folder:
+        DATASET = args.image_text_folder
+        print('Found WebDataset .tar(.gz) file under given path {}!'.format(args.image_text_folder))
+    else:
+        raise Exception('No folder, no .tar(.gz) and no url pointing to tar files provided under {}.'.format(args.image_text_folder))
 
 # initialize distributed backend
 
@@ -283,19 +316,61 @@ def group_weight(model):
 
 is_shuffle = not distributed_utils.using_backend(distributed_utils.HorovodBackend)
 
-ds = TextImageDataset(
-    args.image_text_folder,
-    text_len=TEXT_SEQ_LEN,
-    image_size=IMAGE_SIZE,
-    resize_ratio=args.resize_ratio,
-    truncate_captions=args.truncate_captions,
-    tokenizer=tokenizer,
-    shuffle=is_shuffle,
-)
+imagepreproc = T.Compose([
+    T.Lambda(lambda img: img.convert('RGB')
+    if img.mode != 'RGB' else img),
+    T.RandomResizedCrop(IMAGE_SIZE,
+                        scale=(args.resize_ratio, 1.),
+                        ratio=(1., 1.)),
+    T.ToTensor(),
+])
+
+def imagetransform(b):
+    return Image.open(BytesIO(b))
+
+def tokenize(s):
+    return tokenizer.tokenize(
+        s.decode('utf-8'),
+        TEXT_SEQ_LEN,
+        truncate_text=args.truncate_captions).squeeze(0)
+
+if ENABLE_WEBDATASET:
+    DATASET_SIZE = int(1e9) # You need to set a nominal length for the Dataset in order to avoid warnings from DataLoader
+
+    myimg, mycap = WEBDATASET_IMAGE_TEXT_COLUMNS
+    image_text_mapping = {
+        myimg: imagetransform,
+        mycap: tokenize
+    }
+    image_mapping = {
+        myimg: imagepreproc
+    }
+
+    num_batches = DATASET_SIZE // BATCH_SIZE
+
+    ds = (
+        wds.WebDataset(DATASET, length=num_batches)
+        # .shuffle(is_shuffle) # Commented out for WebDataset as the behaviour cannot be predicted yet
+        .map_dict(**image_text_mapping)     
+        .map_dict(**image_mapping)
+        .to_tuple(mycap, myimg)
+        .batched(BATCH_SIZE, partial=False) # It is good to avoid partial batches when using Distributed training
+    )
+else:
+    ds = TextImageDataset(
+        args.image_text_folder,
+        text_len=TEXT_SEQ_LEN,
+        image_size=IMAGE_SIZE,
+        resize_ratio=args.resize_ratio,
+        truncate_captions=args.truncate_captions,
+        tokenizer=tokenizer,
+        shuffle=is_shuffle,
+    )
 
 assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
-    print(f'{len(ds)} image-text pairs found for training')
+    if not ENABLE_WEBDATASET:
+        print(f'{len(ds)} image-text pairs found for training')
 
 if not is_shuffle:
     data_sampler = torch.utils.data.distributed.DistributedSampler(
@@ -306,10 +381,18 @@ if not is_shuffle:
 else:
     data_sampler = None
 
-dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
+if ENABLE_WEBDATASET:
+    # WebLoader for WebDataset and DeepSpeed compatibility
+    dl = wds.WebLoader(ds, batch_size=None, shuffle=False) # optionally add num_workers=2 (n) argument
+    number_of_batches = DATASET_SIZE // (BATCH_SIZE * distr_backend.get_world_size())
+    dl = dl.repeat(2).slice(number_of_batches)
+    dl.length = number_of_batches
+else:
+    # Regular DataLoader for image-text-folder datasets
+    dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
+
 
 # initialize DALL-E
-
 
 dalle = DALLE(vae=vae, **dalle_params)
 if not using_deepspeed:
@@ -454,13 +537,13 @@ def save_model(path, epoch=0):
 
 # training
 
-# Saves a checkpoint before training begins to fail early when mis-configured. 
+# Saves a checkpoint before training begins to fail early when mis-configured.
 # See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=resume_epoch)
 for epoch in range(resume_epoch, EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
-    for i, (text, images) in enumerate(distr_dl):
+    for i, (text, images) in enumerate((dl if ENABLE_WEBDATASET else distr_dl)):
         if i % 10 == 0 and distr_backend.is_root_worker():
             t = time.time()
         if args.fp16:
