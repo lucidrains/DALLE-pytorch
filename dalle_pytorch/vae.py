@@ -96,14 +96,14 @@ def download(url, filename = None, root = CACHE_PATH):
 # pretrained Discrete VAE from OpenAI
 
 class OpenAIDiscreteVAE(nn.Module):
-    def __init__(self):
+    def __init__(self, image_size=256):
         super().__init__()
 
         self.enc = load_model(download(OPENAI_VAE_ENCODER_PATH))
         self.dec = load_model(download(OPENAI_VAE_DECODER_PATH))
 
         self.num_layers = 3
-        self.image_size = 256
+        self.image_size = image_size
         self.num_tokens = 8192
 
     @torch.no_grad()
@@ -142,7 +142,7 @@ def instantiate_from_config(config):
     return get_obj_from_str(config["target"])(**config.get("params", dict()))
 
 class VQGanVAE(nn.Module):
-    def __init__(self, vqgan_model_path=None, vqgan_config_path=None):
+    def __init__(self, image_size=256, vqgan_model_path=None, vqgan_config_path=None):
         super().__init__()
 
         if vqgan_model_path is None:
@@ -170,7 +170,7 @@ class VQGanVAE(nn.Module):
         # f as used in https://github.com/CompVis/taming-transformers#overview-of-pretrained-models
         f = config.model.params.ddconfig.resolution / config.model.params.ddconfig.attn_resolutions[0]
         self.num_layers = int(log(f)/log(2))
-        self.image_size = 256
+        self.image_size = image_size
         self.num_tokens = config.model.params.n_embed
         self.is_gumbel = isinstance(self.model, GumbelVQ)
 
