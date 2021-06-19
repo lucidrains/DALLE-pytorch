@@ -1,10 +1,9 @@
 import io
 import sys
-import os, sys
+import os
 import requests
 import PIL
 import warnings
-import os
 import hashlib
 import urllib
 import yaml
