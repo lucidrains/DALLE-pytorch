@@ -129,7 +129,7 @@ class OpenAIDiscreteVAE(nn.Module):
 # https://arxiv.org/abs/2012.09841
 
 class VQGanVAE(nn.Module):
-    def __init__(self, vqgan_model_path, vqgan_config_path):
+    def __init__(self, vqgan_model_path=None, vqgan_config_path=None):
         super().__init__()
 
         if vqgan_model_path is None:
