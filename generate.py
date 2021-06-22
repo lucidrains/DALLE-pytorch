@@ -110,7 +110,9 @@ for text in tqdm(texts):
         output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
         outputs.append(output)
 
-    outputs = torch.cat(outputs)
+    #outputs = torch.cat(outputs)
+    print(outputs)
+    break
 
     # save all images
 

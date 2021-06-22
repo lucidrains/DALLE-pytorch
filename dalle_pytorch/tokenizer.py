@@ -130,7 +130,7 @@ class SimpleTokenizer(object):
 
         if remove_start_end:
             tokens = [token for token in tokens if token not in (49406, 40407, 0)]
-        text = ''.join([self.decoder[token] for token in tokens])
+        text = ''.join([self.decoder[token] for token in tokens if token in self.decoder])
         text = bytearray([self.byte_decoder[c] for c in text]).decode('utf-8', errors="replace").replace('</w>', ' ')
         return text
 
