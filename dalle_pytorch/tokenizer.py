@@ -124,13 +124,13 @@ class SimpleTokenizer(object):
             bpe_tokens.extend(self.encoder[bpe_token] for bpe_token in self.bpe(token).split(' '))
         return bpe_tokens
 
-    def decode(self, tokens, remove_start_end = True):
+    def decode(self, tokens, remove_start_end = True, ignore_pad_tokens = []):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
         if remove_start_end:
             tokens = [token for token in tokens if token not in (49406, 40407, 0)]
-        text = ''.join([self.decoder[token] for token in tokens if token in self.decoder])
+        text = ''.join([self.decoder[token] for token in tokens if token not in ignore_pad_tokens])
         text = bytearray([self.byte_decoder[c] for c in text]).decode('utf-8', errors="replace").replace('</w>', ' ')
         return text
 

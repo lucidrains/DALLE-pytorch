@@ -435,20 +435,25 @@ class DALLE(nn.Module):
             sample = torch.multinomial(probs, 1)
 
             #sample -= (num_text_tokens if is_image else 0) # offset sampled token if it is an image token, since logit space is composed of text and then image tokens
+ 
             out = torch.cat((out, sample), dim=-1)
 
             #if out.shape[1] <= text_seq_len:
             #    mask = F.pad(mask, (0, 1), value = True)
 
         text_seq = out[:, :50]
-
+        print("NUMBER OF TEXT TOKENS: {}".format(num_text_tokens))
+        print("OTHER")
+        print(len(tokenizer.tokenizer.decoder.keys()))
+        print(list(tokenizer.tokenizer.decoder.keys()))
 
         #img_seq = out[:, -image_seq_len:]
         #images = vae.decode(img_seq)
 
         print(text_seq)
+        padding_tokens = list(torch.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
 
-        texts = tokenizer.tokenizer.decode(text_seq[0])
+        texts = tokenizer.tokenizer.decode(text_seq[0], ignore_pad_tokens=padding_tokens)
 
         if exists(clip):
             scores = clip(text_seq, images, return_loss = False)
@@ -533,3 +538,50 @@ class DALLE(nn.Module):
 
         loss = (loss_text + self.loss_img_weight * loss_img) / (self.loss_img_weight + 1)
         return loss
+    
+    
+    
+    @torch.no_grad()
+    @eval_decorator
+    def generate_text(
+        self,
+        *,
+        filter_thres = 0.5,
+        temperature = 1.,
+    ):
+        vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
+        total_len = text_seq_len + image_seq_len
+
+        text = torch.tensor([[0]]).cuda()
+
+        for cur_len in range(text_seq_len - 1):
+            device, total_seq_len = text.device, self.total_seq_len
+
+            tokens = self.text_emb(text)
+            tokens += self.text_pos_emb(torch.arange(text.shape[1], device = device))
+
+            seq_len = tokens.shape[1]
+
+            out = self.transformer(tokens)
+
+            if self.stable:
+                out = self.norm_by_max(out)
+
+            logits = self.to_logits(out)
+
+            # mask logits to make sure text predicts text (except last token), and image predicts image
+
+            logits_mask = self.logits_mask[:, :seq_len]
+            max_neg_value = -torch.finfo(logits.dtype).max
+            logits.masked_fill_(logits_mask, max_neg_value)[:, -1, :]
+
+            filtered_logits = top_k(logits, thres = filter_thres)
+            probs = F.softmax(filtered_logits / temperature, dim = -1)
+            sample = torch.multinomial(probs, 1)
+ 
+            text = torch.cat((text, sample), dim=-1)
+
+        
+        padding_tokens = list(torch.arange(self.text_seq_len, device = device) + (self.num_text_tokens - self.text_seq_len))
+        texts = tokenizer.tokenizer.decode(text[0], ignore_pad_tokens=padding_tokens)
+        return texts
