@@ -11,7 +11,7 @@ from pathlib import Path
 from tqdm import tqdm
 from math import sqrt, log
 from omegaconf import OmegaConf
-from taming.models.vqgan import VQModel, GumbelVQ
+import taming.models.vqgan
 
 import torch
 from torch import nn
@@ -31,8 +31,8 @@ OPENAI_VAE_DECODER_PATH = 'https://cdn.openai.com/dall-e/decoder.pkl'
 VQGAN_VAE_PATH = 'https://heibox.uni-heidelberg.de/f/140747ba53464f49b476/?dl=1'
 VQGAN_VAE_CONFIG_PATH = 'https://heibox.uni-heidelberg.de/f/6ecf2af6c658432c8298/?dl=1'
 
-GUMBEL_VQGAN_VAE_PATH = 'https://heibox.uni-heidelberg.de/d/2e5662443a6b4307b470/files/?p=%2Fckpts%2Flast.ckpt&dl=1'
-GUMBEL_VQGAN_VAE_CONFIG_PATH = 'https://heibox.uni-heidelberg.de/f/6ecf2af6c658432c8298/?dl=1'
+GUMBEL_VQGAN_VAE_PATH = 'https://heibox.uni-heidelberg.de/f/34a747d5765840b5a99d/?dl=1'
+GUMBEL_VQGAN_VAE_CONFIG_PATH = 'https://heibox.uni-heidelberg.de/f/b24d14998a8d4f19a34f/?dl=1'
 
 # helpers methods
 
@@ -154,9 +154,9 @@ class VQGanVAE(nn.Module):
 
         config = OmegaConf.load(config_path)
         if is_gumbel:
-            model = GumbelVQ(**config.model.params)
+            model = taming.models.vqgan.GumbelVQ(**config.model.params)
         else:
-            model = VQModel(**config.model.params)
+            model = taming.models.vqgan.VQModel(**config.model.params)
 
         state = torch.load(model_path, map_location = 'cpu')['state_dict']
         model.load_state_dict(state, strict = False)
