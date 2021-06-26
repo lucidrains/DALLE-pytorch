@@ -170,6 +170,7 @@ class VQGanVAE(nn.Module):
         self.num_layers = int(log(f)/log(2))
         self.image_size = 256
         self.num_tokens = config.model.params.n_embed
+        self.is_gumbel = is_gumbel
 
         self._register_external_parameters()
 
@@ -190,7 +191,9 @@ class VQGanVAE(nn.Module):
     def get_codebook_indices(self, img):
         b = img.shape[0]
         img = (2 * img) - 1
-        _, _, [_, _, indices] = self.model.encode(img)
+        z, _, [_, _, indices] = self.model.encode(img)
+        if self.is_gumbel:
+            return rearrange(indices, 'b h w -> b (h w)', b=b)
         return rearrange(indices, '(b n) () -> b n', b = b)
 
     def decode(self, img_seq):
