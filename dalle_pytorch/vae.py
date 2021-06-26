@@ -134,10 +134,16 @@ class OpenAIDiscreteVAE(nn.Module):
 class VQGanVAE(nn.Module):
     def __init__(self, vqgan_model_path=None, vqgan_config_path=None, is_gumbel=False):
         super().__init__()
-
-        if vqgan_model_path is None:
+        if vqgan_model_path is None and not is_gumbel:
             model_filename = 'vqgan.1024.model.ckpt'
             config_filename = 'vqgan.1024.config.yml'
+            download(VQGAN_VAE_CONFIG_PATH, config_filename)
+            download(VQGAN_VAE_PATH, model_filename)
+            config_path = str(Path(CACHE_PATH) / config_filename)
+            model_path = str(Path(CACHE_PATH) / model_filename)
+        elif is_gumbel:
+            model_filename = 'vqgan_8192_gumbel_f8_model.ckpt'
+            config_filename = 'vqgan_8192_gumbel_f8_model.yaml'
             download(VQGAN_VAE_CONFIG_PATH, config_filename)
             download(VQGAN_VAE_PATH, model_filename)
             config_path = str(Path(CACHE_PATH) / config_filename)
