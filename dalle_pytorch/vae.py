@@ -144,8 +144,8 @@ class VQGanVAE(nn.Module):
         elif is_gumbel:
             model_filename = 'vqgan_8192_gumbel_f8_model.ckpt'
             config_filename = 'vqgan_8192_gumbel_f8_model.yaml'
-            download(VQGAN_VAE_CONFIG_PATH, config_filename)
-            download(VQGAN_VAE_PATH, model_filename)
+            download(GUMBEL_VQGAN_VAE_CONFIG_PATH, config_filename)
+            download(GUMBEL_VQGAN_VAE_PATH, model_filename)
             config_path = str(Path(CACHE_PATH) / config_filename)
             model_path = str(Path(CACHE_PATH) / model_filename)
         else:
