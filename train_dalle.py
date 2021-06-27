@@ -80,6 +80,9 @@ parser.add_argument('--amp', action='store_true',
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
 
+parser.add_argument('--wandb_entity', default=None,
+                    help='(optional) Name of W&B team/entity to log to.')
+
 parser.add_argument('--stable_softmax', dest='stable_softmax', action='store_true',
                     help='Prevent values from becoming too large during softmax. Helps with stability in fp16 and Mixture of Quantization training.')
 
@@ -439,7 +442,8 @@ if distr_backend.is_root_worker():
     )
 
     run = wandb.init(
-        project=args.wandb_name,  # 'dalle_train_transformer' by default
+        project=args.wandb_name,
+        entity=args.wandb_entity,
         resume=False,
         config=model_config,
     )
