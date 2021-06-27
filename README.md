@@ -1,7 +1,7 @@
 # dalle-pytorch
 
 
-[![Join us on Discord](https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/dall-e")
+[![Join us on Discord](https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/dall-e)
 [![(new) Train Faster with DeepSpeed!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb) (new) Train Faster with DeepSpeed!
 
 Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch. 
