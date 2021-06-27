@@ -1,8 +1,14 @@
-# dalle-pytorch
-
+# DALL-E in Pytorch
 
 [![Join us on Discord](https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/dall-e)
 [![(new) Train Faster with DeepSpeed!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb) (new) Train Faster with DeepSpeed!
+
+** current best, trained by <a href="https://github.com/kobiso">Kobiso</a> **
+
+<img src="./images/birds.png" width="512"></img>
+<br />
+
+
 
 Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch. 
 
@@ -10,12 +16,6 @@ It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for rankin
 
 
 [Quick Start](https://github.com/lucidrains/DALLE-pytorch/wiki)
-
-
-** current best, trained by <a href="https://github.com/kobiso">Kobiso</a> **
-
-<img src="./images/birds.png" width="512"></img>
-<br />
 
 <a href="https://github.com/sdtblck">Sid</a>, <a href="http://github.com/kingoflolz">Ben</a>, and <a href="https://github.com/AranKomat">Aran</a> over at <a href="https://www.eleuther.ai/">Eleuther AI</a> are working on <a href="https://github.com/EleutherAI/DALLE-mtf">DALL-E for Mesh Tensorflow</a>! Please lend them a hand if you would like to see DALL-E trained on TPUs.
 
