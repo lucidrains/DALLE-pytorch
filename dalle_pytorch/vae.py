@@ -197,13 +197,10 @@ class VQGanVAE(nn.Module):
         return rearrange(indices, '(b n) () -> b n', b = b)
 
     def decode(self, img_seq):
-        if self.is_gumbel:
-            z, _, [_, _, _] = self.model.encode(img_seq)
-            x_rec = self.model.decode(z)
-            return x_rec
         b, n = img_seq.shape
         one_hot_indices = F.one_hot(img_seq, num_classes = self.num_tokens).float()
-        z = (one_hot_indices @ self.model.quantize.embedding.weight)
+        z = one_hot_indices @ self.model.quantize.embed.weight if self.is_gumbel \
+            else (one_hot_indices @ self.model.quantize.embedding.weight)
         z = rearrange(z, 'b (h w) c -> b c h w', h = int(sqrt(n)))
         img = self.model.decode(z)
 
