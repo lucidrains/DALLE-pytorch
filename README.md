@@ -1,28 +1,18 @@
 # DALL-E in Pytorch
-
-[![Join us on Discord](https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/dall-e)
-[![(new) Train Faster with DeepSpeed!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb) (new) Train Faster with DeepSpeed!
-
-** current best, trained by <a href="https://github.com/kobiso">Kobiso</a> **
-
-<img src="./images/birds.png" width="512"></img>
-<br />
-
-
-
-Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch. 
-
-It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
+<p>
+  <a href="https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb">
+         <img alt="Train DALL-E w/ DeepSpeed" src="https://colab.research.google.com/assets/colab-badge.svg">
+  </a>
+  <a href="https://discord.gg/dall-e"><img alt="Join us on Discord" src="https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white"></a></br>
+  <b><a href="https://github.com/robvanvolt/DALLE-models">Released Models</a><b></br>
+  <a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
+<p>
+Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch.  It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
 
 
 [Quick Start](https://github.com/lucidrains/DALLE-pytorch/wiki)
 
-<a href="https://github.com/sdtblck">Sid</a>, <a href="http://github.com/kingoflolz">Ben</a>, and <a href="https://github.com/AranKomat">Aran</a> over at <a href="https://www.eleuther.ai/">Eleuther AI</a> are working on <a href="https://github.com/EleutherAI/DALLE-mtf">DALL-E for Mesh Tensorflow</a>! Please lend them a hand if you would like to see DALL-E trained on TPUs.
-
-<a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
-
-Before we replicate this, we can settle for <a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a>
-
+<a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a> are great alternatives!
 
 ## Status
 
@@ -31,6 +21,10 @@ Before we replicate this, we can settle for <a href="https://github.com/lucidrai
 <img src="./images/landscape.png"></img>
 
 - <a href="https://github.com/kobiso">Kobiso</a>, a research engineer from Naver, has trained on the CUB200 dataset <a href="https://github.com/lucidrains/DALLE-pytorch/discussions/131">here</a>, using full and deepspeed sparse attention
+
+<img src="./images/birds.png" width="420"></img>
+
+
 - <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a 32 layer reversible DALL-E <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
 - <a href="https://github.com/robvanvolt">robvanvolt</a> has started a <a href="https://discord.gg/UhR4kKCSp6">Discord channel</a> for replication efforts
 
