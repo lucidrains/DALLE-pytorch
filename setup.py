@@ -24,7 +24,7 @@ setup(
     'g-mlp-pytorch',
     'pillow',
     'regex',
-    'taming-transformers',
+    'taming-transformers-rom1504',
     'tokenizers',
     'torch>=1.6',
     'torchvision',
