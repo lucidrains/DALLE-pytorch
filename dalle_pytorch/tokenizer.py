@@ -164,11 +164,11 @@ class HugTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.get_vocab_size()
 
-    def decode(self, tokens):
+    def decode(self, tokens, ignore_pad_tokens = []):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
-
-        tokens = [token for token in tokens if token not in (0,)]
+        ignore_ids = [0] + pad_tokens
+        tokens = [token for token in tokens if token not in ignore_ids]
         return self.tokenizer.decode(tokens, skip_special_tokens = True)
 
     def encode(self, text):
@@ -199,11 +199,12 @@ class ChineseTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.vocab_size
 
-    def decode(self, tokens):
+    def decode(self, tokens, pad_tokens = []):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
-
-        tokens = [token for token in tokens if token not in (0,)]
+            
+        ignore_ids = [0] + pad_tokens
+        tokens = [token for token in tokens if token not in ignore_ids]
         return self.tokenizer.decode(tokens)
 
     def encode(self, text):
@@ -237,11 +238,11 @@ class YttmTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.vocab_size()
 
-    def decode(self, tokens):
+    def decode(self, tokens, pad_tokens = []):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
-        return self.tokenizer.decode(tokens, ignore_ids = [0])
+        return self.tokenizer.decode(tokens, ignore_ids = [0] + pad_tokens)
 
     def encode(self, texts):
         encoded = self.tokenizer.encode(texts, output_type = yttm.OutputType.ID)
