@@ -12,6 +12,8 @@ from tqdm import tqdm
 from math import sqrt, log
 from omegaconf import OmegaConf
 import taming.models.vqgan
+from taming.models.vqgan import VQModel, GumbelVQ
+import importlib
 
 import torch
 from torch import nn
@@ -131,6 +133,18 @@ class OpenAIDiscreteVAE(nn.Module):
 # VQGAN from Taming Transformers paper
 # https://arxiv.org/abs/2012.09841
 
+def get_obj_from_str(string, reload=False):
+    module, cls = string.rsplit(".", 1)
+    if reload:
+        module_imp = importlib.import_module(module)
+        importlib.reload(module_imp)
+    return getattr(importlib.import_module(module, package=None), cls)
+
+def instantiate_from_config(config):
+    if not "target" in config:
+        raise KeyError("Expected key `target` to instantiate.")
+    return get_obj_from_str(config["target"])(**config.get("params", dict()))
+
 class VQGanVAE(nn.Module):
     def __init__(self, vqgan_model_path=None, vqgan_config_path=None, is_gumbel=False):
         super().__init__()
@@ -153,10 +167,9 @@ class VQGanVAE(nn.Module):
             config_path = vqgan_config_path
 
         config = OmegaConf.load(config_path)
-        if is_gumbel:
-            model = taming.models.vqgan.GumbelVQ(**config.model.params)
-        else:
-            model = taming.models.vqgan.VQModel(**config.model.params)
+
+
+        model = instantiate_from_config(config["model"])
 
         state = torch.load(model_path, map_location = 'cpu')['state_dict']
         model.load_state_dict(state, strict = False)
@@ -170,7 +183,8 @@ class VQGanVAE(nn.Module):
         self.num_layers = int(log(f)/log(2))
         self.image_size = 256
         self.num_tokens = config.model.params.n_embed
-        self.is_gumbel = is_gumbel
+
+        self.is_gumbel = isinstance(self.model, GumbelVQ)
 
         self._register_external_parameters()
 
@@ -185,13 +199,14 @@ class VQGanVAE(nn.Module):
 
         deepspeed = distributed_utils.backend.backend_module
         deepspeed.zero.register_external_parameter(
-            self, self.model.quantize.embedding.weight)
+            self, self.model.quantize.embed.weight if self.is_gumbel else self.model.quantize.embedding.weight)
 
     @torch.no_grad()
     def get_codebook_indices(self, img):
         b = img.shape[0]
         img = (2 * img) - 1
-        z, _, [_, _, indices] = self.model.encode(img)
+
+        _, _, [_, _, indices] = self.model.encode(img)
         if self.is_gumbel:
             return rearrange(indices, 'b h w -> b (h w)', b=b)
         return rearrange(indices, '(b n) () -> b n', b = b)
@@ -201,6 +216,7 @@ class VQGanVAE(nn.Module):
         one_hot_indices = F.one_hot(img_seq, num_classes = self.num_tokens).float()
         z = one_hot_indices @ self.model.quantize.embed.weight if self.is_gumbel \
             else (one_hot_indices @ self.model.quantize.embedding.weight)
+
         z = rearrange(z, 'b (h w) c -> b c h w', h = int(sqrt(n)))
         img = self.model.decode(z)
 
