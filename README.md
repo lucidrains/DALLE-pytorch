@@ -1,39 +1,58 @@
-<img src="./images/birds.png" width="500px"></img>
+# DALL-E in Pytorch
 
-** current best, trained by <a href="https://github.com/kobiso">Kobiso</a> **
+<p align='center'>
+  <a href="https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb">
+         <img alt="Train DALL-E w/ DeepSpeed" src="https://colab.research.google.com/assets/colab-badge.svg">
+  </a>
+  <a href="https://discord.gg/dall-e"><img alt="Join us on Discord" src="https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white"></a></br>
+  <a href="https://github.com/robvanvolt/DALLE-models">Released DALLE Models</a></br>
+  <a href="https://github.com/rom1504/dalle-service">Web-Hostable DALLE Checkpoints</a></br>
 
-## DALL-E in Pytorch
+  <a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
+<p>
+Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch.  It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
 
-Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E</a> (<a href="https://arxiv.org/abs/2102.12092">paper</a>), OpenAI's Text to Image Transformer, in Pytorch. It will also contain <a href="https://openai.com/blog/clip/">CLIP</a> for ranking the generations.
+---
 
-<a href="https://github.com/sdtblck">Sid</a>, <a href="http://github.com/kingoflolz">Ben</a>, and <a href="https://github.com/AranKomat">Aran</a> over at <a href="https://www.eleuther.ai/">Eleuther AI</a> are working on <a href="https://github.com/EleutherAI/DALLE-mtf">DALL-E for Mesh Tensorflow</a>! Please lend them a hand if you would like to see DALL-E trained on TPUs.
 
-<a href="https://www.youtube.com/watch?v=j4xgkjWlfL4">Yannic Kilcher's video</a>
 
-Before we replicate this, we can settle for <a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a>
+[Quick Start](https://github.com/lucidrains/DALLE-pytorch/wiki)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dWvA54k4fH8zAmiix3VXbg95uEIMfqQM?usp=sharing) Train in Colab
+<a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a> are great alternatives!
 
 ## Status
+<p align='center'>
 
 - <a href="https://github.com/htoyryla">Hannu</a> has managed to train a small 6 layer DALL-E on a dataset of just 2000 landscape images! (2048 visual tokens)
 
 <img src="./images/landscape.png"></img>
 
 - <a href="https://github.com/kobiso">Kobiso</a>, a research engineer from Naver, has trained on the CUB200 dataset <a href="https://github.com/lucidrains/DALLE-pytorch/discussions/131">here</a>, using full and deepspeed sparse attention
-- <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a 32 layer reversible DALL-E <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
-- <a href="https://github.com/robvanvolt">robvanvolt</a> has started a <a href="https://discord.gg/UhR4kKCSp6">Discord channel</a> for replication efforts
+
+<img src="./images/birds.png" width="256"></img>
+
+- (3/15/21) <a href="https://github.com/afiaka87">afiaka87</a> has managed one epoch using a reversible DALL-E and the dVaE <a href="https://github.com/lucidrains/DALLE-pytorch/issues/86#issue-832121328">here</a>
 
 - <a href="https://github.com/robvanvolt">TheodoreGalanos</a> has trained on 150k layouts with the following results
-
-<img src="./images/layouts-1.jpg" width="400px"></img>
-
-<img src="./images/layouts-2.jpg" width="400px"></img>
-
+<p>
+  <img src="./images/layouts-1.jpg" width="256"></img>
+  <img src="./images/layouts-2.jpg" width="256"></img>
+</p>
 - <a href="https://github.com/rom1504">Rom1504</a> has trained on 50k fashion images with captions with a really small DALL-E (2 layers) for just 24 hours with the following results
+<p/>
+<img src="./images/clothing.png" width="420"></img>
 
-<img src="./images/clothing.png" width="500px"></img>
+- <a href="https://github.com/afiaka87">afiaka87</a> trained for 6 epochs on the same dataset as before thanks to the efficient 16k VQGAN with the following <a href="https://github.com/lucidrains/DALLE-pytorch/discussions/322>discussion">results</a>
 
+<p align='centered'>
+  <img src="https://user-images.githubusercontent.com/3994972/123564891-b6f18780-d780-11eb-9019-8a1b6178f861.png" width="420" alt-text='a photo of westwood park, san francisco, from the water in the afternoon'></img>
+  <img src="https://user-images.githubusercontent.com/3994972/123564776-4c404c00-d780-11eb-9c8e-3356df358df3.png" width="420" alt-text='a female mannequin dressed in an olive button-down shirt and gold palazzo pants'> </img>
+</p>
+  
+Thanks to the amazing "mega b#6696" you can generate from this checkpoint in colab - 
+<a href="https://colab.research.google.com/drive/11V2xw1eLPfZvzW8UQyTUhqCEU71w6Pr4?usp=sharing">
+  <img alt="Run inference on the Afiaka checkpoint in Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
 ## Install
 
 ```bash

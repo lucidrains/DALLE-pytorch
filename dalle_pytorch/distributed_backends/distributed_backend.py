@@ -59,7 +59,7 @@ class DistributedBackend:
             (f"batch size can't be smaller than number of processes "
              f'({batch_size} < {self.get_world_size()})')
 
-    def wrap_arg_parser(parser):
+    def wrap_arg_parser(self, parser):
         """Add arguments to support optional distributed backend usage."""
         raise NotImplementedError
 
