@@ -11,7 +11,6 @@ from pathlib import Path
 from tqdm import tqdm
 from math import sqrt, log
 from omegaconf import OmegaConf
-import taming.models.vqgan
 from taming.models.vqgan import VQModel, GumbelVQ
 import importlib
 
@@ -32,9 +31,6 @@ OPENAI_VAE_DECODER_PATH = 'https://cdn.openai.com/dall-e/decoder.pkl'
 
 VQGAN_VAE_PATH = 'https://heibox.uni-heidelberg.de/f/140747ba53464f49b476/?dl=1'
 VQGAN_VAE_CONFIG_PATH = 'https://heibox.uni-heidelberg.de/f/6ecf2af6c658432c8298/?dl=1'
-
-GUMBEL_VQGAN_VAE_PATH = 'https://heibox.uni-heidelberg.de/f/34a747d5765840b5a99d/?dl=1'
-GUMBEL_VQGAN_VAE_CONFIG_PATH = 'https://heibox.uni-heidelberg.de/f/b24d14998a8d4f19a34f/?dl=1'
 
 # helpers methods
 
@@ -146,20 +142,14 @@ def instantiate_from_config(config):
     return get_obj_from_str(config["target"])(**config.get("params", dict()))
 
 class VQGanVAE(nn.Module):
-    def __init__(self, vqgan_model_path=None, vqgan_config_path=None, is_gumbel=False):
+    def __init__(self, vqgan_model_path=None, vqgan_config_path=None):
         super().__init__()
-        if vqgan_model_path is None and not is_gumbel:
+
+        if vqgan_model_path is None:
             model_filename = 'vqgan.1024.model.ckpt'
             config_filename = 'vqgan.1024.config.yml'
             download(VQGAN_VAE_CONFIG_PATH, config_filename)
             download(VQGAN_VAE_PATH, model_filename)
-            config_path = str(Path(CACHE_PATH) / config_filename)
-            model_path = str(Path(CACHE_PATH) / model_filename)
-        elif is_gumbel:
-            model_filename = 'vqgan_8192_gumbel_f8_model.ckpt'
-            config_filename = 'vqgan_8192_gumbel_f8_model.yaml'
-            download(GUMBEL_VQGAN_VAE_CONFIG_PATH, config_filename)
-            download(GUMBEL_VQGAN_VAE_PATH, model_filename)
             config_path = str(Path(CACHE_PATH) / config_filename)
             model_path = str(Path(CACHE_PATH) / model_filename)
         else:
@@ -167,7 +157,6 @@ class VQGanVAE(nn.Module):
             config_path = vqgan_config_path
 
         config = OmegaConf.load(config_path)
-
 
         model = instantiate_from_config(config["model"])
 
@@ -183,7 +172,6 @@ class VQGanVAE(nn.Module):
         self.num_layers = int(log(f)/log(2))
         self.image_size = 256
         self.num_tokens = config.model.params.n_embed
-
         self.is_gumbel = isinstance(self.model, GumbelVQ)
 
         self._register_external_parameters()
@@ -205,7 +193,6 @@ class VQGanVAE(nn.Module):
     def get_codebook_indices(self, img):
         b = img.shape[0]
         img = (2 * img) - 1
-
         _, _, [_, _, indices] = self.model.encode(img)
         if self.is_gumbel:
             return rearrange(indices, 'b h w -> b (h w)', b=b)
