@@ -196,7 +196,7 @@ class VQGanVAE(nn.Module):
         _, _, [_, _, indices] = self.model.encode(img)
         if self.is_gumbel:
             return rearrange(indices, 'b h w -> b (h w)', b=b)
-        return rearrange(indices, '(b n) () -> b n', b = b)
+        return rearrange(indices, '(b n) -> b n', b = b)
 
     def decode(self, img_seq):
         b, n = img_seq.shape
