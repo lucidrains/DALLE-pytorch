@@ -124,13 +124,13 @@ class SimpleTokenizer(object):
             bpe_tokens.extend(self.encoder[bpe_token] for bpe_token in self.bpe(token).split(' '))
         return bpe_tokens
 
-    def decode(self, tokens, remove_start_end = True, ignore_pad_tokens = []):
+    def decode(self, tokens, remove_start_end = True, pad_tokens = {}):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
         if remove_start_end:
             tokens = [token for token in tokens if token not in (49406, 40407, 0)]
-        text = ''.join([self.decoder[token] for token in tokens if token not in ignore_pad_tokens])
+        text = ''.join([self.decoder[token] for token in tokens if token not in pad_tokens])
         text = bytearray([self.byte_decoder[c] for c in text]).decode('utf-8', errors="replace").replace('</w>', ' ')
         return text
 
@@ -164,10 +164,10 @@ class HugTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.get_vocab_size()
 
-    def decode(self, tokens, ignore_pad_tokens = []):
+    def decode(self, tokens, pad_tokens = {}):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
-        ignore_ids = [0] + pad_tokens
+        ignore_ids = pad_tokens.union({0})
         tokens = [token for token in tokens if token not in ignore_ids]
         return self.tokenizer.decode(tokens, skip_special_tokens = True)
 
@@ -199,11 +199,11 @@ class ChineseTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.vocab_size
 
-    def decode(self, tokens, pad_tokens = []):
+    def decode(self, tokens, pad_tokens = {}):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
             
-        ignore_ids = [0] + pad_tokens
+        ignore_ids = pad_tokens.union({0})
         tokens = [token for token in tokens if token not in ignore_ids]
         return self.tokenizer.decode(tokens)
 
@@ -238,11 +238,11 @@ class YttmTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.vocab_size()
 
-    def decode(self, tokens, pad_tokens = []):
+    def decode(self, tokens, pad_tokens = {}):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
-        return self.tokenizer.decode(tokens, ignore_ids = [0] + pad_tokens)
+        return self.tokenizer.decode(tokens, ignore_ids = pad_tokens.union({0}))
 
     def encode(self, texts):
         encoded = self.tokenizer.encode(texts, output_type = yttm.OutputType.ID)

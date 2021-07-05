@@ -2,6 +2,7 @@ from math import log2, sqrt
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
+import numpy as np
 
 from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
@@ -535,6 +536,7 @@ class DALLE(nn.Module):
     @eval_decorator
     def generate_text(
         self,
+        text=None,
         *,
         filter_thres = 0.5,
         temperature = 1.,
@@ -542,10 +544,11 @@ class DALLE(nn.Module):
     ):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
+        
+        if text is None:
+            text = torch.tensor([[0]]).cuda()
 
-        text = torch.tensor([[0]]).cuda()
-
-        for cur_len in range(text_seq_len - 1):
+        for cur_len in range(text.shape[1], text_seq_len):
             device, total_seq_len = text.device, self.total_seq_len
 
             tokens = self.text_emb(text)
@@ -573,6 +576,6 @@ class DALLE(nn.Module):
  
             text = torch.cat((text, sample), dim=-1)
     
-        padding_tokens = list(torch.arange(self.text_seq_len, device = device) + (self.num_text_tokens - self.text_seq_len))
-        texts_decoded = tokenizer.tokenizer.decode(text[0], ignore_pad_tokens=padding_tokens)
+        padding_tokens = set(np.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
+        texts_decoded = tokenizer.tokenizer.decode(text[0], pad_tokens=padding_tokens)
         return text, texts_decoded
