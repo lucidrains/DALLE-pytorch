@@ -101,12 +101,10 @@ image_size = vae.image_size
 
 texts = args.text.split('|')
 
-if args.gentxt:
-    texts, gen_text_decoded = dalle.generate_text(filter_thres = args.top_k)
-
 for j, text in tqdm(enumerate(texts)):
     if args.gentxt:
-        text_tokens = text.unsqueeze(0)
+        text_tokens, gen_texts = dalle.generate_texts(text=text, filter_thres = args.top_k)
+        text = gen_texts[0]
     else:
         text_tokens = tokenizer.tokenize([text], dalle.text_seq_len).cuda()
 
@@ -121,7 +119,7 @@ for j, text in tqdm(enumerate(texts)):
     outputs = torch.cat(outputs)
 
     # save all images
-    file_name = gen_text_decoded if args.gentxt else text 
+    file_name = text 
     outputs_dir = Path(args.outputs_dir) / file_name.replace(' ', '_')[:(100)]
     outputs_dir.mkdir(parents = True, exist_ok = True)
 
