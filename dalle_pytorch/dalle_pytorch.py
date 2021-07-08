@@ -2,11 +2,12 @@ from math import log2, sqrt
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
+import numpy as np
 
 from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
 
-from dalle_pytorch import distributed_utils
+from dalle_pytorch import distributed_utils, tokenizer
 from dalle_pytorch.vae import OpenAIDiscreteVAE, VQGanVAE
 from dalle_pytorch.transformer import Transformer, DivideMax
 
@@ -393,6 +394,54 @@ class DALLE(nn.Module):
         self.register_buffer('logits_mask', logits_mask, persistent=False)
         self.loss_img_weight = loss_img_weight
 
+
+    @torch.no_grad()
+    @eval_decorator
+    def generate_texts(
+        self,
+        text=None,
+        *,
+        filter_thres = 0.5,
+        temperature = 1.
+    ):
+        text_seq_len = self.text_seq_len
+        if text is None or text == "":
+            text_tokens = torch.tensor([[0]]).cuda()
+        else:
+            text_tokens = torch.tensor(tokenizer.tokenizer.encode(text)).cuda().unsqueeze(0)
+   
+        for _ in range(text_tokens.shape[1], text_seq_len):
+            device = text_tokens.device
+
+            tokens = self.text_emb(text_tokens)
+            tokens += self.text_pos_emb(torch.arange(text_tokens.shape[1], device = device))
+
+            seq_len = tokens.shape[1]
+
+            output_transf = self.transformer(tokens)
+
+            if self.stable:
+                output_transf = self.norm_by_max(output_transf)
+
+            logits = self.to_logits(output_transf)
+
+            # mask logits to make sure text predicts text (except last token), and image predicts image
+
+            logits_mask = self.logits_mask[:, :seq_len]
+            max_neg_value = -torch.finfo(logits.dtype).max
+            logits.masked_fill_(logits_mask, max_neg_value)
+            logits = logits[:, -1, :]
+
+            filtered_logits = top_k(logits, thres = filter_thres)
+            probs = F.softmax(filtered_logits / temperature, dim = -1)
+            sample = torch.multinomial(probs, 1)
+ 
+            text_tokens = torch.cat((text_tokens, sample), dim=-1)
+    
+        padding_tokens = set(np.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
+        texts = [tokenizer.tokenizer.decode(text_token, pad_tokens=padding_tokens) for text_token in text_tokens]
+        return text_tokens, texts
+
     @torch.no_grad()
     @eval_decorator
     def generate_images(
@@ -528,3 +577,5 @@ class DALLE(nn.Module):
 
         loss = (loss_text + self.loss_img_weight * loss_img) / (self.loss_img_weight + 1)
         return loss
+    
+    

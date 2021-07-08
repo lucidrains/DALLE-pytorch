@@ -142,6 +142,11 @@ images = dalle.generate_images(
 images.shape # (4, 3, 256, 256)
 ```
 
+You may also want to generate text using DALL-E. For that call this function:
+```
+text_tokens, texts = dalle.generate_texts(text)
+```
+
 ## OpenAI's Pretrained VAE
 
 You can also skip the training of the VAE altogether, using the pretrained model released by OpenAI! The wrapper class should take care of downloading and caching the model for you auto-magically.
@@ -456,6 +461,14 @@ ex.
 ```python
 $ python generate.py --dalle_path ./dalle.pt --text 'a dog chewing a bone|a cat chasing mice|a frog eating a fly'
 ```
+
+Note that DALL-E is a full image+text language model. As a consequence you can also generate text using a dalle model.
+
+```python
+$ python generate.py --dalle_path ./dalle.pt --text 'a dog chewing a bone' --gentext
+```
+
+This will complete the provided text, save it in a caption.txt and generate the corresponding images.
 
 ### Docker
 

@@ -55,6 +55,8 @@ parser.add_argument('--chinese', dest='chinese', action = 'store_true')
 
 parser.add_argument('--taming', dest='taming', action='store_true')
 
+parser.add_argument('--gentxt', dest='gentxt', action='store_true')
+
 args = parser.parse_args()
 
 # helper fns
@@ -99,25 +101,31 @@ image_size = vae.image_size
 
 texts = args.text.split('|')
 
-for text in tqdm(texts):
-    text = tokenizer.tokenize([args.text], dalle.text_seq_len).cuda()
+for j, text in tqdm(enumerate(texts)):
+    if args.gentxt:
+        text_tokens, gen_texts = dalle.generate_texts(text=text, filter_thres = args.top_k)
+        text = gen_texts[0]
+    else:
+        text_tokens = tokenizer.tokenize([text], dalle.text_seq_len).cuda()
 
-    text = repeat(text, '() n -> b n', b = args.num_images)
+    text_tokens = repeat(text_tokens, '() n -> b n', b = args.num_images)
 
     outputs = []
 
-    for text_chunk in tqdm(text.split(args.batch_size), desc = f'generating images for - {text}'):
+    for text_chunk in tqdm(text_tokens.split(args.batch_size), desc = f'generating images for - {text}'):
         output = dalle.generate_images(text_chunk, filter_thres = args.top_k)
         outputs.append(output)
 
     outputs = torch.cat(outputs)
 
     # save all images
-
-    outputs_dir = Path(args.outputs_dir) / args.text.replace(' ', '_')[:(100)]
+    file_name = text 
+    outputs_dir = Path(args.outputs_dir) / file_name.replace(' ', '_')[:(100)]
     outputs_dir.mkdir(parents = True, exist_ok = True)
 
     for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
         save_image(image, outputs_dir / f'{i}.jpg', normalize=True)
+        with open(outputs_dir / 'caption.txt', 'w') as f:
+            f.write(file_name)
 
     print(f'created {args.num_images} images at "{str(outputs_dir)}"')
