@@ -93,6 +93,11 @@ def download(url, filename = None, root = CACHE_PATH):
         distributed_utils.backend.local_barrier()
     return download_target
 
+def make_contiguous(module):
+    with torch.no_grad():
+        for param in module.parameters():
+            param.set_(param.contiguous())
+
 # pretrained Discrete VAE from OpenAI
 
 class OpenAIDiscreteVAE(nn.Module):
@@ -101,6 +106,7 @@ class OpenAIDiscreteVAE(nn.Module):
 
         self.enc = load_model(download(OPENAI_VAE_ENCODER_PATH))
         self.dec = load_model(download(OPENAI_VAE_DECODER_PATH))
+        make_contiguous(self)
 
         self.num_layers = 3
         self.image_size = 256
