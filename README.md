@@ -296,10 +296,10 @@ First, you need to install Deepspeed with Sparse Attention
 $ sh install_deepspeed.sh
 ```
 
-Next, you need to install the pip package `triton`
+Next, you need to install the pip package `triton`. It will need to be a version `< 1.0` because that's what Microsoft used.
 
 ```bash
-$ pip install triton
+$ pip install triton==0.4.2
 ```
 
 If both of the above succeeded, now you can train with Sparse Attention!
