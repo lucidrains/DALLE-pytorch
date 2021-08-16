@@ -653,12 +653,23 @@ $ python generate.py --chinese --text '追老鼠的猫'
 @software{peng_bo_2021_5196578,
     author       = {PENG Bo},
     title        = {BlinkDL/RWKV-LM: 0.01},
-    month        = aug,
-    year         = 2021,
+    month        = {aug},
+    year         = {2021},
     publisher    = {Zenodo},
     version      = {0.01},
     doi          = {10.5281/zenodo.5196578},
     url          = {https://doi.org/10.5281/zenodo.5196578%7D
+}
+```
+
+```bibtex
+@misc{su2021roformer,
+    title   = {RoFormer: Enhanced Transformer with Rotary Position Embedding},
+    author  = {Jianlin Su and Yu Lu and Shengfeng Pan and Bo Wen and Yunfeng Liu},
+    year    = {2021},
+    eprint  = {2104.09864},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CL}
 }
 ```
 
