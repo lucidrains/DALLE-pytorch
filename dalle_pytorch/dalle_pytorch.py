@@ -19,10 +19,11 @@ def exists(val):
 def default(val, d):
     return val if exists(val) else d
 
-def always(val):
-    def inner(*args, **kwargs):
-        return val
-    return inner
+class always():
+    def __init__(self, val):
+        self.val = val
+    def __call__(self, x, *args, **kwargs):
+        return self.val
 
 def is_empty(t):
     return t.nelement() == 0
@@ -323,7 +324,8 @@ class DALLE(nn.Module):
         attn_types = None,
         loss_img_weight = 7,
         stable = False,
-        shift_tokens = False
+        shift_tokens = False,
+        rotary_emb = False
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
@@ -338,8 +340,8 @@ class DALLE(nn.Module):
         self.text_emb = nn.Embedding(num_text_tokens, dim)
         self.image_emb = nn.Embedding(num_image_tokens, dim)
 
-        self.text_pos_emb = nn.Embedding(text_seq_len + 1, dim) # +1 for <bos>
-        self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_fmap_size, image_fmap_size))
+        self.text_pos_emb = nn.Embedding(text_seq_len + 1, dim) if not rotary_emb else always(0) # +1 for <bos>
+        self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_fmap_size, image_fmap_size)) if not rotary_emb else always(0)
 
         self.num_text_tokens = num_text_tokens # for offsetting logits index and calculating cross entropy loss
         self.num_image_tokens = num_image_tokens
@@ -369,7 +371,8 @@ class DALLE(nn.Module):
             image_fmap_size = image_fmap_size,
             sparse_attn = sparse_attn,
             stable = stable,
-            shift_tokens = shift_tokens
+            shift_tokens = shift_tokens,
+            rotary_emb = rotary_emb
         )
 
         self.stable = stable

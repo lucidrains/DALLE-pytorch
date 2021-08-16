@@ -6,6 +6,8 @@ from torch import nn, einsum
 import torch.nn.functional as F
 from einops import rearrange, repeat
 
+from rotary_embedding_torch import apply_rotary_emb
+
 # helpers
 
 def exists(val):
@@ -27,6 +29,11 @@ def stable_softmax(t, dim = -1, alpha = 32 ** 2):
     t = t - torch.amax(t, dim = dim, keepdim = True)
     return (t * alpha).softmax(dim = dim)
 
+def apply_pos_emb(pos_emb, qkv):
+    n = qkv[0].shape[-2]
+    pos_emb = pos_emb[..., :n, :]
+    return tuple(map(lambda t: apply_rotary_emb(pos_emb, t), qkv))
+
 # classes
 
 class Attention(nn.Module):
@@ -46,12 +53,15 @@ class Attention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None):
         b, n, _, h, device = *x.shape, self.heads, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
+
+        if exists(rotary_pos_emb):
+            q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
 
         q = q * self.scale
 
@@ -99,7 +109,7 @@ class SparseConvCausalAttention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None):
         b, n, _, h, img_size, kernel_size, dilation, seq_len, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
@@ -118,6 +128,9 @@ class SparseConvCausalAttention(nn.Module):
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
+
+        if exists(rotary_pos_emb):
+            q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
 
         q *= self.scale
 
@@ -216,7 +229,7 @@ class SparseAxialCausalAttention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None):
         b, n, _, h, img_size, axis, seq_len, device = *x.shape, self.heads, self.image_size, self.axis, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
@@ -235,6 +248,9 @@ class SparseAxialCausalAttention(nn.Module):
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
+
+        if exists(rotary_pos_emb):
+            q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
 
         q *= self.scale
 
@@ -334,7 +350,7 @@ class SparseAttention(Attention):
             attn_mask_mode = 'add'
         )
 
-    def forward(self, x, mask = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None):
         b, n, _, h, device = *x.shape, self.heads, x.device
         remainder = n % self.block_size
         mask = default(mask, lambda: torch.ones(b, n, device = device).bool())
@@ -346,6 +362,9 @@ class SparseAttention(Attention):
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
+
+        if exists(rotary_pos_emb):
+            q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
 
         key_pad_mask = None
         if exists(mask):

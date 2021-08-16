@@ -9,6 +9,7 @@ from einops import rearrange
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
 
+from rotary_embedding_torch import RotaryEmbedding, broadcat
 from g_mlp_pytorch import gMLPBlock
 
 # helpers
@@ -144,7 +145,8 @@ class Transformer(nn.Module):
         image_fmap_size = None,
         sparse_attn = False,
         stable = False,
-        shift_tokens = False
+        shift_tokens = False,
+        rotary_emb = True
     ):
         super().__init__()
         layers = nn.ModuleList([])
@@ -187,9 +189,38 @@ class Transformer(nn.Module):
 
         execute_type = ReversibleSequence if reversible else SequentialSequence
         route_attn = ((True, False),) * depth
-        attn_route_map = {'mask': route_attn}
+        attn_route_map = {'mask': route_attn, 'rotary_pos_emb': route_attn}
 
         self.layers = execute_type(layers, args_route = attn_route_map)
 
+        # generate positional embeddings for rotary
+
+        pos_emb = None
+        if rotary_emb:
+            assert 'mlp' not in attn_types, 'you cannot use gMLPs if rotary embedding is turned on'
+
+            rot_dim = dim_head // 3
+            img_seq_len = (image_fmap_size ** 2)
+            text_len = seq_len - img_seq_len + 1
+
+            text_pos_emb = RotaryEmbedding(dim = rot_dim)
+            img_axial_pos_emb = RotaryEmbedding(dim = rot_dim, freqs_for = 'pixel')
+            text_freqs = text_pos_emb(torch.arange(text_len))
+
+            img_freqs_axial = img_axial_pos_emb(torch.linspace(-1, 1, steps = image_fmap_size))
+            img_freqs = broadcat((rearrange(img_freqs_axial, 'i d -> i () d'), rearrange(img_freqs_axial, 'j d -> () j d')), dim = -1)
+            img_freqs = rearrange(img_freqs, 'h w d -> (h w) d')
+
+            text_axial_freqs = img_axial_pos_emb(torch.full((text_len,), -10.))  # text is given a position of -10 apart from the image axial positions, which is from range [-1, 1]
+            text_axial_freqs = torch.cat((text_axial_freqs, text_axial_freqs), dim = -1)
+
+            text_freqs = F.pad(text_freqs, (0, 0, 0, img_seq_len))
+            img_freqs = torch.cat((text_axial_freqs, img_freqs), dim = 0)
+
+            pos_emb = torch.cat((text_freqs, img_freqs), dim = -1)
+            pos_emb = rearrange(pos_emb[:-1], 'n d -> () () n d')
+
+        self.register_buffer('pos_emb', pos_emb)
+
     def forward(self, x, **kwargs):
-        return self.layers(x, **kwargs)
+        return self.layers(x, rotary_pos_emb = self.pos_emb, **kwargs)
