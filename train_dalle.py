@@ -132,6 +132,8 @@ model_group.add_argument('--attn_types', default = 'full', type = str, help = 'c
 
 model_group.add_argument('--shift_tokens', default = False, type = bool, help = 'Use the shift tokens feature')
 
+model_group.add_argument('--rotary_emb', default = False, type = bool, help = 'Use rotary embeddings')
+
 args = parser.parse_args()
 
 # helpers
@@ -186,6 +188,7 @@ FF_DROPOUT = args.ff_dropout
 ATTN_DROPOUT = args.attn_dropout
 STABLE = args.stable_softmax
 SHIFT_TOKENS = args.shift_tokens
+ROTARY_EMB = args.rotary_emb
 
 ATTN_TYPES = tuple(args.attn_types.split(','))
 
@@ -299,6 +302,7 @@ else:
         attn_dropout=ATTN_DROPOUT,
         stable=STABLE,
         shift_tokens=SHIFT_TOKENS,
+        rotary_emb=ROTARY_EMB,
     )
     resume_epoch = 0
 
