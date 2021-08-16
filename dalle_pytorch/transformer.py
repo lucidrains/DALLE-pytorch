@@ -205,7 +205,10 @@ class Transformer(nn.Module):
 
             text_pos_emb = RotaryEmbedding(dim = rot_dim)
             img_axial_pos_emb = RotaryEmbedding(dim = rot_dim, freqs_for = 'pixel')
+
             text_freqs = text_pos_emb(torch.arange(text_len))
+            img_to_text_freqs = text_pos_emb(torch.full((img_seq_len,), 8192)) # image is given a position far away from text
+            text_freqs = torch.cat((text_freqs, img_to_text_freqs), dim = 0)
 
             img_freqs_axial = img_axial_pos_emb(torch.linspace(-1, 1, steps = image_fmap_size))
             img_freqs = broadcat((rearrange(img_freqs_axial, 'i d -> i () d'), rearrange(img_freqs_axial, 'j d -> () j d')), dim = -1)
@@ -213,8 +216,6 @@ class Transformer(nn.Module):
 
             text_axial_freqs = img_axial_pos_emb(torch.full((text_len,), -10.))  # text is given a position of -10 apart from the image axial positions, which is from range [-1, 1]
             text_axial_freqs = torch.cat((text_axial_freqs, text_axial_freqs), dim = -1)
-
-            text_freqs = F.pad(text_freqs, (0, 0, 0, img_seq_len))
             img_freqs = torch.cat((text_axial_freqs, img_freqs), dim = 0)
 
             pos_emb = torch.cat((text_freqs, img_freqs), dim = -1)
