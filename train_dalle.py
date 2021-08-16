@@ -130,6 +130,8 @@ model_group.add_argument('--loss_img_weight', default = 7, type = int, help = 'I
 
 model_group.add_argument('--attn_types', default = 'full', type = str, help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
 
+model_group.add_argument('--shift_tokens', default = False, type = bool, help = 'Use the shift tokens feature')
+
 args = parser.parse_args()
 
 # helpers
@@ -183,6 +185,7 @@ LOSS_IMG_WEIGHT = args.loss_img_weight
 FF_DROPOUT = args.ff_dropout
 ATTN_DROPOUT = args.attn_dropout
 STABLE = args.stable_softmax
+SHIFT_TOKENS = args.shift_tokens
 
 ATTN_TYPES = tuple(args.attn_types.split(','))
 
@@ -295,6 +298,7 @@ else:
         ff_dropout=FF_DROPOUT,
         attn_dropout=ATTN_DROPOUT,
         stable=STABLE,
+        shift_tokens=SHIFT_TOKENS,
     )
     resume_epoch = 0
 
