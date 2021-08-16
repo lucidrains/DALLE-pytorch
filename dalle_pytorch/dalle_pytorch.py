@@ -7,7 +7,7 @@ import numpy as np
 from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
 
-from dalle_pytorch import distributed_utils, tokenizer
+from dalle_pytorch import distributed_utils
 from dalle_pytorch.vae import OpenAIDiscreteVAE, VQGanVAE
 from dalle_pytorch.transformer import Transformer, DivideMax
 
@@ -322,7 +322,8 @@ class DALLE(nn.Module):
         sparse_attn = False,
         attn_types = None,
         loss_img_weight = 7,
-        stable = False
+        stable = False,
+        shift_tokens = True
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
@@ -367,7 +368,8 @@ class DALLE(nn.Module):
             attn_types = attn_types,
             image_fmap_size = image_fmap_size,
             sparse_attn = sparse_attn,
-            stable = stable
+            stable = stable,
+            shift_tokens = shift_tokens
         )
 
         self.stable = stable
@@ -399,7 +401,8 @@ class DALLE(nn.Module):
     @eval_decorator
     def generate_texts(
         self,
-        text=None,
+        tokenizer,
+        text = None,
         *,
         filter_thres = 0.5,
         temperature = 1.
@@ -577,5 +580,3 @@ class DALLE(nn.Module):
 
         loss = (loss_text + self.loss_img_weight * loss_img) / (self.loss_img_weight + 1)
         return loss
-    
-    

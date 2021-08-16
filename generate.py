@@ -103,7 +103,7 @@ texts = args.text.split('|')
 
 for j, text in tqdm(enumerate(texts)):
     if args.gentxt:
-        text_tokens, gen_texts = dalle.generate_texts(text=text, filter_thres = args.top_k)
+        text_tokens, gen_texts = dalle.generate_texts(tokenizer, text=text, filter_thres = args.top_k)
         text = gen_texts[0]
     else:
         text_tokens = tokenizer.tokenize([text], dalle.text_seq_len).cuda()

@@ -52,6 +52,8 @@ class LayerScale(nn.Module):
     def forward(self, x, **kwargs):
         return self.fn(x, **kwargs) * self.scale
 
+# layer norm
+
 class PreNorm(nn.Module):
     def __init__(self, dim, fn):
         super().__init__()
@@ -60,6 +62,8 @@ class PreNorm(nn.Module):
 
     def forward(self, x, **kwargs):
         return self.fn(self.norm(x), **kwargs)
+
+# feed forward
 
 class GEGLU(nn.Module):
     def forward(self, x):
@@ -79,6 +83,49 @@ class FeedForward(nn.Module):
     def forward(self, x):
         return self.net(x)
 
+# token shift classes
+
+class PreShiftToken(nn.Module):
+    def __init__(self, fn, image_size, seq_len):
+        super().__init__()
+        self.fn = fn
+        self.image_size = image_size
+        self.seq_len = seq_len
+
+    def forward(self, x, **kwargs):
+        n = x.shape[1]
+        seq_len, image_size = self.seq_len, self.image_size
+        img_seq_len = image_size ** 2
+        text_len = seq_len - img_seq_len + 1
+        padding = seq_len - n + 1
+
+        # get text and image tokens
+
+        x_text, x_img = x[:, :text_len], x[:, text_len:]
+        x_img = F.pad(x_img, (0, 0, 0, padding))
+        x_img = rearrange(x_img, 'b (h w) d -> b h w d', h = image_size)
+
+        # shift 1 from the left for text tokens
+
+        x_text_shift, x_text_pass = x_text.chunk(2, dim = -1)
+        x_text_shift = F.pad(x_text_shift, (0, 0, 1, -1))
+        x_text = torch.cat((x_text_shift, x_text_pass), dim = -1)
+
+        # shift from top, left for image tokens
+
+        x_img_shift_top, x_img_shift_left, *x_img_pass = x_img.chunk(4, dim = -1)
+        x_img_shift_left = F.pad(x_img_shift_left, (0, 0, 1, -1))
+        x_img_shift_top = F.pad(x_img_shift_top, (0, 0, 0, 0, 1, -1))
+        x_img = torch.cat((x_img_shift_top, x_img_shift_left, *x_img_pass), dim = -1)
+
+        # merge text and image sequence back together
+
+        x_img = rearrange(x_img, 'b h w d -> b (h w) d')
+        x = torch.cat((x_text, x_img[:, :-padding]), dim = 1)
+        return self.fn(x, **kwargs)
+
+# main transformer class
+
 class Transformer(nn.Module):
     def __init__(
         self,
@@ -96,7 +143,8 @@ class Transformer(nn.Module):
         attn_types = None,
         image_fmap_size = None,
         sparse_attn = False,
-        stable = False
+        stable = False,
+        shift_tokens = True
     ):
         super().__init__()
         layers = nn.ModuleList([])
@@ -127,9 +175,14 @@ class Transformer(nn.Module):
             else:
                 attn = attn_class(dim = dim, causal = causal, dim_ff = dim * 4)
 
+            ff = FeedForward(dim, mult = ff_mult, dropout = ff_dropout)
+
+            if shift_tokens:
+                attn, ff = map(lambda t: PreShiftToken(t, image_size = image_fmap_size, seq_len = seq_len), (attn, ff))
+
             layers.append(nn.ModuleList([
                 LayerScale(dim, ind + 1, PreNorm(dim, attn)),
-                LayerScale(dim, ind + 1, PreNorm(dim, FeedForward(dim, mult = ff_mult, dropout = ff_dropout)))
+                LayerScale(dim, ind + 1, PreNorm(dim, ff))
             ]))
 
         execute_type = ReversibleSequence if reversible else SequentialSequence

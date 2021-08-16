@@ -147,8 +147,9 @@ images.shape # (4, 3, 256, 256)
 ```
 
 You may also want to generate text using DALL-E. For that call this function:
-```
-text_tokens, texts = dalle.generate_texts(text)
+
+```python
+text_tokens, texts = dalle.generate_texts(tokenizer, text)
 ```
 
 ## OpenAI's Pretrained VAE
