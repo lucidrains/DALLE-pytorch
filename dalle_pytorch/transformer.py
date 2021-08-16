@@ -144,7 +144,7 @@ class Transformer(nn.Module):
         image_fmap_size = None,
         sparse_attn = False,
         stable = False,
-        shift_tokens = True
+        shift_tokens = False
     ):
         super().__init__()
         layers = nn.ModuleList([])
