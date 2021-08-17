@@ -324,8 +324,8 @@ class DALLE(nn.Module):
         attn_types = None,
         loss_img_weight = 7,
         stable = False,
-        shift_tokens = False,
-        rotary_emb = False
+        shift_tokens = True,
+        rotary_emb = True
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
