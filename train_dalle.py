@@ -130,9 +130,9 @@ model_group.add_argument('--loss_img_weight', default = 7, type = int, help = 'I
 
 model_group.add_argument('--attn_types', default = 'full', type = str, help = 'comma separated list of attention types. attention type can be: full or sparse or axial_row or axial_col or conv_like.')
 
-model_group.add_argument('--shift_tokens', default = False, type = bool, help = 'Use the shift tokens feature')
+model_group.add_argument('--shift_tokens', help = 'Use the shift tokens feature', action = 'store_true')
 
-model_group.add_argument('--rotary_emb', default = False, type = bool, help = 'Use rotary embeddings')
+model_group.add_argument('--rotary_emb', help = 'Use rotary embeddings', action = 'store_true')
 
 args = parser.parse_args()
 
