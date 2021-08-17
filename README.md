@@ -4,7 +4,7 @@
   <a href="https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb">
          <img alt="Train DALL-E w/ DeepSpeed" src="https://colab.research.google.com/assets/colab-badge.svg">
   </a>
-  <a href="https://discord.gg/dall-e"><img alt="Join us on Discord" src="https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white"></a></br>
+  <a href="https://discord.gg/xBPBXfcFHd"><img alt="Join us on Discord" src="https://img.shields.io/discord/823813159592001537?color=5865F2&logo=discord&logoColor=white"></a></br>
   <a href="https://github.com/robvanvolt/DALLE-models">Released DALLE Models</a></br>
   <a href="https://github.com/rom1504/dalle-service">Web-Hostable DALLE Checkpoints</a></br>
 
