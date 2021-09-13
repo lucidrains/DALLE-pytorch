@@ -382,8 +382,8 @@ else:
         tokenizer=tokenizer,
         shuffle=is_shuffle,
     )
+    assert len(ds) > 0, 'dataset is empty'
 
-assert len(ds) > 0, 'dataset is empty'
 if distr_backend.is_root_worker():
     if not ENABLE_WEBDATASET:
         print(f'{len(ds)} image-text pairs found for training')
