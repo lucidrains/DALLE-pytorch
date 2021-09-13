@@ -361,11 +361,9 @@ if ENABLE_WEBDATASET:
     image_mapping = {
         myimg: imagepreproc
     }
-
-    num_batches = DATASET_SIZE // BATCH_SIZE
-
+	
     ds = (
-        wds.WebDataset(DATASET, length=num_batches)
+        wds.WebDataset(DATASET)
         # .shuffle(is_shuffle) # Commented out for WebDataset as the behaviour cannot be predicted yet
         .map_dict(**image_text_mapping)     
         .map_dict(**image_mapping)
