@@ -361,15 +361,17 @@ if ENABLE_WEBDATASET:
     image_mapping = {
         myimg: imagepreproc
     }
+
+    def filter_dataset(item): # For e.g. C@H which (rarely) has no caption available.
+        if mycap not in item:
+            return False
+        if myimg not in item:
+            return False
+        return True
 	
-    ds = (
-        wds.WebDataset(DATASET)
-        # .shuffle(is_shuffle) # Commented out for WebDataset as the behaviour cannot be predicted yet
-        .map_dict(**image_text_mapping)     
-        .map_dict(**image_mapping)
-        .to_tuple(mycap, myimg)
-        .batched(BATCH_SIZE, partial=False) # It is good to avoid partial batches when using Distributed training
-    )
+    w_dataset = wds.WebDataset(DATASET, handler=wds.warn_and_continue)
+    filtered_dataset = w_dataset.select(filter_dataset)
+    ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE, partial=True)
 else:
     ds = TextImageDataset(
         args.image_text_folder,
