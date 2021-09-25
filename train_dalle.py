@@ -350,6 +350,15 @@ def tokenize(s):
         TEXT_SEQ_LEN,
         truncate_text=args.truncate_captions).squeeze(0)
 
+
+# DeepSpeed, and many schedulers need info about the length of the epoch/number of batches.
+# patch_iterable_ds_len(ds, lambda: EPOCHS * NUM_BATCHES_PER_EPOCH)
+def patch_iterable_ds_len(instance, func):
+    class _(type(instance)): # type(instance) is the class of the instance
+        def __len__(self, *arg, **kwarg): return func(*arg, **kwarg) # call the original __len__
+    instance.__class__ = _ # replace the class of the instance
+    return instance
+
 if ENABLE_WEBDATASET:
     DATASET_SIZE = int(1e9) # You need to set a nominal length for the Dataset in order to avoid warnings from DataLoader
 
@@ -372,6 +381,7 @@ if ENABLE_WEBDATASET:
     w_dataset = wds.WebDataset(DATASET, handler=wds.warn_and_continue)
     filtered_dataset = w_dataset.select(filter_dataset)
     ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE, partial=True)
+    ds = patch_iterable_ds_len(dl, lambda: DATASET_SIZE)
 else:
     ds = TextImageDataset(
         args.image_text_folder,
