@@ -492,7 +492,11 @@ if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
     model=dalle,
     optimizer=opt,
     model_parameters=get_trainable_params(dalle),
-    training_data=ds if using_deepspeed else dl,
+    training_data=(
+        (None if ENABLE_WEBDATASET else ds)
+        if using_deepspeed
+        else dl
+    ),
     # Do not pass the LR scheduler to DeepSpeed so we can manually
     # advance it.
     lr_scheduler=scheduler if LR_DECAY and not using_deepspeed else None,
