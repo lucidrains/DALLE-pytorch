@@ -83,13 +83,12 @@ dalle_params, vae_params, weights = load_obj.pop('hparams'), load_obj.pop('vae_p
 
 dalle_params.pop('vae', None) # cleanup later
 
-if vae_params is not None:
-    vae = DiscreteVAE(**vae_params)
-elif not args.taming:
-    vae = OpenAIDiscreteVAE()
-else:
+if args.taming:
     vae = VQGanVAE(args.vqgan_model_path, args.vqgan_config_path)
-
+elif vae_params is not None:
+    vae = DiscreteVAE(**vae_params)
+else:
+    vae = OpenAIDiscreteVAE()
 
 dalle = DALLE(vae = vae, **dalle_params).cuda()
 
