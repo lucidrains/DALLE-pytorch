@@ -14,6 +14,7 @@ function.
 from dalle_pytorch.distributed_backends import \
     DeepSpeedBackend, \
     DummyBackend, \
+    HivemindBackend, \
     HorovodBackend
 
 _DEFAULT_BACKEND = DummyBackend()
@@ -22,6 +23,7 @@ _DEFAULT_BACKEND = DummyBackend()
 BACKENDS = [
     _DEFAULT_BACKEND,
     DeepSpeedBackend(),
+    HivemindBackend(),
     HorovodBackend(),
 ]
 
