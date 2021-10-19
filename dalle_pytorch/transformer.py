@@ -56,13 +56,16 @@ class LayerScale(nn.Module):
 # layer norm
 
 class PreNorm(nn.Module):
-    def __init__(self, dim, fn):
+    def __init__(self, dim, fn, sandwich = False):
         super().__init__()
         self.norm = nn.LayerNorm(dim)
+        self.norm_out = nn.LayerNorm(dim) if sandwich else nn.Identity()
         self.fn = fn
 
     def forward(self, x, **kwargs):
-        return self.fn(self.norm(x), **kwargs)
+        x = self.norm(x)
+        x = self.fn(x, **kwargs)
+        return self.norm_out(x)
 
 # feed forward
 
@@ -145,6 +148,7 @@ class Transformer(nn.Module):
         image_fmap_size = None,
         sparse_attn = False,
         stable = False,
+        sandwich_norm = False,
         shift_tokens = False,
         rotary_emb = True
     ):
@@ -183,8 +187,8 @@ class Transformer(nn.Module):
                 attn, ff = map(lambda t: PreShiftToken(t, image_size = image_fmap_size, seq_len = seq_len), (attn, ff))
 
             layers.append(nn.ModuleList([
-                LayerScale(dim, ind + 1, PreNorm(dim, attn)),
-                LayerScale(dim, ind + 1, PreNorm(dim, ff))
+                LayerScale(dim, ind + 1, PreNorm(dim, attn, sandwich = sandwich_norm)),
+                LayerScale(dim, ind + 1, PreNorm(dim, ff, sandwich = sandwich_norm))
             ]))
 
         execute_type = ReversibleSequence if reversible else SequentialSequence

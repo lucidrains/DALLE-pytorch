@@ -324,6 +324,7 @@ class DALLE(nn.Module):
         attn_types = None,
         loss_img_weight = 7,
         stable = False,
+        sandwich_norm = False,
         shift_tokens = True,
         rotary_emb = True
     ):
@@ -371,6 +372,7 @@ class DALLE(nn.Module):
             image_fmap_size = image_fmap_size,
             sparse_attn = sparse_attn,
             stable = stable,
+            sandwich_norm = sandwich_norm,
             shift_tokens = shift_tokens,
             rotary_emb = rotary_emb
         )
