@@ -1,3 +1,4 @@
+from collections.abc import Iterable
 from functools import partial
 from itertools import islice, cycle
 
@@ -21,9 +22,7 @@ def default(val, d):
     return val if exists(val) else d
 
 def cast_tuple(val, depth = 1):
-    if isinstance(val, list):
-        val = tuple(val)
-    return val if isinstance(val, tuple) else (val,) * depth
+    return val if isinstance(val, Iterable) else (val,) * depth
 
 # classes
 
@@ -189,15 +188,16 @@ class Transformer(nn.Module):
             else:
                 raise ValueError(f'attention type "{attn_type}" is not valid')
 
-            attn = shared_attn_layers.get(attn_id)
+            attn, reused_attn_type = shared_attn_layers.get(attn_id, (None, None))
             if not exists(attn):
                 if attn_type != 'mlp':
                     attn = attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)
                 else:
                     attn = attn_class(dim = dim, causal = causal, dim_ff = dim * 4)
-                shared_attn_layers[attn_id] = attn
-            else:
-                assert isinstance(attn, attn_class), 'attn_types do not match shared_attn_ids'
+                shared_attn_layers[attn_id] = (attn, attn_type)
+            elif attn_type != reused_attn_type:
+                raise ValueError('attn_types do not match shared_attn_ids '
+                                 f'(ind = {ind}, attn_type = "{attn_type}", reused_attn_type = "{reused_attn_type}")')
 
             ff = shared_ff_layers.get(ff_id)
             if not exists(ff):
