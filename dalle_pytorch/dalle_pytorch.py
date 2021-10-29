@@ -339,7 +339,9 @@ class DALLE(nn.Module):
         stable = False,
         sandwich_norm = False,
         shift_tokens = True,
-        rotary_emb = True
+        rotary_emb = True,
+        shared_attn_ids = None,
+        shared_ff_ids = None,
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
@@ -387,7 +389,9 @@ class DALLE(nn.Module):
             stable = stable,
             sandwich_norm = sandwich_norm,
             shift_tokens = shift_tokens,
-            rotary_emb = rotary_emb
+            rotary_emb = rotary_emb,
+            shared_attn_ids = shared_attn_ids,
+            shared_ff_ids = shared_ff_ids,
         )
 
         self.stable = stable
@@ -430,7 +434,7 @@ class DALLE(nn.Module):
             text_tokens = torch.tensor([[0]]).cuda()
         else:
             text_tokens = torch.tensor(tokenizer.tokenizer.encode(text)).cuda().unsqueeze(0)
-   
+
         for _ in range(text_tokens.shape[1], text_seq_len):
             device = text_tokens.device
 
@@ -457,7 +461,7 @@ class DALLE(nn.Module):
             sample = gumbel_sample(filtered_logits, temperature = temperature, dim = -1)
 
             text_tokens = torch.cat((text_tokens, sample[:, None]), dim=-1)
-    
+
         padding_tokens = set(np.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
         texts = [tokenizer.tokenizer.decode(text_token, pad_tokens=padding_tokens) for text_token in text_tokens]
         return text_tokens, texts
