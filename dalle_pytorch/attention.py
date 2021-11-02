@@ -132,7 +132,7 @@ class SparseConvCausalAttention(nn.Module):
         if exists(rotary_pos_emb):
             q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
 
-        q *= self.scale
+        q = q * self.scale
 
         ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, :-img_seq_len], t[:, -img_seq_len:]), (q, k, v))
 
@@ -252,7 +252,7 @@ class SparseAxialCausalAttention(nn.Module):
         if exists(rotary_pos_emb):
             q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
 
-        q *= self.scale
+        q = q * self.scale
 
         ((q_text, q_img), (k_text, k_img), (v_text, v_img)) = map(lambda t: (t[:, :-img_seq_len], t[:, -img_seq_len:]), (q, k, v))
 
