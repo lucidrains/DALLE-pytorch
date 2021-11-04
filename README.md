@@ -58,7 +58,7 @@ Thanks to the amazing "mega b#6696" you can generate from this checkpoint in col
   <img alt="Run inference on the Afiaka checkpoint in Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-First <a href="https://github.com/sberbank-ai/ru-dalle">1.3B DALL-E</a> from 🇷🇺 has been trained and released to the public! 🎉
+- (5/2/21) First <a href="https://github.com/sberbank-ai/ru-dalle">1.3B DALL-E</a> from 🇷🇺 has been trained and released to the public! 🎉
 
 ## Install
 
