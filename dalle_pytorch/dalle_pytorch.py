@@ -557,6 +557,10 @@ class DALLE(nn.Module):
             seq_len -= 1
             tokens = tokens[:, :-1]
 
+        if self.stable:
+            alpha = 0.1
+            tokens = tokens * alpha + tokens.detach() * (1 - alpha)
+
         out = self.transformer(tokens)
 
         if self.stable:
