@@ -55,6 +55,20 @@ def top_k(logits, thres = 0.5):
     probs.scatter_(1, ind, val)
     return probs
 
+class SharedEmbedding(nn.Embedding):
+    def __init__(self, linear, start_index, end_index, **kwargs):
+        super().__init__(end_index - start_index, linear.weight.shape[1], **kwargs)
+        del self.weight
+
+        self.linear = linear
+        self.start_index = start_index
+        self.end_index = end_index
+
+    def forward(self, input):
+        return F.embedding(
+            input, self.linear.weight[self.start_index:self.end_index], self.padding_idx, self.max_norm,
+            self.norm_type, self.scale_grad_by_freq, self.sparse)
+
 # discrete vae class
 
 class ResBlock(nn.Module):
@@ -305,7 +319,6 @@ class CLIP(nn.Module):
         return loss
 
 # main DALL-E class
-
 class DALLE(nn.Module):
     def __init__(
         self,
@@ -329,6 +342,7 @@ class DALLE(nn.Module):
         rotary_emb = True,
         shared_attn_ids = None,
         shared_ff_ids = None,
+        share_input_output_emb = False,
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
@@ -339,9 +353,6 @@ class DALLE(nn.Module):
         image_seq_len = image_fmap_size ** 2
 
         num_text_tokens = num_text_tokens + text_seq_len  # reserve unique padding tokens for each position (text seq len)
-
-        self.text_emb = nn.Embedding(num_text_tokens, dim)
-        self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         self.text_pos_emb = nn.Embedding(text_seq_len + 1, dim) if not rotary_emb else always(0) # +1 for <bos>
         self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_fmap_size, image_fmap_size)) if not rotary_emb else always(0)
@@ -390,6 +401,13 @@ class DALLE(nn.Module):
             nn.LayerNorm(dim),
             nn.Linear(dim, self.total_tokens),
         )
+
+        if share_input_output_emb:
+            self.text_emb = SharedEmbedding(self.to_logits[1], 0, num_text_tokens)
+            self.image_emb = SharedEmbedding(self.to_logits[1], num_text_tokens, total_tokens)
+        else:
+            self.text_emb = nn.Embedding(num_text_tokens, dim)
+            self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         seq_range = torch.arange(seq_len)
         logits_range = torch.arange(total_tokens)
