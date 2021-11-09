@@ -332,6 +332,7 @@ class CLIP(nn.Module):
         return loss
 
 # main DALL-E class
+
 class DALLE(nn.Module):
     def __init__(
         self,
