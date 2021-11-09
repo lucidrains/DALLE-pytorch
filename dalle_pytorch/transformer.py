@@ -223,7 +223,7 @@ class Transformer(nn.Module):
             img_freqs = torch.cat((text_axial_freqs, img_freqs), dim = 0)
 
             pos_emb = torch.cat((text_freqs, img_freqs), dim = -1)
-            pos_emb = rearrange(pos_emb[:-1], 'n d -> () () n d')
+            pos_emb = rearrange(pos_emb, 'n d -> () n d')
 
         self.register_buffer('pos_emb', pos_emb)
 
