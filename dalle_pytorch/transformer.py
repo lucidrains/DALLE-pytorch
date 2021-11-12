@@ -33,7 +33,7 @@ class DivideMax(nn.Module):
         self.dim = dim
 
     def forward(self, x):
-        maxes = x.amax(dim = self.dim, keepdim = True)
+        maxes = x.amax(dim = self.dim, keepdim = True).detach()
         return x / maxes
 
 # https://arxiv.org/abs/2103.17239

@@ -26,7 +26,7 @@ def max_neg_value(t):
 
 def stable_softmax(t, dim = -1, alpha = 32 ** 2):
     t = t / alpha
-    t = t - torch.amax(t, dim = dim, keepdim = True)
+    t = t - torch.amax(t, dim = dim, keepdim = True).detach()
     return (t * alpha).softmax(dim = dim)
 
 def apply_pos_emb(pos_emb, qkv):
