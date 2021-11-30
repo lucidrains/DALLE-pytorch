@@ -239,6 +239,7 @@ class YttmTokenizer:
         self.vocab_size = tokenizer.vocab_size()
 
     def decode(self, tokens, pad_tokens = {}):
+        pad_tokens = set(pad_tokens)
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
