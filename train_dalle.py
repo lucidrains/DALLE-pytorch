@@ -412,7 +412,7 @@ else:
 
 dalle = DALLE(vae=vae, **dalle_params)
 if args.fp16:
-    dalle.vae.requires_grad_(False).float()
+    dalle.vae.float()
     for layer in dalle.modules():
         if not isinstance(layer, VQGanVAE): # VQGanVAE is not FP16 compatible
             layer.half()
