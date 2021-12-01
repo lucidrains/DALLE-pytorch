@@ -10,6 +10,7 @@ from einops import rearrange
 from dalle_pytorch import distributed_utils
 from dalle_pytorch.vae import OpenAIDiscreteVAE, VQGanVAE
 from dalle_pytorch.transformer import Transformer, DivideMax
+from dalle_pytorch.attention import stable_softmax
 
 # helpers
 
@@ -441,7 +442,7 @@ class DALLE(nn.Module):
             logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
-            probs = F.softmax(filtered_logits / temperature, dim = -1)
+            probs = stable_softmax(filtered_logits / temperature, dim = -1)
             sample = torch.multinomial(probs, 1)
  
             text_tokens = torch.cat((text_tokens, sample), dim=-1)
