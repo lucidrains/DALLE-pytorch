@@ -371,7 +371,7 @@ if ENABLE_WEBDATASET:
 	
     w_dataset = wds.WebDataset(DATASET, handler=wds.warn_and_continue)
     filtered_dataset = w_dataset.select(filter_dataset)
-    ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE, partial=True)
+    ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE / distr_backend.get_world_size(), partial=True)
 else:
     ds = TextImageDataset(
         args.image_text_folder,
@@ -399,9 +399,9 @@ else:
 
 if ENABLE_WEBDATASET:
     # WebLoader for WebDataset and DeepSpeed compatibility
-    dl = wds.WebLoader(ds, batch_size=None, shuffle=False) # optionally add num_workers=2 (n) argument
+    dl = wds.WebLoader(ds, batch_size=None, shuffle=False, num_workers=4) # optionally add num_workers=2 (n) argument
     number_of_batches = DATASET_SIZE // (BATCH_SIZE * distr_backend.get_world_size())
-    dl = dl.repeat(2).slice(number_of_batches)
+    dl = dl.slice(number_of_batches)
     dl.length = number_of_batches
 else:
     # Regular DataLoader for image-text-folder datasets
