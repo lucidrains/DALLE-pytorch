@@ -1,12 +1,5 @@
-import io
-import sys
 import os
-import requests
-import PIL
-import warnings
-import hashlib
 import urllib
-import yaml
 from pathlib import Path
 from tqdm import tqdm
 from math import sqrt, log
@@ -14,9 +7,11 @@ from omegaconf import OmegaConf
 from taming.models.vqgan import VQModel, GumbelVQ
 import importlib
 
+
 import torch
 from torch import nn
 import torch.nn.functional as F
+from torch.cuda.amp.autocast_mode import autocast
 
 from einops import rearrange
 
@@ -196,6 +191,7 @@ class VQGanVAE(nn.Module):
             self, self.model.quantize.embed.weight if self.is_gumbel else self.model.quantize.embedding.weight)
 
     @torch.no_grad()
+    @autocast(enabled=True, dtype=torch.float32, cache_enabled=True)
     def get_codebook_indices(self, img):
         b = img.shape[0]
         img = (2 * img) - 1
@@ -204,6 +200,7 @@ class VQGanVAE(nn.Module):
             return rearrange(indices, 'b h w -> b (h w)', b=b)
         return rearrange(indices, '(b n) -> b n', b = b)
 
+    @autocast(enabled=True, dtype=torch.float32, cache_enabled=True)
     def decode(self, img_seq):
         b, n = img_seq.shape
         one_hot_indices = F.one_hot(img_seq, num_classes = self.num_tokens).float()

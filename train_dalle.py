@@ -411,10 +411,12 @@ else:
 # initialize DALL-E
 
 dalle = DALLE(vae=vae, **dalle_params)
-if not using_deepspeed:
-    if args.fp16:
-        dalle = dalle.half()
-    dalle = dalle.cuda()
+if args.fp16:
+    dalle.vae.float()
+    for layer in dalle.modules():
+        if not isinstance(layer, VQGanVAE): # VQGanVAE is not FP16 compatible
+            layer.half()
+dalle = dalle.cuda()
 
 if RESUME and not using_deepspeed:
     dalle.load_state_dict(weights)
@@ -505,7 +507,6 @@ if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
 # Prefer scheduler in `deepspeed_config`.
 if LR_DECAY and distr_scheduler is None:
     distr_scheduler = scheduler
-avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
     distr_dalle.load_checkpoint(str(cp_dir))
@@ -607,16 +608,11 @@ for epoch in range(resume_epoch, EPOCHS):
                 token_list = sample_text.masked_select(sample_text != 0).tolist()
                 decoded_text = tokenizer.decode(token_list)
 
-                if not avoid_model_calls:
-                    # CUDA index errors when we don't guard this
-                    image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
-
-
+                image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
                 log = {
                     **log,
                 }
-                if not avoid_model_calls:
-                    log['image'] = wandb.Image(image, caption=decoded_text)
+                log['image'] = wandb.Image(image, caption=decoded_text)
 
         if i % 10 == 9 and distr_backend.is_root_worker():
             sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)

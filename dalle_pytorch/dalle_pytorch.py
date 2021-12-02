@@ -509,6 +509,8 @@ class DALLE(nn.Module):
 
         return images
 
+
+    @torch.autocast(device_type="cuda", enabled=True)
     def forward(
         self,
         text,
