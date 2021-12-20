@@ -86,6 +86,24 @@ class FeedForward(nn.Module):
     def forward(self, x):
         return self.net(x)
 
+class Cached(nn.Module):
+    def __init__(self, key, fn):
+        super().__init__()
+        self.key = key
+        self.fn = fn
+
+    def forward(self, x, cache=None, **kwargs):
+        if exists(cache) and self.key in cache:
+            prefix = cache[self.key]
+            suffix = self.fn(x[:, prefix.shape[1]:, :], **kwargs)
+            out = torch.cat([prefix, suffix], dim=1)
+        else:
+            out = self.fn(x, **kwargs)
+
+        if exists(cache):
+            cache[self.key] = out
+        return out
+
 # token shift classes
 
 class PreShiftToken(nn.Module):
@@ -199,6 +217,8 @@ class Transformer(nn.Module):
                 ff = FeedForward(dim, mult = ff_mult, dropout = ff_dropout)
                 shared_ff_layers[ff_id] = ff
 
+            ff = Cached(f'ff_{ind}', ff)
+
             if shift_tokens:
                 attn, ff = map(lambda t: PreShiftToken(t, image_size = image_fmap_size, seq_len = seq_len), (attn, ff))
 
@@ -209,7 +229,9 @@ class Transformer(nn.Module):
 
         execute_type = ReversibleSequence if reversible else SequentialSequence
         route_attn = ((True, False),) * depth
-        attn_route_map = {'mask': route_attn, 'rotary_pos_emb': route_attn}
+        route_ffn = ((False, True),) * depth
+        attn_route_map = {'mask': route_attn, 'rotary_pos_emb': route_attn,
+                          'cache': route_ffn}
 
         self.layers = execute_type(layers, args_route = attn_route_map)
 

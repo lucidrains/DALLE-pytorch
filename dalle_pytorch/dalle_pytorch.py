@@ -503,12 +503,13 @@ class DALLE(nn.Module):
             indices = indices[:, :num_img_tokens]
             out = torch.cat((out, indices), dim = -1)
 
+        cache = {}
         for cur_len in range(out.shape[1], total_len):
             is_image = cur_len >= text_seq_len
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            logits = self(text, image, mask = mask)[:, -1, :]
+            logits = self(text, image, mask = mask, cache = cache)[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
             probs = F.softmax(filtered_logits / temperature, dim = -1)
@@ -536,6 +537,7 @@ class DALLE(nn.Module):
         text,
         image = None,
         mask = None,
+        cache = None,
         return_loss = False
     ):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
@@ -584,7 +586,7 @@ class DALLE(nn.Module):
             alpha = 0.1
             tokens = tokens * alpha + tokens.detach() * (1 - alpha)
 
-        out = self.transformer(tokens)
+        out = self.transformer(tokens, cache=cache)
 
         if self.stable:
             out = self.norm_by_max(out)
