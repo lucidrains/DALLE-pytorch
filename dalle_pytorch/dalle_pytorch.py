@@ -8,6 +8,7 @@ from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
 
 from dalle_pytorch import distributed_utils
+from dalle_pytorch.cache import Cached, FixCacheKey
 from dalle_pytorch.vae import OpenAIDiscreteVAE, VQGanVAE
 from dalle_pytorch.transformer import Transformer, DivideMax
 
@@ -400,12 +401,12 @@ class DALLE(nn.Module):
 
         self.to_logits = nn.Sequential(
             nn.LayerNorm(dim),
-            nn.Linear(dim, self.total_tokens),
+            FixCacheKey('to_logits_linear', Cached(nn.Linear(dim, self.total_tokens))),
         )
 
         if share_input_output_emb:
-            self.text_emb = SharedEmbedding(self.to_logits[1], 0, num_text_tokens)
-            self.image_emb = SharedEmbedding(self.to_logits[1], num_text_tokens, total_tokens)
+            self.text_emb = SharedEmbedding(self.to_logits[1].fn.fn, 0, num_text_tokens)
+            self.image_emb = SharedEmbedding(self.to_logits[1].fn.fn, num_text_tokens, total_tokens)
         else:
             self.text_emb = nn.Embedding(num_text_tokens, dim)
             self.image_emb = nn.Embedding(num_image_tokens, dim)
@@ -591,7 +592,8 @@ class DALLE(nn.Module):
         if self.stable:
             out = self.norm_by_max(out)
 
-        logits = self.to_logits(out)
+        out = self.to_logits[0](out)
+        logits = self.to_logits[1](out, cache=cache)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
 
