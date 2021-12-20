@@ -8,8 +8,6 @@ from einops import rearrange, repeat
 
 from dalle_pytorch.cache import Cached
 
-from rotary_embedding_torch import apply_rotary_emb
-
 # helpers
 
 def exists(val):
@@ -31,9 +29,18 @@ def stable_softmax(t, dim = -1, alpha = 32 ** 2):
     t = t - torch.amax(t, dim = dim, keepdim = True)
     return (t * alpha).softmax(dim = dim)
 
+def rotate_half(x):
+    d = x.shape[-1] // 2
+    return torch.cat([-x[..., d:], x[..., :d]], dim=-1)
+
+def apply_rotary_emb(freqs, t):
+    rot_dim = freqs.shape[-1]
+    assert rot_dim <= t.shape[-1], f'feature dimension {t.shape[-1]} is not of sufficient size to rotate in all the positions {rot_dim}'
+    t, t_right = t[..., :rot_dim], t[..., rot_dim:]
+    t = (t * freqs.cos()) + (rotate_half(t) * freqs.sin())
+    return torch.cat((t, t_right), dim = -1)
+
 def apply_pos_emb(pos_emb, qkv):
-    n = qkv[0].shape[-2]
-    pos_emb = pos_emb[..., :n, :]
     return tuple(map(lambda t: apply_rotary_emb(pos_emb, t), qkv))
 
 # classes
@@ -49,7 +56,7 @@ class Attention(nn.Module):
         self.stable = stable
         self.causal = causal
 
-        self.to_qkv = Cached(nn.Linear(dim, inner_dim * 3, bias = False))
+        self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
         self.to_out = Cached(nn.Sequential(
             nn.Linear(inner_dim, dim),
             nn.Dropout(dropout)
@@ -59,42 +66,49 @@ class Attention(nn.Module):
         b, n, _, h, device = *x.shape, self.heads, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
-        qkv = self.to_qkv(x, cache = cache, cache_key = f'{cache_key}_qkv').chunk(3, dim = -1)
-        q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
+        qkv_key = f'{cache_key}_qkv'
+        if exists(cache) and qkv_key in cache:
+            qkv = self.to_qkv(x[..., n - 1:n, :]).chunk(3, dim = -1)
+            q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
 
-        if exists(rotary_pos_emb):
-            q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
+            if exists(rotary_pos_emb):
+                q, k, v = apply_pos_emb(rotary_pos_emb[..., n - 1:n, :], (q, k, v))
 
-        q = q * self.scale
+            q *= self.scale
 
-        mask_value = max_neg_value(q)
-        dots_key = f'{cache_key}_dots'
-        if exists(cache) and dots_key in cache:
-            topleft = cache[dots_key]
-            top = F.pad(topleft, (0, 1), value=mask_value)
-            bottom = q[..., n - 1:n, :] @ k.swapaxes(-1, -2)
-            dots = torch.cat([top, bottom], dim=-2)
+            k_top, v_top = cache[qkv_key]
+            k = torch.cat([k_top, k], dim=-2)
+            v = torch.cat([v_top, v], dim=-2)
         else:
-            dots = q @ k.swapaxes(-1, -2)
+            qkv = self.to_qkv(x).chunk(3, dim = -1)
+            q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
+
+            if exists(rotary_pos_emb):
+                q, k, v = apply_pos_emb(rotary_pos_emb[..., :n, :], (q, k, v))
+
+            q *= self.scale
         if exists(cache):
-            cache[dots_key] = dots
+            cache[qkv_key] = (k, v)
 
-        if exists(mask):
-            mask = rearrange(mask, 'b j -> b () () j')
-            dots.masked_fill_(~mask, mask_value)
-            del mask
+        # mask_value = max_neg_value(q)
+        dots = q @ k.swapaxes(-1, -2)
 
-        if self.causal:
-            i, j = dots.shape[-2:]
-            mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
-            dots.masked_fill_(mask, mask_value)
+        # if exists(mask):  # TODO:
+        #     mask = rearrange(mask, 'b j -> b () () j')
+        #     dots.masked_fill_(~mask, mask_value)
+        #     del mask
+
+        # if self.causal:  # TODO:
+        #     i, j = dots.shape[-2:]
+        #     mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
+        #     dots.masked_fill_(mask, mask_value)
 
         attn = softmax(dots, dim=-1)
 
         out_key = f'{cache_key}_out'
         if exists(cache) and out_key in cache:
             top = cache[out_key]
-            bottom = attn[..., n - 1:n, :] @ v
+            bottom = attn @ v
             out = torch.cat([top, bottom], dim=-2)
         else:
             out = attn @ v
