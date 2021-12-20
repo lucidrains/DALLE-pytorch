@@ -6,6 +6,8 @@ from torch import nn, einsum
 import torch.nn.functional as F
 from einops import rearrange, repeat
 
+from dalle_pytorch.cache import Cached
+
 from rotary_embedding_torch import apply_rotary_emb
 
 # helpers
@@ -102,14 +104,14 @@ class SparseConvCausalAttention(nn.Module):
 
         self.stable = stable
 
-        self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
+        self.to_qkv = Cached(nn.Linear(dim, inner_dim * 3, bias = False))
 
-        self.to_out = nn.Sequential(
+        self.to_out = Cached(nn.Sequential(
             nn.Linear(inner_dim, dim),
             nn.Dropout(dropout)
-        )
+        ))
 
-    def forward(self, x, mask = None, rotary_pos_emb = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
         b, n, _, h, img_size, kernel_size, dilation, seq_len, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
@@ -126,7 +128,7 @@ class SparseConvCausalAttention(nn.Module):
 
         # derive query / keys / values
 
-        qkv = self.to_qkv(x).chunk(3, dim = -1)
+        qkv = self.to_qkv(x, cache = cache, cache_key = f'{cache_key}_qkv').chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
 
         if exists(rotary_pos_emb):
@@ -203,10 +205,12 @@ class SparseConvCausalAttention(nn.Module):
         out = torch.cat((out_text, out_image), dim = 1)
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
-        out =  self.to_out(out)
+        out =  self.to_out(out, cache = cache, cache_key = f'{cache_key}_out')
         return out[:, :n]
 
 # sparse axial causal attention
+
+from time import time
 
 class SparseAxialCausalAttention(nn.Module):
     def __init__(self, dim, seq_len, image_size = 32, axis = 0, heads = 8, dim_head = 64, dropout = 0., stable = False, **kwargs):
@@ -222,14 +226,14 @@ class SparseAxialCausalAttention(nn.Module):
 
         self.stable = stable
 
-        self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
+        self.to_qkv = Cached(nn.Linear(dim, inner_dim * 3, bias = False))
 
-        self.to_out = nn.Sequential(
+        self.to_out = Cached(nn.Sequential(
             nn.Linear(inner_dim, dim),
             nn.Dropout(dropout)
-        )
+        ))
 
-    def forward(self, x, mask = None, rotary_pos_emb = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
         b, n, _, h, img_size, axis, seq_len, device = *x.shape, self.heads, self.image_size, self.axis, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
@@ -246,7 +250,10 @@ class SparseAxialCausalAttention(nn.Module):
 
         # derive queries / keys / values
 
-        qkv = self.to_qkv(x).chunk(3, dim = -1)
+        t = time()
+        qkv = self.to_qkv(x, cache = cache, cache_key = f'{cache_key}_qkv').chunk(3, dim = -1)
+        print(f'Time 1: {time() - t:.5f} sec')
+        t = time()
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
 
         if exists(rotary_pos_emb):
@@ -317,7 +324,10 @@ class SparseAxialCausalAttention(nn.Module):
         out = torch.cat((out_text, out_image), dim = 1)
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
-        out =  self.to_out(out)
+        print(f'Time 2: {time() - t:.5f} sec')
+        t = time()
+        out =  self.to_out(out, cache = cache, cache_key = f'{cache_key}_out')
+        print(f'Time 3: {time() - t:.5f} sec\n')
         return out[:, :n]
 
 # microsoft sparse attention CUDA kernel
