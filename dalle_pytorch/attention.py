@@ -72,7 +72,7 @@ class Attention(nn.Module):
         if exists(cache) and dots_key in cache:
             topleft = cache[dots_key]
             top = F.pad(topleft, (0, 1), value=mask_value)
-            bottom = q[..., n - 1:, :] @ k.swapaxes(-1, -2)
+            bottom = q[..., n - 1:n, :] @ k.swapaxes(-1, -2)
             dots = torch.cat([top, bottom], dim=-2)
         else:
             dots = q @ k.swapaxes(-1, -2)
@@ -94,10 +94,7 @@ class Attention(nn.Module):
         out_key = f'{cache_key}_out'
         if exists(cache) and out_key in cache:
             top = cache[out_key]
-            assert top.shape[-2] == n - 1
-
             bottom = attn[..., n - 1:n, :] @ v
-
             out = torch.cat([top, bottom], dim=-2)
         else:
             out = attn @ v
@@ -231,8 +228,6 @@ class SparseConvCausalAttention(nn.Module):
 
 # sparse axial causal attention
 
-from time import time
-
 class SparseAxialCausalAttention(nn.Module):
     def __init__(self, dim, seq_len, image_size = 32, axis = 0, heads = 8, dim_head = 64, dropout = 0., stable = False, **kwargs):
         super().__init__()
@@ -271,10 +266,7 @@ class SparseAxialCausalAttention(nn.Module):
 
         # derive queries / keys / values
 
-        t = time()
         qkv = self.to_qkv(x, cache = cache, cache_key = f'{cache_key}_qkv').chunk(3, dim = -1)
-        print(f'Time 1: {time() - t:.5f} sec')
-        t = time()
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), qkv)
 
         if exists(rotary_pos_emb):
@@ -286,7 +278,6 @@ class SparseAxialCausalAttention(nn.Module):
 
         # text attention
 
-        print('shapes 1:', q_text.shape, k_text.swapaxes(-1, -2).shape)
         dots_text = q_text @ k_text.swapaxes(-1, -2)
         mask_value = max_neg_value(dots_text)
 
@@ -295,7 +286,6 @@ class SparseAxialCausalAttention(nn.Module):
         dots_text.masked_fill_(text_causal_mask, mask_value)
 
         attn_text = softmax(dots_text, dim = -1)
-        print('shapes 2:', attn_text.shape, v_text.shape)
         out_text = attn_text @ v_text
 
         # image attention
@@ -309,9 +299,7 @@ class SparseAxialCausalAttention(nn.Module):
 
         # similarity
 
-        print('shapes 3:', q_img.shape, k_img.swapaxes(-1, -2).shape)
         dots_image_to_image = q_img @ k_img.swapaxes(-1, -2)
-        print('shapes 4:', q_img.shape, k_text[:, None].swapaxes(-1, -2).shape)
         dots_image_to_text = q_img @ k_text[:, None].swapaxes(-1, -2)
 
         dots = torch.cat((dots_image_to_text, dots_image_to_image), dim = -1)
@@ -335,9 +323,7 @@ class SparseAxialCausalAttention(nn.Module):
 
         attn_image_to_text, attn_image_to_image = attn[..., :text_len], attn[..., text_len:]
 
-        print('shapes 5:', attn_image_to_image.shape, v_img.shape)
         out_image_to_image = attn_image_to_image @ v_img
-        print('shapes 6:', attn_image_to_text.shape, v_text[:, None].shape)
         out_image_to_text = attn_image_to_text @ v_text[:, None]
 
         out_image = out_image_to_image + out_image_to_text
@@ -351,10 +337,7 @@ class SparseAxialCausalAttention(nn.Module):
         out = torch.cat((out_text, out_image), dim = 1)
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
-        print(f'Time 2: {time() - t:.5f} sec')
-        t = time()
         out =  self.to_out(out, cache = cache, cache_key = f'{cache_key}_out')
-        print(f'Time 3: {time() - t:.5f} sec\n')
         return out[:, :n]
 
 # microsoft sparse attention CUDA kernel
