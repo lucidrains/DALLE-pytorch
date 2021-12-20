@@ -49,17 +49,17 @@ class Attention(nn.Module):
         self.stable = stable
         self.causal = causal
 
-        self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
-        self.to_out = nn.Sequential(
+        self.to_qkv = Cached(nn.Linear(dim, inner_dim * 3, bias = False))
+        self.to_out = Cached(nn.Sequential(
             nn.Linear(inner_dim, dim),
             nn.Dropout(dropout)
-        )
+        ))
 
-    def forward(self, x, mask = None, rotary_pos_emb = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
         b, n, _, h, device = *x.shape, self.heads, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
-        qkv = self.to_qkv(x).chunk(3, dim = -1)
+        qkv = self.to_qkv(x, cache = cache, cache_key = f'{cache_key}_qkv').chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
 
         if exists(rotary_pos_emb):
@@ -67,8 +67,17 @@ class Attention(nn.Module):
 
         q = q * self.scale
 
-        dots = torch.einsum('b h i d, b h j d -> b h i j', q, k)
-        mask_value = max_neg_value(dots)
+        mask_value = max_neg_value(q)
+        dots_key = f'{cache_key}_dots'
+        if exists(cache) and dots_key in cache:
+            topleft = cache[dots_key]
+            top = F.pad(topleft, (0, 1), value=mask_value)
+            bottom = q[..., n - 1:, :] @ k.swapaxes(-1, -2)
+            dots = torch.cat([top, bottom], dim=-2)
+        else:
+            dots = q @ k.swapaxes(-1, -2)
+        if exists(cache):
+            cache[dots_key] = dots
 
         if exists(mask):
             mask = rearrange(mask, 'b j -> b () () j')
@@ -82,9 +91,21 @@ class Attention(nn.Module):
 
         attn = softmax(dots, dim=-1)
 
-        out = torch.einsum('b h i j, b h j d -> b h i d', attn, v)
+        out_key = f'{cache_key}_out'
+        if exists(cache) and out_key in cache:
+            top = cache[out_key]
+            assert top.shape[-2] == n - 1
+
+            bottom = attn[..., n - 1:n, :] @ v
+
+            out = torch.cat([top, bottom], dim=-2)
+        else:
+            out = attn @ v
+        if exists(cache):
+            cache[out_key] = out
+
         out = rearrange(out, 'b h n d -> b n (h d)')
-        out =  self.to_out(out)
+        out =  self.to_out(out, cache = cache, cache_key = f'{cache_key}_out_proj')
         return out
 
 # sparse attention with convolutional pattern, as mentioned in the blog post. customizable kernel size and dilation
@@ -265,7 +286,8 @@ class SparseAxialCausalAttention(nn.Module):
 
         # text attention
 
-        dots_text = einsum('b i d, b j d -> b i j', q_text, k_text)
+        print('shapes 1:', q_text.shape, k_text.swapaxes(-1, -2).shape)
+        dots_text = q_text @ k_text.swapaxes(-1, -2)
         mask_value = max_neg_value(dots_text)
 
         i, j = dots_text.shape[-2:]
@@ -273,7 +295,8 @@ class SparseAxialCausalAttention(nn.Module):
         dots_text.masked_fill_(text_causal_mask, mask_value)
 
         attn_text = softmax(dots_text, dim = -1)
-        out_text = einsum('b i j, b j d -> b i d', attn_text, v_text)
+        print('shapes 2:', attn_text.shape, v_text.shape)
+        out_text = attn_text @ v_text
 
         # image attention
 
@@ -286,8 +309,10 @@ class SparseAxialCausalAttention(nn.Module):
 
         # similarity
 
-        dots_image_to_image = einsum('b x i d, b x j d -> b x i j', q_img, k_img)
-        dots_image_to_text = einsum('b x i d, b j d -> b x i j', q_img, k_text)
+        print('shapes 3:', q_img.shape, k_img.swapaxes(-1, -2).shape)
+        dots_image_to_image = q_img @ k_img.swapaxes(-1, -2)
+        print('shapes 4:', q_img.shape, k_text[:, None].swapaxes(-1, -2).shape)
+        dots_image_to_text = q_img @ k_text[:, None].swapaxes(-1, -2)
 
         dots = torch.cat((dots_image_to_text, dots_image_to_image), dim = -1)
 
@@ -310,8 +335,10 @@ class SparseAxialCausalAttention(nn.Module):
 
         attn_image_to_text, attn_image_to_image = attn[..., :text_len], attn[..., text_len:]
 
-        out_image_to_image = einsum('b x i j, b x j d -> b x i d', attn_image_to_image, v_img)
-        out_image_to_text = einsum('b x i j, b j d -> b x i d', attn_image_to_text, v_text)
+        print('shapes 5:', attn_image_to_image.shape, v_img.shape)
+        out_image_to_image = attn_image_to_image @ v_img
+        print('shapes 6:', attn_image_to_text.shape, v_text[:, None].shape)
+        out_image_to_text = attn_image_to_text @ v_text[:, None]
 
         out_image = out_image_to_image + out_image_to_text
 

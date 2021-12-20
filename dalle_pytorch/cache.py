@@ -12,13 +12,11 @@ class Cached(nn.Module):
         self.fn = fn
 
     def forward(self, x, *, cache=None, cache_key=None, **kwargs):
-        assert exists(cache) and exists(cache_key)
-
-        return self.fn(x, **kwargs)  # dbg
+        assert exists(cache) and exists(cache_key)  # dbg
 
         if exists(cache) and cache_key in cache:
             prefix = cache[cache_key]
-            assert prefix.shape[1] == x.shape[1] or prefix.shape[1] + 1 == x.shape[1], f'{prefix.shape[1]} {x.shape[1]} {cache_key} {cache.keys()}'  # TODO: Change to <= for prod
+            assert prefix.shape[1] + 1 == x.shape[1], f'{prefix.shape[1]} {x.shape[1]} {cache_key} {cache.keys()}'  # TODO: Change to <= for prod
             suffix = self.fn(x[:, prefix.shape[1]:, :], **kwargs)
             out = torch.cat([prefix, suffix], dim=1)
         else:
