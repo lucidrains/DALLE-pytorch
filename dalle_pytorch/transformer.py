@@ -1,6 +1,6 @@
 from collections.abc import Iterable
 from functools import partial
-from itertools import islice, cycle
+from itertools import islice, cycle, product
 
 import torch
 from torch import nn, einsum
@@ -161,10 +161,14 @@ class Transformer(nn.Module):
         rotary_emb = True,
         shared_attn_ids = None,
         shared_ff_ids = None,
+        use_static_masks = False,
     ):
         super().__init__()
         layers = nn.ModuleList([])
         sparse_layer = cast_tuple(sparse_attn, depth)
+
+        self.seq_len = seq_len
+        self.image_fmap_size = image_fmap_size
 
         attn_types = default(attn_types, ('full',))
         attn_types = cast_tuple(attn_types)
@@ -182,9 +186,15 @@ class Transformer(nn.Module):
             elif attn_type == 'sparse':
                 attn_class = SparseAttention
             elif attn_type == 'axial_row':
-                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size, stable = stable)
+                if use_static_masks:
+                    attn_class = partial(Attention, stable = stable, static_mask = self._get_static_mask(attn_type))
+                else:
+                    attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'axial_col':
-                attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size, stable = stable)
+                if use_static_masks:
+                    attn_class = partial(Attention, stable = stable, static_mask = self._get_static_mask(attn_type))
+                else:
+                    attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'conv_like':
                 attn_class = partial(SparseConvCausalAttention, seq_len = seq_len, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'mlp':
@@ -257,3 +267,22 @@ class Transformer(nn.Module):
 
     def forward(self, x, **kwargs):
         return self.layers(x, rotary_pos_emb = self.pos_emb, **kwargs)
+
+    def _get_static_mask(self, attn_type):
+        img_seq_len = self.image_fmap_size ** 2
+        text_len = self.seq_len - img_seq_len
+
+        static_mask = torch.ones(self.seq_len, self.seq_len, dtype=torch.bool)
+        static_mask[:, :text_len] = True
+        if attn_type == 'axial_row':
+            for row in range(self.image_fmap_size):
+                begin = text_len + row * self.image_fmap_size
+                end = text_len + (row + 1) * self.image_fmap_size
+                static_mask[begin:end, begin:end] = True
+        elif attn_type == 'axial_col':
+            for col in range(self.image_fmap_size):
+                begin = text_len + col
+                static_mask[begin::self.image_fmap_size, begin::self.image_fmap_size] = True
+        else:
+            raise ValueError(f'attention type "{attn_type}" can\'t be simulated with a static mask')
+        return static_mask

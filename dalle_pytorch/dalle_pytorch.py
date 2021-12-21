@@ -344,6 +344,7 @@ class DALLE(nn.Module):
         shared_attn_ids = None,
         shared_ff_ids = None,
         share_input_output_emb = False,
+        use_static_masks = False,
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
@@ -391,6 +392,7 @@ class DALLE(nn.Module):
             rotary_emb = rotary_emb,
             shared_attn_ids = shared_attn_ids,
             shared_ff_ids = shared_ff_ids,
+            use_static_masks = use_static_masks,
         )
 
         self.stable = stable

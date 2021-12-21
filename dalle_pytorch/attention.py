@@ -46,7 +46,8 @@ def apply_pos_emb(pos_emb, qkv):
 # classes
 
 class Attention(nn.Module):
-    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0., stable = False):
+    def __init__(self, dim, seq_len, causal = True, heads = 8, dim_head = 64, dropout = 0., stable = False,
+                 static_mask = None):
         super().__init__()
         inner_dim = dim_head *  heads
         self.heads = heads
@@ -55,6 +56,7 @@ class Attention(nn.Module):
 
         self.stable = stable
         self.causal = causal
+        self.register_buffer('static_mask', static_mask, persistent=False)
 
         self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
         self.to_out = nn.Sequential(
@@ -95,6 +97,9 @@ class Attention(nn.Module):
             mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
             dots.masked_fill_(mask, mask_value)
 
+        if exists(self.static_mask):
+            dots.masked_fill_(~self.static_mask[offset:offset + n, :offset + n], mask_value)
+
         attn = softmax(dots, dim=-1)
 
         out = attn @ v
@@ -126,7 +131,13 @@ class SparseConvCausalAttention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None, rotary_pos_emb = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
+        n0 = x.shape[1]
+        if exists(cache):
+            if cache_key in cache:
+                x = torch.cat([cache[cache_key], x], dim=-2)
+            cache[cache_key] = x
+
         b, n, _, h, img_size, kernel_size, dilation, seq_len, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
@@ -221,7 +232,7 @@ class SparseConvCausalAttention(nn.Module):
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
         out =  self.to_out(out)
-        return out[:, :n]
+        return out[:, n - n0:n]
 
 # sparse axial causal attention
 
