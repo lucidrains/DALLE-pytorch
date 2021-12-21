@@ -8,7 +8,6 @@ from axial_positional_embedding import AxialPositionalEmbedding
 from einops import rearrange
 
 from dalle_pytorch import distributed_utils
-from dalle_pytorch.cache import Cached, FixCacheKey
 from dalle_pytorch.vae import OpenAIDiscreteVAE, VQGanVAE
 from dalle_pytorch.transformer import Transformer, DivideMax
 

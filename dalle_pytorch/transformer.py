@@ -9,7 +9,7 @@ from einops import rearrange
 
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
-from dalle_pytorch.cache import Cached, FixCacheKey
+from dalle_pytorch.cache import FixCacheKey
 
 from rotary_embedding_torch import RotaryEmbedding, broadcat
 from g_mlp_pytorch import gMLPBlock
