@@ -57,10 +57,10 @@ class Attention(nn.Module):
         self.causal = causal
 
         self.to_qkv = nn.Linear(dim, inner_dim * 3, bias = False)
-        self.to_out = Cached(nn.Sequential(
+        self.to_out = nn.Sequential(
             nn.Linear(inner_dim, dim),
             nn.Dropout(dropout)
-        ))
+        )
 
     def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
         b, n, _, h, device = *x.shape, self.heads, x.device
@@ -68,11 +68,11 @@ class Attention(nn.Module):
 
         qkv_key = f'{cache_key}_qkv'
         if exists(cache) and qkv_key in cache:
-            qkv = self.to_qkv(x[..., n - 1:n, :]).chunk(3, dim = -1)
+            qkv = self.to_qkv(x).chunk(3, dim = -1)
             q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
 
             if exists(rotary_pos_emb):
-                q, k, v = apply_pos_emb(rotary_pos_emb[..., n - 1:n, :], (q, k, v))
+                q, k, v = apply_pos_emb(rotary_pos_emb[..., n - 1:n, :], (q, k, v))  # FIXME: Fix rotary index here
 
             q *= self.scale
 
@@ -105,18 +105,10 @@ class Attention(nn.Module):
 
         attn = softmax(dots, dim=-1)
 
-        out_key = f'{cache_key}_out'
-        if exists(cache) and out_key in cache:
-            top = cache[out_key]
-            bottom = attn @ v
-            out = torch.cat([top, bottom], dim=-2)
-        else:
-            out = attn @ v
-        if exists(cache):
-            cache[out_key] = out
-
+        out = attn @ v
         out = rearrange(out, 'b h n d -> b n (h d)')
-        out =  self.to_out(out, cache = cache, cache_key = f'{cache_key}_out_proj')
+        out =  self.to_out(out)
+
         return out
 
 # sparse attention with convolutional pattern, as mentioned in the blog post. customizable kernel size and dilation

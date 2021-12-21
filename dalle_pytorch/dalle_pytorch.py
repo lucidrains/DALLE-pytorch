@@ -401,12 +401,12 @@ class DALLE(nn.Module):
 
         self.to_logits = nn.Sequential(
             nn.LayerNorm(dim),
-            FixCacheKey('to_logits_linear', Cached(nn.Linear(dim, self.total_tokens))),
+            nn.Linear(dim, self.total_tokens),
         )
 
         if share_input_output_emb:
-            self.text_emb = SharedEmbedding(self.to_logits[1].fn.fn, 0, num_text_tokens)
-            self.image_emb = SharedEmbedding(self.to_logits[1].fn.fn, num_text_tokens, total_tokens)
+            self.text_emb = SharedEmbedding(self.to_logits[1], 0, num_text_tokens)
+            self.image_emb = SharedEmbedding(self.to_logits[1], num_text_tokens, total_tokens)
         else:
             self.text_emb = nn.Embedding(num_text_tokens, dim)
             self.image_emb = nn.Embedding(num_image_tokens, dim)
@@ -587,17 +587,22 @@ class DALLE(nn.Module):
             alpha = 0.1
             tokens = tokens * alpha + tokens.detach() * (1 - alpha)
 
+        if cache is not None and 'decoding' in cache:
+            tokens = tokens[:, -1:]
         out = self.transformer(tokens, cache=cache)
 
         if self.stable:
             out = self.norm_by_max(out)
 
-        out = self.to_logits[0](out)
-        logits = self.to_logits[1](out, cache=cache)
+        logits = self.to_logits(out)
 
         # mask logits to make sure text predicts text (except last token), and image predicts image
 
         logits_mask = self.logits_mask[:, :seq_len]
+        if cache is not None:
+            if 'decoding' in cache:
+                logits_mask = logits_mask[:, -1:]
+            cache['decoding'] = True
         max_neg_value = -torch.finfo(logits.dtype).max
         logits.masked_fill_(logits_mask, max_neg_value)
 

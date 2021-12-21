@@ -201,7 +201,6 @@ class Transformer(nn.Module):
                 shared_ff_layers[ff_id] = ff
 
             attn = FixCacheKey(f'attn_{ind}', attn)
-            ff = FixCacheKey(f'ff_{ind}', Cached(ff))
 
             if shift_tokens:
                 attn, ff = map(lambda t: PreShiftToken(t, image_size = image_fmap_size, seq_len = seq_len), (attn, ff))
@@ -213,9 +212,8 @@ class Transformer(nn.Module):
 
         execute_type = ReversibleSequence if reversible else SequentialSequence
         route_attn = ((True, False),) * depth
-        route_all = ((True, True),) * depth
         attn_route_map = {'mask': route_attn, 'rotary_pos_emb': route_attn,
-                          'cache': route_all}
+                          'cache': route_attn}
 
         self.layers = execute_type(layers, args_route = attn_route_map)
 
