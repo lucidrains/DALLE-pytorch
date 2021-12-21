@@ -92,7 +92,7 @@ class FeedForward(nn.Module):
             nn.Linear(dim * mult, dim)
         )
 
-    def forward(self, x):
+    def forward(self, x, cache=None, cache_key=None):
         return self.net(x)
 
 # token shift classes
@@ -104,7 +104,13 @@ class PreShiftToken(nn.Module):
         self.image_size = image_size
         self.seq_len = seq_len
 
-    def forward(self, x, **kwargs):
+    def forward(self, x, cache=None, cache_key=None, **kwargs):
+        n0 = x.shape[1]
+        if exists(cache):
+            if cache_key in cache:
+                x = torch.cat([cache[cache_key], x], dim=-2)
+            cache[cache_key] = x
+
         n = x.shape[1]
         seq_len, image_size = self.seq_len, self.image_size
         img_seq_len = image_size ** 2
@@ -134,7 +140,7 @@ class PreShiftToken(nn.Module):
 
         x_img = rearrange(x_img, 'b h w d -> b (h w) d')
         x = torch.cat((x_text, x_img[:, :-padding]), dim = 1)
-        return self.fn(x, **kwargs)
+        return self.fn(x[:, -n0:], cache=cache, **kwargs)
 
 # main transformer class
 
@@ -221,7 +227,8 @@ class Transformer(nn.Module):
             attn = CachedAs(f'attn_{ind}', attn)
 
             if shift_tokens:
-                attn, ff = map(lambda t: PreShiftToken(t, image_size = image_fmap_size, seq_len = seq_len), (attn, ff))
+                attn = CachedAs(f'preshift_attn_{ind}', PreShiftToken(attn, image_size = image_fmap_size, seq_len = seq_len))
+                ff = CachedAs(f'preshift_ff_{ind}', PreShiftToken(ff, image_size = image_fmap_size, seq_len = seq_len))
 
             layers.append(nn.ModuleList([
                 LayerScale(dim, ind + 1, PreNorm(dim, attn, sandwich = sandwich_norm)),
@@ -230,8 +237,9 @@ class Transformer(nn.Module):
 
         execute_type = ReversibleSequence if reversible else SequentialSequence
         route_attn = ((True, False),) * depth
+        route_all = ((True, True),) * depth
         attn_route_map = {'mask': route_attn, 'rotary_pos_emb': route_attn,
-                          'cache': route_attn}
+                          'cache': route_all}
 
         self.layers = execute_type(layers, args_route = attn_route_map)
 
@@ -270,9 +278,9 @@ class Transformer(nn.Module):
 
     def _get_static_mask(self, attn_type):
         img_seq_len = self.image_fmap_size ** 2
-        text_len = self.seq_len - img_seq_len
+        text_len = self.seq_len + 1 - img_seq_len
 
-        static_mask = torch.ones(self.seq_len, self.seq_len, dtype=torch.bool)
+        static_mask = torch.zeros(self.seq_len, self.seq_len, dtype=torch.bool)
         static_mask[:, :text_len] = True
         if attn_type == 'axial_row':
             for row in range(self.image_fmap_size):

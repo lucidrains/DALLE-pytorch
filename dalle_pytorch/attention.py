@@ -6,6 +6,8 @@ from torch import nn, einsum
 import torch.nn.functional as F
 from einops import rearrange, repeat
 
+from rotary_embedding_torch import apply_rotary_emb
+
 # helpers
 
 def exists(val):
@@ -26,17 +28,6 @@ def stable_softmax(t, dim = -1, alpha = 32 ** 2):
     t = t / alpha
     t = t - torch.amax(t, dim = dim, keepdim = True)
     return (t * alpha).softmax(dim = dim)
-
-def rotate_half(x):
-    d = x.shape[-1] // 2
-    return torch.cat([-x[..., d:], x[..., :d]], dim=-1)
-
-def apply_rotary_emb(freqs, t):
-    rot_dim = freqs.shape[-1]
-    assert rot_dim <= t.shape[-1], f'feature dimension {t.shape[-1]} is not of sufficient size to rotate in all the positions {rot_dim}'
-    t, t_right = t[..., :rot_dim], t[..., rot_dim:]
-    t = (t * freqs.cos()) + (rotate_half(t) * freqs.sin())
-    return torch.cat((t, t_right), dim = -1)
 
 def apply_pos_emb(pos_emb, qkv):
     n = qkv[0].shape[-2]
