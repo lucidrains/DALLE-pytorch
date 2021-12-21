@@ -65,19 +65,17 @@ class Attention(nn.Module):
     def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
         b, n, _, h, device = *x.shape, self.heads, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
-        using_cache = exists(cache) and cache_key in cache
+        offset = cache.get('offset', 0) if exists(cache) else 0
 
         qkv = self.to_qkv(x).chunk(3, dim = -1)
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h = h), qkv)
 
         if exists(rotary_pos_emb):
-            if using_cache:
-                rotary_pos_emb = rotary_pos_emb[..., n - 1:, :]  # FIXME: Fix rotary index here
-            q, k, v = apply_pos_emb(rotary_pos_emb, (q, k, v))
+            q, k, v = apply_pos_emb(rotary_pos_emb[..., offset:, :], (q, k, v))
 
         q = q * self.scale
 
-        if using_cache:
+        if offset > 0:
             k_top, v_top = cache[cache_key]
             k = torch.cat([k_top, k], dim=-2)
             v = torch.cat([v_top, v], dim=-2)
@@ -92,7 +90,7 @@ class Attention(nn.Module):
             dots.masked_fill_(~mask, mask_value)
             del mask
 
-        if self.causal and not using_cache:  # causality is naturally enforced if we run the cached inference
+        if self.causal and offset == 0:  # causality is naturally enforced for the cached inference
             i, j = dots.shape[-2:]
             mask = torch.ones(i, j, device = device).triu_(j - i + 1).bool()
             dots.masked_fill_(mask, mask_value)
