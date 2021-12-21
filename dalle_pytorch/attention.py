@@ -90,13 +90,13 @@ class Attention(nn.Module):
         if exists(cache):
             cache[qkv_key] = (k, v)
 
-        # mask_value = max_neg_value(q)
         dots = q @ k.swapaxes(-1, -2)
+        mask_value = max_neg_value(dots)
 
-        # if exists(mask):  # TODO:
-        #     mask = rearrange(mask, 'b j -> b () () j')
-        #     dots.masked_fill_(~mask, mask_value)
-        #     del mask
+        if exists(mask):
+            mask = rearrange(mask, 'b j -> b () () j')
+            dots.masked_fill_(~mask, mask_value)
+            del mask
 
         # if self.causal:  # TODO:
         #     i, j = dots.shape[-2:]
