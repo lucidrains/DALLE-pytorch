@@ -257,7 +257,7 @@ class SparseAxialCausalAttention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None, rotary_pos_emb = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
         b, n, _, h, img_size, axis, seq_len, device = *x.shape, self.heads, self.image_size, self.axis, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 

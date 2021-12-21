@@ -486,7 +486,8 @@ class DALLE(nn.Module):
         filter_thres = 0.5,
         temperature = 1.,
         img = None,
-        num_init_img_tokens = None
+        num_init_img_tokens = None,
+        use_cache = False,
     ):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
@@ -505,7 +506,7 @@ class DALLE(nn.Module):
             indices = indices[:, :num_img_tokens]
             out = torch.cat((out, indices), dim = -1)
 
-        cache = {}
+        cache = {} if use_cache else None
         for cur_len in range(out.shape[1], total_len):
             is_image = cur_len >= text_seq_len
 
