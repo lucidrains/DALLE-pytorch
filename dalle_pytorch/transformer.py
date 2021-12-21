@@ -9,7 +9,6 @@ from einops import rearrange
 
 from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
-from dalle_pytorch.cache import FixCacheKey
 
 from rotary_embedding_torch import RotaryEmbedding, broadcat
 from g_mlp_pytorch import gMLPBlock
@@ -35,6 +34,15 @@ class DivideMax(nn.Module):
     def forward(self, x):
         maxes = x.amax(dim = self.dim, keepdim = True)
         return x / maxes
+
+class CachedAs(nn.Module):
+    def __init__(self, cache_key, fn):
+        super().__init__()
+        self.cache_key = cache_key
+        self.fn = fn
+
+    def forward(self, x, *, cache=None, **kwargs):
+        return self.fn(x, cache=cache, cache_key=self.cache_key, **kwargs)
 
 # https://arxiv.org/abs/2103.17239
 class LayerScale(nn.Module):
@@ -200,7 +208,7 @@ class Transformer(nn.Module):
                 ff = FeedForward(dim, mult = ff_mult, dropout = ff_dropout)
                 shared_ff_layers[ff_id] = ff
 
-            attn = FixCacheKey(f'attn_{ind}', attn)
+            attn = CachedAs(f'attn_{ind}', attn)
 
             if shift_tokens:
                 attn, ff = map(lambda t: PreShiftToken(t, image_size = image_fmap_size, seq_len = seq_len), (attn, ff))
