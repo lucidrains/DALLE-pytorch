@@ -18,6 +18,7 @@ from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
 # libraries needed for webdataset support
+
 import webdataset as wds
 from torchvision import transforms as T
 from PIL import Image
@@ -224,6 +225,8 @@ distr_backend.initialize()
 using_deepspeed = \
     distributed_utils.using_backend(distributed_utils.DeepSpeedBackend)
 
+is_root = distr_backend.is_root_worker()
+
 # tokenizer
 
 if exists(args.bpe_path):
@@ -275,7 +278,7 @@ else:
         vae = DiscreteVAE(**vae_params)
         vae.load_state_dict(weights)
     else:
-        if distr_backend.is_root_worker():
+        if is_root:
             print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
@@ -381,7 +384,7 @@ else:
     )
     assert len(ds) > 0, 'dataset is empty'
 
-if distr_backend.is_root_worker():
+if is_root:
     if not ENABLE_WEBDATASET:
         print(f'{len(ds)} image-text pairs found for training')
 
@@ -445,7 +448,7 @@ if LR_DECAY:
 
 # experiment tracker
 
-if distr_backend.is_root_worker():
+if is_root:
 
     model_config = dict(
         depth=DEPTH,
@@ -529,14 +532,14 @@ def save_model(path, epoch=0):
     if using_deepspeed:
         cp_dir = cp_path_to_dir(path, 'ds')
 
-        if KEEP_N_CHECKPOINTS is not None and distr_backend.is_root_worker():
+        if KEEP_N_CHECKPOINTS is not None and is_root:
             checkpoints = sorted(glob(str(cp_dir / "global*")), key=os.path.getmtime, reverse=True)
             for checkpoint in checkpoints[KEEP_N_CHECKPOINTS:]:
                 shutil.rmtree(checkpoint)
 
         distr_dalle.save_checkpoint(cp_dir, client_state=save_obj)
 
-        if not distr_backend.is_root_worker():
+        if not is_root:
             return
 
         # Save auxiliary values so we can reuse the standard routine
@@ -554,7 +557,7 @@ def save_model(path, epoch=0):
         if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2: # see https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
             return
 
-    if not distr_backend.is_root_worker():
+    if not is_root:
         return
 
     save_obj = {
@@ -566,19 +569,29 @@ def save_model(path, epoch=0):
 
     torch.save(save_obj, path)
 
+def save_artifact(model_config, model_path, name = 'trained-dalle'):
+    model_artifact = wandb.Artifact(name, type='model', metadata=dict(model_config))
+    model_artifact.add_file(model_path)
+    run.log_artifact(model_artifact)
+
 # training
 
 # Saves a checkpoint before training begins to fail early when mis-configured.
 # See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
+
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=resume_epoch)
+
 for epoch in range(resume_epoch, EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
+
     for i, (text, images) in enumerate((dl if ENABLE_WEBDATASET else distr_dl)):
-        if i % 10 == 0 and distr_backend.is_root_worker():
+        if i % 10 == 0 and is_root:
             t = time.time()
+
         if args.fp16:
             images = images.half()
+
         text, images = map(lambda t: t.cuda(), (text, images))
 
         loss = distr_dalle(text, images, return_loss=True)
@@ -598,7 +611,7 @@ for epoch in range(resume_epoch, EPOCHS):
 
         log = {}
 
-        if i % 10 == 0 and distr_backend.is_root_worker():
+        if i % 10 == 0 and is_root:
             print(epoch, i, f'loss - {avg_loss.item()}')
 
             log = {
@@ -611,20 +624,19 @@ for epoch in range(resume_epoch, EPOCHS):
         if i % SAVE_EVERY_N_STEPS == 0:
             save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 	
-        if i % 100 == 0:
-            if distr_backend.is_root_worker():
-                sample_text = text[:1]
-                token_list = sample_text.masked_select(sample_text != 0).tolist()
-                decoded_text = tokenizer.decode(token_list)
+        if i % 100 == 0 and is_root:
+            sample_text = text[:1]
+            token_list = sample_text.masked_select(sample_text != 0).tolist()
+            decoded_text = tokenizer.decode(token_list)
 
-                if not avoid_model_calls:
-                    # CUDA index errors when we don't guard this
-                    image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
+            if not avoid_model_calls:
+                # CUDA index errors when we don't guard this
+                image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
 
-                if not avoid_model_calls:
-                    log['image'] = wandb.Image(image, caption=decoded_text)
+            if not avoid_model_calls:
+                log['image'] = wandb.Image(image, caption=decoded_text)
 
-        if i % 10 == 9 and distr_backend.is_root_worker():
+        if i % 10 == 9 and is_root:
             sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)
             log["sample_per_sec"] = sample_per_sec
             print(epoch, i, f'sample_per_sec - {sample_per_sec}')
@@ -632,7 +644,7 @@ for epoch in range(resume_epoch, EPOCHS):
         if i == 201 and args.flops_profiler:
             raise StopIteration("Profiler has finished running. Stopping training early.")
 
-        if distr_backend.is_root_worker():
+        if is_root:
             wandb.log(log)
 
     if LR_DECAY:
@@ -640,18 +652,13 @@ for epoch in range(resume_epoch, EPOCHS):
 
     save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
     
-    if distr_backend.is_root_worker():
+    if is_root:
         # save trained model to wandb as an artifact every epoch's end
-
-        model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
-        model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
-        run.log_artifact(model_artifact)
+        save_artifact(model_config, DALLE_OUTPUT_FILE_NAME)
 
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-if distr_backend.is_root_worker():
-    wandb.save(DALLE_OUTPUT_FILE_NAME)
-    model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
-    model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
-    run.log_artifact(model_artifact)
 
+if is_root:
+    wandb.save(DALLE_OUTPUT_FILE_NAME)
+    save_artifact(model_config, DALLE_OUTPUT_FILE_NAME)
     wandb.finish()
