@@ -45,12 +45,8 @@ parser.add_argument('--vqgan_config_path', type=str, default = None,
 parser.add_argument('--image_text_folder', type=str, required=True,
                     help='path to your folder of images and text for learning the DALL-E')
 
-parser.add_argument(
-    '--wds', 
-    type = str, 
-    default='', 
-    help = 'Comma separated list of WebDataset (1) image and (2) text column names. Must contain 2 values, e.g. img,cap.'
-)
+parser.add_argument('--wds', type = str, default='',
+                    help = 'Comma separated list of WebDataset (1) image and (2) text column names. Must contain 2 values, e.g. img,cap.')
 
 parser.add_argument('--truncate_captions', dest='truncate_captions', action='store_true',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
@@ -75,7 +71,7 @@ parser.add_argument('--fp16', action='store_true',
 
 
 parser.add_argument('--amp', action='store_true',
-	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.')
+	               help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.')
 
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
@@ -144,6 +140,10 @@ def exists(val):
 def get_trainable_params(model):
     return [params for params in model.parameters() if params.requires_grad]
 
+def get_pkg_version():
+    from pkg_resources import get_distribution
+    return get_distribution('dalle_pytorch').version
+
 def cp_path_to_dir(cp_path, tag):
     """Convert a checkpoint path to a directory with `tag` inserted.
     If `cp_path` is already a directory, return it unchanged.
@@ -157,6 +157,7 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 # constants
+
 WEBDATASET_IMAGE_TEXT_COLUMNS = tuple(args.wds.split(','))
 ENABLE_WEBDATASET = True if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2 else False
 
@@ -232,6 +233,7 @@ elif args.chinese:
     tokenizer = ChineseTokenizer()
 
 # reconstitute vae
+
 if RESUME:
     dalle_path = Path(DALLE_PATH)
     if using_deepspeed:
@@ -249,15 +251,11 @@ if RESUME:
 
     if vae_params is not None:
         vae = DiscreteVAE(**vae_params)
+    elif args.taming:
+        vae = VQGanVAE(VQGAN_MODEL_PATH, VQGAN_CONFIG_PATH)
     else:
-        if args.taming:
-            vae = VQGanVAE(VQGAN_MODEL_PATH, VQGAN_CONFIG_PATH)
-        else:
-            vae = OpenAIDiscreteVAE()
+        vae = OpenAIDiscreteVAE()
 
-    dalle_params = dict(
-        **dalle_params
-    )
     IMAGE_SIZE = vae.image_size
     resume_epoch = loaded_obj.get('epoch', 0)
 else:
@@ -310,7 +308,6 @@ else:
 
 if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
     vae.enc.blocks.output.conv.use_float16 = True
-
 
 # helpers
 
@@ -388,17 +385,20 @@ if distr_backend.is_root_worker():
     if not ENABLE_WEBDATASET:
         print(f'{len(ds)} image-text pairs found for training')
 
+# data sampler
+
+data_sampler = None
+
 if not is_shuffle:
     data_sampler = torch.utils.data.distributed.DistributedSampler(
         ds,
         num_replicas=distr_backend.get_world_size(),
         rank=distr_backend.get_rank()
     )
-else:
-    data_sampler = None
+
+# WebLoader for WebDataset and DeepSpeed compatibility
 
 if ENABLE_WEBDATASET:
-    # WebLoader for WebDataset and DeepSpeed compatibility
     dl = wds.WebLoader(ds, batch_size=None, shuffle=False, num_workers=4) # optionally add num_workers=2 (n) argument
     number_of_batches = DATASET_SIZE // (BATCH_SIZE * distr_backend.get_world_size())
     dl = dl.slice(number_of_batches)
@@ -407,10 +407,10 @@ else:
     # Regular DataLoader for image-text-folder datasets
     dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
-
 # initialize DALL-E
 
 dalle = DALLE(vae=vae, **dalle_params)
+
 if not using_deepspeed:
     if args.fp16:
         dalle = dalle.half()
@@ -422,8 +422,13 @@ if RESUME and not using_deepspeed:
 # optimizer
 
 opt = Adam(get_trainable_params(dalle), lr=LEARNING_RATE)
+
 if RESUME and opt_state:
     opt.load_state_dict(opt_state)
+
+# scheduler
+
+scheduler = None
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
@@ -437,11 +442,10 @@ if LR_DECAY:
     )
     if RESUME and scheduler_state:
         scheduler.load_state_dict(scheduler_state)
-else:
-    scheduler = None
+
+# experiment tracker
 
 if distr_backend.is_root_worker():
-    # experiment tracker
 
     model_config = dict(
         depth=DEPTH,
@@ -503,8 +507,10 @@ if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
     config_params=deepspeed_config,
 )
 # Prefer scheduler in `deepspeed_config`.
+
 if LR_DECAY and distr_scheduler is None:
     distr_scheduler = scheduler
+
 avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
@@ -516,7 +522,10 @@ def save_model(path, epoch=0):
         'hparams': dalle_params,
         'vae_params': vae_params,
         'epoch': epoch,
+        'version': get_pkg_version(),
+        'vae_class_name': vae.__class__.__name__
     }
+
     if using_deepspeed:
         cp_dir = cp_path_to_dir(path, 'ds')
 
@@ -552,8 +561,9 @@ def save_model(path, epoch=0):
         **save_obj,
         'weights': dalle.state_dict(),
         'opt_state': opt.state_dict(),
+        'scheduler_state': (scheduler.state_dict() if scheduler else None)
     }
-    save_obj['scheduler_state'] = (scheduler.state_dict() if scheduler else None)
+
     torch.save(save_obj, path)
 
 # training
@@ -611,10 +621,6 @@ for epoch in range(resume_epoch, EPOCHS):
                     # CUDA index errors when we don't guard this
                     image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
 
-
-                log = {
-                    **log,
-                }
                 if not avoid_model_calls:
                     log['image'] = wandb.Image(image, caption=decoded_text)
 

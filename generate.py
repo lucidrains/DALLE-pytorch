@@ -79,9 +79,16 @@ dalle_path = Path(args.dalle_path)
 assert dalle_path.exists(), 'trained DALL-E must exist'
 
 load_obj = torch.load(str(dalle_path))
-dalle_params, vae_params, weights = load_obj.pop('hparams'), load_obj.pop('vae_params'), load_obj.pop('weights')
+dalle_params, vae_params, weights, vae_class_name, version = load_obj.pop('hparams'), load_obj.pop('vae_params'), load_obj.pop('weights'), load_obj.pop('vae_class_name', None), load_obj.pop('version', None)
 
-dalle_params.pop('vae', None) # cleanup later
+# friendly print
+
+if exists(version):
+    print(f'Loading a model trained with DALLE-pytorch version {version}')
+else:
+    print('You are loading a model trained on an older version of DALL-E pytorch - it may not be compatible with the most recent version')
+
+# load VAE
 
 if args.taming:
     vae = VQGanVAE(args.vqgan_model_path, args.vqgan_config_path)
@@ -89,6 +96,10 @@ elif vae_params is not None:
     vae = DiscreteVAE(**vae_params)
 else:
     vae = OpenAIDiscreteVAE()
+
+assert not (exists(vae_class_name) and vae.__class__.__name__ != vae_class_name), f'you trained DALL-E using {vae_class_name} but are trying to generate with {vae.__class__.__name__} - please make sure you are passing in the correct paths and settings for the VAE to use for generation'
+
+# reconstitute DALL-E
 
 dalle = DALLE(vae = vae, **dalle_params).cuda()
 
@@ -118,6 +129,7 @@ for j, text in tqdm(enumerate(texts)):
     outputs = torch.cat(outputs)
 
     # save all images
+
     file_name = text 
     outputs_dir = Path(args.outputs_dir) / file_name.replace(' ', '_')[:(100)]
     outputs_dir.mkdir(parents = True, exist_ok = True)
