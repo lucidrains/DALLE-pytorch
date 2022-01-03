@@ -10,7 +10,6 @@ from einops import rearrange
 from dalle_pytorch import distributed_utils
 from dalle_pytorch.vae import OpenAIDiscreteVAE, VQGanVAE
 from dalle_pytorch.transformer import Transformer, DivideMax
-from dalle_pytorch.attention import stable_softmax
 
 # helpers
 
@@ -47,6 +46,16 @@ def eval_decorator(fn):
     return inner
 
 # sampling helpers
+
+def log(t, eps = 1e-20):
+    return torch.log(t + eps)
+
+def gumbel_noise(t):
+    noise = torch.zeros_like(t).uniform_(0, 1)
+    return -log(-log(noise))
+
+def gumbel_sample(t, temperature = 1., dim = -1):
+    return ((t / temperature) + gumbel_noise(t)).argmax(dim = dim)
 
 def top_k(logits, thres = 0.5):
     num_logits = logits.shape[-1]
@@ -442,10 +451,9 @@ class DALLE(nn.Module):
             logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
-            probs = stable_softmax(filtered_logits / temperature, dim = -1)
-            sample = torch.multinomial(probs, 1)
- 
-            text_tokens = torch.cat((text_tokens, sample), dim=-1)
+            sample = gumbel_sample(filtered_logits, temperature = temperature, dim = -1)
+
+            text_tokens = torch.cat((text_tokens, sample[:, None]), dim=-1)
     
         padding_tokens = set(np.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
         texts = [tokenizer.tokenizer.decode(text_token, pad_tokens=padding_tokens) for text_token in text_tokens]
@@ -486,14 +494,14 @@ class DALLE(nn.Module):
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            logits = self(text, image, mask = mask)[:, -1, :]
+            logits = self(text, image, mask = mask)
+            logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
-            probs = stable_softmax(filtered_logits / temperature, dim = -1)
-            sample = torch.multinomial(probs, 1)
+            sample = gumbel_sample(filtered_logits, temperature = temperature, dim = -1)
 
             sample -= (num_text_tokens if is_image else 0) # offset sampled token if it is an image token, since logit space is composed of text and then image tokens
-            out = torch.cat((out, sample), dim=-1)
+            out = torch.cat((out, sample[:, None]), dim=-1)
 
             if out.shape[1] <= text_seq_len:
                 mask = F.pad(mask, (0, 1), value = True)
