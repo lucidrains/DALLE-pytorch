@@ -489,7 +489,7 @@ class DALLE(nn.Module):
             logits = self(text, image, mask = mask)[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
-            probs = F.softmax(filtered_logits / temperature, dim = -1)
+            probs = stable_softmax(filtered_logits / temperature, dim = -1)
             sample = torch.multinomial(probs, 1)
 
             sample -= (num_text_tokens if is_image else 0) # offset sampled token if it is an image token, since logit space is composed of text and then image tokens
