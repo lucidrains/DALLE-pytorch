@@ -466,7 +466,6 @@ class DALLE(nn.Module):
         text,
         *,
         clip = None,
-        mask = None,
         filter_thres = 0.5,
         temperature = 1.,
         img = None,
@@ -494,7 +493,7 @@ class DALLE(nn.Module):
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            logits = self(text, image, mask = mask)
+            logits = self(text, image)
             logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
@@ -502,9 +501,6 @@ class DALLE(nn.Module):
 
             sample -= (num_text_tokens if is_image else 0) # offset sampled token if it is an image token, since logit space is composed of text and then image tokens
             out = torch.cat((out, sample[:, None]), dim=-1)
-
-            if out.shape[1] <= text_seq_len:
-                mask = F.pad(mask, (0, 1), value = True)
 
         text_seq = out[:, :text_seq_len]
 
@@ -521,7 +517,6 @@ class DALLE(nn.Module):
         self,
         text,
         image = None,
-        mask = None,
         return_loss = False
     ):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'

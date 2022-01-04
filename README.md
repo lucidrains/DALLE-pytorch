@@ -123,14 +123,13 @@ dalle = DALLE(
 
 text = torch.randint(0, 10000, (4, 256))
 images = torch.randn(4, 3, 256, 256)
-mask = torch.ones_like(text).bool()
 
-loss = dalle(text, images, mask = mask, return_loss = True)
+loss = dalle(text, images, return_loss = True)
 loss.backward()
 
 # do the above for a long time with a lot of data ... then
 
-images = dalle.generate_images(text, mask = mask)
+images = dalle.generate_images(text)
 images.shape # (4, 3, 256, 256)
 ```
 
@@ -141,7 +140,6 @@ img_prime = torch.randn(4, 3, 256, 256)
 
 images = dalle.generate_images(
     text,
-    mask = mask,
     img = img_prime,
     num_init_img_tokens = (14 * 32)  # you can set the size of the initial crop, defaults to a little less than ~1/2 of the tokens, as done in the paper
 )
@@ -179,9 +177,8 @@ dalle = DALLE(
 
 text = torch.randint(0, 10000, (4, 256))
 images = torch.randn(4, 3, 256, 256)
-mask = torch.ones_like(text).bool()
 
-loss = dalle(text, images, mask = mask, return_loss = True)
+loss = dalle(text, images, return_loss = True)
 loss.backward()
 ```
 
