@@ -32,6 +32,9 @@ def masked_mean(t, mask, dim = 1):
     t = t.masked_fill(~mask[:, :, None], 0.)
     return t.sum(dim = 1) / mask.sum(dim = 1)[..., None]
 
+def prob_mask_like(shape, prob, device):
+    return torch.zeros(shape, device = device).float().uniform_(0, 1) < prob
+
 def set_requires_grad(model, value):
     for param in model.parameters():
         param.requires_grad = value
@@ -469,7 +472,8 @@ class DALLE(nn.Module):
         filter_thres = 0.5,
         temperature = 1.,
         img = None,
-        num_init_img_tokens = None
+        num_init_img_tokens = None,
+        cond_scale = 1.
     ):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
@@ -494,6 +498,13 @@ class DALLE(nn.Module):
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
             logits = self(text, image)
+
+            if cond_scale != 1:
+                # discovery by Katherine Crowson
+                # https://twitter.com/RiversHaveWings/status/1478093658716966912
+                null_cond_logits = self(text, image, null_cond_prob = 1.)
+                logits = null_cond_logits + (logits - null_cond_logits) * cond_scale
+
             logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
@@ -517,10 +528,17 @@ class DALLE(nn.Module):
         self,
         text,
         image = None,
-        return_loss = False
+        return_loss = False,
+        null_cond_prob = 0.
     ):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
-        device, total_seq_len = text.device, self.total_seq_len
+        batch, device, total_seq_len = text.shape[0], text.device, self.total_seq_len
+
+        # randomly remove text condition with <null_cond_prob> probability
+
+        if null_cond_prob > 0:
+            null_mask = prob_mask_like((batch,), null_cond_prob, device = device)
+            text *= rearrange(~null_mask, 'b -> b 1')
 
         # make sure padding in text tokens get unique padding token id
 

@@ -200,6 +200,63 @@ vae = VQGanVAE()
 
 The default VQGan is the codebook size 1024 one trained on imagenet. If you wish to use a different one, you can use the `vqgan_model_path` and `vqgan_config_path` to pass the .ckpt file and the .yaml file. These options can be used both in train-dalle script or as argument of VQGanVAE class. Other pretrained VQGAN can be found in [taming transformers readme](https://github.com/CompVis/taming-transformers#overview-of-pretrained-models). If you want to train a custom one you can [follow this guide](https://github.com/CompVis/taming-transformers/pull/54)
 
+
+## Adjust text conditioning strength
+
+Recently there has surfaced a <a href="https://openreview.net/forum?id=qw8AKxfYbI">new technique</a> for guiding diffusion models without a classifier. The gist of the technique involves randomly dropping out the text condition during training, and at inference time, deriving the rough direction from unconditional to conditional distributions.
+
+<a href="https://github.com/crowsonkb">Katherine Crowson</a> outlined in a <a href="https://twitter.com/RiversHaveWings/status/1478093658716966912">tweet</a> how this could work for autoregressive attention models. I have decided to include her idea in this repository for further exploration. One only has to account for two extra keyword arguments on training (`null_cond_prob`) and generation (`cond_scale`).
+
+```python
+import torch
+from dalle_pytorch import DiscreteVAE, DALLE
+
+vae = DiscreteVAE(
+    image_size = 256,
+    num_layers = 3,
+    num_tokens = 8192,
+    codebook_dim = 1024,
+    hidden_dim = 64,
+    num_resnet_blocks = 1,
+    temperature = 0.9
+)
+
+dalle = DALLE(
+    dim = 1024,
+    vae = vae,
+    num_text_tokens = 10000,
+    text_seq_len = 256,
+    depth = 12,
+    heads = 16,
+    dim_head = 64,
+    attn_dropout = 0.1,
+    ff_dropout = 0.1
+)
+
+text = torch.randint(0, 10000, (4, 256))
+images = torch.randn(4, 3, 256, 256)
+
+loss = dalle(
+    text,
+    images,
+    return_loss = True,
+    null_cond_prob = 0.2  # firstly, set this to the probability of dropping out the condition, 20% is recommended as a default
+)
+
+loss.backward()
+
+# do the above for a long time with a lot of data ... then
+
+images = dalle.generate_images(
+    text,
+    cond_scale = 3. # secondly, set this to a value greater than 1 to increase the conditioning beyond average
+)
+
+images.shape # (4, 3, 256, 256)
+```
+
+That's it!
+
 ## Ranking the generations
 
 Train CLIP
@@ -670,6 +727,23 @@ $ python generate.py --chinese --text '追老鼠的猫'
     eprint  = {2104.09864},
     archivePrefix = {arXiv},
     primaryClass = {cs.CL}
+}
+```
+
+```bibtex
+@inproceedings{ho2021classifierfree,
+    title   = {Classifier-Free Diffusion Guidance},
+    author  = {Jonathan Ho and Tim Salimans},
+    booktitle = {NeurIPS 2021 Workshop on Deep Generative Models and Downstream Applications},
+    year    = {2021},
+    url     = {https://openreview.net/forum?id=qw8AKxfYbI}
+}
+```
+
+```bibtex
+@misc{crowson2022,
+    author  = {Katherine Crowson},
+    url     = {https://twitter.com/RiversHaveWings/status/1478093658716966912}
 }
 ```
 
