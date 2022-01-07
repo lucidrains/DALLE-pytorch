@@ -101,7 +101,7 @@ class PreShiftToken(nn.Module):
         seq_len, image_size = self.seq_len, self.image_size
         img_seq_len = image_size ** 2
         text_len = seq_len - img_seq_len + 1
-        padding = seq_len - n + 1
+        padding = img_seq_len - max(n - text_len, 0)
 
         # get text and image tokens
 
