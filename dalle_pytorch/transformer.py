@@ -103,6 +103,11 @@ class PreShiftToken(nn.Module):
         text_len = seq_len - img_seq_len + 1
         padding = seq_len - n + 1
 
+        # if sequence is shorter than the text length, no image tokens to shift
+
+        if n < text_len:
+            return self.fn(x, **kwargs)
+
         # get text and image tokens
 
         x_text, x_img = x[:, :text_len], x[:, text_len:]
