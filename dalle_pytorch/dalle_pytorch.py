@@ -518,18 +518,23 @@ class DALLE(nn.Module):
             indices = indices[:, :num_img_tokens]
             out = torch.cat((out, indices), dim = -1)
 
+        prev_cache = None
         cache = {} if use_cache else None
         for cur_len in range(out.shape[1], total_len):
             is_image = cur_len >= text_seq_len
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            logits = self(text, image, cache=cache)
+            if cond_scale != 1 and use_cache:
+                # copy the cache state to infer from the same place twice
+                prev_cache = cache.copy()
+
+            logits = self(text, image, cache = cache)
 
             if cond_scale != 1:
                 # discovery by Katherine Crowson
                 # https://twitter.com/RiversHaveWings/status/1478093658716966912
-                null_cond_logits = self(text, image, null_cond_prob = 1.)
+                null_cond_logits = self(text, image, null_cond_prob = 1., cache = prev_cache)
                 logits = null_cond_logits + (logits - null_cond_logits) * cond_scale
 
             logits = logits[:, -1, :]
