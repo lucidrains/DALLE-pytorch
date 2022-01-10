@@ -220,7 +220,7 @@ class Transformer(nn.Module):
         rotary_emb = True,
         shared_attn_ids = None,
         shared_ff_ids = None,
-        use_static_masks = False,
+        optimize_for_inference = False,
     ):
         super().__init__()
         layers = nn.ModuleList([])
@@ -245,12 +245,12 @@ class Transformer(nn.Module):
             elif attn_type == 'sparse':
                 attn_class = SparseAttention
             elif attn_type == 'axial_row':
-                if use_static_masks:
+                if optimize_for_inference:
                     attn_class = partial(Attention, stable = stable, static_mask = self._get_static_mask(attn_type))
                 else:
                     attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'axial_col':
-                if use_static_masks:
+                if optimize_for_inference:
                     attn_class = partial(Attention, stable = stable, static_mask = self._get_static_mask(attn_type))
                 else:
                     attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size, stable = stable)
