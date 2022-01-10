@@ -122,13 +122,7 @@ class SparseConvCausalAttention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
-        n0 = x.shape[1]
-        if exists(cache):
-            if cache_key in cache:
-                x = torch.cat([cache[cache_key], x], dim=-2)
-            cache[cache_key] = x
-
+    def forward(self, x, mask = None, rotary_pos_emb = None):
         b, n, _, h, img_size, kernel_size, dilation, seq_len, device = *x.shape, self.heads, self.image_size, self.kernel_size, self.dilation, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
@@ -223,7 +217,7 @@ class SparseConvCausalAttention(nn.Module):
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
         out =  self.to_out(out)
-        return out[:, n - n0:n]
+        return out[:, :n]
 
 # sparse axial causal attention
 

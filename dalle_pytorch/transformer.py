@@ -36,7 +36,33 @@ class DivideMax(nn.Module):
         maxes = x.amax(dim = self.dim, keepdim = True)
         return x / maxes
 
+class NonCached(nn.Module):
+    """
+    A wrapper for layers that don't support the inference cache themselves.
+    Reconstructs the full sequence before the layer and
+    cuts the suffix of the outputs after the layer.
+    """
+
+    def __init__(self, fn):
+        super().__init__()
+        self.fn = fn
+
+    def forward(self, x, *, cache = None, cache_key = None, **kwargs):
+        n = x.shape[-2]
+        if exists(cache):
+            if cache_key in cache:
+                x = torch.cat([cache[cache_key], x], dim=-2)
+            cache[cache_key] = x
+
+        out = self.fn(x, **kwargs)
+
+        return out[:, -n:]
+
 class CachedAs(nn.Module):
+    """
+    A wrapper that defines a key for the inference cache.
+    """
+
     def __init__(self, cache_key, fn):
         super().__init__()
         self.cache_key = cache_key
@@ -251,7 +277,11 @@ class Transformer(nn.Module):
                 ff = FeedForward(dim, mult = ff_mult, dropout = ff_dropout)
                 shared_ff_layers[ff_id] = ff
 
-            attn = CachedAs(f'attn_{ind}', attn)
+            if isinstance(attn, Attention):
+                attn = CachedAs(f'attn_{ind}', attn)
+            else:
+                # at the moment, other Attention classes don't support cache
+                attn = NonCached(attn)
 
             if shift_tokens:
                 attn = CachedAs(f'preshift_attn_{ind}', PreShiftToken(attn, image_size = image_fmap_size, seq_len = seq_len))
