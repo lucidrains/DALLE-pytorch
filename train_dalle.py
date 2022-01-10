@@ -135,6 +135,8 @@ model_group.add_argument('--shared_attn_ids', default = None, type = str, help =
 
 model_group.add_argument('--shared_ff_ids', default = None, type = str, help = 'Comma separated list of shared feed forward layer ids. Default: sharing is disabled')
 
+model_group.add_argument('--share_input_output_emb', help = 'Share input and output embeddings', action = 'store_true')
+
 args = parser.parse_args()
 
 # helpers
@@ -199,6 +201,7 @@ ROTARY_EMB = args.rotary_emb
 ATTN_TYPES = tuple(args.attn_types.split(','))
 SHARED_ATTN_IDS = tuple(args.shared_attn_ids.split(',')) if exists(args.shared_attn_ids) else None
 SHARED_FF_IDS = tuple(args.shared_ff_ids.split(',')) if exists(args.shared_ff_ids) else None
+SHARE_INPUT_OUTPUT_EMB = args.share_input_output_emb
 
 DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
 
@@ -312,6 +315,7 @@ else:
         rotary_emb=ROTARY_EMB,
         shared_attn_ids=SHARED_ATTN_IDS,
         shared_ff_ids=SHARED_FF_IDS,
+        share_input_output_emb=SHARE_INPUT_OUTPUT_EMB,
     )
     resume_epoch = 0
 
