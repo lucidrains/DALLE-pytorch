@@ -220,7 +220,7 @@ class Transformer(nn.Module):
         rotary_emb = True,
         shared_attn_ids = None,
         shared_ff_ids = None,
-        optimize_for_inference = False,
+        optimize_for_inference = False,  # use cache-friendly masked attention instead of sparse one
     ):
         super().__init__()
         layers = nn.ModuleList([])
@@ -246,12 +246,12 @@ class Transformer(nn.Module):
                 attn_class = SparseAttention
             elif attn_type == 'axial_row':
                 if optimize_for_inference:
-                    attn_class = partial(Attention, stable = stable, static_mask = self._get_static_mask(attn_type))
+                    attn_class = partial(Attention, stable = stable, static_mask = self._get_attention_mask(attn_type))
                 else:
                     attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 0, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'axial_col':
                 if optimize_for_inference:
-                    attn_class = partial(Attention, stable = stable, static_mask = self._get_static_mask(attn_type))
+                    attn_class = partial(Attention, stable = stable, static_mask = self._get_attention_mask(attn_type))
                 else:
                     attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'conv_like':
@@ -280,7 +280,7 @@ class Transformer(nn.Module):
             if isinstance(attn, Attention):
                 attn = CachedAs(f'attn_{ind}', attn)
             else:
-                # at the moment, other Attention classes don't support cache
+                # at the moment, other attention classes don't support cache
                 attn = NonCached(attn)
 
             if shift_tokens:
@@ -333,12 +333,7 @@ class Transformer(nn.Module):
     def forward(self, x, **kwargs):
         return self.layers(x, rotary_pos_emb = self.pos_emb, **kwargs)
 
-    def _get_static_mask(self, attn_type):
-        # In case of attn_type = "axial_{row,col}",
-        # the sparse implementation is most efficient for training,
-        # but the full attention with a static mask is most efficient for inference
-        # since caching is implemented in this case.
-
+    def _get_attention_mask(self, attn_type):
         img_seq_len = self.image_fmap_size ** 2
         text_len = self.seq_len + 1 - img_seq_len
 
