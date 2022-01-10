@@ -75,7 +75,7 @@ class Attention(nn.Module):
         if exists(cache):
             cache[cache_key] = k, v
 
-        dots = q @ k.swapaxes(-1, -2)
+        dots = torch.einsum('b h i d, b h j d -> b h i j', q, k)
         mask_value = max_neg_value(dots)
 
         if exists(mask):
@@ -93,7 +93,7 @@ class Attention(nn.Module):
 
         attn = softmax(dots, dim=-1)
 
-        out = attn @ v
+        out = torch.einsum('b h i j, b h j d -> b h i d', attn, v)
         out = rearrange(out, 'b h n d -> b n (h d)')
         out =  self.to_out(out)
         return out
@@ -248,7 +248,7 @@ class SparseAxialCausalAttention(nn.Module):
             nn.Dropout(dropout)
         )
 
-    def forward(self, x, mask = None, rotary_pos_emb = None, cache = None, cache_key = None):
+    def forward(self, x, mask = None, rotary_pos_emb = None):
         b, n, _, h, img_size, axis, seq_len, device = *x.shape, self.heads, self.image_size, self.axis, self.seq_len, x.device
         softmax = torch.softmax if not self.stable else stable_softmax
 
