@@ -33,7 +33,7 @@ class DivideMax(nn.Module):
         self.dim = dim
 
     def forward(self, x):
-        maxes = x.amax(dim = self.dim, keepdim = True)
+        maxes = x.amax(dim = self.dim, keepdim = True).detach()
         return x / maxes
 
 class NonCached(nn.Module):
@@ -155,6 +155,11 @@ class PreShiftToken(nn.Module):
 
         n = x.shape[1]
         padding = seq_len - n + 1
+
+        # if sequence is shorter than the text length, no image tokens to shift
+
+        if n < text_len:
+            return self.fn(x, **kwargs)
 
         # get text and image tokens
 

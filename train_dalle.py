@@ -18,6 +18,7 @@ from dalle_pytorch.loader import TextImageDataset
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, ChineseTokenizer, YttmTokenizer
 
 # libraries needed for webdataset support
+
 import webdataset as wds
 from torchvision import transforms as T
 from PIL import Image
@@ -45,12 +46,8 @@ parser.add_argument('--vqgan_config_path', type=str, default = None,
 parser.add_argument('--image_text_folder', type=str, required=True,
                     help='path to your folder of images and text for learning the DALL-E')
 
-parser.add_argument(
-    '--wds',
-    type = str,
-    default='',
-    help = 'Comma separated list of WebDataset (1) image and (2) text column names. Must contain 2 values, e.g. img,cap.'
-)
+parser.add_argument('--wds', type = str, default='',
+                    help = 'Comma separated list of WebDataset (1) image and (2) text column names. Must contain 2 values, e.g. img,cap.')
 
 parser.add_argument('--truncate_captions', dest='truncate_captions', action='store_true',
                     help='Captions passed in which exceed the max token length will be truncated if this is set.')
@@ -75,7 +72,7 @@ parser.add_argument('--fp16', action='store_true',
 
 
 parser.add_argument('--amp', action='store_true',
-	help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.')
+	               help='Apex "O1" automatic mixed precision. More stable than 16 bit precision. Can\'t be used in conjunction with deepspeed zero stages 1-3.')
 
 parser.add_argument('--wandb_name', default='dalle_train_transformer',
                     help='Name W&B will use when saving results.\ne.g. `--wandb_name "coco2017-full-sparse"`')
@@ -138,6 +135,8 @@ model_group.add_argument('--shared_attn_ids', default = None, type = str, help =
 
 model_group.add_argument('--shared_ff_ids', default = None, type = str, help = 'Comma separated list of shared feed forward layer ids. Default: sharing is disabled')
 
+model_group.add_argument('--share_input_output_emb', help = 'Share input and output embeddings', action = 'store_true')
+
 args = parser.parse_args()
 
 # helpers
@@ -147,6 +146,10 @@ def exists(val):
 
 def get_trainable_params(model):
     return [params for params in model.parameters() if params.requires_grad]
+
+def get_pkg_version():
+    from pkg_resources import get_distribution
+    return get_distribution('dalle_pytorch').version
 
 def cp_path_to_dir(cp_path, tag):
     """Convert a checkpoint path to a directory with `tag` inserted.
@@ -161,6 +164,7 @@ def cp_path_to_dir(cp_path, tag):
     return cp_dir
 
 # constants
+
 WEBDATASET_IMAGE_TEXT_COLUMNS = tuple(args.wds.split(','))
 ENABLE_WEBDATASET = True if len(WEBDATASET_IMAGE_TEXT_COLUMNS) == 2 else False
 
@@ -197,6 +201,7 @@ ROTARY_EMB = args.rotary_emb
 ATTN_TYPES = tuple(args.attn_types.split(','))
 SHARED_ATTN_IDS = tuple(args.shared_attn_ids.split(',')) if exists(args.shared_attn_ids) else None
 SHARED_FF_IDS = tuple(args.shared_ff_ids.split(',')) if exists(args.shared_ff_ids) else None
+SHARE_INPUT_OUTPUT_EMB = args.share_input_output_emb
 
 DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
 
@@ -229,6 +234,8 @@ distr_backend.initialize()
 using_deepspeed = \
     distributed_utils.using_backend(distributed_utils.DeepSpeedBackend)
 
+is_root = distr_backend.is_root_worker()
+
 # tokenizer
 
 if exists(args.bpe_path):
@@ -238,6 +245,7 @@ elif args.chinese:
     tokenizer = ChineseTokenizer()
 
 # reconstitute vae
+
 if RESUME:
     dalle_path = Path(DALLE_PATH)
     if using_deepspeed:
@@ -255,15 +263,11 @@ if RESUME:
 
     if vae_params is not None:
         vae = DiscreteVAE(**vae_params)
+    elif args.taming:
+        vae = VQGanVAE(VQGAN_MODEL_PATH, VQGAN_CONFIG_PATH)
     else:
-        if args.taming:
-            vae = VQGanVAE(VQGAN_MODEL_PATH, VQGAN_CONFIG_PATH)
-        else:
-            vae = OpenAIDiscreteVAE()
+        vae = OpenAIDiscreteVAE()
 
-    dalle_params = dict(
-        **dalle_params
-    )
     IMAGE_SIZE = vae.image_size
     resume_epoch = loaded_obj.get('epoch', 0)
 else:
@@ -283,7 +287,7 @@ else:
         vae = DiscreteVAE(**vae_params)
         vae.load_state_dict(weights)
     else:
-        if distr_backend.is_root_worker():
+        if is_root:
             print('using pretrained VAE for encoding images to tokens')
         vae_params = None
 
@@ -311,6 +315,7 @@ else:
         rotary_emb=ROTARY_EMB,
         shared_attn_ids=SHARED_ATTN_IDS,
         shared_ff_ids=SHARED_FF_IDS,
+        share_input_output_emb=SHARE_INPUT_OUTPUT_EMB,
     )
     resume_epoch = 0
 
@@ -318,7 +323,6 @@ else:
 
 if isinstance(vae, OpenAIDiscreteVAE) and args.fp16:
     vae.enc.blocks.output.conv.use_float16 = True
-
 
 # helpers
 
@@ -379,7 +383,7 @@ if ENABLE_WEBDATASET:
 
     w_dataset = wds.WebDataset(DATASET, handler=wds.warn_and_continue)
     filtered_dataset = w_dataset.select(filter_dataset)
-    ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE, partial=True)
+    ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE / distr_backend.get_world_size(), partial=True)
 else:
     ds = TextImageDataset(
         args.image_text_folder,
@@ -392,9 +396,13 @@ else:
     )
     assert len(ds) > 0, 'dataset is empty'
 
-if distr_backend.is_root_worker():
+if is_root:
     if not ENABLE_WEBDATASET:
         print(f'{len(ds)} image-text pairs found for training')
+
+# data sampler
+
+data_sampler = None
 
 if not is_shuffle:
     data_sampler = torch.utils.data.distributed.DistributedSampler(
@@ -402,23 +410,22 @@ if not is_shuffle:
         num_replicas=distr_backend.get_world_size(),
         rank=distr_backend.get_rank()
     )
-else:
-    data_sampler = None
+
+# WebLoader for WebDataset and DeepSpeed compatibility
 
 if ENABLE_WEBDATASET:
-    # WebLoader for WebDataset and DeepSpeed compatibility
-    dl = wds.WebLoader(ds, batch_size=None, shuffle=False) # optionally add num_workers=2 (n) argument
+    dl = wds.WebLoader(ds, batch_size=None, shuffle=False, num_workers=4) # optionally add num_workers=2 (n) argument
     number_of_batches = DATASET_SIZE // (BATCH_SIZE * distr_backend.get_world_size())
-    dl = dl.repeat(2).slice(number_of_batches)
+    dl = dl.slice(number_of_batches)
     dl.length = number_of_batches
 else:
     # Regular DataLoader for image-text-folder datasets
     dl = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=is_shuffle, drop_last=True, sampler=data_sampler)
 
-
 # initialize DALL-E
 
 dalle = DALLE(vae=vae, **dalle_params)
+
 if not using_deepspeed:
     if args.fp16:
         dalle = dalle.half()
@@ -430,8 +437,13 @@ if RESUME and not using_deepspeed:
 # optimizer
 
 opt = Adam(get_trainable_params(dalle), lr=LEARNING_RATE)
+
 if RESUME and opt_state:
     opt.load_state_dict(opt_state)
+
+# scheduler
+
+scheduler = None
 
 if LR_DECAY:
     scheduler = ReduceLROnPlateau(
@@ -445,11 +457,10 @@ if LR_DECAY:
     )
     if RESUME and scheduler_state:
         scheduler.load_state_dict(scheduler_state)
-else:
-    scheduler = None
 
-if distr_backend.is_root_worker():
-    # experiment tracker
+# experiment tracker
+
+if is_root:
 
     model_config = dict(
         depth=DEPTH,
@@ -511,8 +522,10 @@ if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2:
     config_params=deepspeed_config,
 )
 # Prefer scheduler in `deepspeed_config`.
+
 if LR_DECAY and distr_scheduler is None:
     distr_scheduler = scheduler
+
 avoid_model_calls = using_deepspeed and args.fp16
 
 if RESUME and using_deepspeed:
@@ -524,18 +537,21 @@ def save_model(path, epoch=0):
         'hparams': dalle_params,
         'vae_params': vae_params,
         'epoch': epoch,
+        'version': get_pkg_version(),
+        'vae_class_name': vae.__class__.__name__
     }
+
     if using_deepspeed:
         cp_dir = cp_path_to_dir(path, 'ds')
 
-        if KEEP_N_CHECKPOINTS is not None and distr_backend.is_root_worker():
+        if KEEP_N_CHECKPOINTS is not None and is_root:
             checkpoints = sorted(glob(str(cp_dir / "global*")), key=os.path.getmtime, reverse=True)
             for checkpoint in checkpoints[KEEP_N_CHECKPOINTS:]:
                 shutil.rmtree(checkpoint)
 
         distr_dalle.save_checkpoint(cp_dir, client_state=save_obj)
 
-        if not distr_backend.is_root_worker():
+        if not is_root:
             return
 
         # Save auxiliary values so we can reuse the standard routine
@@ -553,30 +569,41 @@ def save_model(path, epoch=0):
         if deepspeed_config.get('zero_optimization', {}).get('stage', 0) >= 2: # see https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
             return
 
-    if not distr_backend.is_root_worker():
+    if not is_root:
         return
 
     save_obj = {
         **save_obj,
         'weights': dalle.state_dict(),
         'opt_state': opt.state_dict(),
+        'scheduler_state': (scheduler.state_dict() if scheduler else None)
     }
-    save_obj['scheduler_state'] = (scheduler.state_dict() if scheduler else None)
+
     torch.save(save_obj, path)
+
+def save_artifact(model_config, model_path, name = 'trained-dalle'):
+    model_artifact = wandb.Artifact(name, type='model', metadata=dict(model_config))
+    model_artifact.add_file(model_path)
+    run.log_artifact(model_artifact)
 
 # training
 
 # Saves a checkpoint before training begins to fail early when mis-configured.
 # See https://github.com/lucidrains/DALLE-pytorch/wiki/DeepSpeed-Checkpoints
+
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=resume_epoch)
+
 for epoch in range(resume_epoch, EPOCHS):
     if data_sampler:
         data_sampler.set_epoch(epoch)
+
     for i, (text, images) in enumerate((dl if ENABLE_WEBDATASET else distr_dl)):
-        if i % 10 == 0 and distr_backend.is_root_worker():
+        if i % 10 == 0 and is_root:
             t = time.time()
+
         if args.fp16:
             images = images.half()
+
         text, images = map(lambda t: t.cuda(), (text, images))
 
         loss = distr_dalle(text, images, return_loss=True)
@@ -596,7 +623,7 @@ for epoch in range(resume_epoch, EPOCHS):
 
         log = {}
 
-        if i % 10 == 0 and distr_backend.is_root_worker():
+        if i % 10 == 0 and is_root:
             print(epoch, i, f'loss - {avg_loss.item()}')
 
             log = {
@@ -609,24 +636,19 @@ for epoch in range(resume_epoch, EPOCHS):
         if i % SAVE_EVERY_N_STEPS == 0:
             save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 
-        if i % 100 == 0:
-            if distr_backend.is_root_worker():
-                sample_text = text[:1]
-                token_list = sample_text.masked_select(sample_text != 0).tolist()
-                decoded_text = tokenizer.decode(token_list)
+        if i % 100 == 0 and is_root:
+            sample_text = text[:1]
+            token_list = sample_text.masked_select(sample_text != 0).tolist()
+            decoded_text = tokenizer.decode(token_list)
 
-                if not avoid_model_calls:
-                    # CUDA index errors when we don't guard this
-                    image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
+            if not avoid_model_calls:
+                # CUDA index errors when we don't guard this
+                image = dalle.generate_images(text[:1], filter_thres=0.9)  # topk sampling at 0.9
 
+            if not avoid_model_calls:
+                log['image'] = wandb.Image(image, caption=decoded_text)
 
-                log = {
-                    **log,
-                }
-                if not avoid_model_calls:
-                    log['image'] = wandb.Image(image, caption=decoded_text)
-
-        if i % 10 == 9 and distr_backend.is_root_worker():
+        if i % 10 == 9 and is_root:
             sample_per_sec = BATCH_SIZE * 10 / (time.time() - t)
             log["sample_per_sec"] = sample_per_sec
             print(epoch, i, f'sample_per_sec - {sample_per_sec}')
@@ -634,7 +656,7 @@ for epoch in range(resume_epoch, EPOCHS):
         if i == 201 and args.flops_profiler:
             raise StopIteration("Profiler has finished running. Stopping training early.")
 
-        if distr_backend.is_root_worker():
+        if is_root:
             wandb.log(log)
 
     if LR_DECAY:
@@ -642,18 +664,13 @@ for epoch in range(resume_epoch, EPOCHS):
 
     save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
 
-    if distr_backend.is_root_worker():
+    if is_root:
         # save trained model to wandb as an artifact every epoch's end
-
-        model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
-        model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
-        run.log_artifact(model_artifact)
+        save_artifact(model_config, DALLE_OUTPUT_FILE_NAME)
 
 save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-if distr_backend.is_root_worker():
-    wandb.save(DALLE_OUTPUT_FILE_NAME)
-    model_artifact = wandb.Artifact('trained-dalle', type='model', metadata=dict(model_config))
-    model_artifact.add_file(DALLE_OUTPUT_FILE_NAME)
-    run.log_artifact(model_artifact)
 
+if is_root:
+    wandb.save(DALLE_OUTPUT_FILE_NAME)
+    save_artifact(model_config, DALLE_OUTPUT_FILE_NAME)
     wandb.finish()

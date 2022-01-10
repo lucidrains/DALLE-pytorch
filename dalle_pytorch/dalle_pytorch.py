@@ -32,6 +32,9 @@ def masked_mean(t, mask, dim = 1):
     t = t.masked_fill(~mask[:, :, None], 0.)
     return t.sum(dim = 1) / mask.sum(dim = 1)[..., None]
 
+def prob_mask_like(shape, prob, device):
+    return torch.zeros(shape, device = device).float().uniform_(0, 1) < prob
+
 def set_requires_grad(model, value):
     for param in model.parameters():
         param.requires_grad = value
@@ -46,6 +49,16 @@ def eval_decorator(fn):
     return inner
 
 # sampling helpers
+
+def log(t, eps = 1e-20):
+    return torch.log(t + eps)
+
+def gumbel_noise(t):
+    noise = torch.zeros_like(t).uniform_(0, 1)
+    return -log(-log(noise))
+
+def gumbel_sample(t, temperature = 1., dim = -1):
+    return ((t / temperature) + gumbel_noise(t)).argmax(dim = dim)
 
 def top_k(logits, thres = 0.5):
     num_logits = logits.shape[-1]
@@ -466,10 +479,9 @@ class DALLE(nn.Module):
             logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
-            probs = F.softmax(filtered_logits / temperature, dim = -1)
-            sample = torch.multinomial(probs, 1)
+            sample = gumbel_sample(filtered_logits, temperature = temperature, dim = -1)
 
-            text_tokens = torch.cat((text_tokens, sample), dim=-1)
+            text_tokens = torch.cat((text_tokens, sample[:, None]), dim=-1)
 
         padding_tokens = set(np.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
         texts = [tokenizer.tokenizer.decode(text_token, pad_tokens=padding_tokens) for text_token in text_tokens]
@@ -482,11 +494,11 @@ class DALLE(nn.Module):
         text,
         *,
         clip = None,
-        mask = None,
         filter_thres = 0.5,
         temperature = 1.,
         img = None,
         num_init_img_tokens = None,
+        cond_scale = 1.,
         use_cache = False,
     ):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
@@ -512,17 +524,21 @@ class DALLE(nn.Module):
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            logits = self(text, image, mask = mask, cache = cache)[:, -1, :]
+            logits = self(text, image, cache=cache)
+
+            if cond_scale != 1:
+                # discovery by Katherine Crowson
+                # https://twitter.com/RiversHaveWings/status/1478093658716966912
+                null_cond_logits = self(text, image, null_cond_prob = 1.)
+                logits = null_cond_logits + (logits - null_cond_logits) * cond_scale
+
+            logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
-            probs = F.softmax(filtered_logits / temperature, dim = -1)
-            sample = torch.multinomial(probs, 1)
+            sample = gumbel_sample(filtered_logits, temperature = temperature, dim = -1)
 
             sample -= (num_text_tokens if is_image else 0) # offset sampled token if it is an image token, since logit space is composed of text and then image tokens
-            out = torch.cat((out, sample), dim=-1)
-
-            if out.shape[1] <= text_seq_len:
-                mask = F.pad(mask, (0, 1), value = True)
+            out = torch.cat((out, sample[:, None]), dim=-1)
 
         text_seq = out[:, :text_seq_len]
 
@@ -539,12 +555,18 @@ class DALLE(nn.Module):
         self,
         text,
         image = None,
-        mask = None,
+        return_loss = False,
+        null_cond_prob = 0.,
         cache = None,
-        return_loss = False
     ):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
-        device, total_seq_len = text.device, self.total_seq_len
+        batch, device, total_seq_len = text.shape[0], text.device, self.total_seq_len
+
+        # randomly remove text condition with <null_cond_prob> probability
+
+        if null_cond_prob > 0:
+            null_mask = prob_mask_like((batch,), null_cond_prob, device = device)
+            text *= rearrange(~null_mask, 'b -> b 1')
 
         # make sure padding in text tokens get unique padding token id
 
