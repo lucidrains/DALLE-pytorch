@@ -22,7 +22,7 @@ Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E
 
 ## Appreciation
   
-This library could not have been possible without the contributions of <a href="https://github.com/janEbert">janEbert</a>, <a href="https://github.com/afiaka87">Clay</a>, <a href="https://github.com/robvanvolt">robvanvolt</a>, and <a href="https://github.com/rom1504">Romaine</a>! 🙏
+This library could not have been possible without the contributions of <a href="https://github.com/janEbert">janEbert</a>, <a href="https://github.com/afiaka87">Clay</a>, <a href="https://github.com/robvanvolt">robvanvolt</a>, <a href="https://github.com/rom1504">Romaine</a>, and <a href="https://github.com/borzunov">Alexander</a>! 🙏
 
 ## Status
 <p align='center'>
