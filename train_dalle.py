@@ -131,6 +131,12 @@ model_group.add_argument('--shift_tokens', help = 'Use the shift tokens feature'
 
 model_group.add_argument('--rotary_emb', help = 'Use rotary embeddings', action = 'store_true')
 
+model_group.add_argument('--shared_attn_ids', default = None, type = str, help = 'Comma separated list of shared attention layer ids. Default: sharing is disabled')
+
+model_group.add_argument('--shared_ff_ids', default = None, type = str, help = 'Comma separated list of shared feed forward layer ids. Default: sharing is disabled')
+
+model_group.add_argument('--share_input_output_emb', help = 'Share input and output embeddings', action = 'store_true')
+
 args = parser.parse_args()
 
 # helpers
@@ -193,6 +199,9 @@ SHIFT_TOKENS = args.shift_tokens
 ROTARY_EMB = args.rotary_emb
 
 ATTN_TYPES = tuple(args.attn_types.split(','))
+SHARED_ATTN_IDS = tuple(args.shared_attn_ids.split(',')) if exists(args.shared_attn_ids) else None
+SHARED_FF_IDS = tuple(args.shared_ff_ids.split(',')) if exists(args.shared_ff_ids) else None
+SHARE_INPUT_OUTPUT_EMB = args.share_input_output_emb
 
 DEEPSPEED_CP_AUX_FILENAME = 'auxiliary.pt'
 
@@ -304,6 +313,9 @@ else:
         stable=STABLE,
         shift_tokens=SHIFT_TOKENS,
         rotary_emb=ROTARY_EMB,
+        shared_attn_ids=SHARED_ATTN_IDS,
+        shared_ff_ids=SHARED_FF_IDS,
+        share_input_output_emb=SHARE_INPUT_OUTPUT_EMB,
     )
     resume_epoch = 0
 
@@ -368,7 +380,7 @@ if ENABLE_WEBDATASET:
         if myimg not in item:
             return False
         return True
-	
+
     w_dataset = wds.WebDataset(DATASET, handler=wds.warn_and_continue)
     filtered_dataset = w_dataset.select(filter_dataset)
     ds = filtered_dataset.map_dict(**image_text_mapping).map_dict(**image_mapping).to_tuple(mycap, myimg).batched(BATCH_SIZE / distr_backend.get_world_size(), partial=True)
@@ -623,7 +635,7 @@ for epoch in range(resume_epoch, EPOCHS):
 
         if i % SAVE_EVERY_N_STEPS == 0:
             save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-	
+
         if i % 100 == 0 and is_root:
             sample_text = text[:1]
             token_list = sample_text.masked_select(sample_text != 0).tolist()
@@ -651,7 +663,7 @@ for epoch in range(resume_epoch, EPOCHS):
         distr_scheduler.step(avg_loss)
 
     save_model(DALLE_OUTPUT_FILE_NAME, epoch=epoch)
-    
+
     if is_root:
         # save trained model to wandb as an artifact every epoch's end
         save_artifact(model_config, DALLE_OUTPUT_FILE_NAME)

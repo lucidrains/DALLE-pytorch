@@ -68,6 +68,20 @@ def top_k(logits, thres = 0.5):
     probs.scatter_(1, ind, val)
     return probs
 
+class SharedEmbedding(nn.Embedding):
+    def __init__(self, linear, start_index, end_index, **kwargs):
+        super().__init__(end_index - start_index, linear.weight.shape[1], **kwargs)
+        del self.weight
+
+        self.linear = linear
+        self.start_index = start_index
+        self.end_index = end_index
+
+    def forward(self, input):
+        return F.embedding(
+            input, self.linear.weight[self.start_index:self.end_index], self.padding_idx, self.max_norm,
+            self.norm_type, self.scale_grad_by_freq, self.sparse)
+
 # discrete vae class
 
 class ResBlock(nn.Module):
@@ -339,7 +353,11 @@ class DALLE(nn.Module):
         stable = False,
         sandwich_norm = False,
         shift_tokens = True,
-        rotary_emb = True
+        rotary_emb = True,
+        shared_attn_ids = None,
+        shared_ff_ids = None,
+        share_input_output_emb = False,
+        optimize_for_inference = False,
     ):
         super().__init__()
         assert isinstance(vae, (DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE)), 'vae must be an instance of DiscreteVAE'
@@ -350,9 +368,6 @@ class DALLE(nn.Module):
         image_seq_len = image_fmap_size ** 2
 
         num_text_tokens = num_text_tokens + text_seq_len  # reserve unique padding tokens for each position (text seq len)
-
-        self.text_emb = nn.Embedding(num_text_tokens, dim)
-        self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         self.text_pos_emb = nn.Embedding(text_seq_len + 1, dim) if not rotary_emb else always(0) # +1 for <bos>
         self.image_pos_emb = AxialPositionalEmbedding(dim, axial_shape = (image_fmap_size, image_fmap_size)) if not rotary_emb else always(0)
@@ -387,7 +402,10 @@ class DALLE(nn.Module):
             stable = stable,
             sandwich_norm = sandwich_norm,
             shift_tokens = shift_tokens,
-            rotary_emb = rotary_emb
+            rotary_emb = rotary_emb,
+            shared_attn_ids = shared_attn_ids,
+            shared_ff_ids = shared_ff_ids,
+            optimize_for_inference = optimize_for_inference,
         )
 
         self.stable = stable
@@ -399,6 +417,13 @@ class DALLE(nn.Module):
             nn.LayerNorm(dim),
             nn.Linear(dim, self.total_tokens),
         )
+
+        if share_input_output_emb:
+            self.text_emb = SharedEmbedding(self.to_logits[1], 0, num_text_tokens)
+            self.image_emb = SharedEmbedding(self.to_logits[1], num_text_tokens, total_tokens)
+        else:
+            self.text_emb = nn.Embedding(num_text_tokens, dim)
+            self.image_emb = nn.Embedding(num_image_tokens, dim)
 
         seq_range = torch.arange(seq_len)
         logits_range = torch.arange(total_tokens)
@@ -430,7 +455,7 @@ class DALLE(nn.Module):
             text_tokens = torch.tensor([[0]]).cuda()
         else:
             text_tokens = torch.tensor(tokenizer.tokenizer.encode(text)).cuda().unsqueeze(0)
-   
+
         for _ in range(text_tokens.shape[1], text_seq_len):
             device = text_tokens.device
 
@@ -457,7 +482,7 @@ class DALLE(nn.Module):
             sample = gumbel_sample(filtered_logits, temperature = temperature, dim = -1)
 
             text_tokens = torch.cat((text_tokens, sample[:, None]), dim=-1)
-    
+
         padding_tokens = set(np.arange(self.text_seq_len) + (self.num_text_tokens - self.text_seq_len))
         texts = [tokenizer.tokenizer.decode(text_token, pad_tokens=padding_tokens) for text_token in text_tokens]
         return text_tokens, texts
@@ -473,7 +498,8 @@ class DALLE(nn.Module):
         temperature = 1.,
         img = None,
         num_init_img_tokens = None,
-        cond_scale = 1.
+        cond_scale = 1.,
+        use_cache = False,
     ):
         vae, text_seq_len, image_seq_len, num_text_tokens = self.vae, self.text_seq_len, self.image_seq_len, self.num_text_tokens
         total_len = text_seq_len + image_seq_len
@@ -492,17 +518,23 @@ class DALLE(nn.Module):
             indices = indices[:, :num_img_tokens]
             out = torch.cat((out, indices), dim = -1)
 
+        prev_cache = None
+        cache = {} if use_cache else None
         for cur_len in range(out.shape[1], total_len):
             is_image = cur_len >= text_seq_len
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            logits = self(text, image)
+            if cond_scale != 1 and use_cache:
+                # copy the cache state to infer from the same place twice
+                prev_cache = cache.copy()
+
+            logits = self(text, image, cache = cache)
 
             if cond_scale != 1:
                 # discovery by Katherine Crowson
                 # https://twitter.com/RiversHaveWings/status/1478093658716966912
-                null_cond_logits = self(text, image, null_cond_prob = 1.)
+                null_cond_logits = self(text, image, null_cond_prob = 1., cache = prev_cache)
                 logits = null_cond_logits + (logits - null_cond_logits) * cond_scale
 
             logits = logits[:, -1, :]
@@ -529,7 +561,8 @@ class DALLE(nn.Module):
         text,
         image = None,
         return_loss = False,
-        null_cond_prob = 0.
+        null_cond_prob = 0.,
+        cache = None,
     ):
         assert text.shape[-1] == self.text_seq_len, f'the length {text.shape[-1]} of the text tokens you passed in does not have the correct length ({self.text_seq_len})'
         batch, device, total_seq_len = text.shape[0], text.device, self.total_seq_len
@@ -583,7 +616,9 @@ class DALLE(nn.Module):
             alpha = 0.1
             tokens = tokens * alpha + tokens.detach() * (1 - alpha)
 
-        out = self.transformer(tokens)
+        if exists(cache) and cache.get('offset'):
+            tokens = tokens[:, -1:]
+        out = self.transformer(tokens, cache=cache)
 
         if self.stable:
             out = self.norm_by_max(out)
@@ -593,8 +628,13 @@ class DALLE(nn.Module):
         # mask logits to make sure text predicts text (except last token), and image predicts image
 
         logits_mask = self.logits_mask[:, :seq_len]
+        if exists(cache) and cache.get('offset'):
+            logits_mask = logits_mask[:, -1:]
         max_neg_value = -torch.finfo(logits.dtype).max
         logits.masked_fill_(logits_mask, max_neg_value)
+
+        if exists(cache):
+            cache['offset'] = cache.get('offset', 0) + logits.shape[1]
 
         if not return_loss:
             return logits
