@@ -12,7 +12,6 @@ from dalle_pytorch.reversible import ReversibleSequence, SequentialSequence
 from dalle_pytorch.attention import Attention, SparseAttention, SparseConvCausalAttention, SparseAxialCausalAttention
 
 from rotary_embedding_torch import RotaryEmbedding, broadcat
-from g_mlp_pytorch import gMLPBlock
 
 # helpers
 
@@ -261,17 +260,12 @@ class Transformer(nn.Module):
                     attn_class = partial(SparseAxialCausalAttention, seq_len = seq_len, axis = 1, image_size = image_fmap_size, stable = stable)
             elif attn_type == 'conv_like':
                 attn_class = partial(SparseConvCausalAttention, seq_len = seq_len, image_size = image_fmap_size, stable = stable)
-            elif attn_type == 'mlp':
-                attn_class = partial(gMLPBlock, seq_len = seq_len)
             else:
                 raise ValueError(f'attention type "{attn_type}" is not valid')
 
             attn, reused_attn_type = shared_attn_layers.get(attn_id, (None, None))
             if not exists(attn):
-                if attn_type != 'mlp':
-                    attn = attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)
-                else:
-                    attn = attn_class(dim = dim, causal = causal, dim_ff = dim * 4)
+                attn = attn_class(dim, causal = causal, seq_len = seq_len, heads = heads, dim_head = dim_head, dropout = attn_dropout)
                 shared_attn_layers[attn_id] = (attn, attn_type)
             elif attn_type != reused_attn_type:
                 raise ValueError('attn_types do not match shared_attn_ids '
@@ -309,8 +303,6 @@ class Transformer(nn.Module):
 
         pos_emb = None
         if rotary_emb:
-            assert 'mlp' not in attn_types, 'you cannot use gMLPs if rotary embedding is turned on'
-
             rot_dim = dim_head // 3
             img_seq_len = (image_fmap_size ** 2)
             text_len = seq_len - img_seq_len + 1
