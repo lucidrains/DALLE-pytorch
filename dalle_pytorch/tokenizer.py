@@ -124,7 +124,7 @@ class SimpleTokenizer(object):
             bpe_tokens.extend(self.encoder[bpe_token] for bpe_token in self.bpe(token).split(' '))
         return bpe_tokens
 
-    def decode(self, tokens, remove_start_end = True, pad_tokens = {}):
+    def decode(self, tokens, remove_start_end = True, pad_tokens = set()):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
@@ -164,7 +164,7 @@ class HugTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.get_vocab_size()
 
-    def decode(self, tokens, pad_tokens = {}):
+    def decode(self, tokens, pad_tokens = set()):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
         ignore_ids = pad_tokens.union({0})
@@ -199,7 +199,7 @@ class ChineseTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.vocab_size
 
-    def decode(self, tokens, pad_tokens = {}):
+    def decode(self, tokens, pad_tokens = set()):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
             
@@ -238,7 +238,7 @@ class YttmTokenizer:
         self.tokenizer = tokenizer
         self.vocab_size = tokenizer.vocab_size()
 
-    def decode(self, tokens, pad_tokens = {}):
+    def decode(self, tokens, pad_tokens = set()):
         if torch.is_tensor(tokens):
             tokens = tokens.tolist()
 
