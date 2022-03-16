@@ -20,6 +20,8 @@ Implementation / replication of <a href="https://openai.com/blog/dall-e/">DALL-E
 
 <a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> or <a href="https://github.com/lucidrains/big-sleep">Big Sleep</a> are great alternatives!
 
+For generating video and audio, please see <a href="https://github.com/lucidrains/nuwa-pytorch">NÜWA</a>
+
 ## Appreciation
   
 This library could not have been possible without the contributions of <a href="https://github.com/janEbert">janEbert</a>, <a href="https://github.com/afiaka87">Clay</a>, <a href="https://github.com/robvanvolt">robvanvolt</a>, <a href="https://github.com/rom1504">Romaine</a>, and <a href="https://github.com/borzunov">Alexander</a>! 🙏
