@@ -164,10 +164,12 @@ class SparseConvCausalAttention(nn.Module):
         # image attention
 
         effective_kernel_size = (kernel_size - 1) * dilation + 1
-        padding = effective_kernel_size // 2
+        same_padding = effective_kernel_size // 2
+        causal_padding = (same_padding * 2, 0, same_padding * 2, 0)
 
         k_img, v_img = map(lambda t: rearrange(t, 'b (h w) c -> b c h w', h = img_size), (k_img, v_img))
-        k_img, v_img = map(lambda t: F.unfold(t, kernel_size, padding = padding, dilation = dilation), (k_img, v_img))
+        k_img, v_img = map(lambda t: F.pad(t, causal_padding), (k_img, v_img))
+        k_img, v_img = map(lambda t: F.unfold(t, kernel_size, dilation = dilation), (k_img, v_img))
         k_img, v_img = map(lambda t: rearrange(t, 'b (d j) i -> b i j d', j = kernel_size ** 2), (k_img, v_img))
 
         # let image attend to all of text
@@ -180,20 +182,19 @@ class SparseConvCausalAttention(nn.Module):
         i, j = dots_image.shape[-2:]
         img_seq = torch.arange(img_seq_len, device = device)
         k_img_indices = rearrange(img_seq.float(), '(h w) -> () () h w', h = img_size)
-        k_img_indices = F.pad(k_img_indices, (padding,) * 4, value = img_seq_len) # padding set to be max, so it is never attended to
+        k_img_indices = F.pad(k_img_indices, causal_padding, value = img_seq_len) # padding set to be max, so it is never attended to
         k_img_indices = F.unfold(k_img_indices, kernel_size, dilation = dilation)
         k_img_indices = rearrange(k_img_indices, 'b j i -> b i j')
 
         # mask image attention
 
-        q_img_indices = rearrange(img_seq, 'i -> () i ()')
-        causal_mask =  q_img_indices < k_img_indices
+        padding_mask =  k_img_indices == img_seq_len
 
         # concat text mask with image causal mask
 
-        causal_mask = repeat(causal_mask, '() i j -> b i j', b = b * h)
+        padding_mask = repeat(padding_mask, '() i j -> b i j', b = b * h)
         mask = repeat(mask, 'b j -> (b h) i j', i = i, h = h)
-        mask = torch.cat((~mask, causal_mask), dim = -1)
+        mask = torch.cat((~mask, padding_mask), dim = -1)
 
         # image can attend to all of text
 
