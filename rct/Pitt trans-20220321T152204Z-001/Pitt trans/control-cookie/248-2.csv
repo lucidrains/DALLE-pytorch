@@ -1,0 +1,54 @@
+@UTF8
+@PID:	11312/t-00002367-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|52;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	248-2, audio
+*PAR:	well let's see . [+ exc] 0_1600
+%mor:	co|well v|let~pro:obj|us v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	we have the water coming out_of the spigot and the sink is stopped
+	up and the water is going on the floor . 1600_8296
+%mor:	pro:sub|we v|have det:art|the n|water part|come-PRESP prep|out_of
+	det:art|the n|spigot coord|and det:art|the n|sink aux|be&3S
+	part|stop-PASTP adv|up coord|and det:art|the n|water aux|be&3S
+	part|go-PRESP prep|on det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|13|SUBJ 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|4|CONJ 10|11|DET 11|9|COORD 12|13|AUX 13|2|COMP 14|13|JCT 15|19|LINK
+	16|17|DET 17|19|SUBJ 18|19|AUX 19|13|CJCT 20|19|JCT 21|22|DET 22|20|POBJ
+	23|2|PUNCT
+*PAR:	apparently the mother is drying a dish . 8296_13417
+%mor:	adv|apparent&dadj-LY det:art|the n|mother aux|be&3S part|dry-PRESP
+	det:art|a n|dish .
+%gra:	1|5|JCT 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	we have the boy standing on a stool trying to get cookies out_of
+	the cookie jar and <handing them to> [/] &uh handing them to his
+	sister probably . 13417_26305
+%mor:	pro:sub|we v|have det:art|the n|boy part|stand-PRESP prep|on
+	det:art|a n|stool part|try-PRESP inf|to v|get n|cookie-PL
+	prep|out_of det:art|the n|cookie n|jar coord|and part|hand-PRESP
+	pro:obj|them prep|to det:poss|his n|sister adv|probable&dadj-LY .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|XJCT 10|11|INF 11|9|COMP 12|11|OBJ 13|11|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|11|CONJ 18|17|COORD 19|18|OBJ 20|18|JCT 21|22|DET 22|20|POBJ
+	23|18|JCT 24|2|PUNCT
+*PAR:	and he's about to fall as the stool is tipping over . 26305_31875
+%mor:	coord|and pro:sub|he~cop|be&3S adv|about inf|to v|fall conj|as
+	det:art|the n|stool aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|6|COMP 12|11|JCT 13|3|PUNCT
+*PAR:	and the grass is growing and [//] &uh probably . 31875_37162
+%mor:	coord|and det:art|the n|grass aux|be&3S part|grow-PRESP
+	adv|probable&dadj-LY .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	but I guess that's about the action . [+ exc] 37162_39177
+%mor:	conj|but pro:sub|I v|guess comp|that~aux|be&3S prep|about
+	det:art|the n|action .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|INCROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*INV:	okay . 39177_40499
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

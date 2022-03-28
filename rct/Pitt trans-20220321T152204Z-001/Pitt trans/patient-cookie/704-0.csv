@@ -1,0 +1,71 @@
+@UTF8
+@PID:	11312/t-00002729-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|50;|male|Other||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	704-0, audio
+*INV:	take a look at that picture and tell me everything that's going on
+	in that picture, everything that you see happening there . 0_7598
+%mor:	v|take det:art|a v|look prep|at det:dem|that n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|go-PRESP adv|on prep|in det:dem|that n|picture cm|cm
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|there .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ2 10|8|OBJ 11|13|LINK 12|13|AUX 13|10|CMOD 14|13|JCT 15|13|JCT
+	16|17|DET 17|15|POBJ 18|13|LP 19|13|OBJ 20|22|LINK 21|22|SUBJ 22|19|CMOD
+	23|22|OBJ 24|22|JCT 25|1|PUNCT
+*PAR:	well the little kid's falling off his chair [: stool] [* s:r] . 7598_11057
+%mor:	co|well det:art|the adj|little n|kid~aux|be&3S part|fall-PRESP
+	prep|off det:poss|his n|stool .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*INV:	mhm . 11057_11621
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the mother is having water run over the &uh sink . 11621_21653
+%mor:	coord|and det:art|the n|mother aux|be&3S part|have-PRESP n|water
+	v|run prep|over det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|SUBJ 7|5|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*INV:	anything else going on in that picture ? 21653_33992
+%mor:	pro:indef|anything post|else part|go-PRESP adv|on prep|in
+	det:dem|that n|picture ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|XJCT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|1|PUNCT
+*PAR:	well the water's running on the floor +/. 33992_37758
+%mor:	co|well det:art|the n|water~aux|be&3S part|run-PRESP prep|on
+	det:art|the n|floor +/.
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*INV:	mhm . 37758_38450
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, under her feet . 38450_39393
+%mor:	adv|under det:poss|her n|foot&PL .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|1|PUNCT
+*INV:	mhm . 39393_40000
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I'm looking outside but that yard is okay . 40000_46101
+%mor:	pro:sub|I~aux|be&1S part|look-PRESP adv|outside conj|but
+	det:dem|that n|yard cop|be&3S adj|okay .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|8|LINK 6|7|DET 7|8|SUBJ 8|3|CJCT
+	9|8|PRED 10|3|PUNCT
+*PAR:	the windows are open . 46101_50308
+%mor:	det:art|the n|window-PL cop|be&PRES adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	the little girl is laughing at the boy falling off the chair
+	[: stool] [* s:r] &=laughs . 50308_55976
+%mor:	det:art|the adj|little n|girl aux|be&3S part|laugh-PRESP prep|at
+	det:art|the n|boy part|fall-PRESP prep|off det:art|the n|stool .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|XJCT 10|9|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	that [//] that's bad &=laughs . [+ exc] 55976_57800
+%mor:	pro:dem|that~cop|be&3S adj|bad .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay thanks . 57800_59299
+%mor:	co|okay co|thanks .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

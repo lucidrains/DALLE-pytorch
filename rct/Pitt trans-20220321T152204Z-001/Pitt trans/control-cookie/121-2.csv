@@ -1,0 +1,132 @@
+@UTF8
+@PID:	11312/t-00002275-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|72;|female|Control||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	121-2, audio
+*INV:	that you see going on in that picture . 0_2526
+%mor:	comp|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:dem|that n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*INV:	all the action that you see happening there . 2526_4704
+%mor:	qn|all det:art|the n|action pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|there .
+%gra:	1|3|QUANT 2|3|DET 3|0|INCROOT 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ
+	8|6|JCT 9|3|PUNCT
+*PAR:	&um the boy reaching [//] &uh standing on a stool which is tipping
+	. 4704_11831
+%mor:	det:art|the n|boy part|stand-PRESP prep|on det:art|a n|stool
+	pro:rel|which aux|be&3S part|tip-PRESP .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|2|PUNCT
+*PAR:	with one foot over the &um edge of the stool . [+ gram] 11831_16139
+%mor:	prep|with det:num|one n|foot prep|over det:art|the n|edge prep|of
+	det:art|the n|stool .
+%gra:	1|0|INCROOT 2|3|QUANT 3|1|POBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|6|NJCT
+	8|9|DET 9|7|POBJ 10|1|PUNCT
+*PAR:	and <his heel is on the> [/] the heel of that foot is on the toe of
+	his other foot . 16139_22907
+%mor:	coord|and det:art|the n|heel prep|of det:dem|that n|foot cop|be&3S
+	prep|on det:art|the n|toe prep|of det:poss|his qn|other n|foot .
+%gra:	1|7|LINK 2|3|DET 3|7|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|10|NJCT 12|14|DET 13|14|QUANT 14|11|POBJ 15|7|PUNCT
+*PAR:	&um he's taking a cookie out_of the cookie jar . 22907_26333
+%mor:	pro:sub|he~aux|be&3S part|take-PRESP det:art|a n|cookie prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	and has one in his left hand too . 26333_28827
+%mor:	coord|and aux|have&3S det:num|one prep|in det:poss|his adj|left
+	n|hand adv|too .
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|JCT
+	9|3|PUNCT
+*PAR:	looks as if he's going to hand it to his sister who has her arm up
+	. [+ gram] 28827_32732
+%mor:	v|look-3S adv|as comp|if pro:sub|he~aux|be&3S part|go-PRESP inf|to
+	v|hand pro:per|it prep|to det:poss|his n|sister pro:rel|who
+	aux|have&3S det:poss|her n|arm adv|up .
+%gra:	1|0|ROOT 2|1|JCT 3|6|LINK 4|6|SUBJ 5|6|AUX 6|1|COMP 7|8|INF 8|6|COMP
+	9|8|OBJ 10|8|JCT 11|12|DET 12|10|POBJ 13|16|LINK 14|16|AUX 15|16|DET
+	16|12|CMOD 17|16|JCT 18|1|PUNCT
+*PAR:	she has her finger (.) in front of her face . 32732_37721
+%mor:	pro:sub|she v|have&3S det:poss|her n|finger prep|in n|front prep|of
+	det:poss|her n|face .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|5|POBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	&um looks as if she's laugh [//] saying be quiet . [+ gram] 37721_42356
+%mor:	v|look-3S adv|as conj|if pro:sub|she~aux|be&3S part|say-PRESP
+	cop|be adj|quiet .
+%gra:	1|0|ROOT 2|1|JCT 3|7|LINK 4|6|SUBJ 5|6|AUX 6|7|SUBJ 7|1|COMP 8|7|PRED
+	9|1|PUNCT
+*PAR:	and <the mother is at the> [//] the sister is standing on the floor
+	. 42356_47142
+%mor:	coord|and det:art|the n|sister aux|be&3S part|stand-PRESP prep|on
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	the mother is at the kitchen sink drying <a dish> [//] a plate . 47142_52853
+%mor:	det:art|the n|mother cop|be&3S prep|at det:art|the n|kitchen n|sink
+	part|dry-PRESP det:art|a n|plate .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|XJCT
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*PAR:	the water is <running over> [//] &eh spilling over from the sink
+	onto the floor . 52953_57545
+%mor:	det:art|the n|water aux|be&3S part|spill-PRESP adv|over prep|from
+	det:art|the n|sink prep|onto det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	it's running full tilt out_of the tap . 57545_59733
+%mor:	pro:per|it~aux|be&3S part|run-PRESP adj|full n|tilt prep|out_of
+	det:art|the n|tap .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|MOD 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	&um the mother is not looking . 59733_62891
+%mor:	det:art|the n|mother aux|be&3S neg|not part|look-PRESP .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|PUNCT
+*PAR:	she's facing away from everything . 62891_66039
+%mor:	pro:sub|she~aux|be&3S part|face-PRESP adv|away prep|from
+	pro:indef|everything .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	&um she has a <dish cloth in her right hand> [//] dish towel in her
+	right hand . 66039_72357
+%mor:	pro:sub|she v|have&3S det:art|a n|dish n|towel prep|in det:poss|her
+	n|right n|hand .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|2|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|2|PUNCT
+*PAR:	&um you can see outside . 72357_76235
+%mor:	pro:per|you mod|can v|see adv|outside .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	there's <a cup> [//] two cups and a plate on the counter beside . 76235_80640
+%mor:	pro:exist|there~cop|be&3S det:num|two n|cup-PL coord|and det:art|a
+	n|plate prep|on det:art|the n|counter prep|beside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD 8|2|JCT
+	9|10|DET 10|8|POBJ 11|2|JCT 12|2|PUNCT
+*PAR:	<so &h she's either> [/] I guess she's finished washing those maybe
+	. 80640_84012
+%mor:	pro:sub|I v|guess pro:sub|she~aux|be&3S part|finish-PASTP
+	part|wash-PRESP pro:dem|those adv|maybe .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|5|COMP 7|6|OBJ 8|6|JCT
+	9|2|PUNCT
+*PAR:	&um she's standing with one foot flat on the floor and the next
+	foot up as if she's standing on the toe &th . 83794_93879
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|with det:num|one n|foot
+	adj|flat prep|on det:art|the n|floor coord|and det:art|the adj|next
+	n|foot adv|up adv|as conj|if pro:sub|she~aux|be&3S part|stand-PRESP
+	prep|on det:art|the n|toe .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|QUANT 6|4|POBJ 7|6|POSTMOD
+	8|7|JCT 9|10|DET 10|8|POBJ 11|20|LINK 12|14|DET 13|14|MOD 14|20|SUBJ 15|20|JCT
+	16|20|COORD 17|20|LINK 18|20|SUBJ 19|20|AUX 20|10|CMOD 21|20|JCT
+	22|23|DET 23|21|POBJ 24|3|PUNCT
+*PAR:	not resting on her heel . [+ gram] 93879_96432
+%mor:	neg|not part|rest-PRESP prep|on det:poss|her n|heel .
+%gra:	1|2|NEG 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*INV:	okay . 96432_100376
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	alright . 100376_100900
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

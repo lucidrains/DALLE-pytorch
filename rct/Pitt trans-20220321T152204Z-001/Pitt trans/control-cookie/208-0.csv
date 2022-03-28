@@ -1,0 +1,59 @@
+@UTF8
+@PID:	11312/t-00002339-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	208-0, audio
+*INV:	alright . 0_1713
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	ready ? [+ exc] 1713_6935
+%mor:	adj|ready ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the boy is going after cookies in a cookie jar . 6935_11256
+%mor:	det:art|the n|boy aux|be&3S part|go-PRESP prep|after n|cookie-PL
+	prep|in det:art|a n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|6|NJCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	he's standing on a stool that's tilting over . 11256_14526
+%mor:	pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|tilt-PRESP adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|9|JCT 11|3|PUNCT
+*PAR:	<the girl is> [//] the little girl is laughing . 14526_19455
+%mor:	det:art|the adj|little n|girl aux|be&3S part|laugh-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	the mother is washing dishes and the water is spilling over from
+	the sink onto the floor . 19253_28170
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	det:art|the n|water aux|be&3S part|spill-PRESP adv|over prep|from
+	det:art|the n|sink prep|onto det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|10|JCT
+	16|17|DET 17|15|POBJ 18|4|PUNCT
+*PAR:	and the window is open . 28170_33090
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and (.) she's drying the dishes evidently . 33090_41648
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL adv|evident&dadj-LY .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|PUNCT
+*PAR:	and &uh the curtains are open . 41648_46985
+%mor:	coord|and det:art|the n|curtain-PL cop|be&PRES adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and there's two cups and a saucer on the sink . 47204_52530
+%mor:	coord|and pro:exist|there~cop|be&3S det:num|two n|cup-PL coord|and
+	det:art|a n|saucer prep|on det:art|the n|sink .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|5|CONJ 7|8|DET
+	8|6|COORD 9|8|NJCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	and that is about all I can see . [+ exc] 52530_60698
+%mor:	coord|and pro:rel|that cop|be&3S adv|about adv|all pro:sub|I
+	mod|can v|see .
+%gra:	1|3|LINK 2|3|LINK 3|0|ROOT 4|8|JCT 5|8|JCT 6|8|SUBJ 7|8|AUX 8|3|PRED
+	9|3|PUNCT
+*INV:	okay . 60698_61770
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

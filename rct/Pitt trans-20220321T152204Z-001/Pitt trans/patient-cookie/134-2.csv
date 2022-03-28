@@ -1,0 +1,56 @@
+@UTF8
+@PID:	11312/t-00002512-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|ProbableAD||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	134-2, audio
+*INV:	I'm gonna show you a picture that has a_lot_of things going on in
+	the picture . 0_4500
+%mor:	pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|show pro:per|you
+	det:art|a n|picture pro:rel|that v|have&3S qn|a_lot_of n|thing-PL
+	part|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|OBJ2 7|8|DET 8|5|OBJ
+	9|10|LINK 10|8|CMOD 11|12|QUANT 12|10|OBJ 13|12|XMOD 14|13|JCT 15|13|JCT
+	16|17|DET 17|15|POBJ 18|3|PUNCT
+*PAR:	&mm . [+ exc] 4500_5100
+*INV:	+< I'd like you to tell me everything you see going on in the
+	picture . 4720_8380
+%mor:	pro:sub|I~mod|genmod v|like pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|10|SUBJ 10|6|COMP 11|10|OBJ 12|10|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	mhm . [+ exc] 8374_10170
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&hm (.) this [//] the boy is <on the> [/] on the [/] &uh the &uh
+	chair [: stool] [* s:r] tryin(g) to get some cookies out_of the
+	cupboard to give to [/] &hi to his sister I guess . 10170_27377
+%mor:	det:art|the n|boy aux|be&3S prep|on det:art|the n|stool
+	part|try-PRESP inf|to v|get qn|some n|cookie-PL prep|out_of
+	det:art|the n|cupboard inf|to v|give prep|to det:poss|his n|sister
+	pro:sub|I v|guess .
+%gra:	1|2|DET 2|7|SUBJ 3|7|AUX 4|3|JCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|9|INF
+	9|7|COMP 10|11|QUANT 11|9|OBJ 12|9|JCT 13|14|DET 14|12|POBJ 15|16|INF
+	16|9|XJCT 17|16|JCT 18|19|DET 19|17|POBJ 20|21|SUBJ 21|16|CJCT 22|7|PUNCT
+*PAR:	and the mother is &um doin(g) the [/] the dishes and [/] and the
+	sink overflowed . 27377_33992
+%mor:	coord|and det:art|the n|mother aux|be&3S part|do-PRESP det:art|the
+	n|dish-PL coord|and det:art|the n|sink over#part|flow-PASTP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|7|CONJ
+	9|10|DET 10|11|SUBJ 11|8|COORD 12|5|PUNCT
+*PAR:	and [/] and all the water's going on the floor . 33992_37695
+%mor:	coord|and qn|all det:art|the n|water~aux|be&3S part|go-PRESP
+	prep|on det:art|the n|floor .
+%gra:	1|6|LINK 2|4|QUANT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	that's it . [+ exc] 37695_42365
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 42365_43238
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

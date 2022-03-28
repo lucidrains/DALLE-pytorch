@@ -1,0 +1,78 @@
+@UTF8
+@PID:	11312/t-00002278-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	124-0, audio
+@Comment:	poor tape quality
+*INV:	here's the picture . 0_1546
+%mor:	pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	okay . [+ exc] 1546_2777
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&hm let me see . [+ exc] 2777_5291
+%mor:	v|let&ZERO pro:obj|me v|see .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|1|PUNCT
+*PAR:	the boy is getting cookies out_of the cookie jar . 5291_9260
+%mor:	det:art|the n|boy aux|be&3S part|get-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	and the stool is just about to fall over . 9260_12512
+%mor:	coord|and det:art|the n|stool cop|be&3S adj|just adv|about inf|to
+	v|fall adv|over .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|JCT 7|8|INF 8|6|COMP
+	9|8|JCT 10|4|PUNCT
+*PAR:	the little girl is reaching up for a cookie . 12512_14940
+%mor:	det:art|the adj|little n|girl aux|be&3S part|reach-PRESP adv|up
+	prep|for det:art|a n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	and the mother is drying dishes . 14940_18597
+%mor:	coord|and det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	the water is running in to the sink and the sink is running over
+	onto the floor . 18597_23674
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|in prep|to
+	det:art|the n|sink coord|and det:art|the n|sink aux|be&3S
+	part|run-PRESP adv|over prep|onto det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|4|CJCT 14|13|JCT 15|13|JCT
+	16|17|DET 17|15|POBJ 18|4|PUNCT
+*PAR:	(..) you want action ? [+ exc] 23674_29523
+%mor:	pro:per|you v|want n|action ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	mhm . 29523_30364
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(..) you want all the action there is ? [+ exc] 30364_32558
+%mor:	pro:per|you v|want qn|all det:art|the n|action adv|there cop|be&3S
+	?
+%gra:	1|2|SUBJ 2|7|JCT 3|5|QUANT 4|5|DET 5|2|OBJ 6|7|SUBJ 7|0|ROOT 8|7|PUNCT
+*PAR:	anyhow (..) I think that's all the action there is . [+ exc] 32558_45409
+%mor:	adv|anyhow pro:sub|I v|think comp|that~aux|be&3S adv|all
+	det:art|the n|action adv|there cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|10|SUBJ 5|10|AUX 6|8|JCT 7|8|DET 8|10|SUBJ
+	9|10|SUBJ 10|3|COMP 11|3|PUNCT
+*PAR:	(..) and that little girl is laughing . 45409_57762
+%mor:	coord|and det:dem|that adj|little n|girl aux|be&3S part|laugh-PRESP
+	.
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*PAR:	that little girl xxx . 57762_61419
+%mor:	det:dem|that adj|little n|girl .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	(.) did I say the mother was drying dishes ? [+ exc] 61419_67950
+%mor:	mod|do&PAST pro:sub|I v|say det:art|the n|mother aux|be&PAST&13S
+	part|dry-PRESP n|dish-PL ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|DET 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|OBJ
+	9|3|PUNCT
+*PAR:	(.) drying a dish . 67950_74113
+%mor:	part|dry-PRESP det:art|a n|dish .
+%gra:	1|0|INCROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*INV:	okay . 74113_79686
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

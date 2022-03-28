@@ -1,0 +1,78 @@
+@UTF8
+@PID:	11312/t-00002574-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|ProbableAD||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	235-2, audio
+*INV:	everything that's going on in this picture . 0_2398
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in det:dem|this n|picture .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|1|PUNCT
+*INV:	tell me everything that you see happening there . 2398_5343
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|happen-PRESP adv|there .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|1|PUNCT
+*PAR:	<the young> [/] <the young> [/] &=clears:throat the young boy he's
+	up on a ladder [: stool] [* s:r] and with some cookies .5343_15798
+%mor:	det:art|the adj|young n|boy pro:sub|he~cop|be&3S adv|up prep|on
+	det:art|a n|stool coord|and prep|with qn|some n|cookie-PL .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|CONJ 11|10|COORD 12|13|QUANT 13|11|POBJ 14|5|PUNCT
+*PAR:	and the [/] &l the [/] the little girl she's reachin(g) up ask some
+	cookies (.) from him . [+ gram] 15798_24483
+%mor:	coord|and det:art|the adj|little n|girl pro:sub|she~aux|be&3S
+	part|reach-PRESP adv|up v|ask qn|some n|cookie-PL prep|from
+	pro:obj|him .
+%gra:	1|9|LINK 2|4|DET 3|4|MOD 4|9|SUBJ 5|7|SUBJ 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|0|ROOT 10|11|QUANT 11|9|OBJ 12|9|JCT 13|12|POBJ 14|9|PUNCT
+*PAR:	and the [//] this young lady here is [//] (.) &hm I think she's
+	washin(g) dishes .24483_41416
+%mor:	coord|and det:dem|this adj|young n|lady adv|here pro:sub|I v|think
+	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|7|LINK 2|4|DET 3|4|MOD 4|7|JCT 5|4|NJCT 6|7|SUBJ 7|0|ROOT 8|10|SUBJ
+	9|10|AUX 10|7|COMP 11|10|OBJ 12|7|PUNCT
+*PAR:	yeah &sh &pro I think +... [+ exc] 41416_45000
+%mor:	co|yeah pro:sub|I v|think +...
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	she's washin(g) dishes <at a> [/] <at a> [/] &s at a sink . 45000_49755
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL prep|at det:art|a
+	n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	(be)cause here's the spigot . [+ gram] 49755_51019
+%mor:	conj|because pro:exist|here~cop|be&3S det:art|the n|spigot .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	and here are cups . 51019_53131
+%mor:	coord|and adv|here cop|be&PRES n|cup-PL .
+%gra:	1|3|LINK 2|3|JCT 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	and here's the kitchen (.) curtains .53131_57102
+%mor:	coord|and pro:exist|here~cop|be&3S det:art|the n|kitchen
+	n|curtain-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|3|PUNCT
+*PAR:	and <stand up by> [//] stand up <in the> [//] in a window is [/] is
+	[/] &o <is over the> [/] &uh is over the sink . [+ gram] 57102_65289
+%mor:	coord|and v|stand adv|up prep|in det:art|a n|window cop|be&3S
+	prep|over det:art|the n|sink .
+%gra:	1|2|LINK 2|0|ROOT 3|2|JCT 4|2|JCT 5|6|DET 6|4|POBJ 7|2|XJCT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	(.) there's the sink there's the cups and that be [//] [//] up here
+	would be a plate . 65289_77800
+%mor:	pro:exist|there~cop|be&3S det:art|the n|sink
+	pro:exist|there~cop|be&3S det:art|the n|cup-PL coord|and
+	pro:dem|that prep|up n|here mod|will&COND cop|be det:art|a n|plate .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|6|SUBJ 6|4|CMOD 7|8|DET 8|6|PRED
+	9|14|LINK 10|14|SUBJ 11|14|JCT 12|11|POBJ 13|14|AUX 14|8|CMOD 15|16|DET
+	16|14|PRED 17|2|PUNCT
+*PAR:	that would be the window .77800_79186
+%mor:	pro:dem|that mod|will&COND cop|be det:art|the n|window .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*INV:	okay .79186_80619
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay all done ? 80619_86082
+%mor:	co|okay adv|all part|do&PASTP ?
+%gra:	1|3|COM 2|3|JCT 3|0|ROOT 4|3|PUNCT
+@End

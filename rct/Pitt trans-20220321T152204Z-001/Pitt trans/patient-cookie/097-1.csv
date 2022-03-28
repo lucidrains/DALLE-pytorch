@@ -1,0 +1,58 @@
+@UTF8
+@PID:	11312/t-00002500-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|female|ProbableAD||Participant|10||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	097-1, audio
+*INV:	tell me what's going on . 0_1929
+%mor:	v|tell pro:obj|me pro:int|what~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|AUX 5|1|COMP 6|5|JCT 7|1|PUNCT
+*PAR:	all the action . [+ exc] 1929_3232
+%mor:	qn|all det:art|the n|action .
+%gra:	1|3|QUANT 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	what's going on in this picture ? [+ exc] 3392_5214
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:dem|this
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	oh the boy is up tryin(g) to cake [: take] [* p:w] . 5214_9200
+%mor:	co|oh det:art|the n|boy aux|be&3S adv|up part|try-PRESP inf|to
+	v|take .
+%gra:	1|6|COM 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|8|INF 8|6|COMP
+	9|6|PUNCT
+*PAR:	and the woman's sink is running over . 9200_13898
+%mor:	coord|and det:art|the adj|woman&dn-POSS n|sink aux|be&3S
+	part|run-PRESP adv|over .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*INV:	mhm . 13898_14995
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and these are curtains . 14995_18570
+%mor:	coord|and pro:dem|these cop|be&PRES n|curtain-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	and his stool is tumbling over . 18570_24094
+%mor:	coord|and det:poss|his n|stool aux|be&3S part|tumble-PRESP adv|over
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*INV:	mhm . 24094_24994
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else going on in the picture ? 24994_27362
+%mor:	pro:indef|anything post|else part|go-PRESP adv|on prep|in
+	det:art|the n|picture ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|XJCT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|1|PUNCT
+*PAR:	anything else wrong with the picture ? [+ exc] 27362_30819
+%mor:	pro:indef|anything post|else adj|wrong prep|with det:art|the
+	n|picture ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|POSTMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*INV:	going on . 30819_31519
+%mor:	part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|1|JCT 3|1|PUNCT
+*INV:	any more action in the picture . 31519_33214
+%mor:	qn|any qn|more n|action prep|in det:art|the n|picture .
+%gra:	1|3|QUANT 2|3|QUANT 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*INV:	(.) okay . 33214_41079
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

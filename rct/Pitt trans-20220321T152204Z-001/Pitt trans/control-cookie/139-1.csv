@@ -1,0 +1,48 @@
+@UTF8
+@PID:	11312/t-00002296-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|51;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	139-1, audio
+*INV:	tell me anything that you see going on in that picture . 0_3798
+%mor:	v|tell pro:obj|me pro:indef|anything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*PAR:	okay she's washing dishes . 3798_6097
+%mor:	co|okay pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the sink is running over . 6097_8609
+%mor:	det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	&uh the boy is falling off the &uh stool . 8609_13388
+%mor:	det:art|the n|boy aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	he's getting cookies . 13388_14898
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP n|cookie-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	the girl is reaching for a cookie . 14898_20156
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP prep|for det:art|a
+	n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*INV:	anything else ? 20156_25157
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	the girl is telling him to be quiet . 25157_32469
+%mor:	det:art|the n|girl aux|be&3S part|tell-PRESP pro:obj|him inf|to
+	cop|be adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|7|PRED
+	9|4|PUNCT
+*INV:	is that it ? 32469_42450
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	mhm . [+ exc] 42450_43503
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 43503_44106
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

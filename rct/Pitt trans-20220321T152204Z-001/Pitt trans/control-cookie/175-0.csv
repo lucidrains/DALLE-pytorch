@@ -1,0 +1,113 @@
+@UTF8
+@PID:	11312/t-00002330-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|56;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	175-0, audio
+*INV:	there it is . 0_731
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	the woman is washing dishes . 731_3348
+%mor:	det:art|the n|woman aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	she's wearing an apron . 3348_4798
+%mor:	pro:sub|she~aux|be&3S part|wear-PRESP det:art|a n|apron .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	water is pouring out_of the sink . 4798_6817
+%mor:	n|water aux|be&3S part|pour-PRESP prep|out_of det:art|the n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the boy is taking cookies from the cookie jar . 6817_10741
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP n|cookie-PL prep|from
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	and his sister or young girl is asking for some for her . 10741_14792
+%mor:	coord|and det:poss|his n|sister coord|or adj|young n|girl aux|be&3S
+	part|ask-PRESP prep|for qn|some prep|for pro:obj|her .
+%gra:	1|8|LINK 2|3|DET 3|8|SUBJ 4|3|CONJ 5|6|MOD 6|4|COORD 7|8|AUX 8|0|ROOT
+	9|8|JCT 10|9|POBJ 11|10|NJCT 12|11|POBJ 13|8|PUNCT
+*PAR:	the lid is off the cookie jar . 14792_17076
+%mor:	det:art|the n|lid cop|be&3S prep|off det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	the cupboard door is open . 17076_18878
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	he is on a three legged stool <which is falling> [//] &uh which is
+	tilted . 18878_24098
+%mor:	pro:sub|he cop|be&3S prep|on det:art|a det:num|three adj|legged
+	n|stool pro:rel|which aux|be&3S part|tilt-PASTP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|7|DET 5|7|QUANT 6|7|MOD 7|3|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|2|PUNCT
+*PAR:	there are curtains in the kitchen . 24098_25761
+%mor:	pro:exist|there cop|be&PRES n|curtain-PL prep|in det:art|the
+	n|kitchen .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	there's a tree outside the window . 25761_27393
+%mor:	pro:exist|there~cop|be&3S det:art|a n|tree adj|outside det:art|the
+	n|window .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|7|MOD 5|7|MOD 6|7|DET 7|2|PRED 8|2|PUNCT
+*PAR:	there are shrubs . 27393_28393
+%mor:	pro:exist|there cop|be&PRES n|shrub-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	there's a walk . 28393_29884
+%mor:	pro:exist|there~cop|be&3S det:art|a n|walk .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	there are two cups on the &uh sink counter . 29884_34161
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL prep|on
+	det:art|the n|sink n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|2|PUNCT
+*PAR:	there's a plate there . 34161_35595
+%mor:	pro:exist|there~cop|be&3S det:art|a n|plate adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|2|PUNCT
+*PAR:	and as I said the water is overflowing . 35595_38039
+%mor:	coord|and conj|as pro:sub|I v|say&PAST det:art|the n|water
+	aux|be&3S over#part|flow-PRESP .
+%gra:	1|8|LINK 2|4|LINK 3|4|SUBJ 4|8|CJCT 5|6|DET 6|8|SUBJ 7|8|AUX 8|0|ROOT
+	9|8|PUNCT
+*PAR:	it is already on the floor . 38039_40067
+%mor:	pro:per|it cop|be&3S adv|already prep|on det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	there are cupboards above the kitchen counter and below . 40067_46083
+%mor:	pro:exist|there cop|be&PRES n|cupboard-PL prep|above det:art|the
+	n|kitchen n|counter coord|and adv|below .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|7|DET 6|7|MOD 7|4|POBJ 8|7|CONJ
+	9|8|COORD 10|2|PUNCT
+*PAR:	and the window is above the kitchen sink . 46083_49790
+%mor:	coord|and det:art|the n|window cop|be&3S prep|above det:art|the
+	n|kitchen n|sink .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	and the mother has a short sleeve dress on has short hair and is
+	drying the dishes by hand . 49790_55095
+%mor:	coord|and det:art|the n|mother v|have&3S det:art|a adj|short
+	n|sleeve n|dress prep|on aux|have&3S adj|short n|hair coord|and
+	aux|be&3S part|dry-PRESP det:art|the n|dish-PL prep|by n|hand .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|8|DET 6|7|MOD 7|8|MOD 8|4|OBJ
+	9|4|JCT 10|12|MOD 11|12|MOD 12|9|POBJ 13|15|LINK 14|15|AUX 15|12|CMOD
+	16|17|DET 17|15|OBJ 18|15|JCT 19|18|POBJ 20|4|PUNCT
+*PAR:	curtains on the window that you can see outside the window to the
+	other side of the house . [+ gram] 55095_60169
+%mor:	n|curtain-PL prep|on det:art|the n|window pro:rel|that pro:per|you
+	mod|can v|see prep|outside det:art|the n|window prep|to det:art|the
+	qn|other n|side prep|of det:art|the n|house .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|8|LINK 6|8|SUBJ 7|8|AUX
+	8|4|CMOD 9|8|JCT 10|11|DET 11|9|POBJ 12|8|JCT 13|15|DET 14|15|QUANT 15|12|POBJ
+	16|15|NJCT 17|18|DET 18|16|POBJ 19|1|PUNCT
+*PAR:	you can see the grass . 60169_62116
+%mor:	pro:per|you mod|can v|see det:art|the n|grass .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	you can see the handles on the cupboards . 62116_63998
+%mor:	pro:per|you mod|can v|see det:art|the n|handle-PL prep|on
+	det:art|the n|cupboard-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	anything else ? [+ exc] 63998_65477
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	nope that's it . 65477_66583
+%mor:	co|nope pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

@@ -1,0 +1,79 @@
+@UTF8
+@PID:	11312/t-00002312-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|72;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	150-1, audio
+*INV:	okay what action do you see going on in this picture ? 0_4764
+%mor:	co|okay pro:int|what n|action v|do pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|this n|picture ?
+%gra:	1|4|COM 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	you mean starting from say left to right or whatever ? [+ exc] 4764_8187
+%mor:	pro:per|you v|mean part|start-PRESP prep|from co|say v|leave&PAST
+	prep|to n|right coord|or pro:int|whatever ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|XJCT 4|3|JCT 5|3|COM 6|2|COMP 7|6|JCT 8|7|POBJ
+	9|8|CONJ 10|9|COORD 11|2|PUNCT
+*INV:	how ever you like . 8187_9251
+%mor:	pro:rel|how adv|ever pro:per|you v|like .
+%gra:	1|2|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	&uh the brother or the boy is reaching into the cookie jar . 9251_14489
+%mor:	det:art|the n|brother coord|or det:art|the n|boy aux|be&3S
+	part|reach-PRESP prep|into det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|7|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|7|AUX 7|0|ROOT 8|7|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|7|PUNCT
+*PAR:	and the sister could be laughing or cautioning him . 14489_19759
+%mor:	coord|and det:art|the n|sister mod|could aux|be part|laugh-PRESP
+	coord|or part|caution-PRESP pro:obj|him .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|AUX 6|0|ROOT 7|6|CONJ 8|7|COORD
+	9|8|OBJ 10|6|PUNCT
+*PAR:	and the stool is &uh tipping over . 19759_22817
+%mor:	coord|and det:art|the n|stool aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	and &uh old mom is &uh standing in a puddle &uh washing [//] drying
+	dishes . 22817_29300
+%mor:	coord|and adj|old n|mom aux|be&3S part|stand-PRESP prep|in
+	det:art|a n|puddle part|dry-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|XJCT 10|9|OBJ 11|5|PUNCT
+*PAR:	and the sink is overflowing . 29300_31429
+%mor:	coord|and det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	and &uh the perspective was [//] means the &uh path is coming right
+	in the house . 31429_38161
+%mor:	coord|and det:art|the n|perspective v|mean-3S det:art|the n|path
+	aux|be&3S part|come-PRESP adv|right prep|in det:art|the n|house .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|DET 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|10|JCT 10|8|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	and &uh what else do you want ? [+ exc] 38161_41975
+%mor:	coord|and pro:int|what post|else v|do pro:per|you v|want ?
+%gra:	1|4|LINK 2|4|JCT 3|2|PQ 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|4|PUNCT
+*INV:	any action that you see . 41975_45652
+%mor:	qn|any n|action pro:rel|that pro:per|you v|see .
+%gra:	1|2|QUANT 2|0|INCROOT 3|5|LINK 4|5|SUBJ 5|2|CMOD 6|2|PUNCT
+*PAR:	well the mom is drying the dishes . 45652_50291
+%mor:	co|well det:art|the n|mom aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	she's getting her feet wet . 50291_51438
+%mor:	pro:sub|she~aux|be&3S part|get-PRESP det:poss|her n|foot&PL adj|wet
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|POSTMOD 7|3|PUNCT
+*PAR:	and the sister's reaching for the cookie that's in the brother's
+	hand or the kid's hand . 51438_59249
+%mor:	coord|and det:art|the n|sister~aux|be&3S part|reach-PRESP prep|for
+	det:art|the n|cookie pro:rel|that~cop|be&3S prep|in det:art|the
+	adj|brother&dn-POSS n|hand coord|or det:art|the adj|kid&dn-POSS
+	n|hand .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|10|LINK 10|8|CMOD 11|10|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|14|CONJ
+	16|18|DET 17|18|MOD 18|15|COORD 19|5|PUNCT
+*INV:	okay is that it ? 59249_61523
+%mor:	co|okay cop|be&3S comp|that pro:per|it ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PRED 4|3|OBJ 5|2|PUNCT
+*PAR:	yep . [+ exc] 61523_62284
+%mor:	co|yep .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

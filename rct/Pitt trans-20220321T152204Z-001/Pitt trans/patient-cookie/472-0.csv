@@ -1,0 +1,53 @@
+@UTF8
+@PID:	11312/t-00002659-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|83;|female|ProbableAD||Participant|21||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	472-0, audio
+*INV:	here's the picture . 0_2413
+%mor:	pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	can you tell me everything you see going on in the picture ? 2413_11179
+%mor:	mod|can pro:per|you v|tell pro:obj|me pro:indef|everything
+	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|OBJ 6|7|SUBJ 7|3|COMP 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	yeah she's spilling the water on the floor and he's falling off the
+	[/] <the chair [: stool] [* s:r-ret] &uh the stand [: stool]
+	[* s:r-ret] or> [//] a seat or +... 11179_24988
+%mor:	co|yeah pro:sub|she~aux|be&3S part|spill-PRESP det:art|the n|water
+	prep|on det:art|the n|floor coord|and pro:sub|he~aux|be&3S
+	part|fall-PRESP prep|off det:art|a n|seat coord|or +...
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|13|LINK 11|13|SUBJ 12|13|AUX 13|4|CJCT 14|13|JCT 15|16|DET
+	16|14|POBJ 17|4|CONJ 18|4|PUNCT
+*INV:	anything else ? 24988_28624
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	(..) the spigot's goin(g) and &uh (..) he's reaching out for the
+	cookies and she's reaching for the cookies and +... 28624_63249
+%mor:	det:art|the n|spigot~aux|be&3S part|go-PRESP coord|and
+	pro:sub|he~aux|be&3S part|reach-PRESP adv|out prep|for det:art|the
+	n|cookie-PL coord|and pro:sub|she~aux|be&3S part|reach-PRESP
+	prep|for det:art|the n|cookie-PL coord|and +...
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|CJCT
+	9|8|JCT 10|8|JCT 11|12|DET 12|10|POBJ 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|4|CJCT 17|16|JCT 18|19|DET 19|17|POBJ 20|4|CONJ 21|4|PUNCT
+*PAR:	she got the window open I guess . 63249_78800
+%mor:	pro:sub|she v|get&PAST det:art|the n|window adj|open pro:sub|I
+	v|guess .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|POSTMOD 6|7|SUBJ 7|5|CMOD
+	8|2|PUNCT
+*PAR:	I don't know . [+ exc] 78800_81306
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*INV:	okay . 81306_82738
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	good . 82738_88481
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

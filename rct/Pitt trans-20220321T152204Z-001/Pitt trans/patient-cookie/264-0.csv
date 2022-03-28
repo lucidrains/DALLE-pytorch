@@ -1,0 +1,105 @@
+@UTF8
+@PID:	11312/t-00002589-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	264-0, audio
+*INV:	what do you see going on in that picture ? 0_2025
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	oh yeah . [+ exc] 2025_4385
+%mor:	co|oh co|yeah .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	kid's climbin(g) up on the stool and reachin(g) up in the cupboard
+	. [+ gram] 4385_8555
+%mor:	n|kid~aux|be&3S part|climb-PRESP adv|up prep|on det:art|the n|stool
+	coord|and part|reach-PRESP adv|up prep|in det:art|the n|cupboard .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|CONJ
+	9|8|COORD 10|9|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	they aren't gonna knock things off . 8555_11175
+%mor:	pro:sub|they aux|be&PRES~neg|not part|go-PRESP~inf|to v|knock
+	n|thing-PL adv|off .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|INF 6|4|COMP 7|6|OBJ 8|6|JCT
+	9|4|PUNCT
+*PAR:	and &uh <the mother> [//] oh boy the water's all spillin(g) out
+	o(f) the sink . 11175_17355
+%mor:	coord|and co|oh n|boy det:art|the adj|water&dn-POSS post|all
+	part|spill-PRESP adv|out prep|of det:art|the n|sink .
+%gra:	1|3|LINK 2|3|COM 3|0|INCROOT 4|5|DET 5|3|PRED 6|5|JCT 7|6|XMOD 8|7|JCT
+	9|8|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	she's just looking at it like +"/. 17355_21000
+%mor:	pro:sub|she~aux|be&3S adv|just part|look-PRESP prep|at pro:per|it
+	conj|like +"/.
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|JCT 8|4|PUNCT
+*PAR:	+" oh for goodness sakes . 21000_23454
+%mor:	co|oh prep|for co|goodness n|sake-PL .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|COM 4|2|POBJ 5|1|PUNCT
+*PAR:	(.) huh . [+ exc] 23454_27753
+%mor:	co|huh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 27753_29445
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	&uh &hm (...) well as I say that &uh you_know the boy <on the &s
+	stand [: stool] [* s:r-ret] or> [//] on that stool and it's
+	tiltin(g) . [+ gram] 29445_49980
+%mor:	co|well conj|as pro:sub|I v|say comp|that co|you_know det:art|the
+	n|boy prep|on det:dem|that n|stool coord|and pro:per|it~aux|be&3S
+	part|tilt-PRESP .
+%gra:	1|4|COM 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|8|COM 7|8|DET 8|5|OBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|15|LINK 13|15|SUBJ 14|15|AUX 15|8|CJCT
+	16|4|PUNCT
+*PAR:	that's a good way to break his neck . [+ exc] 49990_52341
+%mor:	pro:dem|that~cop|be&3S det:art|a adj|good n|way prep|to n|break
+	det:poss|his n|neck .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|NJCT 7|6|POBJ 8|9|DET
+	9|7|OBJ 10|2|PUNCT
+*PAR:	break his back I shoulda said . [+ gram] 52341_55795
+%mor:	v|break det:poss|his n|back pro:sub|I mod|should~aux|have
+	part|say&PASTP .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|7|SUBJ 5|7|AUX 6|7|AUX 7|1|CJCT 8|1|PUNCT
+*PAR:	woman left her faucet running and it rolled over the floor .
+	[+ gram] 55795_65382
+%mor:	n|woman v|leave&PAST det:poss|her n|faucet part|run-PRESP coord|and
+	pro:per|it v|roll-PAST prep|over det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|XJCT 6|8|LINK 7|8|SUBJ 8|5|CJCT
+	9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	that's bad enough for me to do . [+ exc] 65382_67952
+%mor:	pro:dem|that~cop|be&3S adj|bad adv|enough prep|for pro:obj|me
+	inf|to v|do .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|2|JCT 6|5|POBJ 7|8|INF 8|2|XJCT
+	9|2|PUNCT
+*INV:	&=laughs is that it ? 67952_70953
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	&um let me scan it a little bit more . [+ exc] 70953_77338
+%mor:	v|let&ZERO pro:obj|me v|scan pro:per|it det:art|a adj|little n|bit
+	pro:indef|more .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|OBJ 5|7|DET 6|7|MOD 7|3|JCT 8|7|POSTMOD
+	9|1|PUNCT
+*PAR:	&uh (...) oh it's there more in time ? [+ exc] 78409_93989
+%mor:	co|oh pro:per|it~cop|be&3S adv|there adv|more prep|in n|time ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|JCT 7|6|POBJ 8|3|PUNCT
+*INV:	+< no [/] no that's all . 93589_94829
+%mor:	co|no pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	+< oh [/] oh . [+ exc] 94450_95792
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	no it's that one . 95092_96100
+%mor:	co|no pro:per|it~cop|be&3S det:dem|that pro:indef|one .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*INV:	is that it ? 96105_97071
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	yeah . [+ exc] 97071_97521
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 97521_98237
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

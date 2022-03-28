@@ -1,0 +1,96 @@
+@UTF8
+@PID:	11312/t-00002303-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	141-3, audio
+*INV:	I want you to look at that picture and tell me everything that you
+	see happening in there . 0_4400
+%mor:	pro:sub|I v|want pro:per|you inf|to v|look prep|at det:dem|that
+	n|picture coord|and v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you v|see n:gerund|happen-PRESP prep|in n|there
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|10|OBJ2 12|10|OBJ 13|15|LINK 14|15|SUBJ 15|12|CMOD
+	16|15|OBJ 17|15|JCT 18|17|POBJ 19|2|PUNCT
+*INV:	everything that's going on . 4400_5547
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	well the little girl is saying to be quiet to her brother . 5547_9850
+%mor:	adv|well det:art|the adj|little n|girl aux|be&3S part|say-PRESP
+	inf|to aux|be adj|quiet prep|to det:poss|her n|brother .
+%gra:	1|6|JCT 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|8|PRED 10|9|JCT 11|12|DET 12|10|POBJ 13|6|PUNCT
+*PAR:	and her brother's in the cookie jar and he's falling off the chair
+	[: stool] [* s:r] . 9850_13138
+%mor:	coord|and det:poss|her n|brother~cop|be&3S prep|in det:art|the
+	n|cookie n|jar coord|and pro:sub|he~aux|be&3S part|fall-PRESP
+	prep|off det:art|the n|stool .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|12|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	the mother's oblivious to all . 13138_15350
+%mor:	det:art|the n|mother~cop|be&3S adj|oblivious inf|to adv|all .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|6|INF 6|4|XMOD 7|3|PUNCT
+*PAR:	she's washing her dishes and the water's coming out_of her sink . 15350_18600
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP det:poss|her n|dish-PL
+	coord|and det:art|the n|water~aux|be&3S part|come-PRESP prep|out_of
+	det:poss|her n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	I don't know what she's thinking of . [+ exc] 18600_20497
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what pro:sub|she~aux|be&3S
+	part|think-PRESP prep|of .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|8|JCT 10|4|PUNCT
+*PAR:	&um let's see what we have . [+ exc] 20497_25824
+%mor:	v|let~pro:obj|us v|see pro:int|what pro:sub|we v|have .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|6|LINK 5|6|SUBJ 6|3|COMP 7|1|PUNCT
+*PAR:	anything outside ? [+ exc] 25824_29308
+%mor:	pro:indef|anything adv|outside ?
+%gra:	1|0|INCROOT 2|1|JCT 3|1|PUNCT
+*PAR:	(.) I guess those are bushes . 29308_40000
+%mor:	pro:sub|I v|guess pro:dem|those cop|be&PRES n|bush-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|2|PUNCT
+*PAR:	I don't know . [+ exc] 40000_40778
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*INV:	+< yeah . 40050_40550
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay . [+ exc] 40778_41600
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	nothing out there . [+ exc] 41600_42972
+%mor:	pro:indef|nothing prep|out n|there .
+%gra:	1|0|INCROOT 2|1|NJCT 3|2|POBJ 4|1|PUNCT
+*INV:	+< hmhunh . 42100_43000
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	these are okay . [+ exc] 43000_44546
+%mor:	pro:dem|these cop|be&PRES adj|okay .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	the dishes are okay . 44546_47900
+%mor:	det:art|the n|dish-PL cop|be&PRES adj|okay .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	let's see . [+ exc] 47900_48320
+%mor:	v|let~pro:obj|us v|see .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|1|PUNCT
+*PAR:	how are their shoes ? [+ exc] 48320_49500
+%mor:	pro:int|how cop|be&PRES det:poss|their n|shoe-PL ?
+%gra:	1|2|LINK 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	their socks are alright . 49500_50722
+%mor:	det:poss|their n|sock-PL cop|be&PRES adj|alright .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	I don't know . [+ exc] 50722_52013
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*INV:	+< okay . 50800_52013
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that's fine . 52013_52841
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

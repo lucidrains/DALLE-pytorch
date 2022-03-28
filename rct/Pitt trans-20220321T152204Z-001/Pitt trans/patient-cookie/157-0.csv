@@ -1,0 +1,99 @@
+@UTF8
+@PID:	11312/t-00002519-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|83;|male|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	157-0, audio
+*INV:	okay now here's the picture . 0_1147
+%mor:	co|okay adv|now pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|4|COM 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|4|PUNCT
+*INV:	you tell me all of the actions . 1147_2860
+%mor:	pro:per|you v|tell pro:obj|me post|all prep|of det:art|the
+	n|action-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|COMP 5|4|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	actions going on . [+ exc] [+ gram] 2860_4323
+%mor:	n|action-PL part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|1|PUNCT
+*INV:	right . 4323_4989
+%mor:	co|right .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(..) this one's a little boy falling off a stool . 4989_16511
+%mor:	pro:dem|this pro:indef|one~cop|be&3S det:art|a adj|little n|boy
+	part|fall-PRESP prep|off det:art|a n|stool .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|XMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	little girl's holding her hand up telling him one time . 16511_18887
+%mor:	adj|little n|girl~aux|be&3S part|hold-PRESP det:poss|her n|hand
+	adv|up part|tell-PRESP pro:obj|him det:num|one n|time .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|XJCT
+	9|10|SUBJ 10|11|QUANT 11|8|OBJ 12|4|PUNCT
+*PAR:	this girl's washing the dishes . 18887_20168
+%mor:	pro:dem|this n|girl~aux|be&3S part|wash-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	I don't seem to know where she got the dish . 20168_22910
+%mor:	pro:sub|I mod|do~neg|not cop|seem inf|to v|know pro:int|where
+	pro:sub|she v|get&PAST det:art|the n|dish .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|INF 6|4|COMP 7|9|LINK 8|9|SUBJ
+	9|6|COMP 10|11|DET 11|9|OBJ 12|4|PUNCT
+*PAR:	+" I just picked it up . 22910_23824
+%mor:	pro:sub|I adv|just v|pick-PAST pro:per|it adv|up .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|PUNCT
+*PAR:	said she +". 23824_24456
+%mor:	v|say&PAST pro:sub|she +".
+%gra:	1|0|ROOT 2|1|SUBJ 3|1|PUNCT
+*PAR:	oh she's broken a dish back there . 24456_26567
+%mor:	co|oh pro:sub|she~aux|be&3S part|break&PASTP det:art|a n|dish
+	adv|back adv|there .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|4|PUNCT
+*PAR:	this thing fell down off of there . 26567_28845
+%mor:	det:dem|this n|thing v|fall&PAST adv|down adv|off prep|of n|there .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|JCT 7|6|POBJ 8|3|PUNCT
+*INV:	(..) something else ? 28845_39368
+%mor:	pro:indef|something post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	(..) well I_mean the wash [: water] [* s:r] is running . 39368_46500
+%mor:	co|well co|I_mean det:art|the n|water aux|be&3S part|run-PRESP .
+%gra:	1|6|COM 2|6|COM 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*PAR:	it's running over on the floor . 46500_47882
+%mor:	pro:per|it~aux|be&3S part|run-PRESP adv|over prep|on det:art|the
+	n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	she's got a couple plates waiting here for her . 47882_55645
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:art|a qn|couple n|plate-PL
+	part|wait-PRESP adv|here prep|for pro:obj|her .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|QUANT 6|3|OBJ 7|6|XMOD 8|7|JCT
+	9|7|JCT 10|9|POBJ 11|3|PUNCT
+*PAR:	and the &uh window shows the scene outside that you can't see from
+	here at all . 55645_63791
+%mor:	coord|and det:art|the n|window v|show-3S det:art|the n|scene
+	adv|outside pro:rel|that pro:per|you mod|can~neg|not v|see prep|from
+	n|here prep|at pro:indef|all .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|10|NEG 12|7|CMOD 13|12|JCT 14|13|POBJ 15|12|JCT
+	16|15|POBJ 17|4|PUNCT
+*INV:	mhm . 63791_64887
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 64887_68794
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and there's a little boy and a little girl here just a little xxx .
+	68794_72002
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a adj|little n|boy
+	coord|and det:art|a adj|little n|girl adv|here adv|just det:art|a
+	adj|little .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|CONJ 8|10|DET
+	9|10|MOD 10|7|COORD 11|14|JCT 12|14|JCT 13|14|DET 14|10|POSTMOD
+	15|3|PUNCT
+*PAR:	xxx . [+ exc] 72002_73465
+*INV:	okay . 73465_76308
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that's fine, thank you . 76308_82259
+%mor:	pro:dem|that~cop|be&3S adj|fine cm|cm v|thank pro:per|you .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|LP 5|2|ENUM 6|5|OBJ 7|2|PUNCT
+@End

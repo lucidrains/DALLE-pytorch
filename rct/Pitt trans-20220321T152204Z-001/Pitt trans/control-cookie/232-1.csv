@@ -1,0 +1,113 @@
+@UTF8
+@PID:	11312/t-00002356-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	232-1, audio
+*INV:	I'd like you to tell me all the things you see going on in the
+	picture . 0_3972
+%mor:	pro:sub|I~mod|genmod v|like pro:per|you inf|to v|tell pro:obj|me
+	adv|all det:art|the n|thing-PL pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|10|JCT
+	9|10|DET 10|6|OBJ 11|12|SUBJ 12|6|COMP 13|12|OBJ 14|12|JCT 15|12|JCT
+	16|17|DET 17|15|POBJ 18|3|PUNCT
+*PAR:	okay the water's running out_of the sink overflowing . 3972_8850
+%mor:	co|okay det:art|the n|water~aux|be&3S part|run-PRESP prep|out_of
+	det:art|the n|sink over#part|flow-PRESP .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|ENUM 10|5|PUNCT
+*PAR:	the mother's doing the dishes . 8950_11400
+%mor:	det:art|the n|mother~aux|be&3S part|do-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	&uh the boy is falling off o(f) the stool stealing the cookies out
+	o(f) the cookie jar . 11400_16529
+%mor:	det:art|the n|boy aux|be&3S part|fall-PRESP adv|off prep|of
+	det:art|the n|stool part|steal-PRESP det:art|the n|cookie-PL adv|out
+	prep|of det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|XJCT 10|11|DET 11|9|OBJ 12|9|JCT 13|12|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|4|PUNCT
+*PAR:	the young lady is holding her hand up ready to receive one o(f) the
+	cookies . 16529_21200
+%mor:	det:art|the adj|young n|lady aux|be&3S part|hold-PRESP det:poss|her
+	n|hand adv|up adj|ready inf|to v|receive det:num|one prep|of
+	det:art|the n|cookie-PL .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|8|PRED 10|11|INF 11|9|XMOD 12|11|OBJ 13|12|JCT 14|15|DET 15|13|POBJ
+	16|5|PUNCT
+*PAR:	&uh there is a cup and a saucer on the &uh &uh sink board . 21200_27004
+%mor:	pro:exist|there cop|be&3S det:art|a n|cup coord|and det:art|a
+	n|saucer prep|on det:art|the n|sink n|board .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD 8|7|NJCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|2|PUNCT
+*PAR:	and &uh there's <the &uh drapes on the kitchen> [//] &uh the
+	curtains on the kitchen and the [/] the cabinets all around the sink
+	. 27004_37689
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|curtain-PL
+	prep|on det:art|the n|kitchen coord|and det:art|the n|cabinet-PL
+	adv|all prep|around det:art|the n|sink .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|11|DET 11|9|COORD 12|13|JCT 13|11|NJCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	and the top cabinets, the door is open and the cookie jar is in the
+	cabinet . 37689_42100
+%mor:	coord|and det:art|the adj|top n|cabinet-PL cm|cm det:art|the n|door
+	cop|be&3S adj|open coord|and det:art|the n|cookie n|jar cop|be&3S
+	prep|in det:art|the n|cabinet .
+%gra:	1|14|LINK 2|4|DET 3|4|MOD 4|14|SUBJ 5|4|LP 6|7|DET 7|8|SUBJ 8|4|CMOD
+	9|8|PRED 10|8|CONJ 11|13|DET 12|13|MOD 13|10|COORD 14|0|ROOT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|14|PUNCT
+*PAR:	the boy is up there reaching for it and it looks like he's gonna
+	fall off of the stool . 42100_46800
+%mor:	det:art|the n|boy aux|be&3S prep|up n|there part|reach-PRESP
+	prep|for pro:per|it coord|and pro:per|it v|look-3S conj|like
+	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall adv|off prep|of
+	det:art|the n|stool .
+%gra:	1|2|DET 2|6|SUBJ 3|6|AUX 4|3|JCT 5|4|POBJ 6|0|ROOT 7|6|JCT 8|7|POBJ
+	9|11|LINK 10|11|SUBJ 11|6|CJCT 12|15|LINK 13|15|SUBJ 14|15|AUX 15|11|COMP
+	16|17|INF 17|15|COMP 18|17|JCT 19|17|JCT 20|21|DET 21|19|POBJ 22|6|PUNCT
+*PAR:	and outside is a nice garden with the path leading around the house
+	and bushes and shrubs and grass growing around . 46800_56300
+%mor:	coord|and n|outside cop|be&3S det:art|a adj|nice n|garden prep|with
+	det:art|the n|path part|lead-PRESP prep|around det:art|the n|house
+	coord|and n|bush-PL coord|and n|shrub-PL coord|and n|grass
+	part|grow-PRESP adv|around .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|6|XMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|6|CONJ 15|14|COORD
+	16|6|CONJ 17|16|COORD 18|6|CONJ 19|18|COORD 20|19|XMOD 21|20|JCT
+	22|3|PUNCT
+*PAR:	she has a dish towel in her hand &wa doing [//] drying one o(f) the
+	dishes . 56300_61000
+%mor:	pro:sub|she v|have&3S det:art|a n|dish n|towel prep|in det:poss|her
+	n|hand part|dry-PRESP det:num|one prep|of det:art|the n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|2|JCT 7|8|DET 8|6|POBJ
+	9|2|XJCT 10|9|OBJ 11|10|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	and she has &uh her hairdo . 61000_64109
+%mor:	coord|and pro:sub|she v|have&3S det:poss|her n|+n|hair+n|do .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	she's wearing an apron . 64109_66303
+%mor:	pro:sub|she~aux|be&3S part|wear-PRESP det:art|a n|apron .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and the kids were wearing shoes . 66303_68698
+%mor:	coord|and det:art|the n|kid-PL aux|be&PAST part|wear-PRESP
+	n|shoe-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and &sh she's wearing shoes . 68698_70977
+%mor:	coord|and pro:sub|she~aux|be&3S part|wear-PRESP n|shoe-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	and the water's dripping on the floor . 70977_72750
+%mor:	coord|and det:art|the n|water~aux|be&3S part|drip-PRESP prep|on
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	what else you wanna know ? [+ exc] 72750_74735
+%mor:	pro:int|what post|else pro:per|you v|want~inf|to v|know ?
+%gra:	1|4|LINK 2|1|PQ 3|4|SUBJ 4|0|ROOT 5|6|INF 6|4|COMP 7|4|PUNCT
+*INV:	that's fine . 74735_75438
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

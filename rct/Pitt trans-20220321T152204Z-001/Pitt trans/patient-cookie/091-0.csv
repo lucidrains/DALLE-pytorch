@@ -1,0 +1,73 @@
+@UTF8
+@PID:	11312/t-00002494-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|88;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	091-0, audio
+*PAR:	&mm dishes are being dried . 0_2942
+%mor:	n|dish-PL cop|be&PRES aux|be-PRESP part|dry-PASTP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|AUX 4|2|PRED 5|2|PUNCT
+*INV:	mhm . 2942_3954
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	an(d) the child is getting some cookies out_of the jar . 3954_7458
+%mor:	coord|and det:art|the n|child aux|be&3S part|get-PRESP qn|some
+	n|cookie-PL prep|out_of det:art|the n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|QUANT 7|5|OBJ 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	<the> [/] the &uh <plant stand> [//] or the stand [: stool] [* s:r]
+	he's on is [//] looks as though it's crooked . 7458_14789
+%mor:	det:art|the coord|or det:art|the n|stool pro:sub|he~cop|be&3S
+	adv|on v|look-3S adv|as adv|though pro:per|it~cop|be&3S adj|crooked
+	.
+%gra:	1|8|DET 2|8|LINK 3|4|DET 4|8|SUBJ 5|6|SUBJ 6|4|CMOD 7|8|JCT 8|0|ROOT
+	9|12|JCT 10|12|JCT 11|12|SUBJ 12|8|COMP 13|12|PRED 14|8|PUNCT
+*PAR:	an(d) the water's going over (.) <in the sink> [//] from the sink .
+	14789_19875
+%mor:	coord|and det:art|the n|water~aux|be&3S part|go-PRESP adv|over
+	prep|from det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	is that all ? [+ exc] 19875_27284
+%mor:	cop|be&3S adv|that adv|all ?
+%gra:	1|0|ROOT 2|3|JCT 3|1|JCT 4|1|PUNCT
+*INV:	anything else that you see ? 27284_29712
+%mor:	pro:indef|anything post|else pro:dem|that pro:per|you v|see ?
+%gra:	1|5|SUBJ 2|1|PQ 3|5|JCT 4|5|SUBJ 5|0|ROOT 6|5|PUNCT
+*PAR:	and then the boy was getting the cookies out_of the jar and the
+	cover is off . 29806_43360
+%mor:	coord|and adv:tem|then det:art|the n|boy aux|be&PAST&13S
+	part|get-PRESP det:art|the n|cookie-PL prep|out_of det:art|the n|jar
+	coord|and det:art|the n|cover cop|be&3S adv|off .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|JCT 10|11|DET 11|9|POBJ 12|15|LINK 13|14|DET 14|15|SUBJ 15|6|CJCT
+	16|15|JCT 17|6|PUNCT
+*INV:	okay . 43360_43850
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	but she [: he] [* s:r-ret] [//] he's giving her a cookie and the
+	stool is turning over and the water in the sink is <boiling
+	[: flowing] [* s:r-ret] over or> [//] flowing over . 43850_52560
+%mor:	conj|but pro:sub|he~aux|be&3S part|give-PRESP pro:obj|her det:art|a
+	n|cookie coord|and det:art|the n|stool aux|be&3S part|turn-PRESP
+	adv|over coord|and det:art|the n|water prep|in det:art|the n|sink
+	aux|be&3S part|flow-PRESP adv|over .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|12|CJCT 5|4|OBJ2 6|7|DET 7|12|SUBJ 8|7|CONJ
+	9|10|DET 10|8|COORD 11|12|AUX 12|0|ROOT 13|12|JCT 14|21|LINK 15|16|DET
+	16|21|SUBJ 17|16|NJCT 18|19|DET 19|17|POBJ 20|21|AUX 21|12|CJCT
+	22|21|JCT 23|12|PUNCT
+*INV:	mhm . 52560_54085
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	an(d) she's drying dishes . 53697_55952
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	okay . 55952_58987
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	thank you . 58987_60000
+%mor:	v|thank pro:per|you .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@End

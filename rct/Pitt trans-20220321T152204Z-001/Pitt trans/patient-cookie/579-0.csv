@@ -1,0 +1,46 @@
+@UTF8
+@PID:	11312/t-00002690-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|85;|female|PossibleAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	579-0, audio
+*INV:	okay . 0_731
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	see going on in the picture ? 731_3923
+%mor:	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|JCT 4|1|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*INV:	(.) tell me what you see going on in the picture ? 3923_9674
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture ?
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	woman dish [//] doin(g) dishes . [+ gram] 9674_11566
+%mor:	n|woman part|do-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|OBJ 4|1|PUNCT
+*PAR:	boy climbin(g) up to get some cookies . [+ gram] 11566_15768
+%mor:	n|boy part|climb-PRESP adv|up inf|to v|get qn|some n|cookie-PL .
+%gra:	1|5|SUBJ 2|1|XMOD 3|2|JCT 4|5|INF 5|0|ROOT 6|7|QUANT 7|5|OBJ 8|5|PUNCT
+*PAR:	well girl waitin(g) to get some o(f) the cookies . [+ gram] 15768_19193
+%mor:	n|well n|girl part|wait-PRESP inf|to v|get qn|some prep|of
+	det:art|the n|cookie-PL .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|XMOD 4|5|INF 5|3|COMP 6|5|PRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	bench [: stool] [* s:r] is fallin(g) over with the boy . [+ gram] 19193_24826
+%mor:	n|stool aux|be&3S part|fall-PRESP adv|over prep|with det:art|the
+	n|boy .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	the water's drippin(g) out on the floor . 24826_28375
+%mor:	det:art|the n|water~aux|be&3S part|drip-PRESP adv|out prep|on
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	(..) I guess that's it . [+ exc] 28375_45043
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|2|PUNCT
+*INV:	okay . 45043_46070
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,53 @@
+@UTF8
+@PID:	11312/t-00002433-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|male|MCI||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	016-0, audio
+*PAR:	guy or a boy reaching for a cookie jar &uh tilting on the stool .
+	[+ gram] 0_10241
+%mor:	n|guy coord|or det:art|a n|boy part|reach-PRESP prep|for det:art|a
+	n|cookie n|jar part|tilt-PRESP prep|on det:art|the n|stool .
+%gra:	1|0|INCROOT 2|1|CONJ 3|4|DET 4|2|COORD 5|4|XMOD 6|5|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|XMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|1|PUNCT
+*PAR:	and a girl asking for one pointing to her mouth . [+ gram] 10241_15208
+%mor:	coord|and det:art|a n|girl part|ask-PRESP prep|for pro:indef|one
+	part|point-PRESP prep|to det:poss|her n|mouth .
+%gra:	1|7|LINK 2|3|DET 3|7|SUBJ 4|3|XMOD 5|4|JCT 6|5|POBJ 7|0|ROOT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|PUNCT
+*INV:	&=laughs . 15208_16054
+*PAR:	a woman washing [//] &uh drying dishes . [+ gram] 16054_21307
+%mor:	det:art|a n|woman part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|OBJ 5|2|PUNCT
+*PAR:	&uh outdoors I don't see anything going on but there is a walk+way
+	and &uh grass, shrubs, and &uh looks like some sort of a pattern on
+	the wall . 28918_46348
+%mor:	n|outdoors pro:sub|I mod|do~neg|not v|see pro:indef|anything
+	part|go-PRESP adv|on conj|but adv|there cop|be&3S det:art|a
+	n|+n|walk+n|way coord|and n|grass cm|cm n|shrub-PL cm|cm coord|and
+	v|look-3S prep|like qn|some n|sort prep|of det:art|a n|pattern
+	prep|on det:art|the n|wall .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|6|XMOD 8|7|JCT
+	9|11|LINK 10|11|SUBJ 11|5|CJCT 12|13|DET 13|11|PRED 14|13|CONJ 15|14|COORD
+	16|15|LP 17|13|ENUM 18|17|LP 19|13|CONJ 20|19|COORD 21|20|JCT
+	22|23|QUANT 23|21|POBJ 24|23|NJCT 25|26|DET 26|24|POBJ 27|20|JCT 28|29|DET
+	29|27|POBJ 30|5|PUNCT
+*PAR:	and there's a tree which you can see through the half open window .
+	46348_52994
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|tree pro:rel|which
+	pro:per|you mod|can v|see prep|through det:art|the n|half adj|open
+	n|window .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|CMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|14|MOD 14|9|JCT 15|3|PUNCT
+*INV:	okay ? 52994_58333
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	mhm . [+ exc] 58333_59064
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay thank you . 59064_59983
+%mor:	co|okay v|thank pro:per|you .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@End

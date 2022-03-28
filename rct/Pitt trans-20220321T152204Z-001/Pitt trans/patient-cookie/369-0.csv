@@ -1,0 +1,76 @@
+@UTF8
+@PID:	11312/t-00002646-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|ProbableAD||Participant|22||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	369-0, audio
+*INV:	on in the picture . 0_1713
+%mor:	adv|on prep|in det:art|the n|picture .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	mhm . [+ exc] 1713_2926
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&hm well &sh (..) she's &um spillin(g) the water from [/] from
+	washin(g) &uh her dishes . 2926_23051
+%mor:	co|well pro:sub|she~aux|be&3S part|spill-PRESP det:art|the n|water
+	prep|from part|wash-PRESP det:poss|her n|dish-PL .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|7|POBJ
+	9|10|DET 10|8|OBJ 11|4|PUNCT
+*PAR:	it's [/] it's runnin(g) over rather . 23051_26521
+%mor:	pro:per|it~aux|be&3S part|run-PRESP adv|over adv|rather .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|3|PUNCT
+*PAR:	in the (.) the youngsters are [/] are &uh getting the jam [* s:uk]
+	. 26521_44108
+%mor:	prep|in det:art|the det:art|the n|youngster-PL aux|be&PRES
+	part|get-PRESP det:art|the n|jam .
+%gra:	1|6|JCT 2|4|DET 3|4|DET 4|1|POBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|PUNCT
+*PAR:	and in the meantime he's tiltin(g) his chair [: stool] [* s:r]
+	&=laughs . 44108_57183
+%mor:	coord|and prep|in det:art|the n|meantime pro:sub|he~aux|be&3S
+	part|tilt-PRESP det:poss|his n|stool .
+%gra:	1|7|LINK 2|7|JCT 3|4|DET 4|2|POBJ 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|9|DET
+	9|7|OBJ 10|7|PUNCT
+*INV:	anything else ? 57183_68777
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	hm ? [+ exc] 68777_70581
+%mor:	co|hm ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that you see going on in the picture . 70581_72729
+%mor:	comp|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	<he is> [//] he's [/] he's trying to get the cake [* s:uk] down
+	where &sh &sh I suppose she can share with him . 72729_84730
+%mor:	pro:sub|he~aux|be&3S part|try-PRESP inf|to v|get det:art|the n|cake
+	n|down pro:rel|where pro:sub|I v|suppose pro:sub|she mod|can v|share
+	prep|with pro:obj|him .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|8|DET 7|8|MOD 8|5|OBJ
+	9|11|LINK 10|11|SUBJ 11|8|CMOD 12|14|SUBJ 13|14|AUX 14|11|COMP 15|14|JCT
+	16|15|POBJ 17|3|PUNCT
+*PAR:	<and then> [//] <and the mother is> [//] &uh &lis the water is
+	runnin(g) over &=laughs which she doesn't seem to be aware of it too
+	much . [+ gram] 84730_103919
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over pro:rel|which
+	pro:sub|she mod|do&3S~neg|not cop|seem inf|to cop|be adj|aware
+	prep|of pro:per|it adv|too adv|much .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|10|LINK 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|4|CJCT 11|12|INF 12|10|COMP 13|12|PRED 14|13|JCT 15|14|POBJ
+	16|17|JCT 17|12|JCT 18|4|PUNCT
+*PAR:	and <his chair [: stool] [* s:r-ret] is slippin(g) out from> [//]
+	&uh the stool is slippin(g) out from under him &=laughs . 103919_120727
+%mor:	coord|and det:art|the n|stool aux|be&3S part|slip-PRESP adv|out
+	prep|from adv|under pro:obj|him .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|JCT
+	9|8|POBJ 10|5|PUNCT
+*INV:	okay . 120727_134345
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that's fine . 134345_135903
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

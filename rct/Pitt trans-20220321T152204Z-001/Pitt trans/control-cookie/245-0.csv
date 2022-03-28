@@ -1,0 +1,68 @@
+@UTF8
+@PID:	11312/t-00002362-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|male|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	245-0, audio
+*INV:	all the action you see going on in that picture . 0_2897
+%mor:	qn|all det:art|the n|action pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|that n|picture .
+%gra:	1|3|QUANT 2|3|DET 3|5|JCT 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	well the mother is &uh &=clears:throat washin(g) dishes and the [/]
+	the [//] she hasn't turned the water off . 2897_11229
+%mor:	co|well det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	coord|and pro:sub|she aux|have&3S~neg|not part|turn-PASTP
+	det:art|the n|water adv|off .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|11|LINK 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|5|CJCT 12|13|DET 13|11|OBJ 14|11|JCT 15|5|PUNCT
+*PAR:	and the [/] the water (i)s spillin(g) out from the sink onto the
+	floor and she's standin(g) in the puddle of water . 11229_16299
+%mor:	coord|and det:art|the n|water aux|be&3S part|spill-PRESP adv|out
+	prep|from det:art|the n|sink prep|onto det:art|the n|floor coord|and
+	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|puddle
+	prep|of n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|JCT 11|12|DET 12|10|POBJ 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|5|CJCT 17|16|JCT 18|19|DET 19|17|POBJ 20|19|NJCT 21|20|POBJ 22|5|PUNCT
+*PAR:	and the boy is &uh standin(g) on a stool, a high stool and he is
+	&uh robbing the cookie jar . 16299_25020
+%mor:	coord|and det:art|the n|boy aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool cm|cm det:art|a adj|high n|stool coord|and
+	pro:sub|he aux|be&3S part|rob-PRESP det:art|the n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|LP 10|12|DET 11|12|MOD 12|5|OBJ 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|12|CMOD 17|19|DET 18|19|MOD 19|16|OBJ 20|5|PUNCT
+*PAR:	and at the same time his sister is askin(g) him for a cookie and
+	<in the> [/] in the process his stool is starting to tip over . 25020_34848
+%mor:	coord|and prep|at det:art|the adj|same n|time det:poss|his n|sister
+	aux|be&3S part|ask-PRESP pro:obj|him prep|for det:art|a n|cookie
+	coord|and prep|in det:art|the n|process det:poss|his n|stool
+	aux|be&3S part|start-PRESP inf|to v|tip adv|over .
+%gra:	1|9|LINK 2|9|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|0|ROOT 10|9|OBJ 11|9|JCT 12|13|DET 13|11|POBJ 14|21|LINK 15|21|JCT
+	16|17|DET 17|15|POBJ 18|19|DET 19|21|SUBJ 20|21|AUX 21|9|CJCT 22|23|INF
+	23|21|COMP 24|23|JCT 25|9|PUNCT
+*PAR:	(.) and &uh I guess that's the main point to this . [+ exc] 34848_40715
+%mor:	coord|and pro:sub|I v|guess comp|that~aux|be&3S det:art|the
+	adj|main n|point prep|to pro:dem|this .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|8|SUBJ 5|8|AUX 6|8|DET 7|8|MOD 8|3|OBJ
+	9|8|NJCT 10|9|POBJ 11|3|PUNCT
+*PAR:	it looks like that <boy (i)s> [/] boy (i)s in for a bad fall
+	&=laughs . 40715_47702
+%mor:	pro:per|it v|look-3S prep|like pro:dem|that n|boy cop|be&3S prep|in
+	prep|for det:art|a adj|bad v|fall .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|3|POBJ 5|6|SUBJ 6|2|COMP 7|6|JCT 8|7|POBJ
+	9|11|DET 10|11|MOD 11|8|POBJ 12|2|PUNCT
+*INV:	&=laughs . 47702_48574
+*PAR:	goin(g) to be in for a bad fall . [+ gram] 48574_50303
+%mor:	part|go-PRESP inf|to cop|be prep|in prep|for det:art|a adj|bad
+	v|fall .
+%gra:	1|0|INCROOT 2|3|INF 3|1|COMP 4|3|JCT 5|4|POBJ 6|8|DET 7|8|MOD 8|5|POBJ
+	9|1|PUNCT
+*INV:	mhm okay . 50303_52653
+%mor:	co|mhm=yes co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

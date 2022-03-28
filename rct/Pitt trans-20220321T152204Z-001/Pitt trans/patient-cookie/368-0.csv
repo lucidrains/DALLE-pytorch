@@ -1,0 +1,62 @@
+@UTF8
+@PID:	11312/t-00002645-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	368-0, audio
+*PAR:	(..) you mean like the woman doing the dishes and the water running
+	<out of the> [//] in the sink . 0_11078
+%mor:	pro:per|you v|mean prep|like det:art|the n|woman part|do-PRESP
+	det:art|the n|dish-PL coord|and det:art|the n|water part|run-PRESP
+	prep|in det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|XJCT 7|8|DET 8|6|OBJ
+	9|6|CONJ 10|11|DET 11|9|COORD 12|11|XMOD 13|12|JCT 14|15|DET 15|13|POBJ
+	16|2|PUNCT
+*INV:	+< mhm . 7000_7997
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	little boy is gettin(g) in the cookie jar . 11078_13538
+%mor:	adj|little n|boy aux|be&3S part|get-PRESP prep|in det:art|the
+	n|cookie n|jar .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	the s:tool is falling over . 13538_17378
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	little girl wants one . 17378_19655
+%mor:	adj|little n|girl v|want-3S pro:indef|one .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	hmhunh no . [+ exc] 19655_21767
+%mor:	co|no co|no .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	the dishes sittin(g) on the sink . [+ gram] 21767_25126
+%mor:	det:art|the n|dish-PL part|sit-PRESP prep|on det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	and the window . [+ gram] 25126_28335
+%mor:	coord|and det:art|the n|window .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	the grass and stuff outside . [+ gram] 28335_32173
+%mor:	det:art|the n|grass coord|and n|stuff adv|outside .
+%gra:	1|2|DET 2|0|INCROOT 3|2|CONJ 4|3|COORD 5|4|NJCT 6|2|PUNCT
+*PAR:	(..) the woman has an apron on . 32063_37085
+%mor:	det:art|the n|woman v|have&3S det:art|a n|apron adv|on .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	I don't know where everything +... [+ exc] 37085_41838
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|where pro:indef|everything
+	+...
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|LINK 6|4|COMP 7|4|PUNCT
+*INV:	(.) just tell me when you're finished . 41838_48600
+%mor:	adv|just v|tell pro:obj|me conj|when pro:per|you~aux|be&PRES
+	part|finish-PASTP .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|7|LINK 5|7|SUBJ 6|7|AUX 7|2|CJCT 8|2|PUNCT
+*PAR:	I don't see anything else on that . [+ exc] 48600_50513
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else prep|on
+	pro:dem|that .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*INV:	+< okay that's fine . 50068_51191
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

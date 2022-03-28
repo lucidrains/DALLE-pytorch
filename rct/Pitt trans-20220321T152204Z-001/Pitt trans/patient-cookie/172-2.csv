@@ -1,0 +1,41 @@
+@UTF8
+@PID:	11312/t-00002527-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|MCI||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	172-2, audio
+*PAR:	mother's drying the dishes and the water is running over the sink
+	and going onto the floor . 0_8514
+%mor:	n|mother~aux|be&3S part|dry-PRESP det:art|the n|dish-PL coord|and
+	det:art|the n|water aux|be&3S part|run-PRESP prep|over det:art|the
+	n|sink coord|and part|go-PRESP prep|onto det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|10|CONJ 15|14|COORD
+	16|15|JCT 17|18|DET 18|16|POBJ 19|3|PUNCT
+*PAR:	and &uh the little boy is up getting cookies out_of the jar and the
+	stool's about to fall over . 8514_15736
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S adv|up
+	part|get-PRESP n|cookie-PL prep|out_of det:art|the n|jar coord|and
+	det:art|the n|stool~cop|be&3S adv|about inf|to v|fall adv|over .
+%gra:	1|7|LINK 2|4|DET 3|4|MOD 4|7|SUBJ 5|7|AUX 6|7|JCT 7|0|ROOT 8|7|OBJ
+	9|7|JCT 10|11|DET 11|9|POBJ 12|15|LINK 13|14|DET 14|15|SUBJ 15|7|CJCT
+	16|18|JCT 17|18|INF 18|15|CPRED 19|18|JCT 20|7|PUNCT
+*PAR:	and the little girl's holding <her hands up for [/] for a cookie>
+	[//] one hand up for a cookie and the other one up to her mouth +"/.
+	15736_22707
+%mor:	coord|and det:art|the adj|little adj|girl&dn-POSS part|hold-PRESP
+	det:num|one n|hand adv|up prep|for det:art|a n|cookie coord|and
+	det:art|the qn|other pro:indef|one adv|up prep|to det:poss|her
+	n|mouth +"/.
+%gra:	1|0|INCROOT 2|3|DET 3|1|COORD 4|3|PRED 5|4|XMOD 6|7|QUANT 7|5|OBJ
+	8|5|JCT 9|5|JCT 10|11|DET 11|9|POBJ 12|11|CONJ 13|15|DET 14|15|QUANT
+	15|12|COORD 16|15|NJCT 17|15|NJCT 18|19|DET 19|17|POBJ 20|1|PUNCT
+*PAR:	+" sh@o don't tell mother . 22707_24139
+%mor:	on|sh mod|do~neg|not v|tell n|mother .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	(...) okay that's fine . 24139_35920
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

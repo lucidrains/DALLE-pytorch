@@ -1,0 +1,45 @@
+@UTF8
+@PID:	11312/t-00002720-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|female|ProbableAD||Participant|8||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	674-0, audio
+*INV:	I want you to take a look at this picture . 0_2304
+%mor:	pro:sub|I v|want pro:per|you inf|to v|take det:art|a v|look prep|at
+	det:dem|this n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|7|DET 7|5|OBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*INV:	tell me everything you see happening in that picture, everything
+	that's going on . 2304_8452
+%mor:	v|tell pro:obj|me pro:indef|everything pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture cm|cm
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|1|OBJ 5|6|COM 6|4|COMP 7|6|JCT 8|9|DET
+	9|6|JCT 10|9|LP 11|9|ENUM 12|14|LINK 13|14|AUX 14|11|CMOD 15|14|JCT
+	16|1|PUNCT
+*PAR:	boy's &t &t touchin(g) a cake [: cookie] [* s:r] . [+ gram] 8452_16964
+%mor:	n|boy~aux|be&3S part|touch-PRESP det:art|a n|cookie .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	he's [//] girl's reachin(g) <his hand up> [//] her hand up .
+	[+ gram] 16964_20900
+%mor:	n|girl~aux|be&3S part|reach-PRESP det:poss|her n|hand adv|up .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	and that woman's dryin(g) the dishes [/] dishes . 20900_24639
+%mor:	coord|and pro:dem|that n|woman~aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	the &uh water's falling [//] flowing over the sink . 24639_30271
+%mor:	det:art|the n|water~aux|be&3S part|flow-PRESP prep|over det:art|the
+	n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	there's cups and a plate on the sink . 30271_37200
+%mor:	pro:exist|there~cop|be&3S n|cup-PL coord|and det:art|a n|plate
+	prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|CONJ 5|6|DET 6|4|COORD 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*INV:	okay thanks .37200_43594
+%mor:	co|okay co|thanks .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,71 @@
+@UTF8
+@PID:	11312/t-00002506-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	122-0, audio
+*PAR:	well, why <the mother is> [//] she's [/] &um <she's not with the>
+	[//] what is she ? [+ exc] 0_11441
+%mor:	co|well cm|cm pro:rel|why pro:int|what cop|be&3S pro:sub|she ?
+%gra:	1|5|COM 2|1|LP 3|5|LINK 4|5|SUBJ 5|0|ROOT 6|5|PRED 7|5|PUNCT
+*PAR:	she's &uh &indus interested in something else and she doesn't
+	realize that her water is spilling . 11441_20344
+%mor:	pro:sub|she~aux|be&3S part|interest-PASTP prep|in
+	pro:indef|something post|else coord|and pro:sub|she
+	mod|do&3S~neg|not v|realize comp|that det:poss|her n|water aux|be&3S
+	part|spill-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|5|PQ 7|11|LINK 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|3|CJCT 12|16|LINK 13|14|DET 14|16|SUBJ 15|16|AUX
+	16|11|COMP 17|3|PUNCT
+*PAR:	(.) and the children have [//] &uh havin(g) a good time because
+	they're [//] while their mother's interested in something else
+	they're stealing cookies . [+ gram] 20344_32510
+%mor:	coord|and det:art|the n|child&PL part|have-PRESP det:art|a adj|good
+	n|time conj|because conj|while det:poss|their adj|mother&dn-POSS
+	v|interest-PAST prep|in pro:indef|something post|else
+	pro:sub|they~aux|be&PRES part|steal-PRESP n|cookie-PL .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|7|DET 6|7|MOD 7|4|OBJ 8|18|LINK
+	9|12|LINK 10|11|DET 11|12|SUBJ 12|18|CJCT 13|12|JCT 14|13|POBJ 15|12|JCT
+	16|18|SUBJ 17|18|AUX 18|4|CJCT 19|18|OBJ 20|4|PUNCT
+*PAR:	<the child> [//] the [/] <the son> [//] the boy looks like he's
+	gonna be hurt . 32510_42531
+%mor:	det:art|the n|boy v|look-3S conj|like pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to aux|be part|hurt&PASTP .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|10|INF
+	9|10|AUX 10|7|COMP 11|3|PUNCT
+*PAR:	and oh the water's overflowing . 42531_47098
+%mor:	coord|and co|oh det:art|the adj|water&dn-POSS over#part|flow-PRESP
+	.
+%gra:	1|5|LINK 2|5|COM 3|5|DET 4|5|MOD 5|0|INCROOT 6|5|PUNCT
+*PAR:	I hope I didn't go too fast . [+ exc] 47098_50921
+%mor:	pro:sub|I v|hope pro:sub|I mod|do&PAST~neg|not v|go adv|too
+	adv|fast .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|SUBJ 4|6|AUX 5|4|NEG 6|2|COMP 7|6|JCT 8|6|JCT
+	9|2|PUNCT
+*INV:	it's okay . 50921_51653
+%mor:	pro:per|it~cop|be&3S adj|okay .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	I've got the tape recorder on so &=laughs +... 51653_54596
+%mor:	pro:sub|I~aux|have part|get&PASTP det:art|the n|tape
+	n|record&dv-AGT adv|on adv|so +...
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|3|JCT
+	9|3|PUNCT
+*INV:	(.) what's happening there ? 54596_60093
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP adv|there ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	the boy is falling . 60093_61806
+%mor:	det:art|the n|boy aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	and oh he's stealing cookies too . 61806_64589
+%mor:	coord|and co|oh pro:sub|he~aux|be&3S part|steal-PRESP n|cookie-PL
+	post|too .
+%gra:	1|5|LINK 2|5|COM 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|PUNCT
+*INV:	mhm . 64589_65653
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 65653_73072
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

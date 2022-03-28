@@ -1,0 +1,69 @@
+@UTF8
+@PID:	11312/t-00002420-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|male|ProbableAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	001-0, audio
+@Comment:	another audio testing file overlaps in background
+*INV:	this is the picture . 0_2581
+%mor:	pro:dem|this cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	mhm . [+ exc] 2581_3426
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	just tell me everything that you see happening in that picture . 3426_6661
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you co|see n:gerund|happen-PRESP adv|in det:dem|that
+	n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|8|LINK 6|8|SUBJ 7|8|COM 8|4|CMOD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	+< alright . [+ exc] 6000_6897
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's &um a young boy that's getting a cookie jar . 6897_12218
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|young n|boy
+	pro:rel|that~aux|be&3S part|get-PRESP det:art|a n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|8|LINK 7|8|AUX 8|5|CMOD
+	9|11|DET 10|11|MOD 11|8|OBJ 12|2|PUNCT
+*PAR:	and it [//] he's &uh in bad shape because &uh the thing is
+	fallin(g) over . 12218_18718
+%mor:	coord|and pro:sub|he~cop|be&3S prep|in adj|bad n|shape conj|because
+	det:art|the n|thing aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|MOD 6|4|POBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|3|CJCT 12|11|JCT 13|3|PUNCT
+*PAR:	and in the picture the mother is washin(g) dishes and doesn't see
+	it . 18718_24822
+%mor:	coord|and prep|in det:art|the n|picture det:art|the n|mother
+	aux|be&3S part|wash-PRESP n|dish-PL coord|and mod|do&3S~neg|not
+	v|see pro:per|it .
+%gra:	1|8|LINK 2|8|JCT 3|4|DET 4|2|POBJ 5|6|DET 6|8|SUBJ 7|8|AUX 8|0|ROOT
+	9|8|OBJ 10|8|CONJ 11|13|AUX 12|11|NEG 13|10|COORD 14|13|OBJ 15|8|PUNCT
+*PAR:	and so <is the> [//] the water is overflowing in the sink . 24822_29211
+%mor:	coord|and co|so det:art|the n|water aux|be&3S over#part|flow-PRESP
+	prep|in det:art|the n|sink .
+%gra:	1|6|LINK 2|6|COM 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	and the dishes might <get falled [* +ed] over if you don't> [//]
+	fell [//] fall over there [/] there if you don't get it . 29211_34614
+%mor:	coord|and det:art|the n|dish-PL mod|might v|fall prep|over n|there
+	conj|if pro:per|you mod|do~neg|not v|get pro:per|it .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|10|NEG 12|5|CJCT 13|12|OBJ 14|5|PUNCT
+*PAR:	and it [//] there [//] it's a picture of a kitchen window . 34614_39000
+%mor:	coord|and pro:per|it~cop|be&3S det:art|a n|picture prep|of
+	det:art|a n|kitchen n|window .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	and the curtains are very &uh distinct . 39000_42832
+%mor:	coord|and det:art|the n|curtain-PL cop|be&PRES adv|very
+	adj|distinct .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|JCT 6|4|PRED 7|4|PUNCT
+*PAR:	but the water is &flow still flowing . 42832_46845
+%mor:	conj|but det:art|the n|water aux|be&3S adv|still part|flow-PRESP .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|PUNCT
+*INV:	okay thank you very much . 46845_54861
+%mor:	co|okay v|thank pro:per|you adv|very adv|much .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|5|JCT 5|2|JCT 6|2|PUNCT
+@End

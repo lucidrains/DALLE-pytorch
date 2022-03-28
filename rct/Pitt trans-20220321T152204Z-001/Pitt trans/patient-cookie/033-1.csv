@@ -1,0 +1,96 @@
+@UTF8
+@PID:	11312/t-00002447-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|64;|male|MCI||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	033-1, audio
+*INV:	tell me everything that you see going on in the picture . 0_2600
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*INV:	what's happening in that picture ? 2600_4952
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP prep|in det:dem|that
+	n|picture ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	<the man> [//] the [/] the boy's goin(g) into the cookie jar
+	&=laughs . 4952_10803
+%mor:	det:art|the n|boy~aux|be&3S part|go-PRESP prep|into det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	and the mother is (.) standin(g) here [//] over here . 10803_20047
+%mor:	coord|and det:art|the n|mother aux|be&3S part|stand-PRESP prep|over
+	n|here .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT
+*PAR:	cookie jar . [+ gram] 20047_22047
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	the guy's goin(g) into the cookie jar . 22047_25355
+%mor:	det:art|the n|guy~aux|be&3S part|go-PRESP prep|into det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	mother's [/] (..) mother's doin(g) the dishes (...) or just
+	puttin(g) it on the table . 25355_45200
+%mor:	n|mother~aux|be&3S part|do-PRESP det:art|the n|dish-PL coord|or
+	adv|just part|put-PRESP pro:per|it prep|on det:art|the n|table .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|CONJ 7|8|JCT 8|6|COORD
+	9|8|OBJ 10|8|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	I don't know . [+ exc] 45200_46281
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	(...) oh oop xxx here . [+ jar] 46281_60479
+%mor:	co|oh co|oop adv|here .
+%gra:	1|3|COM 2|3|COM 3|0|INCROOT 4|3|PUNCT
+*PAR:	curtains . [+ gram] 60479_64870
+%mor:	n|curtain-PL .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's happening over here ? 64870_71934
+%mor:	pro:int|what~cop|be&3S n:gerund|happen-PRESP prep|over n|here ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|4|POBJ 6|2|PUNCT
+*PAR:	over here ? [+ exc] 71934_73900
+%mor:	prep|over n|here ?
+%gra:	1|0|INCROOT 2|1|POBJ 3|1|PUNCT
+*INV:	uhhuh . 73900_74982
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(..) puttin(g) shoes on ? [+ gram] 74982_91229
+%mor:	part|put-PRESP n|shoe-PL adv|on ?
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|JCT 4|1|PUNCT
+*INV:	uhhuh . 91229_92500
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	that's it . [+ exc] 92500_93792
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	and what's happening here ? 93792_98940
+%mor:	coord|and pro:int|what~aux|be&3S part|happen-PRESP adv|here ?
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*INV:	what's going on here ? 98940_129239
+%mor:	pro:int|what~aux|be&3S part|go-PRESP prep|on n|here ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	looks like water . [+ gram] 129239_136583
+%mor:	v|look-3S conj|like n|water .
+%gra:	1|0|ROOT 2|1|JCT 3|2|POBJ 4|1|PUNCT
+*INV:	mhm . 136583_138655
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's it doing ? 138655_143653
+%mor:	pro:int|what~cop|be&3S pro:per|it part|do-PRESP ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|OM 5|2|PUNCT
+*PAR:	cleanin(g) dishes . [+ gram] 143653_151665
+%mor:	part|clean-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*INV:	mhm . 151665_152197
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 152197_153245
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	thank you . 153245_155044
+%mor:	v|thank pro:per|you .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@End

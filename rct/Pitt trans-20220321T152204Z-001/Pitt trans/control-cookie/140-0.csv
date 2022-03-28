@@ -1,0 +1,116 @@
+@UTF8
+@PID:	11312/t-00002298-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|58;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	140-0, audio
+*INV:	there is the picture . 0_1325
+%mor:	pro:exist|there cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	doesn't matter where you start then right ? [+ exc] 1325_5800
+%mor:	mod|do&3S~neg|not v|matter pro:int|where pro:per|you v|start
+	adv:tem|then co|right ?
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|COMP 7|6|JCT 8|6|COM
+	9|3|PUNCT
+*INV:	+< nope . 5250_6086
+%mor:	co|nope .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	alright . [+ exc] 6086_7000
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's &uh a little boy on a &uh step+stool which is tilted and
+	he's getting some cookies . 7000_16750
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|little n|boy prep|on
+	det:art|a n|+n|step+n|stool pro:rel|which aux|be&3S part|tilt-PASTP
+	coord|and pro:sub|he~aux|be&3S part|get-PRESP qn|some n|cookie-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|11|LINK 10|11|AUX 11|8|CMOD 12|15|LINK 13|15|SUBJ 14|15|AUX 15|11|CJCT
+	16|17|QUANT 17|15|OBJ 18|2|PUNCT
+*PAR:	now do you want descriptive as far as the cookie lids or [/] or how
+	they are or just the actions +/? [+ exc] 16750_22498
+%mor:	adv|now v|do pro:per|you v|want adj|descriptive prep|as adv|far
+	conj|as det:art|the n|cookie n|lid-PL coord|or pro:int|how
+	pro:sub|they cop|be&PRES coord|or adv|just det:art|the n|action-PL
+	+/?
+%gra:	1|2|JCT 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|7|COORD 7|5|ENUM
+	8|11|COORD 9|11|DET 10|11|MOD 11|5|ENUM 12|5|CONJ 13|15|LINK 14|15|SUBJ
+	15|12|COORD 16|15|CONJ 17|19|JCT 18|19|DET 19|16|COORD 20|2|PUNCT
+*INV:	+< just the action . 22298_23212
+%mor:	adv|just det:art|the n|action .
+%gra:	1|3|JCT 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	+< just the action . [+ exc] 22912_23900
+%mor:	adv|just det:art|the n|action .
+%gra:	1|3|JCT 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	okay and looks like he's trying to hand a cookie to his sister . 23900_27481
+%mor:	co|okay coord|and v|look-3S conj|like pro:sub|he~aux|be&3S
+	part|try-PRESP inf|to v|hand det:art|a n|cookie prep|to det:poss|his
+	n|sister .
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP
+	8|9|INF 9|7|COMP 10|11|DET 11|9|OBJ 12|9|JCT 13|14|DET 14|12|POBJ 15|1|PUNCT
+*PAR:	she kind_of has her finger up towards her mouth or something like
+	she might be giggling . 27481_35634
+%mor:	pro:sub|she adv|kind_of aux|have&3S det:poss|her n|finger adv|up
+	prep|towards det:poss|her n|mouth coord|or pro:indef|something
+	co|like pro:sub|she mod|might aux|be part|giggle-PRESP .
+%gra:	1|16|SUBJ 2|16|JCT 3|5|AUX 4|5|DET 5|16|JCT 6|5|NJCT 7|5|NJCT 8|9|DET
+	9|7|POBJ 10|5|CONJ 11|10|COORD 12|11|COM 13|16|SUBJ 14|16|AUX 15|16|AUX
+	16|0|ROOT 17|16|PUNCT
+*PAR:	&uh the mother's drying dishes but the water is overflowing onto
+	the floor . 35634_43058
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL conj|but
+	det:art|the n|water aux|be&3S over#part|flow-PRESP prep|onto
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	(.) &uh (..) I don't know, <the silk [: sink] [* pw-ret]> [//] the
+	sink looks like it's almost tilted . 43058_53345
+%mor:	pro:sub|I mod|do~neg|not v|know cm|cm det:art|the n|sink v|look-3S
+	conj|like pro:per|it~aux|be&3S adv|almost part|tilt-PASTP .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|LP 6|7|DET 7|8|SUBJ 8|4|COMP
+	9|13|LINK 10|13|SUBJ 11|13|AUX 12|13|JCT 13|8|COMP 14|4|PUNCT
+*PAR:	(..) now we should call the [/] &uh the [/] &sau the cup and the
+	saucers . 53345_61026
+%mor:	adv|now pro:sub|we mod|should v|call det:art|the n|cup coord|and
+	det:art|the n|saucer-PL .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|6|CONJ 8|9|DET
+	9|7|COORD 10|4|PUNCT
+*PAR:	that's not action right is it ? [+ exc] 61026_62451
+%mor:	pro:dem|that~cop|be&3S neg|not n|action adv|right cop|be&3S
+	pro:per|it ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|NEG 4|6|SUBJ 5|6|JCT 6|2|PRED 7|6|PRED 8|2|PUNCT
+*INV:	no you don't needta mention those . 62451_64020
+%mor:	co|no pro:per|you mod|do~neg|not v|need~inf|to v|mention
+	pro:dem|those .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|7|INF 7|5|COMP 8|7|OBJ
+	9|5|PUNCT
+*PAR:	+< &uh the breeze might be blowing . 63520_65360
+%mor:	det:art|the n|breeze n|might aux|be part|blow-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	the curtains look like they might be +... 65360_67663
+%mor:	det:art|the n|curtain-PL v|look conj|like pro:sub|they mod|might
+	cop|be +...
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CJCT 8|3|PUNCT
+*PAR:	(.) any other action . [+ exc] 67663_75040
+%mor:	qn|any qn|other n|action .
+%gra:	1|3|QUANT 2|3|QUANT 3|0|INCROOT 4|3|PUNCT
+*PAR:	I don't see anything else . [+ exc] 75040_78682
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|PUNCT
+*PAR:	I just see into the outdoors but I don't see anything moving . 78682_81550
+%mor:	pro:sub|I adv|just v|see prep|into det:art|the n|outdoors conj|but
+	pro:sub|I mod|do~neg|not v|see pro:indef|anything part|move-PRESP .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|11|LINK 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|3|CJCT 12|11|OBJ 13|12|XMOD 14|3|PUNCT
+*INV:	&hm okay . 81500_82414
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< that's about it I guess . [+ exc] 82014_83226
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it pro:sub|I v|guess .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|6|SUBJ 6|4|CMOD 7|2|PUNCT
+*INV:	+< a little bit xxx . 82726_84114
+%mor:	det:art|a adj|little n|bit .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	+< &=laughs . [+ exc] 83426_84444
+@End

@@ -1,0 +1,66 @@
+@UTF8
+@PID:	11312/t-00002539-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|ProbableAD||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	183-2, audio
+*INV:	I'm gonna show you a picture . 0_1879
+%mor:	pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|show pro:per|you
+	det:art|a n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|OBJ2 7|8|DET 8|5|OBJ
+	9|3|PUNCT
+*INV:	and in the picture there's some action taking place, there's some
+	things going on . 1879_7249
+%mor:	coord|and prep|in det:art|the n|picture pro:exist|there~cop|be&3S
+	qn|some n|action part|take-PRESP n|place cm|cm
+	pro:exist|there~cop|be&3S qn|some n|thing-PL part|go-PRESP adv|on .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|8|QUANT 8|10|MOD
+	9|10|MOD 10|6|PRED 11|6|LP 12|13|SUBJ 13|6|CJCT 14|15|QUANT 15|13|PRED
+	16|15|XMOD 17|16|JCT 18|6|PUNCT
+*INV:	what I want you to do is just look at the picture and tell me
+	anything at all that you see going on . 7249_12120
+%mor:	pro:int|what pro:sub|I v|want pro:per|you inf|to v|do cop|be&3S
+	adv|just v|look prep|at det:art|the n|picture coord|and v|tell
+	pro:obj|me pro:indef|anything prep|at qn|all pro:dem|that
+	pro:per|you v|see n:gerund|go-PRESP adv|on .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|9|JCT
+	9|6|CJCT 10|9|JCT 11|12|DET 12|10|POBJ 13|9|CONJ 14|13|COORD 15|14|OBJ2
+	16|14|OBJ 17|16|NJCT 18|19|QUANT 19|17|POBJ 20|21|SUBJ 21|14|COMP 22|21|OBJ
+	23|21|JCT 24|3|PUNCT
+*PAR:	a boy's <on the> [//] &uh fallin(g) off the stool, pickin(g) up
+	cookies . 12120_23407
+%mor:	det:art|a n|boy~aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|stool cm|cm part|pick-PRESP adv|up n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|LP
+	9|4|XJCT 10|9|JCT 11|10|POBJ 12|4|PUNCT
+*PAR:	the girl's reachin(g) up for it . 23407_25453
+%mor:	det:art|the n|girl~aux|be&3S part|reach-PRESP adv|up prep|for
+	pro:per|it .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|4|PUNCT
+*PAR:	<the girl> [//] the lady is [/] &r is dryin(g) dishes . 25453_30440
+%mor:	det:art|the n|lady aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water is &uh runnin(g) over &uh from the sink into the floor .
+	30440_36008
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over prep|from
+	det:art|the n|sink prep|into det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	the window's opened . 36008_39268
+%mor:	det:art|the adj|window&dn-POSS part|open-PASTP .
+%gra:	1|3|DET 2|3|MOD 3|0|ROOT 4|3|PUNCT
+*PAR:	dishes <on the> [/] on the counter . [+ gram] 39268_43091
+%mor:	v|dish-3S prep|on det:art|the n|counter .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*INV:	okay . 43091_49425
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she's outside . 49425_51369
+%mor:	pro:sub|she~cop|be&3S adv|outside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|PUNCT
+*INV:	okay good . 51369_54712
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

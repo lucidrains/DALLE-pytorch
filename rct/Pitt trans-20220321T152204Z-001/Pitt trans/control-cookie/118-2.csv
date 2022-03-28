@@ -1,0 +1,51 @@
+@UTF8
+@PID:	11312/t-00002270-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	118-2, audio
+*INV:	there's the picture . 0_981
+%mor:	pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	&=clears:throat &uh the water's runnin(g) over . 981_5852
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the mother's dryin(g) dishes . 5852_9774
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the boy is stealin(g) cookies . 9774_14645
+%mor:	det:art|the n|boy aux|be&3S part|steal-PRESP n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	and the girl is takin(g) one . 14645_17762
+%mor:	coord|and det:art|the n|girl cop|be&3S n:gerund|take-PRESP
+	det:num|one .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|OBJ 7|4|PUNCT
+*PAR:	and the boy is gonna fall off the stool . 17762_21681
+%mor:	coord|and det:art|the n|boy aux|be&3S part|go-PRESP~inf|to v|fall
+	prep|off det:art|the n|stool .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	and &uh the water is running . 21681_25774
+%mor:	coord|and det:art|the n|water aux|be&3S part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	and the window's open . 25774_34504
+%mor:	coord|and det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	and the grass is growing . 34504_38271
+%mor:	coord|and det:art|the n|grass aux|be&3S part|grow-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*INV:	&=laughs okay . [+ exc] 38271_41278
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	it's all the action . [+ exc] 41278_44800
+%mor:	pro:per|it~cop|be&3S qn|all det:art|the n|action .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|QUANT 4|5|DET 5|2|PRED 6|2|PUNCT
+*INV:	okay good . 44800_46114
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	curtain . [+ gram] 46114_49494
+%mor:	n|curtain .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,95 @@
+@UTF8
+@PID:	11312/t-00002351-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|63;|male|Control||Participant|26||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	227-0, audio
+*PAR:	he's falling off the stool . 0_1505
+%mor:	pro:sub|he~aux|be&3S part|fall-PRESP prep|off det:art|the n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*INV:	action . 1505_2072
+%mor:	n|action .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 2072_2941
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the water's over flowing . 2941_4482
+%mor:	det:art|the adj|water&dn-POSS adv|over part|flow-PRESP .
+%gra:	1|2|DET 2|0|INCROOT 3|4|JCT 4|2|XMOD 5|2|PUNCT
+*PAR:	not xxx do you xxx more ? [+ exc] 4482_7909
+%mor:	neg|not v|do pro:per|you pro:indef|more ?
+%gra:	1|2|NEG 2|0|ROOT 3|4|SUBJ 4|2|OBJ 5|2|PUNCT
+*PAR:	is there more ? [+ exc] 7909_10070
+%mor:	cop|be&3S adv|there pro:indef|more ?
+%gra:	1|0|ROOT 2|3|JCT 3|1|PRED 4|1|PUNCT
+*INV:	do you see any more ? 10070_11870
+%mor:	mod|do pro:per|you v|see qn|any pro:indef|more ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|PUNCT
+*PAR:	+< right there . [+ exc] 10570_11770
+%mor:	adv|right adv|there .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*PAR:	what if . [+ exc] 11870_13866
+%mor:	pro:int|what conj|if .
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+*PAR:	the action . [+ exc] 13866_17256
+%mor:	det:art|the n|action .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	I don't know what you strictly mean by action . [+ exc] 17256_19169
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what pro:per|you
+	adv|strict&dadj-LY adj|mean prep|by n|action .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|JCT 8|4|COMP
+	9|8|JCT 10|9|POBJ 11|4|PUNCT
+*PAR:	the guy's eatin(g) some cookies . 19169_20282
+%mor:	det:art|the n|guy~aux|be&3S part|eat-PRESP qn|some n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|PUNCT
+*PAR:	is that action ? [+ exc] 20282_21450
+%mor:	cop|be&3S comp|that n|action ?
+%gra:	1|0|ROOT 2|3|MOD 3|1|PRED 4|1|PUNCT
+*INV:	things that are going on . 21450_26348
+%mor:	n|thing-PL pro:rel|that aux|be&PRES part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	(.) washing dishes ? [+ exc] 26348_33777
+%mor:	part|wash-PRESP n|dish-PL ?
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	is that action ? [+ exc] 33777_34735
+%mor:	cop|be&3S comp|that n|action ?
+%gra:	1|0|ROOT 2|3|MOD 3|1|PRED 4|1|PUNCT
+*INV:	mhm . 34735_35314
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the water coming out_of the faucet is action . 35314_38340
+%mor:	coord|and det:art|the n|water part|come-PRESP prep|out_of
+	det:art|the n|faucet cop|be&3S n|action .
+%gra:	1|8|LINK 2|3|DET 3|8|SUBJ 4|3|XMOD 5|4|JCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|8|PRED 10|8|PUNCT
+*PAR:	and drying the dishes is action . 38340_40884
+%mor:	coord|and part|dry-PRESP det:art|the n|dish-PL cop|be&3S n|action .
+%gra:	1|2|LINK 2|0|ROOT 3|4|DET 4|5|SUBJ 5|2|COMP 6|5|PRED 7|2|PUNCT
+*PAR:	and takin(g) the cookie is action . 40884_42585
+%mor:	coord|and part|take-PRESP det:art|the n|cookie cop|be&3S n|action .
+%gra:	1|2|LINK 2|0|ROOT 3|4|DET 4|5|SUBJ 5|2|COMP 6|5|PRED 7|2|PUNCT
+*PAR:	and I don't see anybody eating one . 42385_45366
+%mor:	coord|and pro:sub|I mod|do~neg|not v|see pro:indef|anybody
+	n:gerund|eat-PRESP det:num|one .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|6|NJCT 8|7|OBJ
+	9|5|PUNCT
+*PAR:	okay ? [+ exc] 45366_48124
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 48124_49058
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(.) that's about all the action I see . [+ exc] 49058_56080
+%mor:	pro:dem|that~cop|be&3S prep|about qn|all det:art|the n|action
+	pro:sub|I v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|6|QUANT 5|6|DET 6|3|POBJ 7|8|SUBJ 8|6|CMOD
+	9|2|PUNCT
+*INV:	okay . 56080_56776
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	any more ? [+ exc] 56776_57833
+%mor:	qn|any pro:indef|more ?
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,40 @@
+@UTF8
+@PID:	11312/t-00002388-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|63;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	295-1, audio
+*PAR:	&uh this boy is about to fall off o(f) the stool . 0_3957
+%mor:	det:dem|this n|boy cop|be&3S adv|about inf|to v|fall adv|off
+	prep|of det:art|the n|stool .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	the mother is &uh washing dishes and the water's spilling over on
+	the &uh (.) kitchen floor . 3957_12857
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	det:art|the n|water~aux|be&3S part|spill-PRESP adv|over prep|on
+	det:art|the n|kitchen n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|10|JCT 12|10|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|4|PUNCT
+*PAR:	the wind is blowing the curtains . 12826_15114
+%mor:	det:art|the n|wind aux|be&3S part|blow-PRESP det:art|the
+	n|curtain-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	the little girl is laughing at her brother who's taking a cookie
+	out_of the cookie jar . 15114_20622
+%mor:	det:art|the adj|little n|girl aux|be&3S part|laugh-PRESP prep|at
+	det:poss|her n|brother pro:rel|who~aux|be&3S part|take-PRESP
+	det:art|a n|cookie prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|11|LINK 10|11|AUX 11|8|CMOD 12|13|DET 13|11|OBJ 14|11|JCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|5|PUNCT
+*PAR:	think that's it . [+ exc] 20622_24498
+%mor:	v|think pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	okay . 24498_25308
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

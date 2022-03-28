@@ -1,0 +1,63 @@
+@UTF8
+@PID:	11312/t-00002342-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	209-1, audio
+*INV:	so tell me what action you see going on in that picture . 0_3692
+%mor:	adv|so v|tell pro:obj|me pro:int|what n|action pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|5|MOD 5|2|OBJ 6|7|SUBJ 7|5|CMOD 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*PAR:	okay the boy in the process of stealing cookies from the jar &uh is
+	about to fall from the stool . 3692_11443
+%mor:	co|okay det:art|the n|boy prep|in det:art|the n|process prep|of
+	part|steal-PRESP n|cookie-PL prep|from det:art|the n|jar cop|be&3S
+	adv|about inf|to v|fall prep|from det:art|the n|stool .
+%gra:	1|13|COM 2|3|DET 3|13|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|7|POBJ
+	9|8|OBJ 10|3|NJCT 11|12|DET 12|10|POBJ 13|0|ROOT 14|16|JCT 15|16|INF
+	16|13|CPRED 17|16|JCT 18|19|DET 19|17|POBJ 20|13|PUNCT
+*PAR:	&uh his sister I think is admonishing him to be quiet . 11443_17478
+%mor:	det:poss|his n|sister pro:sub|I v|think aux|be&3S
+	part|admonish-PRESP pro:obj|him inf|to cop|be adj|quiet .
+%gra:	1|2|DET 2|6|SUBJ 3|4|SUBJ 4|2|CMOD 5|6|AUX 6|0|ROOT 7|6|OBJ 8|9|INF
+	9|6|COMP 10|9|PRED 11|6|PUNCT
+*PAR:	the mother is drying dishes . 17478_19958
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	at the point she's drying dishes <the water> [//] perhaps from the
+	noise the water is spilling over the sink and onto the floor . 19958_27842
+%mor:	prep|at det:art|the n|point pro:sub|she~aux|be&3S part|dry-PRESP
+	n|dish-PL adv|perhaps prep|from det:art|the n|noise det:art|the
+	n|water aux|be&3S part|spill-PRESP prep|over det:art|the n|sink
+	coord|and prep|onto det:art|the n|floor .
+%gra:	1|6|JCT 2|3|DET 3|1|POBJ 4|6|SUBJ 5|6|AUX 6|15|CJCT 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|13|DET 13|15|SUBJ 14|15|AUX 15|0|ROOT
+	16|15|JCT 17|18|DET 18|16|POBJ 19|15|CONJ 20|19|COORD 21|22|DET 22|20|POBJ
+	23|15|PUNCT
+*PAR:	okay ? [+ exc] 27842_29342
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay anything else ? 29342_30908
+%mor:	co|okay pro:indef|anything post|else ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PQ 4|2|PUNCT
+*PAR:	&um dishes spilling . [+ gram] 30908_33637
+%mor:	n|dish-PL part|spill-PRESP .
+%gra:	1|0|INCROOT 2|1|XMOD 3|1|PUNCT
+*PAR:	the mother is frowning which is a form of action I would think you
+	would say . 33637_37417
+%mor:	det:art|the n|mother aux|be&3S part|frown-PRESP pro:rel|which
+	cop|be&3S det:art|a n|form prep|of n|action pro:sub|I mod|will&COND
+	v|think pro:per|you mod|will&COND v|say .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|LINK 6|4|COMP 7|8|DET 8|6|PRED
+	9|8|NJCT 10|9|POBJ 11|13|SUBJ 12|13|AUX 13|8|CMOD 14|16|SUBJ 15|16|AUX
+	16|13|COMP 17|4|PUNCT
+*PAR:	and that's it . [+ exc] 37417_38073
+%mor:	coord|and pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	okay . 38073_38942
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

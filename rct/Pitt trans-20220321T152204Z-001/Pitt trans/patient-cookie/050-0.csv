@@ -1,0 +1,70 @@
+@UTF8
+@PID:	11312/t-00002461-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|male|ProbableAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	050-0, audio
+*PAR:	so she will find her . 0_2741
+%mor:	co|so pro:sub|she mod|will v|find pro:obj|her .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+%com:	tape appears to start midway through utterance
+*PAR:	and xxx the mother washes [//] dryin(g) the dishes . 2741_6461
+%mor:	coord|and det:art|the n|mother part|dry-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|6|DET 6|4|OBJ 7|3|PUNCT
+*PAR:	and the stool's upset . 6461_12031
+%mor:	coord|and det:art|the adj|stool&dn-POSS adj|upset .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	you_know she's <gettin(g) on> [//] gettin(g) the cookies . 12031_15502
+%mor:	co|you_know pro:sub|she~aux|be&3S part|get-PRESP det:art|the
+	n|cookie-PL .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	there's &up cup and saucer settin(g) there on a plate ready to eat
+	. 15502_23642
+%mor:	pro:exist|there~cop|be&3S n|cup coord|and n|saucer part|set-PRESP
+	adv|there prep|on det:art|a n|plate adj|ready inf|to v|eat .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|CONJ 5|4|COORD 6|2|XJCT 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|10|POSTMOD 12|13|INF 13|11|XMOD 14|2|PUNCT
+*PAR:	the cookie jar right here . [+ exc] 23642_31035
+%mor:	det:art|the n|cookie n|jar adv|right adv|here .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|5|JCT 5|3|NJCT 6|3|PUNCT
+*INV:	okay anything else going on in the picture over here ? 31035_33726
+%mor:	co|okay pro:indef|anything post|else part|go-PRESP adv|on prep|in
+	det:art|the n|picture prep|over n|here ?
+%gra:	1|4|COM 2|4|SUBJ 3|2|PQ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|8|NJCT 10|9|POBJ 11|4|PUNCT
+*PAR:	that's all I see +/. [+ exc] 33970_36083
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I v|see +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|SUBJ 5|3|CMOD 6|2|PUNCT
+*INV:	+< what's going on over in this area ? 35600_37340
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|over prep|in
+	det:dem|this n|area ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	and &th &th this [/] this is +... 37340_43353
+%mor:	coord|and pro:dem|this cop|be&3S +...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	well whoever's over there spilled it, knocked it down . 43353_46667
+%mor:	co|well pro:int|whoever~aux|be&3S prep|over n|there
+	part|spill-PASTP pro:per|it cm|cm v|knock-PAST pro:per|it adv|down .
+%gra:	1|6|COM 2|6|SUBJ 3|6|AUX 4|3|NJCT 5|4|POBJ 6|0|ROOT 7|6|OBJ 8|6|LP
+	9|6|ENUM 10|9|OBJ 11|9|JCT 12|6|PUNCT
+*PAR:	I don't know what that is . [+ exc] 46667_49809
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what adv|that cop|be&3S .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|JCT 7|4|COMP 8|4|PUNCT
+*PAR:	looks like a mouse &=laughs . [+ gram] 49809_53695
+%mor:	v|look-3S conj|like det:art|a n|mouse .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*INV:	&=laughs . 53695_55066
+*INV:	okay ? 55066_58552
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	mhm . [+ exc] 58552_59237
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 59237_61012
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

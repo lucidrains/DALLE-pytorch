@@ -1,0 +1,144 @@
+@UTF8
+@PID:	11312/t-00002612-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|male|ProbableAD||Participant|13||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	319-0, audio
+*INV:	tell me what you see going on in this picture . 0_2397
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|this n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	(.) I don't see xxx . [+ exc] 2397_6600
+%mor:	pro:sub|I mod|do~neg|not v|see .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	(loo)ks like somebody took some pencils or somethin(g) and went up
+	and down those xxx them things . [+ exc] 6600_11851
+%mor:	v|look-3S prep|like pro:indef|somebody v|take&PAST qn|some
+	n|pencil-PL coord|or pro:indef|something coord|and v|go&PAST adv|up
+	coord|and prep|down det:dem|those pro:obj|them n|thing-PL .
+%gra:	1|0|ROOT 2|1|JCT 3|2|POBJ 4|1|ENUM 5|6|QUANT 6|4|OBJ 7|6|CONJ 8|7|COORD
+	9|1|CONJ 10|9|COORD 11|10|JCT 12|11|CONJ 13|12|COORD 14|16|DET
+	15|16|SUBJ 16|13|POBJ 17|1|PUNCT
+*INV:	can you see what's going on in that picture ? 11851_14700
+%mor:	mod|can pro:per|you v|see pro:int|what~aux|be&3S part|go-PRESP
+	adv|on prep|in det:dem|that n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|AUX 6|3|COMP 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	<all I see> [//] I see a girl standin(g) there or somethin(g) or
+	other . 14700_18615
+%mor:	pro:sub|I v|see det:art|a n|girl part|stand-PRESP adv|there
+	coord|or pro:indef|something coord|or qn|other .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|XJCT 6|5|JCT 7|5|CONJ 8|7|COORD
+	9|8|CONJ 10|9|COORD 11|2|PUNCT
+*INV:	okay tell me what else you see . 18615_22438
+%mor:	co|okay v|tell pro:obj|me pro:int|what post|else pro:per|you v|see
+	.
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|7|LINK 5|4|PQ 6|7|SUBJ 7|2|COMP 8|2|PUNCT
+*PAR:	(.) some little knots [* s:uk] or somethin(g) . [+ gram] [+ jar] 22438_27011
+%mor:	qn|some adj|little n|knot-PL coord|or pro:indef|something .
+%gra:	1|3|QUANT 2|3|MOD 3|0|INCROOT 4|3|CONJ 5|4|COORD 6|3|PUNCT
+*PAR:	I don't know . [+ exc] 27011_27676
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	(.) xxx . [+ exc] [+ jar] 27676_31938
+*PAR:	(.) some kind of a xxx pan or somethin(g) . [+ gram] [+ jar] 31938_38068
+%mor:	qn|some n|kind prep|of det:art|a n|pan coord|or pro:indef|something
+	.
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|CONJ 7|6|COORD
+	8|2|PUNCT
+*PAR:	(.) and that girl is there . 38068_41541
+%mor:	coord|and pro:dem|that n|girl cop|be&3S adv|there .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	(.) and there's somethin(g) else over there . [+ es] 41541_45214
+%mor:	coord|and pro:exist|there~cop|be&3S pro:indef|something post|else
+	prep|over n|there .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|PQ 6|4|NJCT 7|6|POBJ 8|3|PUNCT
+*PAR:	(.) there's another girl (.) look like . [+ gram] 45214_51328
+%mor:	pro:exist|there~cop|be&3S qn|another n|girl v|look conj|like .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|5|SUBJ 5|2|PRED 6|5|OBJ 7|2|PUNCT
+*INV:	(..) what else do you see going on in the picture ? 51328_59550
+%mor:	pro:int|what post|else v|do pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture ?
+%gra:	1|3|LINK 2|1|PQ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*INV:	what's going on right here in this picture ? 59550_61913
+%mor:	pro:int|what~aux|be&3S part|go-PRESP prep|on adv|right adv|here
+	prep|in det:dem|this n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|JCT 6|4|POBJ 7|6|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*PAR:	looks +/. [+ exc] 61913_62613
+%mor:	v|look-3S +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	+< what's happening there ? 62230_63125
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP adv|there ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	look like some [//] a little girl is in there . [+ gram] 63125_65398
+%mor:	v|look conj|like det:art|a adj|little n|girl cop|be&3S prep|in
+	n|there .
+%gra:	1|0|ROOT 2|6|LINK 3|5|DET 4|5|MOD 5|6|SUBJ 6|1|COMP 7|6|JCT 8|7|POBJ
+	9|1|PUNCT
+*INV:	mhm . 65398_66708
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what else is going on ? 66708_68590
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	I don't see nothin(g) else . [+ exc] 68590_72000
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|nothing post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|PUNCT
+*PAR:	some of xxx and things . [+ exc] [+ jar] [+ gram] 72000_73957
+%mor:	pro:indef|some prep|of coord|and n|thing-PL .
+%gra:	1|0|INCROOT 2|1|NJCT 3|2|CONJ 4|3|COORD 5|1|PUNCT
+*INV:	uhhuh . 73957_75017
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	can you tell me what's going on on this side of the picture ? 75017_78254
+%mor:	mod|can pro:per|you v|tell pro:obj|me pro:int|what~aux|be&3S
+	part|go-PRESP adv|on prep|on det:dem|this n|side prep|of det:art|the
+	n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|7|JCT 10|11|DET 11|9|POBJ 12|11|NJCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*PAR:	look to me like the same except them things up there . [+ gram] 78254_82938
+%mor:	v|look prep|to pro:obj|me prep|like det:art|the adj|same
+	prep|except pro:obj|them n|thing-PL prep|up n|there .
+%gra:	1|0|ROOT 2|1|JCT 3|2|POBJ 4|1|JCT 5|6|DET 6|4|POBJ 7|6|JCT 8|9|SUBJ
+	9|7|POBJ 10|9|NJCT 11|10|POBJ 12|1|PUNCT
+*INV:	what [/] what are you talking about ? 82938_85398
+%mor:	pro:int|what aux|be&PRES pro:per|you part|talk-PRESP adv|about ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	(..) I see this they all look [//] looked about the same to me
+	except this thing here . [+ es] 85398_91716
+%mor:	pro:sub|I v|see det:dem|this pro:sub|they post|all v|look-PAST
+	prep|about det:art|the adj|same prep|to pro:obj|me prep|except
+	det:dem|this n|thing adv|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|DET 4|6|SUBJ 5|4|PQ 6|2|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|JCT 11|10|POBJ 12|9|JCT 13|14|DET 14|12|POBJ 15|9|JCT
+	16|2|PUNCT
+*PAR:	look like a little kid the same . [+ gram] 91716_93050
+%mor:	v|look conj|like det:art|a adj|little n|kid det:art|the adj|same .
+%gra:	1|0|ROOT 2|1|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|7|DET 7|5|POSTMOD 8|1|PUNCT
+*INV:	uhhuh . 93050_94000
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	can you see anything else in that picture ? 94000_96045
+%mor:	mod|can pro:per|you v|see pro:indef|anything post|else prep|in
+	det:dem|that n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|PQ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	(.) I'm sorry I didn't bring my glasses . [+ exc] 96045_100464
+%mor:	pro:sub|I~cop|be&1S adj|sorry pro:sub|I mod|do&PAST~neg|not v|bring
+	det:poss|my n|glass-PL .
+%gra:	1|2|SUBJ 2|7|CJCT 3|2|PRED 4|7|SUBJ 5|7|AUX 6|5|NEG 7|0|ROOT 8|9|DET
+	9|7|OBJ 10|7|PUNCT
+*INV:	(.) maybe we can try another time when you have your glasses . 100464_105250
+%mor:	adv|maybe pro:sub|we mod|can v|try qn|another n|time conj|when
+	pro:per|you v|have det:poss|your n|glass-PL .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|9|LINK 8|9|SUBJ
+	9|4|CJCT 10|11|DET 11|9|OBJ 12|4|PUNCT
+*INV:	it does help to have +/. 105250_106564
+%mor:	pro:per|it mod|do&3S n|help inf|to v|have +/.
+%gra:	1|3|SUBJ 2|3|AUX 3|5|SUBJ 4|5|INF 5|0|ROOT 6|5|PUNCT
+@End

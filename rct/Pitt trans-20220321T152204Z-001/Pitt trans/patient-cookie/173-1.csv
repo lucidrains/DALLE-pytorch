@@ -1,0 +1,92 @@
+@UTF8
+@PID:	11312/t-00002530-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|female|ProbableAD||Participant|5||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	173-1, audio
+*INV:	what's going on in the picture ? 0_1948
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	xxx &=clears:throat . [+ exc] 1948_9759
+*INV:	can you tell me the action going on in the picture ? 9759_15644
+%mor:	mod|can pro:per|you v|tell pro:obj|me det:art|the n|action
+	part|go-PRESP adv|on prep|in det:art|the n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ2 5|6|DET 6|3|OBJ 7|6|XMOD 8|7|JCT
+	9|7|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	let's see what's this [/] this ? [+ exc] 15644_19209
+%mor:	v|let~pro:obj|us v|see pro:int|what~cop|be&3S pro:dem|this ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|5|SUBJ 5|3|COMP 6|5|PRED 7|1|PUNCT
+*INV:	what's going on in the picture ? 19209_26674
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*INV:	tell me all of the action about the picture . 26674_29353
+%mor:	v|tell pro:obj|me post|all prep|of det:art|the n|action prep|about
+	det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|JCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*INV:	what's going on in that picture ? 29353_31034
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:dem|that
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	well the kæl@u [: gal] [* p:n] and the little boy . [+ gram] 31034_34039
+%mor:	co|well det:art|the n|gal coord|and det:art|the adj|little n|boy .
+%gra:	1|3|COM 2|3|DET 3|0|INCROOT 4|3|CONJ 5|7|DET 6|7|MOD 7|4|COORD
+	8|3|PUNCT
+*INV:	mhm . 34039_35299
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what else is going on ? 35299_37837
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	lay it down . [+ exc] 37837_42809
+%mor:	v|lay pro:per|it adv|down .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|JCT 4|1|PUNCT
+*INV:	it doesn't open up . 42809_45800
+%mor:	pro:per|it mod|do&3S~neg|not v|open adv|up .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*INV:	you hafta leave it closed . 45800_47703
+%mor:	pro:per|you mod|have~inf|to v|leave pro:per|it v|close-PAST .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|4|PUNCT
+*INV:	<what else goes> [//] what else is going on in the picture ? 47703_50400
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on prep|in
+	det:art|the n|picture ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*INV:	<can you see what> [//] tell me what else is going on in that
+	picture . 50400_52978
+%mor:	v|tell pro:obj|me pro:int|what post|else aux|be&3S part|go-PRESP
+	adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|6|LINK 4|3|PQ 5|6|AUX 6|1|COMP 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	pants and clothes and +... 52978_55955
+%mor:	v|pant-3S coord|and n:pt|clothes coord|and +...
+%gra:	1|0|ROOT 2|1|CONJ 3|2|COORD 4|1|CONJ 5|1|PUNCT
+*INV:	+< yeah . 54242_54879
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 55955_56934
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	&s <the little boy's> [/] the little boy's (j)ust sittin(g) there .
+	56934_61803
+%mor:	det:art|the adj|little adj|boy&dn-POSS adv|just part|sit-PRESP
+	adv|there .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|5|JCT 5|3|XMOD 6|5|JCT 7|3|PUNCT
+*INV:	okay anything else ? 61803_64330
+%mor:	co|okay pro:indef|anything post|else ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PQ 4|2|PUNCT
+*PAR:	is this one getting through there ? [+ exc] 64330_68500
+%mor:	cop|be&3S det:dem|this pro:indef|one part|get-PRESP prep|through
+	n|there ?
+%gra:	1|0|ROOT 2|3|DET 3|1|PRED 4|3|XMOD 5|4|JCT 6|5|POBJ 7|1|PUNCT
+*PAR:	I can't +... [+ exc] 68500_72722
+%mor:	pro:sub|I mod|can~neg|not +...
+%gra:	1|0|INCROOT 2|4|AUX 3|2|NEG 4|1|PUNCT
+*INV:	okay good . 72722_74551
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

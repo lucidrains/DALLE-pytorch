@@ -1,0 +1,83 @@
+@UTF8
+@PID:	11312/t-00002250-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	096-2, audio
+*PAR:	what do I see going on ? [+ exc] 0_1635
+%mor:	pro:int|what mod|do pro:sub|I v|see n:gerund|go-PRESP adv|on ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*PAR:	just [/] just start to describe it ? [+ exc] 1635_3682
+%mor:	adv|just v|start inf|to v|describe pro:per|it ?
+%gra:	1|2|JCT 2|0|ROOT 3|4|INF 4|2|COMP 5|4|OBJ 6|2|PUNCT
+*INV:	right . 3682_4265
+%mor:	co|right .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the girl wants a cookie . 4265_7274
+%mor:	det:art|the n|girl v|want-3S det:art|a n|cookie .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and the boy's &k tryin(g) to get a cookie out_of the cookie jar .7274_10567
+%mor:	coord|and det:art|the n|boy~aux|be&3S part|try-PRESP inf|to v|get
+	det:art|a n|cookie prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|7|JCT 11|13|DET 12|13|MOD 13|10|POBJ 14|5|PUNCT
+*PAR:	and the stool's fallin(g) over .10567_12031
+%mor:	coord|and det:art|the n|stool~aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	and the water &s spigot's turned on .13031_17543
+%mor:	coord|and det:art|the n|water adj|spigot&dn-POSS v|turn-PAST adv|on
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|JCT 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	the water's overflowin(g) . 17543_18996
+%mor:	det:art|the adj|water&dn-POSS over#part|flow-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	and the mother's doin(g) the dishes .18996_21009
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|do-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and &uh the windows open .21009_24213
+%mor:	coord|and det:art|the n|window-PL adj|open .
+%gra:	1|0|INCROOT 2|3|DET 3|1|COORD 4|3|POSTMOD 5|1|PUNCT
+*PAR:	and &uh (.) it's spring outside somethin(g)'s growing .24213_31703
+%mor:	coord|and pro:per|it~cop|be&3S n|spring adv|outside
+	pro:indef|something~aux|be&3S part|grow-PRESP .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|8|JCT 6|8|SUBJ 7|8|AUX 8|4|CMOD
+	9|3|PUNCT
+*PAR:	the window's open .31703_33570
+%mor:	det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	anything else ? [+ exc] 33570_37400
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	she's drying the dishes . 37400_38464
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	has a dress on . [+ gram] 38464_39343
+%mor:	v|have&3S det:art|a n|dress adv|on .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|JCT 5|1|PUNCT
+*PAR:	her feet's [* m:a] in the water . [+ gram] 39343_40818
+%mor:	det:poss|her n|foot&PL~cop|be&3S prep|in det:art|the n|water .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	(.) the lid's off the cookie jar .40818_44222
+%mor:	det:art|the n|lid~cop|be&3S prep|off det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	and the kid has <a hand on> [//] <one hand> [//] in the right hand
+	has gettin(g) a cookie and the left hand has one in .44222_49708
+%mor:	coord|and det:art|the n|kid aux|have&3S prep|in det:art|the
+	adj|right n|hand aux|have&3S part|get-PRESP det:art|a n|cookie
+	coord|and det:art|the adj|left n|hand aux|have&3S det:num|one adv|in
+	.
+%gra:	1|10|LINK 2|3|DET 3|10|SUBJ 4|10|AUX 5|10|JCT 6|8|DET 7|8|MOD 8|10|SUBJ
+	9|10|AUX 10|0|ROOT 11|12|DET 12|10|OBJ 13|18|LINK 14|16|DET 15|16|MOD
+	16|18|SUBJ 17|18|AUX 18|10|CJCT 19|18|JCT 20|10|PUNCT
+*PAR:	he's givin(g) [//] gonna give it to the sister .49708_52778
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|give pro:per|it prep|to
+	det:art|the n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|OBJ 7|5|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*INV:	okay good .52778_55007
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

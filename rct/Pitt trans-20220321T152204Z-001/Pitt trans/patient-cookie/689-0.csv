@@ -1,0 +1,42 @@
+@UTF8
+@PID:	11312/t-00002723-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|Vascular||Participant|13||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	689-0, audio
+*INV:	tell me what you see going on in the picture . 0_3876
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	the girl's dryin(g) dishes . 3876_12288
+%mor:	det:art|the n|girl~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	she's washing . 12288_14300
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	the [/] &wasits the water's flowin(g) over . 14300_17509
+%mor:	det:art|the n|water~aux|be&3S part|flow-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	and there's a boy <up on the> [//] (.) up [/] up on the stool but
+	it's [//] the stool's goin(g) over . 17509_30459
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|boy adv|up prep|on
+	det:art|the n|stool conj|but det:art|the n|stool~aux|be&3S
+	part|go-PRESP adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|5|NJCT 8|9|DET
+	9|7|POBJ 10|14|LINK 11|12|DET 12|14|SUBJ 13|14|AUX 14|3|CJCT 15|14|JCT
+	16|3|PUNCT
+*PAR:	he hasn't fallen yet [/] yet . 30459_32919
+%mor:	pro:sub|he aux|have&3S~neg|not part|fall&PASTP adv|yet .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	and the girl is telling him what to do . 32919_41010
+%mor:	coord|and det:art|the n|girl aux|be&3S part|tell-PRESP pro:obj|him
+	pro:int|what inf|to v|do .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|9|LINK 8|9|INF
+	9|5|COMP 10|5|PUNCT
+*INV:	okay . 41010_51422
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

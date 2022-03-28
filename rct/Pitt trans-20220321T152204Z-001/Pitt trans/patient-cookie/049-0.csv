@@ -1,0 +1,112 @@
+@UTF8
+@PID:	11312/t-00002459-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|56;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	049-0, audio
+*INV:	there's the picture . 0_2865
+%mor:	pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	&=clears throat you want me to tell you ? [+ exc] 2865_4428
+%mor:	n|throat pro:per|you v|want pro:obj|me inf|to v|tell pro:per|you ?
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|3|PUNCT
+*INV:	just tell me everything that you see happening . 4428_5989
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|happen-PRESP .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|2|PUNCT
+*PAR:	&um the girl is talking to the boy . 5989_9633
+%mor:	det:art|the n|girl aux|be&3S part|talk-PRESP prep|to det:art|the
+	n|boy .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	he's getting the cookie jar down . 9633_11763
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP det:art|the n|cookie n|jar
+	adv|down .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|3|PUNCT
+*PAR:	he has a &coo cookie in his hand . 11763_14367
+%mor:	pro:sub|he v|have&3S det:art|a n|cookie prep|in det:poss|his n|hand
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	&uh he's falling off of his stool . 14367_18477
+%mor:	pro:sub|he~aux|be&3S part|fall-PRESP adv|off prep|of det:poss|his
+	n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	the mother's doing the dishes and the water's running off into the
+	floor &=laughs . 18477_24063
+%mor:	det:art|the n|mother~aux|be&3S part|do-PRESP det:art|the n|dish-PL
+	coord|and det:art|the n|water~aux|be&3S part|run-PRESP adv|off
+	prep|into det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	she's looking out the window apparently . 24063_26552
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|the n|window
+	adv|apparent&dadj-LY .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|JCT 8|3|PUNCT
+*PAR:	&um I see grass and a lawn at [//] outside . 26552_31969
+%mor:	pro:sub|I v|see n|grass coord|and det:art|a n|lawn adv|outside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|3|CONJ 5|6|DET 6|4|COORD 7|6|NJCT 8|2|PUNCT
+*PAR:	and I see two bowls, cabinets . 31969_37337
+%mor:	coord|and pro:sub|I v|see det:num|two n|bowl-PL cm|cm n|cabinet-PL
+	.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|5|LP 7|5|ENUM 8|3|PUNCT
+*PAR:	anything else I xxx ? [+ exc] 37337_38396
+%mor:	pro:indef|anything post|else pro:sub|I ?
+%gra:	1|3|SUBJ 2|1|PQ 3|0|INCROOT 4|3|PUNCT
+*PAR:	you want everything I can see ? [+ exc] 38396_41872
+%mor:	pro:per|you v|want pro:indef|everything pro:sub|I mod|can v|see ?
+%gra:	1|2|SUBJ 2|6|CJCT 3|2|OBJ 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*INV:	+< yep mhm . 41222_42597
+%mor:	co|yep co|mhm=yes .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	I also see a cabinet drawer [//] door there . 42597_46000
+%mor:	pro:sub|I adv|also v|see det:art|a n|cabinet n|door adv|there .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|3|PUNCT
+*INV:	mhm . 46000_46670
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's happening over here ? 46670_47779
+%mor:	pro:int|what~cop|be&3S n:gerund|happen-PRESP prep|over n|here ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|4|POBJ 6|2|PUNCT
+*PAR:	remember I said the water was overflowing +/. 47779_50200
+%mor:	v|remember pro:sub|I v|say&PAST det:art|the n|water aux|be&PAST&13S
+	over#part|flow-PRESP +/.
+%gra:	1|0|ROOT 2|3|SUBJ 3|1|COMP 4|5|DET 5|7|SUBJ 6|7|AUX 7|3|COMP 8|1|PUNCT
+*INV:	+< okay yeah sorry . 50000_51107
+%mor:	co|okay co|yeah co|sorry .
+%gra:	1|3|COM 2|3|COM 3|0|INCROOT 4|3|PUNCT
+*INV:	is there a glare on that ? 51107_52341
+%mor:	cop|be&3S adv|there det:art|a n|glare prep|on pro:dem|that ?
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|1|PRED 5|4|NJCT 6|5|POBJ 7|1|PUNCT
+*INV:	do you_know sometimes the light glares on it . 52341_54850
+%mor:	mod|do co|you_know adv|sometimes det:art|the adj|light n|glare-PL
+	prep|on pro:per|it .
+%gra:	1|6|AUX 2|6|COM 3|6|JCT 4|6|DET 5|6|MOD 6|0|INCROOT 7|6|NJCT 8|7|POBJ
+	9|6|PUNCT
+*PAR:	oh . [+ exc] 54850_55565
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that's fine . 55565_58491
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	xxx . [+ exc] 58491_61300
+*PAR:	there's something inside here . 61300_63097
+%mor:	pro:exist|there~cop|be&3S pro:indef|something prep|inside n|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|4|POBJ 6|2|PUNCT
+*INV:	yeah it's only the major things that are happening . 63097_66600
+%mor:	co|yeah pro:per|it~cop|be&3S adv|only det:art|the adj|major
+	n|thing-PL pro:rel|that aux|be&PRES part|happen-PRESP .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|3|PUNCT
+*INV:	that's all . 66600_67130
+%mor:	pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	that's fine . 67130_68000
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	okay . [+ exc] 68000_68730
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,45 @@
+@UTF8
+@PID:	11312/t-00002321-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|56;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	166-0, audio
+*INV:	okay why don't you start with the woman again ? 0_4655
+%mor:	co|okay pro:int|why mod|do~neg|not pro:per|you v|start prep|with
+	det:art|the n|woman adv|again ?
+%gra:	1|6|COM 2|6|JCT 3|6|AUX 4|3|NEG 5|6|SUBJ 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|JCT 11|6|PUNCT
+*INV:	woman's wiping dishes . 4655_8218
+%mor:	n|woman~aux|be&3S part|wipe-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	the woman is wiping the dishes . 8218_10578
+%mor:	det:art|the n|woman aux|be&3S part|wipe-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	she's standing in a puddle of water . 10578_12624
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|a n|puddle
+	prep|of n|water .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	if that's action I don't know . [+ exc] 12624_14250
+%mor:	conj|if pro:dem|that~cop|be&3S n|action pro:sub|I mod|do~neg|not
+	v|know .
+%gra:	1|3|LINK 2|3|SUBJ 3|8|CJCT 4|3|PRED 5|8|SUBJ 6|8|AUX 7|6|NEG 8|0|ROOT
+	9|8|PUNCT
+*PAR:	the sink is overflowing . 14250_16480
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	(.) doesn't seem to be anything going on outside that I can tell in
+	the picture . 16480_29400
+%mor:	mod|do&3S~neg|not cop|seem inf|to cop|be pro:indef|anything
+	part|go-PRESP adv|on adv|outside pro:rel|that pro:sub|I mod|can
+	v|tell prep|in det:art|the n|picture .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|6|XMOD 8|7|JCT
+	9|7|JCT 10|13|LINK 11|13|SUBJ 12|13|AUX 13|9|CMOD 14|13|JCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*INV:	okay good . 29400_32919
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,66 @@
+@UTF8
+@PID:	11312/t-00002386-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	292-1, audio
+*INV:	on in the picture . 0_1543
+%mor:	adv|on prep|in det:art|the n|picture .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	girl is reaching up . [+ gram] 1543_4568
+%mor:	n|girl aux|be&3S part|reach-PRESP adv|up .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	the boy is [/] is &uh taking cookies out_of the cookie jar . 4568_9771
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	&uh the &uh stool is tilting . 9771_12697
+%mor:	det:art|the n|stool aux|be&3S part|tilt-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	mother is washing the dishes . 12697_14123
+%mor:	n|mother aux|be&3S part|wash-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	the water's running over . 14123_15540
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the wind is blowing the &uh curtains . 15540_22540
+%mor:	det:art|the n|wind aux|be&3S part|blow-PRESP det:art|the
+	n|curtain-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	(.) the mother is drying the dishes . 22540_29870
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	the boy is reaching down to I guess his sister . 29870_36238
+%mor:	det:art|the n|boy aux|be&3S part|reach-PRESP adv|down prep|to
+	pro:sub|I v|guess det:poss|his n|sister .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|JCT 7|8|SUBJ 8|4|CJCT
+	9|10|DET 10|8|OBJ 11|4|PUNCT
+*PAR:	the boy is climbing but he's gonna fall . 36238_41543
+%mor:	det:art|the n|boy aux|be&3S part|climb-PRESP conj|but
+	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|CJCT
+	9|10|INF 10|8|COMP 11|4|PUNCT
+*PAR:	(.) and the mother's drying the dishes . 41543_49288
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	I think I said that . [+ exc] 49288_50089
+%mor:	pro:sub|I v|think pro:sub|I v|say&PAST comp|that .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|OBJ 6|2|PUNCT
+*PAR:	the water's running and running down . 50089_52142
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP coord|and
+	part|run-PRESP adv|down .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|CONJ 6|5|COORD 7|6|JCT 8|4|PUNCT
+*PAR:	and that's all I see on that . [+ exc] 52142_54975
+%mor:	coord|and pro:dem|that~cop|be&3S pro:indef|all pro:sub|I v|see
+	prep|on pro:dem|that .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|SUBJ 6|3|CPRED 7|6|JCT 8|7|POBJ
+	9|3|PUNCT
+*INV:	okay (.) xxx . 55100_58323
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

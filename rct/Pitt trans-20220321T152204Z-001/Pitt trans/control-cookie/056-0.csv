@@ -1,0 +1,78 @@
+@UTF8
+@PID:	11312/t-00002221-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	056-0, audio
+*INV:	okay . 0_914
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	this is the picture . 914_1779
+%mor:	pro:dem|this cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	just tell me everything that's goin(g) on . 1779_3270
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|2|PUNCT
+*PAR:	&uh going on or everything that I see whether it's going on or not
+	? [+ exc] 3270_6958
+%mor:	part|go-PRESP adv|on coord|or pro:indef|everything pro:rel|that
+	pro:sub|I v|see conj|whether pro:per|it~aux|be&3S part|go-PRESP
+	adv|on coord|or neg|not ?
+%gra:	1|0|INCROOT 2|1|JCT 3|1|CONJ 4|3|COORD 5|7|LINK 6|7|SUBJ 7|4|CMOD
+	8|11|LINK 9|11|SUBJ 10|11|AUX 11|7|COMP 12|11|JCT 13|11|CONJ 14|13|COORD
+	15|1|PUNCT
+*INV:	whatever [//] both if you want . 6958_9241
+%mor:	post|both conj|if pro:per|you v|want .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CJCT 5|1|PUNCT
+*PAR:	okay . [+ exc] 9241_9799
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well mama's washin(g) the dishes and the sink's running over . 9799_13126
+%mor:	co|well n|mama~aux|be&3S part|wash-PRESP det:art|the n|dish-PL
+	coord|and det:art|the n|sink~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|4|PUNCT
+*PAR:	and &uh one of the youngsters is about to fall off a stool . 13126_18305
+%mor:	coord|and det:num|one prep|of det:art|the n|youngster-PL cop|be&3S
+	adv|about inf|to v|fall prep|off det:art|a n|stool .
+%gra:	1|6|LINK 2|6|SUBJ 3|2|NJCT 4|5|DET 5|3|POBJ 6|0|ROOT 7|9|JCT 8|9|INF
+	9|6|CPRED 10|9|JCT 11|12|DET 12|10|POBJ 13|6|PUNCT
+*PAR:	he's reaching in for the cookie jar and handing them to his sister
+	who's got her finger at her nose for some reason . 18305_24343
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|in prep|for det:art|the
+	n|cookie n|jar coord|and part|hand-PRESP pro:obj|them prep|to
+	det:poss|his n|sister pro:rel|who~aux|be&3S part|get&PASTP
+	det:poss|her n|finger prep|at det:poss|her n|nose prep|for qn|some
+	n|reason .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|8|DET 7|8|MOD 8|5|POBJ
+	9|5|CONJ 10|9|COORD 11|10|OBJ 12|10|JCT 13|14|DET 14|12|POBJ 15|17|LINK
+	16|17|AUX 17|14|CMOD 18|19|DET 19|17|OBJ 20|17|JCT 21|22|DET 22|20|POBJ
+	23|17|JCT 24|25|QUANT 25|23|POBJ 26|3|PUNCT
+*PAR:	&uh (.) mom's feet are getting wet because of the sink running over
+	. 24343_31160
+%mor:	adj|mom&dn-POSS n|foot&PL aux|be&PRES part|get-PRESP adj|wet
+	conj|because prep|of det:art|the n|sink part|run-PRESP adv|over .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|4|JCT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|XMOD 11|10|JCT 12|4|PUNCT
+*PAR:	I don't see anything outside that's going on . 31160_36530
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything n|outside
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|MOD 6|4|OBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|9|JCT 11|4|PUNCT
+*INV:	+< okay . 36030_37046
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< it's just normal . 36846_37793
+%mor:	pro:per|it~cop|be&3S adj|just adv|normal .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|2|PUNCT
+*PAR:	okay ? [+ exc] 37793_38539
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	sure . 38539_39117
+%mor:	adj|sure .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

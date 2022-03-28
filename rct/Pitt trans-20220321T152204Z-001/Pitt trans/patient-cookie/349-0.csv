@@ -1,0 +1,72 @@
+@UTF8
+@PID:	11312/t-00002629-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|83;|female|ProbableAD||Participant|25||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	349-0, audio
+*INV:	the picture . 0_1744
+%mor:	det:art|the n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	well this one's trying to touch her nose with her finger . 1744_10397
+%mor:	co|well pro:dem|this pro:indef|one~aux|be&3S part|try-PRESP inf|to
+	v|touch det:poss|her n|nose prep|with det:poss|her n|finger .
+%gra:	1|2|COM 2|5|LINK 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|7|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	isn't that what she's doin(g) ? [+ exc] 10397_12579
+%mor:	cop|be&3S~neg|not pro:dem|that pro:int|what pro:sub|she~aux|be&3S
+	part|do-PRESP ?
+%gra:	1|0|ROOT 2|1|NEG 3|1|SUBJ 4|7|LINK 5|7|SUBJ 6|7|AUX 7|1|CPRED 8|1|PUNCT
+*INV:	okay . 12579_13123
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	you just tell me what you see going on in the picture . 13123_15645
+%mor:	pro:per|you adv|just v|tell pro:obj|me pro:int|what pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|OBJ 5|7|LINK 6|7|SUBJ 7|3|COMP 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	well he's givin(g) her a cookie <out of the> [/] &k &j out_of the
+	+... 15645_21199
+%mor:	co|well pro:sub|he~aux|be&3S part|give-PRESP pro:obj|her det:art|a
+	n|cookie prep|out_of det:art|the +...
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ2 6|7|DET 7|4|OBJ 8|4|JCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	the stool's fallin(g) out under him . 21199_24186
+%mor:	det:art|the n|stool~aux|be&3S part|fall-PRESP adv|out prep|under
+	pro:obj|him .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|4|PUNCT
+*PAR:	she's dryin(g) dishes . 24186_27906
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	and the water's runnin(g) out on the floor &=laughs from the spigot
+	. 27906_36233
+%mor:	coord|and det:art|the n|water~aux|be&3S part|run-PRESP adv|out
+	prep|on det:art|the n|floor prep|from det:art|the n|spigot .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	he's got a cookie out_of the jar I guess . 36233_46598
+%mor:	pro:sub|he~aux|be&3S part|get&PASTP det:art|a n|cookie prep|out_of
+	det:art|the n|jar pro:sub|I v|guess .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|10|SUBJ 10|3|CJCT 11|3|PUNCT
+*PAR:	she's dryin(g) dishes and the water's runnin(g) out on the floor .
+	46598_55470
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL coord|and
+	det:art|the n|water~aux|be&3S part|run-PRESP adv|out prep|on
+	det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|9|SUBJ 4|3|OBJ 5|4|CONJ 6|7|DET 7|5|COORD 8|9|AUX
+	9|0|ROOT 10|9|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|9|PUNCT
+*PAR:	the spigot's on . 55470_56432
+%mor:	det:art|the n|spigot~cop|be&3S adv|on .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	(..) he's gonna fall . 56432_66005
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|3|PUNCT
+*PAR:	(..) I guess that's it . [+ exc] 66005_75079
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|2|PUNCT
+*INV:	okay . 75079_75874
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

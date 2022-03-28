@@ -1,0 +1,35 @@
+@UTF8
+@PID:	11312/a-00015270-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV  Investigator
+@ID:	eng|Pitt|PAR|||||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	304-1, audio
+*PAR:	the boy is about to fall off a stool while he's grabbing for a
+	cookie jar . 0_4077
+%mor:	det:art|the n|boy cop|be&3S adv|about inf|to v|fall prep|off
+	det:art|a n|stool conj|while pro:sub|he~aux|be&3S part|grab-PRESP
+	prep|for det:art|a n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|13|LINK 11|13|SUBJ 12|13|AUX 13|3|CJCT 14|13|JCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|3|PUNCT
+*PAR:	the water is &-uh running over the sink . 4077_6890
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|over det:art|the
+	n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the mother's drying dishes . 6890_10570
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	little girl is reaching up for a cookie . 10570_13903
+%mor:	adj|little n|girl aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	that's all that I see . [+ exc] 13903_15733
+%mor:	pro:rel|that~cop|be&3S adv|all adv|that pro:sub|I v|see .
+%gra:	1|2|LINK 2|0|ROOT 3|4|JCT 4|6|JCT 5|6|SUBJ 6|2|CPRED 7|2|PUNCT
+*INV:	okay . 15733_16453
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,55 @@
+@UTF8
+@PID:	11312/t-00002654-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|ProbableAD||Participant|22||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	466-0, audio
+*PAR:	&uh the girl's washing dishes . 0_5503
+%mor:	det:art|the n|girl~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water's spilling over onto the floor . 5503_8061
+%mor:	det:art|the n|water~aux|be&3S part|spill-PRESP adv|over prep|onto
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the boy is &uh &st taking some cookies and his stool is falling out
+	from under him . 8061_16871
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP qn|some n|cookie-PL
+	coord|and det:poss|his n|stool aux|be&3S part|fall-PRESP adv|out
+	prep|from adv|under pro:obj|him .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|11|JCT 14|13|JCT 15|14|POBJ
+	16|4|PUNCT
+*PAR:	&uh (..) the girl's stepping in the water . 16871_29756
+%mor:	det:art|the adj|girl&dn-POSS n:gerund|step-PRESP prep|in
+	det:art|the n|water .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	she's [/] &wa she's wiping &uh dishes . 29756_33229
+%mor:	pro:sub|she~aux|be&3S part|wipe-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	&uh there's a: view of a house through the door &uh on the outside
+	. 33229_44763
+%mor:	pro:exist|there~cop|be&3S det:art|a n|view prep|of det:art|a
+	n|house prep|through det:art|the n|door prep|on det:art|the
+	adj|outside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|4|NJCT
+	9|10|DET 10|8|POBJ 11|4|NJCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	&th the window is &uh half opened . 44763_48777
+%mor:	det:art|the n|window aux|be&3S n|half part|open-PASTP .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|5|MOD 5|0|ROOT 6|5|PUNCT
+*PAR:	&uh <the shades are &uh or> [//] the (.) curtains are tied back . 48777_60075
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|tie-PASTP adv|back .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the &uh cookie jar is <on the> [//] in the cupboard on the second
+	shelf . 60075_70006
+%mor:	det:art|the n|cookie n|jar cop|be&3S prep|in det:art|the n|cupboard
+	prep|on det:art|the adj|second n|shelf .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|4|PUNCT
+*PAR:	&um xxx . [+ exc] 70006_74900
+*INV:	okay that's good . 74900_79967
+%mor:	co|okay pro:dem|that~cop|be&3S adj|good .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

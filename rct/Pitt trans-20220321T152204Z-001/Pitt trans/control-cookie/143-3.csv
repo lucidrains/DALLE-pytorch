@@ -1,0 +1,52 @@
+@UTF8
+@PID:	11312/t-00002307-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	143-3, audio
+*PAR:	well this &uh little boy is up on the stool taking cookies handing
+	them down to his sister and she's telling him to be quiet and the
+	stool is tipping over . 0_10866
+%mor:	co|well det:dem|this adj|little n|boy aux|be&3S adv|up prep|on
+	det:art|the n|stool part|take-PRESP n|cookie-PL part|hand-PRESP
+	pro:obj|them adv|down prep|to det:poss|his n|sister coord|and
+	pro:sub|she~aux|be&3S part|tell-PRESP pro:obj|him inf|to cop|be
+	adj|quiet coord|and det:art|the n|stool aux|be&3S part|tip-PRESP
+	adv|over .
+%gra:	1|10|COM 2|4|DET 3|4|MOD 4|10|SUBJ 5|10|AUX 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|0|ROOT 11|10|OBJ 12|11|XMOD 13|12|OBJ 14|12|JCT 15|12|JCT
+	16|17|DET 17|15|POBJ 18|21|LINK 19|21|SUBJ 20|21|AUX 21|10|CJCT 22|21|OBJ
+	23|24|INF 24|21|COMP 25|24|PRED 26|30|LINK 27|28|DET 28|30|SUBJ 29|30|AUX
+	30|24|CJCT 31|30|JCT 32|10|PUNCT
+*PAR:	the mother is <washing or> [//] drying dishes . 10866_13805
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water is running into the sink and running over down onto the
+	floor . 13805_18646
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|into det:art|the
+	n|sink coord|and part|run-PRESP adv|over adv|down prep|onto
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|8|COORD 10|9|JCT 11|9|JCT 12|9|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	&uh the wind must be blowin(g) (be)cause the curtains look like
+	they're +... 18646_24526
+%mor:	det:art|the n|wind mod|must aux|be part|blow-PRESP conj|because
+	det:art|the n|curtain-PL v|look conj|like pro:sub|they~cop|be&PRES
+	+...
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|5|AUX 5|0|ROOT 6|9|LINK 7|8|DET 8|9|SUBJ
+	9|5|CJCT 10|12|LINK 11|12|SUBJ 12|9|COMP 13|5|PUNCT
+*PAR:	<kitchen door> [//] the cabinet door is open . 24526_27174
+%mor:	det:art|the n|cabinet n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	mother's standing in water . 27174_30196
+%mor:	n|mother~aux|be&3S part|stand-PRESP prep|in n|water .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	that's it . [+ exc] 30196_32343
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay good . 32343_33246
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

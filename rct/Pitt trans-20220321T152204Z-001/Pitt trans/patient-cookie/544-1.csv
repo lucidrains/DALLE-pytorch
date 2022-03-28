@@ -1,0 +1,48 @@
+@UTF8
+@PID:	11312/t-00002683-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|male|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	544-1, audio
+*INV:	tell me everything that you see going on in this picture . 0_2663
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:dem|this n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*INV:	everything that you see happening there . 2663_4514
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|1|PUNCT
+*PAR:	okay the mommy is <washin(g) the> [//] dryin(g) the dishes . 4514_8220
+%mor:	co|okay det:art|the n|mommy aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	the boy is takin(g) a cookie from the cookie jar and he's gonna
+	hand it to his little sister . 8220_13122
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP det:art|a n|cookie
+	prep|from det:art|the n|cookie n|jar coord|and pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|hand pro:per|it prep|to det:poss|his
+	adj|little n|sister .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|14|LINK 12|14|SUBJ 13|14|AUX 14|4|CJCT 15|16|INF
+	16|14|COMP 17|16|OBJ 18|16|JCT 19|21|DET 20|21|MOD 21|18|POBJ 22|4|PUNCT
+*PAR:	and the bench [: stool] [* s:r] is toppling over as the kid is
+	standing on . [+ gram] 13122_16295
+%mor:	coord|and det:art|the n|stool aux|be&3S part|topple-PRESP adv|over
+	prep|as det:art|the n|kid aux|be&3S part|stand-PRESP adv|on .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|11|SUBJ 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|11|AUX 11|0|ROOT 12|11|JCT 13|11|PUNCT
+*PAR:	and the water's dripping out_of the sink . 16295_18694
+%mor:	coord|and det:art|the n|water~aux|be&3S part|drip-PRESP prep|out_of
+	det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	(.) okay ? [+ exc] 18694_22710
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 22710_23254
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

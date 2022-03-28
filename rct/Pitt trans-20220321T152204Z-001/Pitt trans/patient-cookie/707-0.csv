@@ -1,0 +1,78 @@
+@UTF8
+@PID:	11312/t-00002731-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|female|PossibleAD||Participant|21||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	707-0, audio
+*INV:	I'd like for you to take a look at this picture . 0_3535
+%mor:	pro:sub|I~mod|genmod co|like prep|for pro:per|you inf|to v|take
+	det:art|a v|look prep|at det:dem|this n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|7|INF 7|4|CPOBJ 8|9|DET
+	9|7|OBJ 10|9|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*INV:	take a look at that picture and tell me everything you see going on
+	there . 3535_7552
+%mor:	v|take det:art|a v|look prep|at det:dem|that n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:per|you v|see
+	n:gerund|go-PRESP prep|on n|there .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ 10|8|OBJ 11|12|SUBJ 12|8|COMP 13|12|OBJ 14|12|JCT 15|14|POBJ
+	16|1|PUNCT
+*PAR:	hm . [+ exc] 7552_8185
+%mor:	co|hm .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	everything that's happening . 8185_9400
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|1|PUNCT
+*PAR:	the little boy is on the stool which is tipping and he wants
+	cookies to give to his sister . 9400_14000
+%mor:	det:art|the adj|little n|boy cop|be&3S prep|on det:art|the n|stool
+	pro:rel|which aux|be&3S part|tip-PRESP coord|and pro:sub|he
+	v|want-3S n|cookie-PL inf|to v|give prep|to det:poss|his n|sister .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|13|LINK 12|13|SUBJ 13|10|CJCT 14|13|OBJ 15|16|INF
+	16|14|XMOD 17|16|JCT 18|19|DET 19|17|POBJ 20|4|PUNCT
+*PAR:	he has a handful of cookies in one hand already and the little girl
+	is eating a cookie . 14000_18647
+%mor:	pro:sub|he v|have&3S det:art|a n|hand-FUL prep|of n|cookie-PL
+	prep|in det:num|one n|hand adv|already coord|and det:art|the
+	adj|little n|girl aux|be&3S part|eat-PRESP det:art|a n|cookie .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|NJCT 6|5|POBJ 7|2|JCT 8|9|QUANT
+	9|7|POBJ 10|2|JCT 11|16|LINK 12|14|DET 13|14|MOD 14|16|SUBJ 15|16|AUX
+	16|2|CJCT 17|18|DET 18|16|OBJ 19|2|PUNCT
+*PAR:	the mother is washin(g) dishes absentmindedly . 18647_22123
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	adv|+adj|absent+adj|minded&dadj-LY .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*PAR:	she let the sink run over and it's all on the floor . 22123_24873
+%mor:	pro:sub|she v|let&ZERO det:art|the n|sink v|run adv|over coord|and
+	pro:per|it~cop|be&3S adv|all prep|on det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|5|SUBJ 5|2|COMP 6|5|JCT 7|9|LINK 8|9|SUBJ
+	9|5|CJCT 10|11|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	there's a window with [//] you can see their driveway . [+ gram] 24873_28500
+%mor:	pro:exist|there~cop|be&3S det:art|a n|window pro:per|you mod|can
+	v|see det:poss|their n|+n|drive+n|way .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|7|SUBJ 6|7|AUX 7|4|CMOD 8|9|DET
+	9|7|OBJ 10|2|PUNCT
+*PAR:	either bushes or trees and grass a big window . [+ gram] 28500_35410
+%mor:	qn|either n|bush-PL coord|or n|tree-PL coord|and n|grass det:art|a
+	adj|big n|window .
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|CONJ 4|3|COORD 5|2|CONJ 6|9|MOD 7|9|DET
+	8|9|MOD 9|5|COORD 10|2|PUNCT
+*PAR:	and a tree comin(g) up here . [+ gram] 35410_40800
+%mor:	coord|and det:art|a n|tree part|come-PRESP prep|up n|here .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|4|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	and the [//] &roo part of the roof . [+ gram] 40800_42659
+%mor:	coord|and n|part prep|of det:art|the n|roof .
+%gra:	1|0|INCROOT 2|1|COORD 3|2|NJCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*INV:	okay . 42659_43798
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the cookie says cookie jar . 43798_45366
+%mor:	coord|and det:art|the n|cookie v|say-3S n|cookie n|jar .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|MOD 6|4|OBJ 7|4|PUNCT
+*INV:	okay thanks . 45366_46379
+%mor:	co|okay co|thanks .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

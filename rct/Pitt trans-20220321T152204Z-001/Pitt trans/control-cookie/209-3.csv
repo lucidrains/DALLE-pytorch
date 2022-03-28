@@ -1,0 +1,124 @@
+@UTF8
+@PID:	11312/t-00002344-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	209-3, audio
+*PAR:	&uh the sink's runnin(g) over . 0_2522
+%mor:	det:art|the n|sink~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the water's goin(g) all over the floor . 2522_6133
+%mor:	det:art|the n|water~aux|be&3S part|go-PRESP adv|all prep|over
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	here <the boy> [//] the step+ladder [: step+stool] [* s:r] is
+	turnin(g) under his legs and he's stealin(g) cookies out_of the
+	cookie jar . 6133_14073
+%mor:	adv|here det:art|the n|+n|step+n|stool aux|be&3S part|turn-PRESP
+	prep|under det:poss|his n|leg-PL coord|and pro:sub|he~aux|be&3S
+	part|steal-PRESP n|cookie-PL prep|out_of det:art|the n|cookie n|jar
+	.
+%gra:	1|5|JCT 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|5|CJCT 13|12|OBJ 14|12|JCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|5|PUNCT
+*PAR:	and she's begging for cookies the girl is . 14073_18724
+%mor:	coord|and pro:sub|she~aux|be&3S part|beg-PRESP prep|for n|cookie-PL
+	det:art|the n|girl cop|be&3S .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|8|DET 8|9|SUBJ
+	9|4|CJCT 10|4|PUNCT
+*PAR:	coming back to the sink let's see here . [+ exc] 18724_22233
+%mor:	part|come-PRESP adv|back prep|to det:art|the n|sink
+	v|let~pro:obj|us v|see adv|here .
+%gra:	1|6|XJCT 2|1|JCT 3|1|JCT 4|5|DET 5|3|POBJ 6|0|ROOT 7|6|OBJ 8|6|COMP
+	9|8|JCT 10|6|PUNCT
+*PAR:	&aw mama's steppin(g) in the water . 22233_25473
+%mor:	n|mama~cop|be&3S n:gerund|step-PRESP prep|in det:art|the n|water .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	and I [/] &s &=clears:throat I said the sink was running over . 25473_29199
+%mor:	coord|and pro:sub|I v|say&PAST det:art|the n|sink aux|be&PAST&13S
+	part|run-PRESP adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|3|PUNCT
+*PAR:	she's dryin(g) dishes . 29199_31162
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	wait a minute . [+ exc] 31162_32375
+%mor:	v|wait det:art|a n|minute .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*PAR:	what the devil is xxx ? [+ exc] 32375_34023
+%mor:	pro:int|what det:art|the n|devil cop|be&3S ?
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	(.) there is some(th)in(g) but I don't know what it is written on
+	the grass it seems . 34023_43476
+%mor:	pro:exist|there cop|be&3S pro:indef|something conj|but pro:sub|I
+	mod|do~neg|not v|know pro:int|what pro:per|it aux|be&3S
+	part|write&PASTP prep|on det:art|the n|grass pro:per|it cop|seem-3S
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|8|LINK 5|8|SUBJ 6|8|AUX 7|6|NEG 8|17|CJCT
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|COMP 13|12|JCT 14|15|DET 15|13|POBJ
+	16|17|SUBJ 17|2|CJCT 18|2|PUNCT
+*INV:	&=laughs I never noticed that . 43476_46460
+%mor:	pro:sub|I adv|never v|notice-PAST pro:dem|that .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	+< what is that ? [+ exc] 45382_46099
+%mor:	pro:int|what cop|be&3S pro:dem|that ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	I don't know . 46460_47562
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	and (.) the curtains . [+ gram] 47562_52666
+%mor:	coord|and det:art|the n|curtain-PL .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	that's a p@l p@l somethin(g) there . [+ es] 52666_58458
+%mor:	pro:dem|that~cop|be&3S det:art|a n:let|p n:let|p
+	pro:indef|something adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|5|POBJ 7|6|NJCT 8|2|PUNCT
+*PAR:	hm (...) &=coughs let's see . [+ exc] 58458_74691
+%mor:	co|hm v|let~pro:obj|us v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	I don't see anything else there . [+ exc] 74691_77289
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else
+	adv|there .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|JCT 8|4|PUNCT
+*PAR:	she's steppin(g) in the water . 77289_80294
+%mor:	pro:sub|she~cop|be&3S n:gerund|step-PRESP prep|in det:art|the
+	n|water .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	the sink's runnin(g) over . 80294_82393
+%mor:	det:art|the n|sink~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	(..) that spells somethin(g) down there but I can't see it . 82393_92928
+%mor:	pro:rel|that v|spell-3S pro:indef|something prep|down n|there
+	conj|but pro:sub|I mod|can~neg|not v|see pro:per|it .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|JCT 5|4|POBJ 6|10|LINK 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|2|CJCT 11|10|OBJ 12|2|PUNCT
+*PAR:	&=coughs xxx so far xxx . [+ exc] 92928_100518
+%mor:	adv|so adj|far .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*PAR:	and he's on a [/] a stool that's gonna fall over while they're
+	stealin(g) cookies . 100518_107326
+%mor:	coord|and pro:sub|he~cop|be&3S prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|go-PRESP~inf|to v|fall adv|over n|while
+	pro:sub|they~aux|be&PRES part|steal-PRESP n|cookie-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|11|INF 11|9|COMP 12|11|JCT 13|11|OBJ 14|16|SUBJ 15|16|AUX
+	16|13|CMOD 17|16|OBJ 18|3|PUNCT
+*PAR:	and there's a plate and two cups on the sink and she's got a plate
+	in her hand . 107326_114116
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|plate coord|and
+	det:num|two n|cup-PL prep|on det:art|the n|sink coord|and
+	pro:sub|she~aux|be&3S part|get&PASTP det:art|a n|plate prep|in
+	det:poss|her n|hand .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|CONJ 7|8|QUANT
+	8|6|COORD 9|8|NJCT 10|11|DET 11|9|POBJ 12|15|LINK 13|15|SUBJ 14|15|AUX 15|3|CJCT
+	16|17|DET 17|15|OBJ 18|17|NJCT 19|20|DET 20|18|POBJ 21|3|PUNCT
+*PAR:	(.) I don't see anything else . [+ exc] 114116_119936
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|PUNCT
+*INV:	okay . 119936_120602
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

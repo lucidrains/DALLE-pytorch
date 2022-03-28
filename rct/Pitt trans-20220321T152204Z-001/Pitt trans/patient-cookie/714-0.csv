@@ -1,0 +1,65 @@
+@UTF8
+@PID:	11312/t-00002733-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|male|PossibleAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	714-0, audio
+*INV:	I'd like for you to take a look at that picture . 0_3176
+%mor:	pro:sub|I~mod|genmod co|like prep|for pro:per|you inf|to v|take
+	det:art|a v|look prep|at det:dem|that n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|7|INF 7|4|CPOBJ 8|9|DET
+	9|7|OBJ 10|9|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*INV:	I want you to tell me everything that you see happening in that
+	picture, everything that's going on there . 3176_8981
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture cm|cm
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP prep|on
+	n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|9|LINK
+	9|7|CMOD 10|11|COM 11|9|COMP 12|11|JCT 13|14|DET 14|11|JCT 15|14|LP
+	16|14|ENUM 17|19|LINK 18|19|AUX 19|16|CMOD 20|19|JCT 21|20|POBJ 22|2|PUNCT
+*PAR:	oh that kid's gonna get a good spill off o(f) that stool (.) if his
+	mother don't turn around there and catch him . 8981_24577
+%mor:	co|oh adv|that n|kid~aux|be&3S part|go-PRESP~inf|to v|get det:art|a
+	adj|good v|spill adv|off prep|of det:dem|that n|stool conj|if
+	det:poss|his n|mother mod|do~neg|not v|turn prep|around n|there
+	coord|and v|catch pro:obj|him .
+%gra:	1|5|COM 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|10|DET
+	9|10|MOD 10|7|OBJ 11|10|JCT 12|11|JCT 13|14|DET 14|12|POBJ 15|20|LINK
+	16|17|DET 17|20|SUBJ 18|20|AUX 19|18|NEG 20|10|CJCT 21|20|JCT 22|21|POBJ
+	23|20|CONJ 24|23|COORD 25|24|OBJ 26|5|PUNCT
+*PAR:	gonna drop whatever he's got in his hands . [+ gram] 24577_33932
+%mor:	part|go-PRESP~inf|to v|drop pro:int|whatever pro:sub|he~aux|be&3S
+	part|get&PASTP adv|in det:poss|his n|hand-PL .
+%gra:	1|0|INCROOT 2|3|INF 3|1|COMP 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*INV:	anything else you see going on ? 33932_48621
+%mor:	pro:indef|anything post|else pro:per|you v|see n:gerund|go-PRESP
+	adv|on ?
+%gra:	1|0|INCROOT 2|1|PQ 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|1|PUNCT
+*INV:	what else is happening in that picture ? 48621_50971
+%mor:	pro:int|what post|else aux|be&3S part|happen-PRESP prep|in
+	det:dem|that n|picture ?
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the little &s girl's reaching up there to get something from the
+	boy xxx . 50471_57866
+%mor:	det:art|the adj|little n|girl~aux|be&3S part|reach-PRESP prep|up
+	n|there inf|to v|get pro:indef|something prep|from det:art|the n|boy
+	.
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|9|INF
+	9|5|XJCT 10|9|OBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	(.) I think he's gonna land himself on the floor the way he does it
+	. 57866_76125
+%mor:	pro:sub|I v|think pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|land
+	pro:refl|himself prep|on det:art|the n|floor det:art|the n|way
+	pro:sub|he mod|do&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|7|INF 7|5|COMP 8|7|OBJ
+	9|7|JCT 10|11|DET 11|9|POBJ 12|13|DET 13|7|OBJ 14|16|SUBJ 15|16|AUX
+	16|13|CMOD 17|2|PUNCT
+*INV:	mkay . 76125_79674
+%mor:	co|mkay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

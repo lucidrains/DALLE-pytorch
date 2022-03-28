@@ -1,0 +1,109 @@
+@UTF8
+@PID:	11312/t-00002313-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|Control||Participant|24||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	150-2, audio
+*INV:	that you see going on in the picture . 0_2507
+%mor:	comp|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+%com:	tape starts mid-sentence
+*PAR:	okay the kid on the bench who's got his hand in the cookie jar and
+	he's falling off and his sister wants one . 2507_11022
+%mor:	co|okay det:art|the n|kid prep|on det:art|the n|bench
+	pro:rel|who~aux|be&3S part|get&PASTP det:poss|his n|hand prep|in
+	det:art|the n|cookie n|jar coord|and pro:sub|he~aux|be&3S
+	part|fall-PRESP adv|off coord|and det:poss|his n|sister v|want-3S
+	pro:indef|one .
+%gra:	1|3|COM 2|3|DET 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|11|DET 11|9|OBJ 12|9|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|19|LINK 17|19|SUBJ 18|19|AUX 19|9|CJCT 20|19|JCT 21|24|LINK 22|23|DET
+	23|24|SUBJ 24|19|CJCT 25|24|OBJ 26|3|PUNCT
+*PAR:	&uh his mother is standing in a puddle of water because she didn't
+	turn off the faucet and she's dryin(g) [//] dry a dish . 11022_17522
+%mor:	det:poss|his n|mother aux|be&3S part|stand-PRESP prep|in det:art|a
+	n|puddle prep|of n|water conj|because pro:sub|she
+	mod|do&PAST~neg|not v|turn prep|off det:art|the n|faucet coord|and
+	pro:sub|she~cop|be&3S v|dry det:art|a n|dish .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|7|NJCT
+	9|8|POBJ 10|14|LINK 11|14|SUBJ 12|14|AUX 13|12|NEG 14|4|CJCT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|14|CONJ 19|20|SUBJ 20|18|COORD 21|20|PRED 22|23|DET
+	23|21|OBJ 24|4|PUNCT
+*PAR:	she oughta dry her feet instead . 17522_19081
+%mor:	pro:sub|she mod|ought~inf|to v|dry det:poss|her n|foot&PL
+	adv|instead .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|PUNCT
+*PAR:	&uh the window is open . 19081_22076
+%mor:	det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	&um &uh well the sink is overflowing . 22076_30209
+%mor:	co|well det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	&uh it's obviously summer because the window as I said was open . 30209_35712
+%mor:	pro:per|it~cop|be&3S adv|obvious&dadj-LY n|summer conj|because
+	det:art|the n|window conj|as pro:sub|I v|say&PAST cop|be&PAST&13S
+	adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|JCT 6|7|DET 7|5|POBJ 8|10|COORD
+	9|10|SUBJ 10|7|CMOD 11|10|COMP 12|11|PRED 13|2|PUNCT
+*PAR:	there's &uh supposedly leaves on the trees . 35712_40000
+%mor:	pro:exist|there~cop|be&3S adv|suppose&dadj-PASTP-LY n|leaf-PL
+	prep|on det:art|the n|tree-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	&uh anything else that I'm sposta pick up ? [+ exc] 40000_42560
+%mor:	pro:indef|anything post|else adv|that pro:sub|I~aux|be&1S
+	part|suppose-PASTP~inf|to v|pick adv|up ?
+%gra:	1|6|SUBJ 2|1|PQ 3|6|JCT 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|8|JCT 10|6|PUNCT
+*INV:	that's fine . 42560_43459
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	you just know [//] let me think you've covered everything that's
+	going on in the picture . 43459_46385
+%mor:	pro:per|you adv|just v|let&ZERO pro:obj|me v|think
+	pro:per|you~aux|have part|cover-PASTP pro:indef|everything
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on prep|in det:art|the
+	n|picture .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|OBJ 5|3|COMP 6|8|SUBJ 7|8|AUX 8|5|COMP
+	9|8|OBJ 10|12|LINK 11|12|AUX 12|9|CMOD 13|12|JCT 14|12|JCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*PAR:	well the kid's gonna fall off . 46385_48002
+%mor:	co|well det:art|the n|kid~aux|be&3S part|go-PRESP~inf|to v|fall
+	adv|off .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|JCT
+	9|5|PUNCT
+*PAR:	and it xxx . 48002_49586
+%mor:	coord|and pro:per|it .
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+*PAR:	the lid is off the cookie jar . 49586_51496
+%mor:	det:art|the n|lid cop|be&3S prep|off det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	and he's got one in his hand and handing it to his sister . 51496_54863
+%mor:	coord|and pro:sub|he~aux|be&3S part|get&PASTP pro:indef|one prep|in
+	det:poss|his n|hand coord|and part|hand-PRESP pro:per|it prep|to
+	det:poss|his n|sister .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|4|CONJ 10|9|COORD 11|10|OBJ 12|10|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	and one and he's sneaking another one . [+ gram] 54863_57229
+%mor:	coord|and det:num|one coord|and pro:sub|he~aux|be&3S
+	part|sneak-PRESP qn|another pro:indef|one .
+%gra:	1|6|LINK 2|6|SUBJ 3|2|CONJ 4|3|COORD 5|6|AUX 6|0|ROOT 7|8|QUANT 8|6|OBJ
+	9|6|PUNCT
+*PAR:	not sneaking . [+ gram] 57229_58410
+%mor:	neg|not part|sneak-PRESP .
+%gra:	1|2|NEG 2|0|ROOT 3|2|PUNCT
+*PAR:	&uh the water is still running in the sink . 58410_62146
+%mor:	det:art|the n|water aux|be&3S adv|still part|run-PRESP prep|in
+	det:art|the n|sink .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and splashing on the floor . [+ gram] 62146_67673
+%mor:	coord|and part|splash-PRESP prep|on det:art|the n|floor .
+%gra:	1|2|LINK 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*INV:	okay that's fine . 67673_69851
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

@@ -1,0 +1,26 @@
+@UTF8
+@PID:	11312/t-00002218-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@Media:	052-2, audio
+*PAR:	I see a young boy falling off a stool stealing cookies . 0_6789
+%mor:	pro:sub|I v|see det:art|a adj|young n|boy part|fall-PRESP prep|off
+	det:art|a n|stool part|steal-PRESP n|cookie-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|5|XMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|5|XMOD 11|10|OBJ 12|2|PUNCT
+*PAR:	the mother drying dishes . [+ gram] 6789_10900
+%mor:	det:art|the n|mother part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|OBJ 5|2|PUNCT
+*PAR:	the sink overflowing . [+ gram] 10900_12435
+%mor:	det:art|the n|sink over#part|flow-PRESP .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	(..) a little girl saying be quiet to her brother (.) ready to
+	accept a cookie . [+ gram] 12435_26134
+%mor:	det:art|a adj|little n|girl part|say-PRESP aux|be adj|quiet prep|to
+	det:poss|her n|brother adj|ready inf|to v|accept det:art|a n|cookie
+	.
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|XMOD 5|4|OBJ 6|5|PRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|PRED 11|12|INF 12|10|XMOD 13|14|DET 14|12|OBJ 15|3|PUNCT
+@End

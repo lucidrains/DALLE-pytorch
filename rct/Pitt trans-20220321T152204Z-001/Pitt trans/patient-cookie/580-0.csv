@@ -1,0 +1,97 @@
+@UTF8
+@PID:	11312/t-00002691-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|72;|female|PossibleAD||Participant|13||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	580-0, audio
+*INV:	nope . 0_731
+%mor:	co|nope .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	I want you to look at this picture . 731_2710
+%mor:	pro:sub|I v|want pro:per|you inf|to v|look prep|at det:dem|this
+	n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*INV:	take a look at that picture and tell me everything you see going on
+	there . 2710_8108
+%mor:	v|take det:art|a v|look prep|at det:dem|that n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:per|you v|see
+	n:gerund|go-PRESP prep|on n|there .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ 10|8|OBJ 11|12|SUBJ 12|8|COMP 13|12|OBJ 14|12|JCT 15|14|POBJ
+	16|1|PUNCT
+*PAR:	+< &=laughs cookie jar &=laughs . [+ gram] 5808_9869
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*INV:	+< tell me everything that's happening in that picture . 9469_11988
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|happen-PRESP prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*PAR:	well <the little boy's goin(g) up> [//] the [/] &l &uh the little
+	boy went up on the little chair [: stool] [* s:r] and he's half way
+	comin(g) down &=laughs like [//] though he's gonna fall down . 11988_21391
+%mor:	co|well det:art|the adj|little n|boy v|go&PAST adv|up prep|on
+	det:art|the adj|little n|stool coord|and pro:sub|he~aux|be&3S n|half
+	n|way part|come-PRESP adv|down adv|though pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|fall adv|down .
+%gra:	1|5|COM 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|5|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|16|LINK 12|16|SUBJ 13|16|AUX 14|15|MOD 15|16|JCT
+	16|5|CJCT 17|16|JCT 18|16|JCT 19|21|SUBJ 20|21|AUX 21|16|XJCT 22|23|INF
+	23|21|COMP 24|23|JCT 25|5|PUNCT
+*PAR:	and the little girl, they're trying to reach up that cookie jar . 21391_25473
+%mor:	coord|and det:art|the adj|little n|girl cm|cm
+	pro:sub|they~aux|be&PRES part|try-PRESP inf|to v|reach adv|up
+	det:dem|that n|cookie n|jar .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|LP 6|8|SUBJ 7|8|AUX 8|4|CMOD
+	9|10|INF 10|8|COMP 11|10|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|4|PUNCT
+*PAR:	you_know he's [/] he's the one that's tryin(g) to get the cookie
+	jar . 25573_28140
+%mor:	co|you_know pro:sub|he~cop|be&3S det:art|the det:num|one
+	pro:rel|that~aux|be&3S part|try-PRESP inf|to v|get det:art|the
+	n|cookie n|jar .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|8|LINK 7|8|AUX 8|5|CMOD
+	9|10|INF 10|8|COMP 11|13|DET 12|13|MOD 13|10|OBJ 14|3|PUNCT
+*PAR:	and the next thing I guess eventually he'll fall down because <he's
+	only on> [//] he's on two legs only out on the darn thing here
+	you_know . 28140_36996
+%mor:	coord|and det:art|the adj|next n|thing pro:sub|I v|guess
+	adv|eventual&dadj-LY pro:sub|he~mod|will v|fall adv|down
+	conj|because pro:sub|he~cop|be&3S prep|on det:num|two n|leg-PL
+	adv|only adv|out prep|on det:art|the n|darn n|thing adv|here
+	co|you_know .
+%gra:	1|10|LINK 2|4|DET 3|4|MOD 4|10|SUBJ 5|6|SUBJ 6|4|CMOD 7|6|JCT 8|10|SUBJ
+	9|10|AUX 10|0|ROOT 11|10|JCT 12|14|LINK 13|14|SUBJ 14|10|CJCT 15|14|JCT
+	16|17|QUANT 17|15|POBJ 18|17|NJCT 19|14|JCT 20|14|JCT 21|23|DET
+	22|23|MOD 23|20|POBJ 24|23|NJCT 25|24|COM 26|10|PUNCT
+*PAR:	and the mother or whatever she i(s), she's doin(g) the dishes . 36996_40528
+%mor:	coord|and det:art|the n|mother coord|or pro:int|whatever
+	pro:sub|she cop|be&3S cm|cm pro:sub|she~aux|be&3S part|do-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|11|LINK 2|3|DET 3|11|CJCT 4|3|CONJ 5|7|LINK 6|7|SUBJ 7|4|COORD 8|7|LP
+	9|11|SUBJ 10|11|AUX 11|0|ROOT 12|13|DET 13|11|OBJ 14|11|PUNCT
+*PAR:	she's already cleaning the dishes . 40528_42772
+%mor:	pro:sub|she~aux|be&3S adv|already part|clean-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	see, and she's got everything on her own side . 42772_45498
+%mor:	co|see cm|cm coord|and pro:sub|she~aux|be&3S part|get&PASTP
+	pro:indef|everything prep|on det:poss|her adj|own n|side .
+%gra:	1|6|COM 2|1|LP 3|6|LINK 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|6|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|6|PUNCT
+*PAR:	so now what else shall I do ? [+ exc] 45498_47258
+%mor:	adv|so adv|now pro:int|what post|else mod|shall pro:sub|I v|do ?
+%gra:	1|2|JCT 2|7|JCT 3|7|SUBJ 4|3|PQ 5|7|AUX 6|7|SUBJ 7|0|ROOT 8|7|PUNCT
+*INV:	that's all . 47258_47900
+%mor:	pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	that's good . 47900_48645
+%mor:	pro:dem|that~cop|be&3S adj|good .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	&=laughs . [+ exc] 48645_49261
+*INV:	+< very good . 49045_49197
+%mor:	adv|very adj|good .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+@End

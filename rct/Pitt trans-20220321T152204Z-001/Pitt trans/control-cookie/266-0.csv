@@ -1,0 +1,58 @@
+@UTF8
+@PID:	11312/t-00002373-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	266-0, audio
+*INV:	everything you see going on in that picture . 0_2600
+%mor:	pro:indef|everything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	okay it looks like the mother is washing dishes . 2600_6555
+%mor:	co|okay pro:per|it v|look-3S prep|like det:art|the n|mother
+	aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|8|AUX 8|3|COMP
+	9|8|OBJ 10|3|PUNCT
+*PAR:	the sink is overflowing . 6555_8233
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	there are &uh two children trying to get in the cookie jar . 8233_13292
+%mor:	pro:exist|there cop|be&PRES det:num|two n|child&PL part|try-PRESP
+	inf|to v|get prep|in det:art|the n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|XMOD 6|7|INF 7|5|COMP 8|7|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|2|PUNCT
+*PAR:	the boy is on the stool and the stool seems to be toppling over . 13292_18227
+%mor:	det:art|the n|boy cop|be&3S prep|on det:art|the n|stool coord|and
+	det:art|the n|stool cop|seem-3S inf|to aux|be part|topple-PRESP
+	adv|over .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|9|DET
+	9|10|SUBJ 10|3|CJCT 11|13|INF 12|13|AUX 13|10|XMOD 14|13|JCT 15|3|PUNCT
+*PAR:	the little girl has her hand up as though she's hoping her brother
+	would give her a cookie . 18227_24452
+%mor:	det:art|the adj|little n|girl aux|have&3S det:poss|her n|hand
+	adv|up adv|as adv|though pro:sub|she~aux|be&3S part|hope-PRESP
+	det:poss|her n|brother mod|will&COND v|give pro:obj|her det:art|a
+	n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|9|SUBJ 4|9|AUX 5|6|DET 6|4|OBJ 7|4|JCT 8|9|JCT
+	9|12|JCT 10|12|SUBJ 11|12|AUX 12|0|ROOT 13|14|DET 14|16|SUBJ 15|16|AUX
+	16|12|COMP 17|16|OBJ2 18|19|DET 19|16|OBJ 20|12|PUNCT
+*PAR:	and &uh there is shrubbery outside the window . 24452_29962
+%mor:	coord|and adv|there cop|be&3S n|shrubbery adj|outside det:art|the
+	n|window .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|MOD 5|7|MOD 6|7|DET 7|3|PRED 8|3|PUNCT
+*PAR:	&c &uh a curved walkway . [+ gram] 29962_33276
+%mor:	det:art|a part|curve-PASTP n|+n|walk+n|way .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	curtains at the window . [+ gram] 33276_35376
+%mor:	n|curtain-PL prep|at det:art|the n|window .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	I guess that's about it . [+ exc] 35376_38474
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S prep|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|JCT 6|5|POBJ 7|2|PUNCT
+*INV:	okay . 38474_39284
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

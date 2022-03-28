@@ -1,0 +1,36 @@
+@UTF8
+@PID:	11312/t-00002620-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR|64;|female|MCI||Participant|30||
+@Media:	338-0, audio
+*PAR:	&uh the water's overflowing in the sink . 0_3413
+%mor:	det:art|the adj|water&dn-POSS over#n:gerund|flow-PRESP prep|in
+	det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	the woman's &wa drying dishes . 3413_5635
+%mor:	det:art|the n|woman~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	&uh the boy is &uh tipping over his &s stool . 5635_10778
+%mor:	det:art|the n|boy aux|be&3S part|tip-PRESP prep|over det:poss|his
+	n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	he is also reaching into the cookie jar . 10778_13188
+%mor:	pro:sub|he aux|be&3S adv|also part|reach-PRESP prep|into
+	det:art|the n|cookie n|jar .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	the girl is reaching up for a cookie and she is laughing . 13188_17246
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie coord|and pro:sub|she aux|be&3S part|laugh-PRESP
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|4|PUNCT
+*PAR:	and &uh I think that's it . [+ exc] 17246_22101
+%mor:	coord|and pro:sub|I v|think pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|PRED 7|3|PUNCT
+*PAR:	xxx ? [+ exc] 22101_25258
+*PAR:	xxx . [+ exc] 25258_26000
+*PAR:	xxx . [+ exc] 26000_29558
+@End

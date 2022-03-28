@@ -1,0 +1,90 @@
+@UTF8
+@PID:	11312/t-00002179-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|59;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	002-1, audio
+@Comment:	overlapping audio from another session
+*INV:	what do you see going on in that picture ? 0_2287
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	oh I see the sink is running over . 2287_6165
+%mor:	co|oh pro:sub|I v|see det:art|the n|sink aux|be&3S part|run-PRESP
+	adv|over .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|3|PUNCT
+*PAR:	I see the stool is tipping over . 6165_9900
+%mor:	pro:sub|I v|see det:art|the n|stool aux|be&3S part|tip-PRESP
+	adv|over .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|COMP 7|6|JCT 8|2|PUNCT
+*PAR:	little boy's trying to get cookies out . 9900_12763
+%mor:	adj|little n|boy~aux|be&3S part|try-PRESP inf|to v|get n|cookie-PL
+	adv|out .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|OBJ 8|6|JCT
+	9|4|PUNCT
+*PAR:	the girl is reaching to get a cookie . 12763_17086
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP inf|to v|get
+	det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|DET 8|6|OBJ
+	9|4|PUNCT
+*PAR:	the mother is drying dishes . 17086_19628
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the window's open . 19628_21525
+%mor:	det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	<xxx that's what she's washing> [//] oh she's drying dishes now . 21525_27052
+%mor:	co|oh pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL adv|now .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*PAR:	she's standing in the water . 27052_32021
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|water
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the cupboard door is open . 32021_40567
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	there's a cookie jar . 40567_42196
+%mor:	pro:exist|there~cop|be&3S det:art|a n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|2|PUNCT
+*PAR:	the brother's leaning against the cookie jar . 42196_47765
+%mor:	det:art|the n|brother~aux|be&3S part|lean-PRESP prep|against
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	curtains on the window . [+ gram] 47765_50972
+%mor:	n|curtain-PL prep|on det:art|the n|window .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	there's some grass and some shrubbery outside the house next door .
+	50972_58518
+%mor:	pro:exist|there~cop|be&3S qn|some n|grass coord|and qn|some
+	n|shrubbery adj|outside det:art|the n|house adj|next n|door .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|QUANT 7|12|MOD
+	8|12|MOD 9|10|DET 10|12|MOD 11|12|MOD 12|5|COORD 13|2|PUNCT
+*INV:	okay . 58518_59546
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	kitchen cabinets . [+ gram] 59546_61647
+%mor:	n|kitchen n|cabinet-PL .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*INV:	is that it ? 61647_65976
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*INV:	okay . 65976_68862
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh I see three people in there, a mother and little boy and a girl
+	. 68862_72431
+%mor:	co|oh pro:sub|I v|see det:num|three n|person&PL prep|in n|there
+	cm|cm det:art|a n|mother coord|and adj|little n|boy coord|and
+	det:art|a n|girl .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|JCT 7|6|POBJ 8|3|LP
+	9|10|DET 10|3|OBJ 11|10|CONJ 12|13|MOD 13|11|COORD 14|10|CONJ 15|16|DET
+	16|14|COORD 17|3|PUNCT
+*INV:	that it ? 72431_77818
+%mor:	comp|that pro:per|it ?
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+@End

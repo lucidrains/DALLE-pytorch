@@ -1,0 +1,94 @@
+@UTF8
+@PID:	11312/t-00002479-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|76;|female|MCI||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	065-1, audio
+*INV:	you see going on in that picture . 0_2850
+%mor:	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:dem|that
+	n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|JCT 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	(.) that [//] the little girl is [//] (.) the [//] &=clears:throat
+	<gonna [/] gonna have> [//] &uh is &uh waiting for the boy to get
+	her a cookie . 2850_25151
+%mor:	det:art|the adj|little n|girl aux|be&3S part|wait-PRESP prep|for
+	det:art|the n|boy inf|to v|get pro:obj|her det:art|a n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|10|INF 10|5|XJCT 11|10|OBJ2 12|13|DET 13|10|OBJ 14|5|PUNCT
+*PAR:	and [/] and she's &uh pointing “shush don't make a noise” because
+	the mother might see them . 25151_31875
+%mor:	coord|and pro:sub|she~aux|be&3S part|point-PRESP co|shush
+	mod|do~neg|not v|make det:art|a n|noise conj|because det:art|the
+	n|mother mod|might v|see pro:obj|them .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|COM 6|8|AUX 7|6|NEG 8|4|COMP
+	9|10|DET 10|8|OBJ 11|15|LINK 12|13|DET 13|15|SUBJ 14|15|AUX 15|4|CJCT
+	16|15|OBJ 17|4|PUNCT
+*PAR:	and the little boy has &uh &uh a cookie in his hand . 31875_37773
+%mor:	coord|and det:art|the adj|little n|boy aux|have&3S det:art|a
+	n|cookie prep|in det:poss|his n|hand .
+%gra:	1|7|LINK 2|4|DET 3|4|MOD 4|7|SUBJ 5|7|AUX 6|7|DET 7|0|INCROOT 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|7|PUNCT
+*PAR:	and <he's ready to> [//] he gonna get another one out_of the &cook
+	&t &cook &j &uh cookie jar but his &t stool has gone over . [+ gram]
+	37773_47000
+%mor:	coord|and pro:sub|he part|go-PRESP~inf|to v|get qn|another
+	pro:indef|one prep|out_of det:art|the n|cookie n|jar conj|but
+	det:poss|his n|stool aux|have&3S part|go&PASTP adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|INF 5|3|COMP 6|7|QUANT 7|5|OBJ 8|5|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|16|LINK 13|14|DET 14|16|SUBJ 15|16|AUX
+	16|3|CJCT 17|16|JCT 18|3|PUNCT
+*PAR:	it's starting to go over . 47000_49058
+%mor:	pro:per|it~aux|be&3S part|start-PRESP inf|to v|go adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|3|PUNCT
+*PAR:	and the mother is washing &uh dishes . 49058_53713
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and &uh the [//] but [//] and water is +//. 53713_58368
+%mor:	coord|and coord|and n|water cop|be&3S +//.
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|2|COORD 5|1|PUNCT
+*PAR:	I_mean &s &uh drying dishes . 58368_60452
+%mor:	co|I_mean part|dry-PRESP n|dish-PL .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	and &uh <the water> [//] &uh &uh she's listening with the little
+	girls and so the water's running onto [//] down onto [/] onto the
+	floor . 60452_69679
+%mor:	coord|and pro:sub|she~aux|be&3S part|listen-PRESP prep|with
+	det:art|the adj|little n|girl-PL coord|and co|so det:art|the
+	n|water~aux|be&3S part|run-PRESP adv|down prep|onto det:art|the
+	n|floor .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|14|LINK 10|14|COM 11|12|DET 12|14|SUBJ 13|14|AUX 14|8|CMOD 15|14|JCT
+	16|14|JCT 17|18|DET 18|16|POBJ 19|4|PUNCT
+*PAR:	(..) let me see about there anything happening outside . [+ gram]
+	[+ exc] 69679_83000
+%mor:	v|let&ZERO pro:obj|me v|see prep|about n|there pro:indef|anything
+	part|happen-PRESP adv|outside .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|JCT 5|4|POBJ 6|5|POSTMOD 7|6|XMOD 8|7|JCT
+	9|1|PUNCT
+*PAR:	no . [+ exc] 83000_84484
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(.) the wind might be blowing beside but I don't think anybody +...
+	84484_92540
+%mor:	det:art|the n|wind n|might aux|be part|blow-PRESP prep|beside
+	conj|but pro:sub|I mod|do~neg|not v|think pro:indef|anybody +...
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|11|LINK 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|6|POBJ 12|11|OBJ 13|5|PUNCT
+*PAR:	if it is it's [//] you could hardly tasty [* s:uk] &=laughs .
+	[+ gram] 92540_96798
+%mor:	conj|if pro:per|it cop|be&3S pro:per|you mod|could adv|hard&dadj-LY
+	adj|taste&dn-Y .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|SUBJ 5|7|AUX 6|7|JCT 7|3|PRED 8|3|PUNCT
+*INV:	(.) is that it ? 96798_100626
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	(.) okay . [+ exc] 100626_106421
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 106421_106790
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

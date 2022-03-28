@@ -1,0 +1,70 @@
+@UTF8
+@PID:	11312/t-00002302-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|56;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	141-2, audio
+*PAR:	oh goodness sakes . [+ exc] 0_3740
+%mor:	co|oh co|goodness n|sake-PL .
+%gra:	1|3|COM 2|3|COM 3|0|INCROOT 4|3|PUNCT
+*PAR:	the little girl is saying +"/.3740_6666
+%mor:	det:art|the adj|little n|girl aux|be&3S part|say-PRESP +"/.
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	+" be quiet (be)cause we don't want mother to know we're in the
+	cookie jar . 6666_10175
+%mor:	cop|be adj|quiet conj|because pro:sub|we mod|do~neg|not v|want
+	n|mother inf|to v|know pro:sub|we~cop|be&PRES prep|in det:art|the
+	n|cookie n|jar .
+%gra:	1|0|ROOT 2|1|PRED 3|7|LINK 4|7|SUBJ 5|7|AUX 6|5|NEG 7|1|CJCT 8|7|OBJ
+	9|10|INF 10|8|XMOD 11|12|SUBJ 12|10|COMP 13|12|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|1|PUNCT
+*PAR:	the boy is getting cookies and he's going to have an accident
+	because the stool is going to go &=laughs quite off . 10175_15700
+%mor:	det:art|the n|boy aux|be&3S part|get-PRESP n|cookie-PL coord|and
+	pro:sub|he~aux|be&3S part|go-PRESP inf|to v|have det:art|a
+	n|accident conj|because det:art|the n|stool aux|be&3S part|go-PRESP
+	inf|to v|go adv|quite adv|off .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|11|INF 11|9|COMP 12|13|DET 13|11|OBJ 14|18|LINK 15|16|DET
+	16|18|SUBJ 17|18|AUX 18|4|CJCT 19|20|INF 20|18|COMP 21|20|JCT 22|20|JCT
+	23|4|PUNCT
+*PAR:	the mother is in dream world somewhere because &=laughs she's
+	drying dishes and the water's coming out over the floor . 15700_22444
+%mor:	det:art|the n|mother cop|be&3S prep|in n|dream n|world
+	adv|somewhere conj|because pro:sub|she~aux|be&3S part|dry-PRESP
+	n|dish-PL coord|and det:art|the n|water~aux|be&3S part|come-PRESP
+	adv|out prep|over det:art|the n|floor .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|MOD 6|4|POBJ 7|3|JCT 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|3|CJCT 12|11|OBJ 13|17|LINK 14|15|DET 15|17|SUBJ
+	16|17|AUX 17|12|CMOD 18|17|JCT 19|17|JCT 20|21|DET 21|19|POBJ 22|3|PUNCT
+*PAR:	&um she's standing in the water even . 22444_26101
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|water
+	adv|even .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|JCT 8|3|PUNCT
+*PAR:	my goodness sakes . [+ exc] 26101_28147
+%mor:	det:poss|my co|goodness n|sake-PL .
+%gra:	1|3|DET 2|3|COM 3|0|INCROOT 4|3|PUNCT
+*PAR:	the (.) &hm +... 28147_40000
+%mor:	det:art|the +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's nothin(g) the matter with those dishes . 40000_44075
+%mor:	pro:exist|there~cop|be&3S pro:indef|nothing det:art|the n|matter
+	prep|with det:dem|those n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|DET 5|3|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	I guess you could look out the window and see that . [+ exc] 44075_50193
+%mor:	pro:sub|I v|guess pro:per|you mod|could v|look prep|out det:art|the
+	n|window coord|and v|see comp|that .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|10|OBJ 12|2|PUNCT
+*PAR:	&hm, I don't know Karen that's +/. [+ exc] 50193_52932
+%mor:	cm|cm pro:sub|I mod|do~neg|not v|know n:prop|Karen
+	pro:rel|that~cop|be&3S +/.
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|8|LINK 8|6|CMOD
+	9|5|PUNCT
+*INV:	okay that's fine . 52932_53820
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

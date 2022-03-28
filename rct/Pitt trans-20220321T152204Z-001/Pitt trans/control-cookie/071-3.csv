@@ -1,0 +1,103 @@
+@UTF8
+@PID:	11312/t-00002233-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	071-3, audio
+*INV:	this picture . 0_853
+%mor:	det:dem|this n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	is it action if she has a finger in her nose here ? [+ exc] 853_4145
+%mor:	aux|be&3S pro:per|it n|action conj|if pro:sub|she v|have&3S
+	det:art|a n|finger prep|in det:poss|her n|nose adv|here ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|INCROOT 4|6|LINK 5|6|SUBJ 6|3|CJCT 7|8|DET 8|6|OBJ
+	9|6|JCT 10|11|DET 11|9|POBJ 12|6|JCT 13|3|PUNCT
+*INV:	&laughs okay . 4145_5264
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< no . [+ exc] 4864_5364
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	but anyway +... [+ exc] 5364_6868
+%mor:	conj|but co|anyway +...
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+*PAR:	&uh the boy's taking cookies out_of the cookie jar . 6868_11353
+%mor:	det:art|the n|boy~aux|be&3S part|take-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	he's about to fall off of the stool . 11353_13697
+%mor:	pro:sub|he~cop|be&3S adv|about inf|to v|fall adv|off prep|of
+	det:art|the n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|INF 5|2|CPRED 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	&uh mother's drying dishes at the sink . 13697_17198
+%mor:	n|mother~aux|be&3S part|dry-PRESP n|dish-PL prep|at det:art|the
+	n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	oh little girl's reaching up . 17198_19359
+%mor:	co|oh adj|little n|girl~aux|be&3S part|reach-PRESP adv|up .
+%gra:	1|3|COM 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	I don't know if that was one . [+ exc] 19359_20177
+%mor:	pro:sub|I mod|do~neg|not v|know comp|if pro:dem|that
+	cop|be&PAST&13S det:num|one .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|COMP 8|7|PRED
+	9|4|PUNCT
+*PAR:	she's reaching up like this . 20177_21653
+%mor:	pro:sub|she~aux|be&3S part|reach-PRESP adv|up prep|like
+	pro:dem|this .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	&uh the curtains are being blown by the wind coming in through the
+	open window . [+ exc] 21653_27285
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|be-PRESP part|blow&PASTP
+	prep|by det:art|the n|wind part|come-PRESP adv|in prep|through
+	det:art|the adj|open n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|XJCT 10|9|JCT 11|9|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|4|PUNCT
+*INV:	+< &=coughs . 22538_23875
+*PAR:	&uh there seems to be water running onto the floor from the sink .
+	27285_31377
+%mor:	adv|there cop|seem-3S inf|to cop|be n|water part|run-PRESP
+	prep|onto det:art|the n|floor prep|from det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|4|PRED 6|5|XMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*PAR:	&uh is it action when mother's standing in the water &=laughs ?
+	[+ exc] 31377_37082
+%mor:	aux|be&3S pro:per|it n|action conj|when n|mother~aux|be&3S
+	part|stand-PRESP prep|in det:art|the n|water ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|INCROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CJCT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*INV:	okay . 37082_38000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh we're drying the dishes . 38000_42443
+%mor:	pro:sub|we~aux|be&PRES part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	we've [//] we're already done that . [+ exc] [+ gram] 42443_43859
+%mor:	pro:sub|we~aux|be&PRES adv|already part|do&PASTP pro:dem|that .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	&uh that [//] &uh doesn't seem to be more +//. [+ exc] 43859_47100
+%mor:	mod|do&3S~neg|not cop|seem inf|to cop|be pro:indef|more +//.
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|3|PUNCT
+*PAR:	oh he's <handing cookie> [/] handing cookie to girl . [+ gram] 47100_48963
+%mor:	co|oh pro:sub|he~aux|be&3S part|hand-PRESP n|cookie prep|to n|girl
+	.
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|6|POBJ 8|4|PUNCT
+*PAR:	girl reaching up for cookie . [+ gram] 48963_50271
+%mor:	n|girl part|reach-PRESP adv|up prep|for n|cookie .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|2|JCT 5|4|POBJ 6|1|PUNCT
+*PAR:	&uh mother's daydreaming or she would stop all this . 50271_54054
+%mor:	n|mother~aux|be&3S part|+n|day+n|dream-PRESP coord|or pro:sub|she
+	mod|will&COND v|stop adv|all det:dem|this .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|ROOT 8|9|JCT
+	9|7|INCROOT 10|9|PUNCT
+*INV:	&=laughs . 54054_55668
+*INV:	okay that's fine . 55668_60323
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	+< that's about all there is . [+ exc] 60023_61854
+%mor:	pro:dem|that~cop|be&3S prep|about qn|all adv|there cop|be&3S .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|JCT 4|5|QUANT 5|6|SUBJ 6|2|PRED 7|2|PUNCT
+@End

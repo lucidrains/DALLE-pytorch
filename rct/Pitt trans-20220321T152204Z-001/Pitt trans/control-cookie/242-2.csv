@@ -1,0 +1,137 @@
+@UTF8
+@PID:	11312/t-00002359-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	242-2, audio
+@Comment:	overlapping audio
+*PAR:	we'll start with the girl . 0_2560
+%mor:	pro:sub|we~mod|will v|start prep|with det:art|the n|girl .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	she's going to the +//. 2560_4439
+%mor:	pro:sub|she~aux|be&3S part|go-PRESP prep|to det:art|the +//.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ
+*PAR:	he steal a cookie . [+ gram] 4439_5333
+%mor:	pro:sub|he v|steal det:art|a n|cookie .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	<her brother is>[/] her brother is taking cookies out_of a jar . 5333_8965
+%mor:	det:poss|her n|brother aux|be&3S part|take-PRESP n|cookie-PL
+	prep|out_of det:art|a n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	and he got careless . 8965_11393
+%mor:	coord|and pro:sub|he v|get&PAST adj|care&dn-LESS .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	she's askin(g) him for one . 11393_13588
+%mor:	pro:sub|she~aux|be&3S part|ask-PRESP pro:obj|him prep|for
+	pro:indef|one .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	so he's handin(g) one down to her . 13588_16189
+%mor:	adv|so pro:sub|he~aux|be&3S part|hand-PRESP det:num|one adv|down
+	prep|to pro:obj|her .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	in the meantime he is gettin(g) reading to fall <off of a> [/] off
+	of a stool, a three legged stool . 16089_22366
+%mor:	prep|in det:art|the n|meantime pro:sub|he aux|be&3S part|get-PRESP
+	part|read-PRESP inf|to v|fall adv|off prep|of det:art|a n|stool
+	cm|cm det:art|a det:num|three adj|legged n|stool .
+%gra:	1|6|JCT 2|3|DET 3|1|POBJ 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|COMP 8|9|INF
+	9|7|COMP 10|9|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|6|LP 15|18|DET
+	16|18|QUANT 17|18|MOD 18|6|OBJ 19|6|PUNCT
+*PAR:	and the mother's not payin(g) much attention . 22366_24160
+%mor:	coord|and det:art|the n|mother~cop|be&3S neg|not n:gerund|pay-PRESP
+	adv|much n|attention .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|NEG 6|4|PRED 7|6|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	she's lookin(g) out the window . 24160_26165
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|the n|window
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and in looking out the window why she's lettin(g) her sink run over
+	and the water's splashin(g) on the floor all over her . 26165_35673
+%mor:	coord|and prep|in part|look-PRESP prep|out det:art|the n|window
+	pro:rel|why pro:sub|she~aux|be&3S part|let-PRESP det:poss|her n|sink
+	v|run adv|over coord|and det:art|the n|water~aux|be&3S
+	part|splash-PRESP prep|on det:art|the n|floor adv|all prep|over
+	pro:obj|her .
+%gra:	1|3|LINK 2|3|JCT 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|6|CMOD 11|12|DET 12|13|SUBJ 13|10|COMP 14|13|JCT 15|19|LINK
+	16|17|DET 17|19|SUBJ 18|19|AUX 19|13|XJCT 20|19|JCT 21|22|DET 22|20|POBJ
+	23|22|NJCT 24|23|JCT 25|24|POBJ 26|3|PUNCT
+*PAR:	and &uh what else ? [+ exc] 35673_38533
+%mor:	coord|and pro:int|what post|else ?
+%gra:	1|0|INCROOT 2|1|COORD 3|2|PQ 4|1|PUNCT
+*PAR:	the outside looks alright . 38533_41459
+%mor:	det:art|the adj|outside v|look-3S adj|alright .
+%gra:	1|3|DET 2|3|MOD 3|0|ROOT 4|3|COMP 5|3|PUNCT
+*PAR:	there's more here . [+ exc] 41459_44867
+%mor:	pro:exist|there~cop|be&3S adv|more adv|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|JCT 5|2|PUNCT
+*PAR:	<she's drying> [/] she's drying a dish . 44867_48046
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and (.) she has two cups and a plate on the table . 48046_53804
+%mor:	coord|and pro:sub|she v|have&3S det:num|two n|cup-PL coord|and
+	det:art|a n|plate prep|on det:art|the n|table .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|5|CONJ 7|8|DET 8|6|COORD
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	well I did say she was lettin(g) the &uh water run over the sink
+	down onto the floor, splashin(g) onto her feet . 53804_62815
+%mor:	co|well pro:sub|I mod|do&PAST v|say pro:sub|she aux|be&PAST&13S
+	part|let-PRESP det:art|the n|water v|run prep|over det:art|the
+	n|sink adv|down prep|onto det:art|the n|floor cm|cm
+	part|splash-PRESP prep|onto det:poss|her n|foot&PL .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|SUBJ 6|7|AUX 7|4|COMP 8|9|DET
+	9|10|SUBJ 10|7|COMP 11|10|JCT 12|13|DET 13|11|POBJ 14|10|JCT 15|10|JCT
+	16|17|DET 17|15|POBJ 18|10|LP 19|10|XJCT 20|19|JCT 21|22|DET 22|20|POBJ
+	23|4|PUNCT
+*PAR:	oh boy . [+ exc] 62815_64557
+%mor:	co|oh n|boy .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	then there's an angle here that is incomplete <of the> [/] &s of
+	the corner where the &uh wall comes together . 64557_73256
+%mor:	adv:tem|then pro:exist|there~cop|be&3S det:art|a n|angle adv|here
+	pro:rel|that cop|be&3S in#adj|complete prep|of det:art|the n|corner
+	pro:rel|where det:art|the n|wall v|come-3S adv|together .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|8|LINK 8|6|CMOD
+	9|8|PRED 10|9|NJCT 11|12|DET 12|10|POBJ 13|16|LINK 14|15|DET 15|16|SUBJ
+	16|12|CMOD 17|16|JCT 18|3|PUNCT
+*PAR:	&hm let's see what else . [+ exc] 73256_76913
+%mor:	v|let~pro:obj|us v|see pro:int|what post|else .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|OBJ 5|4|PQ 6|1|PUNCT
+*PAR:	&uh let's see . [+ exc] 76913_80700
+%mor:	v|let~pro:obj|us v|see .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|1|PUNCT
+*PAR:	the [//] &ta there's a plate, two [/] &sau two cups . 80700_84354
+%mor:	pro:exist|there~cop|be&3S det:art|a n|plate cm|cm det:num|two
+	n|cup-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|LP 6|7|QUANT 7|4|APP 8|2|PUNCT
+*PAR:	oh &sh I did say she's lettin(g) the water run over the sink didn't
+	I ? [+ exc] 84353_88558
+%mor:	co|oh pro:sub|I v|do&PAST co|say pro:sub|she~aux|be&3S
+	part|let-PRESP det:art|the n|water v|run prep|over det:art|the
+	n|sink mod|do&PAST~neg|not pro:sub|I ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|7|COM 5|7|SUBJ 6|7|AUX 7|3|COMP 8|9|DET
+	9|10|SUBJ 10|7|COMP 11|10|JCT 12|13|DET 13|16|SUBJ 14|16|AUX 15|14|NEG
+	16|11|POBJ 17|3|PUNCT
+*PAR:	yes . [+ exc] 88558_89000
+%mor:	co|yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	mhm . 89000_90278
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	now she (i)s [//] seems to be looking out the window while she's
+	drying her dish . 90278_94633
+%mor:	adv|now pro:sub|she cop|seem-3S inf|to aux|be part|look-PRESP
+	prep|out det:art|the n|window conj|while pro:sub|she~aux|be&3S
+	part|dry-PRESP det:poss|her n|dish .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|6|INF 5|6|AUX 6|3|XMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|13|LINK 11|13|SUBJ 12|13|AUX 13|3|CJCT 14|15|DET 15|13|OBJ
+	16|3|PUNCT
+*PAR:	how_(a)bout that ? [+ exc] 94633_100000
+%mor:	pro:int|how_about pro:dem|that ?
+%gra:	1|0|INCROOT 2|1|OM 3|1|PUNCT
+@End

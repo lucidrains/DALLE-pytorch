@@ -1,0 +1,87 @@
+@UTF8
+@PID:	11312/t-00002239-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	086-1, audio
+@Comment:	poor audio quality contributes to some unintelligible segments
+*INV:	and here's the picture . 0_1829
+%mor:	coord|and pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	all of the action you see going on . [+ exc] 1829_3842
+%mor:	pro:indef|all prep|of det:art|the n|action pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|6|JCT 2|1|NJCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|6|OBJ 8|6|JCT
+	9|6|PUNCT
+*PAR:	okay . [+ exc] 3842_4400
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	this is in the kitchen . 4400_6319
+%mor:	pro:dem|this cop|be&3S prep|in det:art|the n|kitchen .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	and the little boy is climbing up to the cookie jar and he's [//]
+	has the lid off and he's getting a cookie for his sister and handing
+	it down to her and one for himself . 6319_18621
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S part|climb-PRESP
+	adv|up prep|to det:art|the n|cookie n|jar coord|and v|have&3S
+	det:art|the n|lid adv|off coord|and pro:sub|he~aux|be&3S
+	part|get-PRESP det:art|a n|cookie prep|for det:poss|his n|sister
+	coord|and part|hand-PRESP pro:per|it adv|down prep|to pro:obj|her
+	coord|and pro:indef|one prep|for pro:refl|himself .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|6|CONJ 13|12|COORD 14|15|DET 15|13|OBJ
+	16|13|JCT 17|20|LINK 18|20|SUBJ 19|20|AUX 20|13|XJCT 21|22|DET 22|20|OBJ
+	23|20|JCT 24|25|DET 25|23|POBJ 26|20|CONJ 27|26|COORD 28|27|OBJ 29|27|JCT
+	30|27|JCT 31|30|POBJ 32|20|CONJ 33|32|COORD 34|33|NJCT 35|34|POBJ
+	36|6|PUNCT
+*PAR:	the mother has her back turned . 18621_20998
+%mor:	det:art|the n|mother v|have&3S det:poss|her n|back v|turn-PAST .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|COMP 7|3|PUNCT
+*PAR:	she's standing at the sink washing dishes . 20998_23176
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|at det:art|the n|sink
+	part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|XJCT 8|7|OBJ
+	9|3|PUNCT
+*PAR:	she's probably looking out the window (be)cause the sink is running
+	over on the floor . 23176_26693
+%mor:	pro:sub|she~aux|be&3S adv|probable&dadj-LY part|look-PRESP prep|out
+	det:art|the n|window conj|because det:art|the n|sink aux|be&3S
+	part|run-PRESP adv|over prep|on det:art|the n|floor .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|12|JCT 14|12|JCT 15|16|DET
+	16|14|POBJ 17|4|PUNCT
+*PAR:	the stool is tipping for the little boy and he's going to fall off
+	and in a couple o(f) minutes . 26693_32357
+%mor:	det:art|the n|stool aux|be&3S part|tip-PRESP prep|for det:art|the
+	adj|little n|boy coord|and pro:sub|he~aux|be&3S part|go-PRESP inf|to
+	v|fall adv|off coord|and prep|in det:art|a n|couple prep|of
+	n|minute-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|CMOD 13|14|INF 14|12|COMP 15|14|JCT
+	16|14|CONJ 17|16|COORD 18|19|DET 19|17|POBJ 20|19|NJCT 21|20|POBJ 22|4|PUNCT
+*PAR:	and the window's open xxx .32357_37930
+%mor:	coord|and det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	the water is running in the sink is why it's xxx out . 37930_43316
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|in det:art|the
+	n|sink cop|be&3S pro:rel|why pro:per|it~cop|be&3S adv|out .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|XJCT
+	9|11|LINK 10|11|SUBJ 11|8|CMOD 12|11|JCT 13|4|PUNCT
+*PAR:	now I see . [+ exc] 43316_44696
+%mor:	adv|now pro:sub|I v|see .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	the mother's drying a dish . 44696_51097
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*INV:	okay ? 51097_55668
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< mhm . [+ exc] 55668_56201
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< okay good . 55701_56600
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

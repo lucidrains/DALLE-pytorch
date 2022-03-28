@@ -1,0 +1,96 @@
+@UTF8
+@PID:	11312/t-00002497-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|female|ProbableAD||Participant|24||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	094-1, audio
+*INV:	okay here's the picture . 0_2554
+%mor:	co|okay pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*INV:	just tell me all of the action +/. 2554_4266
+%mor:	adv|just v|tell pro:obj|me post|all prep|of det:art|the n|action
+	+/.
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|JCT 5|4|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	+< and I will tell you what's &g +/. [+ exc] 3266_4951
+%mor:	coord|and pro:sub|I mod|will v|tell pro:per|you
+	pro:int|what~cop|be&3S +/.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|SUBJ 7|4|COMP 8|4|PUNCT
+*INV:	what's going on in the picture ? 4951_6676
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	oh boy . [+ exc] 6676_7773
+%mor:	co|oh n|boy .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	well the little boy is reaching for a cookie . 7773_13161
+%mor:	co|well det:art|the adj|little n|boy aux|be&3S part|reach-PRESP
+	prep|for det:art|a n|cookie .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	and his &s stool is fallin(g) over . 13161_15520
+%mor:	coord|and det:poss|his n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*INV:	mhm . 15520_16185
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the little girl is beggin(g) him to give her one . 16185_20825
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|beg-PRESP
+	pro:obj|him inf|to v|give det:poss|her det:num|one .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|9|INF
+	9|6|COMP 10|11|DET 11|9|OBJ 12|6|PUNCT
+*PAR:	and she's pointin(g) to her mouth . 20825_25425
+%mor:	coord|and pro:sub|she~aux|be&3S part|point-PRESP prep|to
+	det:poss|her n|mouth .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	she wants to eat it . 25425_26427
+%mor:	pro:sub|she v|want-3S inf|to v|eat pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|4|OBJ 6|2|PUNCT
+*PAR:	&uh their mama is doin(g) the dishes . 26427_30896
+%mor:	det:poss|their n|mama aux|be&3S part|do-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	the water's runnin(g) over the sink . 30896_36326
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP prep|over det:art|the
+	n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	that's a mess . 36326_39112
+%mor:	pro:dem|that~cop|be&3S det:art|a n|mess .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	hm . 39112_40000
+%mor:	co|hm .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and then she's not even lookin(g) at them . 40000_44388
+%mor:	coord|and adv:tem|then pro:sub|she~aux|be&3S neg|not adv|even
+	part|look-PRESP prep|at pro:obj|them .
+%gra:	1|7|LINK 2|7|JCT 3|7|SUBJ 4|7|AUX 5|4|NEG 6|7|JCT 7|0|ROOT 8|7|JCT
+	9|8|POBJ 10|7|PUNCT
+*PAR:	dryin(g) dishes . [+ gram] 44388_48046
+%mor:	part|dry-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	I think she's lookin(g) out the window . 48046_52325
+%mor:	pro:sub|I v|think pro:sub|she~aux|be&3S part|look-PRESP prep|out
+	det:art|the n|window .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	it's a nice yard out there . 52325_55095
+%mor:	pro:per|it~cop|be&3S det:art|a adj|nice n|yard prep|out n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|NJCT 7|6|POBJ 8|2|PUNCT
+*PAR:	two cups and [/] and a dish finished . [+ gram] 55095_60403
+%mor:	det:num|two n|cup-PL coord|and det:art|a n|dish v|finish-PAST .
+%gra:	1|2|QUANT 2|6|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|0|ROOT 7|6|PUNCT
+*INV:	www . 60403_67780
+*PAR:	xxx anything else ? [+ exc] 67780_70738
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	no that looks pretty good . 70738_72607
+%mor:	co|no pro:rel|that v|look-3S adv|pretty adj|good .
+%gra:	1|3|COM 2|3|LINK 3|0|ROOT 4|5|JCT 5|3|COMP 6|3|PUNCT
+*INV:	okay ? 72607_74958
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 74958_75968
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

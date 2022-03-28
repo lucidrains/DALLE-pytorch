@@ -1,0 +1,144 @@
+@UTF8
+@PID:	11312/t-00002189-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	015-0, audio
+*INV:	just everything that is going on there . 0_2500
+%mor:	adv|just pro:indef|everything pro:rel|that aux|be&3S part|go-PRESP
+	prep|on n|there .
+%gra:	1|2|JCT 2|0|INCROOT 3|5|LINK 4|5|AUX 5|2|CMOD 6|5|JCT 7|6|POBJ
+	8|2|PUNCT
+*PAR:	oh for god's sakes . [+ exc] 2500_4157
+%mor:	co|oh prep|for adj|god&dn-POSS n|sake-PL .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|MOD 4|2|POBJ 5|1|PUNCT
+*PAR:	the lady is wiping dishes . 4157_7904
+%mor:	det:art|the n|lady aux|be&3S part|wipe-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the sink is overflowing . 7904_10000
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the &uh boy is &uh getting a cookie . 10000_15764
+%mor:	det:art|the n|boy aux|be&3S part|get-PRESP det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	he's handing another one to the little girl . 15764_18716
+%mor:	pro:sub|he~aux|be&3S part|hand-PRESP qn|another det:num|one prep|to
+	det:art|the adj|little n|girl .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	the little girl is &uh shushing whatever you call that &um the boy
+	(be)cause evidently they're stealing (th)em . 18716_26818
+%mor:	det:art|the adj|little n|girl aux|be&3S part|shush-PRESP
+	pro:int|whatever pro:per|you v|call comp|that det:art|the n|boy
+	conj|because adv|evident&dadj-LY pro:sub|they~aux|be&PRES
+	part|steal-PRESP pro:obj|them .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|LINK 7|8|SUBJ 8|5|COMP
+	9|8|OBJ 10|11|DET 11|9|OBJ 12|16|LINK 13|16|JCT 14|16|SUBJ 15|16|AUX
+	16|11|CMOD 17|16|OBJ 18|5|PUNCT
+*PAR:	and [//] sneaking them is a better word . 26818_30291
+%mor:	part|sneak-PRESP pro:obj|them cop|be&3S det:art|a adj|good&CP
+	n|word .
+%gra:	1|0|INCROOT 2|3|SUBJ 3|1|COMP 4|6|DET 5|6|MOD 6|3|PRED 7|1|PUNCT
+*PAR:	and &um they're [//] you said happening . [+ exc] 30291_34316
+%mor:	coord|and pro:per|you v|say&PAST part|happen-PRESP .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|COMP 5|3|PUNCT
+*PAR:	a verb . [+ exc] 34316_34842
+%mor:	det:art|a n|verb .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	it hasta be movement . [+ exc] 34842_35857
+%mor:	pro:per|it mod|have&3S~inf|to cop|be n|movement .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*INV:	just everything that you see going on in the picture . 35857_39383
+%mor:	adv|just pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|2|JCT 2|0|INCROOT 3|5|LINK 4|5|SUBJ 5|2|CMOD 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	+< and just [//] including identifying things ? [+ exc] 39149_41775
+%mor:	coord|and part|include-PRESP part|identify-PRESP n|thing-PL ?
+%gra:	1|2|LINK 2|0|ROOT 3|2|XJCT 4|3|OBJ 5|2|PUNCT
+*INV:	whatever you like . 41775_43329
+%mor:	pro:int|whatever pro:per|you conj|like .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|INCROOT 4|3|PUNCT
+*PAR:	the lady is standing in a puddle (.) of water . 43329_49056
+%mor:	det:art|the n|lady aux|be&3S part|stand-PRESP prep|in det:art|a
+	n|puddle prep|of n|water .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|7|NJCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	and the faucet is running . 49056_52107
+%mor:	coord|and det:art|the n|faucet aux|be&3S part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	and &uh the window is open . 52107_57195
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and there's a house next door, with curtains at the window, the
+	same kind of curtains as hers . 57195_68277
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|house adj|next
+	n|door cm|cm prep|with n|curtain-PL prep|at det:art|the n|window
+	cm|cm det:art|the adj|same n|kind prep|of n|curtain-PL adv|as
+	pro:poss|hers .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|7|MOD 6|7|MOD 7|3|PRED 8|7|LP
+	9|3|JCT 10|9|POBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|3|LP 15|17|DET
+	16|17|MOD 17|3|PRED 18|17|NJCT 19|18|POBJ 20|21|COORD 21|17|ENUM 22|3|PUNCT
+*PAR:	and there's a tree in the next yard . 68277_71453
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|tree prep|in
+	det:art|the adj|next n|yard .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	it almost looks like it doesn't have a trunk . 71453_75592
+%mor:	pro:per|it adv|almost v|look-3S prep|like pro:per|it
+	mod|do&3S~neg|not v|have det:art|a n|trunk .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|JCT 5|8|SUBJ 6|8|AUX 7|6|NEG 8|4|CPOBJ
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*PAR:	it doesn't start in the ground it starts in the air . 75592_77927
+%mor:	pro:per|it mod|do&3S~neg|not v|start prep|in det:art|the n|ground
+	pro:per|it v|start-3S adv|in det:art|the n|air .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|9|SUBJ
+	9|4|CJCT 10|9|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	&uh there's a shrub between the two yards . 77927_84310
+%mor:	pro:exist|there~cop|be&3S det:art|a n|shrub prep|between
+	det:art|the det:num|two n|yard-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|8|DET 7|8|QUANT 8|5|POBJ
+	9|2|PUNCT
+*PAR:	there are two cups on the counter, one plate &=laughs . 84310_90055
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL prep|on
+	det:art|the n|counter cm|cm det:num|one n|plate .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|4|LP
+	9|10|QUANT 10|4|APP 11|2|PUNCT
+*INV:	that's fine . 90055_90952
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	the stool is crooked . 90952_93231
+%mor:	det:art|the n|stool cop|be&3S adj|crooked .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	she's [//] he's gonna fall over <because it> [//] and <it's a> [/]
+	<it's a three> [//] it's a tripod stool that is falling over, not
+	very steady . 93231_101412
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall adv|over coord|and
+	pro:per|it~cop|be&3S det:art|a n|tripod n|stool pro:rel|that
+	aux|be&3S part|fall-PRESP adv|over cm|cm neg|not adv|very adj|steady
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|9|LINK 8|9|SUBJ
+	9|3|CJCT 10|12|DET 11|12|MOD 12|9|PRED 13|15|LINK 14|15|AUX 15|12|CMOD
+	16|15|JCT 17|15|LP 18|20|NEG 19|20|JCT 20|15|JCT 21|3|PUNCT
+*PAR:	the cupboards don't have handles except one door . 101412_105698
+%mor:	det:art|the n|cupboard-PL mod|do~neg|not v|have n|handle-PL
+	prep|except det:num|one n|door .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|5|JCT 8|9|QUANT
+	9|7|POBJ 10|5|PUNCT
+*PAR:	and the bottom ones do and the ones on the left have a different
+	kind o(f) handle . 105698_111312
+%mor:	coord|and det:art|the n|bottom det:num|one-PL v|do coord|and
+	det:art|the det:num|one-PL prep|on det:art|the adj|left v|have
+	det:art|a adj|different n|kind prep|of n|handle .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|QUANT 5|0|ROOT 6|5|CONJ 7|8|DET 8|6|COORD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|11|CMOD 13|15|DET 14|15|MOD 15|12|OBJ
+	16|15|NJCT 17|16|POBJ 18|5|PUNCT
+*PAR:	and &=laughs can I quit pretty soon ? [+ exc] 111312_116070
+%mor:	coord|and mod|can pro:sub|I v|quit&ZERO adv|pretty adv|soon ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|4|PUNCT
+*INV:	+< yes that's fine &=laughs . 115370_117086
+%mor:	co|yes pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

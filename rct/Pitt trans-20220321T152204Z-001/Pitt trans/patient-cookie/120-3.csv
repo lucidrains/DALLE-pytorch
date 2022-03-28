@@ -1,0 +1,91 @@
+@UTF8
+@PID:	11312/t-00002504-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|80;|male|MCI||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	120-3, audio
+*INV:	take a look at this picture and tell me everything that's happening
+	here . 0_4461
+%mor:	v|take det:art|a v|look prep|at det:dem|this n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|happen-PRESP adv|here .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ2 10|8|OBJ 11|13|LINK 12|13|AUX 13|10|CMOD 14|13|JCT 15|1|PUNCT
+*INV:	tell me everything that's going on in that picture . 4461_6805
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	okay . [+ exc] 6905_8300
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the little boy is snitching a cookie while the mother's not looking
+	. 8300_13263
+%mor:	det:art|the adj|little n|boy aux|be&3S part|snitch-PRESP det:art|a
+	n|cookie conj|while det:art|the n|mother~aux|be&3S neg|not
+	part|look-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|13|LINK
+	9|10|DET 10|13|SUBJ 11|13|AUX 12|11|NEG 13|5|CJCT 14|5|PUNCT
+*PAR:	he's snitching one for his sister also . 13263_16380
+%mor:	pro:sub|he~cop|be&3S n:gerund|snitch-PRESP det:num|one prep|for
+	det:poss|his n|sister adv|also .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|OBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|2|PUNCT
+*PAR:	the little girl is saying “quiet shh@o” with her finger to her lips
+	. 16380_23298
+%mor:	det:art|the adj|little n|girl aux|be&3S part|say-PRESP n|quiet
+	on|shh prep|with det:poss|her n|finger prep|to det:poss|her n|lip-PL
+	.
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|6|POSTMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	the stool is going to come topple over and their secret will be
+	discovered . 23298_28468
+%mor:	det:art|the n|stool aux|be&3S part|go-PRESP inf|to v|come v|topple
+	adv|over coord|and det:poss|their n|secret mod|will aux|be
+	part|discover-PASTP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|OBJ 8|6|JCT
+	9|14|LINK 10|11|DET 11|14|SUBJ 12|14|AUX 13|14|AUX 14|6|CJCT 15|4|PUNCT
+*PAR:	&uh the woman is washing the dishes . 28468_33140
+%mor:	det:art|the n|woman aux|be&3S part|wash-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and I think she's wiping (th)em . 33140_37979
+%mor:	coord|and pro:sub|I v|think pro:sub|she~aux|be&3S part|wipe-PRESP
+	pro:obj|them .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|AUX 6|3|COMP 7|6|OBJ 8|3|PUNCT
+*PAR:	and the faucet is running and the sink is running over and spilling
+	onto the floor and she's walking in a puddle . 37979_44645
+%mor:	coord|and det:art|the n|faucet aux|be&3S part|run-PRESP coord|and
+	det:art|the n|sink aux|be&3S part|run-PRESP adv|over coord|and
+	part|spill-PRESP prep|onto det:art|the n|floor coord|and
+	pro:sub|she~aux|be&3S part|walk-PRESP prep|in det:art|a n|puddle .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|5|CJCT 11|10|JCT 12|10|CONJ 13|12|COORD 14|13|JCT 15|16|DET
+	16|14|POBJ 17|20|LINK 18|20|SUBJ 19|20|AUX 20|5|CJCT 21|20|JCT 22|23|DET
+	23|21|POBJ 24|5|PUNCT
+*PAR:	and let's see things that are happening . [+ exc] 44645_47900
+%mor:	coord|and v|let~pro:obj|us v|see n|thing-PL pro:rel|that
+	aux|be&PRES part|happen-PRESP .
+%gra:	1|2|LINK 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|OBJ 6|8|LINK 7|8|AUX 8|5|CMOD
+	9|2|PUNCT
+*PAR:	I guess that's about all that's +... [+ exc] 47900_50071
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S adv|about adv|all
+	pro:rel|that~cop|be&3S +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|6|JCT 6|8|JCT 7|8|LINK 8|4|PRED
+	9|2|PUNCT
+*PAR:	well she's not [//] &n has not yet noticed the children . 50071_54054
+%mor:	co|well pro:sub|she~cop|be&3S aux|have&3S neg|not adv|yet
+	v|notice-PAST det:art|the n|child&PL .
+%gra:	1|3|COM 2|3|SUBJ 3|7|SUBJ 4|7|AUX 5|4|NEG 6|7|JCT 7|0|ROOT 8|9|DET
+	9|7|OBJ 10|7|PUNCT
+*PAR:	and that's really all that's happening I guess . [+ exc] 54054_59900
+%mor:	coord|and pro:dem|that~cop|be&3S adv|real&dadj-LY adv|all
+	pro:rel|that~aux|be&3S part|happen-PRESP pro:sub|I v|guess .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|8|LINK 7|8|AUX 8|5|CMOD
+	9|10|SUBJ 10|8|COMP 11|3|PUNCT
+*INV:	okay . 59900_61993
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,96 @@
+@UTF8
+@PID:	11312/t-00002405-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|58;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	323-1, audio
+*INV:	what I want you to do is take a look at this picture, and tell me
+	everything that you see happening in this picture . 0_8234
+%mor:	pro:int|what pro:sub|I v|want pro:per|you inf|to v|do cop|be&3S
+	v|take det:art|a v|look prep|at det:dem|this n|picture cm|cm
+	coord|and v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you co|see n:gerund|happen-PRESP prep|in det:dem|this
+	n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|7|CPRED
+	9|10|DET 10|8|OBJ 11|10|JCT 12|13|DET 13|11|POBJ 14|10|LP 15|10|CONJ
+	16|15|COORD 17|16|OBJ2 18|16|OBJ 19|22|LINK 20|22|SUBJ 21|22|COM 22|18|CMOD
+	23|22|JCT 24|25|DET 25|23|POBJ 26|3|PUNCT
+*INV:	I want you to tell me everything that's going on here . 8234_11878
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP prep|on
+	n|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|11|POBJ 13|2|PUNCT
+*PAR:	everything, not things that are just bad right ? [+ exc] 11878_15564
+%mor:	pro:indef|everything cm|cm neg|not n|thing-PL pro:rel|that
+	cop|be&PRES adv|just adj|bad co|right ?
+%gra:	1|0|INCROOT 2|1|LP 3|4|NEG 4|1|ENUM 5|6|LINK 6|4|CMOD 7|8|JCT 8|6|PRED
+	9|6|COM 10|1|PUNCT
+*INV:	right, just everything that's going on . 15564_18522
+%mor:	adv|right cm|cm adv|just pro:indef|everything
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|2|JCT 2|0|INCROOT 3|4|JCT 4|2|PRED 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|2|PUNCT
+*PAR:	+< okay . [+ exc] 17400_18522
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there are two little kids a boy and a girl . 18522_21960
+%mor:	pro:exist|there cop|be&PRES det:num|two adj|little n|kid-PL
+	det:art|a n|boy coord|and det:art|a n|girl .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|QUANT 4|5|MOD 5|2|PRED 6|7|DET 7|5|OBJ 8|7|CONJ
+	9|10|DET 10|8|COORD 11|2|PUNCT
+*PAR:	<on a> [//] &s the boy's on a stool which is falling over getting
+	cookies out_of a jar . 21960_28233
+%mor:	det:art|the n|boy~cop|be&3S prep|on det:art|a n|stool pro:rel|which
+	aux|be&3S part|fall-PRESP adv|over part|get-PRESP n|cookie-PL
+	prep|out_of det:art|a n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|9|JCT 11|9|XJCT 12|11|OBJ 13|9|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	the cookies are in the cabinet with the lid off . 28233_32500
+%mor:	det:art|the n|cookie-PL cop|be&PRES prep|in det:art|the n|cabinet
+	prep|with det:art|the n|lid adv|off .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|3|PUNCT
+*PAR:	(.) and it's in the kitchen . 32500_35921
+%mor:	coord|and pro:per|it~cop|be&3S prep|in det:art|the n|kitchen .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the mother is washing dishes at the window with a curtain on the
+	window . 35921_42022
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL prep|at
+	det:art|the n|window prep|with det:art|a n|curtain prep|on
+	det:art|the n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|11|DET 11|9|POBJ 12|11|NJCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	a walk outside with trees and grass . [+ gram] 42022_46346
+%mor:	det:art|a n|walk adv|outside prep|with n|tree-PL coord|and n|grass
+	.
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|3|JCT 5|4|POBJ 6|5|CONJ 7|6|COORD
+	8|2|PUNCT
+*PAR:	the water is running over in the sink onto the floor . 46346_50568
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over prep|in
+	det:art|the n|sink prep|onto det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	the mother is drying a dish, and stepping in the water . 50568_54582
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP det:art|a n|dish
+	cm|cm coord|and n:gerund|step-PRESP prep|in det:art|the n|water .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|LP 8|4|CONJ
+	9|8|COORD 10|9|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	there's a plate and two cups sitting on the cabinet . 54582_58118
+%mor:	pro:exist|there~cop|be&3S det:art|a n|plate coord|and det:num|two
+	n|cup-PL part|sit-PRESP prep|on det:art|the n|cabinet .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|CONJ 6|7|QUANT 7|5|COORD
+	8|7|XMOD 9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	the mother has an apron on . 58118_62191
+%mor:	det:art|the n|mother v|have&3S det:art|a n|apron adv|on .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*INV:	(...) okay ? 62191_69000
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 69000_69712
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

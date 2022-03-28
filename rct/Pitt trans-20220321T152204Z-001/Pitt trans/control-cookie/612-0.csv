@@ -1,0 +1,87 @@
+@UTF8
+@PID:	11312/t-00002408-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|male|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	612-0, audio
+*INV:	I want you to tell me everything that you see going on in this
+	picture . 0_3966
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|this n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|OBJ 12|10|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|2|PUNCT
+*INV:	everything that you see happening here . 3966_7083
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|here .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|1|PUNCT
+*INV:	go ahead . 7083_8888
+%mor:	v|go adv|ahead .
+%gra:	1|0|ROOT 2|1|JCT 3|1|PUNCT
+*PAR:	well for one thing the boy is stealing cookies . 8888_13279
+%mor:	co|well prep|for pro:indef|one n|thing det:art|the n|boy aux|be&3S
+	part|steal-PRESP n|cookie-PL .
+%gra:	1|8|COM 2|8|JCT 3|4|SUBJ 4|2|POBJ 5|6|DET 6|8|SUBJ 7|8|AUX 8|0|ROOT
+	9|8|OBJ 10|8|PUNCT
+*PAR:	and the girl is asking for a cookie . 13279_16545
+%mor:	coord|and det:art|the n|girl aux|be&3S part|ask-PRESP prep|for
+	det:art|a n|cookie .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and the boy is standing on a (.) stool which is tipping over . 16545_21370
+%mor:	coord|and det:art|the n|boy aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool pro:rel|which aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|11|LINK 10|11|AUX 11|8|CMOD 12|11|JCT 13|5|PUNCT
+*PAR:	and the lady's drying a plate . 21370_24795
+%mor:	coord|and det:art|the n|lady~aux|be&3S part|dry-PRESP det:art|a
+	n|plate .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and the (.) water is running in the sink and overflowing on the
+	floor and getting her feet wet . 24795_34007
+%mor:	coord|and det:art|the n|water aux|be&3S part|run-PRESP prep|in
+	det:art|the n|sink coord|and over#n:gerund|flow-PRESP prep|on
+	det:art|the n|floor coord|and part|get-PRESP det:poss|her n|foot&PL
+	adj|wet .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|10|JCT 12|13|DET 13|11|POBJ 14|5|CONJ 15|14|COORD
+	16|17|DET 17|15|OBJ 18|17|POSTMOD 19|5|PUNCT
+*PAR:	and the window is open . 34007_37742
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and (.) I don't know that there's anything special going on outside
+	the window . [+ exc] 37742_47521
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know adv|that
+	pro:exist|there~cop|be&3S pro:indef|anything adj|special
+	part|go-PRESP adv|on adj|outside det:art|the n|window .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|JCT 7|8|SUBJ 8|5|COMP
+	9|8|PRED 10|11|MOD 11|9|CMOD 12|11|JCT 13|15|MOD 14|15|DET 15|11|OBJ
+	16|5|PUNCT
+*PAR:	seems to me <that> [/] &uh that's essentially the things that are
+	going on in this picture . [+ exc] 47936_54613
+%mor:	cop|seem-3S inf|to pro:obj|me pro:rel|that~cop|be&3S
+	adv|essential&dadj-LY det:art|the n|thing-PL pro:rel|that
+	aux|be&PRES part|go-PRESP adv|on prep|in det:dem|this n|picture .
+%gra:	1|0|ROOT 2|3|INF 3|1|PRED 4|5|LINK 5|3|CMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|11|LINK 10|11|AUX 11|8|CMOD 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|1|PUNCT
+*PAR:	the girl is picking her nose . 54613_58830
+%mor:	det:art|the n|girl aux|be&3S part|pick-PRESP det:poss|her n|nose .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*INV:	&=laughs . 58830_61868
+*PAR:	the boy is handing her a cookie . 61868_64698
+%mor:	det:art|the n|boy aux|be&3S part|hand-PRESP pro:obj|her det:art|a
+	n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ2 6|7|DET 7|4|OBJ 8|4|PUNCT
+*PAR:	(.) &uh really those are the only activities I see . [+ exc] 64510_74923
+%mor:	adv|real&dadj-LY pro:dem|those cop|be&PRES det:art|the qn|only
+	n|activity-PL pro:sub|I v|see .
+%gra:	1|2|JCT 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|QUANT 6|3|PRED 7|8|SUBJ 8|6|CMOD
+	9|3|PUNCT
+*INV:	okay . 74923_76182
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,91 @@
+@UTF8
+@PID:	11312/t-00002624-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|89;|female|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	342-1, audio
+*PAR:	read it to you ? [+ exc] 0_1000
+%mor:	v|read&ZERO pro:per|it prep|to pro:per|you ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|JCT 4|3|POBJ 5|1|PUNCT
+*INV:	+< mhm . 200_1106
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well, the action . [+ gram] [+ exc] 1106_4282
+%mor:	co|well cm|cm det:art|the n|action .
+%gra:	1|4|COM 2|1|LP 3|4|DET 4|0|INCROOT 5|4|PUNCT
+*PAR:	well &th &th the little boy has his hand in the cookie jar . 4282_7550
+%mor:	co|well det:art|the adj|little n|boy aux|have&3S det:poss|his
+	n|hand prep|in det:art|the n|cookie n|jar .
+%gra:	1|7|COM 2|4|DET 3|4|MOD 4|7|SUBJ 5|7|AUX 6|7|DET 7|0|ROOT 8|7|NJCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|7|PUNCT
+*PAR:	and the little girl is begging for some of the cookies . 7550_11400
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|beg-PRESP
+	prep|for qn|some prep|of det:art|the n|cookie-PL .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|7|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|6|PUNCT
+*PAR:	and he's teetering on the &uh stool where he climbed up . 11400_15600
+%mor:	coord|and pro:sub|he~aux|be&3S part|teeter-PRESP prep|on
+	det:art|the n|stool pro:rel|where pro:sub|he v|climb-PAST adv|up .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|JCT 12|4|PUNCT
+*PAR:	and mama is washing dishes, &wi wiping (th)em . 15600_19700
+%mor:	coord|and n|mama aux|be&3S part|wash-PRESP n|dish-PL cm|cm
+	part|wipe-PRESP pro:obj|them .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|LP 7|4|XJCT 8|7|OBJ
+	9|4|PUNCT
+*PAR:	and she is &uh not watching what she is doing . 19700_23900
+%mor:	coord|and pro:sub|she aux|be&3S neg|not part|watch-PRESP
+	pro:int|what pro:sub|she aux|be&3S part|do-PRESP .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|COMP 10|5|PUNCT
+*PAR:	and the water is overflowed on the floor . 23900_26629
+%mor:	coord|and det:art|the n|water aux|be&3S over#part|flow-PASTP
+	prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	because she's watching out the window at the &uh +... 26629_29200
+%mor:	conj|because pro:sub|she~aux|be&3S part|watch-PRESP prep|out
+	det:art|the n|window prep|at det:art|the +...
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	am I going too fast ? [+ exc] 29200_30300
+%mor:	aux|be&1S pro:sub|I n:gerund|go-PRESP post|too adv|fast ?
+%gra:	1|0|INCROOT 2|1|PRED 3|2|OBJ 4|3|PQ 5|3|JCT 6|1|PUNCT
+*INV:	that's okay . 30300_31424
+%mor:	pro:dem|that~cop|be&3S adj|okay .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	looking at the beautiful lawn . [+ gram] 31424_33681
+%mor:	part|look-PRESP prep|at det:art|the adj|beautiful n|lawn .
+%gra:	1|0|INCROOT 2|1|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|1|PUNCT
+*PAR:	where there's a garage and some bushes and of_course grass and
+	trees . [+ gram] 33681_42537
+%mor:	pro:int|where pro:exist|there~cop|be&3S det:art|a n|garage
+	coord|and qn|some n|bush-PL coord|and co|of_course n|grass coord|and
+	n|tree-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|CONJ 7|8|QUANT
+	8|6|COORD 9|5|CONJ 10|11|COM 11|9|COORD 12|11|CONJ 13|12|COORD 14|3|PUNCT
+*PAR:	and she's so &i immersed in that she has &a &l allowed the water to
+	overflow on the floor . 42537_52152
+%mor:	coord|and pro:sub|she~aux|be&3S adv|so part|immerse-PASTP prep|in
+	pro:rel|that pro:sub|she aux|have&3S part|allow-PASTP det:art|the
+	n|water prep|to over#v|flow prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|6|POBJ 11|12|DET 12|10|OBJ 13|10|JCT 14|13|POBJ 15|10|JCT
+	16|17|DET 17|15|POBJ 18|5|PUNCT
+*PAR:	and she still has a couple of cups and a plate to wash . 52152_58926
+%mor:	coord|and pro:sub|she adv|still v|have&3S det:art|a n|couple
+	prep|of n|cup-PL coord|and det:art|a n|plate prep|to n|wash .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|6|DET 6|4|OBJ 7|6|NJCT 8|7|POBJ
+	9|6|CONJ 10|11|DET 11|9|COORD 12|11|NJCT 13|12|POBJ 14|4|PUNCT
+*PAR:	&=laughs oh dear . [+ exc] 58926_61042
+%mor:	co|oh co|dear .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	+< okay good . 59000_60093
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	okay . 60823_61339
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

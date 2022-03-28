@@ -1,0 +1,95 @@
+@UTF8
+@PID:	11312/t-00002363-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	245-1, audio
+*PAR:	okay . [+ exc] 0_2129
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the boy is standing on a stool . 2129_4240
+%mor:	det:art|the n|boy aux|be&3S part|stand-PRESP prep|on det:art|a
+	n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	it is tilting over . 4240_5730
+%mor:	pro:per|it aux|be&3S part|tilt-PRESP adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	he's &r reaching for &k cookies in the cookie jar . 5730_10933
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|for n|cookie-PL prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|5|NJCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	and his sister is standing <beside him> [//] side him reaching up
+	for some of the cookies . [+ gram] 10933_16732
+%mor:	coord|and det:poss|his n|sister aux|be&3S part|stand-PRESP adj|side
+	pro:obj|him part|reach-PRESP adv|up prep|for qn|some prep|of
+	det:art|the n|cookie-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PRED 7|8|SUBJ 8|6|COMP
+	9|8|JCT 10|8|JCT 11|10|POBJ 12|11|NJCT 13|14|DET 14|12|POBJ 15|5|PUNCT
+*PAR:	and &uh the mother is standing &uh right near them &uh washing
+	dishes in the sink . 16732_31050
+%mor:	coord|and det:art|the n|mother aux|be&3S part|stand-PRESP adv|right
+	prep|near pro:obj|them part|wash-PRESP n|dish-PL prep|in det:art|the
+	n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|JCT 7|5|JCT 8|7|POBJ
+	9|5|XJCT 10|9|OBJ 11|9|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	and the water is running into the sink and the sink is flooding
+	over &uh with water . 31050_39179
+%mor:	coord|and det:art|the n|water aux|be&3S part|run-PRESP prep|into
+	det:art|the n|sink coord|and det:art|the n|sink aux|be&3S
+	part|flood-PRESP adv|over prep|with n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|5|CJCT 14|13|JCT 15|13|JCT
+	16|15|POBJ 17|5|PUNCT
+*PAR:	and &uh +... 39179_43044
+%mor:	coord|and +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	you want scenery description or anything like that ? [+ exc] 43044_45823
+%mor:	pro:per|you v|want n|scenery n|description coord|or
+	pro:indef|anything prep|like pro:dem|that ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|MOD 4|2|OBJ 5|4|CONJ 6|5|COORD 7|6|NJCT 8|7|POBJ
+	9|2|PUNCT
+*INV:	+< whatever you see going on, mhm . 45423_47569
+%mor:	pro:int|whatever pro:per|you v|see n:gerund|go-PRESP adv|on cm|cm
+	co|mhm=yes .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|LP 7|3|COM 8|3|PUNCT
+*PAR:	okay yeah . [+ exc] 47569_48333
+%mor:	co|okay co|yeah .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	outside the window where the mother is there's [/] &uh there's a
+	walkway &li it looks like it's going out to a garage . 48333_57510
+%mor:	prep|outside det:art|the n|window pro:rel|where det:art|the
+	n|mother cop|be&3S pro:exist|there~cop|be&3S det:art|a
+	n|+n|walk+n|way pro:per|it v|look-3S conj|like pro:per|it~aux|be&3S
+	part|go-PRESP adv|out prep|to det:art|a n|garage .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|7|LINK 5|6|DET 6|7|SUBJ 7|3|CMOD
+	8|9|SUBJ 9|7|PRED 10|11|DET 11|9|PRED 12|13|SUBJ 13|11|CMOD 14|17|LINK
+	15|17|SUBJ 16|17|AUX 17|13|COMP 18|17|JCT 19|17|JCT 20|21|DET 21|19|POBJ
+	22|1|PUNCT
+*PAR:	and also one is &uh on his kitchen sink area there's a [//] like a
+	coffee cup &uh two cups <and a> [/] and a plate . 57510_68592
+%mor:	coord|and adv|also pro:indef|one cop|be&3S prep|on det:poss|his
+	n|kitchen n|sink n|area pro:exist|there~cop|be&3S prep|like
+	det:art|a n|coffee n|cup det:num|two n|cup-PL coord|and det:art|a
+	n|plate .
+%gra:	1|4|LINK 2|3|JCT 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|9|DET 7|9|MOD 8|9|MOD
+	9|5|POBJ 10|11|SUBJ 11|4|CJCT 12|11|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|17|QUANT 17|15|APP 18|15|CONJ 19|20|DET 20|18|COORD 21|4|PUNCT
+*PAR:	and +... 68592_75063
+%mor:	coord|and +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay xxx . 75063_77500
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	hey okay . [+ exc] 77500_77666
+%mor:	co|hey co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	and I did say the &sk stool is &uh tilting &uh +//. 77666_81512
+%mor:	coord|and pro:sub|I mod|do&PAST v|say det:art|the n|stool aux|be&3S
+	part|tilt-PRESP +//.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|4|PUNCT
+%com:	tape cuts off
+@End

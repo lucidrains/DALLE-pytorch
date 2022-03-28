@@ -1,0 +1,80 @@
+@UTF8
+@PID:	11312/t-00002488-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|ProbableAD||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	076-4, audio
+*INV:	a picture . 0_500
+%mor:	det:art|a n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	okay . [+ exc] 500_1713
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well the little boy was looking at that cookie jar and he started
+	to tip over . 1713_9543
+%mor:	co|well det:art|the adj|little n|boy aux|be&PAST&13S
+	part|look-PRESP prep|at det:dem|that n|cookie n|jar coord|and
+	pro:sub|he v|start-PAST inf|to v|tip adv|over .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|13|LINK 12|13|SUBJ 13|6|CJCT 14|15|INF 15|13|COMP
+	16|15|JCT 17|6|PUNCT
+*PAR:	she was &uh talking with him and [/] and wanting him to give her
+	some cookies I guess . 9543_15269
+%mor:	pro:sub|she aux|be&PAST&13S part|talk-PRESP prep|with pro:obj|him
+	coord|and part|want-PRESP pro:obj|him inf|to v|give pro:obj|her
+	qn|some n|cookie-PL pro:sub|I v|guess .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|CONJ 7|6|COORD 8|7|OBJ
+	9|10|INF 10|7|COMP 11|10|OBJ2 12|13|QUANT 13|10|OBJ 14|15|SUBJ 15|3|CJCT
+	16|3|PUNCT
+*PAR:	and <he turned> [//] it's turning [/] turning it over . [+ cir] 15269_19127
+%mor:	coord|and pro:per|it~aux|be&3S part|turn-PRESP pro:per|it adv|over
+	.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*PAR:	I don't know whether he got hurt or not &=laughs . 19127_23488
+%mor:	pro:sub|I mod|do~neg|not v|know comp|whether pro:sub|he
+	aux|get&PAST v|hurt&ZERO coord|or neg|not .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|8|CONJ 10|9|COORD 11|4|PUNCT
+*PAR:	probably did &=laughs . [+ gram] 23488_25339
+%mor:	adv|probable&dadj-LY v|do&PAST .
+%gra:	1|2|JCT 2|0|ROOT 3|2|PUNCT
+*PAR:	(be)cause his mom is right <beside him> [//] behind him and maybe
+	she could have caught him . 25339_29556
+%mor:	conj|because det:poss|his n|mom cop|be&3S adv|right prep|behind
+	pro:obj|him coord|and adv|maybe pro:sub|she mod|could aux|have
+	part|catch&PASTP pro:obj|him .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|JCT 6|4|JCT 7|6|POBJ 8|13|LINK
+	9|13|JCT 10|13|SUBJ 11|13|AUX 12|13|AUX 13|4|CJCT 14|13|OBJ 15|4|PUNCT
+*PAR:	and the mother is washing the dishes but she let the water go so
+	fast &=laughs and so full that <it's halfway down the> [//] &=laughs
+	it's all the way down . 29556_47173
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP
+	det:art|the n|dish-PL conj|but pro:sub|she v|let&ZERO det:art|the
+	n|water v|go adv|so adj|fast coord|and adv|so adj|full adv|that
+	pro:per|it~cop|be&3S adv|all det:art|the n|way adv|down .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|13|CJCT 11|12|DET 12|13|SUBJ 13|5|CJCT 14|15|JCT 15|13|JCT
+	16|15|CONJ 17|18|JCT 18|16|COORD 19|21|JCT 20|21|SUBJ 21|18|CMOD 22|24|JCT
+	23|24|DET 24|21|PRED 25|24|NJCT 26|5|PUNCT
+*PAR:	and she'll hafta clean it all up . 47173_48962
+%mor:	coord|and pro:sub|she~mod|will mod|have~inf|to v|clean pro:per|it
+	adv|all adv|up .
+%gra:	1|6|LINK 2|6|SUBJ 3|6|AUX 4|6|AUX 5|6|INF 6|0|ROOT 7|6|OBJ 8|9|JCT
+	9|6|JCT 10|6|PUNCT
+*PAR:	she'll hafta get the little kids out so she can &=laughs . 48962_52978
+%mor:	pro:sub|she~mod|will mod|have~inf|to v|get det:art|the adj|little
+	n|kid-PL adv|out conj|so pro:sub|she mod|can .
+%gra:	1|5|SUBJ 2|5|AUX 3|5|AUX 4|5|INF 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|5|JCT 10|12|LINK 11|12|SUBJ 12|5|CJCT 13|5|PUNCT
+*INV:	okay . 52978_54008
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh yeah . [+ exc] 54008_56061
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 56061_57273
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

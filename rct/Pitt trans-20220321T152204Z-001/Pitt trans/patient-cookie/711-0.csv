@@ -1,0 +1,104 @@
+@UTF8
+@PID:	11312/t-00002732-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|77;|male|PossibleAD||Participant|25||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	711-0, audio
+*INV:	I want you to take a look at this picture here and tell me
+	everything that you see happening in that picture . 0_6230
+%mor:	pro:sub|I v|want pro:per|you inf|to v|take det:art|a v|look prep|at
+	det:dem|this n|picture adv|here coord|and v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|5|INF 5|2|COMP 6|7|DET 7|5|OBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|JCT 12|7|CONJ 13|12|COORD 14|13|OBJ2 15|13|OBJ
+	16|17|LINK 17|15|CMOD 18|19|COM 19|17|COMP 20|19|JCT 21|22|DET 22|19|JCT
+	23|2|PUNCT
+*PAR:	oh you want me to tell you . [+ exc] 6230_7611
+%mor:	co|oh pro:per|you v|want pro:obj|me inf|to v|tell pro:per|you .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|3|PUNCT
+*INV:	+< yeah just tell me everything that you see going on in that
+	picture . 6911_10666
+%mor:	co|yeah adv|just v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:dem|that n|picture .
+%gra:	1|3|COM 2|3|JCT 3|0|ROOT 4|3|OBJ2 5|3|OBJ 6|8|LINK 7|8|SUBJ 8|5|CMOD
+	9|8|OBJ 10|8|JCT 11|8|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	the mother and her two children . [+ gram] 10666_12738
+%mor:	det:art|the n|mother coord|and det:poss|her det:num|two n|child&PL
+	.
+%gra:	1|2|DET 2|0|INCROOT 3|2|CONJ 4|6|DET 5|6|QUANT 6|3|COORD 7|2|PUNCT
+*PAR:	and the children are getting in the cookie jar . 12738_15777
+%mor:	coord|and det:art|the n|child&PL aux|be&PRES part|get-PRESP prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|5|PUNCT
+*PAR:	and she's doing the dishes and spilling the water . 15777_18337
+%mor:	coord|and pro:sub|she~aux|be&3S part|do-PRESP det:art|the n|dish-PL
+	coord|and part|spill-PRESP det:art|the n|water .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|CONJ 8|7|COORD
+	9|10|DET 10|8|OBJ 11|4|PUNCT
+*PAR:	and she had the spigot on and she didn't know it perhaps . 18337_21278
+%mor:	coord|and pro:sub|she v|have&PAST det:art|the n|spigot adv|on
+	coord|and pro:sub|she mod|do&PAST~neg|not v|know pro:per|it
+	adv|perhaps .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|11|LINK 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|3|CJCT 12|11|OBJ 13|11|JCT 14|3|PUNCT
+*PAR:	&=coughs pardon me . [+ exc] 21278_24022
+%mor:	v|pardon pro:obj|me .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	and they're looking out into the garden from the kitchen window . 24022_28700
+%mor:	coord|and pro:sub|they~aux|be&PRES part|look-PRESP adv|out
+	prep|into det:art|the n|garden prep|from det:art|the n|kitchen
+	n|window .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|4|PUNCT
+*PAR:	it's open . 28700_29407
+%mor:	pro:per|it~cop|be&3S adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	and the &uh cookies must be pretty good they're eating . 29407_34179
+%mor:	coord|and det:art|the n|cookie-PL mod|must cop|be adv|pretty
+	adj|good pro:sub|they~aux|be&PRES part|eat-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PRED 8|10|SUBJ
+	9|10|AUX 10|7|CMOD 11|5|PUNCT
+*PAR:	<the tair [: chair] [* p:w-ret]> [//] &uh the chair [: stool]
+	[* s:r] is &t &uh tilting and he's gonna fall off . 34179_38652
+%mor:	det:art|the n|stool aux|be&3S part|tilt-PRESP coord|and
+	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall adv|off .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|CJCT
+	9|10|INF 10|8|COMP 11|10|JCT 12|4|PUNCT
+*PAR:	and &uh <the lady> [//] the mother's splashing her shoes and
+	stockings all up overflowing the water . 38652_46598
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|splash-PRESP
+	det:poss|her n|shoe-PL coord|and n:gerund|stock-PRESP-PL qn|all
+	adv|up over#n:gerund|flow-PRESP det:art|the n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|CONJ
+	9|8|COORD 10|11|QUANT 11|9|JCT 12|9|JCT 13|14|DET 14|12|POBJ 15|5|PUNCT
+*PAR:	and there's &um &uh a window and curtains on the window . 46598_53855
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|window coord|and
+	n|curtain-PL prep|on det:art|the n|window .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|CONJ 7|6|COORD 8|5|NJCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and I can see some trees outside there . 53855_56155
+%mor:	coord|and pro:sub|I mod|can v|see qn|some n|tree-PL prep|outside
+	n|there .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	and [/] and there's dishes that &h had been washed and she's
+	dryin(g) them . 56155_61600
+%mor:	coord|and pro:exist|there~cop|be&3S n|dish-PL pro:rel|that
+	aux|have&PAST aux|be&PASTP part|wash-PASTP coord|and
+	pro:sub|she~aux|be&3S part|dry-PRESP pro:obj|them .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|8|LINK 6|8|AUX 7|8|AUX 8|4|CMOD
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|CJCT 13|12|OBJ 14|3|PUNCT
+*PAR:	and there's some shrub out there and +... 61600_64718
+%mor:	coord|and pro:exist|there~cop|be&3S qn|some n|shrub prep|out
+	n|there coord|and +...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|5|NJCT 7|6|POBJ
+	8|3|CONJ 9|3|PUNCT
+*INV:	okay very good . 64718_67311
+%mor:	co|okay adv|very adj|good .
+%gra:	1|3|COM 2|3|JCT 3|0|INCROOT 4|3|PUNCT
+@End

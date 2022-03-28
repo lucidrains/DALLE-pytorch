@@ -1,0 +1,93 @@
+@UTF8
+@PID:	11312/t-00002471-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|male|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	058-1, audio
+*INV:	here's the picture . 0_1729
+%mor:	pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	all of the action . 1729_3766
+%mor:	pro:indef|all prep|of det:art|the n|action .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	okay I'll start . [+ exc] 3766_7099
+%mor:	co|okay pro:sub|I~mod|will v|start .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the mother is drying dishes . 7099_8966
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	and the sink is over flowing . 8966_13621
+%mor:	coord|and det:art|the n|sink aux|be&3S adv|over part|flow-PRESP .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|PUNCT
+*PAR:	the water is falling onto the floor . 13621_16299
+%mor:	det:art|the n|water aux|be&3S part|fall-PRESP prep|onto det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	&uh the boy is on his stool &uh taking cookies out_of a cookie jar
+	. 16299_26458
+%mor:	det:art|the n|boy cop|be&3S prep|on det:poss|his n|stool
+	part|take-PRESP n|cookie-PL prep|out_of det:art|a n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|XJCT 8|7|OBJ
+	9|7|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|3|PUNCT
+*PAR:	and he has <one cookie> [//] two cookies one in each hand . 26458_31750
+%mor:	coord|and pro:sub|he v|have&3S det:num|two n|cookie-PL det:num|one
+	prep|in qn|each n|hand .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|5|POSTMOD 7|6|JCT
+	8|9|QUANT 9|7|POBJ 10|3|PUNCT
+*PAR:	the &uh girl is standing, reaching up for a cookie with her &uh
+	finger over her mouth telling him to be quiet . 31750_44730
+%mor:	det:art|the n|girl aux|be&3S part|stand-PRESP cm|cm
+	part|reach-PRESP adv|up prep|for det:art|a n|cookie prep|with
+	det:poss|her n|finger adv|over det:poss|her n|mouth part|tell-PRESP
+	pro:obj|him inf|to cop|be adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|LP 6|4|XJCT 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|6|JCT 12|13|DET 13|11|POBJ 14|6|JCT 15|16|DET
+	16|14|POBJ 17|16|XMOD 18|17|OBJ 19|20|INF 20|17|COMP 21|20|PRED 22|4|PUNCT
+*PAR:	the stool is on one leg . 44730_47577
+%mor:	det:art|the n|stool cop|be&3S prep|on det:num|one n|leg .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|QUANT 6|4|POBJ 7|3|PUNCT
+*PAR:	&uh there's drapes on the window . 47577_52435
+%mor:	pro:exist|there~cop|be&3S v|drape-3S prep|on det:art|the n|window .
+%gra:	1|2|SUBJ 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	there's a path &uh between the grass and the bushes . 52435_58999
+%mor:	pro:exist|there~cop|be&3S det:art|a n|path prep|between det:art|the
+	n|grass coord|and det:art|the n|bush-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|10|DET 10|8|COORD 11|2|PUNCT
+*PAR:	and this little picture is a part of the xxx house and part of the
+	tree in the upper window . 58999_68915
+%mor:	coord|and det:dem|this adj|little n|picture cop|be&3S det:art|a
+	n|part prep|of det:art|the n|house coord|and n|part prep|of
+	det:art|the n|tree prep|in det:art|the adj|upper n|window .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|7|DET 7|5|PRED 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|7|CONJ 12|11|COORD 13|12|NJCT 14|15|DET 15|13|POBJ
+	16|15|NJCT 17|19|DET 18|19|MOD 19|16|POBJ 20|5|PUNCT
+*PAR:	there are &uh &uh doors on the &uh cabinets in the sink . 68915_78100
+%mor:	pro:exist|there cop|be&PRES n|door-PL prep|on det:art|the
+	n|cabinet-PL prep|in det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	and &uh it's daylight . 78100_85586
+%mor:	coord|and pro:per|it~cop|be&3S n|daylight .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	&um there's two cups and a dish <on it> [//] on the sink . 85586_95701
+%mor:	pro:exist|there~cop|be&3S det:num|two n|cup-PL coord|and det:art|a
+	n|dish prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD
+	8|7|NJCT 9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	&=hums (..) should I describe the two faucets ? [+ exc] 95701_104945
+%mor:	mod|should pro:sub|I v|describe det:art|the det:num|two n|faucet-PL
+	?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|QUANT 6|3|OBJ 7|3|PUNCT
+*INV:	that's okay . 104945_106158
+%mor:	pro:dem|that~cop|be&3S adj|okay .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	that's fine . 106158_106892
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 106892_108121
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

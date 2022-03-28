@@ -1,0 +1,54 @@
+@UTF8
+@PID:	11312/t-00002440-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|51;|male|Memory||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	024-1, audio
+*PAR:	I see a little boy climbed up on a stool that is reaching for a
+	cookie out_of the cookie jar . 0_6817
+%mor:	pro:sub|I v|see det:art|a adj|little n|boy part|climb-PASTP adv|up
+	prep|on det:art|a n|stool pro:rel|that aux|be&3S part|reach-PRESP
+	prep|for det:art|a n|cookie prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|5|XMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|13|LINK 12|13|AUX 13|10|CMOD 14|13|JCT 15|16|DET
+	16|14|POBJ 17|16|NJCT 18|20|DET 19|20|MOD 20|17|POBJ 21|2|PUNCT
+*PAR:	&uh the stool is about to fall . 6817_11441
+%mor:	det:art|the n|stool cop|be&3S adv|about inf|to v|fall .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|3|PUNCT
+*PAR:	his sister is telling him to be very quiet . 11441_15176
+%mor:	det:poss|his n|sister aux|be&3S part|tell-PRESP pro:obj|him inf|to
+	cop|be adv|very adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|9|JCT
+	9|7|PRED 10|4|PUNCT
+*PAR:	(..) and also at the same time she is reaching for the cookie that
+	he has in his hand . 15176_24452
+%mor:	coord|and adv|also prep|at det:art|the adj|same n|time pro:sub|she
+	aux|be&3S part|reach-PRESP prep|for det:art|the n|cookie
+	pro:rel|that pro:sub|he aux|have&3S prep|in det:poss|his n|hand .
+%gra:	1|9|LINK 2|9|JCT 3|9|JCT 4|6|DET 5|6|MOD 6|3|POBJ 7|9|SUBJ 8|9|AUX
+	9|0|ROOT 10|9|JCT 11|12|DET 12|10|POBJ 13|15|LINK 14|15|SUBJ 15|12|CMOD
+	16|15|JCT 17|18|DET 18|16|POBJ 19|9|PUNCT
+*PAR:	&uh &=clears:throat (.) the &uh mother is apparently washing or
+	drying the dishes . 24452_37217
+%mor:	det:art|the n|mother aux|be&3S adv|apparent&dadj-LY part|wash-PRESP
+	coord|or part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|CONJ 7|6|COORD 8|9|DET
+	9|7|OBJ 10|5|PUNCT
+*PAR:	and &uh she has neglected to &uh shut the water off and the sink is
+	&over overflowing . 37217_46666
+%mor:	coord|and pro:sub|she aux|have&3S part|neglect-PASTP inf|to
+	v|shut&ZERO det:art|the n|water adv|off coord|and det:art|the n|sink
+	aux|be&3S over#part|flow-PRESP .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|DET 8|6|OBJ
+	9|6|JCT 10|14|LINK 11|12|DET 12|14|SUBJ 13|14|AUX 14|6|CJCT 15|4|PUNCT
+*PAR:	(.) &uh (...) I think that's all I see going on . [+ exc] 46666_65168
+%mor:	pro:sub|I v|think pro:dem|that~cop|be&3S pro:indef|all pro:sub|I
+	v|see n:gerund|go-PRESP adv|on .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|7|SUBJ 7|5|CMOD 8|7|OBJ
+	9|7|JCT 10|2|PUNCT
+*INV:	okay . 65168_66336
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

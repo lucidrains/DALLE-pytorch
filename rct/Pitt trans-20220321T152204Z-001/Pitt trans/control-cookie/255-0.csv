@@ -1,0 +1,62 @@
+@UTF8
+@PID:	11312/t-00002368-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|50;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	255-0, audio
+*PAR:	you mean just detail everything I see ? [+ exc] 0_2444
+%mor:	pro:per|you v|mean adj|just n|detail pro:indef|everything pro:sub|I
+	v|see ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|MOD 4|2|OBJ 5|2|JCT 6|7|SUBJ 7|5|CMOD 8|2|PUNCT
+*INV:	just everything that you see happening there . 2444_4608
+%mor:	adv|just pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|there .
+%gra:	1|2|JCT 2|0|INCROOT 3|5|LINK 4|5|SUBJ 5|2|CMOD 6|5|OBJ 7|5|JCT
+	8|2|PUNCT
+*PAR:	well I see &uh a little boy standing on a stool . 4608_8390
+%mor:	co|well pro:sub|I v|see det:art|a adj|little n|boy part|stand-PRESP
+	prep|on det:art|a n|stool .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|6|XMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and the stool fallin(g) over . 8390_9550
+%mor:	coord|and det:art|the n|stool part|fall-PRESP adv|over .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|4|JCT 6|3|PUNCT
+*PAR:	he's up in the cupboard grabbin(g) cookies and a little girl
+	standing down there waiting to get some cookies off of him . 9550_17847
+%mor:	pro:sub|he~aux|be&3S adv|up prep|in det:art|the n|cupboard
+	part|grab-PRESP n|cookie-PL coord|and det:art|a adj|little n|girl
+	part|stand-PRESP prep|down n|there part|wait-PRESP inf|to v|get
+	qn|some n|cookie-PL adv|off prep|of pro:obj|him .
+%gra:	1|7|SUBJ 2|7|AUX 3|7|JCT 4|7|JCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|7|OBJ
+	9|8|CONJ 10|12|DET 11|12|MOD 12|9|COORD 13|12|XMOD 14|13|JCT 15|14|POBJ
+	16|12|XMOD 17|18|INF 18|16|COMP 19|20|QUANT 20|18|OBJ 21|18|JCT 22|21|JCT
+	23|22|POBJ 24|7|PUNCT
+*PAR:	I guess their mother's standing there doing dishes at the sink and
+	the water's overflowing and running onto the floor . 17847_26438
+%mor:	pro:sub|I v|guess det:poss|their n|mother~aux|be&3S
+	part|stand-PRESP adv|there part|do-PRESP n|dish-PL prep|at
+	det:art|the n|sink coord|and det:art|the adj|water&dn-POSS
+	over#n:gerund|flow-PRESP coord|and part|run-PRESP prep|onto
+	det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|COMP 7|6|JCT 8|6|XJCT
+	9|8|OBJ 10|8|JCT 11|12|DET 12|10|POBJ 13|8|CONJ 14|15|DET 15|13|COORD
+	16|15|XMOD 17|16|CONJ 18|17|COORD 19|18|JCT 20|21|DET 21|19|POBJ 22|2|PUNCT
+*PAR:	she's wiping a dish off . 26180_29312
+%mor:	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|a n|dish adv|off .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	just staring out the window I guess . [+ gram] 29312_31939
+%mor:	adv|just part|stare-PRESP prep|out det:art|the n|window pro:sub|I
+	v|guess .
+%gra:	1|2|JCT 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|7|SUBJ 7|2|CJCT 8|2|PUNCT
+*PAR:	this is what I see . [+ exc] 31939_35675
+%mor:	pro:dem|this cop|be&3S pro:int|what pro:sub|I v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|LINK 4|5|SUBJ 5|2|CPRED 6|2|PUNCT
+*INV:	okay . 35675_39955
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 39955_47348
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

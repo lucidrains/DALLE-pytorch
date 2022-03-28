@@ -1,0 +1,85 @@
+@UTF8
+@PID:	11312/t-00002625-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	343-0, audio
+*INV:	what do you see happening in that picture ? 0_2926
+%mor:	pro:int|what mod|do pro:per|you co|see n:gerund|happen-PRESP adv|in
+	det:dem|that n|picture ?
+%gra:	1|5|LINK 2|5|AUX 3|5|SUBJ 4|5|COM 5|0|ROOT 6|5|JCT 7|8|DET 8|5|JCT
+	9|5|PUNCT
+*PAR:	well a lady's +//. 2926_4755
+%mor:	co|well det:art|a adj|lady&dn-POSS +//.
+%gra:	1|3|COM 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	uhoh . [+ exc] 4755_5400
+%mor:	co|uhoh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the water fell off [/] &=laughs &uh off the sink . 5400_8780
+%mor:	coord|and det:art|the n|water v|fall&PAST prep|off det:art|the
+	n|sink .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the little boy fell off his (.) &uh +... 8780_15629
+%mor:	det:art|the adj|little n|boy v|fall&PAST prep|off pro:poss|his +...
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	the [//] what's that called ? [+ exc] 15629_16299
+%mor:	pro:int|what~aux|be&3S adv|that part|call-PASTP ?
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|PUNCT
+*PAR:	that's a +... 16299_19354
+%mor:	pro:dem|that~cop|be&3S det:art|a +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	he fell off of that thing . [+ es] 19354_20484
+%mor:	pro:sub|he v|fall&PAST adv|off prep|of det:dem|that n|thing .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*INV:	okay . 20484_20800
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	yeah . [+ exc] 20800_21621
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	yeah that's kind_of messed up . [+ exc] 21775_24595
+%mor:	co|yeah pro:dem|that~aux|be&3S adv|kind_of part|mess-PASTP adv|up .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	got his cookie jar but he fell down . [+ gram] 24595_27830
+%mor:	v|get&PAST det:poss|his n|cookie n|jar conj|but pro:sub|he
+	v|fall&PAST adv|down .
+%gra:	1|0|ROOT 2|4|DET 3|4|MOD 4|1|OBJ 5|7|LINK 6|7|SUBJ 7|1|CJCT 8|7|JCT
+	9|1|PUNCT
+*INV:	okay anything else you see happening ? 27830_31562
+%mor:	co|okay pro:indef|anything post|else pro:per|you v|see
+	n:gerund|happen-PRESP ?
+%gra:	1|5|COM 2|5|JCT 3|2|PQ 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	no not much &=laughs . [+ exc] 31562_35111
+%mor:	co|no neg|not adv|much .
+%gra:	1|3|COM 2|1|NEG 3|0|INCROOT 4|3|PUNCT
+*PAR:	hows_come [: how_come] she hadta get that water splattered all over
+	the floor &=laughs ? [+ exc] 35111_40513
+%mor:	pro:int|how_come pro:sub|she mod|have&PAST~inf|to v|get
+	det:dem|that n|water part|splatter-PASTP adv|all prep|over
+	det:art|the n|floor ?
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|INF 5|0|ROOT 6|7|DET 7|5|OBJ 8|7|XMOD
+	9|10|JCT 10|8|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	that's terrible . [+ exc] 40513_42707
+%mor:	pro:dem|that~cop|be&3S adj|terrible .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 42707_44436
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	any other action there ? 44436_46395
+%mor:	qn|any qn|other n|action adv|there ?
+%gra:	1|3|QUANT 2|3|QUANT 3|0|INCROOT 4|3|JCT 5|3|PUNCT
+*PAR:	well this little girl was just &uh lookin(g) <at his [: her]
+	[* s:r-ret]> [//] at her brother . 46395_51269
+%mor:	co|well det:dem|this adj|little n|girl aux|be&PAST&13S adv|just
+	part|look-PRESP prep|at det:poss|her n|brother .
+%gra:	1|7|COM 2|4|DET 3|4|MOD 4|7|SUBJ 5|7|AUX 6|7|JCT 7|0|ROOT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|PUNCT
+*INV:	okay . 51269_54176
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	(...) okay good . 54176_61757
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

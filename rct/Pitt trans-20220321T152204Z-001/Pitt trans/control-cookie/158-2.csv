@@ -1,0 +1,64 @@
+@UTF8
+@PID:	11312/t-00002319-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR|80;|female|Control||Participant|30||
+@Media:	158-2, audio
+*PAR:	washing dishes . [+ gram] 0_3840
+%mor:	part|wash-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	climbing stool . [+ gram] 3840_5403
+%mor:	part|climb-PRESP n|stool .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	falling off the stool . [+ gram] 5403_6693
+%mor:	part|fall-PRESP prep|off det:art|the n|stool .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	getting into the cookie jar . [+ gram] 6693_8208
+%mor:	part|get-PRESP prep|into det:art|the n|cookie n|jar .
+%gra:	1|0|INCROOT 2|1|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|1|PUNCT
+*PAR:	and the little girl &o on a thing . [+ gram] 8208_10552
+%mor:	coord|and det:art|the adj|little n|girl prep|on det:art|a n|thing .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|4|PUNCT
+*PAR:	yeah putting her &uh finger up there . 10552_13180
+%mor:	co|yeah part|put-PRESP det:poss|her n|finger prep|up n|there .
+%gra:	1|2|COM 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|5|POBJ 7|2|PUNCT
+*PAR:	I don't know . [+ exc] 13180_13650
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	she won't tell . 13650_14374
+%mor:	pro:sub|she mod|will~neg|not v|tell .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	I don't know . [+ exc] 14374_15174
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	outside &uh there's &uh grass growing . 15174_19518
+%mor:	adv|outside pro:exist|there~cop|be&3S n|grass part|grow-PRESP .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|XMOD 6|3|PUNCT
+*PAR:	<you will> [//] &uh <dish water's washing or is > [//] &uh the sink
+	is overflowing . 19518_25805
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	and &uh the dishes aren't all together done . 25805_30102
+%mor:	coord|and det:art|the n|dish-PL aux|be&PRES~neg|not post|all
+	adv|together part|do&PASTP .
+%gra:	1|8|LINK 2|3|DET 3|8|SUBJ 4|8|AUX 5|4|NEG 6|8|JCT 7|8|JCT 8|0|ROOT
+	9|8|PUNCT
+*PAR:	the floor is getting wet . 30102_32396
+%mor:	det:art|the n|floor aux|be&3S part|get-PRESP adj|wet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	I can't see +//. [+ exc] 32396_36587
+%mor:	pro:sub|I mod|can~neg|not v|see +//.
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	a cookie jar is open and the &uh cupboard door is open . 36587_41307
+%mor:	det:art|a n|cookie n|jar cop|be&3S adj|open coord|and det:art|the
+	n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|10|LINK 7|9|DET 8|9|MOD
+	9|10|SUBJ 10|4|CJCT 11|10|PRED 12|4|PUNCT
+*PAR:	there's no handle on the &uh cupboard doors down here . 41307_45835
+%mor:	pro:exist|there~cop|be&3S qn|no n|handle prep|on det:art|the
+	n|cupboard n|door-PL prep|down n|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|8|NJCT 10|9|POBJ 11|2|PUNCT
+@End

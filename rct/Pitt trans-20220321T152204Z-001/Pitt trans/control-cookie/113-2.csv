@@ -1,0 +1,90 @@
+@UTF8
+@PID:	11312/t-00002261-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|49;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	113-2, audio
+*INV:	okay and there's the picture . 0_1713
+%mor:	co|okay coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|4|COM 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|4|PUNCT
+*PAR:	okay ? [+ exc] 1713_4767
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	mhm .4767_5182
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	it's a mother washing dishes . 5182_7626
+%mor:	pro:per|it~aux|be&3S det:art|a n|mother part|wash-PRESP n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|XMOD 6|5|OBJ 7|2|PUNCT
+*PAR:	she's left the water on . 7626_8892
+%mor:	pro:sub|she~aux|be&3S part|leave&PASTP det:art|the n|water adv|on .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	the water is running on the floor .8892_10505
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	&um there's a child reaching for cookies .10505_15204
+%mor:	pro:exist|there~cop|be&3S det:art|a n|child part|reach-PRESP
+	prep|for n|cookie-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|XMOD 6|5|JCT 7|6|POBJ 8|2|PUNCT
+*PAR:	he's handing a cookie to it looks like his sister .15204_18477
+%mor:	pro:sub|he~aux|be&3S part|hand-PRESP det:art|a n|cookie prep|to
+	pro:per|it v|look-3S prep|like det:poss|his n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|SUBJ 8|6|POBJ
+	9|8|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	he's on a stool that's falling over .18477_20847
+%mor:	pro:sub|he~cop|be&3S prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|8|LINK 7|8|AUX 8|5|CMOD
+	9|8|JCT 10|2|PUNCT
+*PAR:	the wind's blowing .20847_22703
+%mor:	det:art|the n|wind~aux|be&3S part|blow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the curtains are waving .22703_25388
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|wave-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&uh (.) the mother's looking out the window instead of at the boy
+	.25388_33291
+%mor:	det:art|the n|mother~aux|be&3S part|look-PRESP prep|out det:art|the
+	n|window adv|instead prep|of prep|at det:art|the n|boy .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|8|JCT 10|9|POBJ 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	the girl's hungry and she's pointing to her mouth .33291_36499
+%mor:	det:art|the adj|girl&dn-POSS adj|hungry coord|and
+	pro:sub|she~aux|be&3S part|point-PRESP prep|to det:poss|her n|mouth
+	.
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	she's got her hand upraised .36499_38490
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:poss|her n|hand
+	up#part|raise-PASTP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|POSTMOD 7|3|PUNCT
+*PAR:	the [/] the floor's gonna be soaked with the water . 38540_42731
+%mor:	det:art|the n|floor~aux|be&3S part|go-PRESP~inf|to aux|be
+	part|soak-PASTP prep|with det:art|the n|water .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|INF 6|7|AUX 7|4|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	the mother's gonna have wet shoes .42731_44147
+%mor:	det:art|the n|mother~aux|be&3S part|go-PRESP~inf|to v|have adj|wet
+	n|shoe-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|MOD 8|6|OBJ
+	9|4|PUNCT
+*PAR:	it's running into her shoes .44147_45710
+%mor:	pro:per|it~aux|be&3S part|run-PRESP prep|into det:poss|her
+	n|shoe-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and that's about all I can see . [+ exc] 45710_50903
+%mor:	coord|and pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I
+	mod|can v|see .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|8|JCT 5|8|JCT 6|8|SUBJ 7|8|AUX 8|3|CPRED
+	9|3|PUNCT
+*PAR:	the door's open <for the> [//] to the cupboard .50903_52932
+%mor:	det:art|the adj|door&dn-POSS adj|open prep|to det:art|the
+	n|cupboard .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*INV:	okay good .52932_57399
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

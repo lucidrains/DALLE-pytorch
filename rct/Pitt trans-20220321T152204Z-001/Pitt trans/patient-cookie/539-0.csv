@@ -1,0 +1,140 @@
+@UTF8
+@PID:	11312/t-00002681-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|84;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	539-0, audio
+*INV:	can you tell me what you see going on in the picture ? 0_2466
+%mor:	mod|can pro:per|you v|tell pro:obj|me pro:int|what pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|7|LINK 6|7|SUBJ 7|3|COMP 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	&=clears:throat well the little girl waving at somebody . 2466_8164
+%mor:	co|well det:art|the adj|little n|girl part|wave-PRESP prep|at
+	pro:indef|somebody .
+%gra:	1|4|COM 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|XMOD 6|5|JCT 7|6|POBJ 8|4|PUNCT
+*INV:	okay . 8164_8597
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	no <it &sh &sh she's waving &uh not waving> [//] she's just looking
+	at the [//] somebody painting [* s:uk] . 8597_14754
+%mor:	co|no pro:sub|she~aux|be&3S adv|just part|look-PRESP prep|at
+	pro:indef|somebody part|paint-PRESP .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|XJCT
+	9|5|PUNCT
+*PAR:	and he's on +//. 14754_18807
+%mor:	coord|and pro:sub|he~cop|be&3S adv|on +//.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	oh you want me to tell you all of the xxx ? [+ exc] 18807_20540
+%mor:	co|oh pro:per|you v|want pro:obj|me inf|to v|tell pro:per|you
+	adv|all prep|of det:art|the ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|9|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ
+*INV:	mhm . 20540_20800
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(a)nd he's on &uh &=laughs +... 20800_27365
+%mor:	coord|and pro:sub|he~cop|be&3S adv|on +...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	oh <I know how> [//] I know what it is . [+ exc] 27365_29800
+%mor:	co|oh pro:sub|I v|know pro:int|what pro:per|it cop|be&3S .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|COMP 7|3|PUNCT
+*PAR:	why can't I say it ? [+ exc] 29800_31166
+%mor:	pro:int|why mod|can~neg|not pro:sub|I v|say pro:per|it ?
+%gra:	1|5|JCT 2|5|AUX 3|2|NEG 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	he's on &uh a ladder . 31166_32833
+%mor:	pro:sub|he~cop|be&3S prep|on det:art|a n|ladder .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	and &uh what she sees on there &hm ? 32833_39300
+%mor:	coord|and pro:int|what pro:sub|she v|see-3S prep|on n|there ?
+%gra:	1|4|LINK 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	and she sees <her mother washing> [//] &pro &uh &p &po possibly her
+	mother <washing her table [: dishes] [* s:r-ret] or> [//] drying her
+	dishes . 39259_49496
+%mor:	coord|and pro:sub|she v|see-3S adv|possible&dadj-LY det:poss|her
+	n|mother part|dry-PRESP det:poss|her n|dish-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|6|XMOD 8|9|DET
+	9|7|OBJ 10|3|PUNCT
+*PAR:	and the &uh +... 49496_58100
+%mor:	coord|and det:art|the +...
+%gra:	1|0|INCROOT 2|3|DET 3|1|PUNCT
+*PAR:	&um I don't know . [+ exc] 58100_59650
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*INV:	anything else you see going on in the picture ? 59650_61906
+%mor:	pro:indef|anything post|else pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture ?
+%gra:	1|4|LINK 2|1|PQ 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*INV:	what else do you see going on over here ? 61906_68700
+%mor:	pro:int|what post|else v|do pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|over adv|here ?
+%gra:	1|3|LINK 2|1|PQ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|8|POBJ 10|3|PUNCT
+*PAR:	well the man's <on the> [/] &uh on the ladder [: stool] [* s:r] . 68813_72657
+%mor:	co|well det:art|the n|man~cop|be&3S prep|on det:art|the n|stool .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and there's a cookie jar up there . 72657_74990
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|cookie n|jar
+	prep|up n|there .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|NJCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	and &uh the little girl is looking up at him and <whispering or>
+	[//] holding her &ha finger up as if to say +"/. 74990_81704
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|look-PRESP
+	adv|up prep|at pro:obj|him coord|and part|hold-PRESP det:poss|her
+	n|finger adv|up adv|as comp|if inf|to v|say +"/.
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|8|POBJ 10|18|LINK 11|18|XJCT 12|13|DET 13|11|OBJ 14|11|JCT 15|18|JCT
+	16|18|LINK 17|18|INF 18|6|CJCT 19|6|PUNCT
+*PAR:	+" don't tell them up tear [* s:uk] . 81704_83100
+%mor:	mod|do~neg|not v|tell pro:obj|them adv|up n|tear .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|3|OBJ 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*INV:	okay anything else you see going on over there ? 83500_86005
+%mor:	co|okay pro:indef|anything post|else pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|over adv|there ?
+%gra:	1|5|COM 2|5|JCT 3|2|PQ 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|8|POBJ 10|5|PUNCT
+*INV:	anything else happening here ? 86005_87500
+%mor:	pro:indef|anything post|else part|happen-PRESP adv|here ?
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	well he's up on the &uh ladder [: stool] [* s:r] and <he's going>
+	[//] <he's cutting a piece off the cookie or not a piece> [//] he's
+	taking some of the out_of the cookie jar . [+ gram] 87500_96952
+%mor:	co|well pro:sub|he~cop|be&3S adv|up prep|on det:art|the n|stool
+	coord|and pro:sub|he~cop|be&3S n:gerund|take-PRESP qn|some prep|of
+	det:art|the prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|SUBJ 10|3|CJCT 11|10|PRED 12|13|QUANT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|18|DET 17|18|MOD 18|15|POBJ 19|3|PUNCT
+*INV:	okay what else do you see going on over here ? 96952_99300
+%mor:	co|okay pro:int|what post|else v|do pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|4|COM 2|4|JCT 3|2|PQ 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|9|POBJ 11|4|PUNCT
+*PAR:	and &uh well the woman is drying dishes . 99300_105332
+%mor:	coord|and n|well det:art|the n|woman aux|be&3S part|dry-PRESP
+	n|dish-PL .
+%gra:	1|0|INCROOT 2|1|COORD 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|CMOD 7|6|OBJ
+	8|1|PUNCT
+*PAR:	and &uh <the water is> [/] &uh the water is &w &w &ps well &uh I
+	was gonna say it's spilling or &g falling out or what ? 105332_116062
+%mor:	coord|and det:art|the n|water cop|be&3S adv|well pro:sub|I
+	aux|be&PAST&13S part|go-PRESP~inf|to v|say pro:per|it~aux|be&3S
+	part|spill-PRESP coord|or part|fall-PRESP adv|out coord|or
+	pro:int|what ?
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|8|SUBJ 7|8|AUX 8|4|CPRED
+	9|10|INF 10|8|COMP 11|10|OBJ 12|13|AUX 13|10|COMP 14|13|CONJ 15|14|COORD
+	16|15|JCT 17|15|CONJ 18|17|COORD 19|4|PUNCT
+*PAR:	the water's running . 116062_118045
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*INV:	okay . 118045_119362
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay good . [+ exc] 119362_120966
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

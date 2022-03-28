@@ -1,0 +1,102 @@
+@UTF8
+@PID:	11312/t-00002695-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	591-0, audio
+*INV:	is take a look at that picture . 0_1923
+%mor:	aux|be&3S v|take det:art|a v|look prep|at det:dem|that n|picture .
+%gra:	1|2|AUX 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*INV:	take a look at that picture and tell me everything that you see
+	happening in that picture . 1923_7627
+%mor:	v|take det:art|a v|look prep|at det:dem|that n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	co|see n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ2 10|8|OBJ 11|14|LINK 12|14|SUBJ 13|14|COM 14|10|CMOD 15|14|JCT
+	16|17|DET 17|15|POBJ 18|1|PUNCT
+*PAR:	(.) what do +/? [+ exc] 7627_12250
+%mor:	pro:int|what v|do +/?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	+< tell me everything that's going on in that picture +/. 12073_14700
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|go-PRESP adv|on prep|in det:dem|that n|picture +/.
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	mhm [/] mhm . [+ exc] 14700_16000
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< everything that's happening there . 14701_16600
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP
+	adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	do you want them crossed out or just say it out loud ? [+ exc] 16600_18896
+%mor:	mod|do pro:per|you v|want pro:obj|them v|cross-PAST adv|out
+	coord|or adv|just v|say pro:per|it adv|out adj|loud ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|JCT 7|5|CONJ 8|9|JCT
+	9|7|COORD 10|9|OBJ 11|9|JCT 12|9|JCT 13|3|PUNCT
+*INV:	+< no just say it out loud what you see happening . 18200_21153
+%mor:	qn|no adj|just v|say pro:per|it adv|out adj|loud pro:int|what
+	pro:per|you v|see n:gerund|happen-PRESP .
+%gra:	1|2|QUANT 2|3|JCT 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|9|LINK 8|9|SUBJ
+	9|6|CMOD 10|9|OBJ 11|3|PUNCT
+*PAR:	+< okay &uh the little boy's climbing the &cri cookie jar . 20100_25653
+%mor:	co|okay det:art|the adj|little n|boy~aux|be&3S part|climb-PRESP
+	det:art|the n|cookie n|jar .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|9|DET 8|9|MOD
+	9|6|OBJ 10|6|PUNCT
+*PAR:	&uh <he has> [//] the little boy has [/] has cookies [//] a cookie
+	in his hand that he got by climbing the step ladder which is ready
+	to fall . 25653_42334
+%mor:	det:art|the adj|little n|boy aux|have&3S det:art|a n|cookie prep|in
+	det:poss|his n|hand pro:rel|that pro:sub|he v|get&PAST adv|by
+	part|climb-PRESP det:art|the n|step n|ladder pro:rel|which cop|be&3S
+	adj|ready inf|to v|fall .
+%gra:	1|3|DET 2|3|MOD 3|6|SUBJ 4|6|AUX 5|6|DET 6|0|INCROOT 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|12|LINK 11|12|SUBJ 12|9|CMOD 13|12|JCT 14|12|XJCT 15|17|DET
+	16|17|MOD 17|14|OBJ 18|19|LINK 19|17|CMOD 20|19|PRED 21|22|INF 22|20|XMOD
+	23|6|PUNCT
+*PAR:	the sister is asking for &uh something to eat . 42334_47550
+%mor:	det:art|the n|sister aux|be&3S part|ask-PRESP prep|for
+	pro:indef|something inf|to v|eat .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|8|INF 8|6|XMOD
+	9|4|PUNCT
+*PAR:	she has started little and wants some more . 47550_50506
+%mor:	pro:sub|she aux|have&3S part|start-PASTP adj|little coord|and
+	v|want-3S qn|some pro:indef|more .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|CONJ 6|5|COORD 7|8|QUANT 8|6|OBJ
+	9|3|PUNCT
+*PAR:	&uh let's see now . [+ exc] 50506_54304
+%mor:	v|let~pro:obj|us v|see adv|now .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|JCT 5|1|PUNCT
+*PAR:	<the mother> [/] the mother has &s &s a small mess in the kitchen
+	&=laughs <lucky it's> [/] lucky it's small . 54304_65101
+%mor:	det:art|the n|mother v|have&3S det:art|a adj|small n|mess prep|in
+	det:art|the n|kitchen adj|luck&dn-Y pro:per|it~cop|be&3S adj|small .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|9|DET
+	9|7|POBJ 10|3|JCT 11|12|SUBJ 12|10|CMOD 13|12|PRED 14|3|PUNCT
+*PAR:	&uh the mother is now <washing and &dr no yeah> [//] she's washing
+	and drying the dishes in the kitchen . 65101_72697
+%mor:	det:art|the n|mother cop|be&3S adv|now pro:sub|she~aux|be&3S
+	part|wash-PRESP coord|and part|dry-PRESP det:art|the n|dish-PL
+	prep|in det:art|the n|kitchen .
+%gra:	1|2|DET 2|3|SUBJ 3|7|CJCT 4|3|JCT 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|CONJ
+	9|8|COORD 10|11|DET 11|9|OBJ 12|9|JCT 13|14|DET 14|12|POBJ 15|7|PUNCT
+*PAR:	her water has spilled over terribly bad . 72697_77989
+%mor:	det:poss|her n|water aux|have&3S part|spill-PASTP adv|over
+	adv|terrible&dadj-LY adj|bad .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|JCT 7|4|JCT 8|4|PUNCT
+*PAR:	and looks like sister's back to try for some more cookies . 77989_88231
+%mor:	coord|and v|look-3S conj|like n|sister~cop|be&3S adv|back inf|to
+	v|try prep|for qn|some qn|more n|cookie-PL .
+%gra:	1|2|LINK 2|0|ROOT 3|5|LINK 4|5|SUBJ 5|2|COMP 6|5|JCT 7|8|INF 8|5|XJCT
+	9|8|JCT 10|12|QUANT 11|12|QUANT 12|9|POBJ 13|2|PUNCT
+*INV:	okay good . 88231_90940
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	okay . [+ exc] 90940_91856
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

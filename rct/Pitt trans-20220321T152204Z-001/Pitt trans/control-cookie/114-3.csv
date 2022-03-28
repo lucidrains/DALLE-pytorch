@@ -1,0 +1,47 @@
+@UTF8
+@PID:	11312/t-00002266-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	114-3, audio
+*INV:	you can start now . 0_1463
+%mor:	pro:per|you mod|can v|start adv|now .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	there hasta be action . [+ exc] 1463_3292
+%mor:	adv|there mod|have&3S~inf|to cop|be n|action .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	oh <the stool> [//] the boy is falling off the stool . 3292_6739
+%mor:	co|oh det:art|the n|boy aux|be&3S part|fall-PRESP prep|off
+	det:art|the n|stool .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	&uh the lady is drying dishes . 6739_10866
+%mor:	det:art|the n|lady aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water is running out_of the sink . 10866_15830
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|out_of
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	&uh &hm (...) I don't know what else they would want . [+ exc] 15830_37820
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what post|else pro:sub|they
+	mod|will&COND v|want .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|9|LINK 6|5|PQ 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|4|PUNCT
+*INV:	just tell me when you think that you've told me everything that you
+	see going on in the picture . 37820_42616
+%mor:	adv|just v|tell pro:obj|me pro:int|when pro:per|you v|think
+	adv|that pro:per|you~aux|have part|tell&PASTP pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|6|LINK 5|6|SUBJ 6|2|COMP 7|6|JCT 8|10|SUBJ
+	9|10|AUX 10|6|XJCT 11|10|OBJ 12|10|OBJ 13|15|LINK 14|15|SUBJ 15|12|CMOD
+	16|15|OBJ 17|15|JCT 18|15|JCT 19|20|DET 20|18|POBJ 21|2|PUNCT
+*PAR:	that's about all I can see . [+ exc] 42616_47371
+%mor:	pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I mod|can v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|7|JCT 4|7|JCT 5|7|SUBJ 6|7|AUX 7|2|CPRED 8|2|PUNCT
+*PAR:	those three things . [+ exc] [+ gram] 47371_48684
+%mor:	det:dem|those det:num|three n|thing-PL .
+%gra:	1|3|DET 2|3|QUANT 3|0|INCROOT 4|3|PUNCT
+@End

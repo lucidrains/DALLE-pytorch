@@ -1,0 +1,65 @@
+@UTF8
+@PID:	11312/t-00002224-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	059-2, audio
+*INV:	what action do you see going on in that picture ? 0_4023
+%mor:	pro:int|what n|action v|do pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|that n|picture ?
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	all the action . [+ exc] 4023_5500
+%mor:	qn|all det:art|the n|action .
+%gra:	1|3|QUANT 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	mother is drying dishes and the tap water is overflowing the sink
+	and running on the floor . 5500_11987
+%mor:	n|mother aux|be&3S part|dry-PRESP n|dish-PL coord|and det:art|the
+	n|tap n|water aux|be&3S over#part|flow-PRESP det:art|the n|sink
+	coord|and part|run-PRESP prep|on det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|10|LINK 6|8|DET 7|8|MOD 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|12|DET 12|10|OBJ 13|12|CONJ 14|13|COORD 15|14|JCT
+	16|17|DET 17|15|POBJ 18|3|PUNCT
+*PAR:	and Johnny's trying to get some cookies . 11987_15155
+%mor:	coord|and n:prop|Johnny~aux|be&3S part|try-PRESP inf|to v|get
+	qn|some n|cookie-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|QUANT 8|6|OBJ
+	9|4|PUNCT
+*PAR:	and his step+stool is falling . 15155_17290
+%mor:	coord|and det:poss|his n|+n|step+n|stool aux|be&3S part|fall-PRESP
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	and little girl is reaching her hand up for a cookie and putting
+	her hand to her mouth . 17290_23957
+%mor:	coord|and adj|little n|girl aux|be&3S part|reach-PRESP det:poss|her
+	n|hand adv|up prep|for det:art|a n|cookie coord|and part|put-PRESP
+	det:poss|her n|hand prep|to det:poss|her n|mouth .
+%gra:	1|5|LINK 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|5|JCT 10|11|DET 11|9|POBJ 12|5|CONJ 13|12|COORD 14|15|DET 15|13|OBJ
+	16|13|JCT 17|18|DET 18|16|POBJ 19|5|PUNCT
+*PAR:	oh [/] oh well, that's what's happening . [+ exc] 23957_29743
+%mor:	co|oh n|well cm|cm pro:rel|that~cop|be&3S pro:int|what~aux|be&3S
+	part|happen-PRESP .
+%gra:	1|2|COM 2|0|INCROOT 3|2|LP 4|5|LINK 5|2|CMOD 6|8|LINK 7|8|AUX 8|5|CPRED
+	9|2|PUNCT
+*PAR:	I don't know . [+ exc] 29743_33000
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	<mother's stepping I_mean> [//] the lady's stepping in the water
+	that spilled on the floor . 33000_37993
+%mor:	det:art|the adj|lady&dn-POSS n:gerund|step-PRESP prep|in
+	det:art|the n|water pro:rel|that v|spill-PAST prep|on det:art|the
+	n|floor .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|8|LINK 8|6|CMOD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	that's all I can be sure of . [+ exc] 37993_46054
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I mod|can cop|be
+	adv|sure prep|of .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|8|JCT 8|6|PRED
+	9|2|PUNCT
+*INV:	okay that's fine . 46054_48339
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

@@ -1,0 +1,265 @@
+@UTF8
+@PID:	11312/t-00002282-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	128-3, audio
+*INV:	picture . 0_550
+%mor:	n|picture .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh it's the same picture . [+ exc] 550_1738
+%mor:	co|oh pro:per|it~cop|be&3S det:art|the adj|same n|picture .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|3|PUNCT
+*PAR:	you should give me a different one . [+ exc] 1738_3144
+%mor:	pro:per|you mod|should v|give pro:obj|me det:art|a adj|different
+	pro:indef|one .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ2 5|7|DET 6|7|MOD 7|3|OBJ 8|3|PUNCT
+*INV:	yeah &=laughs we're afraid to . 3144_5080
+%mor:	co|yeah pro:sub|we~cop|be&PRES adj|afraid prep|to .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|JCT 6|3|PUNCT
+*PAR:	why &=laughs ? [+ exc] 5080_6693
+%mor:	pro:rel|why ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	it would be more fun if you had some variety . [+ exc] 6693_9884
+%mor:	pro:per|it mod|will&COND cop|be qn|more n|fun conj|if pro:per|you
+	v|have&PAST qn|some n|variety .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|QUANT 5|3|PRED 6|8|LINK 7|8|SUBJ 8|3|CJCT
+	9|10|QUANT 10|8|OBJ 11|3|PUNCT
+*INV:	that's probably true . 9884_11813
+%mor:	pro:dem|that~cop|be&3S adv|probable&dadj-LY adj|true .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*PAR:	okay . [+ exc] 11813_12444
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	we have here a scene in a kitchen and it looks as though that's a
+	mama who is working at the sink and her two children . 12444_18909
+%mor:	pro:sub|we v|have adv|here det:art|a n|scene prep|in det:art|a
+	n|kitchen coord|and pro:per|it v|look-3S adv|as conj|though
+	pro:dem|that~cop|be&3S det:art|a n|mama pro:rel|who aux|be&3S
+	part|work-PRESP prep|at det:art|the n|sink coord|and det:poss|her
+	det:num|two n|child&PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|11|LINK 10|11|SUBJ 11|2|CJCT 12|11|JCT 13|15|LINK 14|15|SUBJ 15|11|CJCT
+	16|17|DET 17|15|PRED 18|20|LINK 19|20|AUX 20|17|CMOD 21|20|JCT 22|23|DET
+	23|21|POBJ 24|20|CONJ 25|27|DET 26|27|QUANT 27|24|COORD 28|2|PUNCT
+*PAR:	and the two children are hoping that mama will not notice because
+	she's looking out the window that they are getting into the cookie
+	jar . 18909_25333
+%mor:	coord|and det:art|the det:num|two n|child&PL aux|be&PRES
+	part|hope-PRESP det:dem|that n|mama mod|will neg|not n|notice
+	conj|because pro:sub|she~aux|be&3S part|look-PRESP prep|out
+	det:art|the n|window pro:rel|that pro:sub|they aux|be&PRES
+	part|get-PRESP prep|into det:art|the n|cookie n|jar .
+%gra:	1|6|LINK 2|4|DET 3|4|QUANT 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|6|OBJ 12|15|LINK 13|15|SUBJ 14|15|AUX 15|6|CJCT
+	16|15|JCT 17|18|DET 18|16|POBJ 19|22|LINK 20|22|SUBJ 21|22|AUX 22|18|CMOD
+	23|22|JCT 24|26|DET 25|26|MOD 26|23|POBJ 27|6|PUNCT
+*PAR:	so the boy climbs up on a stool to reach the cookie jar . 25333_28900
+%mor:	co|so det:art|the n|boy v|climb-3S adv|up prep|on det:art|a n|stool
+	inf|to v|reach det:art|the n|cookie n|jar .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|10|INF 10|4|XJCT 11|13|DET 12|13|MOD 13|10|OBJ 14|4|PUNCT
+*PAR:	and as he's getting up there the [/] &s <the tool [: stool]
+	[* pw-ret]> [//] the stool is tilting and he looks as though he were
+	about to fall over . 28900_35783
+%mor:	coord|and conj|as pro:sub|he~aux|be&3S part|get-PRESP prep|up
+	n|there det:art|the n|stool aux|be&3S part|tilt-PRESP coord|and
+	pro:sub|he cop|look-3S adv|as adv|though pro:sub|he cop|be&PAST
+	adv|about inf|to v|fall adv|over .
+%gra:	1|11|LINK 2|5|LINK 3|5|SUBJ 4|5|AUX 5|11|CJCT 6|5|JCT 7|6|POBJ 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|0|ROOT 12|14|LINK 13|14|SUBJ 14|11|CJCT 15|16|JCT
+	16|18|JCT 17|18|SUBJ 18|14|COMP 19|18|JCT 20|21|INF 21|19|XMOD
+	22|21|JCT 23|11|PUNCT
+*PAR:	and the little girl is telling him to be quiet by putting her
+	finger on her lips . 35783_40372
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|tell-PRESP
+	pro:obj|him inf|to aux|be adj|quiet adv|by part|put-PRESP
+	det:poss|her n|finger prep|on det:poss|her n|lip-PL .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|12|SUBJ 8|9|INF
+	9|12|AUX 10|9|PRED 11|12|JCT 12|6|COMP 13|14|DET 14|12|OBJ 15|12|JCT
+	16|17|DET 17|15|POBJ 18|6|PUNCT
+*PAR:	he has one cookie in his hand, is reaching for another one . 40372_43733
+%mor:	pro:sub|he v|have&3S det:num|one n|cookie prep|in det:poss|his
+	n|hand cm|cm aux|be&3S part|reach-PRESP prep|for qn|another
+	pro:indef|one .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|OBJ 5|2|JCT 6|7|DET 7|5|POBJ 8|2|LP
+	9|10|AUX 10|2|XJCT 11|10|JCT 12|13|QUANT 13|11|POBJ 14|2|PUNCT
+*PAR:	the lid is off the cookie jar . 43733_45222
+%mor:	det:art|the n|lid cop|be&3S prep|off det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	the cupboard door is open . 45222_46250
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	he's supposedly going to hand one cookie, it looks as though he is,
+	to his sister and grab another one for himself but I doubt he's [//]
+	that he's gonna get all that done before the stool falls over . 46250_55455
+%mor:	pro:sub|he~aux|be&3S adv|suppose&dadj-PASTP-LY part|go-PRESP
+	prep|to n|hand pro:indef|one n|cookie cm|cm pro:per|it v|look-3S
+	adv|as adv|though pro:sub|he cop|be&3S cm|cm prep|to det:poss|his
+	n|sister coord|and v|grab qn|another pro:indef|one prep|for
+	pro:refl|himself conj|but pro:sub|I v|doubt comp|that
+	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|get qn|all pro:dem|that
+	part|do&PASTP prep|before det:art|the n|stool v|fall-3S adv|over .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|11|XJCT 5|4|JCT 6|8|MOD 7|8|MOD 8|5|POBJ
+	9|4|LP 10|11|SUBJ 11|0|ROOT 12|15|JCT 13|15|JCT 14|15|SUBJ 15|11|COMP
+	16|11|LP 17|11|JCT 18|19|DET 19|17|POBJ 20|11|CONJ 21|20|COORD 22|23|QUANT
+	23|21|OBJ 24|23|NJCT 25|24|POBJ 26|28|LINK 27|28|SUBJ 28|11|CJCT
+	29|32|LINK 30|32|SUBJ 31|32|AUX 32|28|COMP 33|34|INF 34|32|COMP 35|36|QUANT
+	36|34|OBJ 37|36|XJCT 38|41|JCT 39|40|DET 40|41|SUBJ 41|37|COMP 42|41|JCT
+	43|11|PUNCT
+*PAR:	<on the other> [//] around the corner of the kitchen &uh &um
+	there's a counter that &uh sort_of turns a corner . 55455_62888
+%mor:	prep|around det:art|the n|corner prep|of det:art|the n|kitchen
+	pro:exist|there~cop|be&3S det:art|a n|counter comp|that adv|sort_of
+	v|turn-3S det:art|a n|corner .
+%gra:	1|8|JCT 2|3|DET 3|1|POBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|8|SUBJ 8|0|ROOT
+	9|10|DET 10|8|PRED 11|13|LINK 12|13|JCT 13|10|CMOD 14|15|DET 15|13|OBJ
+	16|8|PUNCT
+*PAR:	there are cupboards below the counter and above the counter where
+	the cookies are . 62888_67392
+%mor:	pro:exist|there cop|be&PRES n|cupboard-PL prep|below det:art|the
+	n|counter coord|and prep|above det:art|the n|counter pro:rel|where
+	det:art|the n|cookie-PL cop|be&PRES .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|2|CONJ 8|7|COORD
+	9|10|DET 10|8|POBJ 11|14|LINK 12|13|DET 13|14|SUBJ 14|10|CMOD
+	15|2|PUNCT
+*PAR:	then when you get over and have turned a corner in the kitchen you
+	have base cabinets and then you have a window above that which is
+	looking out into something which makes it looks as though it's
+	summer outside (be)cause the window is open . 67392_78690
+%mor:	adv:tem|then conj|when pro:per|you v|get adv|over coord|and
+	aux|have part|turn-PASTP det:art|a n|corner prep|in det:art|the
+	n|kitchen pro:per|you v|have adj|base n|cabinet-PL coord|and
+	adv:tem|then pro:per|you v|have det:art|a n|window prep|above
+	pro:dem|that pro:rel|which aux|be&3S part|look-PRESP adv|out
+	prep|into pro:indef|something pro:rel|which v|make-3S pro:per|it
+	v|look-3S adv|as adv|though pro:per|it~cop|be&3S n|summer
+	adv|outside conj|because det:art|the n|window cop|be&3S adj|open .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CJCT 5|4|JCT 6|4|CONJ 7|8|AUX
+	8|15|XJCT 9|10|DET 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|15|SUBJ 15|6|COORD
+	16|17|MOD 17|21|JCT 18|17|CONJ 19|18|COORD 20|21|SUBJ 21|15|COMP
+	22|23|DET 23|21|OBJ 24|21|JCT 25|24|POBJ 26|28|LINK 27|28|AUX 28|25|CMOD
+	29|28|JCT 30|28|JCT 31|30|POBJ 32|33|LINK 33|31|CMOD 34|35|SUBJ 35|33|COMP
+	36|39|JCT 37|39|JCT 38|39|SUBJ 39|35|COMP 40|39|PRED 41|40|NJCT 42|45|LINK
+	43|44|DET 44|45|SUBJ 45|28|CJCT 46|45|PRED 47|1|PUNCT
+*PAR:	there are things growing out there . 78690_80619
+%mor:	pro:exist|there cop|be&PRES n|thing-PL part|grow-PRESP prep|out
+	n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|XMOD 5|4|JCT 6|5|POBJ 7|2|PUNCT
+*PAR:	there's a walk . 80619_81782
+%mor:	pro:exist|there~cop|be&3S det:art|a n|walk .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	there's &uh &uh some shrubbery underneath another window that looks
+	it's in a another wing of the house . 81782_87414
+%mor:	pro:exist|there~cop|be&3S qn|some n|shrubbery prep|underneath
+	qn|another n|window pro:rel|that v|look-3S pro:per|it~cop|be&3S
+	prep|in det:art|a qn|another n|wing prep|of det:art|the n|house .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|7|QUANT 7|5|POBJ
+	8|9|LINK 9|7|CMOD 10|11|SUBJ 11|9|COMP 12|11|JCT 13|15|DET 14|15|QUANT
+	15|12|POBJ 16|15|NJCT 17|18|DET 18|16|POBJ 19|2|PUNCT
+*PAR:	there's a tree beyond . 87414_88836
+%mor:	pro:exist|there~cop|be&3S det:art|a n|tree adv|beyond .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|2|PUNCT
+*PAR:	there are tie back curtains at the window . 88836_91659
+%mor:	pro:exist|there cop|be&PRES n|tie adv|back n|curtain-PL prep|at
+	det:art|the n|window .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|4|POBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	the mother is working at the sink and the faucet is left on and
+	apparently there's no overflow in the sink so it's overflowing right
+	onto the floor splash@o [/] splash@o . 91659_102050
+%mor:	det:art|the n|mother aux|be&3S part|work-PRESP prep|at det:art|the
+	n|sink coord|and det:art|the n|faucet aux|be&3S part|leave&PASTP
+	adv|on coord|and adv|apparent&dadj-LY pro:exist|there~cop|be&3S
+	qn|no over#v|flow prep|in det:art|the n|sink co|so
+	pro:per|it~aux|be&3S over#part|flow-PRESP adv|right prep|onto
+	det:art|the n|floor on|splash .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|12|JCT 14|17|LINK 15|17|JCT
+	16|17|SUBJ 17|4|CJCT 18|19|QUANT 19|17|PRED 20|19|JCT 21|22|DET 22|20|POBJ
+	23|26|COM 24|26|SUBJ 25|26|AUX 26|17|PRED 27|28|JCT 28|26|JCT 29|30|DET
+	30|28|POBJ 31|28|ENUM 32|4|PUNCT
+*PAR:	and &uh she has on a sleeveless dress which also indicates that
+	it's summer . 102050_106922
+%mor:	coord|and pro:sub|she aux|have&3S prep|on det:art|a
+	adj|sleeve&dn-LESS n|dress pro:rel|which adv|also v|indicate-3S
+	adv|that pro:per|it~cop|be&3S n|summer .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|10|LINK
+	9|10|JCT 10|7|CMOD 11|10|JCT 12|13|SUBJ 13|10|COMP 14|13|PRED 15|3|PUNCT
+*PAR:	and it looks though she has an apron on . 106922_108228
+%mor:	coord|and pro:per|it v|look-3S conj|though pro:sub|she v|have&3S
+	det:art|a n|apron adv|on .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|COMP 7|8|DET 8|6|OBJ
+	9|6|JCT 10|3|PUNCT
+*PAR:	she has short hair . 108228_109999
+%mor:	pro:sub|she aux|have&3S adj|short n|hair .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	&um she is drying <a dish with a tea towel> [//] a plate with a tea
+	towel . 109999_115857
+%mor:	pro:sub|she aux|be&3S part|dry-PRESP det:art|a n|plate prep|with
+	det:art|a n|tea n|towel .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	&um beside the sink there are two cups and a plate . 115857_119668
+%mor:	prep|beside det:art|the n|sink adv|there cop|be&PRES det:num|two
+	n|cup-PL coord|and det:art|a n|plate .
+%gra:	1|5|JCT 2|3|DET 3|1|POBJ 4|5|SUBJ 5|0|ROOT 6|7|QUANT 7|5|PRED 8|7|CONJ
+	9|10|DET 10|8|COORD 11|5|PUNCT
+*PAR:	looks as though there's some suds and some dishes in the sink .
+	[+ gram] 119668_122656
+%mor:	v|look-3S adv|as adv|though pro:exist|there~cop|be&3S qn|some
+	n|suds coord|and qn|some n|dish-PL prep|in det:art|the n|sink .
+%gra:	1|0|ROOT 2|1|JCT 3|5|JCT 4|5|SUBJ 5|1|COMP 6|7|QUANT 7|5|PRED 8|7|CONJ
+	9|10|QUANT 10|8|COORD 11|10|NJCT 12|13|DET 13|11|POBJ 14|1|PUNCT
+*PAR:	and two faucets with x@l type handles one on either side and a
+	center faucet . [+ gram] 122656_128770
+%mor:	coord|and det:num|two n|faucet-PL prep|with n:let|x n|type
+	v|handle-3S det:num|one prep|on qn|either n|side coord|and det:art|a
+	n|center n|faucet .
+%gra:	1|7|LINK 2|3|QUANT 3|7|SUBJ 4|3|NJCT 5|6|MOD 6|4|POBJ 7|0|ROOT 8|7|OBJ
+	9|7|JCT 10|11|QUANT 11|9|POBJ 12|7|CONJ 13|15|DET 14|15|MOD 15|12|COORD
+	16|7|PUNCT
+*PAR:	she has shoes on with no ties, just sort of slip+on shoes . 128770_134016
+%mor:	pro:sub|she aux|have&3S n|shoe-PL adv|on prep|with qn|no n|tie-PL
+	cm|cm adj|just n|sort prep|of n|+v|slip+prep|on n|shoe-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|INCROOT 4|3|JCT 5|3|NJCT 6|7|QUANT 7|5|POBJ 8|7|LP
+	9|10|MOD 10|7|ENUM 11|10|NJCT 12|13|MOD 13|11|POBJ 14|3|PUNCT
+*PAR:	there's a little scallop valance across the top of the curtains . 134016_140834
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|little v|scallop n|valance
+	prep|across det:art|the n|top prep|of det:art|the n|curtain-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|JCT 5|2|CPRED 6|5|OBJ 7|5|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*PAR:	&hm (.) I think that's all I'm gonna tell you . [+ exc] 140834_149371
+%mor:	pro:sub|I v|think pro:dem|that~cop|be&3S pro:indef|all
+	pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|tell pro:per|you .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|8|SUBJ 7|8|AUX 8|5|CMOD
+	9|10|INF 10|8|COMP 11|10|OBJ 12|2|PUNCT
+*PAR:	well ‡ the handles on the door are the kind that are just &um
+	almost like a round piece of wood that you hafta get a hold of to
+	pull the cupboard door open . 149371_160002
+%mor:	co|well beg|beg det:art|the n|handle-PL prep|on det:art|the n|door
+	cop|be&PRES det:art|the n|kind pro:rel|that cop|be&PRES adv|just
+	adv|almost co|like det:art|a adj|round n|piece prep|of n|wood
+	pro:rel|that pro:per|you mod|have~inf|to v|get det:art|a n|hold
+	prep|of inf|to v|pull det:art|the n|cupboard n|door adj|open .
+%gra:	1|0|BEG 2|1|BEGP 3|4|DET 4|8|SUBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|10|DET 10|8|PRED 11|12|LINK 12|10|CMOD 13|12|JCT 14|12|JCT 15|12|COM
+	16|18|DET 17|18|MOD 18|12|PRED 19|18|NJCT 20|19|POBJ 21|25|LINK 22|25|SUBJ
+	23|25|AUX 24|25|INF 25|20|CMOD 26|27|DET 27|25|OBJ 28|27|NJCT 29|30|INF
+	30|28|POBJ 31|33|DET 32|33|MOD 33|30|OBJ 34|33|POSTMOD 35|8|PUNCT
+*PAR:	and what's really strange is that you can't see any handles on the
+	cupboards on the other side of the kitchen . 160002_165760
+%mor:	coord|and pro:int|what~cop|be&3S adv|real&dadj-LY adj|strange
+	aux|be&3S comp|that pro:per|you mod|can~neg|not v|see qn|any
+	n|handle-PL prep|on det:art|the n|cupboard-PL prep|on det:art|the
+	qn|other n|side prep|of det:art|the n|kitchen .
+%gra:	1|3|LINK 2|3|SUBJ 3|11|SUBJ 4|5|JCT 5|3|PRED 6|11|AUX 7|11|LINK
+	8|11|SUBJ 9|11|AUX 10|9|NEG 11|0|ROOT 12|13|QUANT 13|11|OBJ 14|11|JCT 15|16|DET
+	16|14|POBJ 17|11|JCT 18|20|DET 19|20|QUANT 20|17|POBJ 21|20|NJCT
+	22|23|DET 23|21|POBJ 24|11|PUNCT
+*INV:	okay . 165760_167767
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

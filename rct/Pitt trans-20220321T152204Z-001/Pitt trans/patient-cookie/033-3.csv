@@ -1,0 +1,70 @@
+@UTF8
+@PID:	11312/t-00002449-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR|66;|male|MCI||Participant|28||
+@Media:	033-3, audio
+*PAR:	okay a child falling off a stool in the attempt to reach the cookie
+	jar which it looks like he's &uh knocked the lid off . [+ gram] 0_13450
+%mor:	co|okay det:art|a n|child part|fall-PRESP prep|off det:art|a
+	n|stool prep|in det:art|the n|attempt inf|to v|reach det:art|the
+	n|cookie n|jar pro:rel|which pro:per|it v|look-3S conj|like
+	pro:sub|he~aux|be&3S part|knock-PASTP det:art|the n|lid adv|off .
+%gra:	1|12|COM 2|3|DET 3|12|SUBJ 4|3|XMOD 5|4|JCT 6|7|DET 7|5|POBJ 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|12|INF 12|0|ROOT 13|15|DET 14|15|MOD 15|12|OBJ
+	16|18|LINK 17|18|SUBJ 18|12|CJCT 19|22|LINK 20|22|SUBJ 21|22|AUX 22|18|COMP
+	23|24|DET 24|22|OBJ 25|22|JCT 26|12|PUNCT
+*PAR:	and &uh maybe he's gonna drop the [/] the cookie . 13450_17374
+%mor:	coord|and adv|maybe pro:sub|he~aux|be&3S part|go-PRESP~inf|to
+	v|drop det:art|the n|cookie .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|5|PUNCT
+*PAR:	and his girl+friend is standing there beckoning him or reaching for
+	the cookie that he's sposta give her . 17374_23583
+%mor:	coord|and det:poss|his n|+n|girl+n|friend aux|be&3S
+	part|stand-PRESP adv|there part|beckon-PRESP pro:obj|him coord|or
+	part|reach-PRESP prep|for det:art|the n|cookie pro:rel|that
+	pro:sub|he~aux|be&3S part|suppose-PASTP~inf|to v|give pro:obj|her .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|XJCT 8|7|OBJ
+	9|7|CONJ 10|9|COORD 11|10|JCT 12|13|DET 13|11|POBJ 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|13|CMOD 18|19|INF 19|17|COMP 20|19|OBJ 21|5|PUNCT
+*PAR:	and the mother is not paying any attention to the kids . 23583_27259
+%mor:	coord|and det:art|the n|mother aux|be&3S neg|not part|pay-PRESP
+	qn|any n|attention prep|to det:art|the n|kid-PL .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|4|NEG 6|0|ROOT 7|8|QUANT 8|6|OBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|6|PUNCT
+*PAR:	she's looking out the window and &uh dryin(g) the dishes . 27249_31333
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|the n|window
+	coord|and part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*PAR:	at the same time she has let the sink &uh run over and the water is
+	cascading &uh down on the floor and onto her feet . 31333_40265
+%mor:	prep|at det:art|the adj|same n|time pro:sub|she aux|have&3S
+	v|let&ZERO det:art|the n|sink v|run adv|over coord|and det:art|the
+	n|water aux|be&3S part|cascade-PRESP adv|down prep|on det:art|the
+	n|floor coord|and prep|onto det:poss|her n|foot&PL .
+%gra:	1|0|INCROOT 2|4|DET 3|4|MOD 4|1|POBJ 5|7|SUBJ 6|7|AUX 7|4|CMOD 8|9|DET
+	9|10|SUBJ 10|7|COMP 11|10|JCT 12|16|LINK 13|14|DET 14|16|SUBJ 15|16|AUX
+	16|10|CJCT 17|16|JCT 18|16|JCT 19|20|DET 20|18|POBJ 21|16|CONJ
+	22|21|COORD 23|24|DET 24|22|POBJ 25|1|PUNCT
+*PAR:	the curtains are waving and the window is open . 40265_46750
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|wave-PRESP coord|and
+	det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|7|DET 7|8|SUBJ 8|4|CJCT
+	9|8|PRED 10|4|PUNCT
+*PAR:	and the yard looks like it's &uh manicured . 46750_54429
+%mor:	coord|and det:art|the n|yard v|look-3S conj|like
+	pro:per|it~aux|be&3S part|manicure-PASTP .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|4|PUNCT
+*PAR:	and &uh other than the [/] the stool and the cabinets and the
+	dishes that's all I can see . 54429_62893
+%mor:	coord|and qn|other prep|than det:art|the n|stool coord|and
+	det:art|the n|cabinet-PL coord|and det:art|the n|dish-PL
+	pro:rel|that~cop|be&3S pro:indef|all pro:sub|I mod|can v|see .
+%gra:	1|0|INCROOT 2|1|COORD 3|2|JCT 4|5|DET 5|3|POBJ 6|2|CONJ 7|8|DET
+	8|6|COORD 9|2|CONJ 10|11|DET 11|9|COORD 12|13|LINK 13|11|CMOD 14|13|PRED
+	15|17|SUBJ 16|17|AUX 17|14|CMOD 18|1|PUNCT
+@End

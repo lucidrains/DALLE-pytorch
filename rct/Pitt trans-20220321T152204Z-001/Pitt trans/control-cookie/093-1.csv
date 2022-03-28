@@ -1,0 +1,56 @@
+@UTF8
+@PID:	11312/t-00002248-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	093-1, audio
+*PAR:	well I see the mother doing the dishes . 0_1979
+%mor:	co|well pro:sub|I v|see det:art|the n|mother part|do-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|XMOD 7|8|DET 8|6|OBJ
+	9|3|PUNCT
+*PAR:	<the sink> [//] the water running over in the sink . [+ gram] 1979_4792
+%mor:	det:art|the n|water part|run-PRESP adv|over prep|in det:art|the
+	n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	the boy's taking cookies from the cookie jar and he [//] &l the
+	stool is falling over and the little girl has her hands up to her
+	mouth in other words to be quiet . 4792_15051
+%mor:	det:art|the n|boy~aux|be&3S part|take-PRESP n|cookie-PL prep|from
+	det:art|the n|cookie n|jar coord|and det:art|the n|stool aux|be&3S
+	part|fall-PRESP adv|over coord|and det:art|the adj|little n|girl
+	aux|have&3S det:poss|her n|hand-PL adv|up prep|to det:poss|her
+	n|mouth prep|in qn|other n|word-PL inf|to cop|be adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|14|LINK 11|12|DET 12|14|SUBJ 13|14|AUX 14|4|CJCT 15|14|JCT
+	16|14|CONJ 17|19|DET 18|19|MOD 19|22|SUBJ 20|22|AUX 21|22|DET 22|16|COORD
+	23|22|NJCT 24|22|NJCT 25|26|DET 26|24|POBJ 27|22|NJCT 28|29|QUANT 29|27|POBJ
+	30|31|INF 31|22|XMOD 32|31|PRED 33|4|PUNCT
+*PAR:	&um and the stool's falling . 15051_18427
+%mor:	coord|and det:art|the n|stool~aux|be&3S part|fall-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	yeah that's it . [+ exc] 18427_19456
+%mor:	co|yeah pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	she has her hand up for him to pass her a cookie then be quiet . 19456_23223
+%mor:	pro:sub|she aux|have&3S det:poss|her n|hand adv|up prep|for
+	pro:obj|him inf|to v|pass pro:obj|her det:art|a n|cookie
+	adv:tem|then cop|be adj|quiet .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|DET 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|9|INF
+	9|4|XJCT 10|9|OBJ2 11|12|DET 12|14|SUBJ 13|14|JCT 14|9|COMP 15|14|PRED
+	16|4|PUNCT
+*PAR:	mother's +... 23223_24373
+%mor:	n|mother~cop|be&3S +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*PAR:	the dishes in the sink &s +//. 24373_25600
+%mor:	det:art|the n|dish-PL prep|in det:art|the n|sink +//.
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	yeah okay . [+ exc] 25600_26442
+%mor:	co|yeah co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	alright . 26442_29246
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

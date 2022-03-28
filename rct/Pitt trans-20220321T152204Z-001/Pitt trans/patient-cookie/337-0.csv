@@ -1,0 +1,72 @@
+@UTF8
+@PID:	11312/t-00002619-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|59;|female|ProbableAD||Participant|16||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	337-0, audio
+*INV:	okay good . 0_860
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	going on in the picture . 860_2538
+%mor:	part|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|INCROOT 2|1|JCT 3|1|JCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	well the poor mother's a-doin(g) [: doin(g)] dishes &=laughs . 2538_10337
+%mor:	co|well det:art|the adj|poor n|mother~aux|be&3S part|do-PRESP
+	n|dish-PL .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+*PAR:	there's a boy <on a> [/] &lad on a stool . 10337_14645
+%mor:	pro:exist|there~cop|be&3S det:art|a n|boy prep|on det:art|a n|stool
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	cookie jar . [+ gram] 14645_16871
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	and a girl down below . [+ gram] 16871_19099
+%mor:	coord|and det:art|a n|girl adv|down prep|below .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|5|JCT 5|3|NJCT 6|3|PUNCT
+*PAR:	is that all you wanted to know ? [+ exc] 19099_20934
+%mor:	cop|be&3S comp|that qn|all pro:per|you v|want-PAST inf|to v|know ?
+%gra:	1|0|ROOT 2|5|LINK 3|4|QUANT 4|5|SUBJ 5|1|CPRED 6|7|INF 7|5|COMP
+	8|1|PUNCT
+*INV:	tell me everything that you see going on in the picture . 20934_24160
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*PAR:	okay . [+ exc] 24160_25123
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's a cookie jar . 25123_26529
+%mor:	pro:exist|there~cop|be&3S det:art|a n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|2|PUNCT
+*PAR:	the little boy is standing on a stool and he's ready to go over . 26529_30865
+%mor:	det:art|the adj|little n|boy aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool coord|and pro:sub|he~cop|be&3S adj|ready inf|to
+	v|go adv|over .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|11|LINK 10|11|SUBJ 11|5|CJCT 12|11|PRED 13|14|INF 14|12|XMOD 15|14|JCT
+	16|5|PUNCT
+*PAR:	the little girl's standing there . 30865_34054
+%mor:	det:art|the adj|little n|girl~aux|be&3S part|stand-PRESP adv|there
+	.
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	the mother's &st at the sink doing dishes . 34054_36483
+%mor:	det:art|the n|mother~aux|be&3S prep|at det:art|the n|sink
+	part|do-PRESP n|dish-PL .
+%gra:	1|2|DET 2|7|SUBJ 3|7|AUX 4|7|JCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|7|OBJ
+	9|7|PUNCT
+*PAR:	(.) her water's overflowing . 36483_42878
+%mor:	det:poss|her adj|water&dn-POSS over#part|flow-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*INV:	(.) okay anything else ? 42878_48636
+%mor:	co|okay pro:indef|anything post|else ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PQ 4|2|PUNCT
+*PAR:	that's about it . [+ exc] 48636_49990
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*INV:	okay good . 49990_50925
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

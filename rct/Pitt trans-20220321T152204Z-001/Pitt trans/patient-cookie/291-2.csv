@@ -1,0 +1,59 @@
+@UTF8
+@PID:	11312/a-00019499-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|ProbableAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	291-2, audio
+*INV:	www . 0_1997
+%exp:	finish previous task
+*INV:	all that you see going on in the picture ? 1997_3715
+%mor:	qn|all pro:dem|that pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture ?
+%gra:	1|2|QUANT 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	alright . [+ exc] 3715_4598
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	you tell me +/. 4598_7163
+%mor:	pro:per|you v|tell pro:obj|me +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	+< oh . [+ exc] 6387_6840
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the &-uh boy (i)s in the cookie jar (.) handing a cookie to his
+	 sister . 6840_13154
+%mor:	det:art|the n|boy aux|be&3S prep|in det:art|the n|cookie n|jar
+	part|hand-PRESP det:art|a n|cookie prep|to det:poss|his n|sister .
+%gra:	1|2|DET 2|8|SUBJ 3|8|AUX 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|0|ROOT
+	9|10|DET 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|8|PUNCT
+*PAR:	mother is drying dishes . 13154_19226
+%mor:	n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	her sink is spilling over . 19226_22129
+%mor:	det:poss|her n|sink aux|be&3S part|spill-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*INV:	(...) any [//] &+oth anything else you see going on in the picture
+	+/? 22129_32485
+%mor:	pro:indef|anything post|else pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture +/?
+%gra:	1|4|LINK 2|1|PQ 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	+< the stool the boy is on is tilting . 31885_35027
+%mor:	det:art|the n|stool det:art|the n|boy aux|be&3S adv|on aux|be&3S
+	part|tilt-PRESP .
+%gra:	1|2|DET 2|0|INCROOT 3|4|DET 4|8|SUBJ 5|8|AUX 6|8|JCT 7|8|AUX 8|2|CMOD
+	9|2|PUNCT
+*PAR:	I said the sink's running over „ I think . [+ exc] 35027_39717
+%mor:	pro:sub|I v|say&PAST det:art|the n|sink~aux|be&3S part|run-PRESP
+	prep|over end|end pro:sub|I v|think .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|COMP 7|6|JCT 8|10|ENDP
+	9|10|SUBJ 10|2|CJCT 11|2|PUNCT
+*PAR:	no . [+ exc] 39717_50062
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay ‡ that's fine . 50294_50933
+%mor:	co|okay beg|beg pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|0|BEG 2|1|BEGP 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+@End

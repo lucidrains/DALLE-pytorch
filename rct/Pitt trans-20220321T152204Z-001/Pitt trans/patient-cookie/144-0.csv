@@ -1,0 +1,106 @@
+@UTF8
+@PID:	11312/t-00002514-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|female|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	144-0, audio
+*INV:	okay here's the picture . 0_1528
+%mor:	co|okay pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*INV:	tell me all of the action that you see goin(g) on . 1528_3860
+%mor:	v|tell pro:obj|me post|all prep|of det:art|the n|action
+	pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|JCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|SUBJ
+	9|6|CMOD 10|9|OBJ 11|9|JCT 12|1|PUNCT
+*PAR:	well first of all the cookie jar is &get [//] coming down it looks
+	like but the little boy's climbing up the step+ladder [: stool]
+	[* s:r] . 3860_11100
+%mor:	co|well adv|first prep|of qn|all det:art|the n|cookie n|jar
+	aux|be&3S part|come-PRESP adv|down pro:per|it v|look-3S conj|like
+	conj|but det:art|the adj|little n|boy~aux|be&3S part|climb-PRESP
+	prep|up det:art|the n|stool .
+%gra:	1|9|COM 2|9|JCT 3|9|JCT 4|7|QUANT 5|7|DET 6|7|MOD 7|9|SUBJ 8|9|AUX
+	9|12|XJCT 10|9|JCT 11|12|SUBJ 12|0|ROOT 13|12|COMP 14|19|LINK 15|17|DET
+	16|17|MOD 17|19|SUBJ 18|19|AUX 19|13|CJCT 20|19|JCT 21|22|DET 22|20|POBJ
+	23|12|PUNCT
+*PAR:	he's falling down . 11100_12017
+%mor:	pro:sub|he~aux|be&3S part|fall-PRESP adv|down .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	and he's gonna pʊs@u [: pass] [* pn-ret] [//] pass some cookies on
+	to his sister but I don't know if he'll make it there with them
+	&=laughs . 12017_18631
+%mor:	coord|and pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|pass qn|some
+	n|cookie-PL adv|on prep|to det:poss|his n|sister conj|but pro:sub|I
+	mod|do~neg|not v|know comp|if pro:sub|he~mod|will v|make pro:per|it
+	adv|there prep|with pro:obj|them .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|QUANT 8|6|OBJ
+	9|6|JCT 10|6|JCT 11|12|DET 12|10|POBJ 13|17|LINK 14|17|SUBJ 15|17|AUX
+	16|15|NEG 17|4|CJCT 18|21|LINK 19|21|SUBJ 20|21|AUX 21|17|COMP 22|21|OBJ
+	23|21|JCT 24|21|JCT 25|24|POBJ 26|4|PUNCT
+*PAR:	and over here the mother spilled, let the water run over which I
+	have done lots of times &=laughs . 18631_28715
+%mor:	coord|and prep|over n|here det:art|the n|mother part|spill-PASTP
+	cm|cm v|let&ZERO det:art|the n|water v|run adv|over pro:rel|which
+	pro:sub|I v|have part|do&PASTP n|lot-PL prep|of n|time-PL .
+%gra:	1|8|LINK 2|8|JCT 3|2|POBJ 4|5|DET 5|8|SUBJ 6|5|XMOD 7|6|LP 8|0|ROOT
+	9|10|DET 10|11|SUBJ 11|8|COMP 12|11|JCT 13|15|LINK 14|15|SUBJ 15|8|CJCT
+	16|15|COMP 17|16|OBJ 18|17|NJCT 19|18|POBJ 20|8|PUNCT
+*PAR:	and she's gonna hafta get a towel and mop it up very quickly . 28715_33091
+%mor:	coord|and pro:sub|she~aux|be&3S part|go-PRESP~inf|to
+	mod|have~inf|to v|get det:art|a n|towel coord|and v|mop pro:per|it
+	adv|up adv|very adv|quick&dadj-LY .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|INF 6|8|AUX 7|8|INF 8|4|COMP
+	9|10|DET 10|8|OBJ 11|4|CONJ 12|11|COORD 13|12|OBJ 14|12|JCT 15|16|JCT
+	16|12|JCT 17|4|PUNCT
+*PAR:	that's about all on that one . [+ exc] 33091_35527
+%mor:	pro:dem|that~cop|be&3S adv|about adv|all prep|on det:dem|that
+	pro:indef|one .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|5|JCT 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	that's similar . [+ exc] 35527_36514
+%mor:	pro:dem|that~cop|be&3S adj|similar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	I_mean very small . [+ exc] 36514_37805
+%mor:	co|I_mean adv|very adj|small .
+%gra:	1|3|COM 2|3|JCT 3|0|INCROOT 4|3|PUNCT
+*PAR:	I don't know what these little gadgets are but I guess they had
+	little +/. [+ exc] 37805_40559
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what det:dem|these
+	adj|little n|gadget-PL cop|be&PRES conj|but pro:sub|I v|guess
+	pro:sub|they v|have&PAST adj|little +/.
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|9|LINK 6|8|DET 7|8|MOD 8|9|SUBJ
+	9|4|COMP 10|12|LINK 11|12|SUBJ 12|14|CJCT 13|14|SUBJ 14|4|COMP 15|14|JCT
+	16|4|PUNCT
+*INV:	oh that's part of the little cover . 40559_42241
+%mor:	co|oh pro:dem|that~cop|be&3S n|part prep|of det:art|the adj|little
+	n|cover .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	+< part of the little cover yeah . [+ exc] 41541_43204
+%mor:	n|part prep|of det:art|the adj|little n|cover co|yeah .
+%gra:	1|0|INCROOT 2|1|NJCT 3|5|DET 4|5|MOD 5|2|POBJ 6|1|COM 7|1|PUNCT
+*PAR:	is that all on that one ? [+ exc] 43204_44870
+%mor:	cop|be&3S adv|that adv|all prep|on det:dem|that pro:indef|one ?
+%gra:	1|0|ROOT 2|4|JCT 3|4|JCT 4|1|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*INV:	okay ? 44870_45404
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I don't see anything else . [+ exc] 45404_46939
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|PUNCT
+*INV:	okay . 46939_48046
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	her feet may be getting wet <in this> [/] in this [//] on the floor
+	too but outside of that that was the worst . 48046_53898
+%mor:	det:poss|her n|foot&PL mod|may aux|be part|get-PRESP adj|wet adv|in
+	prep|on det:art|the n|floor adv|too conj|but adv|outside prep|of
+	det:dem|that pro:dem|that cop|be&PAST&13S det:art|the adj|bad&SP .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|5|AUX 5|0|ROOT 6|5|PRED 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|12|JCT 12|6|CONJ 13|14|JCT 14|12|COORD 15|16|DET
+	16|14|POBJ 17|14|POBJ 18|19|DET 19|17|PRED 20|5|PUNCT
+*INV:	okay good thank you . 53898_55126
+%mor:	co|okay adj|good v|thank pro:per|you .
+%gra:	1|3|COM 2|3|JCT 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+@End

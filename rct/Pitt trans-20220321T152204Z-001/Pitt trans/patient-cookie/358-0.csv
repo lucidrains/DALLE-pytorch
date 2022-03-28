@@ -1,0 +1,55 @@
+@UTF8
+@PID:	11312/t-00002639-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|60;|female|Probable||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	358-0, audio
+*PAR:	okay . [+ exc] 0_1853
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the door's open in the cupboard . 1853_4983
+%mor:	det:art|the adj|door&dn-POSS v|open prep|in det:art|the n|cupboard
+	.
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and there's &uh a cookie jar and a little boy on a &uh stool . 4983_16357
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|cookie n|jar
+	coord|and det:art|a adj|little n|boy prep|on det:art|a n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|CONJ 8|10|DET
+	9|10|MOD 10|7|COORD 11|10|NJCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	and he's tryin(g) to reach the cookies . 16357_18680
+%mor:	coord|and pro:sub|he~aux|be&3S part|try-PRESP inf|to v|reach
+	det:art|the n|cookie-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|DET 8|6|OBJ
+	9|4|PUNCT
+*PAR:	and the [/] the stool is going to go . 18680_22003
+%mor:	coord|and det:art|the n|stool aux|be&3S part|go-PRESP inf|to v|go .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|5|PUNCT
+*PAR:	and his sister's tryin(g) to help him . 22000_24300
+%mor:	coord|and det:poss|his n|sister~aux|be&3S part|try-PRESP inf|to
+	v|help pro:obj|him .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|OBJ
+	9|5|PUNCT
+*PAR:	and his mother is lookin(g) out the window . 24300_27027
+%mor:	coord|and det:poss|his n|mother aux|be&3S part|look-PRESP prep|out
+	det:art|the n|window .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and &uh she's lettin(g) her water run down the sink . 27027_31650
+%mor:	coord|and pro:sub|she~aux|be&3S part|let-PRESP det:poss|her n|water
+	v|run prep|down det:art|the n|sink .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|7|SUBJ 7|4|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	and &uh &=laughs +... [+ exc] 31652_33500
+%mor:	coord|and +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and &ch &ch the boy is going to be hurt &=laughs . 33500_35611
+%mor:	coord|and det:art|the n|boy aux|be&3S part|go-PRESP inf|to aux|be
+	part|hurt&PASTP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|INF 7|8|AUX 8|5|COMP
+	9|5|PUNCT
+*INV:	okay . 36670_37324
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

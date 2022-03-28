@@ -1,0 +1,81 @@
+@UTF8
+@PID:	11312/t-00002229-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@Media:	068-3, audio
+*PAR:	it's a sunny day (be)cause the window's open . 0_3509
+%mor:	pro:per|it~cop|be&3S det:art|a adj|sun&dn-Y n|day conj|because
+	det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|9|LINK 7|9|DET 8|9|MOD
+	9|2|PRED 10|2|PUNCT
+*PAR:	this is the interpreted one . [+ exc] 3509_5286
+%mor:	pro:dem|this cop|be&3S det:art|the part|interpret-PASTP
+	pro:indef|one .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|OBJ 6|2|PUNCT
+*PAR:	okay then &um the little boy is reaching up to get a cookie an(d)
+	he's about to fall off the chair [: stool] [* s:r] . 5286_10457
+%mor:	co|okay adv:tem|then det:art|the adj|little n|boy aux|be&3S
+	part|reach-PRESP adv|up inf|to v|get det:art|a n|cookie coord|and
+	pro:sub|he~cop|be&3S adv|about inf|to v|fall prep|off det:art|the
+	n|stool .
+%gra:	1|2|COM 2|7|JCT 3|5|DET 4|5|MOD 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|JCT
+	9|10|INF 10|7|XJCT 11|12|DET 12|10|OBJ 13|15|LINK 14|15|SUBJ 15|10|CJCT
+	16|18|JCT 17|18|INF 18|15|CPRED 19|18|JCT 20|21|DET 21|19|POBJ 22|7|PUNCT
+*PAR:	and &uh the water's overflowing in the sinks [: sink] [* s:r] . 10457_16077
+%mor:	coord|and det:art|the adj|water&dn-POSS over#n:gerund|flow-PRESP
+	prep|in det:art|the n|sink .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|4|JCT 6|7|DET 7|5|POBJ
+	8|3|PUNCT
+*PAR:	and the mother is drying the dishes but she doesn't see the water
+	flowing over the &s +//. 16077_20034
+%mor:	coord|and det:art|the n|mother aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL conj|but pro:sub|she mod|do&3S~neg|not v|see det:art|the
+	n|water part|flow-PRESP prep|over det:art|the +//.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|10|NEG 12|5|PUNCT 13|14|DET 14|12|OBJ 15|14|XMOD
+	16|15|JCT 17|18|DET 18|16|POBJ
+*PAR:	obviously she is just spaced out somewhere (be)cause she doesn't
+	know that the boy's getting the cookies and she doesn't know the
+	water's overflowing in the sink an(d) even she's standing in it . 20034_29571
+%mor:	adv|obvious&dadj-LY pro:sub|she aux|be&3S adv|just part|space-PASTP
+	adv|out adv|somewhere conj|because pro:sub|she mod|do&3S~neg|not
+	v|know comp|that det:art|the n|boy~aux|be&3S part|get-PRESP
+	det:art|the n|cookie-PL coord|and pro:sub|she mod|do&3S~neg|not
+	v|know det:art|the adj|water&dn-POSS over#part|flow-PRESP prep|in
+	det:art|the n|sink coord|and adv|even pro:sub|she~aux|be&3S
+	part|stand-PRESP prep|in pro:per|it .
+%gra:	1|5|JCT 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|5|JCT 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|10|NEG 12|5|CJCT 13|17|LINK 14|15|DET 15|17|SUBJ
+	16|17|AUX 17|12|COMP 18|19|DET 19|17|OBJ 20|24|LINK 21|24|SUBJ 22|24|AUX
+	23|22|NEG 24|5|CJCT 25|27|DET 26|27|MOD 27|24|OBJ 28|24|JCT 29|30|DET
+	30|28|POBJ 31|35|LINK 32|35|JCT 33|35|SUBJ 34|35|AUX 35|5|CJCT 36|35|JCT
+	37|36|POBJ 38|5|PUNCT
+*PAR:	&=sighs &um (.) <the &l little> [/] the little girl <has her> [/]
+	has her hand [//] finger on her mouth so she's &um telling the
+	little boy to be quiet an(d) not let mother know that we're getting
+	the cookies out_of the cookie jar . 29571_47064
+%mor:	det:art|the adj|little n|girl aux|have&3S det:poss|her n|finger
+	prep|on det:poss|her n|mouth adv|so pro:sub|she~aux|be&3S
+	part|tell-PRESP det:art|the adj|little n|boy inf|to cop|be adj|quiet
+	coord|and neg|not v|let&ZERO n|mother v|know comp|that
+	pro:sub|we~aux|be&PRES part|get-PRESP det:art|the n|cookie-PL
+	prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|6|SUBJ 4|6|AUX 5|6|DET 6|13|SUBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|13|JCT 11|13|SUBJ 12|13|AUX 13|0|ROOT 14|16|DET 15|16|MOD
+	16|13|OBJ 17|18|INF 18|16|XMOD 19|18|PRED 20|13|CONJ 21|22|NEG 22|20|COORD
+	23|24|SUBJ 24|22|COMP 25|28|LINK 26|28|SUBJ 27|28|AUX 28|24|COMP 29|30|DET
+	30|28|OBJ 31|28|JCT 32|34|DET 33|34|MOD 34|31|POBJ 35|13|PUNCT
+*PAR:	and &um I'd say mother's in some kind of a depression or something
+	. 47064_54877
+%mor:	coord|and pro:sub|I~mod|genmod v|say n|mother~cop|be&3S prep|in
+	qn|some n|kind prep|of det:art|a n|depression coord|or
+	pro:indef|something .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|6|JCT 8|9|QUANT
+	9|7|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|12|CONJ 14|13|COORD
+	15|4|PUNCT
+*PAR:	(..) just not with it . [+ gram] 54877_60387
+%mor:	adv|just neg|not prep|with pro:per|it .
+%gra:	1|2|JCT 2|3|NEG 3|0|INCROOT 4|3|POBJ 5|3|PUNCT
+@End

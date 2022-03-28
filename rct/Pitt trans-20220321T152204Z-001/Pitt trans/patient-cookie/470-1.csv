@@ -1,0 +1,145 @@
+@UTF8
+@PID:	11312/t-00002657-1
+@Window:	45_670_931_898_0_0_83_0_83_0
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|male|ProbableAD||Participant|22||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	470-1, audio
+*INV:	xxx . 0_765
+*INV:	what I'd like you to do right now +/. 765_2522
+%mor:	pro:int|what pro:sub|I~mod|genmod v|like pro:per|you inf|to v|do
+	adv|right adv|now +/.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|9|JCT
+	9|7|JCT 10|4|PUNCT
+*PAR:	+< I can go around and find em [: them] for you . [+ exc] 1400_4063
+%mor:	pro:sub|I mod|can v|go adv|around coord|and v|find pro:obj|them
+	prep|for pro:per|you .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|CONJ 6|5|COORD 7|6|OBJ 8|6|JCT
+	9|8|POBJ 10|3|PUNCT
+*INV:	okay . 4063_4551
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what I'd like you to do +/? 4551_5993
+%mor:	pro:int|what pro:sub|I~mod|genmod v|like pro:per|you inf|to v|do
+	+/?
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|SUBJ 6|7|INF 7|4|COMP 8|4|PUNCT
+*PAR:	+< what do you want here ? [+ exc] 5193_6508
+%mor:	pro:int|what mod|do pro:per|you v|want adv|here ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*INV:	+, is to take a look at this picture and tell me everything that
+	you see happening . 6508_10290
+%mor:	cop|be&3S inf|to v|take det:art|a v|look prep|at det:dem|this
+	n|picture coord|and v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you v|see n:gerund|happen-PRESP .
+%gra:	1|0|ROOT 2|3|INF 3|1|CPRED 4|5|DET 5|3|OBJ 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|10|OBJ2 12|10|OBJ 13|15|LINK 14|15|SUBJ 15|12|CMOD
+	16|15|OBJ 17|1|PUNCT
+*INV:	everything that you see going on . 10290_12579
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|1|PUNCT
+*PAR:	everything what ? [+ exc] 12579_13557
+%mor:	pro:indef|everything pro:int|what ?
+%gra:	1|0|INCROOT 2|1|OM 3|1|PUNCT
+*INV:	everything that you see happening in this picture . 13557_16264
+%mor:	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP prep|in det:dem|this n|picture .
+%gra:	1|0|INCROOT 2|5|LINK 3|5|SUBJ 4|5|COM 5|1|CMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|1|PUNCT
+*PAR:	mhm . [+ exc] 16264_16830
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< everything that you see going on . 16530_18110
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|1|PUNCT
+*INV:	just tell me . 18110_19034
+%mor:	adv|just v|tell pro:obj|me .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	everything you see happening . 19034_21323
+%mor:	pro:indef|everything pro:per|you v|see n:gerund|happen-PRESP .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	what could happen ? [+ exc] 21323_23114
+%mor:	pro:int|what mod|could v|happen ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*INV:	what is happening . 23114_24729
+%mor:	pro:int|what aux|be&3S part|happen-PRESP .
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*INV:	tell me . 24729_25432
+%mor:	v|tell pro:obj|me .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	+< what is happening ? [+ exc] 24932_25962
+%mor:	pro:int|what aux|be&3S part|happen-PRESP ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*INV:	tell me what you +/. 25962_26661
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you +/.
+%gra:	1|0|ROOT 2|1|OBJ 3|4|LINK 4|1|OBJ 5|1|PUNCT
+*PAR:	he's stealin(g) cookies . 26561_27955
+%mor:	pro:sub|he~aux|be&3S part|steal-PRESP n|cookie-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	okay . 27955_28899
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she's helpin(g) him . 28899_33635
+%mor:	pro:sub|she~aux|be&3S part|help-PRESP pro:obj|him .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	the mother is &wa dryin(g) dishes . 33635_37042
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	she's washin(g) [/] &d washin(g) . 37042_38555
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	the water is runnin(g) xxx . 38334_42147
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	he's gonna fall off that chair [: stool] [* s:r] . 42147_44857
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall prep|off
+	det:dem|that n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	he's gonna break his leg . 44857_46974
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|break det:poss|his
+	n|leg .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*PAR:	&=laughs look at it . [+ exc] 46971_49324
+%mor:	v|look prep|at pro:per|it .
+%gra:	1|0|ROOT 2|1|JCT 3|2|POBJ 4|1|PUNCT
+*INV:	mhm . 49324_50138
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I wanna kill you . [+ exc] 50138_52533
+%mor:	pro:sub|I v|want~inf|to v|kill pro:per|you .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|4|OBJ 6|2|PUNCT
+*PAR:	ah ! [+ exc] 52533_55626
+%mor:	co|ah !
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	he's doin(g) the wrong thing though . 55626_58470
+%mor:	pro:sub|he~aux|be&3S part|do-PRESP det:art|the adj|wrong n|thing
+	adv|though .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|3|PUNCT
+*PAR:	&=laughs she's &s got her hand out there and he's tryin(g) to give
+	her something or he's gonna fall of that chair [: stool] [* s:r] . 58470_65501
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:poss|her n|hand prep|out
+	n|there coord|and pro:sub|he~aux|be&3S part|try-PRESP inf|to v|give
+	pro:obj|her pro:indef|something coord|or pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|fall prep|of det:dem|that n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|6|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|3|CJCT 12|13|INF 13|11|COMP 14|13|OBJ2 15|13|OBJ
+	16|19|LINK 17|19|SUBJ 18|19|AUX 19|15|CMOD 20|21|INF 21|19|COMP 22|21|JCT
+	23|24|DET 24|22|POBJ 25|3|PUNCT
+*PAR:	he'll be [/] be picking that up pieces . [+ gram] 65501_67499
+%mor:	pro:sub|he~mod|will cop|be part|pick-PRESP comp|that adv|up
+	n|piece-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PRED 5|4|OBJ 6|5|JCT 7|6|POBJ 8|3|PUNCT
+*PAR:	what else you want ? [+ exc] 67499_70068
+%mor:	pro:int|what post|else pro:per|you v|want ?
+%gra:	1|4|LINK 2|1|PQ 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	that's all that's goin(g) on that's all that I see . [+ exc] 70068_73616
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:rel|that~aux|be&3S
+	part|go-PRESP prep|on pro:rel|that~cop|be&3S adv|all adv|that
+	pro:sub|I v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|9|LINK
+	9|7|POBJ 10|11|JCT 11|13|JCT 12|13|SUBJ 13|9|CPRED 14|2|PUNCT
+@End

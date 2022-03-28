@@ -1,0 +1,103 @@
+@UTF8
+@PID:	11312/t-00002404-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	323-0, audio
+*INV:	good and there's the picture . 0_2209
+%mor:	adj|good coord|and pro:exist|there~cop|be&3S det:art|the n|picture
+	.
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|6|DET 6|4|PRED 7|1|PUNCT
+*PAR:	(..) first of all the sink is overflowing . 2209_9606
+%mor:	adv|first prep|of qn|all det:art|the n|sink aux|be&3S
+	over#part|flow-PRESP .
+%gra:	1|0|INCROOT 2|1|JCT 3|5|QUANT 4|5|DET 5|7|SUBJ 6|7|AUX 7|2|POBJ
+	8|1|PUNCT
+*PAR:	(.) mother is washing dishes or an adult is washing dishes . 9606_16671
+%mor:	n|mother aux|be&3S part|wash-PRESP n|dish-PL coord|or det:art|a
+	n|adult aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|9|LINK 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|4|CMOD 10|9|OBJ 11|3|PUNCT
+*PAR:	there are two children in the cookie jar . 16671_19768
+%mor:	pro:exist|there cop|be&PRES det:num|two n|child&PL prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|2|PUNCT
+*PAR:	one of (th)em is on a stool . 19768_21545
+%mor:	det:num|one prep|of pro:obj|them cop|be&3S prep|on det:art|a
+	n|stool .
+%gra:	1|4|SUBJ 2|1|NJCT 3|2|POBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and the stool's overturning . 21545_23629
+%mor:	coord|and det:art|the adj|stool&dn-POSS over#part|turn-PRESP .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	the little girl is reaching for a cookie from the little boy as the
+	&s &s stool turn [//] falls over . 23629_32747
+%mor:	det:art|the adj|little n|girl aux|be&3S part|reach-PRESP prep|for
+	det:art|a n|cookie prep|from det:art|the adj|little n|boy prep|as
+	det:art|the n|stool v|fall-3S adv|over .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|8|NJCT 10|12|DET 11|12|MOD 12|9|POBJ 13|15|COORD 14|15|DET 15|16|SUBJ
+	16|12|CMOD 17|16|JCT 18|5|PUNCT
+*PAR:	there's a window . 32747_34504
+%mor:	pro:exist|there~cop|be&3S det:art|a n|window .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	a::nd the bushes and path outside the window . [+ gram] 34504_40225
+%mor:	coord|and det:art|the n|bush-PL coord|and n|path n|outside
+	det:art|the n|window .
+%gra:	1|0|INCROOT 2|3|DET 3|1|COORD 4|3|CONJ 5|6|MOD 6|4|COORD 7|8|DET
+	8|6|OBJ 9|1|PUNCT
+*PAR:	and a glimpse of another window . [+ gram] 40225_42460
+%mor:	coord|and det:art|a n|glimpse prep|of qn|another n|window .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|NJCT 5|6|QUANT 6|4|POBJ 7|3|PUNCT
+*PAR:	and another part of the house . [+ gram] 42460_45515
+%mor:	coord|and qn|another n|part prep|of det:art|the n|house .
+%gra:	1|3|LINK 2|3|QUANT 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	there are curtains with tie backs . 45515_47394
+%mor:	pro:exist|there cop|be&PRES n|curtain-PL prep|with n|tie n|back-PL
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|MOD 6|4|POBJ 7|2|PUNCT
+*PAR:	there are dishes . 47394_48468
+%mor:	pro:exist|there cop|be&PRES n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	(.) <there is dish towels> [//] (.) there are dish towels . 48468_54163
+%mor:	pro:exist|there cop|be&PRES n|dish n|towel-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|MOD 4|2|PRED 5|2|PUNCT
+*PAR:	&um (.) well maybe there are [* m:a] only one . [+ gram] 54163_60348
+%mor:	adv|well adv|maybe pro:exist|there cop|be&PRES adv|only
+	pro:indef|one .
+%gra:	1|2|JCT 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|6|JCT 6|4|PRED 7|4|PUNCT
+*PAR:	there's at least only one dish towel . 60348_62009
+%mor:	pro:exist|there~cop|be&3S prep|at n|least adv|only det:num|one
+	n|dish n|towel .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|3|POBJ 5|6|JCT 6|8|QUANT 7|8|MOD 8|2|PRED
+	9|2|PUNCT
+*PAR:	<I thought I> [//] &s I looked at one dish towel . [+ exc] 62009_64165
+%mor:	pro:sub|I v|look-PAST prep|at det:num|one n|dish n|towel .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|6|QUANT 5|6|MOD 6|3|POBJ 7|2|PUNCT
+*PAR:	two cups a plate cabinets . [+ gram] 64165_68652
+%mor:	det:num|two n|cup-PL det:art|a n|plate n|cabinet-PL .
+%gra:	1|2|QUANT 2|0|INCROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|2|PUNCT
+*PAR:	(.) apron . [+ gram] 68652_72666
+%mor:	n|apron .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(..) glass and trees . [+ gram] 72666_79849
+%mor:	n|glass coord|and n|tree-PL .
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|1|PUNCT
+*PAR:	I don't think I can xxx +... [+ exc] 79849_81102
+%mor:	pro:sub|I mod|do~neg|not v|think pro:sub|I mod|can +...
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|4|PUNCT
+*PAR:	floor . [+ gram] 81102_83403
+%mor:	n|floor .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(.) counter space . [+ gram] 83403_87451
+%mor:	n|counter n|space .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*INV:	(...) okay good . 87451_97724
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	+< did I xxx +... [+ exc] 97424_98220
+%mor:	mod|do&PAST pro:sub|I +...
+%gra:	1|0|INCROOT 2|1|OM 3|1|PUNCT
+@End

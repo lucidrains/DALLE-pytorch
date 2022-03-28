@@ -1,0 +1,169 @@
+@UTF8
+@PID:	11312/t-00002443-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|male|ProbableAD||Participant|21||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	029-1, audio
+*PAR:	alright . [+ exc] 0_522
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	tell me what you see going on in that picture . 552_3194
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	I see the little boy stealing cookies from the cookie jar . 3194_7004
+%mor:	pro:sub|I v|see det:art|the adj|little n|boy part|steal-PRESP
+	n|cookie-PL prep|from det:art|the n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|5|XMOD 7|6|OBJ 8|6|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|2|PUNCT
+*INV:	yeah . 7004_8065
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and <the little girl's> [//] &uh he gave some to the little girl
+	and she's eatin(g) some of the cookies . 8065_12532
+%mor:	coord|and pro:sub|he v|give&PAST qn|some prep|to det:art|the
+	adj|little n|girl coord|and pro:sub|she~cop|be&3S n:gerund|eat-PRESP
+	qn|some prep|of det:art|the n|cookie-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|11|LINK 10|11|SUBJ 11|8|CMOD 12|11|PRED 13|12|OBJ 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*INV:	mhm . 12532_13354
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and I guess this is mama and she's washing the dishes . 13354_16355
+%mor:	coord|and pro:sub|I v|guess pro:dem|this cop|be&3S n|mama coord|and
+	pro:sub|she~aux|be&3S part|wash-PRESP det:art|the n|dish-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|PRED 7|10|LINK
+	8|10|SUBJ 9|10|AUX 10|6|CMOD 11|12|DET 12|10|OBJ 13|3|PUNCT
+*PAR:	and she dropped a dish . 16355_18799
+%mor:	coord|and pro:sub|she v|drop-PAST det:art|a n|dish .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	no [/] no she didn't drop a dish . 18799_20333
+%mor:	co|no pro:sub|she mod|do&PAST~neg|not v|drop det:art|a n|dish .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	&uh the [/] the water that she's washing the dishes with she let
+	run . 20333_24483
+%mor:	det:art|the n|water pro:rel|that pro:sub|she~aux|be&3S
+	part|wash-PRESP det:art|the n|dish-PL prep|with pro:sub|she
+	v|let&ZERO v|run .
+%gra:	1|2|DET 2|0|INCROOT 3|6|LINK 4|6|SUBJ 5|6|AUX 6|2|CMOD 7|8|DET 8|6|OBJ
+	9|6|JCT 10|11|SUBJ 11|9|POBJ 12|11|COMP 13|2|PUNCT
+*PAR:	and it's overflown [/] &o overflown [/] &=laughs &o &o overflown .
+	24483_31332
+%mor:	coord|and pro:per|it~aux|be&3S over#part|fly&PASTP .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	<that doesn't> [/] that doesn't sound right . [+ exc] 31332_34342
+%mor:	pro:dem|that mod|do&3S~neg|not v|sound co|right .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	did it &uh +/? [+ exc] 34342_35222
+%mor:	v|do&PAST pro:per|it +/?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	+< no &=laughs . 34502_36108
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	we forgot to turn off the spigot . 36108_37900
+%mor:	pro:sub|we v|forget&PAST inf|to v|turn prep|off det:art|the
+	n|spigot .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|4|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	and so the water is running off <into the> [//] onto the floor here
+	. 37900_42191
+%mor:	coord|and co|so det:art|the n|water aux|be&3S part|run-PRESP
+	adv|off prep|onto det:art|the n|floor adv|here .
+%gra:	1|6|LINK 2|6|COM 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|6|JCT 12|6|PUNCT
+*PAR:	and mom apparently is washing the dishes . 42191_46680
+%mor:	coord|and n|mom adv|apparent&dadj-LY aux|be&3S part|wash-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|5|LINK 2|5|SUBJ 3|2|NJCT 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and here's this little boy stealing the cookie [//] &j cookies . 46680_50500
+%mor:	coord|and pro:exist|here~cop|be&3S det:dem|this adj|little n|boy
+	part|steal-PRESP det:art|the n|cookie-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|XMOD 8|9|DET
+	9|7|OBJ 10|3|PUNCT
+*PAR:	he's gonna [/] gonna fall because his [//] &uh the [/] <the cookies
+	jar or> [//] <the [x 3] bench [: stool] s[* s:r-ret]> [//] the &s
+	four legged stool <whatever it is> [//] is [/] is gonna fall over
+	with him (.) and the cookie jar . 50500_64401
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall conj|because
+	det:art|the det:num|four adj|legged n|stool aux|be&3S
+	part|go-PRESP~inf|to v|fall adv|over prep|with pro:obj|him coord|and
+	det:art|the n|cookie n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|12|LINK 7|8|DET 8|10|QUANT
+	9|10|MOD 10|12|SUBJ 11|12|AUX 12|3|CJCT 13|14|INF 14|12|COMP 15|14|JCT
+	16|14|JCT 17|16|POBJ 18|14|CONJ 19|21|DET 20|21|MOD 21|18|COORD
+	22|3|PUNCT
+*PAR:	and mama's drying the dishes as usual for mamas (.) if they don't
+	have a husband that dries them or washes them or whatever . 64401_76401
+%mor:	coord|and n|mama~aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	conj|as adv|usual prep|for n|mama-PL conj|if pro:sub|they
+	mod|do~neg|not v|have det:art|a n|husband pro:rel|that v|dry-3S
+	pro:obj|them coord|or v|wash-3S pro:obj|them coord|or
+	pro:int|whatever .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|15|LINK 8|15|JCT
+	9|8|JCT 10|9|POBJ 11|15|LINK 12|15|SUBJ 13|15|AUX 14|13|NEG 15|4|CJCT
+	16|17|DET 17|15|OBJ 18|19|LINK 19|17|CMOD 20|19|OBJ 21|19|CONJ 22|21|COORD
+	23|22|OBJ 24|22|CONJ 25|24|COORD 26|4|PUNCT
+*PAR:	&uh let's see now . [+ exc] 76401_82066
+%mor:	v|let~pro:obj|us v|see adv|now .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|JCT 5|1|PUNCT
+*PAR:	I guess there's more things I'm sposta see . [+ exc] 82066_87061
+%mor:	pro:sub|I v|guess pro:exist|there~cop|be&3S qn|more n|thing-PL
+	pro:sub|I~aux|be&1S part|suppose-PASTP~inf|to co|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|6|QUANT 6|4|PRED 7|9|SUBJ 8|9|AUX
+	9|6|CMOD 10|11|INF 11|9|COMP 12|2|PUNCT
+*INV:	no you tell me when you finished . 87061_89553
+%mor:	co|no pro:per|you v|tell pro:obj|me conj|when pro:per|you
+	v|finish-PAST .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|7|LINK 6|7|SUBJ 7|3|CJCT 8|3|PUNCT
+*PAR:	let's see here now . [+ exc] 89553_90917
+%mor:	v|let~pro:obj|us v|see adv|here adv|now .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|5|JCT 5|3|JCT 6|1|PUNCT
+*PAR:	oh &uh (.) and the [/] the water is &uh flowing out <of the> [/] of
+	the sink they forgot to turn off whoever's doing the [/] &w &uh the
+	dishwashing . [+ gram] 90917_100540
+%mor:	co|oh coord|and det:art|the n|water aux|be&3S part|flow-PRESP
+	adv|out prep|of det:art|the n|sink pro:sub|they v|forget&PAST
+	prep|to n|turn prep|off adj|whoever&dn-POSS part|do-PRESP
+	det:art|the adj|+n|dish+part|washing .
+%gra:	1|6|COM 2|1|CONJ 3|4|DET 4|2|COORD 5|6|AUX 6|12|XJCT 7|6|JCT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|12|SUBJ 12|0|ROOT 13|12|JCT 14|13|POBJ 15|14|NJCT
+	16|15|POBJ 17|12|XJCT 18|19|DET 19|17|OBJ 20|12|PUNCT
+*PAR:	mom apparently here, she forgot to turn off the water and the [/]
+	the water is spilling out <over the> [//] &f <onto the floor> [//]
+	onto the kitchen floor . 100540_108754
+%mor:	n|mom adv|apparent&dadj-LY adv|here cm|cm pro:sub|she v|forget&PAST
+	prep|to n|turn prep|off det:art|the n|water coord|and det:art|the
+	n|water aux|be&3S part|spill-PRESP adv|out prep|onto det:art|the
+	n|kitchen n|floor .
+%gra:	1|6|JCT 2|3|JCT 3|1|NJCT 4|1|LP 5|6|SUBJ 6|0|ROOT 7|6|JCT 8|7|POBJ
+	9|6|JCT 10|11|DET 11|9|POBJ 12|16|LINK 13|14|DET 14|16|SUBJ 15|16|AUX
+	16|6|CJCT 17|16|JCT 18|16|JCT 19|21|DET 20|21|MOD 21|18|POBJ 22|6|PUNCT
+*PAR:	and the little girl has pushed over the (.) chair [: stool] [* s:r]
+	(..) with the boy that [//] &uh he [//] that was reaching up to get
+	the cookies . 108754_122550
+%mor:	coord|and det:art|the adj|little n|girl aux|have&3S part|push-PASTP
+	prep|over det:art|the n|stool prep|with det:art|the n|boy
+	pro:rel|that aux|be&PAST&13S part|reach-PRESP adv|up inf|to v|get
+	det:art|the n|cookie-PL .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|JCT 11|12|DET 12|10|POBJ 13|15|LINK 14|15|AUX 15|12|CMOD
+	16|15|JCT 17|18|INF 18|15|XJCT 19|20|DET 20|18|OBJ 21|6|PUNCT
+*PAR:	&uh I [//] either he [: she] [* s:r-ret] [//] she pushed it over or
+	he fell over with it . 122550_126325
+%mor:	coord|either pro:sub|she v|push-PAST pro:per|it adv|over coord|or
+	pro:sub|he v|fall&PAST adv|over prep|with pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|LINK 7|8|SUBJ 8|3|CJCT
+	9|8|JCT 10|8|JCT 11|10|POBJ 12|3|PUNCT
+*INV:	okay . 126325_127401
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	you_know it &uh I [/] I [//] &uh excuse me but you_know I [/] I was
+	+... [+ exc] 127401_134740
+%mor:	co|you_know pro:per|it v|excuse pro:obj|me conj|but co|you_know
+	pro:sub|I cop|be&PAST&13S +...
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|8|LINK 6|8|COM 7|8|SUBJ 8|3|CJCT
+	9|3|PUNCT
+@End

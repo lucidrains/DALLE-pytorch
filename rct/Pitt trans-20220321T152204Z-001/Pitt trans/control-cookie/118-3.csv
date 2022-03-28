@@ -1,0 +1,72 @@
+@UTF8
+@PID:	11312/t-00002271-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	118-3, audio
+*INV:	okay I'm gonna leave the tape recorder on . 0_2194
+%mor:	co|okay pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|leave
+	det:art|the n|tape n|record&dv-AGT prep|on .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|9|DET 8|9|MOD
+	9|6|OBJ 10|6|JCT 11|4|PUNCT
+*INV:	and I'm gonna show you a picture . 2194_3923
+%mor:	coord|and pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|show
+	pro:per|you det:art|a n|picture .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|OBJ2 8|9|DET
+	9|6|OBJ 10|4|PUNCT
+*INV:	has a_lot_of action going on in it . 3923_6202
+%mor:	v|have&3S qn|a_lot_of n|action part|go-PRESP adv|on prep|in
+	pro:per|it .
+%gra:	1|0|ROOT 2|3|QUANT 3|1|OBJ 4|3|XMOD 5|4|JCT 6|4|JCT 7|6|POBJ 8|1|PUNCT
+*INV:	<everything that you> [//] tell me everything that you see going on
+	in the picture . 6202_10142
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*INV:	(.) and there's the picture . 10142_13434
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	&uh &ha there's a little boy's takin(g) a cookie out o(f) the &c
+	cookie jar and givin(g) it to his sister . 13434_24100
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|little n|boy~aux|be&3S
+	part|take-PRESP det:art|a n|cookie adv|out prep|of det:art|the
+	n|cookie n|jar coord|and part|give-PRESP pro:per|it prep|to
+	det:poss|his n|sister .
+%gra:	1|2|SUBJ 2|7|LINK 3|5|DET 4|5|MOD 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|9|DET
+	9|7|OBJ 10|7|JCT 11|10|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|7|CONJ
+	16|15|COORD 17|16|OBJ 18|16|JCT 19|20|DET 20|18|POBJ 21|7|PUNCT
+*PAR:	and the [/] the stool that he's standin(g) on is gonna fall . 24100_28040
+%mor:	coord|and det:art|the n|stool pro:rel|that pro:sub|he~aux|be&3S
+	part|stand-PRESP adv|on aux|be&3S part|go-PRESP~inf|to v|fall .
+%gra:	1|10|LINK 2|3|DET 3|10|SUBJ 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CMOD 8|7|JCT
+	9|10|AUX 10|0|ROOT 11|12|INF 12|10|COMP 13|10|PUNCT
+*PAR:	and the [/] the mother's back is turned . 28040_31599
+%mor:	coord|and det:art|the n|mother~aux|be&3S adv|back aux|be&3S
+	part|turn-PASTP .
+%gra:	1|7|LINK 2|3|DET 3|7|SUBJ 4|7|AUX 5|7|JCT 6|7|AUX 7|0|ROOT 8|7|PUNCT
+*PAR:	and she's the water is overflowin(g) in the sink . 31599_35905
+%mor:	coord|and pro:sub|she~aux|be&3S det:art|the n|water aux|be&3S
+	over#part|flow-PRESP prep|in det:art|the n|sink .
+%gra:	1|7|LINK 2|5|SUBJ 3|5|AUX 4|5|DET 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|PUNCT
+*PAR:	and &uh she's wipin(g) the dish . 35905_39095
+%mor:	coord|and pro:sub|she~aux|be&3S part|wipe-PRESP det:art|the n|dish
+	.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and &uh (.) the [/] &wi the window's open . 39095_47059
+%mor:	coord|and det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	and she's probably lookin(g) out the window and missin(g) the water
+	&f overflowin(g) . 47059_52810
+%mor:	coord|and pro:sub|she~aux|be&3S adv|probable&dadj-LY
+	part|look-PRESP prep|out det:art|the n|window coord|and
+	part|miss-PRESP det:art|the n|water over#part|flow-PRESP .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|12|DET 12|10|OBJ 13|12|POSTMOD 14|5|PUNCT
+*INV:	okay . 52810_54540
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

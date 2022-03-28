@@ -1,0 +1,83 @@
+@UTF8
+@PID:	11312/t-00002378-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|54;|male|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	274-0, audio
+*INV:	okay I just want you to tell me what you see going on in that
+	picture ? 125_3848
+%mor:	co|okay pro:sub|I adv|just v|want pro:per|you inf|to v|tell
+	pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture ?
+%gra:	1|4|COM 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|7|OBJ
+	9|11|LINK 10|11|SUBJ 11|7|COMP 12|11|OBJ 13|11|JCT 14|11|JCT 15|16|DET
+	16|14|POBJ 17|4|PUNCT
+*PAR:	well the water's running over . 3848_5385
+%mor:	co|well det:art|the n|water~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	<the stool is> [//] and the boy's gonna fall off the stool . 5385_9042
+%mor:	coord|and det:art|the n|boy~aux|be&3S part|go-PRESP~inf|to v|fall
+	prep|off det:art|the n|stool .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	the girl is saying +"/. 9042_11100
+%mor:	det:art|the n|girl aux|be&3S part|say-PRESP +"/.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	+" give me one or I will tell . 11100_12682
+%mor:	v|give pro:obj|me pro:indef|one coord|or pro:sub|I mod|will v|tell
+	.
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CJCT 8|1|PUNCT
+*PAR:	and the boy is taking the second one out_of the cookie jar . 12682_15677
+%mor:	coord|and det:art|the n|boy aux|be&3S part|take-PRESP det:art|the
+	adj|second det:num|one prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|5|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|5|PUNCT
+*PAR:	the lid's gonna fall off . 15677_16811
+%mor:	det:art|the n|lid~aux|be&3S part|go-PRESP~inf|to v|fall adv|off .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|4|PUNCT
+*PAR:	the mother's drying the dishes . 16811_19362
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	(.) the &um window is open . 19362_24555
+%mor:	det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	(..) she's standing in the water . 24555_28668
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|water
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	she's drying the dishes . 28668_32941
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*INV:	(...) anything else ? 32941_45742
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	wait &w you want what's in the picture or what's going on ? [+ exc]
+	45742_47877
+%mor:	v|wait pro:per|you v|want pro:int|what~cop|be&3S prep|in
+	det:art|the n|picture coord|or pro:int|what~aux|be&3S part|go-PRESP
+	adv|on ?
+%gra:	1|0|ROOT 2|3|SUBJ 3|1|COMP 4|5|SUBJ 5|3|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|5|CJCT 13|12|JCT 14|1|PUNCT
+*PAR:	I thought you said what's going on ? [+ exc] 47877_49150
+%mor:	pro:sub|I v|think&PAST pro:per|you v|say&PAST
+	pro:int|what~aux|be&3S part|go-PRESP adv|on ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|7|SUBJ 6|7|AUX 7|4|COMP 8|7|JCT
+	9|2|PUNCT
+*INV:	just what was going on . 49150_50365
+%mor:	adv|just pro:int|what aux|be&PAST&13S part|go-PRESP adv|on .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	+< okay actio(n) [//] so it's got to be action . [+ exc] 49700_52000
+%mor:	co|okay adv|so pro:per|it~aux|be&3S part|get&PASTP inf|to cop|be
+	n|action .
+%gra:	1|5|COM 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|PRED
+	9|5|PUNCT
+*PAR:	&um that's all . [+ exc] 52000_55020
+%mor:	pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 55020_55751
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

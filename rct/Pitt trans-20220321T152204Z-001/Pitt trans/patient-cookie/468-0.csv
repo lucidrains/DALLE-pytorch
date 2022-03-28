@@ -1,0 +1,60 @@
+@UTF8
+@PID:	11312/t-00002656-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|male|Vascular||Participant|14||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	468-0, audio
+*PAR:	(.) oh any [//] anything I see . [+ exc] 0_5067
+%mor:	co|oh pro:indef|anything pro:sub|I v|see .
+%gra:	1|2|COM 2|0|ROOT 3|4|SUBJ 4|2|CMOD 5|2|PUNCT
+*INV:	right . 5067_5777
+%mor:	co|right .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well there's &uh a little girl here . 5777_10557
+%mor:	co|well pro:exist|there~cop|be&3S det:art|a adj|little n|girl
+	adv|here .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|NJCT 8|3|PUNCT
+*PAR:	(..) she's (..) pointing at something . 10557_23113
+%mor:	pro:sub|she~aux|be&3S part|point-PRESP prep|at pro:indef|something
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	and that looks like &uh (..) her mother [: brother] [* s:r] (.) is
+	just about ready to [/] to fall down <on that> [/] where she's
+	sitting [* s:uk] there (.) where it says cookie jar . [+ cir] 23113_46770
+%mor:	coord|and pro:rel|that v|look-3S co|like det:poss|her n|brother
+	cop|be&3S adv|just prep|about adj|ready inf|to v|fall adv|down
+	pro:rel|where pro:sub|she~aux|be&3S part|sit-PRESP adv|there
+	pro:rel|where pro:per|it v|say-3S n|cookie n|jar .
+%gra:	1|7|LINK 2|3|LINK 3|7|CJCT 4|3|COM 5|6|DET 6|7|SUBJ 7|0|ROOT 8|10|JCT
+	9|10|JCT 10|7|PRED 11|12|INF 12|10|XMOD 13|12|JCT 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|7|CJCT 18|17|JCT 19|21|LINK 20|21|SUBJ 21|17|CJCT 22|23|MOD
+	23|21|OBJ 24|7|PUNCT
+*PAR:	and here on her right side there's a young lady there . 46770_54736
+%mor:	coord|and adv|here prep|on det:poss|her n|right n|side
+	pro:exist|there~cop|be&3S det:art|a adj|young n|lady adv|there .
+%gra:	1|8|LINK 2|8|JCT 3|2|JCT 4|6|DET 5|6|MOD 6|3|POBJ 7|8|SUBJ 8|0|ROOT
+	9|11|DET 10|11|MOD 11|8|PRED 12|11|NJCT 13|8|PUNCT
+*PAR:	she's &uh washing the [//] (..) what she &uh +... 54736_64657
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP pro:int|what pro:sub|she +...
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|OM 6|3|PUNCT
+*PAR:	she's cleaning +/. 64657_69681
+%mor:	pro:sub|she~aux|be&3S part|clean-PRESP +/.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*INV:	okay . 69681_70913
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, the &uh +... 70913_79157
+%mor:	det:art|the +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she's cleaning . 79157_81534
+%mor:	pro:sub|she~aux|be&3S part|clean-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	what is she +//? [+ exc] 87369_90861
+%mor:	pro:int|what cop|be&3S pro:sub|she +//?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	she +... 90861_103993
+%mor:	pro:sub|she +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

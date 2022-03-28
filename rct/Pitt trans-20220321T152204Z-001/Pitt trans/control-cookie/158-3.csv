@@ -1,0 +1,61 @@
+@UTF8
+@PID:	11312/t-00002320-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|81;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	158-3, audio
+*INV:	all the action . 0_1729
+%mor:	qn|all det:art|the n|action .
+%gra:	1|3|QUANT 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	well ‡ <the tool [: stool-ret] [* p:w] is> [//] &fa the stool [/]
+	&=laughs stool is falling over . 1729_6927
+%mor:	co|well beg|beg det:art|the n|stool aux|be&3S part|fall-PRESP
+	adv|over .
+%gra:	1|0|BEG 2|1|BEGP 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*PAR:	the &uh boy is taking cookies out_of the cookie jar . 6927_13261
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	the little girl is reaching for a cookie (.) and holding her arm up
+	. 13261_21463
+%mor:	det:art|the adj|little n|girl aux|be&3S part|reach-PRESP prep|for
+	det:art|a n|cookie coord|and part|hold-PRESP det:poss|her n|arm
+	adv|up .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|12|DET 12|10|OBJ 13|10|JCT 14|5|PUNCT
+*PAR:	the mother <is drying> [//] is doing dishes . 21463_26477
+%mor:	det:art|the n|mother aux|be&3S part|do-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water is spilling out_of the sink . 26477_30816
+%mor:	det:art|the n|water aux|be&3S part|spill-PRESP prep|out_of
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and the mother's standing in the water . 30816_36699
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|stand-PRESP prep|in
+	det:art|the n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	the mother is looking out_of the window . 36699_43532
+%mor:	det:art|the n|mother aux|be&3S part|look-PRESP prep|out_of
+	det:art|the n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the water's coming out_of the faucet . 43532_47999
+%mor:	det:art|the n|water~aux|be&3S part|come-PRESP prep|out_of
+	det:art|the n|faucet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	that's about all I can +/. [+ exc] 47999_49880
+%mor:	pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I mod|can +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|JCT 4|6|JCT 5|6|SUBJ 6|2|PRED 7|2|PUNCT
+*INV:	okay . 49880_51022
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, get out_of that . [+ exc] 51022_51882
+%mor:	v|get prep|out_of pro:dem|that .
+%gra:	1|0|ROOT 2|1|JCT 3|2|POBJ 4|1|PUNCT
+*INV:	good . 51882_52807
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

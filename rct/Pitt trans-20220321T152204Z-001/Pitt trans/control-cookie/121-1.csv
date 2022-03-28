@@ -1,0 +1,118 @@
+@UTF8
+@PID:	11312/t-00002274-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	121-1, audio
+*PAR:	there's the action . [+ exc] 0_1215
+%mor:	pro:exist|there~cop|be&3S det:art|the n|action .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	there's the action as opposed to state +... [+ exc] 1215_4485
+%mor:	pro:exist|there~cop|be&3S det:art|the n|action adv|as v|oppose-PAST
+	inf|to v|state +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|JCT 6|2|CPRED 7|8|INF 8|6|COMP
+	9|2|PUNCT
+*INV:	right . 4485_5247
+%mor:	co|right .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	<all of the action that's going on> [>] . 5247_7614
+%mor:	pro:indef|all prep|of det:art|the n|action pro:rel|that~aux|be&3S
+	part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|1|PUNCT
+*PAR:	<yeah action &al alright> [<] . [+ exc] 5500_7860
+%mor:	co|yeah n|action adj|alright .
+%gra:	1|2|COM 2|0|INCROOT 3|2|POSTMOD 4|2|PUNCT
+*PAR:	alright . [+ exc] 7860_9139
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the girl is &uh holding her finger up to her face . 9139_15397
+%mor:	det:art|the n|girl aux|be&3S part|hold-PRESP det:poss|her n|finger
+	adv|up prep|to det:poss|her n|face .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	is it that kind of thing ? [+ exc] 15397_16362
+%mor:	cop|be&3S pro:per|it adv|that adj|kind prep|of n|thing ?
+%gra:	1|0|ROOT 2|1|PRED 3|4|JCT 4|2|POSTMOD 5|4|JCT 6|5|POBJ 7|1|PUNCT
+*INV:	go ahead mhm [>] +/. 16362_17268
+%mor:	v|go adv|ahead co|mhm=yes +/.
+%gra:	1|0|ROOT 2|1|JCT 3|1|COM 4|1|PUNCT
+*PAR:	alright [<] <pointing toward the cookie jar what or (.) no> [//]
+	reaching out her hand for a cookie . [+ gram] 17268_21627
+%mor:	co|alright part|reach-PRESP adv|out det:poss|her n|hand prep|for
+	det:art|a n|cookie .
+%gra:	1|2|COM 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|JCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	her brother is [//] &h has one cookie near her hand . 21534_25395
+%mor:	det:poss|her n|brother v|have&3S det:num|one n|cookie prep|near
+	det:poss|her n|hand .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	in his right hand he is reaching in the cookie jar . 25395_28037
+%mor:	prep|in det:poss|his n|right n|hand pro:sub|he aux|be&3S
+	part|reach-PRESP prep|in det:art|the n|cookie n|jar .
+%gra:	1|7|JCT 2|4|DET 3|4|MOD 4|1|POBJ 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|7|PUNCT
+*PAR:	the &um stool is falling over . 28037_32551
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	he has his xxx . 32551_36795
+%mor:	pro:sub|he aux|have&3S det:poss|his .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	alright . [+ exc] 36795_37608
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh the [/] the woman is wiping the dishes . 37608_41053
+%mor:	det:art|the n|woman aux|be&3S part|wipe-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	she's holding it [//] &pla &uh plate in one hand and drying with
+	the other . 41053_45919
+%mor:	pro:sub|she~aux|be&3S part|hold-PRESP n|plate prep|in det:num|one
+	n|hand coord|and part|dry-PRESP prep|with det:art|the qn|other .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|7|QUANT 7|5|POBJ 8|3|CONJ
+	9|8|COORD 10|9|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	&uh water's &uh spilling out_of the sink . [+ gram] 45919_51115
+%mor:	n|water~aux|be&3S part|spill-PRESP prep|out_of det:art|the n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and the water's running out_of the faucet filling the sink . 51115_54995
+%mor:	coord|and det:art|the n|water~aux|be&3S part|run-PRESP prep|out_of
+	det:art|the n|faucet part|fill-PRESP det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|XJCT 10|11|DET 11|9|OBJ 12|5|PUNCT
+*PAR:	&um (.) looks as if maybe there's a breeze blowing in the curtain .
+	[+ gram] 54995_62666
+%mor:	v|look-3S adv|as conj|if adv|maybe pro:exist|there~cop|be&3S
+	det:art|a n|breeze part|blow-PRESP prep|in det:art|the n|curtain .
+%gra:	1|0|ROOT 2|1|JCT 3|6|LINK 4|6|JCT 5|6|SUBJ 6|1|COMP 7|8|DET 8|6|PRED
+	9|8|XMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|1|PUNCT
+*PAR:	yes there is a breeze blowing in the curtains . 62666_64601
+%mor:	co|yes adv|there cop|be&3S det:art|a n|breeze part|blow-PRESP
+	prep|in det:art|the n|curtain-PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|XMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*PAR:	(.) the woman is smiling . 64601_70352
+%mor:	det:art|the n|woman aux|be&3S part|smile-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	they're all smiling . 70352_73204
+%mor:	pro:sub|they~aux|be&PRES post|all part|smile-PRESP .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|PUNCT
+*PAR:	each one is looking at xxx . 73204_79411
+%mor:	qn|each pro:indef|one aux|be&3S part|look-PRESP prep|at .
+%gra:	1|2|QUANT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	xxx at [/] at the other person +... 79411_83318
+%mor:	prep|at det:art|the qn|other n|person +...
+%gra:	1|0|INCROOT 2|4|DET 3|4|QUANT 4|1|POBJ 5|1|PUNCT
+*PAR:	the water is splashing . 83318_87039
+%mor:	det:art|the n|water aux|be&3S part|splash-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	xxx +... [+ exc] 87039_90352
+*PAR:	okay ? [+ exc] 90352_94228
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay fine ! 94228_95332
+%mor:	co|okay adv|fine !
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

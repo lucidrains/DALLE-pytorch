@@ -1,0 +1,87 @@
+@UTF8
+@PID:	11312/t-00002318-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	158-1, audio
+*INV:	and that's the picture . 0_2351
+%mor:	coord|and pro:dem|that~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	climbing . [+ gram] 2351_3877
+%mor:	part|climb-PRESP .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	dishwashing . [+ gram] 3877_5574
+%mor:	adj|+n|dish+part|washing .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	pointing . [+ gram] 5574_7009
+%mor:	part|point-PRESP .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	stealing cookies . [+ gram] 7009_10218
+%mor:	part|steal-PRESP n|cookie-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	the wind is blowing outside . 10218_12662
+%mor:	det:art|the n|wind aux|be&3S part|blow-PRESP adv|outside .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	you can see the grass moving a little bit . 12662_14150
+%mor:	pro:per|you mod|can v|see det:art|the n|grass part|move-PRESP
+	det:art|a adj|little n|bit .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|XMOD 7|9|DET 8|9|MOD
+	9|6|OBJ 10|3|PUNCT
+*PAR:	the water is flowing . 14150_15571
+%mor:	det:art|the n|water aux|be&3S part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	and the &uh stool is &um &um &t &uh tipping . 15571_22155
+%mor:	coord|and det:art|the n|stool aux|be&3S part|tip-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	cupboard door is open . [+ gram] 22155_24549
+%mor:	n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	curtains are apart but that's not an action . [+ gram] 24549_28410
+%mor:	n|curtain-PL cop|be&PRES adv|apart conj|but pro:rel|that~cop|be&3S
+	neg|not det:art|a n|action .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|CONJ 5|6|LINK 6|4|COORD 7|6|NEG 8|9|DET
+	9|6|PRED 10|2|PUNCT
+*PAR:	there's someone washing the dishes . 28410_31414
+%mor:	pro:exist|there~cop|be&3S pro:indef|someone part|wash-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|XMOD 5|6|DET 6|4|OBJ 7|2|PUNCT
+*PAR:	stepping . [+ gram] 31414_36700
+%mor:	n:gerund|step-PRESP .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the two of them are &ste stepping . 36700_39537
+%mor:	coord|and det:art|the det:num|two prep|of pro:obj|them cop|be&PRES
+	n:gerund|step-PRESP .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|3|NJCT 5|4|POBJ 6|0|ROOT 7|6|PRED 8|6|PUNCT
+*PAR:	motion of the hands . [+ gram] 39537_46300
+%mor:	n|motion prep|of det:art|the n|hand-PL .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	&uh point [/] &uh pointing in the motion on the &uh lips . 46300_50294
+%mor:	part|point-PRESP prep|in det:art|the n|motion prep|on det:art|the
+	n|lip-PL .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|JCT 6|7|DET 7|5|POBJ 8|1|PUNCT
+*PAR:	and reaching . [+ gram] 50294_51911
+%mor:	coord|and part|reach-PRESP .
+%gra:	1|2|LINK 2|0|ROOT 3|2|PUNCT
+*PAR:	the cookie jar lid is falling . 51911_54930
+%mor:	det:art|the n|cookie n|jar n|lid aux|be&3S part|fall-PRESP .
+%gra:	1|4|DET 2|3|MOD 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*PAR:	the door is opened . 54930_56859
+%mor:	det:art|the n|door aux|be&3S part|open-PASTP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the sink is overflowing but I said the water was flowing . 56859_63086
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP conj|but
+	pro:sub|I v|say&PAST det:art|the n|water aux|be&PAST&13S
+	part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|CJCT 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|7|COMP 12|4|PUNCT
+*PAR:	it's coming out_of the faucet and the xxx splashing . 63086_67365
+%mor:	pro:per|it~aux|be&3S part|come-PRESP prep|out_of det:art|the
+	n|faucet coord|and det:art|the n:gerund|splash-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|9|DET
+	9|7|COORD 10|3|PUNCT
+*INV:	okay that's fine . 67365_71663
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

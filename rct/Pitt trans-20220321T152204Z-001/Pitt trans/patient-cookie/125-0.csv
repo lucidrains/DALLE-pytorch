@@ -1,0 +1,88 @@
+@UTF8
+@PID:	11312/t-00002508-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|77;|male|ProbableAD||Participant|10||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	125-0, audio
+*PAR:	cookie jar . [+ exc] 0_2256
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*INV:	mhm . 2256_3147
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	(..) what's happening (.) in the picture ? 3147_18852
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP prep|in det:art|the
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	cookie jar . [+ gram] 18852_20365
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*INV:	okay . 20365_21778
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's happening over here ? 21778_28035
+%mor:	pro:int|what~cop|be&3S n:gerund|happen-PRESP prep|over n|here ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|4|POBJ 6|2|PUNCT
+*PAR:	(..) plate . [+ gram] 28035_39257
+%mor:	n|plate .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(..) did I say a cookie jar ? [+ exc] 39257_53655
+%mor:	mod|do&PAST pro:sub|I v|say det:art|a n|cookie n|jar ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|PUNCT
+*INV:	mhm . 53655_53886
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(w)ell I'll give it xxx . [+ exc] 53886_55590
+%mor:	co|well pro:sub|I~mod|will v|give pro:per|it .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	&=coughs . 55590_61451
+*INV:	what's happening to this ? 61451_64127
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP prep|to pro:dem|this ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	foot+stool . [+ gram] 64127_67784
+%mor:	n|+n|foot+n|stool .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's it doing ? 67784_70416
+%mor:	pro:int|what~cop|be&3S pro:per|it part|do-PRESP ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|OM 5|2|PUNCT
+*PAR:	&uh they're raidin(g) a cookie &s jar here . 70416_75458
+%mor:	pro:sub|they~aux|be&PRES part|raid-PRESP det:art|a n|cookie n|jar
+	adv|here .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|3|PUNCT
+*INV:	and what's this woman doing ? 75458_81995
+%mor:	coord|and pro:int|what~cop|be&3S det:dem|this n|woman part|do-PRESP
+	?
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|XMOD 7|3|PUNCT
+*PAR:	<this one is> [//] &uh &uh she's cleaning a plate . 81995_88997
+%mor:	pro:sub|she~aux|be&3S part|clean-PRESP det:art|a n|plate .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*INV:	and what's happening here ? 88997_98072
+%mor:	coord|and pro:int|what~aux|be&3S part|happen-PRESP adv|here ?
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	this here one ? [+ exc] 98072_100141
+%mor:	pro:dem|this adv|here pro:indef|one ?
+%gra:	1|3|SUBJ 2|3|JCT 3|0|INCROOT 4|3|PUNCT
+*INV:	(...) is that everything ? 100141_124764
+%mor:	cop|be&3S comp|that pro:indef|everything ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OM 4|1|PUNCT
+*PAR:	she drops a plate I guess . 124764_127471
+%mor:	pro:sub|she v|drop-3S det:art|a n|plate pro:sub|I v|guess .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|SUBJ 6|2|CJCT 7|2|PUNCT
+*INV:	(..) is that everything now ? 127471_136217
+%mor:	cop|be&3S comp|that pro:indef|everything adv|now ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OM 4|3|NJCT 5|1|PUNCT
+*PAR:	you could do what ? [+ exc] 136217_139143
+%mor:	pro:per|you mod|could v|do pro:int|what ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	<is tha(t)> [/] is that everything you see ? 139143_141945
+%mor:	cop|be&3S comp|that pro:indef|everything pro:per|you v|see ?
+%gra:	1|0|ROOT 2|1|SUBJ 3|1|PRED 4|5|SUBJ 5|3|CMOD 6|1|PUNCT
+*PAR:	uhhuh . [+ exc] 141945_142554
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	good . 142554_143564
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

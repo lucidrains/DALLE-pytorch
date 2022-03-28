@@ -1,0 +1,100 @@
+@UTF8
+@PID:	11312/t-00002705-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|83;|female|ProbableAD||Participant|24||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	620-0, audio
+*INV:	picture . 0_1829
+%mor:	n|picture .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	tell me everything you see going on . 1829_4290
+%mor:	v|tell pro:obj|me pro:indef|everything pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|1|PUNCT
+*PAR:	little boy's stealin(g) cookies out o(f) the cookie jar . [+ gram]
+	4290_8046
+%mor:	adj|little n|boy~aux|be&3S part|steal-PRESP n|cookie-PL adv|out
+	prep|of det:art|the n|cookie n|jar .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	little girl's whisperin(g) not to tell . [+ gram] 8046_12618
+%mor:	adj|little n|girl~aux|be&3S part|whisper-PRESP neg|not inf|to
+	v|tell .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|NEG 6|7|INF 7|4|COMP 8|4|PUNCT
+*PAR:	his chair's [: stool's] [* s:r] gonna fall . 12618_14812
+%mor:	det:poss|his adj|stool&dn-POSS part|go-PRESP~inf|to v|fall .
+%gra:	1|2|DET 2|0|ROOT 3|2|XMOD 4|5|INF 5|3|COMP 6|2|PUNCT
+*PAR:	his mother's at the sink washin(g) dishes . 14812_18735
+%mor:	det:poss|his n|mother~aux|be&3S prep|at det:art|the n|sink
+	part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|7|SUBJ 3|7|AUX 4|7|JCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|7|OBJ
+	9|7|PUNCT
+*PAR:	she's spilled the water all over . 18735_20382
+%mor:	pro:sub|she~aux|be&3S part|spill-PASTP det:art|the n|water adv|all
+	adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|JCT 7|3|JCT 8|3|PUNCT
+*PAR:	it's runnin(g) all over the floor . 20382_21761
+%mor:	pro:per|it~aux|be&3S part|run-PRESP adv|all prep|over det:art|the
+	n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	she's dryin(g) a plate . 21761_25054
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|plate .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	she's &uh lookin(g) out the window . 25054_30074
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|the n|window
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the little boy's stool's gonna fall . 30074_33100
+%mor:	det:art|the adj|little adj|boy&dn-POSS n|stool~aux|be&3S
+	part|go-PRESP~inf|to v|fall .
+%gra:	1|4|DET 2|4|MOD 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|6|PUNCT
+*PAR:	he's got a cookie in his hand . 33100_34762
+%mor:	pro:sub|he~aux|be&3S part|get&PASTP det:art|a n|cookie prep|in
+	det:poss|his n|hand .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	he's reachin(g) for a second one . 34762_36291
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|for det:art|a adj|second
+	det:num|one .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	the mother she's lookin(g) outside and not watchin(g) the water
+	runnin(g) over from the sink . 36291_47630
+%mor:	det:art|the n|mother pro:sub|she~aux|be&3S part|look-PRESP
+	adv|outside coord|and neg|not part|watch-PRESP det:art|the n|water
+	part|run-PRESP adv|over prep|from det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|5|SUBJ 4|5|AUX 5|2|CMOD 6|5|JCT 7|5|CONJ 8|9|NEG
+	9|7|COORD 10|11|DET 11|9|OBJ 12|11|XMOD 13|12|JCT 14|12|JCT 15|16|DET
+	16|14|POBJ 17|2|PUNCT
+*INV:	okay . 47630_50737
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the cupboard door is open . 50737_53115
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	she shouldn't be lookin(g) out the window . 53115_57038
+%mor:	pro:sub|she mod|should~neg|not aux|be part|look-PRESP prep|out
+	det:art|the n|window .
+%gra:	1|5|SUBJ 2|5|AUX 3|2|NEG 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	she's washin(g) dishes . 57038_59417
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	she's lettin(g) the water run out . 59417_60880
+%mor:	pro:sub|she~aux|be&3S part|let-PRESP det:art|the n|water v|run
+	adv|out .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|COMP 7|6|JCT 8|3|PUNCT
+*INV:	okay . 60880_62724
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I don't know what else I could tell . [+ exc] 62724_65816
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what post|else pro:sub|I
+	mod|could v|tell .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|9|LINK 6|5|PQ 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|4|PUNCT
+*INV:	+< that's fine . 65516_66282
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

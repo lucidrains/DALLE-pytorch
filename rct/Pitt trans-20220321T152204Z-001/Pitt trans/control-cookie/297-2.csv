@@ -1,0 +1,67 @@
+@UTF8
+@PID:	11312/t-00002393-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	297-2, audio
+*PAR:	there's a girl waiting to get a cookie from I guess her brother . 0_6602
+%mor:	pro:exist|there~cop|be&3S det:art|a n|girl part|wait-PRESP inf|to
+	v|get det:art|a n|cookie prep|from pro:sub|I v|guess det:poss|her
+	n|brother .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|XMOD 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|12|JCT 11|12|SUBJ 12|7|CJCT 13|14|DET 14|12|OBJ 15|2|PUNCT
+*PAR:	the chair's [: stool's] [* s:r] tippin(g) over where <he's in> [//]
+	he's into the cookie jar in the cupboard . 6602_12407
+%mor:	det:art|the n|stool~aux|be&3S part|tip-PRESP adv|over pro:rel|where
+	pro:sub|he~cop|be&3S prep|into det:art|the n|cookie n|jar prep|in
+	det:art|the n|cupboard .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|LINK 7|8|SUBJ 8|4|CJCT
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|12|NJCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	woman's washing dishes . [+ gram] 12407_15323
+%mor:	n|woman~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	sink's overflowing . [+ gram] 15323_17021
+%mor:	n|sink~aux|be&3S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	window's open . [+ gram] 17021_19608
+%mor:	adj|window&dn-POSS adj|open .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	(..) where the kid's into the cookie jar the lid's off o(f) course
+	. 19608_32543
+%mor:	pro:int|where det:art|the n|kid~cop|be&3S prep|into det:art|the
+	n|cookie n|jar det:art|the n|lid~cop|be&3S adv|off prep|of n|course
+	.
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|10|DET 10|11|SUBJ 11|4|CJCT 12|11|JCT 13|12|JCT 14|13|POBJ 15|4|PUNCT
+*INV:	mhm . 32543_33756
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I don't know whether the curtains are blowing or not . 33756_38334
+%mor:	pro:sub|I mod|do~neg|not v|know comp|whether det:art|the
+	n|curtain-PL aux|be&PRES part|blow-PRESP coord|or neg|not .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|9|LINK 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|9|CONJ 11|10|COORD 12|4|PUNCT
+*PAR:	(..) these are the action things you want right ? [+ exc] 38334_50021
+%mor:	pro:dem|these cop|be&PRES det:art|the n|action n|thing-PL
+	pro:per|you v|want co|right ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|7|SUBJ 7|5|CMOD 8|7|OBJ
+	9|2|PUNCT
+*INV:	+< right . 49200_50021
+%mor:	co|right .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 50021_54028
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	no I don't see anything else . [+ exc] 54028_58200
+%mor:	co|no pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|6|PQ 8|5|PUNCT
+*PAR:	what (di)d I miss ? [+ exc] 58200_59143
+%mor:	pro:int|what mod|do&PAST pro:sub|I v|miss ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*INV:	no you did fine &=laughs .59143_61337
+%mor:	co|no pro:per|you v|do&PAST adv|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+@End

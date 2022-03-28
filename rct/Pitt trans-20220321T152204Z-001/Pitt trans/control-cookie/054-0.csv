@@ -1,0 +1,82 @@
+@UTF8
+@PID:	11312/t-00002219-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|55;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	054-0, audio
+*PAR:	&uh a boy with a cookie in his one hand and his hand in the cookie
+	jar . [+ gram] 0_8530
+%mor:	det:art|a n|boy prep|with det:art|a n|cookie prep|in det:poss|his
+	det:num|one n|hand coord|and det:poss|his n|hand prep|in det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|5|NJCT 7|9|DET
+	8|9|QUANT 9|6|POBJ 10|2|CONJ 11|12|DET 12|10|COORD 13|12|NJCT 14|16|DET
+	15|16|MOD 16|13|POBJ 17|2|PUNCT
+*PAR:	standing on a stool which is tipping over . [+ gram] 8530_11938
+%mor:	part|stand-PRESP prep|on det:art|a n|stool pro:rel|which aux|be&3S
+	part|tip-PRESP adv|over .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|1|PUNCT
+*PAR:	the little girl's got her hand up for one . 11938_15645
+%mor:	det:art|the adj|little adj|girl&dn-POSS v|get&PAST det:poss|her
+	n|hand adv|up prep|for pro:indef|one .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	and I don't know what the hand means to the mouth . [+ exc] 15645_18365
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know pro:int|what det:art|the
+	n|hand v|mean-3S prep|to det:art|the n|mouth .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|8|DET 8|9|SUBJ
+	9|5|COMP 10|9|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	does it mean she wants to eat ? [+ exc] 18365_20234
+%mor:	mod|do&3S pro:per|it adj|mean pro:sub|she v|want-3S inf|to v|eat ?
+%gra:	1|5|AUX 2|5|SUBJ 3|5|JCT 4|5|SUBJ 5|0|ROOT 6|7|INF 7|5|COMP 8|5|PUNCT
+*PAR:	the kitchen sink is running over, the water running out on the
+	floor . 20234_26442
+%mor:	det:art|the n|kitchen n|sink aux|be&3S part|run-PRESP adv|over
+	cm|cm det:art|the n|water part|run-PRESP adv|out prep|on det:art|the
+	n|floor .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|LP 8|9|DET
+	9|5|OBJ 10|9|XMOD 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|5|PUNCT
+*PAR:	the mother's drying the dishes, frowning but not turning off the
+	faucet . 26442_32420
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	cm|cm part|frown-PRESP conj|but neg|not part|turn-PRESP prep|off
+	det:art|the n|faucet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|LP 8|4|XJCT
+	9|8|CONJ 10|11|NEG 11|9|COORD 12|11|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	&uh (..) &hm (...) two cups on the counter, (..) a plate . [+ gram]
+	32420_49833
+%mor:	det:num|two n|cup-PL prep|on det:art|the n|counter cm|cm det:art|a
+	n|plate .
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|LP 7|8|DET 8|2|APP
+	9|2|PUNCT
+*PAR:	the mother's standing in the middle o(f) the water . 49833_55717
+%mor:	det:art|the n|mother~aux|be&3S part|stand-PRESP prep|in det:art|the
+	n|middle prep|of det:art|the n|water .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	curtains at the windows . [+ gram] 55717_58690
+%mor:	n|curtain-PL prep|at det:art|the n|window-PL .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	the lid's fallin(g) off the cookie jar . 58690_63629
+%mor:	det:art|the n|lid~aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	I don't know what else is +//. [+ exc] 63629_66500
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what post|else aux|be&3S
+	+//.
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|SUBJ 6|5|PQ 7|4|COMP 8|4|PUNCT
+*PAR:	I could see their cupboard's half open . 66500_70518
+%mor:	pro:sub|I mod|could v|see det:poss|their adj|cupboard&dn-POSS
+	n|half adj|open .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|6|POSTMOD 8|3|PUNCT
+*PAR:	that's it . [+ exc] 70518_72604
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 72604_73291
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

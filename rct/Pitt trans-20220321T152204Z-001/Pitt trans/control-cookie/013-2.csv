@@ -1,0 +1,60 @@
+@UTF8
+@PID:	11312/t-00002186-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	013-2, audio
+*INV:	and there's the picture . 0_2428
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	a boy is getting cookies out_of the cookie jar . 2428_6108
+%mor:	det:art|a n|boy aux|be&3S part|get-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	he's standing on a stool that's gonna fall . 6108_8778
+%mor:	pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|go-PRESP~inf|to v|fall .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|9|LINK 8|9|AUX
+	9|6|CMOD 10|11|INF 11|9|COMP 12|3|PUNCT
+*PAR:	the girl is reaching for a cookie . 8778_11506
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP prep|for det:art|a
+	n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the mother's drying dishes . 11506_13783
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the faucet's running water . 13783_16078
+%mor:	det:art|the n|faucet~aux|be&3S part|run-PRESP n|water .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	it's dripping out_of the sink . 16078_18459
+%mor:	pro:per|it~aux|be&3S part|drip-PRESP prep|out_of det:art|the n|sink
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	&um (.) spilling onto the floor . [+ gram] 18459_29138
+%mor:	part|spill-PRESP prep|onto det:art|the n|floor .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	dishes are on the &uh counter . 29138_31882
+%mor:	n|dish-PL cop|be&PRES prep|on det:art|the n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	window is open . [+ gram] 31882_35804
+%mor:	n|window cop|be&3S adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	must be summertime . [+ gram] 35804_38081
+%mor:	mod|must cop|be n|+n|summer+n|time .
+%gra:	1|2|AUX 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	the girl is laughing . 38081_41474
+%mor:	det:art|the n|girl aux|be&3S part|laugh-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	looks like she's laughing . 41474_44400
+%mor:	v|look-3S conj|like pro:sub|she~aux|be&3S part|laugh-PRESP .
+%gra:	1|0|ROOT 2|5|LINK 3|5|SUBJ 4|5|AUX 5|1|COMP 6|1|PUNCT
+*PAR:	that's about it . [+ exc] 44400_51336
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*INV:	okay good . 51336_52716
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

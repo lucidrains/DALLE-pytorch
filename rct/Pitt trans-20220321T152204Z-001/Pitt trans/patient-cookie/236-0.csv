@@ -1,0 +1,100 @@
+@UTF8
+@PID:	11312/t-00002576-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|75;|female|PossibleAD||Participant|14||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	236-0, audio
+*INV:	here you go . 0_1729
+%mor:	adv|here pro:per|you v|go .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	what do you see going on in that picture ? 1729_3801
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	well the children are enjoying it and the mother is [/] &um is &wa
+	drying the dishes . 3801_9356
+%mor:	co|well det:art|the n|child&PL aux|be&PRES part|enjoy-PRESP
+	pro:per|it coord|and det:art|the n|mother aux|be&3S part|dry-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|5|CJCT 12|13|DET 13|11|OBJ 14|5|PUNCT
+*PAR:	(.) and the little boy is about to &f fall <if he does not too>
+	[//] &caif he's not careful .9356_19984
+%mor:	coord|and det:art|the adj|little n|boy cop|be&3S adv|about inf|to
+	v|fall pro:sub|he~cop|be&3S neg|not co|careful .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|8|JCT 7|8|INF 8|5|CPRED
+	9|10|SUBJ 10|8|COMP 11|10|NEG 12|10|PRED 13|5|PUNCT
+*INV:	(..) anything else ? 19984_30957
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	no that's all . [+ exc] 30957_33323
+%mor:	co|no pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	do you see any more action going on in that picture ? 33323_35745
+%mor:	mod|do pro:per|you v|see qn|any qn|more n|action part|go-PRESP
+	adv|on prep|in det:dem|that n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|6|QUANT 5|6|QUANT 6|3|OBJ 7|6|XMOD 8|7|JCT
+	9|7|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	oh ‡ dishwashing . [+ gram] 35745_37242
+%mor:	co|oh beg|beg adj|+n|dish+part|washing .
+%gra:	1|0|BEG 2|1|BEGP 3|0|INCROOT 4|3|PUNCT
+*PAR:	and the little boy is trying to get something out_of a box [: jar]
+	[* s:r] . 37242_44700
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S part|try-PRESP
+	inf|to v|get pro:indef|something prep|out_of det:art|a n|jar .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|8|OBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|6|PUNCT
+*PAR:	imagine it's a <cookie box [: jar] [* s:r]> [//] cookie &um +... 44700_48871
+%mor:	v|imagine pro:per|it~cop|be&3S det:art|a n|cookie +...
+%gra:	1|0|ROOT 2|3|SUBJ 3|1|COMP 4|5|DET 5|3|PRED 6|1|PUNCT
+*PAR:	<and the> [/] and the stool it hasn't &tur &uh &t &um turned yet
+	but the way he has it on two legs it won't be much longer . 48871_65045
+%mor:	coord|and det:art|the n|stool pro:per|it aux|have&3S~neg|not
+	part|turn-PASTP adv|yet conj|but det:art|the n|way pro:sub|he
+	aux|have&3S pro:per|it prep|on det:num|two n|leg-PL pro:per|it
+	mod|will~neg|not cop|be adv|much adj|long-CP .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|7|SUBJ 5|7|AUX 6|5|NEG 7|3|CMOD 8|7|JCT
+	9|21|LINK 10|11|DET 11|21|JCT 12|21|SUBJ 13|21|AUX 14|21|SUBJ 15|21|JCT
+	16|17|QUANT 17|15|POBJ 18|21|SUBJ 19|21|AUX 20|19|NEG 21|7|CJCT
+	22|23|JCT 23|21|PRED 24|3|PUNCT
+*INV:	(.) anything else ?65045_70381
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	&uh that's all . [+ exc] 70381_72350
+%mor:	pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	he's reaching <for the> [/] for the cookie jar or xxx . 72350_79702
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|for det:art|the n|cookie
+	n|jar coord|or .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+	9|8|PUNCT
+*INV:	do you see anything going on over here ? 79702_86320
+%mor:	mod|do pro:per|you v|see pro:indef|anything part|go-PRESP adv|on
+	prep|over adv|here ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|XMOD 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	dishwashing . [+ gram] 86320_87660
+%mor:	adj|+n|dish+part|washing .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay .87660_88983
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	evidently they hafta dry them now (.) their &um dishes there &th
+	wash them . [+ gram] 88983_97292
+%mor:	adv|evident&dadj-LY pro:sub|they mod|have~inf|to v|dry pro:obj|them
+	adv|now det:poss|their n|dish-PL adv|there v|wash pro:obj|them .
+%gra:	1|5|JCT 2|5|SUBJ 3|5|AUX 4|5|INF 5|0|ROOT 6|5|OBJ 7|5|JCT 8|9|DET
+	9|5|OBJ 10|5|JCT 11|5|ENUM 12|11|OBJ 13|5|PUNCT
+*INV:	anything else ? 97292_105478
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	no ‡ I don't think so . [+ exc] 105478_107580
+%mor:	co|no beg|beg pro:sub|I mod|do~neg|not v|think co|so .
+%gra:	1|0|BEG 2|1|BEGP 3|6|SUBJ 4|6|AUX 5|4|NEG 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+*INV:	okay ‡ alright .107580_109856
+%mor:	co|okay beg|beg co|alright .
+%gra:	1|0|BEG 2|1|BEGP 3|0|INCROOT 4|3|PUNCT
+@End

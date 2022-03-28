@@ -1,0 +1,53 @@
+@UTF8
+@PID:	11312/t-00002222-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|77;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	056-3, audio
+*INV:	okay ‡ you can start now . 0_1604
+%mor:	co|okay beg|beg pro:per|you mod|can v|start adv|now .
+%gra:	1|0|BEG 2|1|BEGP 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	okay . [+ exc] 1604_3051
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh the mother is wiping a dish at the sink . 3051_8437
+%mor:	det:art|the n|mother aux|be&3S part|wipe-PRESP det:art|a n|dish
+	prep|at det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	&um the water is overflowing from the sink . 8437_12998
+%mor:	det:art|the n|water aux|be&3S over#part|flow-PRESP prep|from
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	a youngster's about to fall off a stool reaching for a cookie jar .
+	12998_20093
+%mor:	det:art|a n|youngster~cop|be&3S adv|about inf|to v|fall prep|off
+	det:art|a n|stool part|reach-PRESP prep|for det:art|a n|cookie n|jar
+	.
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|XJCT 11|10|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|3|PUNCT
+*PAR:	and the little girl is holding up her hand to grab a cookie out_of
+	his hand . 20093_28249
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|hold-PRESP
+	prep|up det:poss|her n|hand inf|to v|grab det:art|a n|cookie
+	prep|out_of det:poss|his n|hand .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|11|INF 11|6|XJCT 12|13|DET 13|11|OBJ 14|11|JCT 15|16|DET
+	16|14|POBJ 17|6|PUNCT
+*PAR:	(.) the window appears to be open but I can't make out any action
+	in the background there . 28249_41056
+%mor:	det:art|the n|window v|appear-3S inf|to cop|be adj|open conj|but
+	pro:sub|I mod|can~neg|not v|make adv|out qn|any n|action prep|in
+	det:art|the n|background adv|there .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|11|LINK 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|3|CJCT 12|11|JCT 13|14|QUANT 14|12|POBJ 15|14|NJCT
+	16|17|DET 17|15|POBJ 18|11|JCT 19|3|PUNCT
+*PAR:	that's all . [+ exc] 41056_44032
+%mor:	pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay ‡ that's fine . 44032_44870
+%mor:	co|okay beg|beg pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|0|BEG 2|1|BEGP 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+@End

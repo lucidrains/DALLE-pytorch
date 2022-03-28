@@ -1,0 +1,135 @@
+@UTF8
+@PID:	11312/t-00002486-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|female|ProbableAD||Participant|25||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	076-0, audio
+*INV:	what's going on in the picture ? 0_1853
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	&uh well the children are climbing up and he's about to fall . 1853_7950
+%mor:	co|well det:art|the n|child&PL aux|be&PRES part|climb-PRESP adv|up
+	coord|and pro:sub|he~cop|be&3S adv|about inf|to v|fall .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|9|LINK 8|9|SUBJ
+	9|5|CJCT 10|12|JCT 11|12|INF 12|9|CPRED 13|5|PUNCT
+*PAR:	and he's getting cookies . 7950_9462
+%mor:	coord|and pro:sub|he~aux|be&3S part|get-PRESP n|cookie-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	and she's &uh telling him to sh@o be quiet so mother <won't hear
+	it> [//] won't hear him getting up there . 9462_16623
+%mor:	coord|and pro:sub|she~aux|be&3S part|tell-PRESP pro:obj|him prep|to
+	on|sh cop|be adj|quiet adv|so n|mother mod|will~neg|not v|hear
+	pro:obj|him part|get-PRESP prep|up n|there .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|14|SUBJ 8|14|AUX
+	9|8|PRED 10|14|JCT 11|14|SUBJ 12|14|AUX 13|12|NEG 14|6|POBJ 15|14|OBJ
+	16|4|XJCT 17|16|JCT 18|17|POBJ 19|4|PUNCT
+*PAR:	and &uh he's handing a cookie down to her . 16623_22725
+%mor:	coord|and pro:sub|he~aux|be&3S part|hand-PRESP det:art|a n|cookie
+	adv|down prep|to pro:obj|her .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	she's washing the dishes . 22725_24021
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and &uh (.) for some reason she must have been upset about
+	something because &uh she is letting the water run out all over the
+	place . 24021_32844
+%mor:	coord|and prep|for qn|some n|reason pro:sub|she mod|must v|have
+	aux|be&PASTP v|upset prep|about pro:indef|something conj|because
+	pro:sub|she aux|be&3S part|let-PRESP det:art|the n|water v|run
+	prep|out adv|all prep|over det:art|the n|place .
+%gra:	1|9|LINK 2|7|JCT 3|4|QUANT 4|2|POBJ 5|7|SUBJ 6|7|AUX 7|9|SUBJ 8|9|AUX
+	9|0|ROOT 10|9|JCT 11|10|POBJ 12|15|LINK 13|15|SUBJ 14|15|AUX 15|18|CJCT
+	16|17|DET 17|18|SUBJ 18|9|CJCT 19|18|JCT 20|21|JCT 21|19|POBJ 22|23|DET
+	23|21|POBJ 24|9|PUNCT
+*PAR:	<whether she's> [//] &up I can't believe she's upset about the kids
+	(be)cause she hasn't seen them . 32844_37296
+%mor:	pro:sub|I mod|can~neg|not v|believe pro:sub|she~cop|be&3S v|upset
+	prep|about det:art|the n|kid-PL conj|because pro:sub|she
+	aux|have&3S~neg|not part|see&PASTP pro:obj|them .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|6|PRED 8|7|JCT
+	9|10|DET 10|8|POBJ 11|15|LINK 12|15|SUBJ 13|15|AUX 14|13|NEG 15|4|CJCT
+	16|15|OBJ 17|4|PUNCT
+*PAR:	maybe she did turn and look at them and &=laughs then go back to
+	the dishes . 37296_41463
+%mor:	adv|maybe pro:sub|she v|do&PAST n|turn coord|and v|look prep|at
+	pro:obj|them coord|and adv:tem|then v|go adv|back prep|to
+	det:art|the n|dish-PL .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|CONJ 6|5|COORD 7|6|JCT 8|7|POBJ
+	9|6|CONJ 10|11|JCT 11|9|COORD 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*INV:	&=laughs . 41463_42360
+*PAR:	in other words it's &uh +... 42360_47800
+%mor:	prep|in qn|other n|word-PL pro:per|it~cop|be&3S +...
+%gra:	1|5|JCT 2|3|QUANT 3|1|POBJ 4|5|SUBJ 5|0|ROOT 6|5|PUNCT
+*PAR:	&uh she [/] she's deciding that if she did see them she's deciding
+	that she's going to let them go ahead with it . 47800_53447
+%mor:	pro:sub|she~aux|be&3S part|decide-PRESP adv|that conj|if
+	pro:sub|she v|do&PAST v|see pro:obj|them pro:sub|she~aux|be&3S
+	part|decide-PRESP comp|that pro:sub|she~aux|be&3S part|go-PRESP
+	inf|to v|let&ZERO pro:obj|them v|go adv|ahead prep|with pro:per|it .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|LINK 6|7|SUBJ 7|12|CJCT 8|7|OBJ
+	9|7|OBJ 10|12|SUBJ 11|12|AUX 12|3|CJCT 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|12|COMP 17|18|INF 18|16|COMP 19|20|SUBJ 20|18|COMP 21|20|JCT 22|20|JCT
+	23|22|POBJ 24|3|PUNCT
+*PAR:	but I don't think she would have let them go ahead if she saw the
+	little boy falling . 53447_57086
+%mor:	conj|but pro:sub|I mod|do~neg|not v|think pro:sub|she mod|will&COND
+	aux|have v|let&ZERO pro:obj|them v|go adv|ahead conj|if pro:sub|she
+	v|see&PAST det:art|the adj|little n|boy part|fall-PRESP .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|9|CJCT 6|9|SUBJ 7|9|AUX 8|9|AUX
+	9|0|ROOT 10|11|SUBJ 11|9|COMP 12|11|JCT 13|15|LINK 14|15|SUBJ 15|9|CJCT
+	16|18|DET 17|18|MOD 18|15|OBJ 19|18|XMOD 20|9|PUNCT
+*PAR:	I think she would have turned . 57086_58564
+%mor:	pro:sub|I v|think pro:sub|she mod|will&COND aux|have
+	part|turn-PASTP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|SUBJ 4|6|AUX 5|6|AUX 6|2|COMP 7|2|PUNCT
+*PAR:	maybe dropped her dish &=laughs . 58564_60915
+%mor:	adv|maybe v|drop-PAST det:poss|her n|dish .
+%gra:	1|2|JCT 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	but she would have gotten hold of him and saved him from being
+	harmed in the fall . 60915_66073
+%mor:	conj|but pro:sub|she mod|will&COND v|have part|get&PASTP n|hold
+	prep|of pro:obj|him coord|and v|save-PAST pro:obj|him prep|from
+	n|being v|harm-PAST prep|in det:art|the v|fall .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|COMP 6|5|OBJ 7|6|NJCT 8|7|POBJ
+	9|5|CONJ 10|9|COORD 11|10|OBJ 12|14|JCT 13|14|SUBJ 14|10|COMP 15|14|JCT
+	16|17|DET 17|15|POBJ 18|4|PUNCT
+*PAR:	and he might just pull all the cookie jar with him when he falls
+	too &=laughs . 66073_69881
+%mor:	coord|and pro:sub|he mod|might adv|just v|pull qn|all det:art|the
+	n|cookie n|jar prep|with pro:obj|him conj|when pro:sub|he v|fall-3S
+	adv|too .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|9|QUANT 7|9|DET 8|9|MOD
+	9|5|OBJ 10|5|JCT 11|10|POBJ 12|14|LINK 13|14|SUBJ 14|5|CJCT 15|14|JCT
+	16|5|PUNCT
+*INV:	&=laughs . 69881_70299
+*PAR:	and with the water on the floor and the cookie jar on the floor
+	&=laughs it would be a sad +/. 70299_74773
+%mor:	coord|and prep|with det:art|the n|water prep|on det:art|the n|floor
+	coord|and det:art|the n|cookie n|jar prep|on det:art|the n|floor
+	pro:per|it mod|will&COND cop|be det:art|a adj|sad +/.
+%gra:	1|17|LINK 2|17|JCT 3|4|DET 4|2|POBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|7|CONJ
+	9|11|DET 10|11|MOD 11|8|COORD 12|17|JCT 13|14|DET 14|12|POBJ 15|17|SUBJ
+	16|17|AUX 17|0|ROOT 18|19|DET 19|17|PRED 20|17|PUNCT
+*INV:	+< bad . 74773_75291
+%mor:	adj|bad .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, threesome but [//] and the kitchen would be a mess . 75291_78383
+%mor:	n|threesome coord|and det:art|the n|kitchen mod|will&COND cop|be
+	det:art|a n|mess .
+%gra:	1|0|INCROOT 2|6|LINK 3|4|DET 4|6|SUBJ 5|6|AUX 6|1|CJCT 7|8|DET 8|6|PRED
+	9|1|PUNCT
+*INV:	mhm . 78383_79447
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay ? 79447_80660
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	great ! 80660_81475
+%mor:	adj|great !
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

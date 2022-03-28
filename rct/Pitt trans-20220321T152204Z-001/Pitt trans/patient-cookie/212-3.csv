@@ -1,0 +1,101 @@
+@UTF8
+@PID:	11312/t-00002554-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|86;|male|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	212-3, audio
+*INV:	take a look at this picture . 0_1591
+%mor:	v|take det:art|a v|look prep|at det:dem|this n|picture .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*PAR:	mhm . [+ exc] 1591_3973
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	I want you to tell me everything you see going on in that picture .
+	3704_6724
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|9|SUBJ
+	9|5|COMP 10|9|OBJ 11|9|JCT 12|9|JCT 13|14|DET 14|12|POBJ 15|2|PUNCT
+*INV:	everything that's happening there . 6724_8109
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP
+	adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	the stool [//] the boy's on the stool reaching for the cookie jar .
+	8343_12625
+%mor:	det:art|the det:art|the n|boy~aux|be&3S prep|on det:art|the n|stool
+	part|reach-PRESP prep|for det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|DET 3|8|SUBJ 4|8|AUX 5|4|JCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|8|PUNCT
+*PAR:	the girl's reaching up for a cookie . 12625_14635
+%mor:	det:art|the n|girl~aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the stool is falling . 14635_16113
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the lady is washin(g) dishes . 16113_20426
+%mor:	det:art|the n|lady aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water's overrun in the sink . 20426_23211
+%mor:	det:art|the adj|water&dn-POSS over#v|run prep|in det:art|the n|sink
+	.
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	a [//] &uh you can see through the window the curtains are pulled
+	back . 23211_28578
+%mor:	pro:per|you mod|can v|see adj|through det:art|the n|window
+	det:art|the n|curtain-PL aux|be&PRES part|pull-PASTP adv|back .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|MOD 5|6|DET 6|3|OBJ 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|6|CMOD 11|10|JCT 12|3|PUNCT
+*PAR:	there's a walk+way . 28578_31648
+%mor:	pro:exist|there~cop|be&3S det:art|a n|+n|walk+n|way .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	&uh windows in another part of the house . [+ gram] 31648_35039
+%mor:	n|window-PL prep|in qn|another n|part prep|of det:art|the n|house .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|QUANT 4|2|POBJ 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|1|PUNCT
+*PAR:	&uh everguhuhgreens [: evergreens] [* d:sw] around, and grass .
+	[+ gram] 35039_39460
+%mor:	n|evergreen-PL adv|around cm|cm coord|and n|grass .
+%gra:	1|0|INCROOT 2|1|NJCT 3|1|LP 4|1|CONJ 5|4|COORD 6|1|PUNCT
+*PAR:	cup and a saucer and a plate on the &uh +... 39460_46947
+%mor:	n|cup coord|and det:art|a n|saucer coord|and det:art|a n|plate
+	prep|on det:art|the +...
+%gra:	1|0|INCROOT 2|1|CONJ 3|4|DET 4|2|COORD 5|1|CONJ 6|7|DET 7|5|COORD
+	8|7|NJCT 9|8|POBJ 10|1|PUNCT
+*PAR:	under the doors to the cabinet . [+ gram] 46947_52282
+%mor:	prep|under det:art|the n|door-PL prep|to det:art|the n|cabinet .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|1|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*PAR:	double door and a sɪŋkəl@u [: single] [* p:n] door +/. [+ gram] 52282_54834
+%mor:	adj|double n|door coord|and det:art|a n|single n|door +/.
+%gra:	1|2|MOD 2|0|INCROOT 3|2|CONJ 4|6|DET 5|6|MOD 6|3|COORD 7|2|PUNCT
+*INV:	+< everything that's happening . 54434_55565
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|1|PUNCT
+*PAR:	oh happening ? [+ exc] 55565_56796
+%mor:	co|oh part|happen-PRESP ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PUNCT
+*PAR:	the water's splashin(g) on the floor . 56796_58663
+%mor:	det:art|the n|water~aux|be&3S part|splash-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the [x 2] boy is falling . 58743_63037
+%mor:	det:art|the n|boy aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the girl is reaching . 63037_64253
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&uh the lady's washin(g) the dishes . 64253_67442
+%mor:	det:art|the n|lady~aux|be&3S part|wash-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	she's &uh gettin(g) her shoe wet . 67503_70942
+%mor:	pro:sub|she~aux|be&3S part|get-PRESP det:poss|her n|shoe adj|wet .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|POSTMOD 7|3|PUNCT
+*INV:	(.) okay . 70942_74739
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,103 @@
+@UTF8
+@PID:	11312/t-00002489-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|64;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	078-0, audio
+*INV:	just tell me everything that you see happening in the picture . 0_3038
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you co|see n:gerund|happen-PRESP prep|in det:art|the
+	n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|8|COM 8|4|CMOD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	oh yes . [+ exc] 3038_6047
+%mor:	co|oh co|yes .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	a little girl &a and the little boy is getting cookies out_of the
+	jar . 6047_13417
+%mor:	det:art|a adj|little n|girl coord|and det:art|the adj|little n|boy
+	aux|be&3S part|get-PRESP n|cookie-PL prep|out_of det:art|the n|jar .
+%gra:	1|3|DET 2|3|MOD 3|9|SUBJ 4|3|CONJ 5|7|DET 6|7|MOD 7|4|COORD 8|9|AUX
+	9|0|ROOT 10|9|OBJ 11|9|JCT 12|13|DET 13|11|POBJ 14|9|PUNCT
+*PAR:	oh and the stool is upsetting &=laughs . 13417_20203
+%mor:	co|oh coord|and det:art|the n|stool aux|be&3S part|upset-PRESP .
+%gra:	1|6|COM 2|6|LINK 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*PAR:	and the [//] I guess it's the mother is drying dishes . 20203_25903
+%mor:	coord|and pro:sub|I v|guess pro:per|it~cop|be&3S det:art|the
+	n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|5|PRED 10|9|OBJ 11|3|PUNCT
+*PAR:	water's spilling down all over the sink . 25903_28918
+%mor:	n|water~aux|be&3S part|spill-PRESP adv|down adv|all prep|over
+	det:art|the n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	water on the floor . [+ gram] 28918_31828
+%mor:	n|water prep|on det:art|the n|floor .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	little boy's gonna fall and that [/] &steps &uh that there stool .
+	[+ gram] 31828_39973
+%mor:	adj|little adj|boy&dn-POSS part|go-PRESP~inf|to v|fall coord|and
+	comp|that adv|there n|stool .
+%gra:	1|3|MOD 2|3|MOD 3|0|ROOT 4|5|INF 5|3|COMP 6|5|CONJ 7|9|LINK 8|9|SUBJ
+	9|6|COORD 10|3|PUNCT
+*PAR:	&uh I think the cookie jar is gonna fall &=laughs . 39973_48996
+%mor:	pro:sub|I v|think det:art|the n|cookie n|jar aux|be&3S
+	part|go-PRESP~inf|to v|fall .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|7|SUBJ 6|7|AUX 7|2|COMP 8|9|INF
+	9|7|COMP 10|2|PUNCT
+*PAR:	and the [//] guess dryin(g) dishes and water [//] the faucet's on
+	and water's runnin(g) all over the floor . [+ gram] 48996_55998
+%mor:	coord|and n|guess part|dry-PRESP n|dish-PL coord|and det:art|the
+	n|faucet~cop|be&3S adv|on coord|and n|water~aux|be&3S part|run-PRESP
+	adv|all prep|over det:art|the n|floor .
+%gra:	1|4|LINK 2|4|MOD 3|4|MOD 4|8|SUBJ 5|4|CONJ 6|7|DET 7|5|COORD 8|0|ROOT
+	9|8|JCT 10|13|LINK 11|13|SUBJ 12|13|AUX 13|8|CJCT 14|15|JCT 15|13|JCT
+	16|17|DET 17|15|POBJ 18|8|PUNCT
+*PAR:	(..) &wh <what else am I [/] &sup I_mean what> [//] what +..?
+	[+ exc] 56370_68403
+%mor:	pro:int|what +..?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 68403_70940
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	just the things that you see happening . 70940_73134
+%mor:	adv|just det:art|the n|thing-PL pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP .
+%gra:	1|3|JCT 2|3|DET 3|0|INCROOT 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ
+	8|3|PUNCT
+*PAR:	yeah . [+ exc] 73134_73700
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the cookie jar . [+ gram] 73700_74801
+%mor:	det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*INV:	yeah . 74801_75580
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the stool . [+ gram] 75580_76503
+%mor:	det:art|the n|stool .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*INV:	mhm . 76503_77053
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	her doin(g) the dishes . [+ gram] 77053_78232
+%mor:	pro:obj|her part|do-PRESP det:art|the n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	the water spilling . 78232_79531
+%mor:	det:art|the n|water part|spill-PRESP .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|2|PUNCT
+*INV:	okay ? 79531_84917
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<far as> [//] yeah that's as far as I could see . [+ exc] 84917_86930
+%mor:	co|yeah pro:dem|that~cop|be&3S adv|as adv|far conj|as pro:sub|I
+	mod|could v|see .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|COORD 5|3|PRED 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|3|CJCT 10|3|PUNCT
+*INV:	+< well +/. 86930_86931
+%mor:	co|well +/.
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

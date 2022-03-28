@@ -1,0 +1,47 @@
+@UTF8
+@PID:	11312/t-00002410-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	631-0, audio
+*PAR:	the kids are in the cookies . 0_3026
+%mor:	det:art|the n|kid-PL cop|be&PRES prep|in det:art|the n|cookie-PL .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the stool is falling over . 3026_5222
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the mother's spilling the water and also drying the dishes . 5222_10159
+%mor:	det:art|the n|mother~aux|be&3S part|spill-PRESP det:art|the n|water
+	coord|and adv|also part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|CONJ 8|9|JCT
+	9|7|COORD 10|11|DET 11|9|OBJ 12|4|PUNCT
+*PAR:	and the wind might be blowing the curtains . 10159_13633
+%mor:	coord|and det:art|the n|wind n|might aux|be part|blow-PRESP
+	det:art|the n|curtain-PL .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|PUNCT
+*PAR:	and the water's running . 13633_17655
+%mor:	coord|and det:art|the n|water~aux|be&3S part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	&uh I can't tell is anything going on outside or not . [+ exc] 17655_22210
+%mor:	pro:sub|I mod|can~neg|not v|tell aux|be&3S pro:indef|anything
+	part|go-PRESP adv|on adv|outside coord|or neg|not .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PRED 7|6|XMOD 8|7|JCT
+	9|7|JCT 10|9|CONJ 11|10|COORD 12|4|PUNCT
+*PAR:	I guess that's all I see . [+ exc] 22210_25320
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:indef|all pro:sub|I
+	v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|7|SUBJ 7|5|CMOD
+	8|2|PUNCT
+*PAR:	that's not very many . [+ exc] 25320_27996
+%mor:	pro:dem|that~cop|be&3S neg|not adv|very qn|many .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|NEG 4|5|JCT 5|2|PRED 6|2|PUNCT
+*INV:	okay . 27996_30822
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 30822_34504
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

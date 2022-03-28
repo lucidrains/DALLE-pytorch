@@ -1,0 +1,95 @@
+@UTF8
+@PID:	11312/t-00002331-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	175-1, audio
+*PAR:	water's pouring out_of the sink . 0_2866
+%mor:	n|water~aux|be&3S part|pour-PRESP prep|out_of det:art|the n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and the woman is washing dishes . 2866_6117
+%mor:	coord|and det:art|the n|woman aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	the &uh child is &fa on a stool falling off as he's reaching for
+	the cookie jar with his right hand and &uh trying to hand the other
+	cookies to a little girl who's reaching up with her left hand to get
+	the cookie . 6117_22863
+%mor:	det:art|the n|child aux|be&3S prep|on det:art|a n|stool
+	part|fall-PRESP adv|off adv|as pro:sub|he~aux|be&3S part|reach-PRESP
+	prep|for det:art|the n|cookie n|jar prep|with det:poss|his adj|right
+	n|hand coord|and part|try-PRESP inf|to v|hand det:art|the qn|other
+	n|cookie-PL prep|to det:art|a adj|little n|girl
+	pro:rel|who~aux|be&3S part|reach-PRESP adv|up prep|with det:poss|her
+	adj|left n|hand inf|to v|get det:art|the n|cookie .
+%gra:	1|2|DET 2|7|SUBJ 3|7|AUX 4|7|JCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|7|JCT
+	9|12|JCT 10|12|SUBJ 11|12|AUX 12|7|XJCT 13|12|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|12|JCT 18|20|DET 19|20|MOD 20|17|POBJ 21|20|CONJ 22|21|COORD
+	23|24|INF 24|22|COMP 25|27|DET 26|27|QUANT 27|24|OBJ 28|24|JCT 29|31|DET
+	30|31|MOD 31|28|POBJ 32|34|LINK 33|34|AUX 34|31|CMOD 35|34|JCT 36|34|JCT
+	37|39|DET 38|39|MOD 39|36|POBJ 40|41|INF 41|39|XMOD 42|43|DET 43|41|OBJ
+	44|7|PUNCT
+*PAR:	and her right hand looks like she's almost &uh trying to make a
+	signal of silence so the mother doesn't hear it . 22863_30896
+%mor:	coord|and det:poss|her n|right n|hand v|look-3S conj|like
+	pro:sub|she~aux|be&3S adv|almost part|try-PRESP inf|to v|make
+	det:art|a n|signal prep|of n|silence co|so det:art|the n|mother
+	mod|do&3S~neg|not v|hear pro:per|it .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|10|LINK 7|10|SUBJ 8|10|AUX
+	9|10|JCT 10|5|COMP 11|12|INF 12|10|COMP 13|14|DET 14|12|OBJ 15|14|NJCT
+	16|15|POBJ 17|22|COM 18|19|DET 19|22|SUBJ 20|22|AUX 21|20|NEG 22|5|COMP
+	23|22|OBJ 24|5|PUNCT
+*PAR:	the mother's &wa feet are in the water as it's pouring on the floor
+	. 30896_34504
+%mor:	det:art|the adj|mother&dn-POSS n|foot&PL cop|be&PRES prep|in
+	det:art|the n|water conj|as pro:per|it~aux|be&3S part|pour-PRESP
+	prep|on det:art|the n|floor .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	and the window is open . 34504_36781
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	you can see a yard outside . 36781_39112
+%mor:	pro:per|you mod|can v|see det:art|a n|yard adv|outside .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	there's a dish and cups on the sink . 39112_42506
+%mor:	pro:exist|there~cop|be&3S det:art|a n|dish coord|and n|cup-PL
+	prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|CONJ 6|5|COORD 7|4|NJCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	and the curtains are pulled back so you can see out the window . 42506_45800
+%mor:	coord|and det:art|the n|curtain-PL aux|be&PRES part|pull-PASTP
+	adj|back co|so pro:per|you mod|can v|see prep|out det:art|the
+	n|window .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|10|COM 8|10|SUBJ
+	9|10|AUX 10|5|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	the cupboard door is open . 45800_47549
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and &uh they're all fully dressed . 47549_51579
+%mor:	coord|and pro:sub|they~aux|be&PRES post|all adv|fully
+	part|dress-PASTP .
+%gra:	1|6|LINK 2|6|SUBJ 3|6|AUX 4|6|JCT 5|6|JCT 6|0|ROOT 7|6|PUNCT
+*PAR:	and they have sort_of a nondescript expression on their face . 51579_57681
+%mor:	coord|and pro:sub|they v|have adv|sort_of det:art|a adj|nondescript
+	n|expression prep|on det:poss|their n|face .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	the woman has her mouth open a little bit . 57681_60800
+%mor:	det:art|the n|woman v|have&3S det:poss|her n|mouth adj|open
+	det:art|a adj|little n|bit .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|POSTMOD 7|9|DET 8|9|MOD
+	9|3|JCT 10|3|PUNCT
+*PAR:	we(ll) each one of them have their mouths open a little bit . 60800_63344
+%mor:	co|well qn|each pro:indef|one prep|of pro:obj|them v|have
+	det:poss|their n|mouth-PL v|open det:art|a adj|little n|bit .
+%gra:	1|3|COM 2|3|QUANT 3|6|SUBJ 4|3|NJCT 5|4|POBJ 6|0|ROOT 7|8|DET 8|9|SUBJ
+	9|6|COMP 10|12|DET 11|12|MOD 12|9|OBJ 13|6|PUNCT
+*PAR:	and &um (.) that's about it . [+ exc] 63344_71719
+%mor:	coord|and pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|3|PUNCT
+*INV:	okay good . 71719_72823
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

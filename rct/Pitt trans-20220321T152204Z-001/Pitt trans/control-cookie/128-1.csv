@@ -1,0 +1,133 @@
+@UTF8
+@PID:	11312/t-00002280-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	128-1, audio
+*INV:	and here's the picture . 0_2354
+%mor:	coord|and pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	oh I remember this one . [+ exc] 2354_4914
+%mor:	co|oh pro:sub|I v|remember det:dem|this pro:indef|one .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	okay . [+ exc] 4914_5463
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the mom's doing the dishes and looking out the window . 5463_8159
+%mor:	det:art|the n|mom~aux|be&3S part|do-PRESP det:art|the n|dish-PL
+	coord|and part|look-PRESP prep|out det:art|the n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|CONJ 8|7|COORD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	and she must be really interested in what she sees out there
+	because the sink is running over, the water is splashing on the
+	floor, she's paying no attention to it . 8159_17418
+%mor:	coord|and pro:sub|she mod|must cop|be adv|real&dadj-LY
+	v|interest-PAST prep|in pro:int|what pro:sub|she v|see-3S prep|out
+	n|there conj|because det:art|the n|sink aux|be&3S part|run-PRESP
+	adv|over cm|cm det:art|the n|water aux|be&3S part|splash-PRESP
+	prep|on det:art|the n|floor cm|cm pro:sub|she~aux|be&3S
+	part|pay-PRESP qn|no n|attention prep|to pro:per|it .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|6|SUBJ 5|6|JCT 6|0|ROOT 7|6|JCT 8|10|LINK
+	9|10|SUBJ 10|7|CPOBJ 11|6|JCT 12|11|POBJ 13|17|LINK 14|15|DET 15|17|SUBJ
+	16|17|AUX 17|23|CJCT 18|17|JCT 19|17|LP 20|21|DET 21|23|SUBJ 22|23|AUX
+	23|6|XJCT 24|23|JCT 25|26|DET 26|24|POBJ 27|23|LP 28|30|SUBJ 29|30|AUX
+	30|23|XJCT 31|32|QUANT 32|30|OBJ 33|30|JCT 34|33|POBJ 35|6|PUNCT
+*PAR:	and meantime behind her the kids are getting up on the stool and
+	getting into the cookie jar <which is> [/] which is on the second
+	shelf of the cupboard . 17418_24595
+%mor:	coord|and adv|meantime adv|behind pro:obj|her det:art|the n|kid-PL
+	cop|be&PRES n:gerund|get-PRESP adv|up prep|on det:art|the n|stool
+	coord|and part|get-PRESP prep|into det:art|the n|cookie n|jar
+	pro:rel|which cop|be&3S prep|on det:art|the adj|second n|shelf
+	prep|of det:art|the n|cupboard .
+%gra:	1|7|LINK 2|3|JCT 3|7|JCT 4|3|OBJ2 5|6|DET 6|7|SUBJ 7|0|ROOT 8|7|PRED
+	9|8|JCT 10|8|JCT 11|12|DET 12|10|POBJ 13|7|CONJ 14|13|COORD 15|14|JCT
+	16|18|DET 17|18|MOD 18|15|POBJ 19|20|LINK 20|14|COMP 21|20|JCT 22|24|DET
+	23|24|MOD 24|21|POBJ 25|24|NJCT 26|27|DET 27|25|POBJ 28|7|PUNCT
+*PAR:	the left hand side of the cupboard door is open . 24595_26911
+%mor:	det:art|the adj|left n|hand n|side prep|of det:art|the n|cupboard
+	n|door cop|be&3S adj|open .
+%gra:	1|4|DET 2|4|MOD 3|4|MOD 4|9|SUBJ 5|4|NJCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|0|ROOT 10|9|PRED 11|9|PUNCT
+*PAR:	&uh the little girl has her finger on her lips &uh &s telling him
+	to shush but he's losing his balance and he's about to fall on the
+	floor which will really cause a real upset in there . 26911_39312
+%mor:	det:art|the adj|little n|girl aux|have&3S det:poss|her n|finger
+	prep|on det:poss|her n|lip-PL part|tell-PRESP pro:obj|him inf|to
+	v|shush conj|but pro:sub|he~aux|be&3S part|lose-PRESP det:poss|his
+	n|balance coord|and pro:sub|he~cop|be&3S adv|about inf|to v|fall
+	prep|on det:art|the n|floor pro:rel|which mod|will adv|real&dadj-LY
+	v|cause det:art|a adj|real v|upset prep|in n|there .
+%gra:	1|3|DET 2|3|MOD 3|10|SUBJ 4|10|AUX 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|0|ROOT 11|10|OBJ 12|13|INF 13|10|XJCT 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|13|COMP 18|19|DET 19|17|OBJ 20|22|LINK 21|22|SUBJ 22|17|CJCT
+	23|25|JCT 24|25|INF 25|22|CPRED 26|25|JCT 27|28|DET 28|26|POBJ 29|32|LINK
+	30|32|AUX 31|32|JCT 32|28|CMOD 33|34|DET 34|35|SUBJ 35|32|COMP 36|35|JCT
+	37|36|POBJ 38|10|PUNCT
+*PAR:	and &uh action [/] action . [+ exc] 39312_42421
+%mor:	coord|and n|action .
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+*PAR:	the water running . [+ gram] 42421_43152
+%mor:	det:art|the n|water part|run-PRESP .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|2|PUNCT
+*PAR:	the mama's drying a dish . 43152_44669
+%mor:	det:art|the n|mama~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	that's what she's doing and looking out the window . 44669_49324
+%mor:	pro:dem|that~cop|be&3S pro:int|what pro:sub|she~aux|be&3S
+	part|do-PRESP coord|and part|look-PRESP prep|out det:art|the
+	n|window .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|LINK 4|6|SUBJ 5|6|AUX 6|2|CPRED 7|6|CONJ
+	8|7|COORD 9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	little boy has taken one cookie out_of the cookie jar and is about
+	to hand it to the little girl who is reaching up her hand for it . 49324_59848
+%mor:	adj|little n|boy aux|have&3S part|take&PASTP det:num|one n|cookie
+	prep|out_of det:art|the n|cookie n|jar coord|and cop|be&3S adv|about
+	prep|to n|hand pro:per|it prep|to det:art|the adj|little n|girl
+	pro:rel|who aux|be&3S part|reach-PRESP prep|up det:poss|her n|hand
+	prep|for pro:per|it .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|CONJ 12|11|COORD 13|12|JCT 14|13|JCT 15|14|POBJ
+	16|14|POBJ 17|16|NJCT 18|20|DET 19|20|MOD 20|17|POBJ 21|23|LINK 22|23|AUX
+	23|20|CMOD 24|23|JCT 25|26|DET 26|24|POBJ 27|23|JCT 28|27|POBJ
+	29|4|PUNCT
+*PAR:	and he is reaching into the cookie jar for another cookie . 59848_62928
+%mor:	coord|and pro:sub|he aux|be&3S part|reach-PRESP prep|into
+	det:art|the n|cookie n|jar prep|for qn|another n|cookie .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|JCT 10|11|QUANT 11|9|POBJ 12|4|PUNCT
+*PAR:	and action [/] action . [+ exc] 62928_69046
+%mor:	coord|and n|action .
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+*PAR:	well the curtains are blowing in the breeze . 69046_76728
+%mor:	co|well det:art|the n|curtain-PL aux|be&PRES part|blow-PRESP
+	prep|in det:art|the n|breeze .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	I guess that's an action . [+ exc] 76728_77740
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S det:art|a n|action .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|6|DET 6|4|PRED 7|2|PUNCT
+*PAR:	it looks as though they are . 77740_78939
+%mor:	pro:per|it v|look-3S adv|as adv|though pro:sub|they cop|be&PRES .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|6|JCT 5|6|SUBJ 6|2|COMP 7|2|PUNCT
+*PAR:	&um no action as far as I can see out the window . 78939_85222
+%mor:	qn|no n|action prep|as adv|far conj|as pro:sub|I mod|can v|see
+	prep|out det:art|the n|window .
+%gra:	1|2|QUANT 2|0|INCROOT 3|4|COORD 4|2|ENUM 5|8|LINK 6|8|SUBJ 7|8|AUX
+	8|2|CJCT 9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	the window's open (.) which implies an action earlier . 85222_91109
+%mor:	det:art|the adj|window&dn-POSS adj|open pro:rel|which v|imply-3S
+	det:art|a n|action adv|early-CP .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|5|LINK 5|3|CMOD 6|7|DET 7|5|OBJ 8|5|JCT
+	9|3|PUNCT
+*PAR:	I can't see any more action in it . [+ exc] 91109_94407
+%mor:	pro:sub|I mod|can~neg|not v|see qn|any qn|more n|action prep|in
+	pro:per|it .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|QUANT 6|7|QUANT 7|4|OBJ 8|4|JCT
+	9|8|POBJ 10|4|PUNCT
+*INV:	okay good . 94407_96011
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

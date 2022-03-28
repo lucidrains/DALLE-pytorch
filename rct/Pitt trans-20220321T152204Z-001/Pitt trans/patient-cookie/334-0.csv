@@ -1,0 +1,161 @@
+@UTF8
+@PID:	11312/t-00002617-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|83;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	334-0, audio
+*INV:	in the picture . 0_1574
+%mor:	prep|in det:art|the n|picture .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|1|PUNCT
+*PAR:	stool <is being> [//] &uh is &k falling over . [+ gram] 1574_5963
+%mor:	n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	the little girl is &uh criticizing her brother if it's her brother
+	. 5963_10900
+%mor:	det:art|the adj|little n|girl aux|be&3S part|criticize-PRESP
+	det:poss|her n|brother conj|if pro:per|it~cop|be&3S pro:obj|her
+	n|brother .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|5|CJCT 11|12|MOD 12|10|PRED 13|5|PUNCT
+*PAR:	her brother's getting in the cookie jar .10900_13300
+%mor:	det:poss|her n|brother~aux|be&3S part|get-PRESP prep|in det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	and the stool's gonna fall over with him .13300_15142
+%mor:	coord|and det:art|the n|stool~aux|be&3S part|go-PRESP~inf|to v|fall
+	adv|over prep|with pro:obj|him .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|JCT
+	9|7|JCT 10|9|POBJ 11|5|PUNCT
+*PAR:	the mother's drying dishes . 15142_16490
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	there's water . 16490_17171
+%mor:	pro:exist|there~cop|be&3S n|water .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	sink's overflowing . [+ gram] 17171_18621
+%mor:	n|sink~aux|be&3S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	there's dirty dishes on the sink .18621_20872
+%mor:	pro:exist|there~cop|be&3S v|dirty n|dish-PL prep|on det:art|the
+	n|sink .
+%gra:	1|2|SUBJ 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	there's curtains at the window .20872_22484
+%mor:	pro:exist|there~cop|be&3S n|curtain-PL prep|at det:art|the n|window
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	there's shrubbery, a tree outside . 22484_25589
+%mor:	pro:exist|there~cop|be&3S n|shrubbery cm|cm det:art|a n|tree
+	adv|outside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|LP 5|6|DET 6|2|PRED 7|6|NJCT 8|2|PUNCT
+*PAR:	there's &uh (..) oh landscaping .25589_33453
+%mor:	pro:exist|there~aux|be&3S co|oh part|landscape-PRESP .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|COM 4|0|ROOT 5|4|PUNCT
+*PAR:	you can see the window to the neighborhood [//] neighbor yard I
+	guess your [//] her house . 33453_38558
+%mor:	pro:per|you mod|can v|see det:art|the n|window prep|to det:art|the
+	n|neighbor n|yard pro:sub|I v|guess det:poss|her n|house .
+%gra:	1|3|SUBJ 2|3|AUX 3|11|CJCT 4|5|DET 5|3|OBJ 6|3|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|11|SUBJ 11|0|ROOT 12|13|DET 13|11|OBJ 14|11|PUNCT
+*PAR:	what else . [+ exc] 38756_40119
+%mor:	pro:int|what post|else .
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	anything else ? [+ exc] 40119_40888
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	you tell me . 40888_42641
+%mor:	pro:per|you v|tell pro:obj|me .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	I did say that the water's running in the sink and overflowing and
+	it's getting on the mother's shoe .42641_48749
+%mor:	pro:sub|I v|do&PAST v|say comp|that det:art|the n|water~aux|be&3S
+	part|run-PRESP prep|in det:art|the n|sink coord|and
+	over#part|flow-PRESP coord|and pro:per|it~aux|be&3S part|get-PRESP
+	prep|on det:art|the adj|mother&dn-POSS n|shoe .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|COMP 4|8|LINK 5|6|DET 6|8|SUBJ 7|8|AUX 8|3|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|8|CONJ 13|12|COORD 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|8|CJCT 18|17|JCT 19|21|DET 20|21|MOD 21|18|POBJ 22|2|PUNCT
+*PAR:	she's standing in the water .48749_51556
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|water
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	she's drying a dish .51556_53182
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	she has an apron on .53182_54502
+%mor:	pro:sub|she v|have&3S det:art|a n|apron adv|on .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|2|PUNCT
+*INV:	okay .54502_55891
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I told you the boy's falling <off the> [/] &uh off the stool .55891_60947
+%mor:	pro:sub|I v|tell&PAST pro:per|you det:art|the n|boy~aux|be&3S
+	part|fall-PRESP prep|off det:art|the n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ2 4|5|DET 5|7|SUBJ 6|7|AUX 7|2|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	and the girl's trying to +... 60947_63591
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|try-PRESP prep|to +...
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	cupboard door is open . [+ gram] 63591_64567
+%mor:	n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	the cookie jar is open .64567_65788
+%mor:	det:art|the n|cookie n|jar cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	he's got a cookie in his hand he's handing to his sister I guess .65788_69399
+%mor:	pro:sub|he~aux|be&3S part|get&PASTP det:art|a n|cookie prep|in
+	det:poss|his n|hand pro:sub|he~aux|be&3S part|hand-PRESP prep|to
+	det:poss|his n|sister pro:sub|I v|guess .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|11|SUBJ 10|11|AUX 11|16|XJCT 12|11|JCT 13|14|DET 14|12|POBJ 15|16|SUBJ
+	16|3|CJCT 17|3|PUNCT
+*PAR:	(.) &w you want any more things ? [+ exc] 69399_73172
+%mor:	pro:per|you v|want qn|any qn|more n|thing-PL ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|QUANT 4|5|QUANT 5|2|OBJ 6|2|PUNCT
+*INV:	you tell me . 73172_73767
+%mor:	pro:per|you v|tell pro:obj|me .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	you think that's all ? 73767_74491
+%mor:	pro:per|you v|think pro:dem|that~cop|be&3S pro:indef|all ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|2|PUNCT
+*PAR:	tie back curtains . [+ gram] 74491_75569
+%mor:	n|tie adv|back n|curtain-PL .
+%gra:	1|3|MOD 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*INV:	okay . 75569_78584
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I said some dishes on the counter .78584_81850
+%mor:	pro:sub|I v|say&PAST qn|some n|dish-PL prep|on det:art|the
+	n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|OBJ 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	<the sink's> [//] (.) the water's running in the sink it's
+	overflowing .81850_85966
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP prep|in det:art|the
+	n|sink pro:per|it~aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|4|PUNCT
+*PAR:	and shows a garden in the neighbor's house . [+ gram] 85966_89425
+%mor:	coord|and v|show-3S det:art|a n|garden prep|in det:art|the
+	adj|neighbor&dn-POSS n|house .
+%gra:	1|2|LINK 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|2|PUNCT
+*PAR:	tree growing in the neighbor's yard . [+ gram] 89425_93553
+%mor:	n|tree part|grow-PRESP prep|in det:art|the adj|neighbor&dn-POSS
+	n|yard .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|6|DET 5|6|MOD 6|3|POBJ 7|1|PUNCT
+*PAR:	they have some shrubbery in their yard . 93553_96914
+%mor:	pro:sub|they v|have qn|some n|shrubbery prep|in det:poss|their
+	n|yard .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|OBJ 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	I don't know . [+ exc] 96914_97570
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*INV:	okay that's xxx . 97570_98787
+%mor:	co|okay pro:dem|that~cop|be&3S .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	okay ? 98787_99486
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

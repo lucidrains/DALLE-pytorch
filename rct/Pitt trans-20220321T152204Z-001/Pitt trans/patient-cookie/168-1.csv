@@ -1,0 +1,95 @@
+@UTF8
+@PID:	11312/t-00002526-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|female|ProbableAD||Participant|14||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	168-1, audio
+*INV:	I want you +... 0_1829
+%mor:	pro:sub|I v|want pro:per|you +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	oh just hold on a minute . 1829_2893
+%mor:	co|oh adj|just n|hold prep|on det:art|a n|minute .
+%gra:	1|3|COM 2|3|MOD 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*INV:	I want you to tell me everything that you see going on in the
+	picture . 2893_6164
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|OBJ 12|10|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|2|PUNCT
+*INV:	tell me everything that you see happening in that picture . 6164_9970
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	co|see n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|7|LINK 5|7|SUBJ 6|7|COM 7|3|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	+< okay . [+ exc] 9100_9870
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh there's <a cook> [//] a [/] &b <a boy's> [//] a boy is &uh
+	taking &uh cookies and &uh givin(g) one to the girl imagine . 9970_24186
+%mor:	pro:exist|there~cop|be&3S det:art|a n|boy aux|be&3S part|take-PRESP
+	n|cookie-PL coord|and part|give-PRESP det:num|one prep|to
+	det:art|the n|girl v|imagine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|CPRED 7|6|OBJ 8|7|CONJ
+	9|8|COORD 10|14|SUBJ 11|10|JCT 12|13|DET 13|11|POBJ 14|9|COMP 15|2|PUNCT
+*PAR:	(.) and she wants one . 24186_28000
+%mor:	coord|and pro:sub|she v|want-3S pro:indef|one .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	I don't know &=laughs . [+ exc] 28000_29759
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	the &uh mother's &uh washing dishes . 29759_33726
+%mor:	det:art|the n|mother~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	she spilled it . 33726_36086
+%mor:	pro:sub|she v|spill-PAST pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	(.) &uh she's washing dishes . 36086_41291
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	and &uh (.) &uh <I can> [/] I can dance [* s:uk] outside to you ?
+	[+ exc] 41291_54222
+%mor:	coord|and pro:sub|I mod|can v|dance adv|outside prep|to pro:per|you
+	?
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|4|PUNCT
+*PAR:	huh ? [+ exc] 54222_54953
+%mor:	co|huh ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	all the action that you see going on . 54953_57481
+%mor:	qn|all det:art|the n|action pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|3|QUANT 2|3|DET 3|0|INCROOT 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ
+	8|6|JCT 9|3|PUNCT
+*PAR:	+< alright . [+ exc] 57222_58000
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	everything that you see happening . 57481_58722
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|1|PUNCT
+*PAR:	oh (.) &uh +... [+ exc] 58722_66689
+%mor:	co|oh +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's happening over here ? 66689_68058
+%mor:	pro:int|what~cop|be&3S n:gerund|happen-PRESP prep|over n|here ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|4|POBJ 6|2|PUNCT
+*PAR:	&uh oh he's gonna fall &=laughs . 68058_73601
+%mor:	co|oh pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|4|PUNCT
+*PAR:	and [/] &uh and she's laughin(g) at them there . 73601_80571
+%mor:	coord|and pro:sub|she~aux|be&3S part|laugh-PRESP prep|at
+	pro:obj|them adv|there .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|JCT 8|4|PUNCT
+*INV:	okay . 80571_82200
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I don't know what else . [+ exc] 82200_83565
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|PUNCT
+*PAR:	I don't know . [+ exc] 83565_84322
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+@End

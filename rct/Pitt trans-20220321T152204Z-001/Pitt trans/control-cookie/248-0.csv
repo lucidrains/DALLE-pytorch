@@ -1,0 +1,96 @@
+@UTF8
+@PID:	11312/t-00002365-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|50;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	248-0, audio
+*INV:	just tell me all the action you see going on in the picture . 0_2941
+%mor:	adv|just v|tell pro:obj|me adv|all det:art|the n|action pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|6|JCT 5|6|DET 6|2|OBJ 7|8|SUBJ 8|2|COMP
+	9|8|OBJ 10|8|JCT 11|8|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	well my goodness here ! [+ exc] 2941_8358
+%mor:	co|well co|my co|goodness adv|here !
+%gra:	1|3|COM 2|3|COM 3|0|INCROOT 4|3|JCT 5|3|PUNCT
+*PAR:	little boy's about to fall off a chair [: stool] [* s:r] while he's
+	reachin(g) for some cookies . [+ gram] 8358_13182
+%mor:	adj|little n|boy~cop|be&3S adv|about inf|to v|fall prep|off
+	det:art|a n|stool conj|while pro:sub|he~aux|be&3S part|reach-PRESP
+	prep|for qn|some n|cookie-PL .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|13|LINK 11|13|SUBJ 12|13|AUX 13|3|CJCT 14|13|JCT 15|16|QUANT
+	16|14|POBJ 17|3|PUNCT
+*PAR:	and he's handing some cookies to his sister apparently . 13182_16623
+%mor:	coord|and pro:sub|he~aux|be&3S part|hand-PRESP qn|some n|cookie-PL
+	prep|to det:poss|his n|sister adv|apparent&dadj-LY .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|4|JCT 11|4|PUNCT
+*PAR:	and the mother &o is over here . 16623_21263
+%mor:	coord|and det:art|the n|mother cop|be&3S prep|over n|here .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	probably the mother . [+ gram] 21263_22975
+%mor:	adv|probable&dadj-LY det:art|the n|mother .
+%gra:	1|3|JCT 2|3|DET 3|0|INCROOT 4|3|PUNCT
+*PAR:	wiping a plate . [+ gram] 22975_25432
+%mor:	part|wipe-PRESP det:art|a n|plate .
+%gra:	1|0|INCROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*PAR:	filling dishes . [+ gram] 25432_27268
+%mor:	part|fill-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	and meanwhile the water's overflowing out_of the sink and dropping
+	on the floor and she's standing in water . 27268_32467
+%mor:	coord|and adv|meanwhile det:art|the adj|water&dn-POSS
+	over#n:gerund|flow-PRESP prep|out_of det:art|the n|sink coord|and
+	part|drop-PRESP prep|on det:art|the n|floor coord|and
+	pro:sub|she~aux|be&3S part|stand-PRESP prep|in n|water .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|10|JCT 12|13|DET 13|11|POBJ 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|5|CJCT 18|17|JCT 19|18|POBJ 20|1|PUNCT
+*PAR:	which doesn't make sense, does it ? [+ exc] [+ gram] 32467_34676
+%mor:	pro:rel|which mod|do&3S~neg|not v|make n|sense cm|cm mod|do&3S
+	pro:per|it ?
+%gra:	1|4|LINK 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|4|LP 7|8|AUX 8|4|OBJ
+	9|4|PUNCT
+*INV:	&=laughs . 34676_36637
+*PAR:	I don't see any birds on the windowsills . 36637_39625
+%mor:	pro:sub|I mod|do~neg|not v|see qn|any n|bird-PL prep|on det:art|the
+	n|+n|window+n|sill-PL .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	no action outside so that looks like that's about all the action .
+	[+ exc] 39625_45961
+%mor:	qn|no n|action adv|outside adv|so pro:rel|that v|look-3S prep|like
+	pro:rel|that~cop|be&3S prep|about qn|all det:art|the n|action .
+%gra:	1|2|QUANT 2|0|INCROOT 3|4|JCT 4|2|NJCT 5|6|LINK 6|4|CMOD 7|6|JCT
+	8|9|LINK 9|7|POBJ 10|9|JCT 11|13|QUANT 12|13|DET 13|10|POBJ 14|2|PUNCT
+*PAR:	girl's reaching up for a cookie . [+ gram] 45961_52075
+%mor:	n|girl~aux|be&3S part|reach-PRESP adv|up prep|for det:art|a
+	n|cookie .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	she's got her finger up her nose or to [//] touching her nose for
+	some reason . 52075_57133
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:poss|her n|finger prep|up
+	det:poss|her n|nose coord|or part|touch-PRESP det:poss|her n|nose
+	prep|for qn|some n|reason .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|CONJ 10|9|COORD 11|12|DET 12|10|OBJ 13|12|NJCT 14|15|QUANT 15|13|POBJ
+	16|3|PUNCT
+*PAR:	can't tell if the grass is growing sorry . [+ exc] 57133_69556
+%mor:	mod|can~neg|not v|tell comp|if det:art|the n|grass aux|be&3S
+	part|grow-PRESP adj|sorry .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|8|LINK 5|6|DET 6|8|SUBJ 7|8|AUX 8|3|COMP
+	9|8|JCT 10|3|PUNCT
+*INV:	&=laughs oh come on can't you see it growing &laughs ? 69556_72619
+%mor:	co|oh v|come adv|on mod|can~neg|not pro:per|you v|see pro:per|it
+	part|grow-PRESP ?
+%gra:	1|2|COM 2|7|JCT 3|2|JCT 4|7|AUX 5|4|NEG 6|7|SUBJ 7|0|ROOT 8|9|SUBJ
+	9|7|COMP 10|7|PUNCT
+*PAR:	+< no [/] no . [+ exc] 72019_73353
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 73353_75173
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

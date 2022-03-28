@@ -1,0 +1,106 @@
+@UTF8
+@PID:	11312/t-00002661-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|64;|female|PossibleAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	476-0, audio
+*INV:	you see going on in the picture . 950_3409
+%mor:	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:art|the
+	n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|JCT 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	&=clears:throat &hm the woman of the house is drying the dishes . 3409_10011
+%mor:	det:art|the n|woman prep|of det:art|the n|house aux|be&3S
+	part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|2|DET 2|7|SUBJ 3|2|NJCT 4|5|DET 5|3|POBJ 6|7|AUX 7|0|ROOT 8|9|DET
+	9|7|OBJ 10|7|PUNCT
+*PAR:	her sink is overflowing . 10011_12842
+%mor:	det:poss|her n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	the boy's stool is tipping . 12842_16670
+%mor:	det:art|the adj|boy&dn-POSS n|stool aux|be&3S part|tip-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	he's taking cookies out_of a jar . 16670_19253
+%mor:	pro:sub|he~aux|be&3S part|take-PRESP n|cookie-PL prep|out_of
+	det:art|a n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	he's handing one to his sister . 19253_22522
+%mor:	pro:sub|he~aux|be&3S part|hand-PRESP det:num|one prep|to
+	det:poss|his n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	and <she is> [//] oh she's already dried some dishes right here I
+	guess . 22522_30912
+%mor:	coord|and co|oh pro:sub|she~aux|be&3S adv|already part|dry-PASTP
+	qn|some n|dish-PL adv|right adv|here pro:sub|I v|guess .
+%gra:	1|6|LINK 2|6|COM 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|8|QUANT 8|6|OBJ
+	9|10|JCT 10|6|JCT 11|12|SUBJ 12|6|CJCT 13|6|PUNCT
+*PAR:	well what is this hon(ey) ? [+ exc] 30912_31677
+%mor:	co|well pro:int|what cop|be&3S det:dem|this n|honey ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	I [/] I can't make that out . [+ exc] 31677_32591
+%mor:	pro:sub|I mod|can~neg|not v|make adv|that adv|out .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|4|JCT 7|4|PUNCT
+*PAR:	it look like a +... [+ exc] 32591_33778
+%mor:	pro:per|it v|look conj|like det:art|a +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT 4|5|DET 5|3|INCROOT
+*INV:	all you needta tell me is the action . 33778_35407
+%mor:	pro:indef|all pro:per|you v|need~inf|to v|tell pro:obj|me cop|be&3S
+	det:art|the n|action .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|INF 5|3|COMP 6|5|OBJ 7|5|COMP 8|9|DET
+	9|7|PRED 10|3|PUNCT
+*PAR:	oh action . [+ exc] 35407_35972
+%mor:	co|oh n|action .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	oh ‡ I'm sorry . [+ exc] 35972_36804
+%mor:	co|oh beg|beg pro:sub|I~cop|be&1S adj|sorry .
+%gra:	1|0|BEG 2|1|BEGP 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*INV:	+< anything going on . 36500_38120
+%mor:	pro:indef|anything part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|1|PUNCT
+*PAR:	she's dryin(g) the dishes . 38120_39192
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	she's standin(g) in water <well that's> [/] &ac if that's action .
+	39677_45107
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in n|water conj|if
+	pro:dem|that~cop|be&3S n|action .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|8|LINK 7|8|SUBJ 8|3|CJCT
+	9|8|PRED 10|3|PUNCT
+*INV:	okay . 44932_46786
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the door is open where the cookies are . 46786_52188
+%mor:	coord|and det:art|the n|door cop|be&3S adj|open pro:rel|where
+	det:art|the n|cookie-PL cop|be&PRES .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|9|LINK 7|8|DET 8|9|SUBJ
+	9|5|CMOD 10|4|PUNCT
+*PAR:	they all have their shoes on &=chuckles . 52188_58286
+%mor:	pro:sub|they post|all v|have det:poss|their n|shoe-PL adv|on .
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	oh she's got an apron on &uh over her dress . 58286_61681
+%mor:	co|oh pro:sub|she~aux|be&3S part|get&PASTP det:art|a n|apron adv|on
+	prep|over det:poss|her n|dress .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	kind_of homely girl isn't she ? [+ exc] 61681_63919
+%mor:	adv|kind_of adj|home&dn-LY n|girl cop|be&3S~neg|not pro:sub|she ?
+%gra:	1|2|JCT 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|NEG 6|4|PRED 7|4|PUNCT
+*PAR:	she's not doin(g) much she's just got her hand like &=grunt . 63919_69227
+%mor:	pro:sub|she~aux|be&3S neg|not part|do-PRESP adv|much
+	pro:sub|she~aux|be&3S adv|just part|get&PASTP det:poss|her n|hand
+	prep|like .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|9|SUBJ 7|9|AUX 8|9|JCT
+	9|4|XJCT 10|11|DET 11|9|OBJ 12|9|JCT 13|4|PUNCT
+*PAR:	&uh &d how many did I get wrong ? [+ exc] 69227_70490
+%mor:	pro:int|how qn|many mod|do&PAST pro:sub|I v|get adj|wrong ?
+%gra:	1|5|LINK 2|5|QUANT 3|5|AUX 4|5|SUBJ 5|0|ROOT 6|5|PRED 7|5|PUNCT
+*INV:	no that's fine, you did fine . 70490_71871
+%mor:	co|no pro:dem|that~cop|be&3S adj|fine cm|cm pro:per|you v|do&PAST
+	adv|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|LP 6|7|SUBJ 7|3|CPRED 8|7|JCT
+	9|3|PUNCT
+*PAR:	okay . [+ exc] 71871_73227
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

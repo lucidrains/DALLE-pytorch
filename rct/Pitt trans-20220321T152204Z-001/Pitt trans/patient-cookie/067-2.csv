@@ -1,0 +1,110 @@
+@UTF8
+@PID:	11312/t-00002483-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|female|ProbableAD||Participant|15||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	067-2, audio
+*PAR:	the little boy is up on [/] &uh on this thing here . 0_6000
+%mor:	det:art|the adj|little n|boy cop|be&3S adv|up prep|on det:dem|this
+	n|thing adv|here .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|4|PUNCT
+*PAR:	and it's [//] he's up trying to get something out_of the garden
+	[* s:uk] selection I think it is . 6000_13355
+%mor:	coord|and pro:sub|he~aux|be&3S adv|up part|try-PRESP inf|to v|get
+	pro:indef|something prep|out_of det:art|the n|garden n|selection
+	pro:sub|I v|think pro:per|it cop|be&3S .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|14|XJCT 6|7|INF 7|5|COMP 8|7|OBJ
+	9|7|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|14|SUBJ 14|0|ROOT 15|16|SUBJ
+	16|14|COMP 17|14|PUNCT
+*PAR:	(.) the little girl I think is mad because she didn't get some of
+	it &=laughs . 13355_24343
+%mor:	det:art|the adj|little n|girl pro:sub|I v|think aux|be&3S adj|mad
+	conj|because pro:sub|she mod|do&PAST~neg|not v|get qn|some prep|of
+	pro:per|it .
+%gra:	1|3|DET 2|3|MOD 3|6|SUBJ 4|5|SUBJ 5|3|CMOD 6|0|ROOT 7|6|PRED 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|10|NEG 12|6|CJCT 13|12|PRED 14|13|JCT 15|14|POBJ
+	16|6|PUNCT
+*INV:	+< &=laughs . 23500_25500
+*PAR:	and here's mama dryin(g) the dishes . 25500_28855
+%mor:	coord|and pro:exist|here~cop|be&3S n|mama part|dry-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|XMOD 6|7|DET 7|5|OBJ 8|3|PUNCT
+*INV:	okay . 28855_32701
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else going on ? 32701_35177
+%mor:	pro:indef|anything post|else part|go-PRESP adv|on ?
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	no just the little girl and the boy was on here . 35177_39056
+%mor:	co|no adv|just det:art|the adj|little n|girl coord|and det:art|the
+	n|boy cop|be&PAST&13S prep|on n|here .
+%gra:	1|5|COM 2|5|JCT 3|5|DET 4|5|MOD 5|9|SUBJ 6|5|CONJ 7|8|DET 8|6|COORD
+	9|0|ROOT 10|9|JCT 11|10|POBJ 12|9|PUNCT
+*INV:	<what's else is> [//] what's going on over here ? 39056_41156
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	the little girl and the boy . [+ gram] 41156_43052
+%mor:	det:art|the adj|little n|girl coord|and det:art|the n|boy .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|CONJ 5|6|DET 6|4|COORD 7|3|PUNCT
+*INV:	anything else ? 43052_44050
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	+< she's reachin(g) up to the boy and the boy is [//] got his other
+	hand down &=laughs . 43456_50200
+%mor:	pro:sub|she~aux|be&3S part|reach-PRESP adv|up prep|to det:art|the
+	n|boy coord|and det:art|the n|boy aux|get&PAST det:poss|his qn|other
+	n|hand adv|down .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|14|SUBJ 8|7|CONJ
+	9|10|DET 10|8|COORD 11|14|AUX 12|14|DET 13|14|QUANT 14|5|POBJ 15|3|JCT
+	16|3|PUNCT
+*INV:	+< mhm . 49100_50222
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	so +... [+ exc] 50222_50774
+%mor:	co|so +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 50706_51969
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	+< it looks color +/. 51000_51969
+%mor:	pro:per|it v|look-3S n|color +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	no that's all . [+ exc] 51969_53216
+%mor:	co|no pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	what's going on over here ? 53216_55593
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*INV:	anything else ? 55593_56492
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	+< oh she spilled something I think . 55890_58611
+%mor:	co|oh pro:sub|she v|spill-PAST pro:indef|something pro:sub|I
+	v|think .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|SUBJ 6|3|CJCT 7|3|PUNCT
+*PAR:	from the sink down . [+ gram] 58611_61456
+%mor:	prep|from det:art|the n|sink adv|down .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|3|NJCT 5|1|PUNCT
+*PAR:	it came splashin(g) down . 61456_63633
+%mor:	pro:per|it v|come&PAST part|splash-PRESP adv|down .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|XJCT 4|3|JCT 5|2|PUNCT
+*INV:	okay . 63633_66192
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< that's the first I noticed it &=laughs . [+ exc] 63688_67577
+%mor:	pro:dem|that~cop|be&3S det:art|the adj|first pro:sub|I
+	v|notice-PAST pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|6|SUBJ 6|2|CJCT 7|6|OBJ 8|2|PUNCT
+*PAR:	I'm terrible anymore . [+ exc] 67577_70268
+%mor:	pro:sub|I~cop|be&1S adj|terrible adv|anymore .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|JCT 5|2|PUNCT
+*INV:	no . 70268_71669
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 71669_74379
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

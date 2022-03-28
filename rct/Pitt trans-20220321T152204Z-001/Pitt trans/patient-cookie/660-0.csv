@@ -1,0 +1,59 @@
+@UTF8
+@PID:	11312/t-00002717-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|female|PossibleAD||Participant|12||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	660-0, audio
+*INV:	going on in the picture ? 0_1403
+%mor:	part|go-PRESP adv|on prep|in det:art|the n|picture ?
+%gra:	1|0|INCROOT 2|1|JCT 3|1|JCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	I see the little boy's down here +/. 1403_3680
+%mor:	pro:sub|I v|see det:art|the adj|little n|boy~cop|be&3S prep|down
+	n|here +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|6|SUBJ 6|2|COMP 7|6|JCT 8|7|POBJ
+	9|2|PUNCT
+*INV:	+< okay . 3680_5060
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, getting the [/] the food . 5060_6600
+%mor:	part|get-PRESP det:art|the n|food .
+%gra:	1|0|INCROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*PAR:	and the little girl down here is the same way . 6600_8789
+%mor:	coord|and det:art|the adj|little n|girl prep|down n|here cop|be&3S
+	det:art|the adj|same n|way .
+%gra:	1|7|LINK 2|4|DET 3|4|MOD 4|7|SUBJ 5|4|NJCT 6|5|POBJ 7|0|ROOT 8|10|DET
+	9|10|MOD 10|7|PRED 11|7|PUNCT
+*PAR:	<this little boy> [//] this is falling over .8789_11147
+%mor:	pro:dem|this aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*INV:	mhm .11147_11800
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and this little girl she's just getting [/] (.) getting things
+	ready for dinner .11800_20516
+%mor:	coord|and det:dem|this adj|little n|girl pro:sub|she~aux|be&3S
+	adv|just part|get-PRESP n|thing-PL adj|ready prep|for n|dinner .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|8|SUBJ 6|8|AUX 7|8|JCT 8|4|CMOD
+	9|8|OBJ 10|9|POSTMOD 11|10|JCT 12|11|POBJ 13|4|PUNCT
+*INV:	what else is happening over here ? 20516_22769
+%mor:	pro:int|what post|else aux|be&3S part|happen-PRESP prep|over n|here
+	?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	food dropped . 22769_25010
+%mor:	n|food v|drop-PAST .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	okay .25010_26660
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I think it did . [+ exc] 26660_27850
+%mor:	pro:sub|I v|think pro:per|it v|do&PAST .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|2|PUNCT
+*PAR:	yes it did . [+ exc] 27850_28900
+%mor:	co|yes pro:per|it v|do&PAST .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	okay . 28900_30009
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

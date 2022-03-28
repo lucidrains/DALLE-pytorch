@@ -1,0 +1,84 @@
+@UTF8
+@PID:	11312/t-00002425-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	007-1, audio
+*INV:	www . 0_1929
+%exp:	recording prep
+*INV:	there it is . 1929_2744
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	xxx . [+ exc] 2744_6330
+*INV:	yeah . 6330_7674
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	can I look at it and tell you ? [+ exc] 7674_13415
+%mor:	mod|can pro:sub|I v|look prep|at pro:per|it coord|and v|tell
+	pro:per|you ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|CONJ 7|6|COORD 8|7|OBJ
+	9|3|PUNCT
+*INV:	just tell me as you see it there mhm . 13415_15704
+%mor:	adv|just v|tell pro:obj|me prep|as pro:per|you v|see pro:per|it
+	adv|there co|mhm=yes .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|6|COORD 5|6|SUBJ 6|2|CJCT 7|6|OBJ 8|6|JCT
+	9|6|COM 10|2|PUNCT
+*PAR:	+< oh okay . [+ exc] 14815_15704
+%mor:	co|oh co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	well there's a girl and a boy and the boy's in the cookie jar . 15704_19000
+%mor:	co|well pro:exist|there~cop|be&3S det:art|a n|girl coord|and
+	det:art|a n|boy coord|and det:art|the n|boy~cop|be&3S prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|CONJ 7|8|DET 8|6|COORD
+	9|12|LINK 10|11|DET 11|12|SUBJ 12|3|CJCT 13|12|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|3|PUNCT
+*PAR:	and he's standing on a stool that's tipping over . 19000_22603
+%mor:	coord|and pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:art|a
+	n|stool pro:rel|that~aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|4|PUNCT
+*PAR:	and he's in the kitchen . 22603_23569
+%mor:	coord|and pro:sub|he~cop|be&3S prep|in det:art|the n|kitchen .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and the mother's in the kitchen running the water at the sink . 23569_26495
+%mor:	coord|and det:art|the n|mother~aux|be&3S prep|in det:art|the
+	n|kitchen part|run-PRESP det:art|the n|water prep|at det:art|the
+	n|sink .
+%gra:	1|8|LINK 2|3|DET 3|8|SUBJ 4|8|AUX 5|4|JCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|10|DET 10|8|OBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|8|PUNCT
+*PAR:	and the water's running over and it's all over the floor . 26495_29885
+%mor:	coord|and det:art|the n|water~aux|be&3S part|run-PRESP adv|over
+	coord|and pro:per|it~cop|be&3S adv|all prep|over det:art|the n|floor
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|9|LINK 8|9|SUBJ
+	9|5|CJCT 10|11|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	and there are curtains at the windows . 29885_32279
+%mor:	coord|and adv|there cop|be&PRES n|curtain-PL prep|at det:art|the
+	n|window-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	and there are cups and a plate on the &uh pantry . 32279_36551
+%mor:	coord|and adv|there cop|be&PRES n|cup-PL coord|and det:art|a
+	n|plate prep|on det:art|the n|pantry .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|CONJ 6|7|DET 7|5|COORD 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and &uh &uh the [/] the [//] outside the window there's a path
+	leading to a garage it looks like . 36551_46792
+%mor:	coord|and prep|outside det:art|the n|window
+	pro:exist|there~cop|be&3S det:art|a n|path part|lead-PRESP prep|to
+	det:art|a n|garage pro:per|it v|look-3S prep|like .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|8|DET 8|6|PRED
+	9|8|XMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|14|SUBJ 14|8|CMOD 15|14|JCT
+	16|6|PUNCT
+*PAR:	and there are curtains there . 46792_48112
+%mor:	coord|and adv|there cop|be&PRES n|curtain-PL adv|there .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|3|PUNCT
+*PAR:	and &uh that's about all there . [+ exc] 48112_51546
+%mor:	coord|and pro:dem|that~cop|be&3S prep|about qn|all adv|there .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|QUANT 6|4|JCT 7|3|PUNCT
+*INV:	okay . 51546_53632
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

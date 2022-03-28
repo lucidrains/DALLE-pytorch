@@ -1,0 +1,55 @@
+@UTF8
+@PID:	11312/t-00002706-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|60;|female|PossibleAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	624-0, audio
+*INV:	I want you to take a look at that picture and tell me everything
+	that you see going on in that picture . 0_7377
+%mor:	pro:sub|I v|want pro:per|you inf|to v|take det:art|a v|look prep|at
+	det:dem|that n|picture coord|and v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|7|DET 7|5|OBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|CONJ 12|11|COORD 13|12|OBJ2 14|12|OBJ 15|17|LINK
+	16|17|SUBJ 17|14|CMOD 18|17|OBJ 19|17|JCT 20|17|JCT 21|22|DET 22|20|POBJ
+	23|2|PUNCT
+*INV:	everything that's happening there . 7377_9671
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP
+	adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	well little boy &=clears throat reachin(g) out for the cookie jar .
+	[+ gram] 9671_18068
+%mor:	co|well adj|little n|boy n|throat part|reach-PRESP adv|out prep|for
+	det:art|the n|cookie n|jar .
+%gra:	1|4|COM 2|4|MOD 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|5|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|5|PUNCT
+*PAR:	and the stool he's standin(g) on tilts over . 18068_23004
+%mor:	coord|and det:art|the n|stool pro:sub|he~aux|be&3S part|stand-PRESP
+	adv|on n|tilt-PL adv|over .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|6|JCT 8|7|POBJ
+	9|8|NJCT 10|3|PUNCT
+*PAR:	and &um (.) he's handin(g) some cookies down to the little girl . 23004_35439
+%mor:	coord|and pro:sub|he~aux|be&3S part|hand-PRESP qn|some n|cookie-PL
+	adv|down prep|to det:art|the adj|little n|girl .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|4|PUNCT
+*PAR:	and the mother's &w dryin(g) dishes (.) and spills water on the
+	floor . 35439_45819
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL
+	coord|and v|spill-3S n|water prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|CONJ 8|7|COORD
+	9|8|OBJ 10|8|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	and (.) she's lookin(g) out the window . 45819_55900
+%mor:	coord|and pro:sub|she~aux|be&3S part|look-PRESP prep|out
+	det:art|the n|window .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	that's it . [+ exc] 55900_57000
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	good . 57000_57800
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

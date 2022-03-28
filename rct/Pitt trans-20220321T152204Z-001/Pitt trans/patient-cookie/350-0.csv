@@ -1,0 +1,144 @@
+@UTF8
+@PID:	11312/t-00002631-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|80;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	350-0, audio
+*INV:	what do you see going on (.) in that picture ? 0_1978
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	girl washin(g) dishes . [+ gram] 1978_3370
+%mor:	n|girl part|wash-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|OBJ 4|1|PUNCT
+*PAR:	I see that . [+ exc] 3370_4444
+%mor:	pro:sub|I v|see comp|that .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	mhm . 4444_5775
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh what [//] the boy's putting up the cookie jar or getting
+	cookies out_of the cookie jar . 5775_12713
+%mor:	det:art|the n|boy~aux|be&3S part|put-PRESP prep|up det:art|the
+	n|cookie n|jar coord|or part|get-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|CONJ 10|9|COORD 11|10|OBJ 12|10|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|4|PUNCT
+*PAR:	and his little sister is begging him +"/. 12713_15100
+%mor:	coord|and det:poss|his adj|little n|sister aux|be&3S part|beg-PRESP
+	pro:obj|him +"/.
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+*PAR:	+" oh hurry up . 15100_16089
+%mor:	co|oh v|hurry adv|up .
+%gra:	1|2|COM 2|0|ROOT 3|2|JCT 4|2|PUNCT
+*PAR:	+" come on . 16089_17061
+%mor:	v|come adv|on .
+%gra:	1|0|ROOT 2|1|JCT 3|1|PUNCT
+*PAR:	and he's got the foot stool . 17061_20160
+%mor:	coord|and pro:sub|he~aux|be&3S part|get&PASTP det:art|the n|foot
+	n|stool .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|MOD 7|4|OBJ 8|4|PUNCT
+*PAR:	and his [//] her (..) big sister is washing the dishes . 19971_24710
+%mor:	coord|and det:poss|her adj|big n|sister aux|be&3S part|wash-PRESP
+	det:art|the n|dish-PL .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|PUNCT
+*PAR:	that's the big sister or the mama <I don't know which that is> [//]
+	is drying the dishes, putting them away . 24710_33078
+%mor:	pro:dem|that~cop|be&3S det:art|the adj|big n|sister coord|or
+	det:art|the n|mama aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	cm|cm part|put-PRESP pro:obj|them adv|away .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|5|CMOD 11|12|DET 12|10|OBJ 13|10|LP 14|10|XJCT 15|14|OBJ
+	16|14|JCT 17|2|PUNCT
+*PAR:	she's got the spigot on and the water's running . 33078_35922
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:art|the n|spigot adv|on
+	coord|and det:art|the n|water~aux|be&3S part|run-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|3|CJCT 12|3|PUNCT
+*PAR:	and there's her (.) cup . 35922_39281
+%mor:	coord|and pro:exist|there~cop|be&3S det:poss|her n|cup .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	she hasn't them put up yet . 39281_41552
+%mor:	pro:sub|she aux|have&3S~neg|not pro:obj|them part|put&PASTP adv|up
+	adv|yet .
+%gra:	1|5|SUBJ 2|5|AUX 3|2|NEG 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|5|JCT 8|5|PUNCT
+*PAR:	and he's up on the foot stoo(l) . 41552_43853
+%mor:	coord|and pro:sub|he~cop|be&3S adv|up prep|on det:art|the n|foot
+	n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	and he's got the cookie jars . 43853_46469
+%mor:	coord|and pro:sub|he~aux|be&3S part|get&PASTP det:art|the n|cookie
+	n|jar-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|MOD 7|4|OBJ 8|4|PUNCT
+*INV:	okay what else is going on over here ? 46469_48662
+%mor:	co|okay pro:int|what post|else aux|be&3S part|go-PRESP adv|on
+	prep|over adv|here ?
+%gra:	1|5|COM 2|5|LINK 3|2|PQ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|5|PUNCT
+*PAR:	he's gettin(g) the cookie jars . 48758_51284
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP det:art|the n|cookie n|jar-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|PUNCT
+*INV:	uhuh, anything else going on ? 51284_53053
+%mor:	co|uhuh cm|cm pro:indef|anything post|else part|go-PRESP adv|on ?
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|3|PQ 5|3|XMOD 6|5|JCT 7|1|PUNCT
+*PAR:	she's beggin(g) him for some . 53053_54997
+%mor:	pro:sub|she~aux|be&3S part|beg-PRESP pro:obj|him prep|for qn|some .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*INV:	okay . 54935_56087
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	beggin(g) him for some cookies . [+ gram] 56197_57843
+%mor:	part|beg-PRESP pro:obj|him prep|for qn|some n|cookie-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|JCT 4|5|QUANT 5|3|POBJ 6|1|PUNCT
+*INV:	+< what about over here ? 57000_58000
+%mor:	pro:int|what adv|about prep|over adv|here ?
+%gra:	1|3|LINK 2|3|JCT 3|0|INCROOT 4|3|JCT 5|3|PUNCT
+*INV:	what else is going on over there ? 58000_59330
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on prep|over
+	adv|there ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|JCT 8|4|PUNCT
+*PAR:	+< <she's washing the dishes> [//] &uh she's drying the dishes . 59030_62203
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and she's got the water on in the sink . 62303_64352
+%mor:	coord|and pro:sub|she~aux|be&3S part|get&PASTP det:art|the n|water
+	adv|on prep|in det:art|the n|sink .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*INV:	uhhuh . 64443_65205
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< and there's her cup sitting down there +/. 64905_67231
+%mor:	coord|and pro:exist|there~cop|be&3S det:poss|her n|cup
+	part|sit-PRESP prep|down n|there +/.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|XMOD 7|6|JCT 8|7|POBJ
+	9|3|PUNCT
+*INV:	okay, anything else ? 67307_69349
+%mor:	co|okay cm|cm pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|3|PQ 5|1|PUNCT
+*PAR:	+, to be washed . 68300_69549
+%mor:	inf|to aux|be part|wash-PASTP .
+%gra:	1|3|INF 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	no she has an apron on (..) and her shoes . 69549_75571
+%mor:	co|no pro:sub|she v|have&3S det:art|a n|apron adv|on coord|and
+	det:poss|her n|shoe-PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|CONJ 8|9|DET
+	9|7|COORD 10|3|PUNCT
+*PAR:	and the drapes are pulled back in one of the rooms . 75571_82048
+%mor:	coord|and det:art|the v|drape-3S aux|be&PRES part|pull-PASTP
+	adv|back prep|in det:num|one prep|of det:art|the n|room-PL .
+%gra:	1|3|LINK 2|3|DET 3|0|ROOT 4|5|AUX 5|3|COMP 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	see ? [+ exc] 82048_83466
+%mor:	v|see ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	okay [/] okay . 83466_85239
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

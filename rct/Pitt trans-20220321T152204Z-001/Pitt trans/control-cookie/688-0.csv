@@ -1,0 +1,74 @@
+@UTF8
+@PID:	11312/t-00002416-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	688-0, audio
+*INV:	look at that picture . 0_3100
+%mor:	v|look prep|at det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	mhm . [+ exc] 3100_3603
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< and tell me everything that you see going on in that picture,
+	everything that's happening . 3403_7460
+%mor:	coord|and v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:dem|that
+	n|picture cm|cm pro:indef|everything pro:rel|that~aux|be&3S
+	part|happen-PRESP .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|7|LP 14|7|OBJ 15|17|LINK
+	16|17|AUX 17|14|CMOD 18|2|PUNCT
+*PAR:	mhm a_lot_of things are happening . 7460_11363
+%mor:	co|mhm=yes qn|a_lot_of n|thing-PL aux|be&PRES part|happen-PRESP .
+%gra:	1|5|COM 2|3|QUANT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	yes the &uh water's going over . 11363_15702
+%mor:	co|yes det:art|the n|water~aux|be&3S part|go-PRESP adv|over .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	the water's overflowing . 15702_18162
+%mor:	det:art|the adj|water&dn-POSS over#part|flow-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	and &uh the little boy is slipping off the stool while he's
+	tryin(g) to steal some cookies . 18162_25836
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S part|slip-PRESP
+	prep|off det:art|the n|stool conj|while pro:sub|he~aux|be&3S
+	part|try-PRESP inf|to v|steal qn|some n|cookie-PL .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|13|LINK 11|13|SUBJ 12|13|AUX 13|6|CJCT 14|15|INF 15|13|COMP
+	16|17|QUANT 17|15|OBJ 18|6|PUNCT
+*PAR:	and the little girl is laughing at him and she's not happy in [//]
+	one bit . 25836_30521
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|laugh-PRESP
+	prep|at pro:obj|him coord|and pro:sub|she~cop|be&3S neg|not
+	adj|happy pro:indef|one n|bit .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|7|POBJ
+	9|11|LINK 10|11|SUBJ 11|6|CJCT 12|11|NEG 13|15|MOD 14|15|MOD 15|11|PRED
+	16|6|PUNCT
+*PAR:	and the lady is drying the dishes and looking out the window . 30521_36373
+%mor:	coord|and det:art|the n|lady aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL coord|and part|look-PRESP prep|out det:art|the n|window .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|CONJ
+	9|8|COORD 10|9|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	it's beautiful out there . 36373_37400
+%mor:	pro:per|it~cop|be&3S adj|beautiful prep|out n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|JCT 5|4|POBJ 6|2|PUNCT
+*PAR:	it must be June . 37400_38800
+%mor:	pro:per|it mod|must cop|be n:prop|June .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	I don't know but it [//] anyhow it looks like it's not winter
+	&=laughs . 38800_43563
+%mor:	pro:sub|I mod|do~neg|not v|know conj|but adv|anyhow pro:per|it
+	v|look-3S conj|like pro:per|it~cop|be&3S neg|not v|winter .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|JCT 7|8|SUBJ 8|4|COMP
+	9|11|LINK 10|11|SUBJ 11|13|CJCT 12|11|NEG 13|8|COMP 14|4|PUNCT
+*PAR:	&=clears:throat and that's about all I can see . [+ exc] 43563_49959
+%mor:	coord|and pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I
+	mod|can v|see .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|8|JCT 5|8|JCT 6|8|SUBJ 7|8|AUX 8|3|CPRED
+	9|3|PUNCT
+*INV:	+< okay that's fine . 49600_50900
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

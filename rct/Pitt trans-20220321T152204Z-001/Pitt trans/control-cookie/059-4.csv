@@ -1,0 +1,55 @@
+@UTF8
+@PID:	11312/t-00002226-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	059-4, audio
+*PAR:	oh there's a little boy on a &s &la &um [//] step+stool about to
+	fall . 0_7581
+%mor:	co|oh pro:exist|there~cop|be&3S det:art|a adj|little n|boy prep|on
+	det:art|a n|+n|step+n|stool adv|about inf|to v|fall .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|12|SUBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|12|JCT 11|12|INF 12|3|CPRED 13|3|PUNCT
+*PAR:	he's reachin(g) in the cookie jar . 7581_9511
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|in det:art|the n|cookie
+	n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	and the little girl reaching for a cookie . 9511_11572
+%mor:	coord|and det:art|the adj|little n|girl part|reach-PRESP prep|for
+	det:art|a n|cookie .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	and the mother washing dishes . 11572_12777
+%mor:	coord|and det:art|the n|mother part|wash-PRESP n|dish-PL .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|4|OBJ 6|3|PUNCT
+*PAR:	and the sink is overflowing . 12777_15214
+%mor:	coord|and det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	and the tap water's comin(g) in . 15214_17042
+%mor:	coord|and det:art|the n|tap n|water~aux|be&3S part|come-PRESP
+	adv|in .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*PAR:	and it looks like there might be a breeze blowing the curtains . 17042_19815
+%mor:	coord|and pro:per|it v|look-3S conj|like adv|there mod|might cop|be
+	det:art|a n|breeze part|blow-PRESP det:art|the n|curtain-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|9|DET
+	9|7|PRED 10|9|XMOD 11|12|DET 12|10|OBJ 13|3|PUNCT
+*PAR:	(be)cause the water's running on the floor . [+ gram] 19750_22127
+%mor:	conj|because det:art|the n|water~aux|be&3S part|run-PRESP prep|on
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	&hm +... [+ exc] 22127_24333
+*PAR:	and the door of the cupboard is ajar (.) where he has a cookie jar
+	&hm . 24333_29000
+%mor:	coord|and det:art|the n|door prep|of det:art|the n|cupboard
+	cop|be&3S adv|ajar pro:rel|where pro:sub|he v|have&3S det:art|a
+	n|cookie n|jar .
+%gra:	1|7|LINK 2|3|DET 3|7|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|7|JCT
+	9|11|LINK 10|11|SUBJ 11|7|CJCT 12|14|DET 13|14|MOD 14|11|OBJ 15|7|PUNCT
+*INV:	(.) okay that's fine . 29000_33711
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

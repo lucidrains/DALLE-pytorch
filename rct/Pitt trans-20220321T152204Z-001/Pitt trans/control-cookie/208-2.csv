@@ -1,0 +1,78 @@
+@UTF8
+@PID:	11312/t-00002341-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	208-2, audio
+*PAR:	can I start ? [+ exc] 0_3907
+%mor:	mod|can pro:sub|I v|start ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	mhm . 3907_4240
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there is a boy on the stool . 4240_7858
+%mor:	pro:exist|there cop|be&3S det:art|a n|boy prep|on det:art|the
+	n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	the stool is tipping over . 7858_9394
+%mor:	det:art|the n|stool aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the boy is taking cookies out_of the jar . 9394_12701
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP n|cookie-PL prep|out_of
+	det:art|the n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	&uh the cupboard is open . 12701_16708
+%mor:	det:art|the n|cupboard cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	the girl is saying [//] puttin(g) her finger to her mouth and also
+	puttin(g) her hand out for a cookie . 16708_23490
+%mor:	det:art|the n|girl aux|be&3S part|put-PRESP det:poss|her n|finger
+	prep|to det:poss|her n|mouth coord|and adv|also part|put-PRESP
+	det:poss|her n|hand adv|out prep|for det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|CONJ 11|12|JCT 12|10|COORD 13|14|DET 14|12|OBJ 15|12|JCT
+	16|12|JCT 17|18|DET 18|16|POBJ 19|4|PUNCT
+*PAR:	the mother is washing dishes . 23490_27116
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	water is spilling over from the sink onto the floor . 27116_30656
+%mor:	n|water aux|be&3S part|spill-PRESP adv|over prep|from det:art|the
+	n|sink prep|onto det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and the [/] the window is open, the drapes are open . 30656_36699
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open cm|cm det:art|the
+	v|drape-3S cop|be&PRES adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|LP 7|8|DET 8|4|CPRED
+	9|8|COMP 10|9|PRED 11|4|PUNCT
+*PAR:	there's two cups and a saucer on the sink . 36699_40282
+%mor:	pro:exist|there~cop|be&3S det:num|two n|cup-PL coord|and det:art|a
+	n|saucer prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD
+	8|7|NJCT 9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	and the [//] she is stepping on the water on the floor . 40282_45976
+%mor:	coord|and pro:sub|she cop|be&3S n:gerund|step-PRESP prep|on
+	det:art|the n|water prep|on det:art|the n|floor .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and she is drying the dishes . 45976_50225
+%mor:	coord|and pro:sub|she aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and she is looking outside <at the wow> [//] at the shrubbery . 50225_58099
+%mor:	coord|and pro:sub|she aux|be&3S part|look-PRESP adv|outside prep|at
+	det:art|the n|shrubbery .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the boy is handing the girl a cookie . 58099_66228
+%mor:	det:art|the n|boy aux|be&3S part|hand-PRESP det:art|the n|girl
+	det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|8|DET 8|6|OBJ
+	9|4|PUNCT
+*PAR:	that is all . [+ exc] 66228_73228
+%mor:	pro:dem|that cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

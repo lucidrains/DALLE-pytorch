@@ -1,0 +1,61 @@
+@UTF8
+@PID:	11312/t-00002473-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|ProbableAD||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	058-4, audio
+*INV:	tell me everything that's happening there . 0_1729
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|happen-PRESP adv|there .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|1|PUNCT
+*PAR:	first of all I see I guess she's mother at the sink washin(g)
+	dishes and the water is &uh overflowing from the sink on to the
+	floor and she's standing in a puddle o(f) water . 1729_16426
+%mor:	adv|first prep|of pro:indef|all pro:sub|I v|see pro:sub|I v|guess
+	pro:sub|she~aux|be&3S n|mother prep|at det:art|the n|sink
+	part|wash-PRESP n|dish-PL coord|and det:art|the n|water aux|be&3S
+	over#part|flow-PRESP prep|from det:art|the n|sink adv|on prep|to
+	det:art|the n|floor coord|and pro:sub|she~aux|be&3S part|stand-PRESP
+	prep|in det:art|a n|puddle prep|of n|water .
+%gra:	1|5|JCT 2|1|JCT 3|2|POBJ 4|5|SUBJ 5|0|ROOT 6|7|SUBJ 7|5|COMP 8|10|SUBJ
+	9|10|AUX 10|5|OBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|11|XJCT 15|14|OBJ
+	16|20|LINK 17|18|DET 18|20|SUBJ 19|20|AUX 20|15|CMOD 21|20|JCT 22|23|DET
+	23|21|POBJ 24|20|JCT 25|20|JCT 26|27|DET 27|25|POBJ 28|31|LINK
+	29|31|SUBJ 30|31|AUX 31|20|CJCT 32|31|JCT 33|34|DET 34|32|POBJ 35|34|NJCT
+	36|35|POBJ 37|5|PUNCT
+*PAR:	and at the same time &uh there's a daughter I guess a &gir little
+	girl &uh has her hand up and also one finger to tell <her brother>
+	[//] I guess her brother to do it quietly . 16426_34397
+%mor:	coord|and prep|at det:art|the adj|same n|time
+	pro:exist|there~cop|be&3S det:art|a n|daughter pro:sub|I v|guess
+	det:art|a adj|little n|girl aux|have&3S det:poss|her n|hand adv|up
+	coord|and adv|also det:num|one n|finger inf|to v|tell pro:sub|I
+	v|guess det:poss|her n|brother inf|to v|do pro:per|it
+	adv|quiet&dadj-LY .
+%gra:	1|7|LINK 2|7|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|7|SUBJ 7|0|ROOT 8|9|DET
+	9|7|PRED 10|11|SUBJ 11|9|CMOD 12|14|DET 13|14|MOD 14|17|SUBJ 15|17|AUX
+	16|17|DET 17|11|OBJ 18|17|NJCT 19|18|CONJ 20|21|JCT 21|22|QUANT 22|19|COORD
+	23|24|INF 24|9|XMOD 25|26|SUBJ 26|24|COMP 27|28|DET 28|26|OBJ 29|30|INF
+	30|28|XMOD 31|30|OBJ 32|30|JCT 33|7|PUNCT
+*PAR:	an(d) she's reachin(g) up for a cookie he's takin(g) out_of a
+	cookie jar . 34397_38587
+%mor:	coord|and pro:sub|she~aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie pro:sub|he~aux|be&3S part|take-PRESP prep|out_of
+	det:art|a n|cookie n|jar .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|11|SUBJ 10|11|AUX 11|8|CMOD 12|11|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|4|PUNCT
+*PAR:	and as he's doing that the stool is &uh falling over . 38587_43418
+%mor:	coord|and conj|as pro:sub|he~aux|be&3S part|do-PRESP comp|that
+	det:art|the n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|5|LINK 2|5|LINK 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|5|COMP 11|10|JCT 12|5|PUNCT
+*PAR:	that's it . [+ exc] 43418_49429
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	that's right . 49429_50117
+%mor:	pro:dem|that~cop|be&3S co|right .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

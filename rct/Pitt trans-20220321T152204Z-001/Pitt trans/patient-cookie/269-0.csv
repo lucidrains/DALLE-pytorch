@@ -1,0 +1,120 @@
+@UTF8
+@PID:	11312/t-00002591-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|72;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	269-0, audio
+*INV:	action you see going on in that picture . 0_2429
+%mor:	n|action pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:dem|that n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	well I'm seeing a_lot_of water that isn't sposta be where it is . 2429_8000
+%mor:	co|well pro:sub|I~aux|be&1S part|see-PRESP qn|a_lot_of n|water
+	pro:rel|that aux|be&3S~neg|not part|suppose-PASTP~inf|to cop|be
+	pro:rel|where pro:per|it cop|be&3S .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|10|LINK 8|10|AUX
+	9|8|NEG 10|6|CMOD 11|12|INF 12|10|COMP 13|15|LINK 14|15|SUBJ 15|12|PRED
+	16|4|PUNCT
+*PAR:	a full sink with &uh more water running down all [x 3] the way to
+	the floor . [+ gram] 8000_16545
+%mor:	det:art|a adj|full n|sink prep|with qn|more n|water part|run-PRESP
+	prep|down qn|all det:art|the n|way prep|to det:art|the n|floor .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|NJCT 5|6|QUANT 6|4|POBJ 7|6|XMOD
+	8|7|JCT 9|11|QUANT 10|11|DET 11|8|POBJ 12|11|NJCT 13|14|DET 14|12|POBJ
+	15|3|PUNCT
+*PAR:	a stool that's going to project somebody into a fall and real fast
+	. [+ gram] 16545_25551
+%mor:	det:art|a n|stool pro:rel|that~aux|be&3S part|go-PRESP inf|to
+	v|project pro:indef|somebody prep|into det:art|a v|fall coord|and
+	adj|real n|fast .
+%gra:	1|2|DET 2|0|INCROOT 3|5|LINK 4|5|AUX 5|2|CMOD 6|7|INF 7|5|COMP 8|7|OBJ
+	9|7|JCT 10|11|DET 11|9|POBJ 12|11|CONJ 13|14|MOD 14|12|COORD 15|2|PUNCT
+*PAR:	getting out_of the cookie jar . [+ gram] 25551_28656
+%mor:	part|get-PRESP prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|0|INCROOT 2|1|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|1|PUNCT
+*PAR:	&uh &=clears:throat dishwashing and drying . [+ gram] 28656_35967
+%mor:	adj|+n|dish+part|washing coord|and part|dry-PRESP .
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|1|PUNCT
+*PAR:	(..) and a girl tryin(g) to say &=laughs “silent” so that &uh they
+	won't be caught . [+ gram] 35967_55361
+%mor:	coord|and det:art|a n|girl part|try-PRESP inf|to v|say adj|silent
+	adv|so pro:rel|that pro:sub|they mod|will~neg|not aux|be
+	part|catch&PASTP .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|6|INF 6|4|COMP 7|6|PRED
+	8|14|JCT 9|14|LINK 10|14|SUBJ 11|14|AUX 12|11|NEG 13|14|AUX 14|7|XMOD
+	15|3|PUNCT
+*PAR:	two cups and a plate &uh that probably are dry and then the other
+	plate is being dried . [+ gram] 55361_65614
+%mor:	det:num|two n|cup-PL coord|and det:art|a n|plate pro:rel|that
+	adv|probable&dadj-LY cop|be&PRES adj|dry coord|and adv:tem|then
+	det:art|the qn|other n|plate aux|be&3S aux|be-PRESP part|dry-PASTP .
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|CONJ 4|5|DET 5|3|COORD 6|8|LINK 7|8|JCT
+	8|5|CMOD 9|8|PRED 10|17|LINK 11|17|JCT 12|14|DET 13|14|QUANT 14|17|SUBJ
+	15|17|AUX 16|17|AUX 17|8|CJCT 18|2|PUNCT
+*PAR:	a cupboard door that's open . [+ gram] 65614_69369
+%mor:	det:art|a n|cupboard n|door pro:rel|that~cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|5|LINK 5|3|CMOD 6|5|PRED 7|3|PUNCT
+*PAR:	that stool though, I don't know what he's going to do with that . 69369_74305
+%mor:	det:dem|that n|stool conj|though cm|cm pro:sub|I mod|do~neg|not
+	v|know pro:int|what pro:sub|he~aux|be&3S part|go-PRESP inf|to v|do
+	prep|with pro:dem|that .
+%gra:	1|2|DET 2|0|INCROOT 3|8|LINK 4|3|LP 5|8|SUBJ 6|8|AUX 7|6|NEG 8|2|CJCT
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|COMP 13|14|INF 14|12|COMP 15|14|JCT
+	16|15|POBJ 17|2|PUNCT
+*PAR:	&uh (.) I don't know <what you> [//] <why the sink's> [//] &l [//]
+	why the &uh water's left on . 74305_87280
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|why det:art|the
+	adj|water&dn-POSS adj|left adv|on .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|7|DET 7|5|POSTMOD 8|7|PRED
+	9|8|JCT 10|4|PUNCT
+*PAR:	it's gonna make a mess . 87280_89397
+%mor:	pro:per|it~aux|be&3S part|go-PRESP~inf|to v|make det:art|a n|mess .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*PAR:	(.) she's drying the plate or the dishes or whatever it is that
+	she's working on . 89397_102456
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|plate coord|or
+	det:art|the n|dish-PL coord|or pro:int|whatever pro:per|it cop|be&3S
+	comp|that pro:sub|she~aux|be&3S part|work-PRESP adv|on .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|CONJ 7|8|DET 8|6|COORD
+	9|3|CONJ 10|12|LINK 11|12|SUBJ 12|9|COORD 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|12|CPRED 17|16|JCT 18|3|PUNCT
+*PAR:	and of_course that cupboard door is open . 102456_106882
+%mor:	coord|and co|of_course pro:dem|that n|cupboard n|door cop|be&3S
+	adj|open .
+%gra:	1|6|LINK 2|5|COM 3|5|MOD 4|5|MOD 5|6|SUBJ 6|0|ROOT 7|6|PRED 8|6|PUNCT
+*PAR:	if it &h hadn't been opened why maybe he wouldn't ha(ve) gotten his
+	cookies . 106882_110400
+%mor:	conj|if pro:per|it aux|have&PAST~neg|not aux|be&PASTP
+	part|open-PASTP pro:rel|why adv|maybe pro:sub|he
+	mod|will&COND~neg|not v|have part|get&PASTP det:poss|his n|cookie-PL
+	.
+%gra:	1|6|LINK 2|6|SUBJ 3|6|AUX 4|3|NEG 5|6|AUX 6|0|ROOT 7|12|LINK 8|12|JCT
+	9|12|SUBJ 10|12|AUX 11|10|NEG 12|6|CJCT 13|12|COMP 14|15|DET 15|13|OBJ
+	16|6|PUNCT
+*INV:	&=laughs (.) anything else ? 110400_115714
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	well &=clears:throat otherwise it's [/] it's &uh except for the &a
+	two accidents it's &uh not too bad . 115714_136973
+%mor:	co|well adv|otherwise pro:per|it~cop|be&3S prep|except prep|for
+	det:art|the det:num|two n|accident-PL pro:per|it~cop|be&3S neg|not
+	adv|too adj|bad .
+%gra:	1|4|COM 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|5|POBJ 7|9|DET 8|9|QUANT
+	9|6|POBJ 10|11|SUBJ 11|4|CJCT 12|11|NEG 13|14|JCT 14|11|PRED 15|4|PUNCT
+*PAR:	but the boy hasn't gotten down to his fall yet . [+ cir] 136973_141428
+%mor:	conj|but det:art|the n|boy aux|have&3S~neg|not part|get&PASTP
+	adv|down prep|to det:poss|his v|fall adv|yet .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|4|NEG 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|6|JCT 12|6|PUNCT
+*INV:	(.) is that it ? 141428_147100
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	that's the way with boys you_know . [+ exc] 147100_148905
+%mor:	pro:dem|that~cop|be&3S det:art|the n|way prep|with n|boy-PL
+	co|you_know .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|5|POBJ 7|4|COM 8|2|PUNCT
+*INV:	+< &=laughs . 148505_149346
+@End

@@ -1,0 +1,68 @@
+@UTF8
+@PID:	11312/t-00002588-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|female|MCI||Participant|26||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	260-2, audio
+*INV:	I'd like for you to take a look at this picture . 0_2897
+%mor:	pro:sub|I~mod|genmod co|like prep|for pro:per|you inf|to v|take
+	det:art|a v|look prep|at det:dem|this n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|7|INF 7|4|CPOBJ 8|9|DET
+	9|7|OBJ 10|9|JCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*INV:	take a look at that picture and tell me everything that you see
+	happening in that picture . 2897_7800
+%mor:	v|take det:art|a v|look prep|at det:dem|that n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	co|see n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ2 10|8|OBJ 11|14|LINK 12|14|SUBJ 13|14|COM 14|10|CMOD 15|14|JCT
+	16|17|DET 17|15|POBJ 18|1|PUNCT
+*INV:	everything's that going on there . 7800_10334
+%mor:	pro:indef|everything~aux|be&3S adv|that part|go-PRESP prep|on
+	n|there .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	the boy's in the cookie jar but the stool is lopsided . 10334_21522
+%mor:	det:art|the n|boy~cop|be&3S prep|in det:art|the n|cookie n|jar
+	conj|but det:art|the n|stool cop|be&3S adj|lopsided .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|11|LINK
+	9|10|DET 10|11|SUBJ 11|3|CJCT 12|11|PRED 13|3|PUNCT
+*PAR:	he couldn't be standing like that . 21522_23641
+%mor:	pro:sub|he mod|could~neg|not aux|be n:gerund|stand-PRESP co|like
+	pro:dem|that .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PRED 6|7|COM 7|5|OBJ 8|4|PUNCT
+*PAR:	on a stool on two legs . [+ gram] 23641_26348
+%mor:	prep|on det:art|a n|stool prep|on det:num|two n|leg-PL .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|3|NJCT 5|6|QUANT 6|4|POBJ 7|1|PUNCT
+*PAR:	and the mother's lettin(g) the water run over the sink . 26348_33788
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|let-PRESP det:art|the
+	n|water v|run prep|over det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|8|SUBJ 8|5|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|5|PUNCT
+*PAR:	(...) well I assume she's already washed the plate that she's
+	drying . 33788_53800
+%mor:	co|well pro:sub|I v|assume pro:sub|she~aux|be&3S adv|already
+	part|wash-PASTP det:art|the n|plate pro:rel|that
+	pro:sub|she~aux|be&3S part|dry-PRESP .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|7|SUBJ 5|7|AUX 6|7|JCT 7|3|COMP 8|9|DET
+	9|7|OBJ 10|13|LINK 11|13|SUBJ 12|13|AUX 13|9|CMOD 14|3|PUNCT
+*PAR:	I don't know what else she is &=laughs . [+ exc] 53800_55700
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what post|else pro:sub|she
+	cop|be&3S .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|5|PQ 7|8|SUBJ 8|4|COMP
+	9|4|PUNCT
+*PAR:	whether that would be mistake or not . [+ gram] [+ exc] 55700_61028
+%mor:	conj|whether pro:dem|that mod|will&COND cop|be n|mistake coord|or
+	neg|not .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|5|CONJ 7|6|COORD
+	8|4|PUNCT
+*PAR:	(..) that's about all I can see there . [+ exc] 61028_70455
+%mor:	pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I mod|can v|see
+	adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|7|JCT 4|7|JCT 5|7|SUBJ 6|7|AUX 7|2|CPRED 8|7|JCT
+	9|2|PUNCT
+*INV:	okay that's fine . 70455_72822
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

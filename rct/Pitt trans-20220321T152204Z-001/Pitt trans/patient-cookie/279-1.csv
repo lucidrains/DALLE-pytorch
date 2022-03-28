@@ -1,0 +1,49 @@
+@UTF8
+@PID:	11312/t-00002599-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|ProbableAD||Participant|21||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	279-1, audio
+*PAR:	well he's into the cookie jar and the [/] the &uh stool is falling
+	down . 0_6759
+%mor:	co|well pro:sub|he~cop|be&3S prep|into det:art|the n|cookie n|jar
+	coord|and det:art|the n|stool aux|be&3S part|fall-PRESP adv|down .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|3|CJCT 13|12|JCT 14|3|PUNCT
+*PAR:	she's doin(g) dishes and the sink's runnin(g) over and wettin(g)
+	her feet . 6759_11923
+%mor:	pro:sub|she~aux|be&3S part|do-PRESP n|dish-PL coord|and det:art|the
+	n|sink~aux|be&3S part|run-PRESP adv|over coord|and part|wet-PRESP
+	det:poss|her n|foot&PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|9|LINK 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|3|CJCT 10|9|JCT 11|9|CONJ 12|11|COORD 13|14|DET 14|12|OBJ 15|3|PUNCT
+*PAR:	and she look [//] doesn't look too happy . 11923_14648
+%mor:	coord|and pro:sub|she mod|do&3S~neg|not v|look adv|too adj|happy .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|7|JCT 7|5|JCT 8|5|PUNCT
+*PAR:	anything else ? [+ exc] 14648_16664
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	she's drying the dishes . 16664_18111
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	right ? [+ exc] 18111_18727
+%mor:	co|right ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the kid's in the cookie jars . 18727_24016
+%mor:	coord|and det:art|the n|kid~cop|be&3S prep|in det:art|the n|cookie
+	n|jar-PL .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	how many things are sposta be wrong xxx ? [+ exc] 24016_27600
+%mor:	pro:int|how qn|many n|thing-PL aux|be&PRES
+	part|suppose-PASTP~inf|to cop|be adj|wrong ?
+%gra:	1|5|LINK 2|3|QUANT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|PRED
+	9|5|PUNCT
+*INV:	well I don't think she did know because she xxx . [+ jar] 27600_33208
+%mor:	co|well pro:sub|I mod|do~neg|not v|think pro:sub|she mod|do&PAST
+	v|know conj|because pro:sub|she .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|8|SUBJ 7|8|AUX 8|5|COMP
+	9|5|PUNCT 10|9|INCROOT 11|10|PUNCT
+@End

@@ -1,0 +1,82 @@
+@UTF8
+@PID:	11312/t-00002577-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|MCI||Participant|25||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	237-1, audio
+*INV:	what I'd like you to do is just to tell me everything that you see
+	going on in the picture . 0_4395
+%mor:	pro:int|what pro:sub|I~mod|genmod v|like pro:per|you inf|to v|do
+	cop|be&3S adv|just inf|to v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:art|the n|picture .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|7|OBJ
+	9|7|JCT 10|11|INF 11|7|COMP 12|11|OBJ 13|11|OBJ 14|16|LINK 15|16|SUBJ
+	16|13|CMOD 17|16|OBJ 18|16|JCT 19|16|JCT 20|21|DET 21|19|POBJ 22|4|PUNCT
+*INV:	okay ? 4395_6273
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	everything you see going on in the picture . 6273_8965
+%mor:	pro:indef|everything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	well Johnny's in the cookie jar handin(g) &um cookies to his sister
+	who has her fingers up to her lips . 8965_18274
+%mor:	co|well n:prop|Johnny~cop|be&3S prep|in det:art|the n|cookie n|jar
+	part|hand-PRESP n|cookie-PL prep|to det:poss|his n|sister
+	pro:rel|who v|have&3S det:poss|her n|finger-PL adv|up prep|to
+	det:poss|her n|lip-PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|XJCT
+	9|8|OBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|14|LINK 14|12|CMOD 15|16|DET
+	16|14|OBJ 17|14|JCT 18|14|JCT 19|20|DET 20|18|POBJ 21|3|PUNCT
+*PAR:	<they're at the> [//] &uh <on the> [//] <at the> [//] he's at the
+	&uh cupboard above the counter+top . 18274_24562
+%mor:	pro:sub|he~cop|be&3S prep|at det:art|the n|cupboard prep|above
+	det:art|the n|+n|counter+n|top .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|JCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	the mother has her back to them washing [//] &uh drying dishes . 24562_30445
+%mor:	det:art|the n|mother aux|have&3S pro:obj|her adv|back prep|to
+	pro:obj|them part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|4|XJCT
+	9|8|OBJ 10|4|PUNCT
+*PAR:	the water's overflowing from the sink . 30445_33174
+%mor:	det:art|the adj|water&dn-POSS over#n:gerund|flow-PRESP prep|from
+	det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	the window's up . 33174_35017
+%mor:	det:art|the n|window~cop|be&3S adv|up .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	and she has on a dress with an apron . 35017_39679
+%mor:	coord|and pro:sub|she aux|have&3S prep|on det:art|a n|dress
+	prep|with det:art|a n|apron .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*PAR:	and &um cups are on the counter+top and the water is on the floor .
+	39679_46246
+%mor:	coord|and n|cup-PL cop|be&PRES prep|on det:art|the
+	n|+n|counter+n|top coord|and det:art|the n|water cop|be&3S prep|on
+	det:art|the n|floor .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|9|DET
+	9|10|SUBJ 10|6|CMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	oh and [/] and he's about to fall because the &uh step+stool is
+	tilting because he's up there <getting the cookie jar> [//] getting
+	into the cookie jar . 46246_57486
+%mor:	co|oh coord|and pro:sub|he~cop|be&3S adv|about inf|to v|fall
+	conj|because det:art|the n|+n|step+n|stool aux|be&3S part|tilt-PRESP
+	conj|because pro:sub|he~aux|be&3S prep|up n|there part|get-PRESP
+	prep|into det:art|the n|cookie n|jar .
+%gra:	1|4|COM 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|7|JCT 6|7|INF 7|4|CPRED 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|18|LINK 14|18|SUBJ 15|18|AUX
+	16|18|JCT 17|16|POBJ 18|12|XJCT 19|18|JCT 20|22|DET 21|22|MOD 22|19|POBJ
+	23|4|PUNCT
+*PAR:	(..) that's all <I can> [//] that's there that I can see . [+ exc]
+	57486_65486
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:rel|that~cop|be&3S
+	adv|there pro:rel|that pro:sub|I mod|can v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|LINK 5|3|CMOD 6|5|JCT 7|10|LINK
+	8|10|SUBJ 9|10|AUX 10|3|CMOD 11|2|PUNCT
+@End

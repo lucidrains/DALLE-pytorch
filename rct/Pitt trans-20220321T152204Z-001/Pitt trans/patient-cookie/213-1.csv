@@ -1,0 +1,127 @@
+@UTF8
+@PID:	11312/t-00002555-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|64;|male|ProbableAD| |Participant|15||
+@ID:	eng|Pitt|INV|||| |Investigator|||
+@Media:	213-1, audio
+*INV:	that it's not real clear so do want you can with it . 0_3426
+%mor:	pro:rel|that pro:per|it~cop|be&3S neg|not adj|real adj|clear adv|so
+	v|do v|want pro:per|you mod|can prep|with pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|NEG 5|6|MOD 6|3|PRED 7|8|JCT 8|3|PUNCT
+	9|8|COMP 10|9|OBJ 11|10|INCROOT 12|11|JCT 13|12|POBJ 14|11|PUNCT
+*INV:	do you see anything going on ? 3426_5870
+%mor:	mod|do pro:per|you v|see pro:indef|anything part|go-PRESP adv|on ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|XMOD 6|5|JCT 7|3|PUNCT
+*PAR:	yeah I see the woman's in a kitchen . 5870_7815
+%mor:	co|yeah pro:sub|I v|see det:art|the n|woman~cop|be&3S prep|in
+	det:art|a n|kitchen .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*PAR:	and +/. 7815_8246
+%mor:	coord|and +/.
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 7888_9035
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, now it looks like she's +... 9035_12555
+%mor:	adv|now pro:per|it v|look-3S co|like pro:sub|she~cop|be&3S +...
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|COM 5|6|SUBJ 6|3|COMP 7|3|PUNCT
+*PAR:	I [/] &me I [/] &c I can't really pick it out but +... [+ exc] 12555_15783
+%mor:	pro:sub|I mod|can~neg|not adv|real&dadj-LY v|pick pro:per|it
+	adv|out conj|but +...
+%gra:	1|5|SUBJ 2|5|AUX 3|2|NEG 4|5|JCT 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|OM
+	9|5|PUNCT
+*PAR:	oh and there's a gɪɾəl@u [: little] [* p:n] girl here talking and a
+	bɪɾəl@u [: little] boy I assume on this side here . 15783_21000
+%mor:	co|oh coord|and pro:exist|there~cop|be&3S det:art|a adj|little
+	n|girl adv|here part|talk-PRESP coord|and det:art|a adj|little n|boy
+	pro:sub|I v|assume prep|on det:dem|this n|side adv|here .
+%gra:	1|4|COM 2|4|LINK 3|4|SUBJ 4|15|JCT 5|7|DET 6|7|MOD 7|4|PRED 8|9|JCT
+	9|7|XMOD 10|7|CONJ 11|13|DET 12|13|MOD 13|10|COORD 14|15|SUBJ 15|0|ROOT
+	16|15|JCT 17|18|DET 18|16|POBJ 19|15|JCT 20|15|PUNCT
+*INV:	mhm . 21000_21718
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and this is a highchair [: stool] [* s:r] here (.) or some kind of
+	a chair . [+ cir] 21718_28077
+%mor:	coord|and pro:dem|this cop|be&3S det:art|a n|stool adv|here
+	coord|or qn|some n|kind prep|of det:art|a n|chair .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|6|CONJ 8|9|QUANT
+	9|7|COORD 10|9|NJCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	and &uh (.) I don't know what this is here . [+ exc] 28077_34660
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know pro:int|what det:dem|this
+	cop|be&3S adv|here .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|8|LINK 7|8|SUBJ 8|5|COMP
+	9|8|JCT 10|5|PUNCT
+*PAR:	I can't see what that is . [+ exc] 34660_38483
+%mor:	pro:sub|I mod|can~neg|not v|see pro:int|what adv|that cop|be&3S .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|SUBJ 6|7|JCT 7|4|COMP 8|4|PUNCT
+*PAR:	(..) oh there's another . 38483_44669
+%mor:	co|oh pro:exist|there~cop|be&3S qn|another .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	did I talk about this girl up here ? [+ exc] 44669_47360
+%mor:	mod|do&PAST pro:sub|I v|talk prep|about det:dem|this n|girl prep|up
+	n|here ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|7|POBJ
+	9|3|PUNCT
+*INV:	what's she doing ? 47360_48591
+%mor:	pro:int|what~cop|be&3S pro:sub|she part|do-PRESP ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|OM 5|2|PUNCT
+*PAR:	she's &uh +... 48591_53535
+%mor:	pro:sub|she~cop|be&3S +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*PAR:	I can't see too plain what she's doing . [+ exc] 53535_56323
+%mor:	pro:sub|I mod|can~neg|not v|see adv|too adv|plain pro:int|what
+	pro:sub|she~aux|be&3S part|do-PRESP .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|4|JCT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|4|COMP 11|4|PUNCT
+*INV:	no ? 56323_58831
+%mor:	co|no ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	here, let me try this . 58831_61712
+%mor:	adv|here cm|cm v|let&ZERO pro:obj|me v|try det:dem|this .
+%gra:	1|3|JCT 2|1|LP 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|3|PUNCT
+*INV:	(..) is it a_little clearer ? 61712_67113
+%mor:	aux|be&3S pro:per|it adv|a_little adv|clear-CP ?
+%gra:	1|0|INCROOT 2|4|SUBJ 3|4|JCT 4|1|JCT 5|1|PUNCT
+*PAR:	oh yes I think so . [+ exc] 67113_68717
+%mor:	co|oh co|yes pro:sub|I v|think co|so .
+%gra:	1|4|COM 2|4|COM 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	okay can you see what she's doing now ? 68946_71812
+%mor:	co|okay mod|can pro:per|you v|see pro:int|what
+	pro:sub|she~aux|be&3S part|do-PRESP adv|now ?
+%gra:	1|4|COM 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|8|JCT 10|4|PUNCT
+*PAR:	(..) where was she xxx ? [+ exc] 71812_77055
+%mor:	pro:int|where cop|be&PAST&13S pro:sub|she ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	this girl ? [+ exc] 77055_77896
+%mor:	det:dem|this n|girl ?
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*INV:	okay what's she doing ? 77896_79391
+%mor:	co|okay pro:int|what~cop|be&3S pro:sub|she part|do-PRESP ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|PRED 6|3|PUNCT
+*PAR:	(.) I really can't see what she's doing . [+ exc] 80153_86423
+%mor:	pro:sub|I adv|real&dadj-LY mod|can~neg|not v|see pro:int|what
+	pro:sub|she~aux|be&3S part|do-PRESP .
+%gra:	1|5|SUBJ 2|5|JCT 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|COMP 10|5|PUNCT
+*INV:	how_about can you see what's gonna [//] going on over there ? 86423_90174
+%mor:	pro:int|how_about mod|can pro:per|you v|see pro:int|what~aux|be&3S
+	part|go-PRESP adv|on prep|over adv|there ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|7|SUBJ 6|7|AUX 7|4|COMP 8|7|JCT
+	9|7|JCT 10|9|JCT 11|4|PUNCT
+*PAR:	(..) no &uh I don't . [+ exc] 90174_96000
+%mor:	co|no pro:sub|I mod|do~neg|not .
+%gra:	1|0|INCROOT 2|5|SUBJ 3|5|AUX 4|3|NEG 5|1|PUNCT
+*PAR:	yeah, that's awfully hard for me to distinguish . [+ exc] 96000_99646
+%mor:	co|yeah cm|cm pro:rel|that~cop|be&3S adv|awful&dadj-LY adv|hard
+	prep|for pro:obj|me inf|to v|distinguish .
+%gra:	1|4|COM 2|1|LP 3|4|LINK 4|0|ROOT 5|4|JCT 6|4|JCT 7|4|JCT 8|7|POBJ
+	9|10|INF 10|4|XJCT 11|4|PUNCT
+*INV:	mhm (.) okay . 99646_101287
+%mor:	co|mhm=yes co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

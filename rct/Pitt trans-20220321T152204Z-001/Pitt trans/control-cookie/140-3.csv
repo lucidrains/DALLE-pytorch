@@ -1,0 +1,60 @@
+@UTF8
+@PID:	11312/t-00002299-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|61;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	140-3, audio
+*INV:	this picture . 0_3222
+%mor:	det:dem|this n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*INV:	(.) and I want you to tell me everything that you see happening
+	there everything that's going on . 3222_8950
+%mor:	coord|and pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|there pro:indef|everything
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|11|LINK 10|11|SUBJ 11|8|CMOD 12|11|OBJ 13|11|JCT 14|13|POBJ 15|17|LINK
+	16|17|AUX 17|14|CMOD 18|17|JCT 19|3|PUNCT
+*PAR:	(.) okay . [+ exc] 8950_13355
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(..) anywhere ? [+ exc] 13355_19377
+%mor:	adv|anywhere ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	everything that's happening . 19377_20918
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|1|PUNCT
+*PAR:	&um the little girl's laughing . 20918_24639
+%mor:	det:art|the adj|little n|girl~aux|be&3S part|laugh-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	the little boy's getting cookies and he's falling . 24639_28855
+%mor:	det:art|the adj|little n|boy~aux|be&3S part|get-PRESP n|cookie-PL
+	coord|and pro:sub|he~aux|be&3S part|fall-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|5|CJCT 11|5|PUNCT
+*PAR:	&uh I guess the mother would be doing dishes and the water's
+	overflowing out_of the sink . 28855_37508
+%mor:	pro:sub|I v|guess det:art|the n|mother mod|will&COND aux|be
+	part|do-PRESP n|dish-PL coord|and det:art|the adj|water&dn-POSS
+	over#n:gerund|flow-PRESP prep|out_of det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|AUX 6|7|AUX 7|4|XMOD 8|7|OBJ
+	9|7|CONJ 10|11|DET 11|9|COORD 12|11|XMOD 13|12|JCT 14|15|DET 15|13|POBJ
+	16|2|PUNCT
+*PAR:	&uh the window's open and I would say the wind is blowing . 37508_42022
+%mor:	det:art|the adj|window&dn-POSS adj|open coord|and pro:sub|I
+	mod|will&COND v|say det:art|the n|wind aux|be&3S part|blow-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CJCT 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|7|COMP 12|3|PUNCT
+*INV:	(..) okay ? 42022_51269
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I guess that's it . [+ exc] 51269_52016
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|2|PUNCT
+*INV:	alright . 52016_52779
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

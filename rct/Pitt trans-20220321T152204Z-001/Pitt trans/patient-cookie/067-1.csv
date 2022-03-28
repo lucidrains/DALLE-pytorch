@@ -1,0 +1,84 @@
+@UTF8
+@PID:	11312/t-00002482-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	067-1, audio
+*INV:	there it is . 0_1996
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	that's it . [+ exc] 1996_2569
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	well the girl's dryin(g) the [/] the plate . 2569_11798
+%mor:	co|well det:art|the n|girl~aux|be&3S part|dry-PRESP det:art|the
+	n|plate .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and she's overflowin(g) the water in the &=laughs sink . 11798_16280
+%mor:	coord|and pro:sub|she~cop|be&3S over#n:gerund|flow-PRESP
+	det:art|the n|water prep|in det:art|the n|sink .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|6|DET 6|4|OBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*INV:	(..) okay . 16280_21713
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's a boy up on a stool and he's fallin(g) off of it . 21713_29000
+%mor:	pro:exist|there~cop|be&3S det:art|a n|boy adv|up prep|on det:art|a
+	n|stool coord|and pro:sub|he~aux|be&3S part|fall-PRESP adv|off
+	prep|of pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|4|NJCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|4|XMOD 13|12|JCT 14|12|JCT 15|14|POBJ
+	16|2|PUNCT
+*PAR:	tryin(g) to get a cake or somethin(g) . [+ gram] 29000_31468
+%mor:	part|try-PRESP inf|to v|get det:art|a n|cake coord|or
+	pro:indef|something .
+%gra:	1|0|INCROOT 2|3|INF 3|1|COMP 4|5|DET 5|3|OBJ 6|5|CONJ 7|6|COORD
+	8|1|PUNCT
+*PAR:	(..) in the cupboard . [+ gram] 31468_37930
+%mor:	prep|in det:art|the n|cupboard .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|1|PUNCT
+*PAR:	see he's trying to get this and he's gonna fall off of there .
+	[+ es] 37930_42000
+%mor:	co|see pro:sub|he~aux|be&3S part|try-PRESP inf|to v|get
+	pro:dem|this coord|and pro:sub|he~aux|be&3S part|go-PRESP~inf|to
+	v|fall adv|off prep|of adv|there .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|OBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|13|INF 13|11|COMP 14|13|JCT 15|14|JCT
+	16|15|POBJ 17|4|PUNCT
+*INV:	mhm, okay . 42000_43729
+%mor:	co|mhm=yes cm|cm adj|okay .
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|1|PUNCT
+*PAR:	+< so +... 43000_47500
+%mor:	co|so +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the mother's water's all coming down out_of her &=laughs sink
+	there . 47500_52000
+%mor:	coord|and det:art|the adj|mother&dn-POSS adj|water&dn-POSS post|all
+	part|come-PRESP adv|down prep|out_of det:poss|her n|sink adv|there .
+%gra:	1|0|INCROOT 2|3|DET 3|1|COORD 4|3|PRED 5|4|JCT 6|5|XMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|6|JCT 12|1|PUNCT
+*INV:	mhm . 52000_52435
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's happening here ? 52435_54248
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP adv|here ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	the little girl is puttin(g) her hand up to the boy . 54248_60183
+%mor:	det:art|the adj|little n|girl aux|be&3S part|put-PRESP det:poss|her
+	n|hand adv|up prep|to det:art|the n|boy .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|5|JCT 10|11|DET 11|9|POBJ 12|5|PUNCT
+*PAR:	they're gonna get something out_of that jar, a pineapple jar or
+	something . 60183_64870
+%mor:	pro:sub|they~aux|be&PRES part|go-PRESP~inf|to v|get
+	pro:indef|something prep|out_of det:dem|that n|jar cm|cm det:art|a
+	n|pineapple n|jar coord|or pro:indef|something .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|OBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|3|LP 11|13|DET 12|13|MOD 13|3|OBJ 14|13|CONJ 15|14|COORD
+	16|3|PUNCT
+*INV:	okay . 64870_66099
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

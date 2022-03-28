@@ -1,0 +1,213 @@
+@UTF8
+@PID:	11312/t-00002520-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|84;|male|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	157-1, audio
+@Comment:	previously transcribed as visit 1 but corresponds to audio visit 2 so media renamed to match transcript
+@Comment:	visit 1, 8/29/85
+*INV:	okay . 0_1381
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	alright . 1381_2179
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what do you see going on in this picture ? 2179_4389
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|this n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	this picture ? [+ exc] [+ gram] 4389_6118
+%mor:	det:dem|this n|picture ?
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*INV:	uhhuh, what's the action ? 6118_7681
+%mor:	co|uhhuh cm|cm pro:int|what~cop|be&3S det:art|the n|action ?
+%gra:	1|4|COM 2|1|LP 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|4|PUNCT
+*PAR:	well, there's a kid on a stool . 7681_12336
+%mor:	co|well cm|cm pro:exist|there~cop|be&3S det:art|a n|kid prep|on
+	det:art|a n|stool .
+%gra:	1|4|COM 2|1|LP 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	it's a boy, and a girl on the floor . 12336_15727
+%mor:	pro:per|it~cop|be&3S det:art|a n|boy cm|cm coord|and det:art|a
+	n|girl prep|on det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|LP 6|2|CONJ 7|8|DET 8|6|COORD
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	and the boy is &uh changing the &uh time . 15727_20749
+%mor:	coord|and det:art|the n|boy aux|be&3S part|change-PRESP det:art|the
+	n|time .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	he has his right hand up at the clock but his left hand is holding
+	where he's gonna turn the time . 20749_27415
+%mor:	pro:sub|he v|have&3S det:poss|his n|right v|hand adv|up prep|at
+	det:art|the n|clock conj|but det:poss|his adj|left n|hand aux|be&3S
+	part|hold-PRESP pro:rel|where pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|turn det:art|the n|time .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|5|SUBJ 5|2|COMP 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|15|LINK 11|13|DET 12|13|MOD 13|15|SUBJ 14|15|AUX 15|2|CJCT
+	16|19|LINK 17|19|SUBJ 18|19|AUX 19|15|COMP 20|21|INF 21|19|COMP 22|23|DET
+	23|21|OBJ 24|2|PUNCT
+*PAR:	he's standing on his right foot . 27415_29245
+%mor:	pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:poss|his
+	adj|right n|foot .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	his left leg is bent at the knee, and so he has both feet on the
+	stool but it isn't gonna be for long . 29245_37741
+%mor:	det:poss|his adj|left n|leg aux|be&3S part|bend&PASTP prep|at
+	det:art|the n|knee cm|cm coord|and co|so pro:sub|he aux|have&3S
+	qn|both n|foot&PL prep|on det:art|the n|stool conj|but pro:per|it
+	aux|be&3S~neg|not part|go-PRESP~inf|to cop|be prep|for adv|long .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|LP 10|5|CONJ 11|14|COM 12|14|SUBJ 13|14|AUX 14|15|QUANT 15|10|COORD
+	16|15|NJCT 17|18|DET 18|16|POBJ 19|23|LINK 20|23|SUBJ 21|23|AUX 22|21|NEG
+	23|5|CJCT 24|25|INF 25|23|COMP 26|25|JCT 27|26|POBJ 28|5|PUNCT
+*PAR:	the stool is falling down . 37741_39504
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP adv|down .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	and little girl is telling him what ails him.
+*PAR:	but she can hardly keep from laughin(g).
+*PAR:	at the same time here she's standing there on both feet, planted
+	solidly on the ground, on the floor . 39504_51739
+*PAR:	and &uh she's &uh got her finger up to her mouth . 51739_56228
+%mor:	coord|and pro:sub|she~aux|be&3S part|get&PASTP det:poss|her
+	n|finger adv|up prep|to det:poss|her n|mouth .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	she's tryin(g) to keep from laughin(g) at him . 56228_60418
+%mor:	pro:sub|she~aux|be&3S part|try-PRESP inf|to v|keep prep|from
+	n:gerund|laugh-PRESP prep|at pro:obj|him .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|6|POBJ 8|7|JCT
+	9|8|POBJ 10|3|PUNCT
+*INV:	anything else ? 60418_65189
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	well <he had> [//] the little boy's on the stool and the stool's
+	just about ready to &t &=laughs fall down . 65189_72505
+%mor:	co|well det:art|the adj|little adj|boy&dn-POSS prep|on det:art|the
+	n|stool coord|and det:art|the n|stool~cop|be&3S adv|just prep|about
+	adj|ready inf|to v|fall adv|down .
+%gra:	1|11|COM 2|4|DET 3|4|MOD 4|11|SUBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|10|DET 10|8|COORD 11|0|ROOT 12|14|JCT 13|14|JCT 14|11|PRED 15|16|INF
+	16|14|XMOD 17|16|JCT 18|11|PUNCT
+*PAR:	and he has &uh one hand up on the clock and the other hand he has a
+	watch or something in his hand he's [/] he (i)s gonna show .
+	[+ gram] 72505_79903
+%mor:	coord|and pro:sub|he aux|have&3S det:num|one n|hand adv|up prep|on
+	det:art|the n|clock coord|and det:art|the qn|other n|hand pro:sub|he
+	v|have&3S det:art|a n|watch coord|or pro:indef|something prep|in
+	det:poss|his n|hand pro:sub|he aux|be&3S part|go-PRESP~inf|to v|show
+	.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|5|QUANT 5|15|JCT 6|5|JCT 7|5|NJCT 8|9|DET
+	9|7|POBJ 10|5|CONJ 11|13|DET 12|13|QUANT 13|10|COORD 14|15|SUBJ 15|0|ROOT
+	16|17|DET 17|15|OBJ 18|17|CONJ 19|18|COORD 20|19|NJCT 21|22|DET
+	22|20|POBJ 23|25|SUBJ 24|25|AUX 25|15|CJCT 26|27|INF 27|25|COMP 28|15|PUNCT
+*PAR:	the little girl is standing there . 79903_81832
+%mor:	det:art|the adj|little n|girl aux|be&3S part|stand-PRESP adv|there
+	.
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	she got a little short skirt on and <her sleeve> [//] the short
+	sleeved dress . 81832_86852
+%mor:	pro:sub|she v|get&PAST det:art|a adj|little adj|short n|skirt
+	adv|on coord|and det:art|the adj|short adj|sleeved n|dress .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|DET 4|6|MOD 5|6|MOD 6|2|OBJ 7|6|NJCT 8|7|CONJ
+	9|12|DET 10|12|MOD 11|12|MOD 12|8|COORD 13|2|PUNCT
+*PAR:	and in one she's pointing to her face with her right hand, with her
+	left hand she's gesturing . 86852_94898
+%mor:	coord|and prep|in det:num|one pro:sub|she~aux|be&3S
+	part|point-PRESP prep|to det:poss|her n|face prep|with det:poss|her
+	n|right n|hand cm|cm prep|with det:poss|her adj|left n|hand
+	pro:sub|she~aux|be&3S part|gesture-PRESP .
+%gra:	1|6|LINK 2|6|JCT 3|2|POBJ 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|13|DET 12|13|MOD 13|10|POBJ 14|6|LP 15|6|JCT
+	16|18|DET 17|18|MOD 18|15|POBJ 19|21|SUBJ 20|21|AUX 21|18|CMOD 22|6|PUNCT
+*INV:	okay . 94898_97824
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<how_(a)bout &s do you see> [//] what do you see going on in this
+	side of the picture ? [+ exc] 97824_101216
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|this n|side prep|of det:art|the n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	+< oh on this side of the picture ? [+ exc] 100824_102287
+%mor:	co|oh prep|on det:dem|this n|side prep|of det:art|the n|picture ?
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|1|PUNCT
+*PAR:	well this is a &uh fountain that has found a leak . 102287_106577
+%mor:	co|well pro:dem|this cop|be&3S det:art|a n|fountain pro:rel|that
+	v|have&3S v|find&PAST det:art|a n|leak .
+%gra:	1|2|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|7|LINK 7|5|CMOD 8|7|COMP
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*PAR:	and it's goin(g) &uh every which way up there . 106577_110117
+%mor:	coord|and pro:per|it~aux|be&3S part|go-PRESP qn|every pro:int|which
+	n|way prep|up n|there .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|QUANT 6|7|MOD 7|4|OBJ 8|7|NJCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	and &uh, I don't know . [+ exc] 110117_112080
+%mor:	coord|and cm|cm pro:sub|I mod|do~neg|not v|know .
+%gra:	1|6|LINK 2|1|LP 3|6|SUBJ 4|6|AUX 5|4|NEG 6|0|ROOT 7|6|PUNCT
+*PAR:	I don't know what you'd call that, this little thing on [/] on the
+	mantle there . 112080_117650
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what pro:per|you~mod|genmod
+	n|call pro:rel|that cm|cm det:dem|this adj|little n|thing prep|on
+	det:art|the n|mantle adv|there .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|13|LINK 10|9|LP 11|13|DET 12|13|MOD 13|8|CMOD 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|13|JCT 18|4|PUNCT
+*PAR:	and <there's a little> [//] the &uh fountain is squirting up into
+	the &uh air and turned on . 117650_125148
+%mor:	coord|and det:art|the n|fountain aux|be&3S part|squirt-PRESP adv|up
+	prep|into det:art|the n|air coord|and v|turn-PAST adv|on .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|CONJ 11|10|COORD 12|11|JCT 13|5|PUNCT
+*PAR:	and beside it there's <a little> [//] also a little cross that &uh
+	indicates the thing . [+ es] 125148_131100
+%mor:	coord|and prep|beside pro:per|it pro:exist|there~cop|be&3S adv|also
+	det:art|a adj|little adj|cross adv|that v|indicate-3S det:art|the
+	n|thing .
+%gra:	1|5|LINK 2|5|JCT 3|2|POBJ 4|5|SUBJ 5|0|ROOT 6|9|JCT 7|9|DET 8|9|MOD
+	9|5|PRED 10|11|JCT 11|9|CMOD 12|13|DET 13|11|OBJ 14|5|PUNCT
+*PAR:	and on this side it's &uh +... 131100_136470
+%mor:	coord|and prep|on det:dem|this n|side pro:per|it~cop|be&3S +...
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|6|PUNCT
+*PAR:	well she got <two hands on the on on> [//] the left hand on this
+	side the right hand on this side . 136370_143885
+%mor:	co|well pro:sub|she v|get&PAST det:art|the adj|left n|hand prep|on
+	det:dem|this n|side det:art|the adj|right n|hand prep|on
+	det:dem|this n|side .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|9|DET
+	9|7|POBJ 10|12|DET 11|12|MOD 12|3|OBJ 13|12|NJCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	and she's looking this way . 143885_147558
+%mor:	coord|and pro:sub|she~aux|be&3S part|look-PRESP pro:dem|this
+	adv|way .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*PAR:	and she's standing on her right foot mostly . 147558_151300
+%mor:	coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|on
+	det:poss|her adj|right n|foot adv|mostly .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|8|NJCT 10|4|PUNCT
+*PAR:	her other foot is to [/] to keep the balance . 151300_155057
+%mor:	pro:obj|her qn|other n|foot cop|be&3S inf|to v|keep det:art|the
+	n|balance .
+%gra:	1|4|SUBJ 2|3|QUANT 3|4|SUBJ 4|0|ROOT 5|6|INF 6|4|COMP 7|8|DET 8|6|OBJ
+	9|4|PUNCT
+*PAR:	and she's in the corner of the room . 155057_157151
+%mor:	coord|and pro:sub|she~cop|be&3S prep|in det:art|the n|corner
+	prep|of det:art|the n|room .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*PAR:	and behind her is a little trap door for I suppose into [/] &s into
+	some cupboard or something . 157151_163999
+%mor:	coord|and prep|behind det:poss|her cop|be&3S det:art|a adj|little
+	n|trap n|door prep|for pro:sub|I v|suppose prep|into qn|some
+	n|cupboard coord|or pro:indef|something .
+%gra:	1|11|LINK 2|11|JCT 3|4|DET 4|2|POBJ 5|8|DET 6|8|MOD 7|8|MOD 8|2|POBJ
+	9|11|JCT 10|11|SUBJ 11|0|ROOT 12|11|JCT 13|14|QUANT 14|12|POBJ 15|14|CONJ
+	16|15|COORD 17|11|PUNCT
+*INV:	okay . 163999_165000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,76 @@
+@UTF8
+@PID:	11312/t-00002252-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|Control||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	105-1, audio
+*INV:	take a look at this picture and tell me everything that you see
+	going on in that picture . 0_5199
+%mor:	v|take det:art|a v|look prep|at det:dem|this n|picture coord|and
+	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ2 10|8|OBJ 11|13|LINK 12|13|SUBJ 13|10|CMOD 14|13|OBJ 15|13|JCT
+	16|13|JCT 17|18|DET 18|16|POBJ 19|1|PUNCT
+*INV:	tell me everything that you see happening there . 5199_7005
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|happen-PRESP adv|there .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|1|PUNCT
+*PAR:	okay . [+ exc] 7005_10322
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well the mother is drying the dishes . 10322_13948
+%mor:	co|well det:art|the n|mother aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	the sink is overflowing . 13948_17418
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&um the little girl's reaching for a cookie . 17418_23442
+%mor:	det:art|the adj|little n|girl~aux|be&3S part|reach-PRESP prep|for
+	det:art|a n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and her brother's taking cookies out_of the cookie jar . 23442_27065
+%mor:	coord|and det:poss|her n|brother~aux|be&3S part|take-PRESP
+	n|cookie-PL prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|5|PUNCT
+*PAR:	and the stool is going to &f knock him on the floor &=laughs . 27065_31453
+%mor:	coord|and det:art|the n|stool aux|be&3S part|go-PRESP inf|to
+	v|knock pro:obj|him prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|OBJ
+	9|7|JCT 10|11|DET 11|9|POBJ 12|5|PUNCT
+*PAR:	he's going to fall on the floor because the stool's not &uh what
+	+/. 31453_36342
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP inf|to v|fall prep|on
+	det:art|the n|floor conj|because det:art|the n|stool~cop|be&3S
+	neg|not pro:int|what +/.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|11|DET 11|12|SUBJ 12|3|CJCT 13|12|NEG 14|12|PRED 15|3|PUNCT
+*INV:	mhm . 36342_37402
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+, with gravity . [+ exc] 37402_39378
+%mor:	prep|with n|gravity .
+%gra:	1|0|INCROOT 2|1|POBJ 3|1|PUNCT
+*PAR:	whatever . [+ exc] 39378_40796
+%mor:	pro:int|whatever .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 40796_41887
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	&uh the &uh curtains are blowing I think . 41887_47348
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|blow-PRESP pro:sub|I
+	v|think .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|4|PUNCT
+*INV:	and that's everything ? 47348_53575
+%mor:	coord|and pro:dem|that~cop|be&3S pro:indef|everything ?
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	that's all I can see . [+ exc] 53575_54181
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I mod|can v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|2|PUNCT
+@End

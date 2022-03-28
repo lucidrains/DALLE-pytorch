@@ -1,0 +1,77 @@
+@UTF8
+@PID:	11312/t-00002263-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|62;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	114-0, audio
+*INV:	alright here is this picture . 0_2006
+%mor:	co|alright adv|here cop|be&3S det:dem|this n|picture .
+%gra:	1|3|COM 2|3|JCT 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	uhhuh . [+ exc] 2006_2644
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< all of the action you can see going on . [+ exc] 2007_3551
+%mor:	pro:indef|all prep|of det:art|the n|action pro:per|you mod|can
+	v|see n:gerund|go-PRESP adv|on .
+%gra:	1|7|JCT 2|1|NJCT 3|4|DET 4|2|POBJ 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|OBJ
+	9|7|JCT 10|7|PUNCT
+*PAR:	all of the action ? [+ exc] 3551_4695
+%mor:	pro:indef|all prep|of det:art|the n|action ?
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*INV:	mhm . 4695_5764
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< well the little boy is gonna fall off the stool . 5064_8650
+%mor:	co|well det:art|the adj|little n|boy aux|be&3S part|go-PRESP~inf|to
+	v|fall prep|off det:art|the n|stool .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|6|PUNCT
+*PAR:	he's getting a cookie . 8650_10647
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP det:art|a n|cookie .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	do you want me to go slower ? [+ exc] 10647_11666
+%mor:	mod|do pro:per|you v|want pro:obj|me inf|to v|go adv|slow-CP ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|JCT 8|3|PUNCT
+*INV:	no you go ahead . 11666_12763
+%mor:	co|no pro:per|you v|go adv|ahead .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	okay the little girl is asking for a cookie . 12763_15406
+%mor:	co|okay det:art|the adj|little n|girl aux|be&3S part|ask-PRESP
+	prep|for det:art|a n|cookie .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	she's [//] the mother is drying dishes . 15406_19696
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	and the sink is overflowing with water . 19696_24534
+%mor:	coord|and det:art|the n|sink aux|be&3S over#part|flow-PRESP
+	prep|with n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT
+*PAR:	she's gettin(g) water all over the floor . 24534_27362
+%mor:	pro:sub|she~aux|be&3S part|get-PRESP n|water adv|all prep|over
+	det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	and let me see if anything is going on outside here . [+ exc] 27362_33104
+%mor:	coord|and v|let&ZERO pro:obj|me v|see conj|if pro:indef|anything
+	aux|be&3S part|go-PRESP adv|on adv|outside adv|here .
+%gra:	1|2|LINK 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|8|LINK 6|8|SUBJ 7|8|AUX 8|2|CJCT
+	9|8|JCT 10|11|JCT 11|8|JCT 12|2|PUNCT
+*PAR:	(.) &hm well I can't see anything else as far as action goes .
+	[+ exc] 33104_40559
+%mor:	adv|well pro:sub|I mod|can~neg|not v|see pro:indef|anything
+	post|else adv|as adj|far adv|as n|action v|go-3S .
+%gra:	1|5|JCT 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|6|PQ 8|9|COORD
+	9|5|JCT 10|11|COORD 11|9|ENUM 12|9|ENUM 13|5|PUNCT
+*PAR:	is there more ? [+ exc] 40559_42388
+%mor:	cop|be&3S adv|there pro:indef|more ?
+%gra:	1|0|ROOT 2|3|JCT 3|1|PRED 4|1|PUNCT
+*INV:	okay . 42388_42919
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	no that's fine thank you . 42919_45167
+%mor:	co|no pro:dem|that~cop|be&3S adj|fine v|thank pro:per|you .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|ENUM 6|5|OBJ 7|3|PUNCT
+@End

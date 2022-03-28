@@ -1,0 +1,98 @@
+@UTF8
+@PID:	11312/t-00002450-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|MCI||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	033-4, audio
+*INV:	&=clears:throat let's just take a look at that picture . 0_2679
+%mor:	v|let~pro:obj|us adv|just v|take det:art|a v|look prep|at
+	det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|JCT 4|1|COMP 5|6|DET 6|4|OBJ 7|6|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*INV:	and tell me everything that you see happening in that picture . 2679_5762
+%mor:	coord|and v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you co|see n:gerund|happen-PRESP adv|in det:dem|that
+	n|picture .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|8|LINK 6|8|SUBJ 7|8|COM 8|4|CMOD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*INV:	everything that's going on there . 5762_7875
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP prep|on
+	n|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|5|POBJ 7|1|PUNCT
+*PAR:	&=clears:throat (o)kay . [+ exc] 7875_10251
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&=clears:throat there are three persons in the kitchen . 10251_13426
+%mor:	pro:exist|there cop|be&PRES det:num|three n|person-PL prep|in
+	det:art|the n|kitchen .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|2|PUNCT
+*PAR:	the little girl is instructing the little boy to take cookies
+	out_of the cookie jar on the second &uh shelf of the cupboard . 13426_25956
+%mor:	det:art|the adj|little n|girl aux|be&3S part|instruct-PRESP
+	det:art|the adj|little n|boy inf|to v|take n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar prep|on det:art|the adj|second n|shelf
+	prep|of det:art|the n|cupboard .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|10|INF 10|8|XMOD 11|10|OBJ 12|10|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|10|JCT 17|19|DET 18|19|MOD 19|16|POBJ 20|19|NJCT 21|22|DET 22|20|POBJ
+	23|5|PUNCT
+*PAR:	and at the same time his &uh stool that he's standing on is about
+	to collapse . 25956_34349
+%mor:	coord|and prep|at det:art|the adj|same n|time det:poss|his n|stool
+	pro:rel|that pro:sub|he~aux|be&3S part|stand-PRESP adv|on cop|be&3S
+	adv|about prep|to n|collapse .
+%gra:	1|13|LINK 2|13|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|7|DET 7|13|SUBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|7|CMOD 12|11|JCT 13|0|ROOT 14|13|JCT 15|14|JCT
+	16|15|POBJ 17|13|PUNCT
+*PAR:	the mother apparently is &uh doing dishes and &uh looking out the
+	windo(w) . 34349_41482
+%mor:	det:art|the n|mother adv|apparent&dadj-LY aux|be&3S part|do-PRESP
+	n|dish-PL coord|and part|look-PRESP prep|out det:art|the n|window .
+%gra:	1|2|DET 2|0|INCROOT 3|5|JCT 4|5|AUX 5|2|XMOD 6|5|OBJ 7|5|CONJ 8|7|COORD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	has the faucet &ro &uh on in the sink . [+ gram] 41482_45321
+%mor:	v|have&3S det:art|the n|faucet adv|on prep|in det:art|the n|sink .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|JCT 5|1|JCT 6|7|DET 7|5|POBJ 8|1|PUNCT
+*PAR:	and the [//] apparently the plug is in and the water is cascading
+	over the kitchen floor . 45321_54930
+%mor:	coord|and adv|apparent&dadj-LY det:art|the n|plug cop|be&3S adv|in
+	coord|and det:art|the n|water aux|be&3S part|cascade-PRESP prep|over
+	det:art|the n|kitchen n|floor .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|5|CJCT 12|11|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|5|PUNCT
+*PAR:	and &uh it must be a warm sunny day because the windo(w) is open .
+	54930_64053
+%mor:	coord|and pro:per|it mod|must cop|be det:art|a adj|warm
+	adj|sun&dn-Y n|day conj|because det:art|the n|window cop|be&3S
+	adj|open .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|DET 6|8|MOD 7|8|MOD 8|4|PRED
+	9|12|LINK 10|11|DET 11|12|SUBJ 12|4|CJCT 13|12|PRED 14|4|PUNCT
+*PAR:	and I can see the shrubbery and what appears to be the end of the
+	house maybe a garage door . 64053_72165
+%mor:	coord|and pro:sub|I mod|can v|see det:art|the n|shrubbery coord|and
+	pro:int|what v|appear-3S inf|to cop|be det:art|the n|end prep|of
+	det:art|the n|house adv|maybe det:art|a n|garage n|door .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|CONJ 8|9|SUBJ
+	9|7|COORD 10|11|INF 11|9|COMP 12|13|DET 13|11|PRED 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|13|NJCT 18|20|DET 19|20|MOD 20|17|POBJ 21|4|PUNCT
+*PAR:	and on the counter there are dishes that the mother has either
+	washed or &ha has dried and &uh is still washing a plate . 72165_85381
+%mor:	coord|and prep|on det:art|the n|counter adv|there cop|be&PRES
+	n|dish-PL pro:rel|that det:art|the n|mother aux|have&3S adv|either
+	part|wash-PASTP coord|or aux|have&3S part|dry-PASTP coord|and
+	aux|be&3S adv|still part|wash-PRESP det:art|a n|plate .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|6|PRED 8|13|LINK
+	9|10|DET 10|13|SUBJ 11|13|AUX 12|13|JCT 13|7|CMOD 14|16|LINK 15|16|AUX
+	16|13|CJCT 17|16|CONJ 18|20|AUX 19|20|JCT 20|17|COORD 21|22|DET 22|20|OBJ
+	23|6|PUNCT
+*INV:	okay . 85381_86440
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	thanks . 86440_88340
+%mor:	co|thanks .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

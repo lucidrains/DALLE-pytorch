@@ -1,0 +1,89 @@
+@UTF8
+@PID:	11312/t-00002507-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	122-1, audio
+*INV:	tell me all the action goin(g) on in that picture . 0_4514
+%mor:	v|tell pro:obj|me adv|all det:art|the n|action part|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|JCT 4|5|DET 5|1|OBJ 6|5|XMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*INV:	(...) can you tell me the action that you see going on in that
+	picture ? 4514_22835
+%mor:	mod|can pro:per|you v|tell pro:obj|me det:art|the n|action
+	pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:dem|that n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ2 5|6|DET 6|3|OBJ 7|9|LINK 8|9|SUBJ
+	9|6|CMOD 10|9|OBJ 11|9|JCT 12|9|JCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*PAR:	I see a tad bit . [+ exc] 22835_24948
+%mor:	pro:sub|I v|see det:art|a n|tad v|bite&PAST .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|5|SUBJ 5|2|COMP 6|2|PUNCT
+*PAR:	and somebody is doin(g) [//] dryin(g) dishes . 24948_28887
+%mor:	coord|and pro:indef|somebody aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	okay good . 28887_30306
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	<no I can't> [/] no I can't get this very well, clear . [+ exc] 30306_40422
+%mor:	co|no pro:sub|I mod|can~neg|not v|get pro:dem|this adv|very
+	adv|well cm|cm n|clear .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|8|JCT 8|5|JCT
+	9|8|LP 10|8|ENUM 11|5|PUNCT
+*INV:	what else can you see going on in that picture ? 40422_44263
+%mor:	pro:int|what post|else mod|can pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|that n|picture ?
+%gra:	1|5|SUBJ 2|1|PQ 3|5|AUX 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	(...) well someone's standing on a stool and the stool is gettin(g)
+	ready to fall over . 44263_55377
+%mor:	co|well pro:indef|someone~aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool coord|and det:art|the n|stool aux|be&3S
+	part|get-PRESP adj|ready inf|to v|fall adv|over .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|12|PRED 14|15|INF 15|13|XMOD
+	16|15|JCT 17|4|PUNCT
+*INV:	okay . 55377_56745
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(...) it's [//] &mm &=sniff well somebody's dryin(g) dishes . 56745_80231
+%mor:	co|well pro:indef|somebody~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	(..) can you see anything else goin(g) on over here ? 80231_101287
+%mor:	mod|can pro:per|you v|see pro:indef|anything post|else
+	part|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|PQ 6|3|XJCT 7|6|JCT 8|6|JCT
+	9|8|POBJ 10|3|PUNCT
+*PAR:	no I don't see anything else goin(g) on over here . [+ exc] 101287_105610
+%mor:	co|no pro:sub|I mod|do~neg|not v|see pro:indef|anything post|else
+	part|go-PRESP adv|on prep|over adv|here .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|6|PQ 8|5|XJCT
+	9|8|JCT 10|8|JCT 11|10|POBJ 12|5|PUNCT
+*PAR:	I'm [/] I'm thinkin(g) now maybe the water's &r overrunning . 105610_112509
+%mor:	pro:sub|I~aux|be&1S part|think-PRESP adv|now adv|maybe det:art|the
+	adj|water&dn-POSS over#part|run-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	I'm not too sure . [+ exc] 112509_113659
+%mor:	pro:sub|I~cop|be&1S neg|not adv|too adj|sure .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|NEG 4|5|JCT 5|2|PRED 6|2|PUNCT
+*INV:	okay . 113659_115056
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's some water on the floor here . 115056_120658
+%mor:	pro:exist|there~cop|be&3S qn|some n|water prep|on det:art|the
+	n|floor adv|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|4|NJCT
+	9|2|PUNCT
+*PAR:	and there's some in the sink that's overrunnin(g) . 120658_123371
+%mor:	coord|and pro:exist|there~cop|be&3S qn|some prep|in det:art|the
+	n|sink pro:rel|that~aux|be&3S over#part|run-PRESP .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|3|PUNCT
+*PAR:	&=clears:throat . [+ exc] 123371_133675
+*INV:	okay good . 133675_140227
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,100 @@
+@UTF8
+@PID:	11312/t-00002652-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|85;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	461-0, audio
+*INV:	and there's the picture . 0_3082
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	cookie jar . [+ gram] 3082_10259
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	the boy and a girl and the ladder . [+ gram] 10259_13386
+%mor:	det:art|the n|boy coord|and det:art|a n|girl coord|and det:art|the
+	n|ladder .
+%gra:	1|2|DET 2|0|INCROOT 3|2|CONJ 4|5|DET 5|3|COORD 6|2|CONJ 7|8|DET
+	8|6|COORD 9|2|PUNCT
+*PAR:	the &uh cabinet . [+ gram] 13386_18539
+%mor:	det:art|the n|cabinet .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	and the other cabinet with the sink in it <or with the> [//] yes .
+	[+ gram] 18539_25883
+%mor:	coord|and det:art|the qn|other n|cabinet prep|with det:art|the
+	n|sink prep|in pro:per|it co|yes .
+%gra:	1|10|LINK 2|4|DET 3|4|QUANT 4|10|SUBJ 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|7|NJCT 9|8|POBJ 10|0|INCROOT 11|10|PUNCT
+*PAR:	the water coming out . [+ gram] 25883_28233
+%mor:	det:art|the n|water part|come-PRESP adv|out .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	the sink . [+ gram] 28233_30428
+%mor:	det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	the dishes on the cabinet . [+ gram] 30428_33244
+%mor:	det:art|the n|dish-PL prep|on det:art|the n|cabinet .
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	the lady drying dishes . [+ gram] 33244_36107
+%mor:	det:art|the n|lady part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|OBJ 5|2|PUNCT
+*PAR:	the window . [+ gram] 36107_37199
+%mor:	det:art|the n|window .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	and you can see the trees outside the window . 37199_41263
+%mor:	coord|and pro:per|you mod|can v|see det:art|the n|tree-PL
+	prep|outside det:art|the n|window .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	the curtains on the window . [+ gram] 41263_45073
+%mor:	det:art|the n|curtain-PL prep|on det:art|the n|window .
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*INV:	you see anything else going on in our picture ? 51774_54926
+%mor:	pro:per|you v|see pro:indef|anything post|else part|go-PRESP adv|on
+	prep|in det:poss|our n|picture ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|3|PQ 5|2|XJCT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	the water . [+ gram] 54926_55904
+%mor:	det:art|the n|water .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	spilling over in the sink . [+ gram] 55904_59499
+%mor:	part|spill-PRESP adv|over prep|in det:art|the n|sink .
+%gra:	1|0|INCROOT 2|1|JCT 3|1|JCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	I guess I mentioned the boy getting the cookies out_of the jar . 59499_66799
+%mor:	pro:sub|I v|guess pro:sub|I v|mention-PAST det:art|the n|boy
+	part|get-PRESP det:art|the n|cookie-PL prep|out_of det:art|the n|jar
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|6|DET 6|4|OBJ 7|6|XMOD 8|9|DET
+	9|7|OBJ 10|7|JCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*INV:	anything else going on over here ? 66799_76821
+%mor:	pro:indef|anything post|else part|go-PRESP adv|on prep|over
+	adv|here ?
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	oh yeah the ladder's tipping over . 76821_80700
+%mor:	co|oh co|yeah det:art|the n|ladder~aux|be&3S part|tip-PRESP
+	adv|over .
+%gra:	1|6|COM 2|4|COM 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*PAR:	the boy's on the ladder and the ladder's tipping over . 80700_84310
+%mor:	det:art|the n|boy~cop|be&3S prep|on det:art|the n|ladder coord|and
+	det:art|the n|ladder~aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|3|CJCT 12|11|JCT 13|3|PUNCT
+*PAR:	and the girl's reaching to get a cookie . 84310_87420
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|reach-PRESP inf|to
+	v|get det:art|a n|cookie .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|5|PUNCT
+*PAR:	and &uh the water's flowing down on the floor . 87420_93941
+%mor:	coord|and det:art|the n|water~aux|be&3S part|flow-PRESP adv|down
+	prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	you can see the grass out on the lawn . 93941_103344
+%mor:	pro:per|you mod|can v|see det:art|the n|grass adv|out prep|on
+	det:art|the n|lawn .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*INV:	okay . 103344_109380
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

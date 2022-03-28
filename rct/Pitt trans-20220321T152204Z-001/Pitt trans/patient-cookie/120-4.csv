@@ -1,0 +1,70 @@
+@UTF8
+@PID:	11312/t-00002505-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|81;|male|MCI||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	120-4, audio
+*INV:	tell me everything you see happening there, everything that's going
+	on in that picture . 0_4107
+%mor:	v|tell pro:obj|me pro:indef|everything pro:per|you v|see
+	n:gerund|happen-PRESP adv|there cm|cm pro:indef|everything
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on prep|in det:dem|that
+	n|picture .
+%gra:	1|5|LINK 2|1|OBJ 3|1|OBJ 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|LP
+	9|5|OBJ 10|12|LINK 11|12|AUX 12|9|CMOD 13|12|JCT 14|12|JCT 15|16|DET
+	16|14|POBJ 17|5|PUNCT
+*PAR:	okay well the little boy is <stealing some cookies> [//] taking
+	some cookies when his mother's not looking and is going to fall off
+	the stool (be)cause it's tipping over . 4107_15179
+%mor:	co|okay n|well det:art|the adj|little n|boy aux|be&3S
+	part|take-PRESP qn|some n|cookie-PL conj|when det:poss|his
+	adj|mother&dn-POSS neg|not part|look-PRESP coord|and aux|be&3S
+	part|go-PRESP inf|to v|fall prep|off det:art|the n|stool
+	conj|because pro:per|it~aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|2|COM 2|7|LINK 3|5|DET 4|5|MOD 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|9|QUANT
+	9|7|OBJ 10|7|JCT 11|12|DET 12|10|POBJ 13|12|NEG 14|12|XMOD 15|14|CONJ
+	16|17|AUX 17|15|COORD 18|19|INF 19|17|COMP 20|19|JCT 21|22|DET 22|20|POBJ
+	23|26|LINK 24|26|SUBJ 25|26|AUX 26|12|CJCT 27|26|JCT 28|7|PUNCT
+*PAR:	and the little girl is saying “sh@o” &=laughs as she reaches up for
+	a cookie . 15179_19400
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|say-PRESP
+	on|sh conj|as pro:sub|she v|reach-3S adv|up prep|for det:art|a
+	n|cookie .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|10|LINK
+	9|10|SUBJ 10|6|CJCT 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|6|PUNCT
+*PAR:	and pretty soon it's not gonna be very quiet . 19400_21997
+%mor:	coord|and adv|pretty adv|soon pro:per|it~aux|be&3S neg|not
+	part|go-PRESP~inf|to cop|be adv|very adj|quiet .
+%gra:	1|7|LINK 2|3|JCT 3|7|JCT 4|7|SUBJ 5|7|AUX 6|5|NEG 7|0|ROOT 8|9|INF
+	9|7|COMP 10|11|JCT 11|9|PRED 12|7|PUNCT
+*PAR:	the mother is wiping the dishes as the sink is overflowing on the
+	floor and she's walking in the water and apparently unconcerned . 21997_30371
+%mor:	det:art|the n|mother aux|be&3S part|wipe-PRESP det:art|the
+	n|dish-PL conj|as det:art|the n|sink aux|be&3S over#part|flow-PRESP
+	prep|on det:art|the n|floor coord|and pro:sub|she~aux|be&3S
+	part|walk-PRESP prep|in det:art|the n|water coord|and
+	adv|apparent&dadj-LY un#part|concern-PASTP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|14|DET 14|12|POBJ 15|18|LINK
+	16|18|SUBJ 17|18|AUX 18|11|CJCT 19|18|JCT 20|21|DET 21|19|POBJ 22|18|CONJ
+	23|24|JCT 24|22|COORD 25|4|PUNCT
+*PAR:	and &um (.) the window is open . 30371_36041
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	now as far as things happening I guess that's about it . [+ exc] 36041_41696
+%mor:	adv|now prep|as adv|far conj|as n|thing-PL part|happen-PRESP
+	pro:sub|I n|guess pro:rel|that~cop|be&3S prep|about pro:per|it .
+%gra:	1|0|INCROOT 2|3|COORD 3|1|JCT 4|5|COORD 5|3|POBJ 6|5|XMOD 7|8|SUBJ
+	8|6|OBJ 9|10|LINK 10|8|CMOD 11|10|JCT 12|11|POBJ 13|1|PUNCT
+*INV:	okay, good . 41696_43016
+%mor:	co|okay cm|cm adj|good .
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|1|PUNCT
+*PAR:	+< she's wiping the dishes . 42116_43259
+%mor:	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*INV:	mhm . 43259_43631
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,114 @@
+@UTF8
+@PID:	11312/t-00002190-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	015-1, audio
+*PAR:	okay . [+ exc] 0_2478
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	a little boy is stepping on a ladder [: stool] [* s:r] that's
+	cockeyed . 2478_6140
+%mor:	det:art|a adj|little n|boy cop|be&3S n:gerund|step-PRESP prep|on
+	det:art|a n|stool pro:rel|that~cop|be&3S adj|cockeyed .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|JCT 7|8|DET 8|6|POBJ
+	9|10|LINK 10|8|CMOD 11|10|PRED 12|4|PUNCT
+*PAR:	and <the ladder [: stool] [* s:r-ret] has> [//] <it's a tripodal>
+	[//] it isn't a ladder it's a stool . 6140_11063
+%mor:	coord|and pro:per|it cop|be&3S~neg|not det:art|a n|ladder
+	pro:per|it~cop|be&3S det:art|a n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|NEG 5|6|DET 6|3|PRED 7|8|SUBJ 8|6|CMOD
+	9|10|DET 10|8|PRED 11|3|PUNCT
+*PAR:	and it's a [/] &tri a three legged stool . 11063_13100
+%mor:	coord|and pro:per|it~cop|be&3S det:art|a det:num|three adj|legged
+	n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|DET 5|7|QUANT 6|7|MOD 7|3|PRED 8|3|PUNCT
+*PAR:	and he's getting cookies out_of a jar . 13100_15459
+%mor:	coord|and pro:sub|he~aux|be&3S part|get-PRESP n|cookie-PL
+	prep|out_of det:art|a n|jar .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	and he's handing a cookie to the little girl who's saying “shh@o”
+	to the mother . 15459_19159
+%mor:	coord|and pro:sub|he~aux|be&3S part|hand-PRESP det:art|a n|cookie
+	prep|to det:art|the adj|little n|girl pro:rel|who~aux|be&3S
+	part|say-PRESP on|shh prep|to det:art|the n|mother .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|13|LINK 12|13|AUX 13|10|CMOD 14|13|OBJ 15|14|JCT
+	16|17|DET 17|15|POBJ 18|4|PUNCT
+*PAR:	and the mother is &=laughs wiping dishes with water running all
+	over the kitchen floor . 19159_26583
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wipe-PRESP n|dish-PL
+	prep|with n|water part|run-PRESP adv|all prep|over det:art|the
+	n|kitchen n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|7|POBJ
+	9|5|XJCT 10|11|JCT 11|9|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|5|PUNCT
+*PAR:	and (.) oh god . [+ exc] 26583_30240
+%mor:	coord|and co|oh n|god .
+%gra:	1|3|LINK 2|3|COM 3|0|INCROOT 4|3|PUNCT
+*PAR:	oh she's [//] she has an open window . 30240_34398
+%mor:	co|oh pro:sub|she v|have&3S det:art|a adj|open n|window .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|PUNCT
+*PAR:	&uh and there are bushes in front of the &uh window either in the
+	house next door or some place else . 34398_42722
+%mor:	coord|and adv|there cop|be&PRES n|bush-PL prep|in n|front prep|of
+	det:art|the n|window adv|either prep|in det:art|the n|house adj|next
+	n|door coord|or qn|some n|place post|else .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|JCT 6|5|POBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|3|JCT 11|3|JCT 12|13|DET 13|15|MOD 14|15|MOD 15|11|POBJ
+	16|15|CONJ 17|18|QUANT 18|16|COORD 19|18|POSTMOD 20|3|PUNCT
+*PAR:	and then there's a tree that doesn't have a trunk . 42722_46064
+%mor:	coord|and adv:tem|then pro:exist|there~cop|be&3S det:art|a n|tree
+	adv|that mod|do&3S~neg|not v|have det:art|a n|trunk .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|10|JCT 8|10|AUX
+	9|8|NEG 10|6|CMOD 11|12|DET 12|10|OBJ 13|4|PUNCT
+*PAR:	xxx . [+ exc] 46064_49323
+*PAR:	and &=laughs &um xxx . [+ exc] 49323_57369
+%mor:	coord|and .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there are two cups and the handles are in opposite directions . 57369_60378
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL coord|and
+	det:art|the n|handle-PL cop|be&PRES prep|in n|opposite
+	n|direction-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|8|LINK 6|7|DET 7|8|SUBJ 8|2|CJCT
+	9|8|JCT 10|11|MOD 11|9|POBJ 12|2|PUNCT
+*PAR:	and she's sort of dumb (be)cause she doesn't turn off the water . 60378_62808
+%mor:	coord|and pro:sub|she~cop|be&3S n|sort prep|of adj|dumb
+	conj|because pro:sub|she mod|do&3S~neg|not v|turn prep|off
+	det:art|the n|water .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|5|POBJ 7|11|LINK
+	8|11|SUBJ 9|11|AUX 10|9|NEG 11|3|CJCT 12|11|JCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*PAR:	she's letting it run on her feet . 62808_64935
+%mor:	pro:sub|she~aux|be&3S part|let-PRESP pro:per|it v|run prep|on
+	det:poss|her n|foot&PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	and half of the kitchen cupboard doors don't have handles . 64935_70506
+%mor:	coord|and n|half prep|of det:art|the n|kitchen n|cupboard n|door-PL
+	mod|do~neg|not v|have n|handle-PL .
+%gra:	1|10|LINK 2|7|MOD 3|2|NJCT 4|6|DET 5|6|MOD 6|3|POBJ 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|0|ROOT 11|10|OBJ 12|10|PUNCT
+*PAR:	(.) I don't think xxx . [+ exc] 70506_80169
+%mor:	pro:sub|I mod|do~neg|not v|think .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+*PAR:	and she's wiping the [x 4] dish with two towels . 80169_84684
+%mor:	coord|and pro:sub|she~aux|be&3S part|wipe-PRESP det:art|the n|dish
+	prep|with det:num|two n|towel-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|QUANT
+	9|7|POBJ 10|4|PUNCT
+*PAR:	and she isn't watching her dear darling children fall off the stool
+	. 84684_93178
+%mor:	coord|and pro:sub|she aux|be&3S~neg|not part|watch-PRESP
+	det:poss|her n|dear adj|darling n|child&PL v|fall prep|off
+	det:art|the n|stool .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|7|DET 7|10|JCT 8|7|POSTMOD
+	9|10|SUBJ 10|5|COMP 11|10|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	okay isn't that about enough ? [+ exc] 93178_95501
+%mor:	co|okay cop|be&3S~neg|not pro:dem|that adv|about adv|enough ?
+%gra:	1|2|COM 2|0|ROOT 3|2|NEG 4|2|PRED 5|6|JCT 6|4|JCT 7|2|PUNCT
+*INV:	okay . 95501_96170
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

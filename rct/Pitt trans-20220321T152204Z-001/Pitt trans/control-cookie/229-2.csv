@@ -1,0 +1,44 @@
+@UTF8
+@PID:	11312/t-00002354-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR|65;|male|Control||Participant|30||
+@Media:	229-2, audio
+*PAR:	there's a child reaching for a cookie . 0_2120
+%mor:	pro:exist|there~cop|be&3S det:art|a n|child part|reach-PRESP
+	prep|for det:art|a n|cookie .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	the chair [: stool] [* s:r] is tilted . 2120_3926
+%mor:	det:art|the n|stool aux|be&3S part|tilt-PASTP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the girl is possibly moving her finger towards her mouth and
+	reaching for a cookie . 3926_10178
+%mor:	det:art|the n|girl aux|be&3S adv|possible&dadj-LY part|move-PRESP
+	det:poss|her n|finger prep|towards det:poss|her n|mouth coord|and
+	part|reach-PRESP prep|for det:art|a n|cookie .
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|CONJ 12|11|COORD 13|12|JCT 14|15|DET 15|13|POBJ
+	16|5|PUNCT
+*PAR:	water's running out_of the sink . 10178_12732
+%mor:	n|water~aux|be&3S part|run-PRESP prep|out_of det:art|the n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the mother's drying dishes . 12732_15702
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	somebody's gonna be screamin(g) when the kid falls . 15702_21138
+%mor:	adj|somebody&dn-POSS part|go-PRESP~inf|to aux|be part|scream-PRESP
+	conj|when det:art|the n|kid v|fall-3S .
+%gra:	1|2|MOD 2|0|ROOT 3|5|INF 4|5|AUX 5|2|COMP 6|9|LINK 7|8|DET 8|9|SUBJ
+	9|2|CJCT 10|2|PUNCT
+*PAR:	&uh I don't know if it's action but mom was standin(g) in water . 21138_28527
+%mor:	pro:sub|I mod|do~neg|not v|know comp|if pro:per|it~cop|be&3S
+	n|action conj|but n|mom aux|be&PAST&13S part|stand-PRESP prep|in
+	n|water .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|COMP 8|7|PRED
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|12|JCT 14|13|POBJ 15|4|PUNCT
+*PAR:	that's about all I see . [+ exc] 28527_33013
+%mor:	pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|6|JCT 5|6|SUBJ 6|2|CJCT 7|2|PUNCT
+@End

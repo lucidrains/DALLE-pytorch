@@ -1,0 +1,84 @@
+@UTF8
+@PID:	11312/t-00002207-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	034-2, audio
+@Comment:	bad background hum
+*INV:	you see going on in the picture . 0_4755
+%mor:	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:art|the
+	n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|JCT 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	everything I see in action or everything I +..? [+ exc] 4755_7315
+%mor:	pro:indef|everything pro:sub|I v|see prep|in n|action coord|or
+	pro:indef|everything pro:sub|I +..?
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|CONJ 7|6|COORD 8|7|OM
+	9|3|PUNCT
+*PAR:	in action or +..? [+ exc] 7315_8496
+%mor:	prep|in n|action coord|or +..?
+%gra:	1|3|JCT 2|1|POBJ 3|0|INCROOT 4|3|PUNCT
+*INV:	+< in action . 8000_8500
+%mor:	prep|in n|action .
+%gra:	1|0|INCROOT 2|1|POBJ 3|1|PUNCT
+*PAR:	in action . [+ exc] 8500_9500
+%mor:	prep|in n|action .
+%gra:	1|0|INCROOT 2|1|POBJ 3|1|PUNCT
+*INV:	+< everything that's happening in that picture . 8500_10491
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP
+	prep|in det:dem|that n|picture .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|7|DET 7|5|POBJ
+	8|1|PUNCT
+*PAR:	the little girl is trying to get a cookie from the little boy who
+	is on a stool reaching up too high and is just about to have an
+	accident . 10491_26102
+%mor:	det:art|the adj|little n|girl aux|be&3S part|try-PRESP inf|to v|get
+	det:art|a n|cookie prep|from det:art|the adj|little n|boy
+	pro:rel|who aux|be&3S prep|on det:art|a n|stool part|reach-PRESP
+	adv|up adv|too n|high coord|and cop|be&3S adj|just adv|about inf|to
+	v|have det:art|a n|accident .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|7|JCT 11|13|DET 12|13|MOD 13|10|POBJ 14|19|LINK 15|19|AUX
+	16|19|JCT 17|18|DET 18|16|POBJ 19|13|CMOD 20|19|JCT 21|22|JCT 22|19|JCT
+	23|22|CONJ 24|23|COORD 25|24|PRED 26|28|JCT 27|28|INF 28|25|CMOD 29|30|DET
+	30|28|OBJ 31|5|PUNCT
+*PAR:	stool is gonna tip over on him . [+ gram] 26102_30754
+%mor:	n|stool aux|be&3S part|go-PRESP~inf|to v|tip adv|over prep|on
+	pro:obj|him .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	the supposed mother is drying dishes and not paying attention to
+	what she's doing . 30754_39844
+%mor:	det:art|the part|suppose-PASTP n|mother aux|be&3S part|dry-PRESP
+	n|dish-PL coord|and neg|not part|pay-PRESP n|attention prep|to
+	pro:int|what pro:sub|she~aux|be&3S part|do-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|CONJ 8|9|NEG
+	9|7|COORD 10|9|OBJ 11|9|JCT 12|15|LINK 13|15|SUBJ 14|15|AUX 15|11|CPOBJ
+	16|5|PUNCT
+*PAR:	and the &s water in the sink is running over onto the floor making
+	another hazardous condition . 39844_47564
+%mor:	coord|and det:art|the n|water prep|in det:art|the n|sink aux|be&3S
+	part|run-PRESP adv|over prep|onto det:art|the n|floor
+	part|make-PRESP qn|another adj|hazardous n|condition .
+%gra:	1|8|LINK 2|3|DET 3|8|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|8|AUX 8|0|ROOT
+	9|8|JCT 10|8|JCT 11|12|DET 12|10|POBJ 13|8|XJCT 14|16|QUANT 15|16|MOD
+	16|13|OBJ 17|8|PUNCT
+*PAR:	the window seems to be open . 47564_51359
+%mor:	det:art|the n|window cop|seem-3S inf|to cop|be adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|3|PUNCT
+*PAR:	that's it . [+ exc] 51359_57661
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	mhm, okay . 57661_58857
+%mor:	co|mhm=yes cm|cm adj|okay .
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|1|PUNCT
+*PAR:	all this activity took place in the kitchen . 58862_62815
+%mor:	qn|all det:dem|this n|activity v|take&PAST n|place prep|in
+	det:art|the n|kitchen .
+%gra:	1|3|QUANT 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*INV:	+< mhm . 61500_62000
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

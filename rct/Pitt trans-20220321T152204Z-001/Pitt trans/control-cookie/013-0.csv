@@ -1,0 +1,76 @@
+@UTF8
+@PID:	11312/t-00002185-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|62;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	013-0, audio
+*INV:	just look at the picture and tell me everything that you see . 0_6039
+%mor:	adv|just v|look prep|at det:art|the n|picture coord|and v|tell
+	pro:obj|me pro:indef|everything pro:rel|that pro:per|you v|see .
+%gra:	1|2|JCT 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|CONJ 7|6|COORD 8|7|OBJ2
+	9|7|OBJ 10|12|LINK 11|12|SUBJ 12|9|CMOD 13|2|PUNCT
+*PAR:	somebody's getting cookies out_of the cookie jar, standing on a
+	stool . 6039_9568
+%mor:	pro:indef|somebody~aux|be&3S part|get-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar cm|cm part|stand-PRESP prep|on det:art|a
+	n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|LP 10|3|XJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	the stool's gonna tip over . 9568_11581
+%mor:	det:art|the n|stool~aux|be&3S part|go-PRESP~inf|to v|tip adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|4|PUNCT
+*PAR:	and the girl's saying +"/. 11581_13575
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|say-PRESP +"/.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	+" shh don't let somebody hear . 13575_15121
+%mor:	co|shh mod|do~neg|not v|let&ZERO pro:indef|somebody v|hear .
+%gra:	1|4|COM 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|4|PUNCT
+*PAR:	and the mother's drying dishes . 15121_16717
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	the water's running out into the floor . 16717_19160
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP adv|out prep|into
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	cups and plates are sitting on the counter . 19160_23184
+%mor:	n|cup-PL coord|and n|plate-PL aux|be&PRES part|sit-PRESP prep|on
+	det:art|the n|counter .
+%gra:	1|5|SUBJ 2|1|CONJ 3|2|COORD 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	&ou you can look out the window and see the shrubbery . 23184_27938
+%mor:	pro:per|you mod|can v|look prep|out det:art|the n|window coord|and
+	v|see det:art|the n|shrubbery .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*PAR:	&um the lid's sideways from the cookie jar . 27938_33807
+%mor:	det:art|the n|lid~cop|be&3S adv|sideways prep|from det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	the door is open on the cabinet . 33807_36886
+%mor:	det:art|the n|door cop|be&3S adj|open prep|on det:art|the n|cabinet
+	.
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	&um mother apparently doesn't really notice well enough &=laughs .
+	36886_43657
+%mor:	n|mother adv|apparent&dadj-LY mod|do&3S~neg|not adv|real&dadj-LY
+	v|notice adv|well adv|enough .
+%gra:	1|6|SUBJ 2|6|JCT 3|6|AUX 4|3|NEG 5|6|JCT 6|0|ROOT 7|8|JCT 8|6|JCT
+	9|6|PUNCT
+*PAR:	&hm curtains are hanging on the window . 43657_50225
+%mor:	n|curtain-PL aux|be&PRES part|hang-PRESP prep|on det:art|the
+	n|window .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the window is open . 50225_52951
+%mor:	det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	that's fine . 52951_54929
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay thank you . 54929_57908
+%mor:	co|okay v|thank pro:per|you .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@End

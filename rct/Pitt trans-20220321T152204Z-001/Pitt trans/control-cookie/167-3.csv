@@ -1,0 +1,131 @@
+@UTF8
+@PID:	11312/t-00002326-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	167-3, audio
+*INV:	what I'd like you to do here is take a look at this picture and
+	tell me everything that you see happening, everything that you see
+	going on . 0_6430
+%mor:	pro:int|what pro:sub|I~mod|genmod prep|like pro:per|you inf|to v|do
+	adv|here cop|be&3S v|take det:art|a v|look prep|at det:dem|this
+	n|picture coord|and v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you co|see n:gerund|happen-PRESP cm|cm
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|7|LINK 2|7|SUBJ 3|7|AUX 4|3|JCT 5|4|POBJ 6|7|INF 7|0|ROOT 8|7|JCT
+	9|7|COMP 10|9|CPRED 11|12|DET 12|10|OBJ 13|12|JCT 14|15|DET 15|13|POBJ
+	16|12|CONJ 17|16|COORD 18|17|OBJ2 19|17|OBJ 20|23|LINK 21|23|SUBJ 22|23|COM
+	23|19|CMOD 24|23|LP 25|23|ENUM 26|28|LINK 27|28|SUBJ 28|25|CMOD
+	29|28|OBJ 30|28|JCT 31|7|PUNCT
+*PAR:	I [//] do I start ? [+ exc] 6430_8400
+%mor:	mod|do pro:sub|I v|start ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	mhm . 8400_9231
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the children are getting into the cookie jar which is <on the> [//]
+	&uh high above &uh the &uh sink . 9231_16165
+%mor:	det:art|the n|child&PL aux|be&PRES part|get-PRESP prep|into
+	det:art|the n|cookie n|jar pro:rel|which cop|be&3S adj|high
+	prep|above det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|10|LINK 10|4|CJCT 11|10|PRED 12|11|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	they have the &um &uh lid off the cookie jar . 16165_20105
+%mor:	pro:sub|they v|have det:art|the n|lid prep|off det:art|the n|cookie
+	n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|2|PUNCT
+*PAR:	the boy has two in his hand and the girl is reaching up for them .
+	20105_23480
+%mor:	det:art|the n|boy aux|have&3S det:num|two prep|in det:poss|his
+	n|hand coord|and det:art|the n|girl aux|be&3S part|reach-PRESP
+	adv|up prep|for pro:obj|them .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|12|SUBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|10|DET 10|8|COORD 11|12|AUX 12|0|ROOT 13|12|JCT 14|12|JCT 15|14|POBJ
+	16|12|PUNCT
+*PAR:	and the &uh stool in which he's standing is about to upset . 23480_27487
+%mor:	coord|and det:art|the n|stool prep|in pro:rel|which
+	pro:sub|he~cop|be&3S n:gerund|stand-PRESP cop|be&3S adv|about inf|to
+	v|upset .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|NJCT 5|7|LINK 6|7|SUBJ 7|4|POBJ
+	8|9|SUBJ 9|7|PRED 10|12|JCT 11|12|INF 12|9|CPRED 13|3|PUNCT
+*PAR:	course the door is open <into the> [//] to get the cookie jar . 27487_30596
+%mor:	v|course det:art|the n|door cop|be&3S adj|open inf|to v|get
+	det:art|the n|cookie n|jar .
+%gra:	1|0|ROOT 2|3|DET 3|4|SUBJ 4|1|COMP 5|4|PRED 6|7|INF 7|5|XMOD 8|10|DET
+	9|10|MOD 10|7|OBJ 11|1|PUNCT
+*PAR:	the &uh mother presumably is at the sink washing &uh dishes . 30596_36199
+%mor:	det:art|the n|mother adv|presume&dadj-ABLE-LY cop|be&3S prep|at
+	det:art|the n|sink part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|XJCT
+	9|8|OBJ 10|4|PUNCT
+*PAR:	and the &um &uh sink is running over . 36199_38888
+%mor:	coord|and det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	the water is splashing down on the floor . 38888_41037
+%mor:	det:art|the n|water aux|be&3S part|splash-PRESP adv|down prep|on
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	&uh there are two I suppose dry dishes on the [/] &uh the sink . 41037_46340
+%mor:	pro:exist|there cop|be&PRES det:num|two pro:sub|I v|suppose adj|dry
+	n|dish-PL prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|5|CJCT 3|2|PRED 4|5|SUBJ 5|0|ROOT 6|7|MOD 7|5|OBJ 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	she has one in her hand a plate that she is drying . 46340_48900
+%mor:	pro:sub|she v|have&3S det:num|one prep|in det:poss|her n|hand
+	det:art|a n|plate pro:rel|that pro:sub|she aux|be&3S part|dry-PRESP
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|JCT 5|6|DET 6|4|POBJ 7|8|DET 8|2|OBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|CMOD 13|2|PUNCT
+*PAR:	she has it on an apron . 48900_49899
+%mor:	pro:sub|she aux|have&3S pro:per|it prep|on det:art|a n|apron .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	<she's standing by> [//] the sink is &uh below a window with a [/]
+	&um a path out into a [/] a garden . 49899_57888
+%mor:	det:art|the n|sink cop|be&3S prep|below det:art|a n|window
+	prep|with det:art|a n|path adv|out prep|into det:art|a n|garden .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|JCT 8|9|DET
+	9|7|POBJ 10|3|JCT 11|3|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	&uh <there are> [//] &mm there's shrubbery to the left of the path
+	. 57888_63374
+%mor:	pro:exist|there~cop|be&3S n|shrubbery prep|to det:art|the adj|left
+	prep|of det:art|the n|path .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|6|JCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	and you can see beyond that another window . 63374_65953
+%mor:	coord|and pro:per|you mod|can v|see prep|beyond det:dem|that
+	qn|another n|window .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|QUANT 8|5|POBJ
+	9|4|PUNCT
+*PAR:	and &um I don't know what that is whether those are flowers or
+	weeds . 65953_70142
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know pro:int|what adv|that
+	aux|be&3S comp|whether pro:dem|those cop|be&PRES n|flower-PL
+	coord|or n|weed-PL .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|11|LINK 7|11|SUBJ 8|11|AUX
+	9|11|LINK 10|11|SUBJ 11|5|COMP 12|11|PRED 13|12|CONJ 14|13|COORD
+	15|5|PUNCT
+*PAR:	and oh &uh this is part of the house . 70142_72336
+%mor:	coord|and co|oh pro:dem|this cop|be&3S n|part prep|of det:art|the
+	n|house .
+%gra:	1|4|LINK 2|4|COM 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	you can see the &uh roof of &uh maybe an l@l of a house and the
+	curtains . 72336_77823
+%mor:	pro:per|you mod|can v|see det:art|the n|roof prep|of adv|maybe
+	det:art|a n:let|l prep|of det:art|a n|house coord|and det:art|the
+	n|curtain-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|NJCT 7|6|POBJ 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|9|CONJ 14|15|DET 15|13|COORD
+	16|3|PUNCT
+*PAR:	that's about all . [+ exc] 77823_79020
+%mor:	pro:dem|that~cop|be&3S adv|about adv|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*PAR:	the curtains are drawn back . 79020_80947
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|draw&PASTP n|back .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+@End

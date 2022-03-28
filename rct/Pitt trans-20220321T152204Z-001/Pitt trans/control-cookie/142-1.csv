@@ -1,0 +1,62 @@
+@UTF8
+@PID:	11312/t-00002305-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|59;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	142-1, audio
+*INV:	xxx the action that you see going on in that picture . 0_3798
+%mor:	det:art|the n|action pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|5|LINK 4|5|SUBJ 5|2|CMOD 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	&um &a anything that I want ? [+ exc] 3798_9468
+%mor:	pro:indef|anything pro:rel|that pro:sub|I v|want ?
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|1|PUNCT
+*INV:	mhm . 9468_9900
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay . [+ exc] 9900_10200
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the boy is reaching for cookies and the stool is falling over . 10200_14407
+%mor:	det:art|the n|boy aux|be&3S part|reach-PRESP prep|for n|cookie-PL
+	coord|and det:art|the n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|4|PUNCT
+*PAR:	&uh the girl is reaching for her brother to give her a cookie . 14407_19166
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP prep|for pro:obj|her
+	n|brother inf|to v|give pro:obj|her det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|SUBJ 7|5|POBJ 8|9|INF
+	9|7|XMOD 10|9|OBJ2 11|12|DET 12|9|OBJ 13|4|PUNCT
+*PAR:	the mother is doing dishes but the water is spilling over on the
+	floor . 19166_26273
+%mor:	det:art|the n|mother aux|be&3S part|do-PRESP n|dish-PL conj|but
+	det:art|the n|water aux|be&3S part|spill-PRESP adv|over prep|on
+	det:art|the n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	the window's open . 26273_29018
+%mor:	det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	what else . [+ exc] 29018_32520
+%mor:	pro:int|what post|else .
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	anything else ? 32520_42869
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	did you just want action or just +/? [+ exc] 42869_45600
+%mor:	v|do&PAST pro:per|you adv|just v|want n|action coord|or adv|just
+	+/?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|JCT 4|1|JCT 5|4|OBJ 6|5|CONJ 7|6|COORD 8|1|PUNCT
+*INV:	+< mhm . 45438_46029
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	no I just can't . [+ exc] 46029_49687
+%mor:	co|no pro:sub|I adv|just mod|can~neg|not .
+%gra:	1|4|COM 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|4|NEG 6|4|PUNCT
+*INV:	that's fine . 49687_50794
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

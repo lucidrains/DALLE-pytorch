@@ -1,0 +1,68 @@
+@UTF8
+@PID:	11312/t-00002660-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|male|PossibleAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	474-0, audio
+*INV:	what I'm gonna do now is I'm gonna show you a picture . 0_4594
+%mor:	pro:int|what pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|do adv|now
+	cop|be&3S pro:sub|I~aux|be&1S part|go-PRESP~inf|to v|show
+	pro:per|you det:art|a n|picture .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|11|SUBJ 5|6|INF 6|4|COMP 7|6|JCT 8|11|AUX
+	9|11|SUBJ 10|11|AUX 11|0|ROOT 12|13|INF 13|11|COMP 14|13|OBJ2 15|16|DET
+	16|13|OBJ 17|11|PUNCT
+*INV:	and in the picture there are some things going on . 4594_8033
+%mor:	coord|and prep|in det:art|the n|picture adv|there cop|be&PRES
+	qn|some n|thing-PL part|go-PRESP adv|on .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|8|QUANT 8|6|PRED
+	9|8|XMOD 10|9|JCT 11|6|PUNCT
+*INV:	there's some action taking place . 8033_11504
+%mor:	pro:exist|there~cop|be&3S qn|some n|action part|take-PRESP n|place
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|XMOD 6|5|OBJ 7|2|PUNCT
+*INV:	what I want you to do is look at the picture and just tell me
+	anything you see happening any action . 11504_17773
+%mor:	pro:int|what pro:sub|I v|want pro:per|you inf|to v|do cop|be&3S
+	v|look prep|at det:art|the n|picture coord|and adv|just v|tell
+	pro:obj|me pro:indef|anything pro:per|you v|see
+	n:gerund|happen-PRESP qn|any n|action .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|7|CPRED
+	9|8|JCT 10|11|DET 11|9|POBJ 12|8|CONJ 13|14|JCT 14|12|COORD 15|14|OBJ
+	16|14|OBJ 17|18|SUBJ 18|14|COMP 19|18|OBJ 20|21|QUANT 21|19|OBJ 22|3|PUNCT
+*PAR:	well your sink is being run over, the water . 17773_26598
+%mor:	co|well det:poss|your n|sink cop|be&3S aux|be-PRESP v|run adv|over
+	cm|cm det:art|the n|water .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|LP
+	9|10|DET 10|6|OBJ 11|6|PUNCT
+*PAR:	the stool the kid's standing on is falling . 26598_30816
+%mor:	det:art|the n|stool det:art|the n|kid~aux|be&3S part|stand-PRESP
+	adv|on aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|9|SUBJ 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|CMOD 7|6|JCT 8|9|AUX
+	9|0|ROOT 10|9|PUNCT
+*PAR:	and he's getting cookies from a jar . 30816_38318
+%mor:	coord|and pro:sub|he~aux|be&3S part|get-PRESP n|cookie-PL prep|from
+	det:art|a n|jar .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the lady's washin(g) dishes . 38318_44683
+%mor:	det:art|the n|lady~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the girl's reachin(g) for a cookie . 44683_55654
+%mor:	det:art|the n|girl~aux|be&3S part|reach-PRESP prep|for det:art|a
+	n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	could there be more ? [+ exc] 55654_70440
+%mor:	mod|could adv|there cop|be pro:indef|more ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	okay, anything else ? 70440_73428
+%mor:	co|okay cm|cm pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|3|PQ 5|1|PUNCT
+*PAR:	I don't think so . [+ exc] 73428_76805
+%mor:	pro:sub|I mod|do~neg|not v|think co|so .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	okay . 76805_77802
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

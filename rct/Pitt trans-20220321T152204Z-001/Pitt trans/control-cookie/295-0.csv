@@ -1,0 +1,54 @@
+@UTF8
+@PID:	11312/t-00002387-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|62;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	295-0, audio
+*INV:	all of the action . 0_1775
+%mor:	pro:indef|all prep|of det:art|the n|action .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	okay . [+ exc] 1775_2926
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh water spilling out_of the sink . [+ gram] 2926_5464
+%mor:	n|water part|spill-PRESP prep|out_of det:art|the n|sink .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	the mother's &uh drying dishes . 5464_7784
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the boy is on the &uh step+stool &uh reaching the cookie jar . 7784_12950
+%mor:	det:art|the n|boy aux|be&3S prep|on det:art|the n|+n|step+n|stool
+	part|reach-PRESP det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|7|SUBJ 3|7|AUX 4|3|JCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|10|DET
+	9|10|MOD 10|7|OBJ 11|7|PUNCT
+*PAR:	he's about to fall over . 12950_14200
+%mor:	pro:sub|he~cop|be&3S adv|about inf|to v|fall adv|over .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|INF 5|2|CPRED 6|5|JCT 7|2|PUNCT
+*PAR:	his &uh sister is reaching up . 14200_16500
+%mor:	det:poss|his n|sister aux|be&3S part|reach-PRESP adv|up .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	she wants a cookie . 16500_17652
+%mor:	pro:sub|she v|want-3S det:art|a n|cookie .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	&a and I think that's about all that's going on . [+ exc] 17527_22538
+%mor:	coord|and pro:sub|I v|think comp|that~aux|be&3S prep|about qn|all
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|10|SUBJ 5|10|AUX 6|10|JCT 7|10|QUANT
+	8|10|LINK 9|10|AUX 10|3|COMP 11|10|JCT 12|3|PUNCT
+*PAR:	her feet are getting wet that's for sure . 22538_24966
+%mor:	det:poss|her n|foot&PL aux|be&PRES part|get-PRESP adj|wet
+	pro:dem|that~cop|be&3S conj|for adj|sure .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|7|SUBJ 7|5|CMOD 8|9|LINK
+	9|7|PRED 10|4|PUNCT
+*INV:	okay +/. 24966_26041
+%mor:	co|okay +/.
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< that's about it . [+ exc] 25400_26556
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*INV:	okay . 26556_28017
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

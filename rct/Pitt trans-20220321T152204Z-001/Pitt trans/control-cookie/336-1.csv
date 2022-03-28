@@ -1,0 +1,98 @@
+@UTF8
+@PID:	11312/t-00002406-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|50;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	336-1, audio
+*INV:	now I want you to tell me everything you see happening there . 0_2913
+%mor:	adv|now pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:per|you v|see n:gerund|happen-PRESP
+	adv|there .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|10|SUBJ 10|6|COMP 11|10|OBJ 12|10|JCT 13|3|PUNCT
+*INV:	everything that you see going on in that picture . 2913_5855
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*PAR:	&uh (...) inside the room or every place ? [+ exc] 5855_22820
+%mor:	prep|inside det:art|the n|room coord|or qn|every n|place ?
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|3|CONJ 5|6|QUANT 6|4|COORD 7|1|PUNCT
+*INV:	anything that you see happening, (.) going on . 22820_26570
+%mor:	pro:indef|anything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP cm|cm part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|5|COM 5|1|CMOD 6|5|LP 7|5|ENUM 8|7|JCT
+	9|1|PUNCT
+*PAR:	&=sighs . [+ exc] 26570_34260
+*INV:	just say it out loud . 34260_36035
+%mor:	adv|just v|say pro:per|it adv|out adj|loud .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|5|JCT 5|2|JCT 6|2|PUNCT
+*PAR:	<oh I can> [//] oh you don't want me to memorize it ! [+ exc] 36035_38000
+%mor:	co|oh pro:per|you mod|do~neg|not v|want pro:obj|me inf|to
+	v|memorize pro:per|it !
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|8|INF 8|5|COMP
+	9|8|OBJ 10|5|PUNCT
+*INV:	no [x 3] I just want you to tell me what's going on in that picture
+	. 38000_40500
+%mor:	co|no pro:sub|I adv|just v|want pro:per|you inf|to v|tell
+	pro:obj|me pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in
+	det:dem|that n|picture .
+%gra:	1|4|COM 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|7|OBJ
+	9|11|LINK 10|11|AUX 11|7|COMP 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	+< oh . [+ exc] 38500_39000
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay, the [/] the little girl askin(g) for the cookie from the boy
+	who's about to fall on his head . [+ gram] 40500_45000
+%mor:	co|okay cm|cm det:art|the adj|little n|girl part|ask-PRESP prep|for
+	det:art|the n|cookie prep|from det:art|the n|boy
+	pro:rel|who~cop|be&3S adv|about inf|to v|fall prep|on det:poss|his
+	n|head .
+%gra:	1|5|COM 2|1|LP 3|5|DET 4|5|MOD 5|0|INCROOT 6|5|XMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|14|LINK 14|12|CMOD 15|14|JCT
+	16|17|INF 17|14|XJCT 18|17|JCT 19|20|DET 20|18|POBJ 21|5|PUNCT
+*PAR:	and she's goin(g) I guess “shush” or “give me one” . 45000_47878
+%mor:	coord|and pro:sub|she~aux|be&3S part|go-PRESP pro:sub|I v|guess
+	v|shush coord|or v|give pro:obj|me pro:indef|one .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|6|OBJ 8|6|CONJ
+	9|8|COORD 10|9|OBJ2 11|9|COMP 12|4|PUNCT
+*PAR:	the mother's &=laughs we don't think she might be on drugs
+	(be)cause &uh &=laughs she's off someplace (be)cause the sink's
+	runnin(g) over . [+ gram] 47878_57044
+%mor:	det:art|the adj|mother&dn-POSS pro:sub|we mod|do~neg|not v|think
+	pro:sub|she mod|might cop|be prep|on n|drug-PL conj|because
+	pro:sub|she~cop|be&3S adv|off adv|someplace conj|because det:art|the
+	n|sink~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|9|JCT 3|6|SUBJ 4|6|AUX 5|4|NEG 6|2|CMOD 7|9|SUBJ 8|9|AUX
+	9|0|ROOT 10|9|JCT 11|10|POBJ 12|14|LINK 13|14|SUBJ 14|9|CJCT 15|14|JCT
+	16|14|JCT 17|21|LINK 18|19|DET 19|21|SUBJ 20|21|AUX 21|14|CJCT 22|21|JCT
+	23|9|PUNCT
+*PAR:	and &uh it's summer outside because the window's open and <the
+	grasses or> [//] the bushes look healthy +... 57044_63237
+%mor:	coord|and pro:per|it~cop|be&3S n|summer adv|outside conj|because
+	det:art|the adj|window&dn-POSS adj|open coord|and det:art|the
+	n|bush-PL v|look adj|health&dn-Y +...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|3|PRED 7|9|DET 8|9|MOD
+	9|6|OM 10|13|LINK 11|12|DET 12|13|SUBJ 13|9|CMOD 14|13|PRED 15|3|PUNCT
+*PAR:	and &uh (..) she's dryin(g) dishes with her apron on . 63237_68248
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL prep|with
+	det:poss|her n|apron adv|on .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|4|PUNCT
+*PAR:	(.) and the cookie jar's lookin(g) full . 68248_71487
+%mor:	coord|and det:art|the n|cookie n|jar~aux|be&3S part|look-PRESP
+	adj|full .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PRED 8|6|PUNCT
+*INV:	(..) okay . 71487_74181
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	that's it . [+ exc] 74181_75959
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	alright thanks . 75959_77585
+%mor:	co|alright co|thanks .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

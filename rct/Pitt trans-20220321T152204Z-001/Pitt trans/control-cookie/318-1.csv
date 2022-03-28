@@ -1,0 +1,64 @@
+@UTF8
+@PID:	11312/t-00002400-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|59;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	318-1, audio
+*INV:	okay great . 0_1963
+%mor:	co|okay adj|great .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	xxx and there's the picture . 1963_3969
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	well let's see . [+ exc] 3969_8141
+%mor:	co|well v|let~pro:obj|us v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	the girl is whisperin(g) to be quiet (be)cause mother might find
+	out that the he's is standing on a school [: stool] [* p:w-ret] [//]
+	stool which is bending over . 8141_15300
+%mor:	det:art|the n|girl aux|be&3S part|whisper-PRESP inf|to aux|be
+	adj|quiet conj|because n|mother mod|might v|find adv|out comp|that
+	det:art|the pro:sub|he~aux|be&3S aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool pro:rel|which aux|be&3S part|bend-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|PRED 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|6|CJCT 12|11|JCT 13|18|LINK 14|18|DET 15|18|SUBJ
+	16|18|AUX 17|18|AUX 18|12|CPOBJ 19|18|JCT 20|21|DET 21|19|POBJ 22|24|LINK
+	23|24|AUX 24|21|CMOD 25|24|JCT 26|4|PUNCT
+*PAR:	and he's reachin(g) in a cookie jar and he has a cookie . 15300_17816
+%mor:	coord|and pro:sub|he~aux|be&3S part|reach-PRESP prep|in det:art|a
+	n|cookie n|jar coord|and pro:sub|he v|have&3S det:art|a n|cookie .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|11|LINK 10|11|SUBJ 11|4|CJCT 12|13|DET 13|11|OBJ 14|4|PUNCT
+*PAR:	and she's grabbing for the one that he has in his left hand . 17816_21099
+%mor:	coord|and pro:sub|she~aux|be&3S part|grab-PRESP prep|for
+	det:art|the pro:indef|one pro:rel|that pro:sub|he aux|have&3S
+	prep|in det:poss|his adj|left n|hand .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|4|PUNCT
+*PAR:	and the sink is running over with water for some reason or other
+	while she's drying (.) a dish and looking out the window and
+	stepping in a puddle of water . 21107_31222
+%mor:	coord|and det:art|the n|sink aux|be&3S part|run-PRESP adv|over
+	prep|with n|water prep|for qn|some n|reason coord|or qn|other
+	conj|while pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|dish
+	coord|and part|look-PRESP prep|out det:art|the n|window coord|and
+	n:gerund|step-PRESP prep|in det:art|a n|puddle prep|of n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|5|JCT 10|11|QUANT 11|9|POBJ 12|5|CONJ 13|12|COORD 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|5|CJCT 18|19|DET 19|17|OBJ 20|17|CONJ 21|20|COORD 22|21|JCT
+	23|24|DET 24|22|POBJ 25|21|CONJ 26|25|COORD 27|26|JCT 28|29|DET
+	29|27|POBJ 30|29|NJCT 31|30|POBJ 32|5|PUNCT
+*PAR:	(..) and the race horse is jumping through the window . [+ exc] 31222_38555
+%mor:	coord|and det:art|the n|race n|horse aux|be&3S part|jump-PRESP
+	prep|through det:art|the n|window .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	no . [+ exc] 38555_38912
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	&=laughs okay good . 38912_41200
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

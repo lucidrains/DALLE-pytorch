@@ -1,0 +1,68 @@
+@UTF8
+@PID:	11312/t-00002724-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|female|ProbableAD||Participant|12||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	690-0, audio
+*INV:	picture and tell me everything that you see happening in that
+	picture . 0_3864
+%mor:	n|picture coord|and v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you co|see n:gerund|happen-PRESP adv|in
+	det:dem|that n|picture .
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|3|OBJ2 5|3|OBJ 6|9|LINK 7|9|SUBJ
+	8|9|COM 9|5|CMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|1|PUNCT
+*INV:	everything that's going on in there . 3864_6000
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|4|JCT 7|6|POBJ
+	8|1|PUNCT
+*INV:	what do you see happening ? 6000_16000
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|happen-PRESP ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	oh you want me to &t &t on that ? [+ exc] 16000_17700
+%mor:	co|oh pro:per|you v|want pro:obj|me inf|to prep|on pro:dem|that ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|JCT 7|6|POBJ 8|3|PUNCT
+*INV:	yeah <you can> [/] you can just tell me . 16800_18446
+%mor:	co|yeah pro:per|you mod|can adv|just v|tell pro:obj|me .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	oh okay &uh looks like the mother is doing [//] washing the dishes
+	. 18446_23118
+%mor:	co|oh co|okay v|look-3S prep|like det:art|the n|mother aux|be&3S
+	part|wash-PRESP det:art|the n|dish-PL .
+%gra:	1|3|COM 2|3|COM 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|8|AUX 8|3|COMP
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*PAR:	and &uh the little boy is &=sighs tryin(g) to get cookies <up the
+	cookie jar> [//] up in the cookie jar . 23118_32627
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S part|try-PRESP
+	inf|to v|get n|cookie-PL adv|up prep|in det:art|the n|cookie n|jar .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|8|OBJ 10|8|JCT 11|8|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|6|PUNCT
+*PAR:	and there's a little girl with him . 32627_35553
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a adj|little n|girl
+	prep|with pro:obj|him .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|NJCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	and &uh that's [//] the [/] &uh the [/] &uh oh the bench [: stool]
+	[* s:r] or what do you call it &uh is [//] it looks like it's gonna
+	[: going to ] fall . 35553_48454
+%mor:	coord|and co|oh det:art|the n|stool coord|or pro:int|what mod|do
+	pro:per|you v|call pro:per|it pro:per|it v|look-3S conj|like
+	pro:per|it~aux|be&3S part|go-PRESP inf|to v|fall .
+%gra:	1|12|LINK 2|12|COM 3|4|DET 4|12|JCT 5|4|CONJ 6|9|LINK 7|9|AUX 8|9|SUBJ
+	9|5|COORD 10|9|OBJ 11|12|SUBJ 12|0|ROOT 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|12|COMP 17|18|INF 18|16|COMP 19|12|PUNCT
+*PAR:	and &um that's [/] &uh that's about all I can see . [+ exc] 48454_58418
+%mor:	coord|and pro:dem|that~cop|be&3S adv|about adv|all pro:sub|I
+	mod|can v|see .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|8|JCT 5|8|JCT 6|8|SUBJ 7|8|AUX 8|3|CPRED
+	9|3|PUNCT
+*PAR:	and those [//] I guess this is breakfast . 58418_63173
+%mor:	coord|and pro:sub|I v|guess pro:dem|this cop|be&3S n|breakfast .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|PRED 7|3|PUNCT
+*PAR:	&=hums . [+ exc] 63173_68000
+*INV:	okay that's fine . 68000_69537
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

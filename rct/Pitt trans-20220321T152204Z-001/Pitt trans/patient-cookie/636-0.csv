@@ -1,0 +1,67 @@
+@UTF8
+@PID:	11312/t-00002708-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|77;|male|ProbableAD||Participant|14||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	636-0, audio
+*INV:	what I want you to do is take a good look at this picture . 0_4780
+%mor:	pro:int|what pro:sub|I v|want pro:per|you inf|to v|do cop|be&3S
+	v|take det:art|a adj|good v|look prep|at det:dem|this n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|7|CPRED
+	9|11|DET 10|11|MOD 11|8|OBJ 12|11|JCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*INV:	and tell me everything that you see going on in that picture . 4780_8200
+%mor:	coord|and v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:dem|that
+	n|picture .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*INV:	tell me everything that you see happening . 8200_11228
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|happen-PRESP .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|1|PUNCT
+*INV:	tell me everything +/. 11228_19500
+%mor:	v|tell pro:obj|me pro:indef|everything +/.
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|1|PUNCT
+*PAR:	+< he must be pickin(g) apples here . 19000_20785
+%mor:	pro:sub|he mod|must aux|be part|pick-PRESP n|apple-PL adv|here .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*INV:	okay . 20785_21800
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(be)cause he's on the ladder [: stool] [* s:r] and he's got both
+	hands open and he can be . 21800_28902
+%mor:	conj|because pro:sub|he~cop|be&3S prep|on det:art|the n|stool
+	coord|and pro:sub|he~aux|be&3S part|get&PASTP qn|both n|hand-PL
+	adj|open coord|and pro:sub|he mod|can cop|be .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|12|QUANT 12|10|OBJ 13|12|POSTMOD 14|17|LINK
+	15|17|SUBJ 16|17|AUX 17|3|CJCT 18|3|PUNCT
+*INV:	anything else that you see happening here ? 28902_33744
+%mor:	pro:indef|anything post|else pro:dem|that pro:per|you v|see
+	n:gerund|happen-PRESP adv|here ?
+%gra:	1|3|SUBJ 2|1|PQ 3|5|LINK 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|PUNCT
+*PAR:	and the chair [: stool] [* s:r] was fallin(g) . 33744_37308
+%mor:	coord|and det:art|the n|stool aux|be&PAST&13S part|fall-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*INV:	okay . 37308_38939
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 38939_41725
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	the baby's cryin(g) . 41725_48500
+%mor:	det:art|the n|baby~aux|be&3S part|cry-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*INV:	okay anything else that you see happening ? 48500_52247
+%mor:	co|okay pro:indef|anything post|else comp|that pro:per|you v|see
+	n:gerund|happen-PRESP ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PQ 4|6|LINK 5|6|SUBJ 6|2|CMOD 7|6|OBJ 8|2|PUNCT
+*PAR:	that's all . [+ exc] 52247_53000
+%mor:	pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 53000_54551
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,106 @@
+@UTF8
+@PID:	11312/t-00002546-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|male|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	203-0, audio
+*INV:	tell me all of the action that you can see . 0_2600
+%mor:	v|tell pro:obj|me post|all prep|of det:art|the n|action
+	pro:rel|that pro:per|you mod|can v|see .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|6|CMOD 11|1|PUNCT
+*PAR:	action ? [+ exc] 2600_4306
+%mor:	n|action ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	action . 4306_4844
+%mor:	n|action .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	what's going on in the picture ? [+ exc] 4844_6710
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	there's a kid up look in the kɪkɪ@u [: cookie] [* pn-ret] [//]
+	cookie &=laughs (.) jar . [+ gram] 6710_14756
+%mor:	pro:exist|there~cop|be&3S det:art|a n|kid adv|up co|look prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|4|XMOD 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|2|PUNCT
+*PAR:	the boy's, he got (th)em . 14756_17848
+%mor:	det:art|the adj|boy&dn-POSS cm|cm pro:sub|he v|get&PAST
+	pro:obj|them .
+%gra:	1|2|DET 2|0|INCROOT 3|2|LP 4|5|SUBJ 5|2|ENUM 6|5|OBJ 7|2|PUNCT
+*PAR:	and the girl wants it . 17848_19940
+%mor:	coord|and det:art|the n|girl v|want-3S pro:per|it .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	(...) &hm it must [/] must be the mother . 19940_35101
+%mor:	pro:per|it mod|must cop|be det:art|the n|mother .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	(.) she's washin(g) dishes . 35101_39364
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	a dish fell down <or &s I don't> [//] and broke . 39364_43784
+%mor:	det:art|a n|dish v|fall&PAST adv|down coord|and adj|broke .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|CONJ 6|5|COORD 7|3|PUNCT
+*PAR:	(...) kid's [/] kid's on a (.) stool tippin(g) over &=laughs .
+	[+ gram] 43784_65963
+%mor:	n|kid~aux|be&3S prep|on det:art|a n|stool part|tip-PRESP adv|over .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|5|XMOD 7|6|JCT 8|2|PUNCT
+*INV:	mhm . 65963_68111
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	an(d) (th)is action would be she's still so washin(g) up the dishes
+	[//] dɪʃɪn@u [: dishes] [* p:n] . [+ gram] 68111_74041
+%mor:	coord|and det:dem|this n|action mod|will&COND cop|be
+	pro:sub|she~aux|be&3S adv|still adv|so part|wash-PRESP prep|up
+	det:art|the n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|10|SUBJ 7|10|AUX 8|7|JCT
+	9|10|JCT 10|5|PRED 11|10|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*INV:	okay . 74041_74624
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(...) I think that's <all that> [/] all that hittin(g) [/]
+	hittin(g) in my <kɪkɪ@u [: cookie] [* pn-ret] jar> [//] &c cookie
+	jar &=laughs . [+ cir] 74624_87208
+%mor:	pro:sub|I v|think comp|that~aux|be&3S adv|all adv|that
+	part|hit-PRESP prep|in det:poss|my n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|7|SUBJ 4|7|AUX 5|6|JCT 6|7|JCT 7|2|COMP 8|7|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|2|PUNCT
+*PAR:	(..) and he's about to tip over with on a stool . [+ gram] 87208_93250
+%mor:	coord|and pro:sub|he~cop|be&3S adv|about inf|to v|tip adv|over
+	prep|with adv|on det:art|a n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|6|JCT 8|6|JCT
+	9|8|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*INV:	(..) how_(a)bout over here ? 93250_98222
+%mor:	pro:int|how_about prep|over n|here ?
+%gra:	1|0|INCROOT 2|1|JCT 3|2|POBJ 4|1|PUNCT
+*INV:	is there anything else goin(g) on over there ? 98222_100351
+%mor:	cop|be&3S adv|there pro:indef|anything post|else part|go-PRESP
+	adv|on prep|over adv|there ?
+%gra:	1|0|ROOT 2|1|SUBJ 3|1|PRED 4|3|PQ 5|3|XMOD 6|5|JCT 7|5|JCT 8|7|JCT
+	9|1|PUNCT
+*PAR:	yeah the water spill out xxx on the floor &=laughs . 100351_104031
+%mor:	co|yeah det:art|the n|water v|spill adv|out prep|on det:art|the
+	n|floor .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*INV:	(..) anything else ? 104031_110896
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	that's xxx . [+ exc] 110896_112312
+%mor:	pro:dem|that~cop|be&3S .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	(...) okay +/. 112312_122677
+%mor:	co|okay +/.
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< I wanna see here a minute . [+ exc] 122177_123640
+%mor:	pro:sub|I v|want~inf|to co|see adv|here det:art|a n|minute .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|4|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*INV:	that's it . 123347_124213
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	good . 124213_125013
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

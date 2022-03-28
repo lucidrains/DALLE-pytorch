@@ -1,0 +1,42 @@
+@UTF8
+@PID:	11312/t-00002596-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|80;|female|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	271-2, audio
+*INV:	tell me what's going on in the picture . 0_1947
+%mor:	v|tell pro:obj|me pro:int|what~aux|be&3S part|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|AUX 5|1|COMP 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*PAR:	(..) the little boy is in the cookie jar and standing on a stool
+	that's falling out from under him . 1947_15673
+%mor:	det:art|the adj|little n|boy cop|be&3S prep|in det:art|the n|cookie
+	n|jar coord|and part|stand-PRESP prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|fall-PRESP adv|out prep|from adv|under
+	pro:obj|him .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|CONJ 10|9|COORD 11|10|JCT 12|13|DET 13|11|POBJ 14|16|LINK 15|16|AUX
+	16|13|CMOD 17|16|JCT 18|16|JCT 19|18|JCT 20|19|POBJ 21|4|PUNCT
+*PAR:	(.) and the mother has [//] (.) is washing dishes in the kitchen
+	sink but she doesn't have the plug in and she's having a flood . 15673_27596
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	prep|in det:art|the n|kitchen n|sink conj|but pro:sub|she
+	mod|do&3S~neg|not v|have det:art|the n|plug adv|in coord|and
+	pro:sub|she~aux|be&3S part|have-PRESP det:art|a n|flood .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|15|LINK 12|15|SUBJ 13|15|AUX 14|13|NEG 15|5|CJCT
+	16|17|DET 17|15|OBJ 18|15|JCT 19|22|LINK 20|22|SUBJ 21|22|AUX 22|15|CJCT
+	23|24|DET 24|22|OBJ 25|5|PUNCT
+*INV:	(..) okay . 27596_35395
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	that's it . [+ exc] 35395_36692
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay . 36692_39000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

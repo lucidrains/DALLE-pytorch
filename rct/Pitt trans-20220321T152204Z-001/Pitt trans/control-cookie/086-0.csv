@@ -1,0 +1,177 @@
+@UTF8
+@PID:	11312/t-00002238-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	086-0, audio
+*INV:	now you just look at the picture and you just tell me everything
+	that's going on . 0_3207
+%mor:	adv|now pro:per|you adv|just v|look prep|at det:art|the n|picture
+	coord|and pro:per|you adv|just v|tell pro:obj|me
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|JCT 11|4|CJCT 12|11|OBJ 13|11|OBJ 14|16|LINK 15|16|AUX
+	16|13|CMOD 17|16|JCT 18|4|PUNCT
+*PAR:	+< oh I was xxx . [+ exc] 1500_3007
+%mor:	co|oh pro:sub|I cop|be&PAST&13S .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	okay ? 3207_3538
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh this is gonna be like looking at those artistic things and
+	fiddling when we get there . [+ exc] 3538_8825
+%mor:	co|oh pro:dem|this aux|be&3S part|go-PRESP~inf|to cop|be prep|like
+	n:gerund|look-PRESP prep|at det:dem|those adj|artistic n|thing-PL
+	coord|and n|fiddling conj|when pro:sub|we v|get adv|there .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|7|POBJ
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|8|CONJ 14|13|COORD 15|17|LINK
+	16|17|SUBJ 17|4|CJCT 18|17|JCT 19|4|PUNCT
+*INV:	&=laughs . 8825_9653
+*PAR:	+< xxx at <her dishwasher's or> [//] her dishsink@u [: x@n]
+	[* n:uk] is overflowing on the floor (be)cause the faucet is running
+	. 9000_15392
+%mor:	prep|at det:poss|her neo|x aux|be&3S over#part|flow-PRESP prep|on
+	det:art|the n|floor conj|because det:art|the n|faucet aux|be&3S
+	part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|5|CJCT 14|5|PUNCT
+*PAR:	and she's standing in it . 15392_18875
+%mor:	coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|in pro:per|it
+	.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	yet her kiddos are robbing the cookie jar and the little boy is
+	falling off of the stool . 18875_24733
+%mor:	adv|yet det:poss|her n|kiddo-PL aux|be&PRES part|rob-PRESP
+	det:art|the n|cookie n|jar coord|and det:art|the adj|little n|boy
+	aux|be&3S part|fall-PRESP adv|off prep|of det:art|the n|stool .
+%gra:	1|5|JCT 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|14|LINK 10|12|DET 11|12|MOD 12|14|SUBJ 13|14|AUX 14|5|CJCT 15|14|JCT
+	16|14|JCT 17|18|DET 18|16|POBJ 19|5|PUNCT
+*PAR:	he's getting some cookies though . 24733_27414
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP qn|some n|cookie-PL adv|though
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	and &uh the girl doesn't have hers yet . 27414_31737
+%mor:	coord|and det:art|the n|girl mod|do&3S~neg|not v|have pro:poss|hers
+	adv|yet .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|4|NEG 6|0|ROOT 7|6|OBJ 8|7|JCT
+	9|6|PUNCT
+*PAR:	&um I don't think the perspective on the corner's quite right in
+	the room . [+ exc] 31737_37915
+%mor:	pro:sub|I mod|do~neg|not v|think det:art|the n|perspective prep|on
+	det:art|the n|corner~cop|be&3S adv|quite adv|right prep|in
+	det:art|the n|room .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|JCT 11|10|JCT 12|13|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	&um you wanna know how many dishes ? [+ exc] 37915_40825
+%mor:	pro:per|you v|want~inf|to v|know pro:int|how qn|many n|dish-PL ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|7|LINK 6|7|QUANT 7|4|COMP
+	8|2|PUNCT
+*PAR:	there are two cups and a plate on the counter . 40825_43426
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL coord|and
+	det:art|a n|plate prep|on det:art|the n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD
+	8|7|NJCT 9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	and &uh she's drying a plate . 43426_46724
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|plate .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and &uh you_know xxx curtains on the windows are tied back . 46724_52909
+%mor:	coord|and co|you_know n|curtain-PL prep|on det:art|the n|window-PL
+	aux|be&PRES part|tie-PASTP adv|back .
+%gra:	1|8|LINK 2|3|COM 3|8|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|8|AUX 8|0|ROOT
+	9|8|JCT 10|8|PUNCT
+*PAR:	and a real pretty view out the window . [+ gram] 52909_55885
+%mor:	coord|and det:art|a adj|real adj|pretty n|view prep|out det:art|the
+	n|window .
+%gra:	1|5|LINK 2|5|DET 3|5|MOD 4|5|MOD 5|0|INCROOT 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	you see the [//] a wing of the house, the living room and the path
+	around the house . 55885_61028
+%mor:	pro:per|you v|see det:art|a n|wing prep|of det:art|the n|house
+	cm|cm det:art|the n:gerund|live-PRESP n|room coord|and det:art|the
+	n|path prep|around det:art|the n|house .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|2|LP
+	9|11|DET 10|11|MOD 11|2|OBJ 12|11|CONJ 13|14|DET 14|12|COORD 15|14|NJCT
+	16|17|DET 17|15|POBJ 18|2|PUNCT
+*PAR:	and the landscaping is bushes up close and &uh xxx happy evergreens
+	and stuff . 61028_68062
+%mor:	coord|and det:art|the n:gerund|landscape-PRESP cop|be&3S n|bush-PL
+	adv|up adj|close coord|and adj|happy n|evergreen-PL coord|and
+	n|stuff .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|NJCT 7|6|POBJ 8|7|CONJ
+	9|10|MOD 10|8|COORD 11|10|CONJ 12|11|COORD 13|4|PUNCT
+*INV:	+< mhm . 65742_67099
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	outside there is grass on the ground and there's a tree in at these
+	hedges . 68062_74696
+%mor:	prep|outside n|there cop|be&3S n|grass prep|on det:art|the n|ground
+	coord|and pro:exist|there~cop|be&3S det:art|a n|tree adv|in prep|at
+	det:dem|these n|hedge-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|SUBJ 10|3|CJCT 11|12|DET 12|10|PRED 13|12|NJCT 14|13|JCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*INV:	okay . 74696_75658
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	could you repeat to me what you said over there ? 75658_78446
+%mor:	mod|could pro:per|you v|repeat prep|to pro:obj|me pro:int|what
+	pro:per|you v|say&PAST prep|over n|there ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|4|POBJ 6|8|LINK 7|8|SUBJ 8|3|COMP
+	9|8|JCT 10|9|POBJ 11|3|PUNCT
+*PAR:	yeah there's +/. [+ exc] 78446_80046
+%mor:	co|yeah pro:exist|there~cop|be&3S +/.
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	+< didn't get it all . 79646_80609
+%mor:	mod|do&PAST~neg|not v|get pro:per|it adv|all .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|PUNCT
+*PAR:	he's &uh getting cookies out_of the cookie jar and he's falling off
+	the stool . 80609_86702
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar coord|and pro:sub|he~aux|be&3S
+	part|fall-PRESP prep|off det:art|the n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|3|CJCT 13|12|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	he's got two cookies already . 86702_88065
+%mor:	pro:sub|he~aux|be&3S part|get&PASTP det:num|two n|cookie-PL
+	adv|already .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*PAR:	he's giving one to his sister and he's gonna have one . 88065_91018
+%mor:	pro:sub|he~aux|be&3S part|give-PRESP det:num|one prep|to
+	det:poss|his n|sister coord|and pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|have pro:indef|one .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|3|CJCT 12|13|INF 13|11|COMP 14|13|OBJ 15|3|PUNCT
+*PAR:	and then <he doesn't> [//] even if he falls he's gonna have his
+	cookies . 91018_94784
+%mor:	coord|and adv:tem|then v|even conj|if pro:sub|he v|fall-3S
+	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|have det:poss|his
+	n|cookie-PL .
+%gra:	1|3|LINK 2|3|JCT 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|CJCT 7|9|SUBJ 8|9|AUX
+	9|6|COMP 10|11|INF 11|9|COMP 12|13|DET 13|11|OBJ 14|3|PUNCT
+*PAR:	she has her finger up to her mouth . 94784_96404
+%mor:	pro:sub|she aux|have&3S det:poss|her n|finger adv|up prep|to
+	det:poss|her n|mouth .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|DET 4|0|ROOT 5|4|JCT 6|4|NJCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	I don't know whether she's saying “sh@o” or “I want one too” . 96404_99736
+%mor:	pro:sub|I mod|do~neg|not v|know comp|whether pro:sub|she~aux|be&3S
+	part|say-PRESP on|sh coord|or pro:sub|I v|want det:num|one adv|too .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|8|OBJ 10|12|LINK 11|12|SUBJ 12|4|CJCT 13|12|OBJ 14|12|JCT 15|4|PUNCT
+*PAR:	&um I don't know how the mother can be so unaware ! 99736_104259
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|how det:art|the n|mother
+	mod|can cop|be adv|so un#adj|aware !
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|9|LINK 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|11|JCT 11|9|PRED 12|4|PUNCT
+*INV:	&=laughs okay that's fine . 104259_105663
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	thank you . 105663_106489
+%mor:	v|thank pro:per|you .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@End

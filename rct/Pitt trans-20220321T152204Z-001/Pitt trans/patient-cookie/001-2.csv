@@ -1,0 +1,97 @@
+@UTF8
+@PID:	11312/t-00002421-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|59;|male|ProbableAD||Participant|11||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	001-2, audio
+*INV:	you see going on in the picture . 0_1808
+%mor:	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:art|the
+	n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|JCT 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*INV:	tell me all the action . 1808_3609
+%mor:	v|tell pro:obj|me adv|all det:art|the n|action .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|JCT 4|5|DET 5|1|OBJ 6|1|PUNCT
+*PAR:	mhm . 3609_4282
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay ? 4282_5096
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's a young boy &uh going in a cookie jar . 5096_10600
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|young n|boy part|go-PRESP
+	prep|in det:art|a n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|XMOD 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|2|PUNCT
+*PAR:	and there's a [/] &lit a girl [//] young girl . 10600_13143
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a adj|young n|girl .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|3|PUNCT
+*PAR:	and I'm sayin(g) he's a boy (be)cause <you can> [//] &hard it's
+	hardly [//] hard to tell anymore . 13143_18888
+%mor:	coord|and pro:sub|I~aux|be&1S part|say-PRESP pro:sub|he~cop|be&3S
+	det:art|a n|boy conj|because pro:per|it~cop|be&3S adj|hard inf|to
+	v|tell adv|anymore .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|8|DET 8|6|PRED
+	9|11|LINK 10|11|SUBJ 11|4|CJCT 12|11|PRED 13|14|INF 14|12|XMOD 15|14|JCT
+	16|4|PUNCT
+*INV:	&=laughs . 18888_19885
+*PAR:	&uh and he's [/] he's in the &c &t cookie jar . 19885_23542
+%mor:	coord|and pro:sub|he~cop|be&3S prep|in det:art|the n|cookie n|jar .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	and there's a &s stool that he is on and it already is starting to
+	fall over . 23542_30444
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|stool pro:rel|that
+	pro:sub|he cop|be&3S adv|on coord|and pro:per|it adv|already
+	aux|be&3S part|start-PRESP inf|to v|fall adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|8|LINK 7|8|SUBJ 8|5|CMOD
+	9|8|JCT 10|14|LINK 11|14|SUBJ 12|14|JCT 13|14|AUX 14|8|CJCT 15|16|INF
+	16|14|COMP 17|16|JCT 18|3|PUNCT
+*PAR:	and so is the water in the sink &uh is &ev overflowing in the sink
+	. [+ gram] 30444_36811
+%mor:	coord|and adv|so cop|be&3S det:art|the n|water prep|in det:art|the
+	n|sink aux|be&3S over#part|flow-PRESP prep|in det:art|the n|sink .
+%gra:	1|3|LINK 2|3|JCT 3|10|LINK 4|5|DET 5|10|SUBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|10|AUX 10|0|ROOT 11|10|JCT 12|13|DET 13|11|POBJ 14|10|PUNCT
+*INV:	okay anything else ? 36811_39837
+%mor:	co|okay pro:indef|anything post|else ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PQ 4|2|PUNCT
+*PAR:	&hm I [/] I don't know about the [//] this hickey here I [//]
+	whether that's more than what I said . [+ es] 39837_45689
+%mor:	pro:sub|I mod|do~neg|not v|know prep|about det:dem|this n|hickey
+	adv|here comp|whether pro:rel|that~cop|be&3S adv|more prep|than
+	pro:int|what pro:sub|I v|say&PAST .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|8|POBJ 10|11|LINK 11|9|CMOD 12|11|JCT 13|11|JCT 14|16|LINK 15|16|SUBJ
+	16|13|CPOBJ 17|4|PUNCT
+*PAR:	&uh like <it &uh the wife or &g I_mean> [//] &uh the [/] the mother
+	is near the girl . 45689_52722
+%mor:	prep|like det:art|the n|mother cop|be&3S prep|near det:art|the
+	n|girl .
+%gra:	1|4|JCT 2|3|DET 3|1|POBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and she's [//] &uh &w &uh &h she has [/] &uh has +/. 52722_58250
+%mor:	coord|and pro:sub|she v|have&3S +/.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	oh &uh I [/] I can't think of the +... 58250_64444
+%mor:	co|oh pro:sub|I mod|can~neg|not v|think prep|of det:art|the +...
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT
+*PAR:	she has &uh the she's tryin(g) to wipe [/] &uh wipe dishes . 64444_71010
+%mor:	pro:sub|she v|have&3S det:art|the pro:sub|she~aux|be&3S
+	part|try-PRESP prep|to n|wipe n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|COMP 7|6|JCT 8|9|MOD
+	9|7|POBJ 10|2|PUNCT
+*INV:	okay . 71010_71809
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh &a and stop the water from going out . 71809_74738
+%mor:	co|oh coord|and v|stop det:art|the n|water prep|from
+	n:gerund|go-PRESP adv|out .
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|5|DET 5|3|OBJ 6|3|JCT 7|6|POBJ 8|7|JCT
+	9|1|PUNCT
+*INV:	okay . 74738_76386
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 76386_80231
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

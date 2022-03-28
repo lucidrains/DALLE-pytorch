@@ -1,0 +1,117 @@
+@UTF8
+@PID:	11312/t-00002345-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	210-1, audio
+*INV:	tell me all the action you see going on in the picture . 0_3286
+%mor:	v|tell pro:obj|me adv|all det:art|the n|action pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|JCT 4|5|DET 5|1|OBJ 6|7|SUBJ 7|5|CMOD 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|1|PUNCT
+*PAR:	mother's dryin(g) the dishes . 3286_6759
+%mor:	n|mother~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	Junior's in the cookie jar handin(g) a cookie to his little sister
+	. 6759_12019
+%mor:	n:prop|Junior~cop|be&3S prep|in det:art|the n|cookie n|jar
+	part|hand-PRESP det:art|a n|cookie prep|to det:poss|his adj|little
+	n|sister .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|6|DET 5|6|MOD 6|3|POBJ 7|2|XJCT 8|9|DET
+	9|7|OBJ 10|7|JCT 11|13|DET 12|13|MOD 13|10|POBJ 14|2|PUNCT
+*PAR:	the water's spilling out o(f) the sink . 12019_14401
+%mor:	det:art|the n|water~aux|be&3S part|spill-PRESP adv|out prep|of
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the window is open . 14401_15699
+%mor:	det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	the door to the cupboard where the cookie jar is open and the [/]
+	the top of the cookie jar is off . 15699_22838
+%mor:	det:art|the n|door prep|to det:art|the n|cupboard pro:rel|where
+	det:art|the n|cookie n|jar cop|be&3S adj|open coord|and det:art|the
+	n|top prep|of det:art|the n|cookie n|jar cop|be&3S adv|off .
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|10|LINK 7|9|DET 8|9|MOD
+	9|10|SUBJ 10|5|CMOD 11|10|PRED 12|19|LINK 13|14|DET 14|19|SUBJ
+	15|14|NJCT 16|18|DET 17|18|MOD 18|15|POBJ 19|10|CJCT 20|19|JCT 21|2|PUNCT
+*PAR:	cookie jar is quite full . [+ gram] 22838_24923
+%mor:	n|cookie n|jar cop|be&3S adv|quite adj|full .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|3|PUNCT
+*PAR:	mother has two cups and a dish on the sink . 25135_29337
+%mor:	n|mother v|have&3S det:num|two n|cup-PL coord|and det:art|a n|dish
+	prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|OBJ 5|4|CONJ 6|7|DET 7|5|COORD 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	looks like a nice day . [+ gram] 29337_32263
+%mor:	v|look-3S prep|like det:art|a adj|nice n|day .
+%gra:	1|0|ROOT 2|1|JCT 3|5|DET 4|5|MOD 5|2|POBJ 6|1|PUNCT
+*PAR:	&uh action we're lookin(g) for action . [+ exc] 32263_35566
+%mor:	n|action pro:sub|we~aux|be&PRES part|look-PRESP prep|for n|action .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	the kitchen stool that Junior's on is about ready to fall over . 35566_39719
+%mor:	det:art|the n|kitchen n|stool pro:rel|that n:prop|Junior~cop|be&3S
+	adv|on cop|be&3S adv|about adj|ready inf|to v|fall adv|over .
+%gra:	1|3|DET 2|3|MOD 3|8|SUBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|JCT 8|0|ROOT
+	9|10|JCT 10|8|PRED 11|12|INF 12|10|XMOD 13|12|JCT 14|8|PUNCT
+*PAR:	what else do we have ? [+ exc] 39719_43630
+%mor:	pro:int|what post|else mod|do pro:sub|we v|have ?
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|SUBJ 5|0|ROOT 6|5|PUNCT
+*PAR:	&uh that's all the action I see . [+ exc] 43630_48113
+%mor:	pro:dem|that~cop|be&3S adv|all det:art|the n|action pro:sub|I v|see
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|DET 5|2|PRED 6|7|SUBJ 7|5|CMOD 8|2|PUNCT
+*PAR:	oh &uh Sissy is holdin(g) her finger up to her mouth like +"/. 48113_52971
+%mor:	co|oh n:prop|Sissy aux|be&3S part|hold-PRESP det:poss|her n|finger
+	adv|up prep|to det:poss|her n|mouth prep|like +"/.
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|JCT 12|4|PUNCT
+*PAR:	+" don't make any noise or mother (wi)ll turn around . 52971_55834
+%mor:	mod|do~neg|not v|make qn|any n|noise coord|or n|mother mod|will
+	v|turn adv|around .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|3|CJCT 10|9|JCT 11|3|PUNCT
+*PAR:	(.) I [//] (.) I've already said he's reachin(g) a cookie to her
+	and goin(g) for another one just before the stool falls down . 56155_69009
+%mor:	pro:sub|I~aux|have adv|already part|say&PASTP pro:sub|he~aux|be&3S
+	part|reach-PRESP det:art|a n|cookie inf|to pro:obj|her coord|and
+	part|go-PRESP prep|for qn|another det:num|one adj|just prep|before
+	det:art|the n|stool v|fall-3S adv|down .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|7|SUBJ 6|7|AUX 7|4|COMP 8|9|DET
+	9|7|OBJ 10|11|INF 11|9|XMOD 12|11|CONJ 13|12|COORD 14|13|JCT 15|21|QUANT
+	16|21|SUBJ 17|21|JCT 18|17|JCT 19|20|DET 20|18|POBJ 21|14|CPOBJ 22|21|JCT
+	23|4|PUNCT
+*PAR:	his socks are droopin(g) . 69009_71534
+%mor:	det:poss|his n|sock-PL aux|be&PRES part|droop-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	does that count &=laughs ? [+ exc] 71534_73209
+%mor:	mod|do&3S pro:dem|that v|count ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	&=laughs . 73209_73792
+*PAR:	&uh I don't see anything outside . 73792_78495
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything adv|outside .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|PUNCT
+*PAR:	&uh &uh the curtains don't look like they're blowin(g) or anything
+	. 78495_82907
+%mor:	det:art|the n|curtain-PL mod|do~neg|not v|look conj|like
+	pro:sub|they~aux|be&PRES part|blow-PRESP coord|or pro:indef|anything
+	.
+%gra:	1|2|DET 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|COMP 10|9|CONJ 11|10|COORD 12|5|PUNCT
+*PAR:	mother's just standin(g) lookin(g) . 82907_85778
+%mor:	n|mother~aux|be&3S adv|just part|stand-PRESP part|look-PRESP .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|XJCT 6|4|PUNCT
+*PAR:	she's gonna get her feet wet in a minute . 85778_87952
+%mor:	pro:sub|she~aux|be&3S part|go-PRESP~inf|to v|get det:poss|her
+	n|foot&PL adj|wet prep|in det:art|a n|minute .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|7|DET 7|5|OBJ 8|7|POSTMOD
+	9|5|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*INV:	okay that's fine . 87952_89403
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	okay . [+ exc] 89403_90309
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

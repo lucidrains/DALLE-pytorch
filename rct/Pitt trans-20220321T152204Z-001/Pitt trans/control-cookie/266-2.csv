@@ -1,0 +1,117 @@
+@UTF8
+@PID:	11312/t-00002375-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	266-2, audio
+*PAR:	&uh it's &uh a kitchen scene . 0_4873
+%mor:	pro:per|it~cop|be&3S det:art|a n|kitchen n|scene .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|2|PUNCT
+*PAR:	and the mother is doing the dishes . 4873_7270
+%mor:	coord|and det:art|the n|mother aux|be&3S part|do-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	the children are trying to get into the cookie jar . 7270_10991
+%mor:	det:art|the n|child&PL aux|be&PRES part|try-PRESP inf|to v|get
+	prep|into det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	the stool is falling over . 10991_14117
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the water is running over in the sink . 14117_17624
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over prep|in
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the [//] &um &win it looks as though the window is open . 17624_22913
+%mor:	pro:per|it v|look-3S adv|as adv|though det:art|the n|window
+	cop|be&3S adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|7|JCT 5|6|DET 6|7|SUBJ 7|2|COMP 8|7|PRED
+	9|2|PUNCT
+*PAR:	and there (.) is grass and what have you, &t grass and trees
+	outside . 22913_30769
+%mor:	coord|and adv|there cop|be&3S n|grass coord|and pro:int|what v|have
+	pro:per|you cm|cm n|grass coord|and n|tree-PL adv|outside .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|CONJ 6|7|SUBJ 7|5|COORD
+	8|10|SUBJ 9|8|LP 10|7|OBJ 11|10|CONJ 12|11|COORD 13|12|NJCT 14|3|PUNCT
+*PAR:	looks like the curtains might be billowing a little . [+ gram] 30769_34163
+%mor:	v|look-3S prep|like det:art|the n|curtain-PL mod|might aux|be
+	part|billow-PRESP det:art|a adj|little .
+%gra:	1|0|ROOT 2|7|JCT 3|4|DET 4|7|SUBJ 5|7|AUX 6|7|AUX 7|1|COMP 8|9|DET
+	9|7|JCT 10|1|PUNCT
+*PAR:	the little girl is asking the boy for a cookie . 34163_38399
+%mor:	det:art|the adj|little n|girl aux|be&3S part|ask-PRESP det:art|the
+	n|boy prep|for det:art|a n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	and let's see . [+ exc] 38399_41400
+%mor:	coord|and v|let~pro:obj|us v|see .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	the mother's drying the dishes . 41400_43094
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and (..) she's standing in the water . 43094_51672
+%mor:	coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|in
+	det:art|the n|water .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	looks like there are a couple dishes that have already been dried
+	sitting on the sink . [+ gram] 51672_58706
+%mor:	v|look-3S conj|like adv|there cop|be&PRES det:art|a qn|couple
+	n|dish-PL pro:rel|that aux|have adv|already aux|be&PASTP v|dry-PAST
+	part|sit-PRESP prep|on det:art|the n|sink .
+%gra:	1|0|ROOT 2|4|LINK 3|4|SUBJ 4|1|COMP 5|7|DET 6|7|QUANT 7|4|PRED
+	8|12|LINK 9|12|AUX 10|12|JCT 11|12|AUX 12|7|CMOD 13|12|COMP 14|13|JCT 15|16|DET
+	16|14|POBJ 17|1|PUNCT
+*PAR:	(..) I guess that's all I see . [+ exc] 58706_63845
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:indef|all pro:sub|I
+	v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|7|SUBJ 7|5|CMOD
+	8|2|PUNCT
+*INV:	can you tell me what's going on over here ? 63845_66286
+%mor:	mod|can pro:per|you v|tell pro:obj|me pro:int|what~aux|be&3S
+	part|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|7|LINK 6|7|AUX 7|3|COMP 8|7|JCT
+	9|7|JCT 10|9|POBJ 11|3|PUNCT
+*PAR:	pardon me ? [+ exc] 66286_67267
+%mor:	v|pardon pro:obj|me ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	tell me this again . 67267_68415
+%mor:	v|tell pro:obj|me pro:dem|this adv|again .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|1|JCT 5|1|PUNCT
+*PAR:	I might have missed it what you said . [+ exc] 68415_69630
+%mor:	pro:sub|I mod|might aux|have part|miss-PASTP pro:per|it
+	pro:int|what pro:per|you v|say&PAST .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|4|OBJ 6|8|LINK 7|8|SUBJ 8|4|COMP
+	9|4|PUNCT
+*PAR:	oh I said the little boy's tryin(g) to get some cookies out_of the
+	cookie jar . [+ exc] 69630_73400
+%mor:	co|oh pro:sub|I v|say&PAST det:art|the adj|little n|boy~aux|be&3S
+	part|try-PRESP inf|to v|get qn|some n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|8|SUBJ 7|8|AUX 8|3|COMP
+	9|10|INF 10|8|COMP 11|12|QUANT 12|10|OBJ 13|10|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|3|PUNCT
+*INV:	+< okay . 72525_73300
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the little girl's asking for a cookie . [+ exc] 73400_75400
+%mor:	coord|and det:art|the adj|little n|girl~aux|be&3S part|ask-PRESP
+	prep|for det:art|a n|cookie .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	and the stool looks as though it's going to fall over . [+ exc] 75400_78299
+%mor:	coord|and det:art|the n|stool v|look-3S adv|as conj|though
+	pro:per|it~aux|be&3S part|go-PRESP inf|to v|fall adv|over .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|11|INF 11|9|COMP 12|11|JCT 13|4|PUNCT
+*INV:	okay . 78299_79696
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay good . 79696_82285
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

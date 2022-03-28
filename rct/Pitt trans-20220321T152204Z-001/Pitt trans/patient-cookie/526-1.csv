@@ -1,0 +1,114 @@
+@UTF8
+@PID:	11312/t-00002675-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|male|ProbableAD||Participant|13||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	526-1, audio
+*INV:	tell me what's going on in that picture . 0_2432
+%mor:	v|tell pro:obj|me pro:int|what~aux|be&3S part|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|AUX 5|1|COMP 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*PAR:	<there's a little boy or> [//] there's a little girl &s talkin(g)
+	to this boy <up [/] up on the> [/] &t up [/] up on the step+ladder
+	[: stool] [* s:r] . 2432_11456
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|little n|girl
+	part|talk-PRESP prep|to det:dem|this n|boy adv|up prep|on
+	det:art|the n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|XMOD 7|6|JCT 8|9|DET
+	9|7|POBJ 10|5|NJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	&a &a and she's askin(g) him to bring some of this down or whatever
+	it was a jar or whatever it is that [//] so it doesn't [/] &r
+	doesn't break . [+ es] 11456_21947
+%mor:	coord|and pro:sub|she~aux|be&3S part|ask-PRESP pro:obj|him inf|to
+	v|bring pro:indef|some prep|of det:dem|this adv|down coord|or
+	pro:int|whatever pro:per|it cop|be&PAST&13S det:art|a n|jar coord|or
+	pro:int|whatever pro:per|it cop|be&3S adv|so pro:per|it
+	mod|do&3S~neg|not n|break .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|7|OBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|7|CONJ 13|15|LINK 14|15|SUBJ 15|12|COORD
+	16|17|DET 17|15|PRED 18|17|CONJ 19|21|LINK 20|21|SUBJ 21|18|COORD
+	22|26|JCT 23|26|SUBJ 24|26|AUX 25|24|NEG 26|21|PRED 27|4|PUNCT
+*PAR:	there's a mother over here . 21947_24389
+%mor:	pro:exist|there~cop|be&3S det:art|a n|mother prep|over n|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|5|POBJ 7|2|PUNCT
+*PAR:	she's watchin(g) them that she has that break [* s:uk] in her &an
+	hand . [+ gram] 24389_28350
+%mor:	pro:sub|she~aux|be&3S part|watch-PRESP pro:obj|them comp|that
+	pro:sub|she aux|have&3S det:dem|that n|break prep|in det:poss|her
+	n|hand .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|9|LINK 6|9|SUBJ 7|9|AUX 8|9|DET
+	9|3|OBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	and it looks like it's &g &uh very strong &bra or &k hek@u [: x@n]
+	[* n:uk] or &b +... 28350_36200
+%mor:	coord|and pro:per|it v|look-3S conj|like pro:per|it~cop|be&3S
+	adv|very adj|strong coord|or neo|x coord|or +...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|COMP 7|8|JCT 8|6|PRED
+	9|8|CONJ 10|9|COORD 11|6|CONJ 12|3|PUNCT
+*PAR:	she's lookin(g) real [/] real good at it, a jar or whatever . 36200_40500
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP adj|real adj|good prep|at
+	pro:per|it cm|cm det:art|a n|jar coord|or pro:int|whatever .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|MOD 5|3|JCT 6|3|JCT 7|6|POBJ 8|3|LP
+	9|10|DET 10|3|OBJ 11|10|CONJ 12|11|COORD 13|3|PUNCT
+*INV:	what else is goin(g) on over here ? 40500_42054
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on prep|over
+	adv|here ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|4|PUNCT
+*PAR:	she's touchin(g) [//] givin(g) a little [/] little [/] little touch
+	of her mouth . [+ cir] 42054_47298
+%mor:	pro:sub|she~aux|be&3S part|give-PRESP det:art|a adj|little n|touch
+	prep|of det:poss|her n|mouth .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*INV:	that's right . 47298_48277
+%mor:	pro:dem|that~cop|be&3S co|right .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	+< although that's xxx . [+ jar] [+ exc] 47600_49040
+%mor:	conj|although pro:dem|that~cop|be&3S .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	anything else ? 49040_49870
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	and it [/] &uh it looks like &uh he's gonna bring some of that down
+	[/] down for them all . [+ es] 49870_55001
+%mor:	coord|and pro:per|it v|look-3S conj|like pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|bring pro:indef|some prep|of det:dem|that
+	n|down prep|for pro:obj|them post|all .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|9|INF
+	9|7|COMP 10|9|OBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|9|JCT 15|14|POBJ
+	16|15|PQ 17|3|PUNCT
+*PAR:	and [/] and [/] and mother's out there lookin(g) at (th)em . 55301_57999
+%mor:	coord|and adj|mother&dn-POSS prep|out n|there part|look-PRESP
+	prep|at pro:obj|them .
+%gra:	1|0|INCROOT 2|1|COORD 3|2|JCT 4|3|POBJ 5|2|XJCT 6|5|JCT 7|6|POBJ
+	8|1|PUNCT
+*PAR:	and [/] and &uh looks like she's washin(g) this dishes that they
+	already had it . [+ gram] 57999_62600
+%mor:	coord|and v|look-3S conj|like pro:sub|she~aux|be&3S part|wash-PRESP
+	det:dem|this n|dish-PL pro:rel|that pro:sub|they adv|already
+	v|have&PAST pro:per|it .
+%gra:	1|2|LINK 2|0|ROOT 3|6|LINK 4|6|SUBJ 5|6|AUX 6|2|COMP 7|8|DET 8|6|OBJ
+	9|12|LINK 10|12|SUBJ 11|12|JCT 12|8|CMOD 13|12|OBJ 14|2|PUNCT
+*PAR:	and she's [/] she's washin(g) the dishes away from them . 62600_65600
+%mor:	coord|and pro:sub|she~aux|be&3S part|wash-PRESP det:art|the
+	n|dish-PL adv|away prep|from pro:obj|them .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|8|POBJ 10|4|PUNCT
+*INV:	okay . 65200_66000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< it [/] it looks that way . [+ exc] 65600_66800
+%mor:	pro:per|it v|look-3S det:dem|that n|way .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*INV:	good . 66800_67200
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she's cleanin(g) it you_know . 67200_68300
+%mor:	pro:sub|she~aux|be&3S part|clean-PRESP pro:per|it co|you_know .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|COM 6|3|PUNCT
+*INV:	good . 68300_69615
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

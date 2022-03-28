@@ -1,0 +1,67 @@
+@UTF8
+@PID:	11312/t-00002347-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	211-1, audio
+*INV:	all of the action . 0_1478
+%mor:	pro:indef|all prep|of det:art|the n|action .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	do you want me to start ? [+ exc] 1478_3286
+%mor:	mod|do pro:per|you v|want pro:obj|me inf|to v|start ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|3|PUNCT
+*INV:	mhm . 3286_4235
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(.) the water is running over . 4235_10303
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	woman is drying the dishes . [+ gram] 10303_12748
+%mor:	n|woman aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	the boy is climbing up and taking something from the cookie jar . 12748_20200
+%mor:	det:art|the n|boy aux|be&3S part|climb-PRESP adv|up coord|and
+	part|take-PRESP pro:indef|something prep|from det:art|the n|cookie
+	n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|CONJ 7|6|COORD 8|7|OBJ
+	9|8|NJCT 10|12|DET 11|12|MOD 12|9|POBJ 13|4|PUNCT
+*PAR:	the stool is turning over . 20200_22444
+%mor:	det:art|the n|stool aux|be&3S part|turn-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the girl is laughing . 22444_24345
+%mor:	det:art|the n|girl aux|be&3S part|laugh-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&um (..) d(id) I say the woman's drying the dishes ? [+ exc] 24345_35282
+%mor:	mod|do&PAST pro:sub|I v|say det:art|the n|woman~aux|be&3S
+	part|dry-PRESP det:art|the n|dish-PL ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|DET 5|7|SUBJ 6|7|AUX 7|3|COMP 8|9|DET
+	9|7|OBJ 10|3|PUNCT
+*PAR:	the floor is getting wet . 35282_38987
+%mor:	det:art|the n|floor aux|be&3S part|get-PRESP adj|wet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	the lid is off the cookie jar . 38987_43517
+%mor:	det:art|the n|lid cop|be&3S prep|off det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	the girl is reaching . 43517_49572
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	(...) the water is running over the sink but it's also running
+	out_of the spigot . 49572_73553
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|over det:art|the
+	n|sink conj|but pro:per|it~aux|be&3S adv|also part|run-PRESP
+	prep|out_of det:art|the n|spigot .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|12|JCT 12|4|CJCT 13|12|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*INV:	(..) alright ? 73553_84135
+%mor:	co|alright ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	yeah I guess that's all . [+ exc] 83434_85120
+%mor:	co|yeah pro:sub|I n|guess pro:rel|that~cop|be&3S pro:indef|all .
+%gra:	1|3|COM 2|3|SUBJ 3|0|INCROOT 4|5|LINK 5|3|CMOD 6|5|PRED 7|3|PUNCT
+*INV:	+< okay . 84800_85351
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

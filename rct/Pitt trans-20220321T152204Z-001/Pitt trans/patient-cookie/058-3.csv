@@ -1,0 +1,43 @@
+@UTF8
+@PID:	11312/t-00002472-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|male|ProbableAD||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	058-3, audio
+*PAR:	well the [/] &uh the little boy is (.) stealing cookies and
+	givin(g) it to his friend or sister . 0_11394
+%mor:	co|well det:art|the adj|little n|boy aux|be&3S part|steal-PRESP
+	n|cookie-PL coord|and part|give-PRESP pro:per|it prep|to
+	det:poss|his n|friend coord|or n|sister .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|6|CONJ
+	9|8|COORD 10|9|OBJ 11|9|JCT 12|13|DET 13|11|POBJ 14|13|CONJ 15|14|COORD
+	16|6|PUNCT
+*PAR:	he's &uh partially gonna fall off the stool . 11394_16202
+%mor:	pro:sub|he~aux|be&3S adv|partial&dadj-LY part|go-PRESP~inf|to
+	v|fall prep|off det:art|the n|stool .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	his sister is tellin(g) him to be quiet . 16202_21324
+%mor:	det:poss|his n|sister aux|be&3S part|tell-PRESP pro:obj|him inf|to
+	cop|be adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|7|PRED
+	9|4|PUNCT
+*PAR:	the mother is washing dishes . 21324_25281
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	an(d) &uh the water is overflowing onto the floor and she's
+	standing in a puddle an(d) (.) has a smile on her face . 25281_35967
+%mor:	coord|and det:art|the n|water aux|be&3S over#part|flow-PRESP
+	prep|onto det:art|the n|floor coord|and pro:sub|she~aux|be&3S
+	part|stand-PRESP prep|in det:art|a n|puddle coord|and v|have&3S
+	det:art|a n|smile prep|on det:poss|her n|face .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|5|CJCT 13|12|JCT 14|15|DET 15|13|POBJ
+	16|12|CONJ 17|16|COORD 18|19|DET 19|17|OBJ 20|17|JCT 21|22|DET 22|20|POBJ
+	23|5|PUNCT
+*INV:	okay . 35967_41262
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

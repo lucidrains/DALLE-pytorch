@@ -1,0 +1,53 @@
+@UTF8
+@PID:	11312/t-00002197-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	021-2, audio
+*INV:	okay what do you see goin(g) on in that picture ? 0_2653
+%mor:	co|okay pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|that n|picture ?
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	mother's washing dishes . 2653_4200
+%mor:	n|mother~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	the sink is overflowing . 4200_5747
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the boy's falling off a chair [: stool] [* s:r] as he's getting for
+	the cookie . [+ gram] 5747_9070
+%mor:	det:art|the n|boy~aux|be&3S part|fall-PRESP prep|off det:art|a
+	n|stool conj|as pro:sub|he~aux|be&3S part|get-PRESP prep|for
+	det:art|the n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	girl's reaching up for the cookie . [+ gram] 9070_11580
+%mor:	n|girl~aux|be&3S part|reach-PRESP adv|up prep|for det:art|the
+	n|cookie .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	&um I did say the water is running down . [+ exc] 11580_15663
+%mor:	pro:sub|I mod|do&PAST v|say det:art|the n|water aux|be&3S
+	part|run-PRESP adv|down .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|3|PUNCT
+*PAR:	the mother's looking out the window . 15663_20142
+%mor:	det:art|the n|mother~aux|be&3S part|look-PRESP prep|out det:art|the
+	n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	(.) &uh dishes of_course are on the sink . 20142_25119
+%mor:	n|dish-PL co|of_course cop|be&PRES prep|on det:art|the n|sink .
+%gra:	1|3|SUBJ 2|1|COM 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	xxx +... [+ exc] 25119_30295
+*PAR:	think that's about it . [+ exc] 30295_31599
+%mor:	v|think pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|0|ROOT 2|3|SUBJ 3|1|COMP 4|5|JCT 5|3|PRED 6|1|PUNCT
+*INV:	okay . 31599_32671
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	alright good . 32671_34490
+%mor:	co|alright adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,73 @@
+@UTF8
+@PID:	11312/t-00002452-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|63;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	035-1, audio
+*INV:	now there it is . 0_1463
+%mor:	adv|now adv|there pro:per|it cop|be&3S .
+%gra:	1|4|JCT 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	(.) alright . [+ exc] 1463_4190
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh the little girl &s wants cookie . [+ gram] 4190_8812
+%mor:	det:art|the adj|little n|girl v|want-3S n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the boy is getting her one but <the &s stool is going to> [//] he's
+	going to fall off the stool . 8812_16000
+%mor:	det:art|the n|boy aux|be&3S part|get-PRESP det:poss|her det:num|one
+	conj|but pro:sub|he~aux|be&3S part|go-PRESP inf|to v|fall prep|off
+	det:art|the n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|12|INF 12|10|COMP 13|12|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	it's tilty [: tilting] [* p:n] . 16000_17824
+%mor:	pro:per|it~aux|be&3S part|tilt-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	&uh the mother is doing the dishes . 17824_23860
+%mor:	det:art|the n|mother aux|be&3S part|do-PRESP det:art|the n|dish-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and unfortunately the sink is overflowing on the floor &=laughs . 23860_29895
+%mor:	coord|and un#adv|fortunate&dadj-LY det:art|the n|sink aux|be&3S
+	over#part|flow-PRESP prep|on det:art|the n|floor .
+%gra:	1|6|LINK 2|6|LINK 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	it's wet . 29895_31441
+%mor:	pro:per|it~cop|be&3S adj|wet .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	xxx . [+ exc] 31441_36097
+*PAR:	xxx . [+ exc] 36097_38741
+*PAR:	(..) the little &b +... 38741_45555
+%mor:	det:art|the adj|little +...
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	oh that's his feet . 45555_48125
+%mor:	co|oh pro:dem|that~cop|be&3S det:poss|his n|foot&PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	I thought there was something around the little boy's foot or <at
+	least> [/] at least just <one part of> [//] one foot [/] foot (.) on
+	top of the other . 48125_59936
+%mor:	pro:sub|I v|think&PAST adv|there cop|be&PAST&13S
+	pro:indef|something prep|around det:art|the adj|little
+	adj|boy&dn-POSS n|foot coord|or prep|at n|least adv|just det:num|one
+	n|foot prep|on n|top prep|of det:art|the qn|other .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|5|NJCT 7|10|DET 8|10|MOD
+	9|10|MOD 10|6|POBJ 11|10|CONJ 12|11|COORD 13|12|POBJ 14|15|JCT
+	15|16|QUANT 16|12|POBJ 17|16|NJCT 18|17|POBJ 19|18|NJCT 20|21|DET 21|19|POBJ
+	22|2|PUNCT
+*PAR:	the little girl I [/] I don't whether she's laughing or asking for
+	the cookie or saying “shh” so mother doesn't hear them &=laughs . 59936_74082
+%mor:	det:art|the adj|little n|girl pro:sub|I mod|do~neg|not conj|whether
+	pro:sub|she~aux|be&3S part|laugh-PRESP coord|or part|ask-PRESP
+	prep|for det:art|the n|cookie coord|or part|say-PRESP co|shh co|so
+	n|mother mod|do&3S~neg|not v|hear pro:obj|them .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|7|SUBJ 5|7|AUX 6|5|NEG 7|10|LINK
+	8|10|SUBJ 9|10|AUX 10|3|CMOD 11|10|CONJ 12|11|COORD 13|12|JCT 14|15|DET
+	15|13|POBJ 16|15|CONJ 17|16|COORD 18|23|COM 19|20|COM 20|23|SUBJ 21|23|AUX
+	22|21|NEG 23|17|COMP 24|23|OBJ 25|3|PUNCT
+*INV:	okay . 74082_78733
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

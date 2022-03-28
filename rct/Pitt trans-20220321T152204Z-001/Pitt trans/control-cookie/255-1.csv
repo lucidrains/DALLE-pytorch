@@ -1,0 +1,35 @@
+@UTF8
+@PID:	11312/t-00002369-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant
+@ID:	eng|Pitt|PAR|51;|male|Control||Participant|28||
+@Media:	255-1, audio
+*PAR:	I &s see this woman who's standin(g) by the sink washin(g) dishes
+	and the water's spillin(g) out over the sink . 0_7099
+%mor:	pro:sub|I v|see det:dem|this n|woman pro:rel|who~aux|be&3S
+	part|stand-PRESP prep|by det:art|the n|sink part|wash-PRESP
+	n|dish-PL coord|and det:art|the n|water~aux|be&3S part|spill-PRESP
+	adv|out prep|over det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|XJCT 12|11|OBJ 13|17|LINK 14|15|DET 15|17|SUBJ
+	16|17|AUX 17|12|CMOD 18|17|JCT 19|17|JCT 20|21|DET 21|19|POBJ 22|2|PUNCT
+*PAR:	and I see <a little> [//] this little boy standing on a stool
+	reaching for cookies and he looks like he's ready to fall . 7099_17758
+%mor:	coord|and pro:sub|I v|see det:dem|this adj|little n|boy
+	part|stand-PRESP prep|on det:art|a n|stool part|reach-PRESP prep|for
+	n|cookie-PL coord|and pro:sub|he v|look-3S conj|like
+	pro:sub|he~cop|be&3S adj|ready inf|to v|fall .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|6|XMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|6|XMOD 12|11|JCT 13|12|POBJ 14|16|LINK 15|16|SUBJ
+	16|3|CJCT 17|19|LINK 18|19|SUBJ 19|16|COMP 20|19|PRED 21|22|INF 22|20|XMOD
+	23|3|PUNCT
+*PAR:	(..) &uh as far as action goes I don't know if I see any more
+	action in there at all . [+ exc] 17758_40528
+%mor:	adv|as adj|far adv|as n|action v|go-3S pro:sub|I mod|do~neg|not
+	v|know comp|if pro:sub|I v|see qn|any qn|more n|action prep|in
+	n|there prep|at pro:indef|all .
+%gra:	1|2|COORD 2|9|JCT 3|4|COORD 4|2|ENUM 5|2|ENUM 6|9|SUBJ 7|9|AUX 8|7|NEG
+	9|0|ROOT 10|12|LINK 11|12|SUBJ 12|9|COMP 13|15|QUANT 14|15|QUANT
+	15|12|OBJ 16|12|JCT 17|16|POBJ 18|12|JCT 19|18|POBJ 20|9|PUNCT
+@End

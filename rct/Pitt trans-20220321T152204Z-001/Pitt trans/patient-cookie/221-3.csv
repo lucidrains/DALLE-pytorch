@@ -1,0 +1,70 @@
+@UTF8
+@PID:	11312/t-00002567-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|MCI||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	221-3, audio
+*INV:	picture . 0_1181
+%mor:	n|picture .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well the boy is taking cookies out o(f) the cookie jar . 1181_6135
+%mor:	co|well det:art|the n|boy aux|be&3S part|take-PRESP n|cookie-PL
+	adv|out prep|of det:art|the n|cookie n|jar .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|7|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|5|PUNCT
+*PAR:	and he's handing one to his sister as he almost falls off his stool
+	. 6135_13783
+%mor:	coord|and pro:sub|he~aux|be&3S part|hand-PRESP det:num|one prep|to
+	det:poss|his n|sister conj|as pro:sub|he adv|almost v|fall-3S
+	prep|off det:poss|his n|stool .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|JCT 12|4|CJCT 13|12|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	and he has knocked the lid off the cookie jar . 13873_18274
+%mor:	coord|and pro:sub|he aux|have&3S part|knock-PASTP det:art|the n|lid
+	prep|off det:art|the n|cookie n|jar .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	and the mother is washing dishes . 18274_23444
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and she has let the sink overflow and she's standing in a puddle .
+	23444_28280
+%mor:	coord|and pro:sub|she aux|have&3S v|let&ZERO det:art|the n|sink
+	over#v|flow coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|in
+	det:art|a n|puddle .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|6|POSTMOD
+	8|11|LINK 9|11|SUBJ 10|11|AUX 11|4|CJCT 12|11|JCT 13|14|DET 14|12|POBJ
+	15|4|PUNCT
+*PAR:	and &d window is open . [+ gram] 28280_32997
+%mor:	coord|and n|window cop|be&3S adj|open .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	and &uh there's a view of the back of the house with a hedge and a
+	nice walk and a grassy area . 32997_43812
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|view prep|of
+	det:art|the n|back prep|of det:art|the n|house prep|with det:art|a
+	n|hedge coord|and det:art|a adj|nice n|walk coord|and det:art|a
+	adj|grass&dn-Y n|area .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|5|NJCT 13|14|DET 14|12|POBJ 15|14|CONJ
+	16|18|DET 17|18|MOD 18|15|COORD 19|18|CONJ 20|22|DET 21|22|MOD 22|19|COORD
+	23|3|PUNCT
+*PAR:	and the curtains are blowing in the wind . 43812_48700
+%mor:	coord|and det:art|the n|curtain-PL aux|be&PRES part|blow-PRESP
+	prep|in det:art|the n|wind .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and she's standing in a puddle . 48700_51894
+%mor:	coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|a
+	n|puddle .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and so that's about all . [+ exc] 51894_55200
+%mor:	coord|and co|so pro:dem|that~cop|be&3S adv|about adv|all .
+%gra:	1|4|LINK 2|4|COM 3|4|SUBJ 4|0|ROOT 5|6|JCT 6|4|PRED 7|4|PUNCT
+*INV:	okay that's fine . 55200_56423
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

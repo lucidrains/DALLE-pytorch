@@ -1,0 +1,98 @@
+@UTF8
+@PID:	11312/t-00002515-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|68;|female|ProbableAD||Participant|15||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	144-1, audio
+*INV:	look at that picture and tell me what you see going on . 0_3567
+%mor:	v|look prep|at det:dem|that n|picture coord|and v|tell pro:obj|me
+	pro:int|what pro:per|you v|see n:gerund|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|CONJ 6|5|COORD 7|6|OBJ 8|10|LINK
+	9|10|SUBJ 10|6|COMP 11|10|OBJ 12|10|JCT 13|1|PUNCT
+*PAR:	an average home that looks very much like ours at many times .
+	[+ gram] 3567_8311
+%mor:	det:art|a n|average adv|home adv|that v|look-3S adv|very adv|much
+	co|like pro:poss|ours prep|at qn|many n|time-PL .
+%gra:	1|2|DET 2|5|SUBJ 3|2|NJCT 4|5|JCT 5|0|ROOT 6|7|JCT 7|5|JCT 8|5|COM
+	9|5|COMP 10|9|JCT 11|12|QUANT 12|10|POBJ 13|5|PUNCT
+*PAR:	<and the mother is> [//] well she's spilling her water which is not
+	very good but she's doing [//] washing dishes and drying them . 8311_17400
+%mor:	co|well pro:sub|she~aux|be&3S part|spill-PRESP det:poss|her n|water
+	pro:rel|which cop|be&3S neg|not adv|very adj|good conj|but
+	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	part|dry-PRESP pro:obj|them .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|8|LINK 8|6|CMOD
+	9|8|NEG 10|11|JCT 11|8|PRED 12|15|LINK 13|15|SUBJ 14|15|AUX 15|8|CJCT
+	16|15|OBJ 17|15|CONJ 18|17|COORD 19|18|OBJ 20|4|PUNCT
+*PAR:	and one of the children upset the cookie jar . 17400_19828
+%mor:	coord|and det:num|one prep|of det:art|the n|child&PL v|upset
+	det:art|the n|cookie n|jar .
+%gra:	1|6|LINK 2|6|SUBJ 3|2|NJCT 4|5|DET 5|3|POBJ 6|0|ROOT 7|9|DET 8|9|MOD
+	9|6|OBJ 10|6|PUNCT
+*PAR:	and that's an [: a] [* f:p] very average thing to go in [: on]
+	[* s:r] in a home . 19828_23454
+%mor:	coord|and pro:dem|that~cop|be&3S det:art|a adv|very adj|average
+	n|thing inf|to v|go adv|on prep|in det:art|a n|home .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|DET 5|6|JCT 6|7|MOD 7|3|PRED 8|9|INF
+	9|7|XMOD 10|9|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	our home <is a very> [/] it's a very active family . [+ exc] 23454_29043
+%mor:	det:poss|our n|home pro:per|it~cop|be&3S det:art|a adv|very
+	adj|active n|family .
+%gra:	1|2|DET 2|4|SUBJ 3|4|SUBJ 4|0|ROOT 5|8|DET 6|7|JCT 7|8|MOD 8|4|PRED
+	9|4|PUNCT
+*PAR:	and so that it makes it kinda [: kind_of] hard at our house
+	sometime because &uh there's <a_lot_of> [//] &ac like I said
+	a_lot_of activity . [+ exc] 29043_37430
+%mor:	coord|and adv|so pro:rel|that pro:per|it v|make-3S pro:per|it
+	adv|kind_of adv|hard prep|at det:poss|our n|house adv|sometime
+	conj|because pro:exist|there~cop|be&3S conj|like pro:sub|I
+	v|say&PAST qn|a_lot_of n|activity .
+%gra:	1|5|LINK 2|5|JCT 3|5|LINK 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|8|JCT 8|5|JCT
+	9|5|JCT 10|11|DET 11|9|POBJ 12|5|JCT 13|15|LINK 14|15|SUBJ 15|5|CJCT
+	16|18|LINK 17|18|SUBJ 18|15|CJCT 19|20|QUANT 20|18|OBJ 21|5|PUNCT
+*INV:	okay you see anything else going on over here ? 37430_41757
+%mor:	co|okay pro:per|you v|see pro:indef|anything post|else
+	part|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|PQ 6|3|XJCT 7|6|JCT 8|6|JCT
+	9|8|POBJ 10|3|PUNCT
+*PAR:	well the poor girl is spillin(g) the water on her feet . 41757_45000
+%mor:	co|well det:art|the adj|poor n|girl aux|be&3S part|spill-PRESP
+	det:art|the n|water prep|on det:poss|her n|foot&PL .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|JCT 10|11|DET 11|9|POBJ 12|6|PUNCT
+*PAR:	it's gonna be &k wet but then she'll hafta struggle with that . 45000_48402
+%mor:	pro:per|it~aux|be&3S part|go-PRESP~inf|to cop|be adj|wet conj|but
+	adv:tem|then pro:sub|she~mod|will mod|have~inf|to v|struggle
+	prep|with pro:dem|that .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|13|LINK 8|13|JCT
+	9|13|SUBJ 10|13|AUX 11|13|AUX 12|13|INF 13|3|CJCT 14|13|JCT 15|14|POBJ
+	16|3|PUNCT
+*PAR:	also there are a few more dishes left that didn't get finished . 48402_52697
+%mor:	adv|also pro:exist|there cop|be&PRES det:art|a qn|few qn|more
+	n|dish-PL adj|left adv|that mod|do&PAST~neg|not v|get
+	part|finish-PASTP .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|8|DET 5|6|QUANT 6|7|QUANT 7|8|MOD 8|3|PRED
+	9|12|JCT 10|12|AUX 11|10|NEG 12|8|CMOD 13|12|COMP 14|3|PUNCT
+*PAR:	this hasta be the dishes . 52697_55200
+%mor:	pro:dem|this mod|have&3S~inf|to cop|be det:art|the n|dish-PL .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|6|DET 6|4|PRED 7|4|PUNCT
+*PAR:	and how that little boy fell off that stool I don't know but he did
+	. 55200_59468
+%mor:	coord|and pro:int|how det:dem|that adj|little n|boy v|fall&PAST
+	prep|off det:dem|that n|stool pro:sub|I mod|do~neg|not v|know
+	conj|but pro:sub|he v|do&PAST .
+%gra:	1|6|LINK 2|6|LINK 3|5|DET 4|5|MOD 5|6|SUBJ 6|13|XJCT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|13|SUBJ 11|13|AUX 12|11|NEG 13|0|ROOT 14|16|LINK 15|16|SUBJ
+	16|13|CJCT 17|13|PUNCT
+*INV:	anything else ? 59468_64432
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	no . [+ exc] 64432_65432
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 65432_70070
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

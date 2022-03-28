@@ -1,0 +1,112 @@
+@UTF8
+@PID:	11312/t-00002196-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	021-1, audio
+*INV:	okay . 0_1122
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	there's the picture . 1122_2291
+%mor:	pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	okay . [+ exc] 2291_3332
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	go ahead . 3332_4241
+%mor:	v|go adv|ahead .
+%gra:	1|0|ROOT 2|1|JCT 3|1|PUNCT
+*PAR:	<many &dish or> [//] the mother's washing the dishes and the sink
+	is overflowing . 4241_8933
+%mor:	det:art|the n|mother~aux|be&3S part|wash-PRESP det:art|the
+	n|dish-PL coord|and det:art|the n|sink aux|be&3S
+	over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|4|PUNCT
+*PAR:	she has some of them &uh dried already on the side as she's looking
+	out the window while the little boy is falling off the stool
+	(be)cause he's getting into the cookie jar to give to his little
+	sister who's reaching up to get the cookie also . 8933_23473
+%mor:	pro:sub|she aux|have&3S qn|some prep|of pro:obj|them v|dry-PAST
+	adv|already prep|on det:art|the n|side adv|as pro:sub|she~aux|be&3S
+	part|look-PRESP prep|out det:art|the n|window conj|while det:art|the
+	adj|little n|boy aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|stool conj|because pro:sub|he~aux|be&3S part|get-PRESP prep|into
+	det:art|the n|cookie n|jar inf|to v|give prep|to det:poss|his
+	adj|little n|sister pro:rel|who~aux|be&3S part|reach-PRESP adv|up
+	inf|to v|get det:art|the n|cookie adv|also .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|NJCT 5|4|POBJ 6|4|POBJ 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|14|JCT 12|14|SUBJ 13|14|AUX 14|6|XJCT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|23|LINK 19|21|DET 20|21|MOD 21|23|SUBJ 22|23|AUX
+	23|14|CJCT 24|23|JCT 25|26|DET 26|24|POBJ 27|30|LINK 28|30|SUBJ 29|30|AUX
+	30|14|XJCT 31|30|JCT 32|34|DET 33|34|MOD 34|31|POBJ 35|36|INF 36|30|XJCT
+	37|36|JCT 38|40|DET 39|40|MOD 40|37|POBJ 41|43|LINK 42|43|AUX 43|40|CMOD
+	44|43|JCT 45|46|INF 46|43|XJCT 47|48|DET 48|46|OBJ 49|46|JCT 50|3|PUNCT
+*PAR:	&um there's water all over the floor . 23473_26848
+%mor:	pro:exist|there~cop|be&3S n|water adv|all prep|over det:art|the
+	n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|JCT 5|3|NJCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	&uh there's [//] the garden is outside and the mother's not paying
+	any attention to what they do . 26848_31990
+%mor:	det:art|the n|garden cop|be&3S adv|outside coord|and det:art|the
+	n|mother~aux|be&3S neg|not part|pay-PRESP qn|any n|attention prep|to
+	pro:int|what pro:sub|they v|do .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|10|LINK 6|7|DET 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|3|CJCT 11|12|QUANT 12|10|OBJ 13|12|JCT 14|16|LINK 15|16|SUBJ
+	16|13|CPOBJ 17|3|PUNCT
+*PAR:	the stool is tipping . 31990_34300
+%mor:	det:art|the n|stool aux|be&3S part|tip-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	<the cookie jar> [//] the &um &uh door is open . 34300_38536
+%mor:	det:art|the n|door cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	&um there may be a little breeze coming in because the [//] this
+	window is open . 38536_44780
+%mor:	adv|there mod|may cop|be det:art|a adj|little n|breeze
+	part|come-PRESP prep|in conj|because det:dem|this n|window cop|be&3S
+	adj|open .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|XMOD 8|7|JCT
+	9|12|LINK 10|11|DET 11|12|SUBJ 12|3|CJCT 13|12|PRED 14|3|PUNCT
+*PAR:	&um (.) &uh the little girl <(i)s saying> [//] has her finger to
+	her mouth +"/. 44780_52500
+%mor:	det:art|the adj|little n|girl v|have&3S det:poss|her n|finger
+	prep|to det:poss|her n|mouth +"/.
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	+" shh &t we won't tell mother while you give me the cookie . 52500_56172
+%mor:	co|shh pro:sub|we mod|will~neg|not v|tell n|mother conj|while
+	pro:per|you v|give pro:obj|me det:art|the n|cookie .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|9|LINK 8|9|SUBJ
+	9|5|CJCT 10|9|OBJ2 11|12|DET 12|9|OBJ 13|5|PUNCT
+*PAR:	&um (.) it's in the kitchen of_course and &uh <the cups> [//] two
+	cups and a dish already have been dried . 56172_66691
+%mor:	pro:per|it~cop|be&3S prep|in det:art|the n|kitchen co|of_course
+	coord|and det:num|two n|cup-PL coord|and det:art|a n|dish
+	adv|already v|have aux|be&PASTP part|dry-PASTP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|COM 7|2|CONJ 8|9|QUANT
+	9|7|COORD 10|9|CONJ 11|12|DET 12|10|COORD 13|14|JCT 14|2|CJCT 15|16|AUX
+	16|14|COMP 17|2|PUNCT
+*PAR:	and &uh the mother's stepping in the water and she's probably so
+	engrossed in what she's doing outside she neither knows what the
+	children are doing nor is she paying any attention that the water's
+	overflowing . 66691_78474
+%mor:	coord|and det:art|the adj|mother&dn-POSS part|step-PRESP prep|in
+	det:art|the n|water coord|and pro:sub|she~aux|be&3S
+	adv|probable&dadj-LY adv|so part|engross-PASTP prep|in pro:int|what
+	pro:sub|she~aux|be&3S part|do-PRESP adv|outside pro:sub|she
+	adv|neither v|know-3S pro:int|what det:art|the n|child&PL
+	aux|be&PRES part|do-PRESP coord|nor cop|be&3S pro:sub|she
+	part|pay-PRESP qn|any n|attention pro:rel|that det:art|the
+	adj|water&dn-POSS over#part|flow-PRESP .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|4|JCT 6|7|DET 7|5|POBJ
+	8|13|LINK 9|13|SUBJ 10|13|AUX 11|12|JCT 12|13|JCT 13|3|XMOD 14|13|JCT 15|18|LINK
+	16|18|SUBJ 17|18|AUX 18|22|XJCT 19|18|JCT 20|22|SUBJ 21|22|JCT
+	22|14|CPOBJ 23|27|LINK 24|25|DET 25|27|SUBJ 26|27|AUX 27|22|COMP 28|27|CONJ
+	29|28|COORD 30|29|PRED 31|30|XMOD 32|33|QUANT 33|31|OBJ 34|37|LINK 35|37|DET
+	36|37|MOD 37|33|CMOD 38|3|PUNCT
+*INV:	okay good . 78474_81089
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

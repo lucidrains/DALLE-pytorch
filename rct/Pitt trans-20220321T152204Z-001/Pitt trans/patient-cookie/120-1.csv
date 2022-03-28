@@ -1,0 +1,98 @@
+@UTF8
+@PID:	11312/t-00002502-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|male|MCI||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	120-1, audio
+*INV:	show you a picture . 0_1463
+%mor:	v|show pro:per|you det:art|a n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|4|DET 4|1|OBJ 5|1|PUNCT
+*INV:	and I want you to look at the picture and just tell me everything
+	you see going on in the picture . 1463_6649
+%mor:	coord|and pro:sub|I v|want pro:per|you inf|to v|look prep|at
+	det:art|the n|picture coord|and adv|just v|tell pro:obj|me
+	pro:indef|everything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|INF 6|3|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|CONJ 11|12|JCT 12|10|COORD 13|12|OBJ 14|12|OBJ 15|16|SUBJ
+	16|12|COMP 17|16|OBJ 18|16|JCT 19|16|JCT 20|21|DET 21|19|POBJ 22|3|PUNCT
+*INV:	+< just tell me everything that you see happening there . 6649_9106
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|happen-PRESP adv|there .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|7|JCT 10|2|PUNCT
+*PAR:	+< okay . [+ exc] 6650_7768
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay . [+ exc] 9106_9868
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	there it is . 9868_11315
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	okay . [+ exc] 11315_13227
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well the boy is <reaching for the cookie jar> [//] &r reaching for
+	cookies from the cookie jar . 13227_20328
+%mor:	co|well det:art|the n|boy aux|be&3S part|reach-PRESP prep|for
+	n|cookie-PL prep|from det:art|the n|cookie n|jar .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|7|NJCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|5|PUNCT
+*PAR:	his stool is falling over . 20328_23128
+%mor:	det:poss|his n|stool aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	he's handing the cookies to his sister . 23128_27255
+%mor:	pro:sub|he~aux|be&3S part|hand-PRESP det:art|the n|cookie-PL
+	prep|to det:poss|his n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	the mother is washing the dishes . 27255_32654
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	the sink is running over . 32654_35191
+%mor:	det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	(.) &uh these are things that are happening ? [+ exc] 35191_40002
+%mor:	pro:dem|these cop|be&PRES n|thing-PL pro:rel|that aux|be&PRES
+	part|happen-PRESP ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|LINK 5|6|AUX 6|3|CMOD 7|2|PUNCT
+*INV:	mhm . 40002_40580
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the [/] the little sister's shushing, doesn't want the mother to
+	know what's going on .40580_49448
+%mor:	det:art|the adj|little n|sister~aux|be&3S part|shush-PRESP cm|cm
+	mod|do&3S~neg|not v|want det:art|the n|mother inf|to v|know
+	pro:int|what~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|9|SUBJ 6|5|LP 7|9|AUX 8|7|NEG
+	9|0|ROOT 10|11|DET 11|9|OBJ 12|13|INF 13|9|XJCT 14|16|LINK 15|16|AUX
+	16|13|COMP 17|16|JCT 18|9|PUNCT
+*PAR:	&a (.) well the water's running into the sink as well as the sink
+	running over .49448_57883
+%mor:	co|well det:art|the n|water~aux|be&3S part|run-PRESP prep|into
+	det:art|the n|sink prep|as n|well prep|as det:art|the n|sink
+	part|run-PRESP adv|over .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|10|COORD 10|5|XJCT 11|10|NJCT 12|13|DET 13|11|POBJ 14|13|XMOD 15|14|JCT
+	16|5|PUNCT
+*PAR:	oh and the mother's stepping in the puddle .57883_61684
+%mor:	co|oh coord|and det:art|the adj|mother&dn-POSS n:gerund|step-PRESP
+	prep|in det:art|the n|puddle .
+%gra:	1|0|INCROOT 2|1|CONJ 3|4|DET 4|2|COORD 5|4|XMOD 6|5|JCT 7|8|DET
+	8|6|POBJ 9|1|PUNCT
+*INV:	(..) okay . 61684_75613
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	yes I don't identify any other happenings . [+ exc] 75613_77838
+%mor:	co|yes pro:sub|I mod|do~neg|not v|identify qn|any qn|other
+	n:gerund|happen-PRESP-PL .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|7|QUANT 7|8|QUANT 8|5|OBJ
+	9|5|PUNCT
+*INV:	okay . 77838_78150
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

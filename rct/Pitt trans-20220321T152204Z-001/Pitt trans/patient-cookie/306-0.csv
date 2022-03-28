@@ -1,0 +1,98 @@
+@UTF8
+@PID:	11312/t-00002609-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|male|PossibleAD||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	306-0, audio
+*INV:	all of the action . 0_1996
+%mor:	pro:indef|all prep|of det:art|the n|action .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	whew &=laughs . [+ exc] 1996_6385
+%mor:	co|whew .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh do I hafta use my [/] my [/] &uh my personal &uh description ?
+	[+ exc] 6385_13878
+%mor:	mod|do pro:sub|I mod|have~inf|to v|use det:poss|my adj|personal
+	n|description ?
+%gra:	1|5|AUX 2|5|SUBJ 3|5|AUX 4|5|INF 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|5|PUNCT
+*PAR:	or &=laughs like &uh +... [+ exc] 13878_15200
+%mor:	coord|or co|like +...
+%gra:	1|0|INCROOT 2|1|COM 3|1|PUNCT
+*PAR:	<the &c cookie jar> [//] stealing the &g &uh cookie out o(f) the
+	cookie jar . [+ gram] 15200_20234
+%mor:	part|steal-PRESP det:art|the n|cookie adv|out prep|of det:art|the
+	n|cookie n|jar .
+%gra:	1|0|INCROOT 2|3|DET 3|1|OBJ 4|1|JCT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|1|PUNCT
+*PAR:	the [/] &t &uh the &tripar not [//] &t stool the &tr triple
+	[: three legged] [* s:r] stool is [//] he's [/] &uh he's rockin(g)
+	with its +... 20234_31238
+%mor:	det:art|the n|stool det:art|the det:num|three adj|legged n|stool
+	pro:sub|he~aux|be&3S part|rock-PRESP prep|with det:poss|its +...
+%gra:	1|2|DET 2|0|INCROOT 3|6|DET 4|6|QUANT 5|6|MOD 6|2|APP 7|9|SUBJ 8|9|AUX
+	9|6|CMOD 10|9|JCT 11|10|POBJ 12|2|PUNCT
+*PAR:	&uh I wonder if she's puttin(g) her finger to her [/] her lips . 34038_39622
+%mor:	pro:sub|I v|wonder comp|if pro:sub|she~aux|be&3S part|put-PRESP
+	det:poss|her n|finger prep|to det:poss|her n|lip-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|LINK 4|6|SUBJ 5|6|AUX 6|2|COMP 7|8|DET 8|6|OBJ
+	9|6|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	and &uh is that she wants one to eat or she's &ha &h reachin(g) up
+	for it ? [+ gram] 39622_44298
+%mor:	coord|and cop|be&3S comp|that pro:sub|she v|want-3S det:num|one
+	inf|to v|eat coord|or pro:sub|she~aux|be&3S part|reach-PRESP adv|up
+	prep|for pro:per|it ?
+%gra:	1|2|LINK 2|0|ROOT 3|5|LINK 4|5|SUBJ 5|2|CPRED 6|5|OBJ 7|8|INF 8|5|XJCT
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|COMP 13|12|JCT 14|12|JCT 15|14|POBJ
+	16|2|PUNCT
+*PAR:	huh ? [+ exc] 44076_44990
+%mor:	co|huh ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and then spillin(g) the water in the kitchen sink . [+ gram] 44990_48511
+%mor:	coord|and adv:tem|then part|spill-PRESP det:art|the n|water prep|in
+	det:art|the n|kitchen n|sink .
+%gra:	1|3|LINK 2|3|JCT 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	she's dryin(g) the dishes . 48511_51603
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	(..) they got their &s sink is overflowin(g) . 51603_60915
+%mor:	pro:sub|they v|get&PAST det:poss|their n|sink aux|be&3S
+	over#part|flow-PRESP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|6|SUBJ 5|6|AUX 6|2|COMP 7|2|PUNCT
+*PAR:	so <that would be the> [//] that's why it's overflowin(g) because
+	<the &s sink> [//] &w &uh &uh this water's runnin(g) out o(f) the
+	spigot . 60915_68136
+%mor:	co|so pro:dem|that~cop|be&3S pro:int|why pro:per|it~cop|be&3S
+	over#n:gerund|flow-PRESP conj|because det:dem|this n|water~aux|be&3S
+	part|run-PRESP adv|out prep|of det:art|the n|spigot .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|PRED 7|6|PRED 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|3|CJCT 13|12|JCT 14|13|JCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*PAR:	she's dryin(g) the dishes . 68136_70260
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and let's see what else &uh +... [+ exc] 70260_80000
+%mor:	coord|and v|let~pro:obj|us v|see pro:int|what post|else +...
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|COMP 5|4|OBJ 6|5|PQ 7|2|PUNCT
+*INV:	okay ? 80000_81084
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	am I missin(g) somethin(g) ? [+ exc] 81084_83544
+%mor:	aux|be&1S pro:sub|I n:gerund|miss-PRESP pro:indef|something ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	you_know I'm pretty tired . [+ exc] 83544_84710
+%mor:	co|you_know pro:sub|I~aux|be&1S adv|pretty part|tire-PASTP .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|PUNCT
+*PAR:	(..) I guess xxx . [+ exc] 84710_93754
+%mor:	pro:sub|I v|guess .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	okay that's +/. 93254_94385
+%mor:	co|okay pro:dem|that~cop|be&3S +/.
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	xxx huh ? [+ exc] 93832_94689
+%mor:	co|huh ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

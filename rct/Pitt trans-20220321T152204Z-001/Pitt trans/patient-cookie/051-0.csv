@@ -1,0 +1,83 @@
+@UTF8
+@PID:	11312/t-00002462-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|female|ProbableAD||Participant|26||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	051-0, audio
+*INV:	I want you to tell me all of the action that's going on in that
+	picture . 0_4523
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me post|all
+	prep|of det:art|the n|action pro:rel|that~aux|be&3S part|go-PRESP
+	adv|on prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|13|LINK 12|13|AUX 13|10|CMOD 14|13|JCT 15|13|JCT
+	16|17|DET 17|15|POBJ 18|2|PUNCT
+*PAR:	first of all the little girl's saying +"/. 4523_5704
+%mor:	adv|first prep|of qn|all det:art|the adj|little n|girl~aux|be&3S
+	part|say-PRESP +"/.
+%gra:	1|8|JCT 2|8|JCT 3|6|QUANT 4|6|DET 5|6|MOD 6|8|SUBJ 7|8|AUX 8|0|ROOT
+	9|8|PUNCT
+*PAR:	+" shh@o . 5704_6718
+%mor:	on|shh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and [/] and he's climbing up to get a cookie . 6718_11490
+%mor:	coord|and pro:sub|he~aux|be&3S part|climb-PRESP adv|up inf|to v|get
+	det:art|a n|cookie .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|INF 7|4|XJCT 8|9|DET
+	9|7|OBJ 10|4|PUNCT
+*PAR:	and he's going to fall . 11490_13502
+%mor:	coord|and pro:sub|he~aux|be&3S part|go-PRESP inf|to v|fall .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|4|PUNCT
+*PAR:	and the stool is on [//] tipping . 13502_16933
+%mor:	coord|and det:art|the n|stool aux|be&3S part|tip-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	the water is running over in the sink . 16933_20282
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over prep|in
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	&uh (.) the towel seems to go in one side and out the other side of
+	the dish . 20282_29243
+%mor:	det:art|the n|towel cop|seem-3S inf|to v|go prep|in det:num|one
+	n|side coord|and prep|out det:art|the qn|other n|side prep|of
+	det:art|the n|dish .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|INF 5|3|COMP 6|5|JCT 7|8|QUANT 8|6|POBJ
+	9|5|CONJ 10|9|COORD 11|13|DET 12|13|QUANT 13|10|POBJ 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*PAR:	oh that's part of the curtain I guess . 29243_32902
+%mor:	co|oh pro:dem|that~cop|be&3S n|part prep|of det:art|the n|curtain
+	pro:sub|I v|guess .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|9|SUBJ
+	9|3|CJCT 10|3|PUNCT
+*PAR:	that's what it is . 32902_33508
+%mor:	pro:dem|that~cop|be&3S pro:int|what pro:per|it cop|be&3S .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|LINK 4|5|SUBJ 5|2|PRED 6|2|PUNCT
+*PAR:	that's part of the curtain &=laughs . 33508_34854
+%mor:	pro:dem|that~cop|be&3S n|part prep|of det:art|the n|curtain .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	it looked like it &c gone through here and come out here &=laughs .
+	34854_37855
+%mor:	pro:per|it cop|look-PAST v|like pro:per|it part|go&PASTP
+	prep|through n|here coord|and v|come prep|out n|here .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|OBJ 5|4|XMOD 6|5|JCT 7|6|POBJ 8|5|CONJ
+	9|8|COORD 10|9|JCT 11|10|POBJ 12|2|PUNCT
+*PAR:	ah . [+ exc] 37855_38869
+%mor:	co|ah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	www . 38869_46000
+%exp:	bad audio screeching
+*PAR:	two cups and a dish . [+ gram] 46000_49431
+%mor:	det:num|two n|cup-PL coord|and det:art|a n|dish .
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|CONJ 4|5|DET 5|3|COORD 6|2|PUNCT
+*INV:	anything else ? 49431_50875
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	I don't see anything unusual . [+ exc] 50775_53266
+%mor:	pro:sub|I mod|do~neg|not v|see pro:indef|anything un#adj|usual .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|POSTMOD 7|4|PUNCT
+*INV:	okay that's fine . 53066_54707
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

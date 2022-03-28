@@ -1,0 +1,107 @@
+@UTF8
+@PID:	11312/t-00002192-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	015-3, audio
+*PAR:	okay . [+ exc] 0_1074
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's a little boy and <he's getting> [//] he's standing on a
+	stool that's upsetting . 1074_6133
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|little n|boy coord|and
+	pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|upset-PRESP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|CMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|15|LINK 14|15|AUX 15|12|CMOD
+	16|2|PUNCT
+*PAR:	and he's getting a cookie and he's sharing a cookie with the little
+	girl who is shushing her mother with her finger and reaching for the
+	cookie at the same time . 6133_16452
+%mor:	coord|and pro:sub|he~aux|be&3S part|get-PRESP det:art|a n|cookie
+	coord|and pro:sub|he~aux|be&3S part|share-PRESP det:art|a n|cookie
+	prep|with det:art|the adj|little n|girl pro:rel|who aux|be&3S
+	part|shush-PRESP det:poss|her n|mother prep|with det:poss|her
+	n|finger coord|and part|reach-PRESP prep|for det:art|the n|cookie
+	prep|at det:art|the adj|same n|time .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|12|DET 12|10|OBJ 13|10|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|19|LINK 18|19|AUX 19|16|CMOD 20|21|DET 21|19|OBJ 22|19|JCT
+	23|24|DET 24|22|POBJ 25|19|CONJ 26|25|COORD 27|26|JCT 28|29|DET 29|27|POBJ
+	30|29|NJCT 31|33|DET 32|33|MOD 33|30|POBJ 34|4|PUNCT
+*PAR:	on the &k +... [+ exc] 16452_19000
+%mor:	adv|on det:art|the +...
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*PAR:	<what are> [/] what are the instructions ? [+ exc] 19000_20484
+%mor:	pro:int|what cop|be&PRES det:art|the n|instruction-PL ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	just give as many details like +/? [+ exc] 20484_22230
+%mor:	adv|just v|give conj|as qn|many n|detail-PL prep|like +/?
+%gra:	1|2|JCT 2|0|ROOT 3|5|COORD 4|5|QUANT 5|2|ENUM 6|5|NJCT 7|2|PUNCT
+*INV:	+< tell me all the things you see going on in the picture . 21800_24579
+%mor:	v|tell pro:obj|me qn|all det:art|the n|thing-PL pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|5|QUANT 4|5|DET 5|1|OBJ 6|7|SUBJ 7|1|COMP 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|1|PUNCT
+*PAR:	action . [+ exc] 24779_25574
+%mor:	n|action .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	or [/] &d or +/. [+ exc] 25574_26618
+%mor:	coord|or +/.
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< anything you see going on in the picture . 26218_28012
+%mor:	pro:indef|anything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	+< oh okay . [+ exc] 27000_27828
+%mor:	co|oh co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	the cupboard door is open . 27828_29392
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	the stool is crooked . 29392_30486
+%mor:	det:art|the n|stool cop|be&3S adj|crooked .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	the water is splashing on the floor . 30486_32478
+%mor:	det:art|the n|water aux|be&3S part|splash-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the &m &uh mother is [//] &um <I'm assuming it's a mother> [//] is
+	stepping in it . 32478_36730
+%mor:	det:art|the n|mother cop|be&3S n:gerund|step-PRESP prep|in
+	pro:per|it .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	she's drying her dishes . 36730_38537
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:poss|her n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	the &uh sink is overflowing . 38537_41610
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the cups and the saucers are there . 41610_46088
+%mor:	det:art|the n|cup-PL coord|and det:art|the n|saucer-PL cop|be&PRES
+	adv|there .
+%gra:	1|2|DET 2|6|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*PAR:	the window is open and you see the lawn outside . 46088_51474
+%mor:	det:art|the n|window cop|be&3S adj|open coord|and pro:per|you v|see
+	det:art|the n|lawn adv|outside .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|7|LINK 6|7|SUBJ 7|3|CJCT 8|9|DET
+	9|7|OBJ 10|7|JCT 11|3|PUNCT
+*PAR:	and it must be summertime . 51474_55132
+%mor:	coord|and pro:per|it mod|must cop|be n|+n|summer+n|time .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	they all have on &shor short sleeves . 55132_57549
+%mor:	pro:sub|they post|all v|have adv|on adj|short n|sleeve-PL .
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|3|JCT 5|6|MOD 6|3|OBJ 7|3|PUNCT
+*PAR:	and &uh she's wearing an apron . 57549_61103
+%mor:	coord|and pro:sub|she~aux|be&3S part|wear-PRESP det:art|a n|apron .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	(..) okay . [+ exc] 61103_67484
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 67484_68339
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

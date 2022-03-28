@@ -1,0 +1,193 @@
+@UTF8
+@PID:	11312/t-00002466-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|59;|male|ProbableAD||Participant|8||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	053-1, audio
+*INV:	I'm going to show you a picture . 0_1698
+%mor:	pro:sub|I~aux|be&1S part|go-PRESP inf|to v|show pro:per|you
+	det:art|a n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|OBJ2 7|8|DET 8|5|OBJ
+	9|3|PUNCT
+*INV:	and I want you to look at the picture . 1698_3817
+%mor:	coord|and pro:sub|I v|want pro:per|you inf|to v|look prep|at
+	det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|INF 6|3|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*INV:	I want you to tell me everything that you see happening in the
+	picture . 3817_8078
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP prep|in det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ2 7|5|OBJ 8|11|LINK
+	9|11|SUBJ 10|11|COM 11|7|CMOD 12|11|JCT 13|14|DET 14|12|POBJ 15|2|PUNCT
+*PAR:	mhm . [+ exc] 8078_9159
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	just tell me everything that you see going on . 9159_11082
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|go-PRESP adv|on .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|7|JCT 10|2|PUNCT
+*INV:	now there's the picture . 11082_14102
+%mor:	adv|now pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*INV:	look down here Mister_Lastname . 14102_15534
+%mor:	v|look prep|down n|here n:prop|Mister_Lastname .
+%gra:	1|0|ROOT 2|1|JCT 3|4|MOD 4|2|POBJ 5|1|PUNCT
+*PAR:	oh I see a part of the whole kitchen . 15534_18525
+%mor:	co|oh pro:sub|I v|see det:art|a n|part prep|of det:art|the
+	adj|whole n|kitchen .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|NJCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	is that all the kitchen or isn't it ? [+ exc] 18525_20716
+%mor:	cop|be&3S comp|that qn|all det:art|the n|kitchen coord|or
+	cop|be&3S~neg|not pro:per|it ?
+%gra:	1|0|ROOT 2|5|LINK 3|5|QUANT 4|5|DET 5|1|PRED 6|5|CONJ 7|6|COORD 8|7|NEG
+	9|7|SUBJ 10|1|PUNCT
+*PAR:	&s &uh (..) oh I can't read +... [+ exc] 20716_29778
+%mor:	co|oh pro:sub|I mod|can~neg|not v|read&ZERO +...
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|PUNCT
+*PAR:	a lady a mother were in her kitchen . [+ gram] 29778_32964
+%mor:	det:art|a n|lady det:art|a n|mother cop|be&PAST prep|in
+	det:poss|her n|kitchen .
+%gra:	1|2|DET 2|5|SUBJ 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	in her kɪtʃə˞@u [: kitchen] [* p:n-ret] [//] kitchen doing some
+	work I suppose . [+ gram] 32964_38119
+%mor:	prep|in det:poss|her n|kitchen part|do-PRESP qn|some n|work
+	pro:sub|I v|suppose .
+%gra:	1|8|JCT 2|3|DET 3|1|POBJ 4|8|XJCT 5|6|QUANT 6|4|OBJ 7|8|SUBJ 8|0|ROOT
+	9|8|PUNCT
+*PAR:	and the [//] &uh &s there's another woman there sharing their
+	pleasures or whatever . 38119_46227
+%mor:	coord|and pro:exist|there~cop|be&3S qn|another n|woman adv|there
+	part|share-PRESP det:poss|their n|pleasure-PL coord|or
+	pro:int|whatever .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|3|JCT 7|3|XJCT 8|9|DET
+	9|7|OBJ 10|9|CONJ 11|10|COORD 12|3|PUNCT
+*INV:	okay there it is . 46227_50194
+%mor:	co|okay adv|there pro:per|it cop|be&3S .
+%gra:	1|4|COM 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	oh <have you> [/] have you checked [//] heard of that new game that
+	they started to play after christmas ? [+ exc] 50194_59413
+%mor:	co|oh v|have pro:per|you v|hear&PAST prep|of det:dem|that adj|new
+	n|game pro:rel|that pro:sub|they v|start-PAST prep|to n|play
+	prep|after n|christmas ?
+%gra:	1|2|COM 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|11|LINK 10|11|SUBJ 11|8|CMOD 12|13|INF 13|11|COMP 14|13|JCT 15|14|POBJ
+	16|2|PUNCT
+*INV:	yes you were telling me about that Mister_Lastname . 59413_61548
+%mor:	co|yes pro:per|you aux|be&PAST part|tell-PRESP pro:obj|me
+	prep|about comp|that n:prop|Mister_Lastname .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|LINK 8|6|POBJ
+	9|4|PUNCT
+*PAR:	+< did you ? [+ exc] 60300_61000
+%mor:	v|do&PAST pro:per|you ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	Trivial_Pursuit mhm . 61548_63336
+%mor:	n:prop|Trivial_Pursuit co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|COM 3|1|PUNCT
+*PAR:	+< xxx is a +/. [+ exc] 62500_64336
+%mor:	cop|be&3S det:art|a +/.
+%gra:	1|0|ROOT 2|3|DET 3|1|PUNCT
+*INV:	+< just tell me do you see anything else happening in this picture
+	here ? 63348_67971
+%mor:	adv|just v|tell pro:obj|me v|do pro:per|you v|see
+	pro:indef|anything post|else part|happen-PRESP prep|in det:dem|this
+	n|picture adv|here ?
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|COMP 5|6|SUBJ 6|4|COMP 7|6|OBJ 8|7|PQ
+	9|7|XMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|9|JCT 14|2|PUNCT
+*INV:	what else do you see happening ? 67971_69509
+%mor:	pro:int|what post|else v|do pro:per|you v|see n:gerund|happen-PRESP
+	?
+%gra:	1|3|LINK 2|1|PQ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|3|PUNCT
+*INV:	what's going on there ? 69509_71305
+%mor:	pro:int|what~aux|be&3S part|go-PRESP prep|on n|there ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	well it looks like +... 71305_74829
+%mor:	co|well pro:per|it v|look-3S prep|like +...
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	I'd say this is +... 74829_77700
+%mor:	pro:sub|I~mod|genmod v|say det:dem|this cop|be&3S +...
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|COMP 6|3|PUNCT
+*PAR:	well let's see . [+ exc] 77700_80300
+%mor:	co|well v|let~pro:obj|us v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	it looks like +... 80300_83100
+%mor:	pro:per|it v|look-3S conj|like +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OM 4|2|PUNCT
+*PAR:	oh +... [+ exc] 83100_84573
+%mor:	co|oh +...
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<bʌmbʌdɪ@u [: x@n] [* n:uk] bʌmbʌdɪ@u [: x@n] [* n:uk]> [=! sings]
+	&=sings . [+ exc] 84573_88606
+%mor:	neo|x neo|x .
+%gra:	1|0|INCROOT 2|1|ENUM 3|1|PUNCT
+*PAR:	<my mother will beat me by> [//] my wife will beat me by a couple
+	rows of this . [+ exc] 88606_93913
+%mor:	det:poss|my n|wife mod|will v|beat&ZERO pro:obj|me prep|by
+	det:art|a qn|couple n|row-PL prep|of pro:dem|this .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|9|QUANT
+	9|6|POBJ 10|9|NJCT 11|10|POBJ 12|4|PUNCT
+*INV:	what's happening over here Mister_Lastname ? 93913_95470
+%mor:	pro:int|what~cop|be&3S n:gerund|happen-PRESP prep|over n|here
+	n:prop|Mister_Lastname ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|6|MOD 6|4|POBJ 7|2|PUNCT
+*PAR:	that's [/] that's like the <washing would say> [//] washing machine
+	? 95470_99100
+%mor:	pro:dem|that~cop|be&3S conj|like det:art|the n:gerund|wash-PRESP
+	n|machine ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|6|DET 5|6|MOD 6|3|POBJ 7|2|PUNCT
+*PAR:	or let me see . [+ exc] 99100_100392
+%mor:	coord|or v|let&ZERO pro:obj|me v|see .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	I can't +... [+ exc] 100392_101385
+%mor:	pro:sub|I mod|can~neg|not +...
+%gra:	1|0|INCROOT 2|4|AUX 3|2|NEG 4|1|PUNCT
+*PAR:	oh ‡ that's the son come out_of [//] from school maybe or something
+	. [+ gram] 101385_103967
+%mor:	co|oh beg|beg pro:dem|that~cop|be&3S det:art|the n|son v|come
+	prep|from n|school adv|maybe coord|or pro:indef|something .
+%gra:	1|0|BEG 2|1|BEGP 3|4|SUBJ 4|0|ROOT 5|6|DET 6|7|SUBJ 7|4|CPRED 8|7|JCT
+	9|8|POBJ 10|7|JCT 11|10|CONJ 12|11|COORD 13|4|PUNCT
+*INV:	mhm . 103967_104695
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	that's a youngster there . 104695_105696
+%mor:	pro:dem|that~cop|be&3S det:art|a n|youngster adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|2|PUNCT
+*INV:	what's going on here ? 105696_107002
+%mor:	pro:int|what~aux|be&3S part|go-PRESP prep|on n|here ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	well that's just as though they (.) getting ready to go to school
+	or they're just coming out from school . [+ gram] 107002_114304
+%mor:	co|well pro:dem|that~cop|be&3S adv|just conj|as conj|though
+	pro:sub|they part|get-PRESP adj|ready inf|to v|go prep|to n|school
+	coord|or pro:sub|they~aux|be&PRES adv|just part|come-PRESP adv|out
+	prep|from n|school .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT 6|7|LINK 7|5|INCROOT
+	8|7|XJCT 9|8|PRED 10|11|INF 11|9|XMOD 12|11|JCT 13|12|POBJ 14|18|LINK
+	15|18|SUBJ 16|18|AUX 17|18|JCT 18|8|COMP 19|18|JCT 20|18|JCT 21|20|POBJ
+	22|7|PUNCT
+*INV:	okay and what's happening here ? 114304_116886
+%mor:	co|okay coord|and pro:int|what~aux|be&3S part|happen-PRESP adv|here
+	?
+%gra:	1|5|COM 2|5|LINK 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	and right there he's &uh same as back there except for down there
+	in the bottom I think it's +... 116886_123717
+%mor:	coord|and adv|right adv|there pro:sub|he~cop|be&3S adj|same adv|as
+	adv|back adv|there prep|except prep|for prep|down n|there prep|in
+	det:art|the n|bottom pro:sub|I v|think pro:per|it~cop|be&3S +...
+%gra:	1|5|LINK 2|3|JCT 3|5|JCT 4|5|SUBJ 5|0|ROOT 6|5|PRED 7|8|JCT 8|6|JCT
+	9|6|JCT 10|6|JCT 11|20|JCT 12|11|NJCT 13|12|POBJ 14|18|JCT 15|16|DET
+	16|14|POBJ 17|18|SUBJ 18|20|CJCT 19|20|SUBJ 20|10|POBJ 21|5|PUNCT
+*PAR:	&uh that's a little xxx . [+ jar] 123717_127827
+%mor:	pro:dem|that~cop|be&3S det:art|a adj|little .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	okay . 127827_130488
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

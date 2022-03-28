@@ -1,0 +1,50 @@
+@UTF8
+@PID:	11312/t-00002727-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	702-0, audio
+*INV:	okay ? 0_633
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	the picture . 633_1829
+%mor:	det:art|the n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*INV:	tell me everything +/. 1829_6061
+%mor:	v|tell pro:obj|me pro:indef|everything +/.
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|1|PUNCT
+*PAR:	you want me to tell you ? [+ exc] 5361_6358
+%mor:	pro:per|you v|want pro:obj|me inf|to v|tell pro:per|you ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|2|PUNCT
+*PAR:	okay &uh the boy's getting in the cookie jar . 6358_9618
+%mor:	co|okay det:art|the n|boy~aux|be&3S part|get-PRESP prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|5|PUNCT
+*PAR:	his sister's waiting for cookies . 9618_12111
+%mor:	det:poss|his n|sister~aux|be&3S part|wait-PRESP prep|for
+	n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	the mother's washing dishes and water's spilling over . 12111_14863
+%mor:	det:art|the n|mother~aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	n|water~aux|be&3S part|spill-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|4|CJCT 10|9|JCT 11|4|PUNCT
+*PAR:	&uh can see the walk and the grass outside in the window . [+ gram]
+	14863_22228
+%mor:	mod|can v|see det:art|the n|walk coord|and det:art|the n|grass
+	adv|outside prep|in det:art|the n|window .
+%gra:	1|2|AUX 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|CONJ 6|7|DET 7|5|COORD 8|7|NJCT
+	9|8|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	the &uh stool's about ready to fall . 22228_26102
+%mor:	det:art|the n|stool~cop|be&3S adv|about adj|ready inf|to v|fall .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|7|INF 7|5|XMOD 8|3|PUNCT
+*PAR:	the cupboard door's open . 26102_30963
+%mor:	det:art|the n|cupboard adj|door&dn-POSS adj|open .
+%gra:	1|2|DET 2|0|INCROOT 3|4|MOD 4|2|PRED 5|2|PUNCT
+*INV:	okay . 30963_41492
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

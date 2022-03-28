@@ -1,0 +1,98 @@
+@UTF8
+@PID:	11312/t-00002249-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|72;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	096-1, audio
+*INV:	okay . 0_1646
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	and there's the picture . 1646_4204
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	all of the action . [+ exc] 4204_5495
+%mor:	pro:indef|all prep|of det:art|the n|action .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	&uh just go ahead and tell you ? [+ exc] 5495_8486
+%mor:	adv|just v|go adv|ahead coord|and v|tell pro:per|you ?
+%gra:	1|2|JCT 2|0|ROOT 3|2|JCT 4|2|CONJ 5|4|COORD 6|5|OBJ 7|2|PUNCT
+*INV:	just say it . 8486_9015
+%mor:	adv|just v|say pro:per|it .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	the mother is dryin(g) a plate . 9015_12422
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP det:art|a n|plate .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	and the water's [//] sink is clogged and there's more water going
+	over and it's splashin(g) onto the floor . 12375_19299
+%mor:	coord|and det:art|the n|sink aux|be&3S part|clog-PASTP coord|and
+	pro:exist|there~cop|be&3S qn|more n|water part|go-PRESP adv|over
+	coord|and pro:per|it~aux|be&3S part|splash-PRESP prep|onto
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|LINK 7|8|SUBJ 8|5|CJCT
+	9|10|QUANT 10|8|PRED 11|10|XMOD 12|11|JCT 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|11|CJCT 17|16|JCT 18|19|DET 19|17|POBJ 20|5|PUNCT
+*PAR:	and the [/] &s the boy's fallin(g) off the stool gettin(g) cookies
+	from the cookie jar . 19299_25868
+%mor:	coord|and det:art|the n|boy~aux|be&3S part|fall-PRESP prep|off
+	det:art|the n|stool part|get-PRESP n|cookie-PL prep|from det:art|the
+	n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|XJCT 10|9|OBJ 11|9|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|5|PUNCT
+*PAR:	(.) and the girl's puttin(g) her finger up to her lip which means I
+	won't tell or somethin(g) like that . 25868_35705
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|put-PRESP det:poss|her
+	n|finger adv|up prep|to det:poss|her n|lip pro:rel|which v|mean-3S
+	pro:sub|I mod|will~neg|not v|tell coord|or pro:indef|something
+	prep|like pro:dem|that .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|5|JCT 10|11|DET 11|9|POBJ 12|13|LINK 13|5|CJCT 14|17|SUBJ 15|17|AUX
+	16|15|NEG 17|13|COMP 18|17|CONJ 19|18|COORD 20|19|NJCT 21|20|POBJ 22|5|PUNCT
+*PAR:	&uh shoes are gettin(g) wet in the mother . [+ gram] 35705_40094
+%mor:	n|shoe-PL aux|be&PRES part|get-PRESP adj|wet prep|in det:art|the
+	n|mother .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PRED 5|4|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	(.) I'm lookin(g) outside but I don't see it doin(g) anything . 40094_47409
+%mor:	pro:sub|I~aux|be&1S part|look-PRESP adv|outside conj|but pro:sub|I
+	mod|do~neg|not v|see pro:per|it part|do-PRESP pro:indef|anything .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|9|LINK 6|9|SUBJ 7|9|AUX 8|7|NEG
+	9|3|CJCT 10|9|OBJ 11|9|XJCT 12|11|OBJ 13|3|PUNCT
+*PAR:	<it doesn't look> [//] snowy ? [+ exc] 47409_48872
+%mor:	adj|snow&dn-Y ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	doesn't have too much to tell with that . [+ exc] 48934_54179
+%mor:	mod|do&3S~neg|not v|have adv|too adv|much inf|to v|tell prep|with
+	pro:dem|that .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|5|JCT 5|3|JCT 6|7|INF 7|3|COMP 8|7|JCT
+	9|8|POBJ 10|3|PUNCT
+*PAR:	that's about the [//] all the action I see is the water spillin(g)
+	over and the boy fallin(g) off the stool . 54861_63891
+%mor:	pro:dem|that~cop|be&3S prep|about qn|all det:art|the n|action
+	pro:sub|I v|see cop|be&3S det:art|the n|water part|spill-PRESP
+	adv|over coord|and det:art|the n|boy part|fall-PRESP prep|off
+	det:art|the n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|9|JCT 4|6|QUANT 5|6|DET 6|9|SUBJ 7|8|SUBJ 8|6|CMOD
+	9|2|CJCT 10|11|DET 11|9|PRED 12|11|XMOD 13|12|JCT 14|11|CONJ 15|16|DET
+	16|14|COORD 17|16|XMOD 18|17|JCT 19|20|DET 20|18|POBJ 21|2|PUNCT
+*INV:	okay fine . 63891_65821
+%mor:	co|okay adv|fine .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	I don't know that snow is action . [+ exc] 65415_68242
+%mor:	pro:sub|I mod|do~neg|not v|know comp|that n|snow cop|be&3S n|action
+	.
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|COMP 8|7|PRED
+	9|4|PUNCT
+*PAR:	I don't see it snowin(g) . [+ exc] 68242_69305
+%mor:	pro:sub|I mod|do~neg|not v|see pro:per|it part|snow-PRESP .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|4|XJCT 7|4|PUNCT
+*PAR:	it looked light out there . [+ exc] 69305_70535
+%mor:	pro:per|it cop|look-PAST adj|light prep|out n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|JCT 5|4|POBJ 6|2|PUNCT
+*INV:	+< okay +/. 69900_70500
+%mor:	co|okay +/.
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I don't know . [+ exc] 70535_71267
+%mor:	pro:sub|I mod|do~neg|not v|know .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PUNCT
+@End

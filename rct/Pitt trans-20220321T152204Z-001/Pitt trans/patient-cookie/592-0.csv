@@ -1,0 +1,79 @@
+@UTF8
+@PID:	11312/t-00002696-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|male|ProbableAD||Participant|14||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	592-0, audio
+*INV:	okay can you tell me everything you see going on in the picture ? 328_4357
+%mor:	co|okay mod|can pro:per|you v|tell pro:obj|me pro:indef|everything
+	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|4|COM 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|OBJ 7|8|SUBJ 8|4|COMP
+	9|8|OBJ 10|8|JCT 11|8|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	&m &s boy &o over here standin(g) on the chair [: stool] [* s:r] .
+	4357_8846
+%mor:	co|boy prep|over n|here part|stand-PRESP prep|on det:art|the
+	n|stool .
+%gra:	1|4|COM 2|4|JCT 3|2|POBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	&uh it's fallin(g) over . 8846_10306
+%mor:	pro:per|it~aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	and a girl down below . [+ gram] 10306_13013
+%mor:	coord|and det:art|a n|girl adv|down prep|below .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|5|JCT 5|3|NJCT 6|3|PUNCT
+*PAR:	the boy's up [/] up (th)ere . 13013_16139
+%mor:	det:art|the adj|boy&dn-POSS prep|up n|there .
+%gra:	1|2|DET 2|0|INCROOT 3|2|JCT 4|3|POBJ 5|2|PUNCT
+*PAR:	he's &uh has a cookie jar up (th)ere . 16139_19799
+%mor:	pro:sub|he~cop|be&3S v|have&3S det:art|a n|cookie n|jar prep|up
+	n|there .
+%gra:	1|2|SUBJ 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|JCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	he's puttin(g) cookies in . 19799_22222
+%mor:	pro:sub|he~aux|be&3S part|put-PRESP n|cookie-PL adv|in .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|PUNCT
+*PAR:	and the thing's fallin(g) over . [+ es] 22222_24702
+%mor:	coord|and det:art|the n|thing~aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	then there's the lady . 24702_30538
+%mor:	adv:tem|then pro:exist|there~cop|be&3S det:art|the n|lady .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	she's [/] (..) she's washin(g) dishes and dryin(g) (th)em . 30538_39412
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	part|dry-PRESP pro:obj|them .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|CONJ 6|5|COORD 7|6|OBJ 8|3|PUNCT
+*PAR:	and the sink (.) is turned on and the water's runnin(g) down and is
+	runnin(g) on the floor and she's standin(g) in the water . 39412_48811
+%mor:	coord|and det:art|the n|sink aux|be&3S part|turn-PASTP adv|on
+	coord|and det:art|the n|water~aux|be&3S part|run-PRESP adv|down
+	coord|and aux|be&3S part|run-PRESP prep|on det:art|the n|floor
+	coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the
+	n|water .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|5|CJCT 12|11|JCT 13|11|CONJ 14|15|AUX 15|13|COORD
+	16|15|JCT 17|18|DET 18|16|POBJ 19|22|LINK 20|22|SUBJ 21|22|AUX 22|15|CJCT
+	23|22|JCT 24|25|DET 25|23|POBJ 26|5|PUNCT
+*PAR:	she's got &uh (..) a dress on and [/] and there's [//] she's
+	looking out [/] out past drapes down here . 48811_65198
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:art|a n|dress adv|on
+	coord|and pro:sub|she~aux|be&3S part|look-PRESP adv|out adj|past
+	v|drape-3S prep|down n|here .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|JCT 12|13|JCT 13|10|COMP 14|13|JCT 15|14|POBJ
+	16|3|PUNCT
+*PAR:	and she's lookin(g) out through the window . 65198_68014
+%mor:	coord|and pro:sub|she~aux|be&3S part|look-PRESP adv|out
+	prep|through det:art|the n|window .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	(..) looks like that boy's gonna fall over pretty soon . 68014_77599
+%mor:	v|look-3S prep|like pro:dem|that n|boy~aux|be&3S
+	part|go-PRESP~inf|to v|fall adv|over adv|pretty adv|soon .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|6|AUX 6|1|XJCT 7|8|INF 8|6|COMP
+	9|8|JCT 10|11|JCT 11|8|JCT 12|1|PUNCT
+*INV:	+< okay . 77599_78752
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

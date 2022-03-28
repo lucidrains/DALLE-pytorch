@@ -1,0 +1,75 @@
+@UTF8
+@PID:	11312/t-00002613-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	325-0, audio
+*INV:	tell me everything that you see going on in that picture . 0_4064
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*PAR:	(.) well ‡ the lady's dryin(g) her dishes . 4064_10068
+%mor:	co|well beg|beg det:art|the n|lady~aux|be&3S part|dry-PRESP
+	det:poss|her n|dish-PL .
+%gra:	1|0|BEG 2|1|BEGP 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|PUNCT
+*PAR:	that [//] the little boy's up on a ladder reachin(g) for cookie jar
+	&=laughs . [+ gram] 10068_15533
+%mor:	det:art|the adj|little n|boy~aux|be&3S adv|up prep|on det:art|a
+	n|ladder part|reach-PRESP prep|for n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|9|SUBJ 4|9|AUX 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|0|ROOT 10|9|JCT 11|12|MOD 12|10|POBJ 13|9|PUNCT
+*PAR:	and the little girl's down on the floor reachin(g) up toward him .
+	15533_21075
+%mor:	coord|and det:art|the adj|little adj|girl&dn-POSS n|down prep|on
+	det:art|the n|floor part|reach-PRESP adv|up prep|toward pro:obj|him
+	.
+%gra:	1|5|LINK 2|5|DET 3|5|MOD 4|5|MOD 5|0|INCROOT 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|5|XJCT 10|9|JCT 11|9|JCT 12|11|POBJ 13|5|PUNCT
+*PAR:	then I see a sink, the dishes, cupboard . [+ gram] 21075_27409
+%mor:	adv:tem|then pro:sub|I v|see det:art|a n|sink cm|cm det:art|the
+	n|dish-PL cm|cm n|cupboard .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|LP 7|8|DET 8|3|OBJ 9|8|LP
+	10|8|ENUM 11|3|PUNCT
+*PAR:	and then there's a walkway in the back . 27409_31072
+%mor:	coord|and adv:tem|then pro:exist|there~cop|be&3S det:art|a
+	n|+n|walk+n|way prep|in det:art|the n|back .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	guess [//] I guess that's a walkway I call . [+ gram] [+ exc] 31072_34148
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S det:art|a n|+n|walk+n|way
+	pro:sub|I v|call .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|6|DET 6|4|PRED 7|8|SUBJ 8|6|CMOD
+	9|2|PUNCT
+*INV:	anything else ? 34148_37027
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	what else is going on in that picture ? 37027_38893
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on prep|in
+	det:dem|that n|picture ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the water's running over the sink &=laughs . 38893_43066
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP prep|over det:art|the
+	n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*INV:	+< okay . 41838_43066
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 43066_48371
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	well ‡ I said the little boy's climbing up <on the cookie> [//] &j
+	for the cookies . 48371_53924
+%mor:	co|well beg|beg pro:sub|I v|say&PAST det:art|the adj|little
+	n|boy~aux|be&3S part|climb-PRESP adv|up prep|for det:art|the
+	n|cookie-PL .
+%gra:	1|0|BEG 2|1|BEGP 3|4|SUBJ 4|0|ROOT 5|7|DET 6|7|MOD 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|9|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*INV:	okay . 54500_55670
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

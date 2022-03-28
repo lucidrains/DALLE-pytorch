@@ -1,0 +1,50 @@
+@UTF8
+@PID:	11312/t-00002700-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|81;|female|ProbableAD||Participant|22||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	601-0, audio
+*INV:	tell me everything that you see happening in that picture . 0_3316
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	co|see n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|7|LINK 5|7|SUBJ 6|7|COM 7|3|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*INV:	what's going on there ? 3316_5129
+%mor:	pro:int|what~aux|be&3S part|go-PRESP prep|on n|there ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	well the chair's [: stool's] [* s:r] gonna upset . 5129_8321
+%mor:	co|well det:art|the n|stool~aux|be&3S part|go-PRESP~inf|to v|upset
+	.
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|5|PUNCT
+*PAR:	and the kid's (..) gonna upset the cookies for one thing . 8321_10997
+%mor:	coord|and det:art|the n|kid~aux|be&3S part|go-PRESP~inf|to v|upset
+	det:art|the n|cookie-PL prep|for pro:indef|one n|thing .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|7|JCT 11|12|SUBJ 12|10|POBJ 13|5|PUNCT
+*PAR:	and <the woman> [//] the sink's runnin(g) over the water on the
+	floor while she's dryin(g) the dishes . 10997_18987
+%mor:	coord|and det:art|the n|sink~aux|be&3S part|run-PRESP prep|over
+	det:art|the n|water prep|on det:art|the n|floor conj|while
+	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|15|LINK 13|15|SUBJ 14|15|AUX 15|5|CJCT
+	16|17|DET 17|15|OBJ 18|5|PUNCT
+*PAR:	(...) and &uh you need water in there to wash the dishes and it's
+	runnin(g) on the floor . 18987_28990
+%mor:	coord|and pro:per|you v|need n|water prep|in n|there inf|to v|wash
+	det:art|the n|dish-PL coord|and pro:per|it~aux|be&3S part|run-PRESP
+	prep|on det:art|the n|floor .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|5|POBJ 7|8|INF 8|3|XJCT
+	9|10|DET 10|8|OBJ 11|14|LINK 12|14|SUBJ 13|14|AUX 14|8|CJCT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|3|PUNCT
+*PAR:	you can look out the window and see the grass . 28990_33663
+%mor:	pro:per|you mod|can v|look prep|out det:art|the n|window coord|and
+	v|see det:art|the n|grass .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|10|DET 10|8|OBJ 11|3|PUNCT
+*INV:	okay . 33663_34817
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

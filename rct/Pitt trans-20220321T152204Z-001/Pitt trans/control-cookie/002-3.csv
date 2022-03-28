@@ -1,0 +1,110 @@
+@UTF8
+@PID:	11312/t-00002181-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|61;|female|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	002-3, audio
+@Comment:	overlapping audio
+*INV:	look at that picture and I want you to tell me everything that you
+	see happening there, everything that's going on in that picture . 0_7987
+%mor:	v|look prep|at det:dem|that n|picture coord|and pro:sub|I v|want
+	pro:per|you inf|to v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you v|see n:gerund|happen-PRESP adv|there cm|cm
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|7|LINK 6|7|SUBJ 7|1|CJCT 8|10|SUBJ
+	9|10|INF 10|7|COMP 11|10|OBJ 12|10|OBJ 13|15|LINK 14|15|SUBJ 15|12|CMOD
+	16|15|OBJ 17|15|JCT 18|15|LP 19|15|OBJ 20|22|LINK 21|22|AUX 22|19|CMOD
+	23|22|JCT 24|22|JCT 25|26|DET 26|24|POBJ 27|1|PUNCT
+*PAR:	okay . [+ exc] 7987_10000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	it was summertime and mother and the children were working in the
+	kitchen . 10000_18550
+%mor:	pro:per|it cop|be&PAST&13S n|+n|summer+n|time coord|and n|mother
+	coord|and det:art|the n|child&PL aux|be&PAST part|work-PRESP prep|in
+	det:art|the n|kitchen .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|CONJ 5|4|COORD 6|10|LINK 7|8|DET
+	8|10|SUBJ 9|10|AUX 10|2|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	and the window was open and there was a slight breeze blowing in .
+	18550_23582
+%mor:	coord|and det:art|the n|window cop|be&PAST&13S adj|open coord|and
+	adv|there cop|be&PAST&13S det:art|a adj|slight n|breeze
+	part|blow-PRESP adv|in .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|8|LINK 7|8|SUBJ 8|4|CJCT
+	9|11|DET 10|11|MOD 11|8|PRED 12|11|XMOD 13|12|JCT 14|4|PUNCT
+*PAR:	&um mother was daydreaming and forgot and left the water in the
+	sink running and it was overflowing . 23582_35239
+%mor:	n|mother aux|be&PAST&13S part|+n|day+n|dream-PRESP coord|and
+	v|forget&PAST coord|and v|leave&PAST det:art|the n|water prep|in
+	det:art|the n|sink part|run-PRESP coord|and pro:per|it
+	aux|be&PAST&13S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|CONJ 5|4|COORD 6|3|CONJ 7|6|COORD 8|9|DET
+	9|7|OBJ 10|7|JCT 11|12|DET 12|10|POBJ 13|7|XJCT 14|13|CONJ 15|17|SUBJ
+	16|17|AUX 17|14|COORD 18|3|PUNCT
+*PAR:	&um the children were hungry and because they knew mother was
+	distracted doing the &di dishes they did something they probably
+	should not have done . 35239_50200
+%mor:	det:art|the n|child&PL cop|be&PAST adj|hungry coord|and
+	conj|because pro:sub|they v|know&PAST n|mother aux|be&PAST&13S
+	part|distract-PASTP part|do-PRESP det:art|the n|dish-PL pro:sub|they
+	v|do&PAST pro:indef|something pro:sub|they adv|probable&dadj-LY
+	mod|should neg|not v|have part|do&PASTP .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|16|LINK 6|8|LINK 7|8|SUBJ
+	8|16|CJCT 9|16|SUBJ 10|11|AUX 11|16|XJCT 12|11|COMP 13|14|DET 14|12|OBJ
+	15|16|SUBJ 16|3|CJCT 17|16|OBJ 18|22|SUBJ 19|22|JCT 20|22|AUX 21|20|NEG
+	22|17|CMOD 23|22|COMP 24|3|PUNCT
+*PAR:	and they got the kitchen stool and moved it under the cupboard
+	where the cookie jar was . 50200_55666
+%mor:	coord|and pro:sub|they v|get&PAST det:art|the n|kitchen n|stool
+	coord|and v|move-PAST pro:per|it prep|under det:art|the n|cupboard
+	pro:rel|where det:art|the n|cookie n|jar cop|be&PAST&13S .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|CONJ 8|7|COORD
+	9|8|OBJ 10|8|JCT 11|12|DET 12|10|POBJ 13|17|LINK 14|16|DET 15|16|MOD
+	16|17|SUBJ 17|12|CMOD 18|3|PUNCT
+*PAR:	and the young boy climbed up to get a cookie . 55666_59374
+%mor:	coord|and det:art|the adj|young n|boy part|climb-PASTP adv|up
+	inf|to v|get det:art|a n|cookie .
+%gra:	1|8|LINK 2|4|DET 3|4|MOD 4|8|SUBJ 5|4|XMOD 6|5|JCT 7|8|INF 8|0|ROOT
+	9|10|DET 10|8|OBJ 11|8|PUNCT
+*PAR:	&um because he did not place his weight correctly on the stool he's
+	about to fall and probably hurt himself (be)cause his head's gonna
+	hit the kitchen cupboards . 59374_73956
+%mor:	conj|because pro:sub|he mod|do&PAST neg|not v|place det:poss|his
+	n|weight adv|correct&dadj-LY prep|on det:art|the n|stool
+	pro:sub|he~cop|be&3S adv|about inf|to v|fall coord|and
+	adv|probable&dadj-LY part|hurt&PASTP pro:refl|himself conj|because
+	det:poss|his adj|head&dn-POSS part|go-PRESP~inf|to v|hit&ZERO
+	det:art|the n|kitchen n|cupboard-PL .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|13|CJCT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|5|JCT 10|11|DET 11|9|POBJ 12|13|SUBJ 13|0|ROOT 14|13|JCT 15|16|INF
+	16|13|CPRED 17|16|CONJ 18|19|JCT 19|17|COORD 20|19|OBJ 21|13|PUNCT 22|23|DET
+	23|21|PRED 24|23|XMOD 25|26|INF 26|24|COMP 27|29|DET 28|29|MOD 29|26|OBJ
+	30|21|PUNCT
+*PAR:	&um it looks like the house is set in the country . 73956_81005
+%mor:	pro:per|it v|look-3S prep|like det:art|the n|house aux|be&3S
+	part|set&PASTP prep|in det:art|the n|country .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|7|AUX 7|2|XJCT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	and it's a large house but [//] &e either that or you're seeing
+	another house or the [//] a wing of the house . 81005_90763
+%mor:	coord|and pro:per|it~cop|be&3S det:art|a adj|large n|house
+	adv|either adv|that coord|or pro:per|you~aux|be&PRES part|see-PRESP
+	qn|another n|house coord|or det:art|a n|wing prep|of det:art|the
+	n|house .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|PRED 7|6|NJCT 8|7|JCT
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|CJCT 13|14|QUANT 14|12|OBJ 15|14|CONJ
+	16|17|DET 17|15|COORD 18|17|NJCT 19|20|DET 20|18|POBJ 21|3|PUNCT
+*PAR:	there's grass growing <a little> [/] a little path . 90763_95188
+%mor:	pro:exist|there~cop|be&3S n|grass part|grow-PRESP det:art|a
+	adj|little n|path .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|XMOD 5|7|DET 6|7|MOD 7|4|OBJ 8|2|PUNCT
+*INV:	okay that's good . 95188_96900
+%mor:	co|okay pro:dem|that~cop|be&3S adj|good .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	mother looks pretty laid back there &=laughs . 96900_99600
+%mor:	n|mother v|look-3S adv|pretty v|lay&PAST adv|back adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|COMP 5|4|JCT 6|4|JCT 7|2|PUNCT
+@End

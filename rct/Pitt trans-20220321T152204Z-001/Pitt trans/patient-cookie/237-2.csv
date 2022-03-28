@@ -1,0 +1,105 @@
+@UTF8
+@PID:	11312/t-00002578-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|MCI||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	237-2, audio
+*PAR:	the &uh young fellow is &s standing on the step ladder which is
+	+//. 0_4873
+%mor:	det:art|the adj|young n|fellow aux|be&3S part|stand-PRESP prep|on
+	det:art|the n|step n|ladder pro:rel|which cop|be&3S +//.
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|11|LINK 11|9|CMOD 12|5|PUNCT
+*PAR:	it's a stool which is getting ready to fall . 4873_8000
+%mor:	pro:per|it~cop|be&3S det:art|a n|stool pro:rel|which aux|be&3S
+	part|get-PRESP adj|ready inf|to v|fall .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|PRED
+	9|10|INF 10|8|XMOD 11|2|PUNCT
+*PAR:	<he's handing> [//] he's getting a cookie out while he's handing
+	one to the sister . 8000_13000
+%mor:	pro:sub|he~aux|be&3S part|get-PRESP det:art|a n|cookie adv|out
+	conj|while pro:sub|he~aux|be&3S part|hand-PRESP det:num|one prep|to
+	det:art|the n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|OBJ 12|11|JCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*PAR:	the top is falling off of the cookie jar . 13000_16233
+%mor:	det:art|the n|top aux|be&3S part|fall-PRESP adv|off prep|of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	the girl is standin(g) on the floor with her hand reachin(g) up for
+	the cookie while she has her right hand up to her mouth . 16233_26414
+%mor:	det:art|the n|girl aux|be&3S part|stand-PRESP prep|on det:art|the
+	n|floor prep|with det:poss|her n|hand part|reach-PRESP adv|up
+	prep|for det:art|the n|cookie conj|while pro:sub|she v|have&3S
+	det:poss|her n|right v|hand adv|up prep|to det:poss|her n|mouth .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|XJCT 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|18|LINK 17|18|SUBJ 18|4|CJCT 19|20|DET 20|21|SUBJ 21|18|COMP 22|21|JCT
+	23|21|JCT 24|25|DET 25|23|POBJ 26|4|PUNCT
+*PAR:	I think she's tellin(g) him to watch it . 26414_28777
+%mor:	pro:sub|I v|think pro:sub|she~aux|be&3S part|tell-PRESP pro:obj|him
+	inf|to v|watch pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|5|OBJ 7|8|INF 8|5|XJCT
+	9|8|OBJ 10|2|PUNCT
+*PAR:	he's at the cupboard with the door open . 28777_32437
+%mor:	pro:sub|he~cop|be&3S prep|at det:art|the n|cupboard prep|with
+	det:art|the n|door adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|JCT 7|8|DET 8|6|POBJ
+	9|8|POSTMOD 10|2|PUNCT
+*PAR:	the mother has her back turned towards them . 32437_36096
+%mor:	det:art|the n|mother v|have&3S det:poss|her n|back v|turn-PAST
+	prep|towards pro:obj|them .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|COMP 7|6|JCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	the water is overflowing from the faucet into the sink onto the
+	floor, <while she wipes> [//] &uh while she dries &uh a dish . 36096_46680
+%mor:	det:art|the n|water aux|be&3S over#part|flow-PRESP prep|from
+	det:art|the n|faucet prep|into det:art|the n|sink prep|onto
+	det:art|the n|floor cm|cm conj|while pro:sub|she v|dry-3S det:art|a
+	n|dish .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|JCT 12|13|DET 13|11|POBJ 14|4|LP 15|17|LINK
+	16|17|SUBJ 17|4|CJCT 18|19|DET 19|17|OBJ 20|4|PUNCT
+*PAR:	and she doesn't even hear or know what's going on . 46680_51722
+%mor:	coord|and pro:sub|she mod|do&3S~neg|not adv|even v|hear coord|or
+	v|know pro:int|what~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|6|LINK 2|6|SUBJ 3|6|AUX 4|3|NEG 5|6|JCT 6|0|ROOT 7|6|CONJ 8|7|COORD
+	9|11|LINK 10|11|AUX 11|8|COMP 12|11|JCT 13|6|PUNCT
+*PAR:	there the cupboard doors are closed . 51722_55050
+%mor:	adv|there det:art|the n|cupboard n|door-PL aux|be&PRES
+	part|close-PASTP .
+%gra:	1|6|JCT 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*PAR:	the window is open or closed and you can see outside . 55050_60649
+%mor:	det:art|the n|window cop|be&3S adj|open coord|or v|close-PAST
+	coord|and pro:per|you mod|can v|see adv|outside .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|CONJ 6|5|COORD 7|10|LINK
+	8|10|SUBJ 9|10|AUX 10|6|COMP 11|10|JCT 12|3|PUNCT
+*PAR:	the path flowers and so forth . [+ gram] 60649_63627
+%mor:	det:art|the n|path n|flower-PL coord|and co|so adv|forth .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|CONJ 5|6|COM 6|4|COORD 7|3|PUNCT
+*PAR:	now I know I'm missing something . [+ exc] 63627_66087
+%mor:	adv|now pro:sub|I v|know pro:sub|I~aux|be&1S part|miss-PRESP
+	pro:indef|something .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|AUX 6|3|COMP 7|6|OBJ 8|3|PUNCT
+*PAR:	she's standing in the water . 66087_68382
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|water
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	(.) <the faucet> [//] the sink is overflowing . 68382_74347
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	two cups and a plate are there . 74347_76776
+%mor:	det:num|two n|cup-PL coord|and det:art|a n|plate cop|be&PRES
+	adv|there .
+%gra:	1|2|QUANT 2|6|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|0|ROOT 7|6|JCT
+	8|6|PUNCT
+*PAR:	that's all I can see . [+ exc] 76776_80294
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I mod|can v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|2|PUNCT
+*INV:	okay that's fine . 80294_81306
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

@@ -1,0 +1,105 @@
+@UTF8
+@PID:	11312/t-00002568-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|61;|female|ProbableAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	222-0, audio
+*INV:	what I want you to do is to tell me all of the action that you see
+	going on in this picture . 0_4592
+%mor:	pro:int|what pro:sub|I v|want pro:per|you inf|to v|do cop|be&3S
+	inf|to v|tell pro:obj|me post|all prep|of det:art|the n|action
+	pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:dem|this n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|9|INF
+	9|6|COMP 10|9|OBJ 11|9|COMP 12|11|JCT 13|14|DET 14|12|POBJ 15|17|LINK
+	16|17|SUBJ 17|14|CMOD 18|17|OBJ 19|17|JCT 20|17|JCT 21|22|DET 22|20|POBJ
+	23|3|PUNCT
+*PAR:	well this &uh (.) lady is <taking care of her> [//] &um (.) washing
+	a_lot of stuff . 4592_19399
+%mor:	co|well det:dem|this n|lady aux|be&3S part|wash-PRESP adv|a_lot
+	prep|of n|stuff .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|JCT 8|7|POBJ
+	9|5|PUNCT
+*PAR:	but the water is goin(g) down [/] down [/] &s down here . 19399_25767
+%mor:	conj|but det:art|the n|water aux|be&3S part|go-PRESP prep|down
+	n|here .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT
+*INV:	okay . 25767_26498
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< instead of its goin(g) down in (th)ere it's comin(g) out . 25800_28624
+%mor:	adv|instead prep|of det:poss|its part|go-PRESP adv|down prep|in
+	adv|there pro:per|it~aux|be&3S part|come-PRESP adv|out .
+%gra:	1|5|JCT 2|1|JCT 3|4|DET 4|2|POBJ 5|0|ROOT 6|5|JCT 7|10|JCT 8|10|SUBJ
+	9|10|AUX 10|6|POBJ 11|10|JCT 12|5|PUNCT
+*INV:	okay . 28624_29743
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and &uh <the little> [//] &b the boy (.) is getting the cookies . 29744_37399
+%mor:	coord|and det:art|the n|boy aux|be&3S part|get-PRESP det:art|the
+	n|cookie-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and the girl is wanting the cookies . 37399_42675
+%mor:	coord|and det:art|the n|girl aux|be&3S part|want-PRESP det:art|the
+	n|cookie-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and the way he's puttin(g) it on there she [: he] [* s:r-ret] [//]
+	he's gonna fall . 42675_51285
+%mor:	coord|and det:art|the n|way pro:sub|he~aux|be&3S part|put-PRESP
+	pro:per|it prep|on n|there pro:sub|he~aux|be&3S part|go-PRESP~inf|to
+	v|fall .
+%gra:	1|12|LINK 2|3|DET 3|12|JCT 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|6|OBJ 8|3|NJCT
+	9|8|POBJ 10|12|SUBJ 11|12|AUX 12|0|ROOT 13|14|INF 14|12|COMP 15|12|PUNCT
+*INV:	okay . 51285_53500
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< yeah (be)cause that's crooked . [+ gram] 53000_54398
+%mor:	co|yeah conj|because pro:dem|that~cop|be&3S adj|crooked .
+%gra:	1|4|COM 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*INV:	uhhuh . 54379_55158
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	(..) can you see anything else ? 55158_70240
+%mor:	mod|can pro:per|you v|see pro:indef|anything post|else ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|PQ 6|3|PUNCT
+*INV:	any more action going on in the picture ? 70240_73959
+%mor:	qn|any qn|more n|action part|go-PRESP adv|on prep|in det:art|the
+	n|picture ?
+%gra:	1|3|QUANT 2|3|QUANT 3|0|INCROOT 4|3|XMOD 5|4|JCT 6|4|JCT 7|8|DET
+	8|6|POBJ 9|3|PUNCT
+*PAR:	&uh I see that all the water coming down through from outside .
+	[+ gram] 73959_80562
+%mor:	pro:sub|I v|see comp|that qn|all det:art|the n|water
+	part|come-PRESP adv|down adv|through prep|from adv|outside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|6|QUANT 5|6|DET 6|3|OBJ 7|6|XMOD 8|7|JCT
+	9|7|JCT 10|7|JCT 11|10|POBJ 12|2|PUNCT
+*PAR:	instead of it going down through there it's coming out (.) <all
+	over the> [//] all over here . 80562_86332
+%mor:	adv|instead prep|of pro:per|it part|go-PRESP adv|down adv|through
+	adv|there pro:per|it~aux|be&3S part|come-PRESP adv|out qn|all
+	prep|over n|here .
+%gra:	1|4|JCT 2|4|JCT 3|2|POBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|4|JCT 8|10|SUBJ
+	9|10|AUX 10|4|COMP 11|10|JCT 12|11|POBJ 13|12|NJCT 14|13|POBJ 15|4|PUNCT
+*INV:	+< mhm . 84000_85000
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	mhm . 86332_87513
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 87513_89142
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	good that's fine . 89142_91022
+%mor:	adj|good pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	yeah because water's all comin(g) down through here . [+ gram] 91022_93681
+%mor:	co|yeah conj|because adj|water&dn-POSS post|all part|come-PRESP
+	adv|down adv|through adv|here .
+%gra:	1|0|INCROOT 2|1|CONJ 3|2|COORD 4|3|JCT 5|4|XMOD 6|5|JCT 7|8|JCT 8|5|JCT
+	9|1|PUNCT
+*INV:	uhhuh okay . 93681_94895
+%mor:	co|uhhuh co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

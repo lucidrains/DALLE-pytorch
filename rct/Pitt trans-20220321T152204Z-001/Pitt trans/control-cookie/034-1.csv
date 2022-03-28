@@ -1,0 +1,50 @@
+@UTF8
+@PID:	11312/t-00002206-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|71;|male|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	034-1, audio
+*INV:	okay and here's the picture . 0_2606
+%mor:	co|okay coord|and pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|4|COM 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|4|PUNCT
+*INV:	all of the action you see going on . 2606_4623
+%mor:	pro:indef|all prep|of det:art|the n|action pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|6|JCT 2|1|NJCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|6|OBJ 8|6|JCT
+	9|6|PUNCT
+*PAR:	boy &uh taking cookies out_of a cookie jar . [+ gram] 4623_10779
+%mor:	n|boy part|take-PRESP n|cookie-PL prep|out_of det:art|a n|cookie
+	n|jar .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|OBJ 4|2|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|1|PUNCT
+*PAR:	the stool is falling . 10779_13965
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the little girl is reaching . 13965_19362
+%mor:	det:art|the adj|little n|girl aux|be&3S part|reach-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	water is running out o(f) the faucet . 19362_22369
+%mor:	n|water aux|be&3S part|run-PRESP adv|out prep|of det:art|the
+	n|faucet .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	the water is overflowing the sink . 22369_25977
+%mor:	det:art|the n|water aux|be&3S over#part|flow-PRESP det:art|the
+	n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	woman is <washin(g) dishes> [//] (...) drying dishes . [+ gram] 25977_45229
+%mor:	n|woman aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	xxx anything else ? 45229_49252
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	there's nothing to indicate xxx and I don't see any more action .
+	[+ exc] 49252_57939
+%mor:	pro:exist|there~cop|be&3S pro:indef|nothing inf|to v|indicate
+	coord|and pro:sub|I mod|do~neg|not v|see qn|any qn|more n|action .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|INF 5|3|XMOD 6|10|LINK 7|10|SUBJ
+	8|10|AUX 9|8|NEG 10|5|COMP 11|13|QUANT 12|13|QUANT 13|10|OBJ 14|2|PUNCT
+*INV:	okay good that's fine . 57939_60106
+%mor:	co|okay adj|good pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+@End

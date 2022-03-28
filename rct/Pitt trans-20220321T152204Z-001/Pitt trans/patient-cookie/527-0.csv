@@ -1,0 +1,74 @@
+@UTF8
+@PID:	11312/t-00002676-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|ProbableAD||Participant|15||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	527-0, audio
+*PAR:	well that boy's tryin(g) to get some cookies . 0_4389
+%mor:	co|well adv|that n|boy~aux|be&3S part|try-PRESP inf|to v|get
+	qn|some n|cookie-PL .
+%gra:	1|5|COM 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|QUANT
+	9|7|OBJ 10|5|PUNCT
+*PAR:	and the girl's holdin(g) her hand up because he has gotten one and
+	she &s wants it . 4389_11072
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|hold-PRESP det:poss|her
+	n|hand adv|up conj|because pro:sub|he aux|have&3S part|get&PASTP
+	det:num|one coord|and pro:sub|she v|want-3S pro:per|it .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|5|CJCT 13|12|OBJ 14|16|LINK 15|16|SUBJ
+	16|12|CJCT 17|16|OBJ 18|5|PUNCT
+*PAR:	and his [//] where he's climbin(g) up is fallin(g) over . [+ cir] 11072_17836
+%mor:	coord|and pro:rel|where pro:sub|he~aux|be&3S part|climb-PRESP
+	adv|up aux|be&3S part|fall-PRESP adv|over .
+%gra:	1|8|LINK 2|5|LINK 3|5|SUBJ 4|5|AUX 5|8|SUBJ 6|5|JCT 7|8|AUX 8|0|ROOT
+	9|8|JCT 10|8|PUNCT
+*PAR:	and this girl she's washin(g) dishes . 17836_22391
+%mor:	coord|and det:dem|this n|girl pro:sub|she~aux|be&3S part|wash-PRESP
+	n|dish-PL .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|6|OBJ
+	8|3|PUNCT
+*PAR:	and &uh she has &uh something there for the dinner . 22391_27430
+%mor:	coord|and pro:sub|she aux|have&3S pro:indef|something adv|there
+	prep|for det:art|the n|dinner .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|NJCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	and she spilt [: spilled] the [/] the &uh water . 27430_30887
+%mor:	coord|and pro:sub|she v|spill-PAST det:art|the n|water .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	and it's all on the floor going . [+ gram] 30887_33813
+%mor:	coord|and pro:per|it~aux|be&3S adv|all prep|on det:art|the n|floor
+	part|go-PRESP .
+%gra:	1|8|LINK 2|8|SUBJ 3|8|AUX 4|5|JCT 5|8|JCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|8|PUNCT
+*PAR:	she has a dish cloth in her hand . 33813_42241
+%mor:	pro:sub|she v|have&3S det:art|a n|dish n|cloth prep|in det:poss|her
+	n|hand .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|2|JCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	and the boy he's tryin(g) to get the cookies out o(f) the jar for
+	her . 42241_52576
+%mor:	coord|and det:art|the n|boy pro:sub|he~aux|be&3S part|try-PRESP
+	inf|to v|get det:art|the n|cookie-PL adv|out prep|of det:art|the
+	n|jar prep|for pro:obj|her .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|8|INF 8|6|COMP
+	9|10|DET 10|8|OBJ 11|8|JCT 12|11|JCT 13|14|DET 14|12|POBJ 15|8|JCT
+	16|15|POBJ 17|3|PUNCT
+*PAR:	but he's gonna fall over by the way the [//] it looks . 52576_59436
+%mor:	conj|but pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall adv|over
+	prep|by det:art|the n|way pro:per|it v|look-3S .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|12|SUBJ 12|10|CMOD 13|4|PUNCT
+*INV:	okay . 59436_60743
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and she's spilt [: spilled] some water and steppin(g) in it . 60743_64808
+%mor:	coord|and pro:sub|she~aux|be&3S part|spill-PASTP qn|some n|water
+	coord|and n:gerund|step-PRESP prep|in pro:per|it .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|6|CONJ 8|7|COORD
+	9|8|JCT 10|9|POBJ 11|4|PUNCT
+*INV:	okay . 64808_66908
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,83 @@
+@UTF8
+@PID:	11312/t-00002694-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|male|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	587-0, audio
+*INV:	I want you to tell me everything you see happening in that picture
+	. 0_3626
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:per|you co|see n:gerund|happen-PRESP adv|in
+	det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|SUBJ
+	9|10|COM 10|7|CMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*PAR:	everything ? [+ exc] 3626_4514
+%mor:	pro:indef|everything ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	everything you see happening . 4514_5883
+%mor:	pro:indef|everything pro:per|you v|see n:gerund|happen-PRESP .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	happening ? [+ exc] 5883_6416
+%mor:	part|happen-PRESP ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	yeah everything that's going on . 6416_8062
+%mor:	co|yeah pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP
+	adv|on .
+%gra:	1|2|COM 2|0|ROOT 3|5|LINK 4|5|AUX 5|2|CMOD 6|5|JCT 7|2|PUNCT
+*PAR:	&hm mhm . [+ exc] 7262_9042
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what's happening in that picture ? 9042_10707
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP prep|in det:dem|that
+	n|picture ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	+< well (..) &uh this is the boy trying to get the cookie jar down
+	for his sister I would imagine it is . 10007_19828
+%mor:	co|well pro:dem|this cop|be&3S det:art|the n|boy part|try-PRESP
+	inf|to v|get det:art|the n|cookie n|jar n|down prep|for det:poss|his
+	n|sister pro:sub|I mod|will&COND v|imagine pro:per|it cop|be&3S .
+%gra:	1|2|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|18|JCT 6|5|XMOD 7|8|INF 8|6|COMP
+	9|11|DET 10|11|MOD 11|12|MOD 12|8|OBJ 13|8|JCT 14|15|DET 15|13|POBJ
+	16|18|SUBJ 17|18|AUX 18|3|CPRED 19|20|SUBJ 20|18|COMP 21|3|PUNCT
+*PAR:	&uh and he's gonna fall <off the ladder [: stool] [* s:r-ret]> [//]
+	off the [//] (..) &uh his s:tool or whatever he is settin(g) on . 19828_28418
+%mor:	coord|and pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall prep|off
+	det:poss|his n|stool coord|or pro:int|whatever pro:sub|he aux|be&3S
+	part|set-PRESP adv|on .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|CONJ 11|14|LINK 12|14|SUBJ 13|14|AUX 14|10|COORD 15|14|JCT
+	16|4|PUNCT
+*PAR:	the mother is over here . 28418_30403
+%mor:	det:art|the n|mother cop|be&3S prep|over n|here .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	she just dropped [: spilled] [* s:r] some water or whatever on the
+	floor . 30403_34748
+%mor:	pro:sub|she adv|just v|spill-PAST qn|some n|water coord|or
+	pro:int|whatever adv|on det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|5|CONJ 7|6|COORD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and [/] and she looks (.) pretty mad . 34748_38800
+%mor:	coord|and pro:sub|she v|look-3S adv|pretty adj|mad .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|COMP 6|3|PUNCT
+*INV:	mhm . 38800_39697
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and &um the water's still runnin(g) . 39697_42540
+%mor:	coord|and det:art|the n|water~aux|be&3S adv|still part|run-PRESP .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|PUNCT
+*PAR:	and it looks like the [/] the girl is laughing <at the> [/] at the
+	boy because the [/] &uh the stool is gonna fall over . 42540_54645
+%mor:	coord|and pro:per|it v|look-3S prep|like det:art|the n|girl
+	aux|be&3S part|laugh-PRESP prep|at det:art|the n|boy conj|because
+	det:art|the n|stool aux|be&3S part|go-PRESP~inf|to v|fall adv|over .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|8|AUX 8|3|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|16|LINK 13|14|DET 14|16|SUBJ 15|16|AUX
+	16|3|CJCT 17|18|INF 18|16|COMP 19|18|JCT 20|3|PUNCT
+*PAR:	and there's [/] there's water on the floor there . 54645_59712
+%mor:	coord|and pro:exist|there~cop|be&3S n|water prep|on det:art|the
+	n|floor adv|there .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|3|JCT
+	9|3|PUNCT
+@End

@@ -1,0 +1,55 @@
+@UTF8
+@PID:	11312/t-00002225-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	059-3, audio
+*PAR:	the little boy is getting a cookie out o(f) the cookie jar . 0_2926
+%mor:	det:art|the adj|little n|boy aux|be&3S part|get-PRESP det:art|a
+	n|cookie adv|out prep|of det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|5|PUNCT
+*PAR:	and the little girl's reaching for a cookie . 2926_4705
+%mor:	coord|and det:art|the adj|little n|girl~aux|be&3S part|reach-PRESP
+	prep|for det:art|a n|cookie .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	and the little boy's (a)bout to fall off the stool . 4705_7185
+%mor:	coord|and det:art|the adj|little n|boy~cop|be&3S adv|about inf|to
+	v|fall prep|off det:art|the n|stool .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|8|JCT 7|8|INF 8|5|CPRED
+	9|8|JCT 10|11|DET 11|9|POBJ 12|5|PUNCT
+*PAR:	and the lady is drying dishes . 7185_10850
+%mor:	coord|and det:art|the n|lady aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and the water is overflowing in the sink . 10850_14126
+%mor:	coord|and det:art|the n|water aux|be&3S over#part|flow-PRESP
+	prep|in det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and &hm I don't really know anything else going on . [+ exc] 14126_20709
+%mor:	coord|and pro:sub|I mod|do~neg|not adv|real&dadj-LY v|know
+	pro:indef|anything post|else part|go-PRESP adv|on .
+%gra:	1|6|LINK 2|6|SUBJ 3|6|AUX 4|3|NEG 5|6|JCT 6|0|ROOT 7|6|OBJ 8|7|PQ
+	9|7|XMOD 10|9|JCT 11|6|PUNCT
+*PAR:	and the water's spilling out on to her floor . 20709_24950
+%mor:	coord|and det:art|the n|water~aux|be&3S part|spill-PRESP prep|out
+	adv|on prep|to det:poss|her n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	&hm I don't know if the wind's blowing or not . 24950_27877
+%mor:	pro:sub|I mod|do~neg|not v|know comp|if det:art|the
+	n|wind~aux|be&3S part|blow-PRESP coord|or neg|not .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|9|LINK 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|4|COMP 10|9|CONJ 11|10|COORD 12|4|PUNCT
+*PAR:	and it [//] the activity, that's all I see . [+ exc] 27877_31675
+%mor:	coord|and det:art|the n|activity cm|cm pro:dem|that~cop|be&3S
+	pro:indef|all pro:sub|I v|see .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|LP 5|6|SUBJ 6|3|CMOD 7|6|PRED 8|9|SUBJ
+	9|7|CMOD 10|3|PUNCT
+*INV:	okay . 31675_32084
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

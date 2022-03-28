@@ -1,0 +1,100 @@
+@UTF8
+@PID:	11312/t-00002251-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|56;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	105-0, audio
+*INV:	here's the picture . 0_1713
+%mor:	pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	alrightie . [+ exc] 1713_3009
+%mor:	co|alrightie .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh the action I see is &um a &uh little girl &uh with her finger
+	up to her mouth and the one arm extended up &uh looking up at the
+	boy who's reaching up to the cookie jar . 3009_17159
+%mor:	det:art|the n|action pro:sub|I v|see cop|be&3S det:art|a adj|little
+	n|girl prep|with det:poss|her n|finger adv|up prep|to det:poss|her
+	n|mouth coord|and det:art|the det:num|one n|arm v|extend-PAST adv|up
+	part|look-PRESP adv|up prep|at det:art|the n|boy
+	pro:rel|who~aux|be&3S part|reach-PRESP adv|up prep|to det:art|the
+	n|cookie n|jar .
+%gra:	1|2|DET 2|5|SUBJ 3|4|SUBJ 4|2|CMOD 5|0|ROOT 6|8|DET 7|8|MOD 8|5|PRED
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|5|JCT 13|5|JCT 14|15|DET 15|13|POBJ
+	16|20|LINK 17|19|DET 18|19|QUANT 19|20|SUBJ 20|5|CJCT 21|20|JCT 22|20|XJCT
+	23|22|JCT 24|22|JCT 25|26|DET 26|24|POBJ 27|29|LINK 28|29|AUX 29|26|CMOD
+	30|29|JCT 31|29|JCT 32|34|DET 33|34|MOD 34|31|POBJ 35|5|PUNCT
+*PAR:	with his right hand he's reaching for a cookie . 17159_19388
+%mor:	prep|with det:poss|his n|right n|hand pro:sub|he~aux|be&3S
+	part|reach-PRESP prep|for det:art|a n|cookie .
+%gra:	1|0|INCROOT 2|4|DET 3|4|MOD 4|1|POBJ 5|7|SUBJ 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	with his left hand he already has a cookie . 19388_22122
+%mor:	prep|with det:poss|his adj|left n|hand pro:sub|he adv|already
+	v|have&3S det:art|a n|cookie .
+%gra:	1|0|INCROOT 2|4|DET 3|4|MOD 4|1|POBJ 5|7|SUBJ 6|7|JCT 7|4|CMOD 8|9|DET
+	9|7|OBJ 10|1|PUNCT
+*PAR:	it almost looks like the girl's trying to reach for the cookie in
+	<the lower hand> [//] the left hand . 22122_26677
+%mor:	pro:per|it adv|almost v|look-3S prep|like det:art|the
+	n|girl~aux|be&3S part|try-PRESP prep|to n|reach prep|for det:art|the
+	n|cookie prep|in det:art|the adj|left n|hand .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|8|AUX 8|3|XJCT
+	9|8|JCT 10|9|POBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|13|NJCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|3|PUNCT
+*PAR:	and he's standing on a stool that's tipping over . 26677_29447
+%mor:	coord|and pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:art|a
+	n|stool pro:rel|that~aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|4|PUNCT
+*PAR:	and &uh looks like he's about ready to fall . 29447_33213
+%mor:	coord|and v|look-3S conj|like pro:sub|he~cop|be&3S adv|about
+	adj|ready inf|to v|fall .
+%gra:	1|2|LINK 2|0|ROOT 3|5|LINK 4|5|SUBJ 5|2|COMP 6|7|JCT 7|5|PRED 8|9|INF
+	9|7|XMOD 10|2|PUNCT
+*PAR:	the &uh woman at the sink &uh looks like she's washing [//] wiping
+	a dish with a rag in her hand, holding the dish with the other hand
+	as water's flowing into the sink and over the sink . 33213_47048
+%mor:	det:art|the n|woman prep|at det:art|the n|sink v|look-3S conj|like
+	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|a n|dish prep|with
+	det:art|a n|rag prep|in det:poss|her n|hand cm|cm part|hold-PRESP
+	det:art|the n|dish prep|with det:art|the qn|other n|hand conj|as
+	n|water~aux|be&3S part|flow-PRESP prep|into det:art|the n|sink
+	coord|and prep|over det:art|the n|sink .
+%gra:	1|2|DET 2|6|SUBJ 3|2|NJCT 4|5|DET 5|3|POBJ 6|0|ROOT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|6|COMP 11|12|DET 12|10|OBJ 13|10|JCT 14|15|DET 15|13|POBJ
+	16|15|NJCT 17|18|DET 18|16|POBJ 19|10|LP 20|10|XJCT 21|22|DET 22|20|OBJ
+	23|20|JCT 24|26|DET 25|26|QUANT 26|23|POBJ 27|30|LINK 28|30|SUBJ
+	29|30|AUX 30|20|CJCT 31|30|JCT 32|33|DET 33|31|POBJ 34|33|CONJ 35|34|COORD
+	36|37|DET 37|35|POBJ 38|6|PUNCT
+*PAR:	it looks like she's not paying attention to the water just flowing
+	out_of the sink and all over the floor . 47048_52885
+%mor:	pro:per|it v|look-3S conj|like pro:sub|she~aux|be&3S neg|not
+	part|pay-PRESP n|attention prep|to det:art|the n|water adv|just
+	part|flow-PRESP prep|out_of det:art|the n|sink coord|and adv|all
+	prep|over det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|7|LINK 4|7|SUBJ 5|7|AUX 6|5|NEG 7|2|COMP 8|7|OBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|13|JCT 13|7|XJCT 14|13|JCT 15|16|DET
+	16|14|POBJ 17|13|CONJ 18|19|JCT 19|17|COORD 20|21|DET 21|19|POBJ 22|2|PUNCT
+*PAR:	and she's stepping into the water too . 52885_54971
+%mor:	coord|and pro:sub|she~cop|be&3S n:gerund|step-PRESP prep|into
+	det:art|the n|water adv|too .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|3|PUNCT
+*PAR:	it's &uh xxx . [+ exc] 54971_60656
+%mor:	pro:per|it~cop|be&3S .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PUNCT
+*PAR:	as far as action no action outside the window . 60656_65726
+%mor:	adv|as adj|far adv|as n|action qn|no n|action adj|outside
+	det:art|the n|window .
+%gra:	1|2|COORD 2|0|INCROOT 3|4|COORD 4|2|ENUM 5|6|QUANT 6|9|MOD 7|9|MOD
+	8|9|DET 9|2|ENUM 10|2|PUNCT
+*PAR:	&um that's about it . [+ exc] 65726_71890
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*INV:	okay . 71890_72169
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

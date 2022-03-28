@@ -1,0 +1,65 @@
+@UTF8
+@PID:	11312/t-00002712-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|ProbableAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	648-0, audio
+*INV:	is take a look at this picture and tell me everything that you see
+	going on in the picture . 0_6165
+%mor:	aux|be&3S v|take det:art|a v|look prep|at det:dem|this n|picture
+	coord|and v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:art|the
+	n|picture .
+%gra:	1|2|AUX 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|8|COORD 10|9|OBJ2 11|9|OBJ 12|14|LINK 13|14|SUBJ 14|11|CMOD 15|14|OBJ
+	16|14|JCT 17|14|JCT 18|19|DET 19|17|POBJ 20|2|PUNCT
+*INV:	tell me everything that you see happening . 6165_8872
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|happen-PRESP .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|1|PUNCT
+*PAR:	now ? [+ exc] 8872_11941
+%mor:	adv|now ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<the girl's> [/] &k the girl's coaxin(g) the boy for a cookie and
+	his stool fell over and the cookie are spilled . 11941_22365
+%mor:	det:art|the n|girl~aux|be&3S part|coax-PRESP det:art|the n|boy
+	prep|for det:art|a n|cookie coord|and det:poss|his n|stool
+	v|fall&PAST adv|over coord|and det:art|the n|cookie aux|be&PRES
+	part|spill-PASTP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|13|LINK 11|12|DET 12|13|SUBJ 13|4|CJCT 14|13|JCT 15|19|LINK
+	16|17|DET 17|19|SUBJ 18|19|AUX 19|13|CJCT 20|4|PUNCT
+*PAR:	she spilled her dishwater washin(g) dishes . 22365_30122
+%mor:	pro:sub|she v|spill-PAST det:poss|her n|dishwater part|wash-PRESP
+	n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|XMOD 6|5|OBJ 7|2|PUNCT
+*PAR:	she's <washin(g) dishes> [//] dryin(g) them . 30122_32000
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP pro:obj|them .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	<that runs over> [//] the sink's runnin(g) over . 32000_35142
+%mor:	det:art|the n|sink~aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	her feet &s &=laughs in the water . [+ gram] 35142_38434
+%mor:	det:poss|her n|foot&PL prep|in det:art|the n|water .
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	this must be a path out back . 38434_42557
+%mor:	pro:dem|this mod|must cop|be det:art|a n|path adv|out adv|back .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|6|JCT 8|3|PUNCT
+*PAR:	flowers, trees . [+ gram] 42557_46083
+%mor:	n|flower-PL cm|cm n|tree-PL .
+%gra:	1|0|INCROOT 2|1|LP 3|1|ENUM 4|1|PUNCT
+*PAR:	I don't know what else . [+ exc] 46083_51700
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|PQ 7|4|PUNCT
+*PAR:	water on the floor . [+ gram] 51700_52907
+%mor:	n|water prep|on det:art|the n|floor .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*INV:	is that everything then ? 52907_54770
+%mor:	cop|be&3S comp|that pro:indef|everything adv:tem|then ?
+%gra:	1|0|ROOT 2|4|LINK 3|4|SUBJ 4|1|JCT 5|1|PUNCT
+*PAR:	yeah . [+ exc] 54770_55439
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

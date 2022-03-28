@@ -1,0 +1,57 @@
+@UTF8
+@PID:	11312/t-00002333-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	175-3, audio
+*PAR:	&=laughs . [+ exc] 0_2600
+*PAR:	the woman is drying the dishes and the &w sink is overflowing . 2600_8124
+%mor:	det:art|the n|woman aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	coord|and det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|4|CJCT 12|4|PUNCT
+*PAR:	the boy's getting the cookies out_of the cookie jar . 8124_11736
+%mor:	det:art|the n|boy~aux|be&3S part|get-PRESP det:art|the n|cookie-PL
+	prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	and the stool's about to tip over . 11736_14957
+%mor:	coord|and det:art|the n|stool~cop|be&3S adv|about inf|to v|tip
+	adv|over .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|7|JCT 6|7|INF 7|4|CPRED 8|7|JCT
+	9|4|PUNCT
+*PAR:	and the girl's telling him to be quiet &=laughs . 14957_19471
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|tell-PRESP pro:obj|him
+	inf|to cop|be adj|quiet .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|8|INF 8|5|COMP
+	9|8|PRED 10|5|PUNCT
+*PAR:	&uh it's a warm sunny day (be)cause the window is open . 19471_25057
+%mor:	pro:per|it~cop|be&3S det:art|a adj|warm adj|sun&dn-Y n|day
+	conj|because det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|DET 4|6|MOD 5|6|MOD 6|2|PRED 7|10|LINK 8|9|DET
+	9|10|SUBJ 10|2|CJCT 11|10|PRED 12|2|PUNCT
+*PAR:	and she looks like she's sort_of <in a> [/] in a daze and doesn't
+	quite know what's going on . 25057_33664
+%mor:	coord|and pro:sub|she v|look-3S conj|like pro:sub|she~cop|be&3S
+	adv|sort_of prep|in det:art|a v|daze coord|and mod|do&3S~neg|not
+	adv|quite v|know pro:int|what~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|COMP 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|6|CONJ 12|15|AUX 13|12|NEG 14|15|JCT 15|11|COORD
+	16|18|LINK 17|18|AUX 18|15|COMP 19|18|JCT 20|3|PUNCT
+*PAR:	could be daydreaming or daft, one or the other . [+ gram] 33664_40219
+%mor:	mod|could aux|be part|+n|day+n|dream-PRESP coord|or adj|daft cm|cm
+	det:num|one coord|or det:art|the qn|other .
+%gra:	1|3|AUX 2|3|AUX 3|0|ROOT 4|3|CONJ 5|4|COORD 6|5|LP 7|5|ENUM 8|7|CONJ
+	9|10|DET 10|8|COORD 11|3|PUNCT
+*PAR:	is that it ? [+ exc] 40219_47099
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*INV:	okay . 47099_47787
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that's fine . 47787_48265
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

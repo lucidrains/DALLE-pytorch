@@ -1,0 +1,66 @@
+@UTF8
+@PID:	11312/t-00002518-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|62;|male|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	154-1, audio
+*INV:	what do you see going on in that picture ? 0_2350
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:dem|that n|picture ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	(.) this &uh boy is getting &uh cookies out_of this jar . 2350_9822
+%mor:	det:dem|this n|boy aux|be&3S part|get-PRESP n|cookie-PL prep|out_of
+	det:dem|this n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*INV:	okay . 9822_10928
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	(..) anything else ? 10928_17030
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	(.) what else do you see going on there ? 17030_22910
+%mor:	pro:int|what post|else v|do pro:per|you v|see n:gerund|go-PRESP
+	prep|on n|there ?
+%gra:	1|3|LINK 2|1|PQ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|5|JCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	(..) well why [/] why [//] <they must> [//] they [/] they must have
+	put [/] put something <in the> [x 3] &uh <in the> [//] &uh (.) in
+	somethin(g) over here . [+ es] 22910_41625
+%mor:	co|well pro:sub|they mod|must v|have v|put&ZERO pro:indef|something
+	prep|in det:art|the adv|in pro:indef|something prep|over n|here .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|7|POBJ
+	9|8|JCT 10|9|POBJ 11|10|NJCT 12|11|POBJ 13|5|PUNCT
+*INV:	anything else ? 41625_44028
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	www . [+ exc] 44028_65351
+%exp:	tape appears to stop and start, nothing intelligible
+*INV:	anything else you see going on over there ? 65351_69865
+%mor:	pro:indef|anything post|else pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|over adv|there ?
+%gra:	1|4|LINK 2|1|PQ 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*INV:	(...) is that it ? 69865_85304
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	no ‡ <you've gotta> [//] <you gotta get the> [//] &g you gotta get
+	the [/] &uh the &uh thing <out o(f) the> [/] &uh out o(f) the &uh
+	+... 85304_97504
+%mor:	co|no beg|beg pro:per|you mod|got~inf|to v|get det:art|the n|thing
+	adv|out prep|of det:art|the +...
+%gra:	1|0|BEG 2|1|BEGP 3|6|SUBJ 4|6|AUX 5|6|INF 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|JCT 10|9|JCT 11|10|POBJ 12|6|PUNCT
+*INV:	(..) is that it ? 97504_105957
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	(.) yeah ‡ I guess so . [+ exc] 105957_111215
+%mor:	co|yeah beg|beg pro:sub|I v|guess co|so .
+%gra:	1|0|BEG 2|1|BEGP 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	okay . 111215_113424
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

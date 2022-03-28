@@ -1,0 +1,52 @@
+@UTF8
+@PID:	11312/t-00002714-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|55;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	651-0, audio
+*INV:	I just want you to tell me everything that you see happening in
+	that picture . 0_4500
+%mor:	pro:sub|I adv|just v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|6|SUBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|12|LINK 10|12|SUBJ 11|12|COM 12|8|CMOD 13|12|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*INV:	everything that's going on there . 4500_7315
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP prep|on
+	n|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|5|POBJ 7|1|PUNCT
+*PAR:	&hm (..) cookie jar . [+ gram] 7315_23900
+%mor:	n|cookie n|jar .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*INV:	mhm . 23900_24901
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<and he's stepping on a> [//] &s well he's on a stool but it's [//]
+	he's going overboard . 24901_37027
+%mor:	co|well pro:sub|he~cop|be&3S prep|on det:art|a n|stool conj|but
+	pro:sub|he~aux|be&3S part|go-PRESP adv|overboard .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|JCT 12|3|PUNCT
+*PAR:	and the water's running out_of the sink . 37027_45491
+%mor:	coord|and det:art|the n|water~aux|be&3S part|run-PRESP prep|out_of
+	det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and &uh let's see . [+ exc] 45491_58192
+%mor:	coord|and v|let~pro:obj|us v|see .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*INV:	okay is that everything that you see happening ? 75017_93240
+%mor:	co|okay cop|be&3S comp|that pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|happen-PRESP ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PRED 4|3|OM 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|2|PUNCT
+*PAR:	yes . [+ exc] 93240_94285
+%mor:	co|yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay fine . 94000_95467
+%mor:	co|okay adv|fine .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,90 @@
+@UTF8
+@PID:	11312/t-00002294-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	138-3, audio
+*INV:	I'd like for you to take a look at that picture and tell me
+	everything that's happening in that picture, everything that you see
+	going on there . 0_8046
+%mor:	pro:sub|I~mod|genmod co|like prep|for pro:per|you inf|to v|take
+	det:art|a v|look prep|at det:dem|that n|picture coord|and v|tell
+	pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|happen-PRESP prep|in det:dem|that n|picture cm|cm
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP prep|on n|there .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|7|INF 7|4|CPOBJ 8|9|DET
+	9|7|OBJ 10|9|JCT 11|12|DET 12|10|POBJ 13|9|CONJ 14|13|COORD 15|14|OBJ2
+	16|14|OBJ 17|19|LINK 18|19|AUX 19|16|CMOD 20|19|JCT 21|22|DET 22|20|POBJ
+	23|19|LP 24|19|ENUM 25|27|LINK 26|27|SUBJ 27|24|CMOD 28|27|OBJ 29|27|JCT
+	30|29|POBJ 31|3|PUNCT
+*PAR:	okay the little boy is on a stool about to fall . 8046_12200
+%mor:	co|okay det:art|the adj|little n|boy cop|be&3S prep|on det:art|a
+	n|stool adv|about inf|to v|fall .
+%gra:	1|5|COM 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|11|JCT 10|11|INF 11|5|CPRED 12|5|PUNCT
+*PAR:	the stool's about to upset . 12200_13600
+%mor:	det:art|the n|stool~cop|be&3S adv|about inf|to v|upset .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|3|PUNCT
+*PAR:	and he has a cookie in each hand, handing [//] about to hand one
+	cookie to the little girl who is standing there with her hand
+	reached up for the cookie . 13600_23876
+%mor:	coord|and pro:sub|he v|have&3S det:art|a n|cookie prep|in qn|each
+	n|hand cm|cm adv|about prep|to n|hand pro:indef|one n|cookie prep|to
+	det:art|the adj|little n|girl pro:rel|who aux|be&3S part|stand-PRESP
+	adv|there prep|with det:poss|her n|hand v|reach-PAST adv|up prep|for
+	det:art|the n|cookie .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|QUANT 8|6|POBJ
+	9|8|LP 10|3|JCT 11|10|JCT 12|11|POBJ 13|11|POBJ 14|13|NJCT 15|14|NJCT
+	16|18|DET 17|18|MOD 18|15|POBJ 19|21|LINK 20|21|AUX 21|18|CMOD 22|21|JCT
+	23|21|JCT 24|25|DET 25|23|POBJ 26|21|XJCT 27|26|JCT 28|26|JCT 29|30|DET
+	30|28|POBJ 31|3|PUNCT
+*PAR:	and the water is running over <into the dishpan there or> [//] into
+	the sink . 23876_29579
+%mor:	coord|and det:art|the n|water aux|be&3S part|run-PRESP adv|over
+	prep|into det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	and <the mother or> [//] the lady is standing there drying a dish .
+	29579_34517
+%mor:	coord|and det:art|the n|lady aux|be&3S part|stand-PRESP adv|there
+	part|dry-PRESP det:art|a n|dish .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|XJCT 8|9|DET
+	9|7|OBJ 10|5|PUNCT
+*PAR:	two [/] &s &uh two cups and a plate are on the &um counter there .
+	34517_40369
+%mor:	det:num|two n|cup-PL coord|and det:art|a n|plate cop|be&PRES
+	prep|on det:art|the n|counter adv|there .
+%gra:	1|2|QUANT 2|6|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|9|NJCT 11|6|PUNCT
+*PAR:	and [/] &sh and out the window there's a walk+way and [/] and [/]
+	&win and you can see a window across (.) from the &uh walk+way &uh
+	drapes . 40369_54250
+%mor:	coord|and prep|out det:art|the n|window pro:exist|there~cop|be&3S
+	det:art|a n|+n|walk+n|way coord|and pro:per|you mod|can v|see
+	det:art|a n|window adv|across prep|from det:art|the n|+n|walk+n|way
+	v|drape-3S .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|2|POBJ 5|6|SUBJ 6|0|ROOT 7|8|DET 8|6|PRED
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|CMOD 13|14|DET 14|12|OBJ 15|12|JCT
+	16|12|JCT 17|18|DET 18|16|POBJ 19|12|CJCT 20|6|PUNCT
+*PAR:	what's happening you said, huh ? [+ exc] 54250_55823
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP pro:per|you v|say&PAST
+	cm|cm co|huh ?
+%gra:	1|3|LINK 2|3|AUX 3|5|PRED 4|5|SUBJ 5|0|ROOT 6|5|LP 7|5|COM 8|5|PUNCT
+*INV:	+< mhm . 55223_56020
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay that's [/] that's what's happening I guess . [+ exc] 56020_59327
+%mor:	co|okay pro:dem|that~cop|be&3S pro:int|what~aux|be&3S
+	part|happen-PRESP pro:sub|I v|guess .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|AUX 6|3|CPRED 7|8|SUBJ 8|6|COMP
+	9|3|PUNCT
+*INV:	+< okay . 58520_59027
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	thank +/. [+ exc] 59027_60727
+%mor:	v|thank +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

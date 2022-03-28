@@ -1,0 +1,104 @@
+@UTF8
+@PID:	11312/t-00002490-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|65;|female|ProbableAD||Participant|16||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	078-1, audio
+*INV:	what's goin(g) on in this picture ? 0_1509
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|in det:dem|this
+	n|picture ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*INV:	all of the action okay ? 1509_3629
+%mor:	pro:indef|all prep|of det:art|the n|action adj|okay ?
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|4|POSTMOD 6|1|PUNCT
+*PAR:	oh gee . [+ exc] 3629_5120
+%mor:	co|oh co|gee .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	the little girl is reachin(g) up to the &g cookie jar . 5120_11900
+%mor:	det:art|the adj|little n|girl aux|be&3S part|reach-PRESP adv|up
+	prep|to det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|5|PUNCT
+*PAR:	<and the [/] the boy is> [//] oh he's on the [/] &uh [x 3] the
+	stool . 11900_18568
+%mor:	co|oh pro:sub|he~cop|be&3S prep|on det:art|the n|stool .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	he's gonna be trouble fallin(g) off &=laughs . [+ gram] 18568_21665
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to cop|be n|trouble
+	part|fall-PRESP adv|off .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|6|XMOD 8|7|JCT
+	9|3|PUNCT
+*INV:	+< yep . 21265_22006
+%mor:	co|yep .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&=laughs and the <woman is> [//] lady is dryin(g) the dishes . 22006_26600
+%mor:	coord|and det:art|the n|lady aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and the &um sink overroll [: overflowed] [* n:k-ret] [//]
+	overfilled . 26600_31394
+%mor:	coord|and det:art|the n|sink over#part|fill-PASTP .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	I_mean it's all down on the floor . 31394_33306
+%mor:	co|I_mean pro:per|it~cop|be&3S post|all adv|down prep|on
+	det:art|the n|floor .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	and I can see cups and &coff +//. 33306_37789
+%mor:	coord|and pro:sub|I mod|can v|see n|cup-PL coord|and +//.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|CONJ 7|4|PUNCT
+*PAR:	there [//] I s(ee) that little boy with the cookie jar . 37789_40356
+%mor:	pro:sub|I v|see det:dem|that adj|little n|boy prep|with det:art|the
+	n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|5|NJCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|2|PUNCT
+*PAR:	and that little girl wants one . 40356_42785
+%mor:	coord|and det:dem|that adj|little n|girl v|want-3S pro:indef|one .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and <the water's runnin(g)> [//] as I said the water's running all
+	over the floor . 42785_47908
+%mor:	coord|and conj|as pro:sub|I v|say&PAST det:art|the
+	n|water~aux|be&3S part|run-PRESP adv|all prep|over det:art|the
+	n|floor .
+%gra:	1|8|LINK 2|4|LINK 3|4|SUBJ 4|8|CJCT 5|6|DET 6|8|SUBJ 7|8|AUX 8|0|ROOT
+	9|10|JCT 10|8|JCT 11|12|DET 12|10|POBJ 13|8|PUNCT
+*PAR:	(..) and the girl's dryin(g) the dishes . 47908_60006
+%mor:	coord|and det:art|the n|girl~aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and the little boy's fallin(g) off that there stool because he's up
+	for the cookie jar . 60006_65636
+%mor:	coord|and det:art|the adj|little adj|boy&dn-POSS part|fall-PRESP
+	adv|off adv|that adv|there n|stool conj|because pro:sub|he~cop|be&3S
+	adv|up prep|for det:art|the n|cookie n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|MOD 4|5|MOD 5|0|ROOT 6|5|JCT 7|5|JCT 8|5|JCT
+	9|8|POBJ 10|12|LINK 11|12|SUBJ 12|5|CJCT 13|12|JCT 14|12|JCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|5|PUNCT
+*INV:	okay ? 65636_68900
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	tryin(g) to get one for his sister . [+ gram] 68900_70381
+%mor:	part|try-PRESP inf|to v|get pro:indef|one prep|for det:poss|his
+	n|sister .
+%gra:	1|0|INCROOT 2|3|INF 3|1|COMP 4|3|OBJ 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|1|PUNCT
+*PAR:	and the water on the faucet is all over the floor &=laughs . 70381_74882
+%mor:	coord|and det:art|the n|water prep|on det:art|the n|faucet
+	cop|be&3S adv|all prep|over det:art|the n|floor .
+%gra:	1|7|LINK 2|3|DET 3|7|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|0|ROOT 8|9|JCT
+	9|7|JCT 10|11|DET 11|9|POBJ 12|7|PUNCT
+*INV:	okay . 74882_76161
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh man ! [+ exc] 76161_78554
+%mor:	co|oh n|man !
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	this is awful . [+ exc] 78554_79780
+%mor:	pro:dem|this cop|be&3S adj|awful .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay good . 79780_81943
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

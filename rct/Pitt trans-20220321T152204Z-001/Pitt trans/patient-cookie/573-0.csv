@@ -1,0 +1,107 @@
+@UTF8
+@PID:	11312/t-00002688-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|female|MCI||Participant|26||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	573-0, audio
+*INV:	I want you to tell me everything that you see happening in there .
+	0_3736
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP prep|in n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|OBJ 12|10|JCT 13|12|POBJ 14|2|PUNCT
+*INV:	everything that you see going on in that picture . 3736_6693
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*PAR:	alright . [+ exc] 6693_8000
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the young man is <stealing from the> [//] &c trying to get cookies
+	from the cookie jar . 8000_12500
+%mor:	det:art|the adj|young n|man aux|be&3S part|try-PRESP inf|to v|get
+	n|cookie-PL prep|from det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|OBJ
+	9|7|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|5|PUNCT
+*PAR:	and she's standing laughing at him and he's falling over . 12500_15327
+%mor:	coord|and pro:sub|she~aux|be&3S part|stand-PRESP part|laugh-PRESP
+	prep|at pro:obj|him coord|and pro:sub|he~aux|be&3S part|fall-PRESP
+	adv|over .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|XJCT 6|5|JCT 7|6|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|5|CJCT 12|11|JCT 13|4|PUNCT
+*PAR:	and &uh mama had an accident at the kitchen sink . 15327_19222
+%mor:	coord|and n|mama v|have&PAST det:art|a n|accident prep|at
+	det:art|the n|kitchen n|sink .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|NJCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|3|PUNCT
+*PAR:	either she's daydreaming or something wiping &uh &uh a dish . 19222_23532
+%mor:	coord|either pro:sub|she~aux|be&3S part|+n|day+n|dream-PRESP
+	coord|or pro:indef|something part|wipe-PRESP det:art|a n|dish .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|CONJ 6|5|COORD 7|6|XMOD 8|9|DET
+	9|7|OBJ 10|4|PUNCT
+*PAR:	and that is overflowing the sink onto the floor and onto her feet .
+	23532_29448
+%mor:	coord|and pro:rel|that aux|be&3S over#part|flow-PRESP det:art|the
+	n|sink prep|onto det:art|the n|floor coord|and prep|onto
+	det:poss|her n|foot&PL .
+%gra:	1|4|LINK 2|4|LINK 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|6|CONJ 11|10|COORD 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	and &uh the window is open . 29448_32222
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and there are two cups and a dish on the counter . 32222_36474
+%mor:	coord|and adv|there cop|be&PRES det:num|two n|cup-PL coord|and
+	det:art|a n|dish prep|on det:art|the n|counter .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|5|CONJ 7|8|DET
+	8|6|COORD 9|8|NJCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	what else do you want me to tell you ? [+ exc] 36474_37805
+%mor:	pro:int|what post|else v|do pro:per|you v|want pro:obj|me inf|to
+	v|tell pro:per|you ?
+%gra:	1|3|LINK 2|1|PQ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|8|INF 8|5|COMP
+	9|8|OBJ 10|3|PUNCT
+*PAR:	I_mean what did you want me to say ? [+ exc] 37805_39815
+%mor:	co|I_mean pro:int|what mod|do&PAST pro:per|you v|want pro:obj|me
+	inf|to v|say ?
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|8|INF 8|5|COMP
+	9|5|PUNCT
+*INV:	+< just anything that's happening +/. 39715_41059
+%mor:	adv|just pro:indef|anything pro:rel|that~aux|be&3S
+	part|happen-PRESP +/.
+%gra:	1|2|JCT 2|0|INCROOT 3|5|LINK 4|5|AUX 5|2|CMOD 6|2|PUNCT
+*PAR:	+< what was it again ? [+ exc] 40500_41314
+%mor:	pro:int|what cop|be&PAST&13S pro:per|it adv|again ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|2|PUNCT
+*PAR:	anything that's happening ? [+ exc] 41314_42400
+%mor:	pro:indef|anything pro:rel|that~aux|be&3S part|happen-PRESP ?
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|1|PUNCT
+*INV:	+< mhm . 42150_42700
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< oh . [+ exc] 42400_42850
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&um well the window is open . 42850_45800
+%mor:	co|well det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	I guess there's a breeze blowing but &uh that's about all I can see
+	actually happening . 45800_50812
+%mor:	pro:sub|I v|guess pro:exist|there~cop|be&3S det:art|a n|breeze
+	part|blow-PRESP conj|but pro:dem|that~cop|be&3S adv|about adv|all
+	pro:sub|I mod|can v|see adv|actual&dadj-LY part|happen-PRESP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|6|DET 6|4|PRED 7|6|XMOD 8|10|LINK
+	9|10|SUBJ 10|2|CJCT 11|15|JCT 12|15|JCT 13|15|SUBJ 14|15|AUX
+	15|10|CPRED 16|17|JCT 17|15|COMP 18|2|PUNCT
+*INV:	+< okay . 49500_50500
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	very good . [+ exc] 50500_51922
+%mor:	adv|very adj|good .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*INV:	that's it . 51922_53600
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

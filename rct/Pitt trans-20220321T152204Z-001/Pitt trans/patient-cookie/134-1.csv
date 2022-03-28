@@ -1,0 +1,38 @@
+@UTF8
+@PID:	11312/t-00002511-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	134-1, audio
+*INV:	what do you see goin(g) on there ? 0_3113
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP prep|on
+	n|there ?
+%gra:	1|4|SUBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|6|POBJ 8|4|PUNCT
+*PAR:	a little boy is <tryin(g) to get the> [//] &uh gettin(g) cookies
+	out_of the jar and his &um stool is gettin(g) ready to fall . 3113_19581
+%mor:	det:art|a adj|little n|boy aux|be&3S part|get-PRESP n|cookie-PL
+	prep|out_of det:art|the n|jar coord|and det:poss|his n|stool
+	aux|be&3S part|get-PRESP adj|ready inf|to v|fall .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|9|DET
+	9|7|POBJ 10|14|LINK 11|12|DET 12|14|SUBJ 13|14|AUX 14|5|CJCT 15|14|PRED
+	16|17|INF 17|15|XMOD 18|5|PUNCT
+*PAR:	and the mother is washing dishes and she would let [/] let the
+	water run over the sink on the floor . 19581_27299
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	coord|and pro:sub|she mod|will&COND v|let&ZERO det:art|the n|water
+	v|run prep|over det:art|the n|sink prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|5|CJCT 11|12|DET 12|13|SUBJ 13|10|COMP 14|13|JCT 15|16|DET
+	16|14|POBJ 17|13|JCT 18|19|DET 19|17|POBJ 20|5|PUNCT
+*INV:	(.) anything else ? 27299_31722
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	(..) &hm I guess that's all . [+ exc] 31722_43150
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:indef|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|2|PUNCT
+*INV:	okay . 43150_43904
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

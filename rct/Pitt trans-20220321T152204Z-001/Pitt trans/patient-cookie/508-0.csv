@@ -1,0 +1,108 @@
+@UTF8
+@PID:	11312/t-00002671-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|81;|male|ProbableAD||Participant|13||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	508-0, audio
+*INV:	I want you to take a look at that picture . 0_2926
+%mor:	pro:sub|I v|want pro:per|you inf|to v|take det:art|a v|look prep|at
+	det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|7|DET 7|5|OBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	mhm . [+ exc] 2926_3923
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< and I want you to tell me everything that you see going on in
+	that picture . 3400_9199
+%mor:	coord|and pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|11|LINK 10|11|SUBJ 11|8|CMOD 12|11|OBJ 13|11|JCT 14|11|JCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*INV:	tell me everything that you see happening in that picture . 9200_13419
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	co|see n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|7|LINK 5|7|SUBJ 6|7|COM 7|3|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	+< you sure there nobody hidin(g) in [//] back in that +/. [+ gram]
+	[+ exc] 12000_15029
+%mor:	pro:per|you adj|sure adv|there pro:indef|nobody part|hide-PRESP
+	adv|back prep|in pro:dem|that +/.
+%gra:	1|5|SUBJ 2|5|JCT 3|2|JCT 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|5|PUNCT
+*INV:	+< no . 14529_15408
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay . [+ exc] 15408_16239
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	come on out . [+ exc] 16239_17400
+%mor:	v|come adv|on adv|out .
+%gra:	1|0|ROOT 2|1|JCT 3|1|JCT 4|1|PUNCT
+*INV:	+< <tell me> [/] tell me everything you see happening in there . 16240_19600
+%mor:	v|tell pro:obj|me pro:indef|everything pro:per|you v|see
+	n:gerund|happen-PRESP prep|in n|there .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|7|POBJ
+	9|1|PUNCT
+*PAR:	happening ? [+ exc] 19424_21000
+%mor:	part|happen-PRESP ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< mhm . 20900_21338
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&um the water's coming out . 21338_25000
+%mor:	det:art|the n|water~aux|be&3S part|come-PRESP adv|out .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	and the guy's fallin(g) off <the lid> [//] the kid . 24999_28374
+%mor:	coord|and det:art|the n|guy~aux|be&3S part|fall-PRESP prep|off
+	det:art|the n|kid .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	the cookie jar .[+ gram] 28374_30102
+%mor:	det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	&=laughs the girl looks like she's laughin(g) at +... 30102_35304
+%mor:	det:art|the n|girl v|look-3S conj|like pro:sub|she~aux|be&3S
+	part|laugh-PRESP prep|at +...
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|3|PUNCT
+*PAR:	and the woman's washin(g) a dish . 35304_37555
+%mor:	coord|and det:art|the n|woman~aux|be&3S part|wash-PRESP det:art|a
+	n|dish .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	then there's some dishe(s) to be washed yet . 37555_42847
+%mor:	adv:tem|then pro:exist|there~cop|be&3S qn|some n|dish-PL inf|to
+	aux|be part|wash-PASTP adv|yet .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|8|INF 7|8|AUX 8|5|XMOD
+	9|8|JCT 10|3|PUNCT
+*PAR:	now what's this over in there ? [+ exc] 42847_46320
+%mor:	adv|now pro:int|what~cop|be&3S pro:dem|this adv|over adv|in
+	adv|there ?
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|6|JCT 6|4|JCT 7|6|JCT 8|3|PUNCT
+*PAR:	looks like the grass outside . 46320_48730
+%mor:	v|look-3S conj|like det:art|the n|grass adv|outside .
+%gra:	1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|4|NJCT 6|1|PUNCT
+*PAR:	that's about the chair [: stool] fallin(g) over or the &s seat
+	[: stool] [* s:r] . 48730_54223
+%mor:	pro:dem|that~cop|be&3S adv|about det:art|the n|stool
+	part|fall-PRESP adv|over coord|or det:art|the n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|DET 5|2|PRED 6|5|XMOD 7|6|JCT 8|6|CONJ
+	9|10|DET 10|8|COORD 11|2|PUNCT
+*PAR:	then kid's gonna get a fall . [+ gram] 54223_58000
+%mor:	adv:tem|then n|kid~aux|be&3S part|go-PRESP~inf|to v|get det:art|a
+	v|fall .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|DET 8|6|OBJ
+	9|4|PUNCT
+*PAR:	I know that . [+ exc] 58000_59128
+%mor:	pro:sub|I v|know pro:dem|that .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	that's about it . [+ exc] 59128_62019
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*INV:	okay good . 62000_63670
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

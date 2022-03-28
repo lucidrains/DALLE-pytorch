@@ -1,0 +1,52 @@
+@UTF8
+@PID:	11312/t-00002213-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	042-4, audio
+*PAR:	&uh the sink is overflowing . 0_2947
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&uh mother is drying a dish . 2947_5884
+%mor:	n|mother aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	&um okay the boy is falling off the stool while he's getting a
+	cookie out o(f) the [/] &k the &uh kitchen cupboard there . 5884_14895
+%mor:	co|okay det:art|the n|boy aux|be&3S part|fall-PRESP prep|off
+	det:art|the n|stool conj|while pro:sub|he~aux|be&3S part|get-PRESP
+	det:art|a n|cookie adv|out prep|of det:art|the n|kitchen n|cupboard
+	adv|there .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|5|CJCT 13|14|DET 14|12|OBJ 15|12|JCT
+	16|15|JCT 17|19|DET 18|19|MOD 19|16|POBJ 20|12|JCT 21|5|PUNCT
+*PAR:	the girl is reaching up for a cookie . 14895_18635
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	&um let's see . [+ exc] 18635_22376
+%mor:	v|let~pro:obj|us v|see .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|1|PUNCT
+*PAR:	&um +... [+ exc] 22376_27466
+*INV:	anything else ? 27466_28406
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	dishes on the counter but there's no action with them I guess
+	&=laughs . [+ gram] 28406_33307
+%mor:	n|dish-PL prep|on det:art|the n|counter conj|but
+	pro:exist|there~cop|be&3S qn|no n|action prep|with pro:obj|them
+	pro:sub|I v|guess .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|7|LINK 6|7|SUBJ 7|13|CJCT
+	8|9|QUANT 9|7|PRED 10|9|NJCT 11|10|POBJ 12|13|SUBJ 13|1|CJCT 14|1|PUNCT
+*INV:	okay . 33307_34057
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< &uh guess that's all I see . [+ exc] 33557_35382
+%mor:	n|guess pro:rel|that~cop|be&3S pro:indef|all pro:sub|I v|see .
+%gra:	1|0|INCROOT 2|3|LINK 3|1|CMOD 4|3|PRED 5|6|SUBJ 6|4|CMOD 7|1|PUNCT
+*INV:	okay good . 35382_36266
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,61 @@
+@UTF8
+@PID:	11312/t-00002644-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|75;|female|ProbableAD||Participant|15||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	362-1, audio
+*INV:	just take a look at this picture and tell me everything that you
+	see happening in that picture . 0_5883
+%mor:	adv|just v|take det:art|a v|look prep|at det:dem|this n|picture
+	coord|and v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you co|see n:gerund|happen-PRESP adv|in det:dem|that
+	n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|JCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|8|COORD 10|9|OBJ2 11|9|OBJ 12|15|LINK 13|15|SUBJ 14|15|COM 15|11|CMOD
+	16|15|JCT 17|18|DET 18|16|POBJ 19|2|PUNCT
+*PAR:	alright a little boy has a cookie jar . 5883_8013
+%mor:	adj|alright det:art|a adj|little co|boy aux|have&3S det:art|a
+	n|cookie n|jar .
+%gra:	1|8|MOD 2|3|DET 3|8|MOD 4|8|COM 5|8|AUX 6|8|DET 7|8|MOD 8|0|INCROOT
+	9|8|PUNCT
+*INV:	xxx . 8013_8700
+*PAR:	okay <the little girl> [//] <he's trying> [/] he's trying [//] got
+	on the ladder and trying to &uh get a jar . [+ gram] 8700_16267
+%mor:	co|okay pro:sub|he~aux|be&3S part|get&PASTP prep|on det:art|the
+	n|ladder coord|and part|try-PRESP inf|to v|get det:art|a n|jar .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|CONJ
+	9|8|COORD 10|11|INF 11|9|COMP 12|13|DET 13|11|OBJ 14|4|PUNCT
+*PAR:	and this is the mother I guess . 16267_18100
+%mor:	coord|and pro:dem|this cop|be&3S det:art|the n|mother pro:sub|I
+	v|guess .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|7|SUBJ 7|5|CMOD 8|3|PUNCT
+*PAR:	right ? [+ exc] 18100_18346
+%mor:	co|right ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	mhm . 18346_19161
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she is so &=laughs +... 19161_21650
+%mor:	pro:sub|she cop|be&3S adv|so +...
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	she [/] &=laughs she really &g is [//] isn't any good sense of a
+	mother because the water's <running out_of the> [/] &s &=laughs
+	running out_of the sink to the floor .21650_32423
+%mor:	pro:sub|she adv|real&dadj-LY cop|be&3S~neg|not qn|any adj|good
+	n|sense prep|of det:art|a n|mother conj|because det:art|the
+	n|water~aux|be&3S part|run-PRESP prep|out_of det:art|the n|sink
+	prep|to det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|3|NEG 5|7|QUANT 6|7|MOD 7|3|PRED 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|15|LINK 12|13|DET 13|15|SUBJ 14|15|AUX 15|3|CJCT
+	16|15|JCT 17|18|DET 18|16|POBJ 19|15|JCT 20|21|DET 21|19|POBJ 22|3|PUNCT
+*PAR:	so if I was a mother I would spank her . [+ exc] 32423_35174
+%mor:	adv|so conj|if pro:sub|I cop|be&PAST&13S det:art|a n|mother
+	pro:sub|I mod|will&COND v|spank pro:obj|her .
+%gra:	1|2|JCT 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|9|SUBJ 8|9|AUX
+	9|6|CMOD 10|9|OBJ 11|4|PUNCT
+*PAR:	right ? [+ exc] 35174_36279
+%mor:	co|right ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

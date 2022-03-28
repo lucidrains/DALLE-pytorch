@@ -1,0 +1,59 @@
+@UTF8
+@PID:	11312/t-00002198-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	021-3, audio
+*PAR:	alright ? [+ exc] 0_3292
+%mor:	co|alright ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	mhm . 3292_3557
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	mother's doing the dishes . 3557_4975
+%mor:	n|mother~aux|be&3S part|do-PRESP det:art|the n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	the sink is overflowing . 4975_6534
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the &uh &uh stool is falling . 6534_9534
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the boy is going for the cookies . 9534_11097
+%mor:	det:art|the n|boy aux|be&3S part|go-PRESP prep|for det:art|the
+	n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	she's reaching out for him . 11097_12748
+%mor:	pro:sub|she~aux|be&3S part|reach-PRESP adv|out prep|for pro:obj|him
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	&um the mother's looking out the window . 12748_16771
+%mor:	det:art|the n|mother~aux|be&3S part|look-PRESP prep|out det:art|the
+	n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	sink is overflowing . [+ gram] 16771_18767
+%mor:	n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	&uh let's see . [+ exc] 18767_19580
+%mor:	v|let~pro:obj|us v|see .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMP 4|1|PUNCT
+*PAR:	they use the sink . 19580_21160
+%mor:	pro:sub|they v|use det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	the boy reaching down to give her the cookie . [+ gram] 21160_24995
+%mor:	det:art|the n|boy part|reach-PRESP adv|down inf|to v|give
+	pro:obj|her det:art|the n|cookie .
+%gra:	1|2|DET 2|6|SUBJ 3|2|XMOD 4|3|JCT 5|6|INF 6|0|ROOT 7|6|OBJ2 8|9|DET
+	9|6|OBJ 10|6|PUNCT
+*PAR:	I think that's it . [+ exc] 24995_27270
+%mor:	pro:sub|I v|think pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|2|PUNCT
+*INV:	okay . 27270_28590
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	(.) okay . 28590_32716
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,53 @@
+@UTF8
+@PID:	11312/t-00002316-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	155-3, audio
+*PAR:	well the mother's washing the dishes . 0_3207
+%mor:	co|well det:art|the n|mother~aux|be&3S part|wash-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	the water's running out o(f) the sink . 3207_7240
+%mor:	det:art|the n|water~aux|be&3S part|run-PRESP adv|out prep|of
+	det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	(..) the &um boy is (.) falling off the stool (.) while he takes
+	the cookie out o(f) the cookie jar . 7240_20544
+%mor:	det:art|the n|boy aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|stool conj|while pro:sub|he v|take-3S det:art|the n|cookie adv|out
+	prep|of det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|SUBJ 10|4|CJCT 11|12|DET 12|10|OBJ 13|10|JCT 14|13|JCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|4|PUNCT
+*PAR:	the girl is gesturing (.) for him to be quiet . 20544_25930
+%mor:	det:art|the n|girl aux|be&3S part|gesture-PRESP prep|for
+	pro:obj|him inf|to cop|be adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|8|INF 8|4|XJCT
+	9|8|PRED 10|4|PUNCT
+*PAR:	(.) the woman's standing in water . 25930_30303
+%mor:	det:art|the n|woman~aux|be&3S part|stand-PRESP prep|in n|water .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	she's looking out o(f) the window, drying the dish . 30303_36420
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP adv|out prep|of det:art|the
+	n|window cm|cm part|dry-PRESP det:art|the n|dish .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|LP
+	9|3|XJCT 10|11|DET 11|9|OBJ 12|3|PUNCT
+*PAR:	(..) the (.) lid is off the cookie jar whether that means anything
+	. 36420_47017
+%mor:	det:art|the n|lid cop|be&3S prep|off det:art|the n|cookie n|jar
+	conj|whether adv|that v|mean-3S pro:indef|anything .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|10|LINK
+	9|10|JCT 10|3|CJCT 11|10|OBJ 12|3|PUNCT
+*PAR:	I think that's all I can see in there . [+ exc] 47017_49696
+%mor:	pro:sub|I v|think pro:dem|that~cop|be&3S pro:indef|all pro:sub|I
+	mod|can v|see prep|in n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|8|JCT 6|8|SUBJ 7|8|AUX 8|4|CPRED
+	9|8|JCT 10|9|POBJ 11|2|PUNCT
+*INV:	okay that's fine . 49696_50781
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

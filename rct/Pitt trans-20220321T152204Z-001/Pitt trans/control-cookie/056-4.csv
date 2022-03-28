@@ -1,0 +1,54 @@
+@UTF8
+@PID:	11312/t-00002223-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	056-4, audio
+*INV:	everything that's going on . 0_1215
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	well the wife is &uh letting the sink overflow and slop on the
+	floor . 1684_7952
+%mor:	co|well det:art|the n|wife aux|be&3S part|let-PRESP det:art|the
+	n|sink over#v|flow coord|and n|slop prep|on det:art|the n|floor .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|7|POSTMOD
+	9|7|CONJ 10|9|COORD 11|5|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*PAR:	she's wiping a dish . 7952_9896
+%mor:	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|a n|dish .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	&um she's apparently looking out the window . 9896_14179
+%mor:	pro:sub|she~aux|be&3S adv|apparent&dadj-LY part|look-PRESP prep|out
+	det:art|the n|window .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	<the kid that's &uh reaching for> [//] the boy that's reaching into
+	the cookie jar is about to fall off his stool . 14179_20590
+%mor:	det:art|the n|boy pro:rel|that~aux|be&3S part|reach-PRESP prep|into
+	det:art|the n|cookie n|jar cop|be&3S adv|about inf|to v|fall
+	prep|off det:poss|his n|stool .
+%gra:	1|2|DET 2|10|SUBJ 3|5|LINK 4|5|AUX 5|2|CMOD 6|5|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|0|ROOT 11|13|JCT 12|13|INF 13|10|CPRED 14|13|JCT 15|16|DET
+	16|14|POBJ 17|10|PUNCT
+*PAR:	&uh the sister is reaching up for a cookie . 20590_24016
+%mor:	det:art|the n|sister aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	she's got her finger pointed sort of at her nose . 24016_27331
+%mor:	pro:sub|she~aux|be&3S part|get&PASTP det:poss|her n|finger
+	v|point-PAST n|sort prep|of prep|at det:poss|her n|nose .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|COMP 7|6|OBJ 8|7|NJCT
+	9|8|POBJ 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	&uh (.) outside I see nothing that's going on, action . 27331_35511
+%mor:	adv|outside pro:sub|I v|see pro:indef|nothing
+	pro:rel|that~aux|be&3S part|go-PRESP adv|on cm|cm n|action .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|7|LINK 6|7|AUX 7|4|CMOD 8|7|JCT
+	9|7|LP 10|7|OBJ 11|3|PUNCT
+*PAR:	&uh (..) that's it . [+ exc] 35511_41779
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	okay good . 41779_47779
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

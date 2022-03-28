@@ -1,0 +1,62 @@
+@UTF8
+@PID:	11312/t-00002529-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|MCI||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	172-3, audio
+*PAR:	okay . [+ exc] 0_793
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	little boy is reaching for the cookie jar <in so doing he's tipping
+	over the> [//] &s and he's handing them to his sister, the cookies .
+	793_8161
+%mor:	adj|little n|boy aux|be&3S part|reach-PRESP prep|for det:art|the
+	n|cookie n|jar coord|and pro:sub|he~aux|be&3S part|hand-PRESP
+	pro:obj|them prep|to det:poss|his n|sister cm|cm det:art|the
+	n|cookie-PL .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|12|OBJ 14|12|JCT 15|16|DET
+	16|14|POBJ 17|12|LP 18|19|DET 19|12|OBJ 20|4|PUNCT
+*PAR:	so doing he's tipping over the stool in the &uh [//] in front of
+	the open cupboard . 8161_14179
+%mor:	adv|so part|do-PRESP pro:sub|he~aux|be&3S part|tip-PRESP prep|over
+	det:art|the n|stool prep|in det:art|the prep|in n|front prep|of
+	det:art|the adj|open n|cupboard .
+%gra:	1|2|JCT 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|11|POBJ 13|12|NJCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|2|PUNCT
+*PAR:	&uh the mother is washing dishes and at that time water is
+	overflowing from the sink . 14179_21479
+%mor:	det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	prep|at det:dem|that n|time n|water aux|be&3S over#part|flow-PRESP
+	prep|from det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|12|LINK 7|12|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|12|AUX 12|4|CJCT 13|12|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	she's wiping a dish at the time . 21479_25302
+%mor:	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|a n|dish prep|at
+	det:art|the n|time .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	and that's what I +//. [+ exc] 25302_27288
+%mor:	coord|and pro:dem|that~cop|be&3S pro:int|what pro:sub|I +//.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|OM 6|3|PUNCT
+*PAR:	her feet are in the water . 27288_28714
+%mor:	det:poss|her n|foot&PL cop|be&PRES prep|in det:art|the n|water .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and that's as much as I see . [+ exc] 28714_29820
+%mor:	coord|and pro:dem|that~cop|be&3S adv|as adv|much prep|as pro:sub|I
+	v|see .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|COORD 5|3|PRED 6|8|COORD 7|8|SUBJ
+	8|5|ENUM 9|3|PUNCT
+*PAR:	her back is to the boy and to the girl . 29820_33150
+%mor:	det:poss|her adj|back aux|be&3S prep|to det:art|the n|boy coord|and
+	prep|to det:art|the n|girl .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|INCROOT 5|6|DET 6|4|POBJ 7|4|CONJ
+	8|7|COORD 9|10|DET 10|8|POBJ 11|4|PUNCT
+*INV:	okay . 33150_36141
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

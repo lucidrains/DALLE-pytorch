@@ -1,0 +1,81 @@
+@UTF8
+@PID:	11312/t-00002208-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	034-3, audio
+*INV:	tell me everything that you see happening here . 0_3109
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|happen-PRESP adv|here .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|1|PUNCT
+*PAR:	things that are happening . [+ exc] 3109_5003
+%mor:	n|thing-PL pro:rel|that aux|be&PRES part|happen-PRESP .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|1|PUNCT
+*INV:	mhm . 5003_5852
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	girl's reaching for a cookie . [+ gram] 5852_8666
+%mor:	n|girl~aux|be&3S part|reach-PRESP prep|for det:art|a n|cookie .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the boy is &uh reachin(g) a cookie to the girl and also reachin(g)
+	at the cookie jar and he's gonna fall off a stool . 8666_20088
+%mor:	det:art|the n|boy aux|be&3S part|reach-PRESP det:art|a n|cookie
+	prep|to det:art|the n|girl coord|and adv|also part|reach-PRESP
+	prep|at det:art|the n|cookie n|jar coord|and pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|fall prep|off det:art|a n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|CONJ 11|12|JCT 12|10|COORD 13|12|JCT 14|16|DET 15|16|MOD
+	16|13|POBJ 17|20|LINK 18|20|SUBJ 19|20|AUX 20|4|CJCT 21|22|INF 22|20|COMP
+	23|22|JCT 24|25|DET 25|23|POBJ 26|4|PUNCT
+*PAR:	the woman is &w drying dishes and washing dishes . 20088_26671
+%mor:	det:art|the n|woman aux|be&3S part|dry-PRESP n|dish-PL coord|and
+	part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|CONJ 7|6|COORD 8|7|OBJ
+	9|4|PUNCT
+*PAR:	and she's let the water from the sink pour out on the floor . 26671_35423
+%mor:	coord|and pro:sub|she~cop|be&3S v|let&ZERO det:art|the n|water
+	prep|from det:art|the n|sink v|pour adv|out prep|on det:art|the
+	n|floor .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|6|DET 6|10|SUBJ 7|6|NJCT 8|9|DET
+	9|7|POBJ 10|4|COMP 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*PAR:	(...) I don't see any other thing . [+ exc] 35423_71143
+%mor:	pro:sub|I mod|do~neg|not v|see qn|any qn|other n|thing .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|QUANT 6|7|QUANT 7|4|OBJ 8|4|PUNCT
+*INV:	okay what's happening here ? 71143_74382
+%mor:	co|okay pro:int|what~aux|be&3S part|happen-PRESP adv|here ?
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	well I just told you that he was fallin(g) from a stool . [+ exc] 74382_76700
+%mor:	co|well pro:sub|I adv|just v|tell&PAST pro:per|you pro:rel|that
+	pro:sub|he aux|be&PAST&13S part|fall-PRESP prep|from det:art|a
+	n|stool .
+%gra:	1|4|COM 2|4|SUBJ 3|4|JCT 4|0|ROOT 5|4|OBJ 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|CMOD 10|9|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*INV:	okay yep you did sorry . 76700_78424
+%mor:	co|okay co|yep pro:per|you v|do&PAST adj|sorry .
+%gra:	1|4|COM 2|4|COM 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	okey_dokey . [+ exc] 78424_79622
+%mor:	co|okey_dokey .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	I said he was reachin(g) a cookie to the girl reaching for a cookie
+	for himself +/. [+ exc] 79622_84960
+%mor:	pro:sub|I v|say&PAST pro:sub|he aux|be&PAST&13S part|reach-PRESP
+	det:art|a n|cookie prep|to det:art|the n|girl part|reach-PRESP
+	prep|for det:art|a n|cookie prep|for pro:refl|himself +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|7|DET 7|5|OBJ 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|XJCT 12|11|JCT 13|14|DET 14|12|POBJ 15|11|JCT
+	16|15|POBJ 17|2|PUNCT
+*INV:	and he's gonna fall off the stool . 83960_86000
+%mor:	coord|and pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall prep|off
+	det:art|the n|stool .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	+, falling off a stool yeah . [+ exc] 84614_86606
+%mor:	part|fall-PRESP prep|off det:art|a n|stool co|yeah .
+%gra:	1|0|INCROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|COM 6|1|PUNCT
+*INV:	that's right . 86096_87026
+%mor:	pro:dem|that~cop|be&3S co|right .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

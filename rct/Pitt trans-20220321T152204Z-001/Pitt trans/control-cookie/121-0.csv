@@ -1,0 +1,152 @@
+@UTF8
+@PID:	11312/t-00002273-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|70;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	121-0, audio
+*PAR:	alright . [+ exc] 0_2129
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the boy is taking a cookie out_of the cookie jar and he has one in
+	his left hand <to reach down> [//] to give to his &si +//. 2129_10504
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP det:art|a n|cookie
+	prep|out_of det:art|the n|cookie n|jar coord|and pro:sub|he
+	v|have&3S det:num|one prep|in det:poss|his adj|left n|hand inf|to
+	v|give prep|to pro:poss|his +//.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|13|LINK 12|13|SUBJ 13|4|CJCT 14|13|OBJ 15|13|JCT
+	16|18|DET 17|18|MOD 18|15|POBJ 19|20|INF 20|13|XJCT 21|20|JCT 22|21|POBJ
+	23|4|PUNCT
+*PAR:	well he has it in his left hand . 10504_11787
+%mor:	co|well pro:sub|he aux|have&3S pro:per|it prep|in det:poss|his
+	adj|left n|hand .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	his sister or a girl is reaching up for a cookie and has her inner
+	index finger of her right hand pointed upward up close to her mouth
+	. 11787_23473
+%mor:	det:poss|his n|sister coord|or det:art|a n|girl aux|be&3S
+	part|reach-PRESP adv|up prep|for det:art|a n|cookie coord|and
+	aux|have&3S det:poss|her adj|inner n|index n|finger prep|of
+	det:poss|her n|right n|hand v|point-PAST adv|upward adv|up adj|close
+	prep|to det:poss|her n|mouth .
+%gra:	1|2|DET 2|7|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|7|AUX 7|0|ROOT 8|7|JCT
+	9|7|JCT 10|11|DET 11|9|POBJ 12|22|LINK 13|22|AUX 14|17|DET 15|17|MOD
+	16|17|MOD 17|22|SUBJ 18|17|NJCT 19|21|DET 20|21|MOD 21|18|POBJ 22|7|CJCT
+	23|22|JCT 24|22|JCT 25|24|POBJ 26|25|JCT 27|28|DET 28|26|POBJ 29|7|PUNCT
+*PAR:	and I'm [//] maybe she's saying “sh@o” because &um they're gonna
+	hafta be quiet because the stool is &um going to fall over . 23473_33090
+%mor:	coord|and adv|maybe pro:sub|she~aux|be&3S part|say-PRESP on|sh
+	conj|because pro:sub|they~aux|be&PRES part|go-PRESP~inf|to
+	mod|have~inf|to aux|be adj|quiet conj|because det:art|the n|stool
+	aux|be&3S part|go-PRESP inf|to v|fall adv|over .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|5|CJCT 11|15|INF 12|15|AUX 13|15|INF 14|15|AUX 15|10|COMP
+	16|20|LINK 17|18|DET 18|20|SUBJ 19|20|AUX 20|15|CMOD 21|22|INF 22|20|COMP
+	23|22|JCT 24|5|PUNCT
+*PAR:	the boy has his right heel on the [//] his left toe and he's
+	wearing &uh running shoes with pompoms on them . 33090_43441
+%mor:	det:art|the n|boy aux|have&3S det:poss|his n|right n|heel prep|on
+	det:poss|his adj|left n|toe coord|and pro:sub|he~aux|be&3S
+	part|wear-PRESP part|run-PRESP n|shoe-PL prep|with n|pompom-PL
+	prep|on pro:obj|them .
+%gra:	1|2|DET 2|6|SUBJ 3|6|AUX 4|6|DET 5|6|MOD 6|0|ROOT 7|6|NJCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|14|LINK 12|14|SUBJ 13|14|AUX 14|6|CJCT 15|14|XJCT
+	16|15|OBJ 17|15|JCT 18|17|POBJ 19|18|NJCT 20|19|POBJ 21|6|PUNCT
+*PAR:	&s &s look [//] socks look pretty sloppy . [+ gram] 43441_47738
+%mor:	n|sock-PL v|look adv|pretty adj|slop&dn-Y .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|JCT 5|2|PUNCT
+*PAR:	&um I observed that the [//] &uh one of the two &um slippers that
+	the girl is wearing &uh looks as if its sole <is thicker than the
+	one> [//] the left one is thicker than the right . 47738_64271
+%mor:	pro:sub|I v|observe-PAST det:dem|that pro:indef|one prep|of
+	det:art|the det:num|two n|slipper-PL pro:rel|that det:art|the n|girl
+	aux|be&3S part|wear-PRESP v|look-3S adv|as comp|if det:poss|its
+	adj|sole det:art|the adj|left det:num|one aux|be&3S adj|thick-CP
+	prep|than det:art|the adj|right .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PUNCT 5|4|NJCT 6|8|DET 7|8|QUANT 8|5|POBJ
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|8|CMOD 14|13|ROOT
+	15|16|COORD 16|14|COMP 17|18|DET 18|16|ROOT 19|21|DET 20|21|MOD 21|18|ROOT
+	22|21|ROOT 23|22|PRED 24|23|JCT 25|26|DET 26|24|POBJ 27|22|PUNCT
+*PAR:	the woman is &uh letting the sink run over . 64271_69300
+%mor:	det:art|the n|woman aux|be&3S part|let-PRESP det:art|the n|sink
+	v|run adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|7|SUBJ 7|4|COMP 8|7|JCT
+	9|4|PUNCT
+*PAR:	the water is running full tilt <out o(f) the> [//] and overflowing
+	the sink . 69300_73325
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adj|full n|tilt
+	coord|and over#n:gerund|flow-PRESP det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|MOD 6|4|OBJ 7|6|CONJ 8|7|COORD
+	9|10|DET 10|8|OBJ 11|4|PUNCT
+*PAR:	she's drying a plate and she has a towel in her right hand and it
+	looks as if she has something else . 73325_81654
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|plate coord|and
+	pro:sub|she v|have&3S det:art|a n|towel prep|in det:poss|her n|right
+	n|hand coord|and pro:per|it v|look-3S adv|as conj|if pro:sub|she
+	aux|have&3S pro:indef|something post|else .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|LINK 7|8|SUBJ 8|3|CJCT
+	9|10|DET 10|8|OBJ 11|8|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|17|LINK
+	16|17|SUBJ 17|3|CJCT 18|17|JCT 19|22|LINK 20|22|SUBJ 21|22|AUX 22|17|COMP
+	23|22|PQ 24|3|PUNCT
+*PAR:	no that's <the curtain> [//] &hang <the back> [//] the end of the
+	curtain that's behind her [//] the plate in her left hand . 81654_89321
+%mor:	co|no pro:dem|that~cop|be&3S det:art|the n|end prep|of det:art|the
+	n|curtain pro:rel|that~cop|be&3S prep|behind det:art|the n|plate
+	prep|in det:poss|her adj|left n|hand .
+%gra:	1|2|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|10|LINK 10|8|CMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|13|NJCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|3|PUNCT
+*PAR:	&um she (i)s [//] has her side [//] left side to the window . 89321_94578
+%mor:	pro:sub|she aux|have&3S det:poss|her adj|left adj|side prep|to
+	det:art|the n|window .
+%gra:	1|5|SUBJ 2|5|AUX 3|5|DET 4|5|MOD 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	the [//] &um she's &d already dried a plate and two cups . 94578_99795
+%mor:	pro:sub|she~aux|be&3S adv|already part|dry-PASTP det:art|a n|plate
+	coord|and det:num|two n|cup-PL .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|6|DET 6|4|OBJ 7|6|CONJ 8|9|QUANT
+	9|7|COORD 10|4|PUNCT
+*PAR:	the window is open and you can see the path outside going around to
+	the left of the back of the house . 99795_109395
+%mor:	det:art|the n|window cop|be&3S adj|open coord|and pro:per|you
+	mod|can v|see det:art|the n|path adv|outside part|go-PRESP
+	adv|around prep|to det:art|the adj|left prep|of det:art|the n|back
+	prep|of det:art|the n|house .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|8|LINK 6|8|SUBJ 7|8|AUX 8|3|CJCT
+	9|10|DET 10|8|OBJ 11|12|JCT 12|8|XJCT 13|12|JCT 14|12|JCT 15|16|DET
+	16|14|POBJ 17|16|JCT 18|19|DET 19|17|POBJ 20|19|NJCT 21|22|DET 22|20|POBJ
+	23|3|PUNCT
+*PAR:	and &uh another room in the house the window is also open I believe
+	. [+ gram] 109395_116416
+%mor:	coord|and qn|another n|room prep|in det:art|the n|house det:art|the
+	n|window cop|be&3S adv|also adj|open pro:sub|I v|believe .
+%gra:	1|3|LINK 2|3|QUANT 3|9|SUBJ 4|9|JCT 5|6|DET 6|4|POBJ 7|8|DET 8|9|SUBJ
+	9|0|ROOT 10|11|JCT 11|9|PRED 12|13|SUBJ 13|9|CJCT 14|9|PUNCT
+*PAR:	&um (..) <I don't> [//] <she's standing with the her> [//] the
+	woman is standing with her foot in the water but not where <it
+	isn't> [//] the water isn't running out_of her but it's splashing up
+	and her right shoe is in the water [//] puddle . 116416_139045
+%mor:	det:art|the n|woman aux|be&3S part|stand-PRESP prep|with
+	det:poss|her n|foot prep|in det:art|the n|water conj|but neg|not
+	pro:int|where det:art|the n|water aux|be&3S~neg|not part|run-PRESP
+	prep|out_of pro:obj|her conj|but pro:per|it~aux|be&3S
+	part|splash-PRESP adv|up coord|and det:poss|her adj|right n|shoe
+	cop|be&3S prep|in det:art|the n|puddle .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|7|NJCT
+	9|10|DET 10|8|POBJ 11|18|LINK 12|13|NEG 13|18|JCT 14|15|DET 15|18|SUBJ
+	16|18|AUX 17|16|NEG 18|4|CJCT 19|18|JCT 20|19|POBJ 21|24|LINK 22|24|SUBJ
+	23|24|AUX 24|18|XJCT 25|24|JCT 26|30|LINK 27|29|DET 28|29|MOD 29|30|SUBJ
+	30|24|CJCT 31|30|JCT 32|33|DET 33|31|POBJ 34|4|PUNCT
+*PAR:	and that's what I see . [+ exc] 139045_142034
+%mor:	coord|and pro:dem|that~cop|be&3S pro:int|what pro:sub|I v|see .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|CPRED 7|3|PUNCT
+*INV:	okay thank you . 142034_143181
+%mor:	co|okay v|thank pro:per|you .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*PAR:	and a kitchen &=laughs . [+ gram] 143181_147204
+%mor:	coord|and det:art|a n|kitchen .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|PUNCT
+@End

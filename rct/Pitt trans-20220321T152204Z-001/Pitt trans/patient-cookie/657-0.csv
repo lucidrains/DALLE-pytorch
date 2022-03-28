@@ -1,0 +1,56 @@
+@UTF8
+@PID:	11312/t-00002716-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|male|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	657-0, audio
+*INV:	picture that has a_lot_of action going on there's a_lot_of things
+	going on in the picture . 0_4421
+%mor:	n|picture pro:rel|that v|have&3S qn|a_lot_of n|action part|go-PRESP
+	adv|on pro:exist|there~cop|be&3S qn|a_lot_of n|thing-PL
+	part|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|INCROOT 2|3|LINK 3|1|CMOD 4|5|QUANT 5|9|SUBJ 6|9|XJCT 7|6|JCT
+	8|9|SUBJ 9|3|COMP 10|11|QUANT 11|9|PRED 12|11|XMOD 13|12|JCT 14|12|JCT
+	15|16|DET 16|14|POBJ 17|1|PUNCT
+*INV:	tell me what you see going on in the picture . 4421_7065
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	well she's washin(g) dishes . 7065_9724
+%mor:	co|well pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	he's climbin(g) up to get cookies . 9724_11270
+%mor:	pro:sub|he~aux|be&3S part|climb-PRESP adv|up inf|to v|get
+	n|cookie-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|INF 6|3|XJCT 7|6|OBJ 8|3|PUNCT
+*PAR:	he's gonna fall . 11270_12001
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|3|PUNCT
+*PAR:	and she's laughin(g) . 12001_13100
+%mor:	coord|and pro:sub|she~aux|be&3S part|laugh-PRESP .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*INV:	okay . 13100_15000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and she's spill [//] runnin(g) the water over . 15000_18647
+%mor:	coord|and pro:sub|she~aux|be&3S part|run-PRESP det:art|the n|water
+	adv|over .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|PUNCT
+*INV:	anything else ? 18647_23767
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	that looks like someone down out there or somethin(g) . [+ es] 23767_32688
+%mor:	pro:rel|that v|look-3S prep|like pro:indef|someone adv|down adv|out
+	adv|there coord|or pro:indef|something .
+%gra:	1|2|LINK 2|0|ROOT 3|2|JCT 4|3|POBJ 5|2|JCT 6|2|JCT 7|6|JCT 8|7|CONJ
+	9|8|COORD 10|2|PUNCT
+*PAR:	I don't know what that is . [+ exc] 32688_33600
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what adv|that cop|be&3S .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|JCT 7|4|COMP 8|4|PUNCT
+*INV:	okay . 33600_34847
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

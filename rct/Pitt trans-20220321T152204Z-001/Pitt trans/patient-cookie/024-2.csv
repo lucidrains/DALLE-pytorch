@@ -1,0 +1,74 @@
+@UTF8
+@PID:	11312/t-00002441-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|52;|male|Memory||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	024-2, audio
+*INV:	okay all of the action . 0_2926
+%mor:	co|okay pro:indef|all prep|of det:art|the n|action .
+%gra:	1|2|COM 2|0|ROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	okay . [+ exc] 2926_5670
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh we see a [/] &uh a &b little boy climbed up on a stool reaching
+	for the cookie jar . 5670_13533
+%mor:	pro:sub|we v|see det:art|a adj|little n|boy part|climb-PASTP adv|up
+	prep|on det:art|a n|stool part|reach-PRESP prep|for det:art|the
+	n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|5|XMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|5|XMOD 12|11|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|2|PUNCT
+*PAR:	and &uh the stool <is about to or> [//] is falling . 13533_20675
+%mor:	coord|and det:art|the n|stool aux|be&3S part|fall-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	&uh he is trying to get a cookie for himself and also one for his
+	sister . 20675_36036
+%mor:	pro:sub|he aux|be&3S part|try-PRESP inf|to v|get det:art|a n|cookie
+	prep|for pro:refl|himself coord|and adv|also pro:indef|one prep|for
+	det:poss|his n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|7|DET 7|5|OBJ 8|5|JCT
+	9|8|POBJ 10|3|CONJ 11|12|JCT 12|10|COORD 13|12|NJCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	&uh his sister is telling him to be very quiet . 36036_42885
+%mor:	det:poss|his n|sister aux|be&3S part|tell-PRESP pro:obj|him inf|to
+	cop|be adv|very adj|quiet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|INF 7|4|COMP 8|9|JCT
+	9|7|PRED 10|4|PUNCT
+*PAR:	she's goin(g) shh@o . 42885_44348
+%mor:	pro:sub|she~aux|be&3S part|go-PRESP on|shh .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	can't write that down . [+ exc] 44348_46627
+%mor:	mod|can~neg|not v|write adv|that adv|down .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|5|JCT 5|3|JCT 6|3|PUNCT
+*PAR:	telling him to be quiet . [+ gram] 46627_48061
+%mor:	part|tell-PRESP pro:obj|him inf|to cop|be adj|quiet .
+%gra:	1|0|INCROOT 2|1|OBJ 3|4|INF 4|1|COMP 5|4|PRED 6|1|PUNCT
+*PAR:	and &uh let's see . [+ exc] 48061_50500
+%mor:	coord|and v|let~pro:obj|us v|see .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	in the meantime &uh the mother is <washing the dishes or yes> [//]
+	washing dishes and the sink has &uh overflowed and &uh is pouring
+	water on the floor . 50500_69946
+%mor:	prep|in det:art|the n|meantime det:art|the n|mother aux|be&3S
+	part|wash-PRESP n|dish-PL coord|and det:art|the n|sink aux|have&3S
+	over#part|flow-PASTP coord|and aux|be&3S part|pour-PRESP n|water
+	prep|on det:art|the n|floor .
+%gra:	1|7|JCT 2|3|DET 3|1|POBJ 4|5|DET 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|OBJ
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|8|CMOD 14|13|CONJ 15|16|AUX
+	16|14|COORD 17|16|OBJ 18|16|JCT 19|20|DET 20|18|POBJ 21|7|PUNCT
+*PAR:	(..) I don't think I see anything else . [+ exc] 69946_80553
+%mor:	pro:sub|I mod|do~neg|not v|think pro:sub|I v|see pro:indef|anything
+	post|else .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|6|OBJ 8|7|PQ
+	9|4|PUNCT
+*INV:	+< well good, that's about all there is to see . 79749_82999
+%mor:	co|well adj|good cm|cm pro:rel|that~cop|be&3S prep|about qn|all
+	adv|there cop|be&3S inf|to v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|LP 4|5|LINK 5|2|CMOD 6|9|JCT 7|8|QUANT 8|9|SUBJ
+	9|5|PRED 10|11|INF 11|9|CPRED 12|2|PUNCT
+*PAR:	okay . [+ exc] 82999_83282
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

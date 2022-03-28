@@ -1,0 +1,87 @@
+@UTF8
+@PID:	11312/t-00002602-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|female|ProbableAD||Participant|23||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	282-2, audio
+*INV:	I want you to tell me everything that you see happening in that
+	picture . 0_5180
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|11|LINK
+	9|11|SUBJ 10|11|COM 11|7|CMOD 12|11|JCT 13|14|DET 14|12|POBJ 15|2|PUNCT
+*INV:	everything that's going on in there . 5180_7502
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|4|JCT 7|6|POBJ
+	8|1|PUNCT
+*PAR:	I see the little boy reaching up for the cookie jar but he's also
+	on the stool which is tumbling over and he's going to be hurt . 7502_16358
+%mor:	pro:sub|I v|see det:art|the adj|little n|boy part|reach-PRESP
+	adv|up prep|for det:art|the n|cookie n|jar conj|but
+	pro:sub|he~cop|be&3S adv|also prep|on det:art|the n|stool
+	pro:rel|which aux|be&3S part|tumble-PRESP adv|over coord|and
+	pro:sub|he~aux|be&3S part|go-PRESP inf|to cop|be part|hurt&PASTP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|OBJ 6|5|XMOD 7|6|JCT 8|6|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|14|LINK 13|14|SUBJ 14|2|CJCT 15|14|JCT
+	16|14|JCT 17|18|DET 18|16|POBJ 19|21|LINK 20|21|AUX 21|18|CMOD 22|21|JCT
+	23|26|LINK 24|26|SUBJ 25|26|AUX 26|21|CJCT 27|28|INF 28|26|COMP 29|28|PRED
+	30|2|PUNCT
+*PAR:	the little girl has her hand up for a cookie from the cookie jar
+	too . 16358_20903
+%mor:	det:art|the adj|little n|girl aux|have&3S det:poss|her n|hand
+	adv|up prep|for det:art|a n|cookie prep|from det:art|the n|cookie
+	n|jar post|too .
+%gra:	1|3|DET 2|3|MOD 3|6|SUBJ 4|6|AUX 5|6|DET 6|0|ROOT 7|6|JCT 8|6|NJCT
+	9|10|DET 10|8|POBJ 11|6|NJCT 12|14|DET 13|14|MOD 14|11|POBJ 15|6|PQ
+	16|6|PUNCT
+*PAR:	the [//] we'll call her the mother is doing dishes . 20903_26789
+%mor:	pro:sub|we~mod|will v|call pro:obj|her det:art|the n|mother
+	aux|be&3S part|do-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ2 5|6|DET 6|8|SUBJ 7|8|AUX 8|3|COMP
+	9|8|OBJ 10|3|PUNCT
+*PAR:	and the water is splashing out_of the sink . 26789_31222
+%mor:	coord|and det:art|the n|water aux|be&3S part|splash-PRESP
+	prep|out_of det:art|the n|sink .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	she can look out the window and see the lawn, the birds in the
+	trees . 31222_38030
+%mor:	pro:sub|she mod|can v|look prep|out det:art|the n|window coord|and
+	v|see det:art|the n|lawn cm|cm det:art|the n|bird-PL prep|in
+	det:art|the n|tree-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|7|COORD
+	9|10|DET 10|8|OBJ 11|10|LP 12|13|DET 13|10|ENUM 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*PAR:	she's doing the dishes and as I said before the water is coming out
+	onto the floor . 38030_44106
+%mor:	pro:sub|she~aux|be&3S part|do-PRESP det:art|the n|dish-PL coord|and
+	conj|as pro:sub|I v|say&PAST prep|before det:art|the n|water
+	aux|be&3S part|come-PRESP adv|out prep|onto det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|14|LINK 7|9|LINK 8|9|SUBJ
+	9|14|CJCT 10|9|JCT 11|12|DET 12|10|POBJ 13|14|AUX 14|3|CJCT 15|14|JCT
+	16|14|JCT 17|18|DET 18|16|POBJ 19|3|PUNCT
+*PAR:	she doesn't seem to be aware of it . 44106_47000
+%mor:	pro:sub|she mod|do&3S~neg|not cop|seem inf|to cop|be adj|aware
+	prep|of pro:per|it .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|INF 6|4|COMP 7|6|PRED 8|7|JCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	and the little boy is going to get a bad fall on that stool . 47000_53010
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S part|go-PRESP
+	inf|to v|get det:art|a adj|bad v|fall prep|on det:dem|that n|stool .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|11|DET 10|11|MOD 11|8|COMP 12|11|JCT 13|14|DET 14|12|POBJ 15|6|PUNCT
+*PAR:	the water's on full force and it's coming out onto the floor
+	&=laughs . 53010_62550
+%mor:	det:art|the n|water~cop|be&3S adv|on adj|full n|force coord|and
+	pro:per|it~aux|be&3S part|come-PRESP adv|out prep|onto det:art|the
+	n|floor .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|6|MOD 6|3|PRED 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|3|PUNCT
+*INV:	okay . 62550_64263
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

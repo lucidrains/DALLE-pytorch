@@ -1,0 +1,106 @@
+@UTF8
+@PID:	11312/t-00002415-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	686-0, audio
+*INV:	take a look at that and tell me everything that you see happening
+	in that picture, everything that's going on . 0_9400
+%mor:	v|take det:art|a v|look prep|at pro:dem|that coord|and v|tell
+	pro:obj|me pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture cm|cm
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|JCT 5|4|POBJ 6|3|CONJ 7|6|COORD 8|7|OBJ
+	9|7|OBJ 10|11|LINK 11|9|CMOD 12|13|COM 13|11|COMP 14|13|JCT 15|16|DET
+	16|13|JCT 17|16|LP 18|16|ENUM 19|21|LINK 20|21|AUX 21|18|CMOD 22|21|JCT
+	23|1|PUNCT
+*PAR:	well the little girl is reaching for a cookie . 9400_11750
+%mor:	co|well det:art|the adj|little n|girl aux|be&3S part|reach-PRESP
+	prep|for det:art|a n|cookie .
+%gra:	1|6|COM 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|PUNCT
+*PAR:	and the boy is on a stool which is falling over to get in the
+	cookie jar up on the second shelf of the cupboard with the door open
+	. 11750_18750
+%mor:	coord|and det:art|the n|boy cop|be&3S prep|on det:art|a n|stool
+	pro:rel|which aux|be&3S part|fall-PRESP adv|over inf|to v|get
+	prep|in det:art|the n|cookie n|jar adv|up prep|on det:art|the
+	adj|second n|shelf prep|of det:art|the n|cupboard prep|with
+	det:art|the n|door adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|13|INF 13|10|XJCT 14|13|JCT 15|17|DET
+	16|17|MOD 17|14|POBJ 18|13|JCT 19|13|JCT 20|22|DET 21|22|MOD 22|19|POBJ
+	23|22|NJCT 24|25|DET 25|23|POBJ 26|13|JCT 27|28|DET 28|26|POBJ 29|13|JCT
+	30|4|PUNCT
+*PAR:	the faucet is running and it's overflowing onto the floor because
+	&um it's overflowing into the sink . 18750_25510
+%mor:	det:art|the n|faucet aux|be&3S part|run-PRESP coord|and
+	pro:per|it~cop|be&3S over#n:gerund|flow-PRESP prep|onto det:art|the
+	n|floor conj|because pro:per|it~cop|be&3S over#n:gerund|flow-PRESP
+	prep|into det:art|the n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|COMP 8|7|PRED
+	9|8|JCT 10|11|DET 11|9|POBJ 12|14|LINK 13|14|SUBJ 14|4|CJCT 15|14|PRED
+	16|15|JCT 17|18|DET 18|16|POBJ 19|4|PUNCT
+*PAR:	the woman is drying a plate . 25510_28354
+%mor:	det:art|the n|woman aux|be&3S part|dry-PRESP det:art|a n|plate .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	she's also looking out the window . 28354_31111
+%mor:	pro:sub|she~aux|be&3S adv|also part|look-PRESP prep|out det:art|the
+	n|window .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	there's a couple of bowls and a plate on the &uh counter . 31111_36133
+%mor:	pro:exist|there~cop|be&3S det:art|a n|couple prep|of n|bowl-PL
+	coord|and det:art|a n|plate prep|on det:art|the n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|5|POBJ 7|4|CONJ 8|9|DET
+	9|7|COORD 10|9|NJCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*PAR:	curtains at the windows . [+ gram] 36133_38692
+%mor:	n|curtain-PL prep|at det:art|the n|window-PL .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	there's a driveway or it looks like a driveway outside . 38692_41600
+%mor:	pro:exist|there~cop|be&3S det:art|a n|+n|drive+n|way coord|or
+	pro:per|it v|look-3S conj|like det:art|a n|+n|drive+n|way
+	adv|outside .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|10|NJCT 12|2|PUNCT
+*PAR:	and you can see another window and some bushes out there and the
+	tree . 41600_46568
+%mor:	coord|and pro:per|you mod|can v|see qn|another n|window coord|and
+	qn|some n|bush-PL prep|out n|there coord|and det:art|the n|tree .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|6|CONJ 8|9|QUANT
+	9|7|COORD 10|4|JCT 11|10|POBJ 12|4|CONJ 13|14|DET 14|12|COORD
+	15|4|PUNCT
+*PAR:	and <I guess that's> [//] &pa looks like a <part of the garage>
+	[//] window of the garage out there . [+ gram] 46568_52153
+%mor:	coord|and v|look-3S conj|like det:art|a n|window prep|of
+	det:art|the n|garage prep|out n|there .
+%gra:	1|2|LINK 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|5|NJCT 10|9|POBJ 11|2|PUNCT
+*PAR:	and &uh &um the cookie jar has the lid off . 52153_58500
+%mor:	coord|and det:art|the n|cookie n|jar v|have&3S det:art|the n|lid
+	adv|off .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT
+	9|5|PUNCT
+*PAR:	and the boy has one hand in the cookie jar and one with a cookie in
+	it handing &uh to the little girl who's got her hand up for it and
+	her [//] she looks like got her finger to mouth tell him to be
+	careful &=laughs . 58500_70564
+%mor:	coord|and det:art|the n|boy aux|have&3S det:num|one n|hand prep|in
+	det:art|the n|cookie n|jar coord|and det:num|one prep|with det:art|a
+	n|cookie prep|in pro:per|it part|hand-PRESP prep|to det:art|the
+	adj|little n|girl pro:rel|who~aux|be&3S part|get&PASTP det:poss|her
+	n|hand adv|up prep|for pro:per|it coord|and pro:sub|she v|look-3S
+	conj|like v|get&PAST det:poss|her n|finger inf|to v|mouth v|tell
+	pro:obj|him inf|to cop|be co|careful .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|6|QUANT 6|0|INCROOT 7|6|NJCT
+	8|10|DET 9|10|MOD 10|7|POBJ 11|6|CONJ 12|11|COORD 13|12|JCT 14|15|DET
+	15|13|POBJ 16|15|NJCT 17|16|POBJ 18|6|XJCT 19|18|JCT 20|22|DET 21|22|MOD
+	22|19|POBJ 23|25|LINK 24|25|AUX 25|22|CMOD 26|27|DET 27|25|OBJ 28|25|JCT
+	29|25|JCT 30|29|POBJ 31|33|LINK 32|33|SUBJ 33|25|CJCT 34|33|JCT 35|34|CPOBJ
+	36|37|DET 37|35|OBJ 38|39|INF 39|35|XJCT 40|39|COMP 41|40|OBJ 42|43|INF
+	43|40|COMP 44|43|PRED 45|6|PUNCT
+*INV:	okay good . 70564_72884
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

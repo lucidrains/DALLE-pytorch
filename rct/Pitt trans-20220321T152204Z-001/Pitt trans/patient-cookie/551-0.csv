@@ -1,0 +1,124 @@
+@UTF8
+@PID:	11312/t-00002684-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	551-0, audio
+*INV:	I want you to tell me everything that's happening in that picture .
+	0_4095
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP
+	prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|2|PUNCT
+*INV:	(..) I want you to tell me everything that's going on in that
+	picture . 4095_10800
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|2|PUNCT
+*PAR:	+< well this boy is almost falling <out of the> [//] off of the
+	chair [: stool] [* s:r] when he's putting up the picture . 9800_14831
+%mor:	co|well det:dem|this n|boy aux|be&3S adv|almost part|fall-PRESP
+	adv|off prep|of det:art|the n|stool conj|when pro:sub|he~aux|be&3S
+	part|put-PRESP prep|up det:art|the n|picture .
+%gra:	1|6|COM 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|14|LINK 12|14|SUBJ 13|14|AUX 14|6|CJCT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|6|PUNCT
+*PAR:	and &uh she's washin(g) dishes . 14831_19579
+%mor:	coord|and pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	I guess she wouldn't know . 19579_22029
+%mor:	pro:sub|I v|guess pro:sub|she mod|will&COND~neg|not v|know .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|SUBJ 4|6|AUX 5|4|NEG 6|2|COMP 7|2|PUNCT
+*PAR:	oh my ! [+ exc] 22029_22579
+%mor:	co|oh det:poss|my !
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	her sink is running over too isn't it &=laughs . 22579_25493
+%mor:	det:poss|her n|sink aux|be&3S part|run-PRESP adv|over adv|too
+	cop|be&3S~neg|not pro:per|it .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|JCT 7|4|COMP 8|7|NEG
+	9|7|PRED 10|4|PUNCT
+*INV:	mhm . 25493_26114
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	is that all [//] more [: all] [* s:r] or is [/] is there more to it
+	? [+ exc] 26114_29039
+%mor:	cop|be&3S comp|that qn|all coord|or cop|be&3S adv|there adv|more
+	prep|to pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|4|QUANT 4|2|CONJ 5|4|COORD 6|5|JCT 7|5|JCT 8|5|JCT
+	9|8|POBJ 10|1|PUNCT
+*PAR:	this one looks kinda [: kind_of] like a +... 29039_31456
+%mor:	pro:dem|this pro:indef|one cop|look-3S adv|kind_of co|like
+	det:art|a +...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|COM 6|7|DET 7|3|PUNCT
+*PAR:	oh that's a plate I guess . 31456_32858
+%mor:	co|oh pro:dem|that~cop|be&3S det:art|a n|plate pro:sub|I v|guess .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|7|SUBJ 7|5|CMOD 8|3|PUNCT
+*PAR:	and a cup and saucer . [+ gram] 32858_35174
+%mor:	coord|and det:art|a n|cup coord|and n|saucer .
+%gra:	1|0|INCROOT 2|3|DET 3|1|COORD 4|3|CONJ 5|4|COORD 6|1|PUNCT
+*PAR:	(..) oh this is a lady here . 35174_47800
+%mor:	co|oh pro:dem|this cop|be&3S det:art|a n|lady adv|here .
+%gra:	1|2|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|3|PUNCT
+*PAR:	is it or isn't it &=laughs ? [+ exc] 47800_49105
+%mor:	aux|be&3S pro:per|it coord|or cop|be&3S~neg|not pro:per|it ?
+%gra:	1|0|INCROOT 2|1|PRED 3|2|CONJ 4|3|COORD 5|4|NEG 6|4|SUBJ 7|1|PUNCT
+*PAR:	right there . [+ exc] 49505_50200
+%mor:	adv|right adv|there .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*PAR:	is that a lady ? [+ exc] 50200_50816
+%mor:	cop|be&3S comp|that det:art|a n|lady ?
+%gra:	1|0|ROOT 2|1|PRED 3|4|DET 4|2|OM 5|1|PUNCT
+*INV:	no hmhunh . 50816_51871
+%mor:	co|no co|no .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	<I thought this> [//] when I had it this way it looked almost like
+	a lady . [+ exc] 51871_55638
+%mor:	conj|when pro:sub|I v|have&PAST pro:per|it det:dem|this adv|way
+	pro:per|it cop|look-PAST adv|almost co|like det:art|a n|lady .
+%gra:	1|3|LINK 2|3|SUBJ 3|8|CJCT 4|3|OBJ 5|7|DET 6|7|JCT 7|8|SUBJ 8|0|ROOT
+	9|8|JCT 10|8|COM 11|12|DET 12|8|PRED 13|8|PUNCT
+*INV:	+< just tell me anything you see happening in there . 54638_57800
+%mor:	adv|just v|tell pro:obj|me pro:indef|anything pro:per|you v|see
+	n:gerund|happen-PRESP prep|in n|there .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|OBJ 5|6|SUBJ 6|4|CMOD 7|6|OBJ 8|6|JCT
+	9|8|POBJ 10|2|PUNCT
+*PAR:	oh . [+ exc] 57800_58638
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	and just turn it this way . 58638_60671
+%mor:	coord|and adj|just n|turn pro:per|it pro:dem|this adv|way .
+%gra:	1|3|LINK 2|3|MOD 3|0|INCROOT 4|5|SUBJ 5|3|CMOD 6|5|JCT 7|3|PUNCT
+*PAR:	she's washing dishes . 60671_63200
+%mor:	pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	mhm . 63200_63734
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and she must have dropped one . 63734_66044
+%mor:	coord|and pro:sub|she mod|must aux|have part|drop-PASTP
+	pro:indef|one .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	oh no she let the sink ran over . 66044_68611
+%mor:	co|oh co|no pro:sub|she v|let&ZERO det:art|the n|sink v|run&PAST
+	adv|over .
+%gra:	1|4|COM 2|4|COM 3|4|SUBJ 4|0|ROOT 5|6|DET 6|7|SUBJ 7|4|COMP 8|7|JCT
+	9|4|PUNCT
+*PAR:	and he's almost falling off of the chair [: stool] [* s:r] . 68611_72001
+%mor:	coord|and pro:sub|he~aux|be&3S adv|almost part|fall-PRESP adv|off
+	prep|of det:art|the n|stool .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	and she's [//] she did something, it looks like . [+ es] 72001_78707
+%mor:	coord|and pro:sub|she v|do&PAST pro:indef|something cm|cm
+	pro:per|it v|look-3S prep|like .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|LP 6|7|SUBJ 7|3|CJCT 8|7|JCT
+	9|3|PUNCT
+*INV:	okay good . 78707_81145
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

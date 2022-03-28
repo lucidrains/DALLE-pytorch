@@ -1,0 +1,78 @@
+@UTF8
+@PID:	11312/t-00002244-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|63;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	092-1, audio
+*INV:	tell me everything that you see happening . 0_1913
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|happen-PRESP .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|1|PUNCT
+*INV:	there it is . 1913_3038
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	well the girl is watching the boy go into the cookie jar . 3038_9775
+%mor:	co|well det:art|the n|girl aux|be&3S part|watch-PRESP det:art|the
+	n|boy v|go prep|into det:art|the n|cookie n|jar .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|8|SUBJ 8|5|COMP
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|5|PUNCT
+*PAR:	he has a cookie in his hand . 9775_11814
+%mor:	pro:sub|he v|have&3S det:art|a n|cookie prep|in det:poss|his n|hand
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	he's on the stool . 11814_13590
+%mor:	pro:sub|he~cop|be&3S prep|on det:art|the n|stool .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	the <stool is> [/] stool is falling . 13590_16391
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the mother is drying dishes . 16391_21311
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	has a plate in her hand . [+ gram] 21311_23505
+%mor:	v|have&3S det:art|a n|plate prep|in det:poss|her n|hand .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*PAR:	sink is overflowing . [+ gram] 23505_25301
+%mor:	n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	there's water on the floor . 25301_27431
+%mor:	pro:exist|there~cop|be&3S n|water prep|on det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|NJCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	she's stepping in the water . 27363_29980
+%mor:	pro:sub|she~cop|be&3S n:gerund|step-PRESP prep|in det:art|the
+	n|water .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	something that's going on you said ? [+ exc] 29980_33950
+%mor:	pro:indef|something pro:rel|that~aux|be&3S part|go-PRESP prep|on
+	pro:per|you v|say&PAST ?
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|7|JCT 6|7|SUBJ 7|4|COMP
+	8|1|PUNCT
+*INV:	mhm . 33950_35100
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<she looks> [//] the little girl looks like she's motioning to the
+	boy to be quiet . 35146_41761
+%mor:	det:art|the adj|little n|girl v|look-3S conj|like
+	pro:sub|she~aux|be&3S part|motion-PRESP prep|to det:art|the n|boy
+	inf|to cop|be adj|quiet .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|13|INF 13|11|XMOD 14|13|PRED 15|4|PUNCT
+*PAR:	and &uh (.) I don't know what else . [+ exc] 41761_49587
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know pro:int|what post|else .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|6|PQ 8|5|PUNCT
+*PAR:	the woman's looking out the window . 49587_51781
+%mor:	det:art|the n|woman~aux|be&3S part|look-PRESP prep|out det:art|the
+	n|window .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the window's open . 51781_56352
+%mor:	det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*INV:	+< okay . 54282_56353
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 56353_59332
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

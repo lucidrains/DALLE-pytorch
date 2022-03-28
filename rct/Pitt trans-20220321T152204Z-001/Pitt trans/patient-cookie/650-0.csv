@@ -1,0 +1,103 @@
+@UTF8
+@PID:	11312/t-00002713-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|87;|female|ProbableAD||Participant|24||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	650-0, audio
+*PAR:	&uh a boy is &uh puttin(g) somethin(g) in the closet . 0_5386
+%mor:	det:art|a n|boy aux|be&3S part|put-PRESP pro:indef|something
+	prep|in det:art|the n|closet .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	<or he> [//] <and he could> [//] or <I it [/] it could be taking>
+	[//] he could be taking a cookie jar out . 5386_15361
+%mor:	coord|or pro:sub|he mod|could aux|be part|take-PRESP det:art|a
+	n|cookie v|jar adv|out .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|AUX 5|8|LINK 6|7|DET 7|8|SUBJ 8|0|ROOT
+	9|8|JCT 10|8|PUNCT
+*PAR:	and he's &uh the &step &uh step+stool is tilting . 15361_19750
+%mor:	coord|and pro:sub|he~aux|be&3S det:art|the n|+n|step+n|stool
+	aux|be&3S part|tilt-PRESP .
+%gra:	1|7|LINK 2|5|SUBJ 3|5|AUX 4|5|DET 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|PUNCT
+*PAR:	(..) and a young girl seems to whisper to him &n about makin(g)
+	noise . 19750_33100
+%mor:	coord|and det:art|a adj|young n|girl cop|seem-3S inf|to v|whisper
+	prep|to pro:obj|him adv|about part|make-PRESP n|noise .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|7|INF 7|5|COMP 8|7|JCT
+	9|8|POBJ 10|11|JCT 11|7|XJCT 12|11|OBJ 13|5|PUNCT
+*PAR:	<doesn't it> [//] did you notice that ? [+ exc] 33100_35000
+%mor:	mod|do&PAST pro:per|you v|notice pro:dem|that ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	+< mhm . 34800_35900
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< yeah . [+ exc] 35400_36263
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh now &d do I go over on the other side ? [+ exc] 36263_41354
+%mor:	adv|now mod|do pro:sub|I v|go adv|over prep|on det:art|the qn|other
+	n|side ?
+%gra:	1|4|JCT 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|9|DET 8|9|QUANT
+	9|6|POBJ 10|4|PUNCT
+*INV:	mhm the whole picture . 41354_43000
+%mor:	co|mhm=yes det:art|the adj|whole n|picture .
+%gra:	1|4|COM 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	+< whole picture . [+ exc] 42750_43714
+%mor:	adj|whole n|picture .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	&uh there's &uh [x 3] a older &w woman well young still . 43714_50380
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|old-CP n|woman adv|well
+	adj|young adv|still .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|7|JCT 7|5|XMOD 8|7|JCT
+	9|2|PUNCT
+*PAR:	I mean to say that . [+ exc] 50380_51843
+%mor:	pro:sub|I v|mean inf|to v|say comp|that .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|4|OBJ 6|2|PUNCT
+*PAR:	&uh then the [/] the child over there . 51843_54670
+%mor:	adv:tem|then det:art|the n|child prep|over n|there .
+%gra:	1|3|JCT 2|3|DET 3|0|INCROOT 4|3|NJCT 5|4|POBJ 6|3|PUNCT
+*PAR:	and &uh she's dryin(g) dishes or washin(g) (th)em, washin(g) and
+	<dry (th)em> [//] drying them . 54670_64060
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL coord|or
+	part|wash-PRESP pro:obj|them cm|cm part|wash-PRESP coord|and
+	part|dry-PRESP pro:obj|them .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|CONJ 7|6|COORD 8|7|OBJ
+	9|7|LP 10|7|XJCT 11|10|CONJ 12|11|COORD 13|12|OBJ 14|4|PUNCT
+*PAR:	and &uh (..) it looks as if she's spilling water on the floor from
+	the sink . 64060_80744
+%mor:	coord|and pro:per|it v|look-3S adv|as conj|if pro:sub|she~aux|be&3S
+	part|spill-PRESP n|water prep|on det:art|the n|floor prep|from
+	det:art|the n|sink .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|3|CJCT
+	9|8|OBJ 10|8|JCT 11|12|DET 12|10|POBJ 13|8|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*PAR:	is there &uh a woman's face at the window ? [+ exc] 80744_90065
+%mor:	cop|be&3S adv|there det:art|a adj|woman&dn-POSS n|face prep|at
+	det:art|the n|window ?
+%gra:	1|0|ROOT 2|1|JCT 3|5|DET 4|5|MOD 5|1|PRED 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|1|PUNCT
+*PAR:	<doesn't it like a> [//] &d doesn't it look like there's a face
+	there ? [+ exc] 90065_95800
+%mor:	mod|do&3S~neg|not pro:per|it v|look conj|like
+	pro:exist|there~cop|be&3S det:art|a n|face adv|there ?
+%gra:	1|4|AUX 2|1|NEG 3|4|SUBJ 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|CJCT 8|9|DET
+	9|7|PRED 10|9|NJCT 11|4|PUNCT
+*INV:	oh ‡ no ‡ hunhunh . 95800_96997
+%mor:	co|oh beg|beg co|no beg|beg co|hunhunh=no .
+%gra:	1|0|BEG 2|1|BEGP 3|0|BEG 4|3|BEGP 5|0|INCROOT 6|5|PUNCT
+*PAR:	+< ain't that ? [+ exc] 96997_97629
+%mor:	aux|be&1S~neg|not pro:dem|that ?
+%gra:	1|0|INCROOT 2|1|NEG 3|1|OM 4|1|PUNCT
+*PAR:	oh I thought it looked like a nose and a mouth &=laughs and eye
+	there . [+ exc] 97629_101068
+%mor:	co|oh pro:sub|I v|think&PAST pro:per|it cop|look-PAST prep|like
+	det:art|a n|nose coord|and det:art|a n|mouth coord|and n|eye
+	adv|there .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|11|DET 11|9|COORD 12|11|CONJ 13|12|COORD 14|13|JCT 15|3|PUNCT
+*INV:	okay . 101068_102406
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

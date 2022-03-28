@@ -1,0 +1,93 @@
+@UTF8
+@PID:	11312/t-00002391-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|60;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	296-2, audio
+*INV:	tell me everything that you see happening in that picture . 0_2741
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	co|see n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|7|LINK 5|7|SUBJ 6|7|COM 7|3|CMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*INV:	everything that you see going on . 2741_4641
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|1|PUNCT
+*PAR:	alright . [+ exc] 4641_5638
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	boy is getting into the cookie jar . [+ gram] 5638_7950
+%mor:	n|boy aux|be&3S part|get-PRESP prep|into det:art|the n|cookie n|jar
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	he's got one in his hand . 7950_9000
+%mor:	pro:sub|he~aux|be&3S part|get&PASTP pro:indef|one prep|in
+	det:poss|his n|hand .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	the stool is falling over as he's reaching for the cookies . 9000_13464
+%mor:	det:art|the n|stool aux|be&3S part|fall-PRESP adv|over conj|as
+	pro:sub|he~aux|be&3S part|reach-PRESP prep|for det:art|the
+	n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|4|CJCT 10|9|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	the girl is laughing at him . 13464_17402
+%mor:	det:art|the n|girl aux|be&3S part|laugh-PRESP prep|at pro:obj|him .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	mother is s:tanding by the kitchen sink drying dishes . 17402_25120
+%mor:	n|mother aux|be&3S part|stand-PRESP prep|by det:art|the n|kitchen
+	n|sink part|dry-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|7|XMOD
+	9|8|OBJ 10|3|PUNCT
+*PAR:	the water is on and <it is:> [//] the sink is spilling over . 25120_31378
+%mor:	det:art|the n|water cop|be&3S adv|on coord|and det:art|the n|sink
+	aux|be&3S part|spill-PRESP adv|over .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|9|LINK 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|3|CJCT 10|9|JCT 11|3|PUNCT
+*PAR:	there is &uh a window over the sink which shows a [/] a yard . 31378_39581
+%mor:	pro:exist|there cop|be&3S det:art|a n|window prep|over det:art|the
+	n|sink pro:rel|which v|show-3S det:art|a n|yard .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ 8|9|LINK
+	9|4|CMOD 10|11|DET 11|9|OBJ 12|2|PUNCT
+*PAR:	there are curtains . 39581_41550
+%mor:	pro:exist|there cop|be&PRES n|curtain-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	there are looks like two cups and a plate on the sink . 41550_49103
+%mor:	pro:exist|there cop|be&PRES v|look-3S co|like det:num|two n|cup-PL
+	coord|and det:art|a n|plate prep|on det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|CPRED 4|6|COM 5|6|QUANT 6|3|OBJ 7|6|CONJ 8|9|DET
+	9|7|COORD 10|9|NJCT 11|12|DET 12|10|POBJ 13|2|PUNCT
+*PAR:	&uh there's a set of kitchen cabinets . 49103_54970
+%mor:	pro:exist|there~cop|be&3S det:art|a n|set prep|of n|kitchen
+	n|cabinet-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|7|MOD 7|5|POBJ 8|2|PUNCT
+*PAR:	and the mother has on an apron and a sleeveless dress . 54970_60263
+%mor:	coord|and det:art|the n|mother aux|have&3S prep|on det:art|a
+	n|apron coord|and det:art|a adj|sleeve&dn-LESS n|dress .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|INCROOT 6|7|DET 7|5|POBJ 8|7|CONJ
+	9|11|DET 10|11|MOD 11|8|COORD 12|5|PUNCT
+*PAR:	&um (.) &eh (..) the girl has on a &s dress or a skirt and blouse .
+	60263_72854
+%mor:	det:art|the n|girl aux|have&3S prep|on det:art|a n|dress coord|or
+	det:art|a n|skirt coord|and n|blouse .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|3|CONJ 8|9|DET
+	9|7|COORD 10|9|CONJ 11|10|COORD 12|2|PUNCT
+*PAR:	the boy looks like he's got on short trousers and a shirt with a
+	sweater . 72854_80556
+%mor:	det:art|the n|boy v|look-3S conj|like pro:sub|he~aux|be&3S
+	part|get&PASTP adv|on adj|short n|trouser-PL coord|and det:art|a
+	n|shirt prep|with det:art|a n|sweater .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|7|JCT
+	9|10|MOD 10|7|OBJ 11|10|CONJ 12|13|DET 13|11|COORD 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|3|PUNCT
+*PAR:	cookie jar is full o(f) cookies . [+ gram] 80556_85307
+%mor:	n|cookie n|jar cop|be&3S adj|full prep|of n|cookie-PL .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	the lid is off . 85307_86704
+%mor:	det:art|the n|lid cop|be&3S adv|off .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	that's it ! [+ exc] 86704_92384
+%mor:	pro:dem|that~cop|be&3S pro:per|it !
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

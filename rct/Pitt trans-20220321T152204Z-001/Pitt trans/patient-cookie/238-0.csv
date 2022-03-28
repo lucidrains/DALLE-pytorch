@@ -1,0 +1,101 @@
+@UTF8
+@PID:	11312/t-00002579-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|62;|female|ProbableAD||Participant|12||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	238-0, audio
+*INV:	I want you to tell me anything that you see going on in that
+	picture . 0_3300
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|anything pro:rel|that pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|OBJ 12|10|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|2|PUNCT
+*PAR:	+< mhm . [+ exc] 2300_3410
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	what do you see ? 3410_5436
+%mor:	pro:int|what mod|do pro:per|you v|see ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*PAR:	&uh they [//] &s the cookie jar . [+ gram] 5436_9716
+%mor:	det:art|the n|cookie n|jar .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	with the [/] &hm (.) the girl helping him . [+ gram] 9716_17014
+%mor:	prep|with det:art|the n|girl part|help-PRESP pro:obj|him .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|3|XMOD 5|4|OBJ 6|1|PUNCT
+*PAR:	but that isn't the right thing . [+ es] 17014_21100
+%mor:	conj|but det:dem|that cop|be&3S~neg|not det:art|the adj|right
+	n|thing .
+%gra:	1|3|LINK 2|3|DET 3|0|ROOT 4|3|NEG 5|7|DET 6|7|MOD 7|3|PRED 8|3|PUNCT
+*PAR:	but their mother was there (.) spilling &uh water &=laughs . 21100_26000
+%mor:	conj|but det:poss|their n|mother aux|be&PAST&13S adv|there
+	part|spill-PRESP n|water .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+*INV:	&=laughs . 26000_27000
+*PAR:	(.) this wouldn't be the grandmother I guess . 27000_34778
+%mor:	pro:dem|this mod|will&COND~neg|not cop|be det:art|the
+	grand#n|mother pro:sub|I v|guess .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|DET 6|4|PRED 7|8|SUBJ 8|6|CMOD
+	9|4|PUNCT
+*PAR:	it's the children . 34778_36636
+%mor:	pro:per|it~cop|be&3S det:art|the n|child&PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	(..) okay what do you see goin(g) on over here ? 36636_52947
+%mor:	co|okay pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|over adv|here ?
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|8|POBJ 10|5|PUNCT
+*PAR:	&uh well I think he's going to fall pretty quick &=laughs . 52947_57727
+%mor:	co|well pro:sub|I v|think pro:sub|he~aux|be&3S part|go-PRESP inf|to
+	v|fall adv|pretty adv|quick .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|AUX 6|3|COMP 7|8|INF 8|6|COMP
+	9|8|JCT 10|8|JCT 11|3|PUNCT
+*PAR:	but &uh she was helping . 57727_62000
+%mor:	conj|but pro:sub|she aux|be&PAST&13S part|help-PRESP .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	handing [//] he handed &uh the cookies to his sister I guess
+	&=clears:throat . 62000_71140
+%mor:	pro:sub|he v|hand-PAST det:art|the n|cookie-PL prep|to det:poss|his
+	n|sister pro:sub|I v|guess .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|7|DET 7|5|POBJ 8|9|SUBJ
+	9|2|CJCT 10|2|PUNCT
+*INV:	mhm . 71140_73200
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 73200_74256
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	well it &uh +... 74256_81000
+%mor:	co|well pro:per|it +...
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	the mother was drying her (.) dishes . 81000_85714
+%mor:	det:art|the n|mother aux|be&PAST&13S part|dry-PRESP det:poss|her
+	n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	she better get the &uh water off &=laughs . 85714_91087
+%mor:	pro:sub|she adv|good&CP v|get det:art|the n|water adv|off .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|3|PUNCT
+*INV:	(..) anything else ? 91087_100049
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	well he might fall soon if &=laughs he doesn't +... 100049_105900
+%mor:	co|well pro:sub|he mod|might v|fall adv|soon conj|if pro:sub|he
+	mod|do&3S~neg|not +...
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|10|LINK 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|4|PUNCT
+*PAR:	but he's careful xxx . 105900_108733
+%mor:	conj|but pro:sub|he~cop|be&3S co|careful .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	(..) is that it ? 108733_123844
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	I think so . [+ exc] 123844_125260
+%mor:	pro:sub|I v|think co|so .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	okay . 125260_125932
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

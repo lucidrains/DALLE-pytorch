@@ -1,0 +1,118 @@
+@UTF8
+@PID:	11312/t-00002253-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	105-2, audio
+*INV:	see going on in the picture . 0_1455
+%mor:	v|see n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|JCT 4|1|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*PAR:	what do I tell you when I see it ? [+ exc] 1455_4608
+%mor:	pro:int|what mod|do pro:sub|I v|tell pro:per|you conj|when
+	pro:sub|I v|see pro:per|it ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|8|LINK 7|8|SUBJ 8|4|CJCT
+	9|8|OBJ 10|4|PUNCT
+*INV:	just tell me what you see . 4608_6071
+%mor:	adv|just v|tell pro:obj|me pro:int|what pro:per|you v|see .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|6|LINK 5|6|SUBJ 6|2|COMP 7|2|PUNCT
+*PAR:	+< as I see it ? [+ exc] 5480_6330
+%mor:	conj|as pro:sub|I v|see pro:per|it ?
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	mhm . 6330_7224
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh is there somethin(g) goin(g) on here or &i +..? [+ exc] 7224_11250
+%mor:	cop|be&3S adv|there pro:indef|something part|go-PRESP prep|on
+	n|here coord|or +..?
+%gra:	1|0|ROOT 2|1|JCT 3|1|PUNCT 4|3|XMOD 5|4|JCT 6|5|POBJ 7|3|CONJ 8|7|COORD
+*PAR:	oh it's just +... [+ exc] 11250_12641
+%mor:	co|oh pro:per|it~cop|be&3S adj|just +...
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	right I'm just recording it so that I can remember what you said
+	later on . 12641_16311
+%mor:	adv|right pro:sub|I~aux|be&1S adv|just part|record-PRESP pro:per|it
+	adv|so pro:rel|that pro:sub|I mod|can v|remember pro:int|what
+	pro:per|you v|say&PAST adv|later adv|on .
+%gra:	1|2|JCT 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|OBJ 7|5|JCT 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|7|CMOD 12|14|LINK 13|14|SUBJ 14|11|COMP 15|14|JCT
+	16|14|JCT 17|5|PUNCT
+*INV:	can you tell me everything that you see going on in that picture ?
+	16311_20218
+%mor:	mod|can pro:per|you v|tell pro:obj|me pro:indef|everything
+	pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on prep|in
+	det:dem|that n|picture ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ2 5|3|OBJ 6|8|LINK 7|8|SUBJ 8|5|CMOD
+	9|8|OBJ 10|8|JCT 11|8|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	well the first bad thing I see is the water runnin(g) out_of the
+	s:ink runnin(g) over . 20218_26571
+%mor:	co|well det:art|the adj|first adj|bad n|thing pro:sub|I v|see
+	cop|be&3S det:art|the n|water part|run-PRESP prep|out_of det:art|the
+	n|sink part|run-PRESP adv|over .
+%gra:	1|5|COM 2|5|DET 3|5|MOD 4|5|MOD 5|8|SUBJ 6|7|SUBJ 7|5|CMOD 8|0|ROOT
+	9|10|DET 10|8|PRED 11|10|XMOD 12|11|JCT 13|14|DET 14|12|POBJ 15|14|XMOD
+	16|15|JCT 17|8|PUNCT
+*PAR:	and the little boy up stealin(g) cookies and givin(g) one to his
+	sister . [+ gram] 26571_31813
+%mor:	coord|and det:art|the adj|little n|boy adv|up part|steal-PRESP
+	n|cookie-PL coord|and part|give-PRESP det:num|one prep|to
+	det:poss|his n|sister .
+%gra:	1|0|INCROOT 2|4|DET 3|4|MOD 4|1|COORD 5|6|JCT 6|4|XMOD 7|6|OBJ 8|4|CONJ
+	9|8|COORD 10|9|OBJ 11|10|JCT 12|13|DET 13|11|POBJ 14|1|PUNCT
+*PAR:	and mama's dryin(g) the dishes and standin(g) in the water . 31813_38444
+%mor:	coord|and n|mama~aux|be&3S part|dry-PRESP det:art|the n|dish-PL
+	coord|and part|stand-PRESP prep|in det:art|the n|water .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|CONJ 8|7|COORD
+	9|8|JCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	she's lookin(g) the other direction . 38444_42240
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP det:art|the qn|other
+	n|direction .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|QUANT 6|3|OBJ 7|3|PUNCT
+*PAR:	and the little boy's fallin(g) off the stool xxx standin(g) up on
+	to get the cookie . 42240_50146
+%mor:	coord|and det:art|the adj|little adj|boy&dn-POSS part|fall-PRESP
+	prep|off det:art|the n|stool part|stand-PRESP adv|up adv|on inf|to
+	v|get det:art|the n|cookie .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|4|XMOD 10|9|JCT 11|9|JCT 12|13|INF 13|4|XMOD 14|15|DET 15|13|OBJ
+	16|4|PUNCT
+*PAR:	he's gonna get hurt (.) when he hits that sink . 50146_60575
+%mor:	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|get part|hurt&PASTP
+	conj|when pro:sub|he v|hit-3S det:dem|that n|sink .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|5|PRED 7|9|LINK 8|9|SUBJ
+	9|6|CJCT 10|11|DET 11|9|OBJ 12|3|PUNCT
+*PAR:	xxx like an airplane goin(g) crazy . [+ exc] 60575_64000
+%mor:	prep|like det:art|a n|airplane part|go-PRESP adj|craze&dv-Y .
+%gra:	1|0|INCROOT 2|3|DET 3|1|POBJ 4|3|XMOD 5|4|JCT 6|1|PUNCT
+*INV:	yeah . 64000_65463
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay ? 65463_67777
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	is there anything else that you needta say ? 67777_69756
+%mor:	cop|be&3S adv|there pro:indef|anything post|else pro:dem|that
+	pro:per|you v|need~inf|to co|say ?
+%gra:	1|0|ROOT 2|1|SUBJ 3|1|PRED 4|3|PQ 5|7|LINK 6|7|SUBJ 7|3|CMOD 8|9|INF
+	9|7|COMP 10|1|PUNCT
+*PAR:	hmhunh no . [+ exc] 69756_73057
+%mor:	co|no co|no .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	(.) you can see out the window (.) out into the yard . 73057_81100
+%mor:	pro:per|you mod|can v|see prep|out det:art|the n|window adv|out
+	prep|into det:art|the n|yard .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|JCT 8|3|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	and you can see &uh a window over there on the other side of the
+	house . 81100_87468
+%mor:	coord|and pro:per|you mod|can v|see det:art|a n|window prep|over
+	n|there prep|on det:art|the qn|other n|side prep|of det:art|the
+	n|house .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|7|POBJ
+	9|4|JCT 10|12|DET 11|12|QUANT 12|9|POBJ 13|12|NJCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*INV:	okay that's fine . 87468_94676
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

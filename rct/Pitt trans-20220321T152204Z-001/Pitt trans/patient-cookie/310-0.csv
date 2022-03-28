@@ -1,0 +1,77 @@
+@UTF8
+@PID:	11312/t-00002610-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|female|ProbableAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	310-0, audio
+*INV:	I'd like you to tell me all the action that you see going on in
+	that picture . 794_5357
+%mor:	pro:sub|I~mod|genmod v|like pro:per|you inf|to v|tell pro:obj|me
+	adv|all det:art|the n|action pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|JCT
+	9|10|DET 10|8|POBJ 11|13|LINK 12|13|SUBJ 13|10|CMOD 14|13|OBJ 15|13|JCT
+	16|13|JCT 17|18|DET 18|16|POBJ 19|3|PUNCT
+*PAR:	(.) well the boy's climbing a [/] &la a stool . 5357_12390
+%mor:	co|well det:art|the n|boy~aux|be&3S part|climb-PRESP det:art|a
+	n|stool .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and it's gonna upset . 12390_13305
+%mor:	coord|and pro:per|it~aux|be&3S part|go-PRESP~inf|to v|upset .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|4|PUNCT
+*PAR:	he's tryin(g) to get a cookie . 13305_15177
+%mor:	pro:sub|he~aux|be&3S part|try-PRESP inf|to v|get det:art|a n|cookie
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*PAR:	and the sink is runnin(g) over . 15177_17589
+%mor:	coord|and det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	the mother's dryin(g) a dish . 17589_20000
+%mor:	det:art|the n|mother~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	(.) and the little girl is reachin(g) up for a cookie . 20000_25339
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|reach-PRESP
+	adv|up prep|for det:art|a n|cookie .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|6|PUNCT
+*INV:	(..) anything else ? 25339_34007
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*INV:	(..) is there anything else going on in that picture ? 34007_52916
+%mor:	cop|be&3S adv|there pro:indef|anything post|else part|go-PRESP
+	adv|on prep|in det:dem|that n|picture ?
+%gra:	1|0|ROOT 2|1|SUBJ 3|1|PRED 4|3|PQ 5|3|XMOD 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*PAR:	hmhunh . [+ exc] 52916_55110
+%mor:	co|no .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	xxx the mother over there she's doing the dishes . 55110_58580
+%mor:	det:art|the n|mother prep|over n|there pro:sub|she~aux|be&3S
+	part|do-PRESP det:art|the n|dish-PL .
+%gra:	1|2|DET 2|7|CJCT 3|2|NJCT 4|3|POBJ 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|9|DET
+	9|7|OBJ 10|7|PUNCT
+*PAR:	and the sink's runnin(g) xxx . 58580_60574
+%mor:	coord|and det:art|the n|sink~aux|be&3S part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	the boy's getting the cookies . 60574_62190
+%mor:	det:art|the n|boy~aux|be&3S part|get-PRESP det:art|the n|cookie-PL
+	.
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	stool's on that step xxx . [+ jar] 62190_65913
+%mor:	n|stool~cop|be&3S prep|on det:dem|that n|step .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	&=sighs window's open . [+ gram] 65913_68839
+%mor:	adj|window&dn-POSS adj|open .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|PUNCT
+*PAR:	maybe the wind is blowing in . 68839_70409
+%mor:	adv|maybe det:art|the n|wind aux|be&3S part|blow-PRESP adv|in .
+%gra:	1|5|JCT 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*INV:	okay . 70409_72556
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	(..) okay . 72556_81353
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

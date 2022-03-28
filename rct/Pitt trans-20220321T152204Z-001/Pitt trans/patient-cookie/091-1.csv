@@ -1,0 +1,82 @@
+@UTF8
+@PID:	11312/t-00002495-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|89;|female|ProbableAD||Participant|17||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	091-1, audio
+*INV:	I want you to tell me all of the action that you see okay ? 0_3342
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me post|all
+	prep|of det:art|the n|action pro:rel|that pro:per|you v|see adj|okay
+	?
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|JCT 8|7|JCT
+	9|10|DET 10|8|POBJ 11|13|LINK 12|13|SUBJ 13|10|CMOD 14|13|JCT 15|2|PUNCT
+*INV:	here's the picture . 3342_4273
+%mor:	pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	all of the action . 4273_5300
+%mor:	pro:indef|all prep|of det:art|the n|action .
+%gra:	1|0|INCROOT 2|1|NJCT 3|4|DET 4|2|POBJ 5|1|PUNCT
+*PAR:	&hm there's a boy gettin(g) in the cookie jar . 5300_9875
+%mor:	pro:exist|there~cop|be&3S det:art|a n|boy part|get-PRESP prep|in
+	det:art|the n|cookie n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|XMOD 6|5|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|2|PUNCT
+*PAR:	and the girl is waiting for her [: him] [* s:r] . 9875_12860
+%mor:	coord|and det:art|the n|girl aux|be&3S part|wait-PRESP prep|for
+	pro:obj|him .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT
+*PAR:	oh they're (.) tipping over . 12860_18555
+%mor:	co|oh pro:sub|they~aux|be&PRES part|tip-PRESP adv|over .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*INV:	okay . 18555_20754
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the girl [: woman] [* s:r] is washing dishes and the water's
+	flowing on the floor . 20716_27065
+%mor:	det:art|the n|woman aux|be&3S part|wash-PRESP n|dish-PL coord|and
+	det:art|the n|water~aux|be&3S part|flow-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	(..) she's drying dishes I guess . 27065_34269
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL pro:sub|I v|guess .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|SUBJ 6|3|CJCT 7|3|PUNCT
+*INV:	(..) is that all the action ? 34269_45819
+%mor:	cop|be&3S comp|that qn|all det:art|the n|action ?
+%gra:	1|0|ROOT 2|5|LINK 3|5|QUANT 4|5|DET 5|1|PRED 6|1|PUNCT
+*INV:	what did you say was going on over here ? 45819_48389
+%mor:	pro:int|what mod|do&PAST pro:per|you v|say aux|be&PAST&13S
+	part|go-PRESP adv|on prep|over adv|here ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|6|AUX 6|4|COMP 7|6|JCT 8|6|JCT
+	9|8|POBJ 10|4|PUNCT
+*PAR:	the boy is getting cookies out_of the jar . 48543_51997
+%mor:	det:art|the n|boy aux|be&3S part|get-PRESP n|cookie-PL prep|out_of
+	det:art|the n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*INV:	okay . 51997_53000
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< gives one to the girl . [+ gram] 52200_54079
+%mor:	v|give-3S pro:indef|one prep|to det:art|the n|girl .
+%gra:	1|0|ROOT 2|1|OBJ 3|2|NJCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	and the girl [: woman] [* s:r] (i)s drying dishes . 54079_57653
+%mor:	coord|and det:art|the n|woman aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and she'll hafta wipe up the floor to the action there . 57653_60496
+%mor:	coord|and pro:sub|she~mod|will mod|have~inf|to v|wipe prep|up
+	det:art|the n|floor prep|to det:art|the n|action adv|there .
+%gra:	1|6|LINK 2|6|SUBJ 3|6|AUX 4|6|AUX 5|6|INF 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|JCT 11|12|DET 12|10|POBJ 13|6|JCT 14|6|PUNCT
+*INV:	yes there will be . 60496_61930
+%mor:	co|yes adv|there mod|will cop|be .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*INV:	(.) okay good . 61930_69790
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	that's good . 69790_70862
+%mor:	pro:dem|that~cop|be&3S adj|good .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

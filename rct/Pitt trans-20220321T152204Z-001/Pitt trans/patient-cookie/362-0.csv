@@ -1,0 +1,95 @@
+@UTF8
+@PID:	11312/t-00002643-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|74;|female|ProbableAD||Participant|10||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	362-0, audio
+*INV:	going on in that picture . 0_1331
+%mor:	part|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|INCROOT 2|1|JCT 3|1|JCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	somebody climbed up on this thing xxx . [+ jar] 1331_5636
+%mor:	pro:indef|somebody v|climb-PAST adv|up prep|on det:dem|this n|thing
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	(..) jar . [+ gram] 5636_8905
+%mor:	n|jar .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&sh and she's <washin(g) clothes [: dishes] [* s:r-ret] I_mean>
+	[//] &uh washing dishes . 8905_13500
+%mor:	coord|and pro:sub|she~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	right ? [+ exc] 13500_14481
+%mor:	co|right ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 14481_15329
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 15329_17490
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	that's it . [+ exc] 17490_17964
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	what else do you see going on over here ? 17964_20130
+%mor:	pro:int|what post|else v|do pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|over adv|here ?
+%gra:	1|3|LINK 2|1|PQ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|8|POBJ 10|3|PUNCT
+*PAR:	which [/] &uh which one ? [+ exc] 20130_21577
+%mor:	pro:rel|which pro:indef|one ?
+%gra:	1|2|LINK 2|0|INCROOT 3|2|PUNCT
+*INV:	right here . 21577_22193
+%mor:	adv|right adv|here .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*INV:	right here . 22193_22809
+%mor:	adv|right adv|here .
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PUNCT
+*INV:	what do you see ? 22809_23175
+%mor:	pro:int|what mod|do pro:per|you v|see ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*INV:	what's goin(g) on ? 23175_24356
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	+< the boy tryin(g) to get a cookie jar and [//] on the stool and
+	the little girl tryin(g) to help him . [+ gram] 23382_30540
+%mor:	det:art|the n|boy part|try-PRESP inf|to v|get det:art|a n|cookie
+	n|jar prep|on det:art|the n|stool coord|and det:art|the adj|little
+	n|girl part|try-PRESP inf|to v|help pro:obj|him .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|5|INF 5|3|COMP 6|8|DET 7|8|MOD 8|5|OBJ
+	9|5|JCT 10|11|DET 11|9|POBJ 12|2|CONJ 13|15|DET 14|15|MOD 15|12|COORD
+	16|15|XMOD 17|18|INF 18|16|COMP 19|18|OBJ 20|2|PUNCT
+*INV:	okay anything else ? 30540_32421
+%mor:	co|okay pro:indef|anything post|else ?
+%gra:	1|2|COM 2|0|ROOT 3|2|PQ 4|2|PUNCT
+*PAR:	that's it . [+ exc] 32560_33291
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	how_(a)bout over here . 33291_34839
+%mor:	pro:int|how_about prep|over n|here .
+%gra:	1|0|INCROOT 2|1|JCT 3|2|POBJ 4|1|PUNCT
+*INV:	what do you see goin(g) on over here ? 34839_36049
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|over adv|here ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	washing dishes .[+ gram] 36049_36949
+%mor:	part|wash-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	drying dishes . [+ gram] 36949_39112
+%mor:	part|dry-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	the water coming <from out> [//] &m from the sink . [+ gram] 39112_41572
+%mor:	det:art|the n|water part|come-PRESP prep|from det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*INV:	mhm . 41572_42303
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh please let me go (be)cause I can't stand this anymore . [+ exc]
+	42303_46848
+%mor:	co|oh co|please v|let&ZERO pro:obj|me v|go conj|because pro:sub|I
+	mod|can~neg|not v|stand pro:dem|this adv|anymore .
+%gra:	1|3|COM 2|3|COM 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|10|LINK 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|3|CJCT 11|10|OBJ 12|10|JCT 13|3|PUNCT
+@End

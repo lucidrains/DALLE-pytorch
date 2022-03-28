@@ -1,0 +1,118 @@
+@UTF8
+@PID:	11312/t-00002465-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|female|ProbableAD||Participant|15||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	051-3, audio
+*PAR:	alright . [+ exc] 0_366
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	gonna start here . [+ exc] 366_1610
+%mor:	part|go-PRESP~inf|to v|start adv|here .
+%gra:	1|0|INCROOT 2|3|INF 3|1|COMP 4|3|JCT 5|1|PUNCT
+*INV:	okay . 1610_2260
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< <the [x 3] boys have opened the> [//] the boy has opened the
+	[//] <into the cookie> [//] &ca &uh where the cookies are . [+ cir]
+	2060_10156
+%mor:	det:art|the n|boy aux|have&3S part|open-PASTP pro:rel|where
+	det:art|the n|cookie-PL cop|be&PRES .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|7|DET 7|8|SUBJ 8|4|COMP
+	9|4|PUNCT
+*PAR:	and in the meantime he's [//] <they almost> [//] the thing is
+	falling down . [+ es] 10156_16996
+%mor:	coord|and prep|in det:art|the n|meantime det:art|the n|thing
+	aux|be&3S part|fall-PRESP adv|down .
+%gra:	1|8|LINK 2|8|JCT 3|4|DET 4|2|POBJ 5|6|DET 6|8|SUBJ 7|8|AUX 8|0|ROOT
+	9|8|JCT 10|8|PUNCT
+*PAR:	<the little boy> [//] the girl was being shh@o quiet . 16996_21650
+%mor:	det:art|the n|girl cop|be&PAST&13S aux|be-PRESP on|shh n|quiet .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|6|MOD 6|4|PRED 7|3|PUNCT
+*PAR:	<mother has> [//] the water is running over in the kitchen . 21650_26633
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over prep|in
+	det:art|the n|kitchen .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	mother is wiping <the dishes> [//] the dish and dishes . 26633_31812
+%mor:	n|mother aux|be&3S part|wipe-PRESP det:art|the n|dish coord|and
+	n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|CONJ 7|6|COORD 8|3|PUNCT
+*PAR:	&uh it's [//] she doesn't seem to <think it's> [//] even know
+	what's going on . 31812_38052
+%mor:	pro:sub|she mod|do&3S~neg|not cop|seem inf|to adj|even v|know
+	pro:int|what~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|INF 6|7|MOD 7|4|COMP 8|10|LINK
+	9|10|AUX 10|7|COMP 11|10|JCT 12|4|PUNCT
+*PAR:	&uh it's &uh I would say summer . 38052_44454
+%mor:	pro:per|it~cop|be&3S pro:sub|I mod|will&COND v|say n|summer .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|CPRED 6|5|OBJ 7|2|PUNCT
+*PAR:	that looks like things are growing up . 44454_46442
+%mor:	pro:rel|that v|look-3S prep|like n|thing-PL aux|be&PRES
+	part|grow-PRESP adv|up .
+%gra:	1|2|LINK 2|0|ROOT 3|2|JCT 4|3|POBJ 5|6|AUX 6|2|COMP 7|6|JCT 8|2|PUNCT
+*PAR:	there she's looking out the window . 46442_48652
+%mor:	adv|there pro:sub|she~aux|be&3S part|look-PRESP prep|out
+	det:art|the n|window .
+%gra:	1|4|JCT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	&uh she's standing in the water . 48652_53623
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|the n|water
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	&uh cookies . [+ gram] 53623_58926
+%mor:	n|cookie-PL .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	they've taken cookies out_of the cookie jar . 58926_62302
+%mor:	pro:sub|they~aux|have part|take&PASTP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	she's keeping quiet . 62302_65144
+%mor:	pro:sub|she~aux|be&3S part|keep-PRESP n|quiet .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	the things break, falling over . 65144_67888
+%mor:	det:art|the n|thing-PL n|break cm|cm part|fall-PRESP adv|over .
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|LP 5|3|ENUM 6|5|JCT 7|3|PUNCT
+*PAR:	it's summer . 67888_70264
+%mor:	pro:per|it~cop|be&3S n|summer .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	I_mean it looks like it's summer . 70264_71890
+%mor:	co|I_mean pro:per|it v|look-3S conj|like pro:per|it~cop|be&3S
+	n|summer .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|LINK 5|6|SUBJ 6|3|COMP 7|6|PRED 8|3|PUNCT
+*PAR:	it's [//] things are coming up . [+ es] 71890_73957
+%mor:	n|thing-PL aux|be&PRES part|come-PRESP adv|up .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	&uh mother doesn't seem to care what's going on with the kids
+	&=laughs . 73957_81581
+%mor:	n|mother mod|do&3S~neg|not cop|seem inf|to v|care
+	pro:int|what~aux|be&3S part|go-PRESP adv|on prep|with det:art|the
+	n|kid-PL .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|INF 6|4|CPRED 7|9|SUBJ 8|9|AUX
+	9|6|COMP 10|9|JCT 11|9|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	&uh there are two cups but only one [/] one &uh dish . 81581_88898
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL conj|but adv|only
+	det:num|one n|dish .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|2|CONJ 6|7|JCT 7|8|QUANT
+	8|5|COORD 9|2|PUNCT
+*INV:	okay ? 95994_96725
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&hm <I think> [//] did I say <they'd turned off the water> [//]
+	<they hadn't> [//] the water's still running . [+ exc] 96725_103492
+%mor:	mod|do&PAST pro:sub|I v|say det:art|the n|water~aux|be&3S adv|still
+	part|run-PRESP .
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|DET 5|8|SUBJ 6|8|AUX 7|8|JCT 8|3|COMP
+	9|3|PUNCT
+*PAR:	that was all . [+ exc] 103492_104223
+%mor:	pro:dem|that cop|be&PAST&13S adv|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|PUNCT
+*PAR:	I guess that's it . [+ exc] 104223_105211
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|PRED 6|2|PUNCT
+*INV:	okay good . 105211_106548
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,63 @@
+@UTF8
+@PID:	11312/t-00002202-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	022-2, audio
+*INV:	mention that you see going on in the picture . 0_2631
+%mor:	n|mention pro:rel|that pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|4|JCT 8|9|DET
+	9|7|POBJ 10|1|PUNCT
+*INV:	okay ? 2631_4150
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	oh goody . [+ exc] 4150_5214
+%mor:	co|oh co|goody .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	that boy's climbed on a stool that's falling over to get a cookie .
+	5214_12529
+%mor:	comp|that co|boy~aux|be&3S v|climb-PAST prep|on det:art|a n|stool
+	pro:rel|that~aux|be&3S part|fall-PRESP adv|over inf|to v|get
+	det:art|a n|cookie .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|13|INF 13|10|XJCT 14|15|DET 15|13|OBJ
+	16|4|PUNCT
+*PAR:	and the little girl is standin(g) below him tryin(g) to get the
+	cookie from his hand . 12529_19221
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|stand-PRESP
+	prep|below pro:obj|him part|try-PRESP inf|to v|get det:art|the
+	n|cookie prep|from det:poss|his n|hand .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|7|POBJ
+	9|6|XJCT 10|11|INF 11|9|COMP 12|13|DET 13|11|OBJ 14|11|JCT 15|16|DET
+	16|14|POBJ 17|6|PUNCT
+*PAR:	and the mother is washing dishes while the water's runnin(g) over
+	in the sink on the floor . 19221_28668
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	conj|while det:art|the n|water~aux|be&3S part|run-PRESP prep|over
+	prep|in det:art|the n|sink prep|on det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|11|LINK 8|9|DET
+	9|11|SUBJ 10|11|AUX 11|5|CJCT 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|11|JCT 17|18|DET 18|16|POBJ 19|5|PUNCT
+*PAR:	and <the window is> [//] the sun's shining &=laughs . 28668_35301
+%mor:	coord|and det:art|the n|sun~aux|be&3S part|shine-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	there's two cups and this plate on the counter . 35301_43517
+%mor:	pro:exist|there~cop|be&3S det:num|two n|cup-PL coord|and
+	det:dem|this n|plate prep|on det:art|the n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD
+	8|7|NJCT 9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	and maybe the mother is drying a plate . 43517_47127
+%mor:	coord|and adv|maybe det:art|the n|mother aux|be&3S part|dry-PRESP
+	det:art|a n|plate .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|PUNCT
+*PAR:	that's all I see . [+ exc] 47127_50450
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|SUBJ 5|3|CMOD 6|2|PUNCT
+*INV:	okay good . 50450_52264
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

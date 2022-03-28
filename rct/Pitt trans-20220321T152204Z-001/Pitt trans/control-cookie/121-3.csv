@@ -1,0 +1,113 @@
+@UTF8
+@PID:	11312/t-00002276-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	121-3, audio
+*INV:	now I want you to tell me everything that you see happening in that
+	picture . 0_3460
+%mor:	adv|now pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|12|LINK 10|12|SUBJ 11|12|COM 12|8|CMOD 13|12|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*INV:	everything that you see going on there . 3460_6305
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP prep|on n|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|6|POBJ
+	8|1|PUNCT
+*PAR:	alright . [+ exc] 6305_8550
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&um the mother is standing at the kitchen sink . 8550_12575
+%mor:	det:art|the n|mother aux|be&3S part|stand-PRESP prep|at det:art|the
+	n|kitchen n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	the water is overflowing the sink and she's paying no attention to
+	it even though her foot is in a puddle . 12575_18352
+%mor:	det:art|the n|water aux|be&3S over#part|flow-PRESP det:art|the
+	n|sink coord|and pro:sub|she~aux|be&3S part|pay-PRESP qn|no
+	n|attention prep|to pro:per|it adv|even adv|though det:poss|her
+	n|foot cop|be&3S prep|in det:art|a n|puddle .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|19|LINK 5|6|DET 6|19|SUBJ 7|10|LINK
+	8|10|SUBJ 9|10|AUX 10|19|SUBJ 11|12|QUANT 12|10|OBJ 13|10|JCT 14|13|POBJ
+	15|10|JCT 16|19|JCT 17|18|DET 18|19|SUBJ 19|0|ROOT 20|19|JCT 21|22|DET
+	22|20|POBJ 23|19|PUNCT
+*PAR:	&uh she's drying a plate . 18352_21015
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|plate .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	the window is open . 21015_23792
+%mor:	det:art|the n|window cop|be&3S adj|open .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	I believe it's open and it looks out onto the sidewalk and the &n
+	&um house or garage next door . 23792_32453
+%mor:	pro:sub|I v|believe pro:per|it~cop|be&3S adj|open coord|and
+	pro:per|it v|look-3S prep|out prep|onto det:art|the n|sidewalk
+	coord|and det:art|the n|house coord|or n|garage adj|next n|door .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|PRED 6|8|LINK 7|8|SUBJ 8|4|CJCT
+	9|8|JCT 10|9|POBJ 11|12|DET 12|10|POBJ 13|10|CONJ 14|15|DET 15|13|COORD
+	16|15|CONJ 17|19|MOD 18|19|MOD 19|16|COORD 20|2|PUNCT
+*PAR:	it has curtains in the window . 32453_34163
+%mor:	pro:per|it aux|have&3S n|curtain-PL prep|in det:art|the n|window .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	&um the &w woman is smiling . 34163_37759
+%mor:	det:art|the n|woman aux|be&3S part|smile-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&um there are cup [/] two cups and a plate on the counter . 37759_42912
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL coord|and
+	det:art|a n|plate prep|on det:art|the n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD
+	8|7|NJCT 9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	<the &s boy> [/] the little boy is on the stool which is tipping
+	over and he's reaching for a cookie . 42912_51374
+%mor:	det:art|the adj|little n|boy cop|be&3S prep|on det:art|the n|stool
+	pro:rel|which aux|be&3S part|tip-PRESP adv|over coord|and
+	pro:sub|he~aux|be&3S part|reach-PRESP prep|for det:art|a n|cookie .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|15|LINK 13|15|SUBJ 14|15|AUX 15|10|CJCT
+	16|15|JCT 17|18|DET 18|16|POBJ 19|4|PUNCT
+*PAR:	he has one right in hand down to his sister or a friend . 51374_55283
+%mor:	pro:sub|he v|have&3S det:num|one n|right prep|in n|hand adv|down
+	prep|to det:poss|his n|sister coord|or det:art|a n|friend .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|OBJ 5|4|NJCT 6|5|POBJ 7|4|JCT 8|4|NJCT
+	9|10|DET 10|8|POBJ 11|4|CONJ 12|13|DET 13|11|COORD 14|2|PUNCT
+*PAR:	and he's taking another one out_of the cookie jar . 55283_58242
+%mor:	coord|and pro:sub|he~aux|be&3S part|take-PRESP qn|another
+	pro:indef|one prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	the lid is slid off to the side . 58242_60309
+%mor:	det:art|the n|lid aux|be&3S part|slide&PASTP adv|off prep|to
+	det:art|the n|side .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	the little girl is standing beside him &um on the floor . 60309_66023
+%mor:	det:art|the adj|little n|girl aux|be&3S part|stand-PRESP
+	prep|beside pro:obj|him prep|on det:art|the n|floor .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	and &um she &uh has her finger up to her lips as if she's
+	saying +"/. 66023_70609
+*PAR:	+" be quiet mother might hear you . 70609_72241
+%mor:	cop|be adj|quiet n|mother mod|might v|hear pro:per|you .
+%gra:	1|5|LINK 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and she's reaching up her hand for the cookie he has . 72241_74810
+%mor:	coord|and pro:sub|she~aux|be&3S part|reach-PRESP prep|up
+	det:poss|her n|hand prep|for det:art|the n|cookie pro:sub|he
+	v|have&3S .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|JCT
+	9|10|DET 10|8|POBJ 11|12|SUBJ 12|4|CJCT 13|4|PUNCT
+*PAR:	cupboard door is open . [+ gram] 74810_76948
+%mor:	n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	obviously . [+ exc] 76948_79158
+%mor:	adv|obvious&dadj-LY .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay ? 79158_82534
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

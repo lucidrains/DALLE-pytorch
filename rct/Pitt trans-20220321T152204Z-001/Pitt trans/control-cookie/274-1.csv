@@ -1,0 +1,55 @@
+@UTF8
+@PID:	11312/t-00002379-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|55;|male|Control||Participant|26||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	274-1, audio
+*INV:	you see going on in this picture ? 0_2382
+%mor:	pro:per|you v|see n:gerund|go-PRESP adv|on prep|in det:dem|this
+	n|picture ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|JCT 5|2|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	(.) well the mother's &uh doing the dishes and allowing the sink
+	<to run> [/] &o run over . 2382_14288
+%mor:	co|well det:art|the n|mother~aux|be&3S part|do-PRESP det:art|the
+	n|dish-PL coord|and part|allow-PRESP det:art|the n|sink v|run
+	adv|over .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|CONJ
+	9|8|COORD 10|11|DET 11|12|SUBJ 12|9|COMP 13|12|JCT 14|5|PUNCT
+*PAR:	<the kids or> [//] the boy's in the cookie jar . 14288_18259
+%mor:	det:art|the n|boy~cop|be&3S prep|in det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|PUNCT
+*PAR:	and the stand [: stool] [* s:r] that he's standing on is tilting
+	over . [+ cir] 18259_22319
+%mor:	coord|and det:art|the n|stool pro:rel|that pro:sub|he~aux|be&3S
+	part|stand-PRESP adv|on aux|be&3S part|tilt-PRESP adv|over .
+%gra:	1|10|LINK 2|3|DET 3|10|SUBJ 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CMOD 8|7|JCT
+	9|10|AUX 10|0|ROOT 11|10|JCT 12|10|PUNCT
+*PAR:	and &uh I don't know what the girl is doing . [+ exc] 22319_28481
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know pro:int|what det:art|the
+	n|girl aux|be&3S part|do-PRESP .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|5|COMP 11|5|PUNCT
+*PAR:	gonna tell on him or do something . [+ gram] 28481_30428
+%mor:	part|go-PRESP~inf|to v|tell prep|on pro:obj|him coord|or v|do
+	pro:indef|something .
+%gra:	1|0|INCROOT 2|3|INF 3|1|COMP 4|3|JCT 5|4|POBJ 6|1|CONJ 7|6|COORD
+	8|7|OBJ 9|1|PUNCT
+*PAR:	and then there's some people out here behind the garage . 30428_35751
+%mor:	coord|and adv:tem|then pro:exist|there~cop|be&3S qn|some
+	n|person&PL prep|out n|here prep|behind det:art|the n|garage .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|6|QUANT 6|4|PRED 7|6|NJCT 8|7|POBJ
+	9|6|NJCT 10|11|DET 11|9|POBJ 12|4|PUNCT
+*PAR:	I don't know what they are doing . [+ exc] 35751_37297
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what pro:sub|they
+	aux|be&PRES part|do-PRESP .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|4|PUNCT
+*PAR:	do you see them ? [+ exc] 37297_38026
+%mor:	mod|do pro:per|you v|see pro:obj|them ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	mhm . 38026_39068
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

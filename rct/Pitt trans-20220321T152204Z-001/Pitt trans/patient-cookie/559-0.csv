@@ -1,0 +1,64 @@
+@UTF8
+@PID:	11312/t-00002685-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|female|ProbableAD||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	559-0, audio
+*INV:	I want you to take a look at this picture . 0_3395
+%mor:	pro:sub|I v|want pro:per|you inf|to v|take det:art|a v|look prep|at
+	det:dem|this n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|7|DET 7|5|OBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*INV:	I want you to tell me everything that you see happening in that
+	picture . 3395_7690
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you co|see
+	n:gerund|happen-PRESP adv|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|11|LINK
+	9|11|SUBJ 10|11|COM 11|7|CMOD 12|11|JCT 13|14|DET 14|12|POBJ 15|2|PUNCT
+*INV:	everything that you see going on there . 7690_10150
+%mor:	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP prep|on n|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|OBJ 6|4|JCT 7|6|POBJ
+	8|1|PUNCT
+*PAR:	the sink is running over . 10150_13093
+%mor:	det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	and &uh the [/] the lady's &wa drying the dishes . 13093_17549
+%mor:	coord|and det:art|the n|lady~aux|be&3S part|dry-PRESP det:art|the
+	n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*PAR:	and the boy's crawled up on the stool and it's &fa falling and he's
+	gonna fall down . 17549_24150
+%mor:	coord|and det:art|the adj|boy&dn-POSS v|crawl-PAST adv|up prep|on
+	det:art|the n|stool coord|and pro:per|it~aux|be&3S part|fall-PRESP
+	coord|and pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|fall adv|down
+	.
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|4|CJCT 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|12|CJCT 17|18|INF 18|16|COMP 19|18|JCT 20|4|PUNCT
+*PAR:	and &uh he's handing the cookie to the little girl . 24282_28671
+%mor:	coord|and pro:sub|he~aux|be&3S part|hand-PRESP det:art|the n|cookie
+	prep|to det:art|the adj|little n|girl .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	and &uh let's see . [+ exc] 28671_33526
+%mor:	coord|and v|let~pro:obj|us v|see .
+%gra:	1|2|LINK 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	the cupboard door is &uh open and he was <in after the> [//] &c in
+	the &c cookie jar after the cookies . 33526_43500
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open coord|and
+	pro:sub|he cop|be&PAST&13S prep|in det:art|the n|cookie n|jar
+	prep|after det:art|the n|cookie-PL .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|8|LINK 7|8|SUBJ 8|4|CJCT
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|8|JCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	and [/] (.) &uh (.) and I don't know . [+ exc] 43500_54000
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|PUNCT
+*INV:	okay that's fine thank you . 54000_55889
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine v|thank pro:per|you .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|ENUM 6|5|OBJ 7|3|PUNCT
+@End

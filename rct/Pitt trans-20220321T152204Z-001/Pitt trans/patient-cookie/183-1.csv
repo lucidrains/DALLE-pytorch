@@ -1,0 +1,60 @@
+@UTF8
+@PID:	11312/t-00002538-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|64;|male|ProbableAD||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	183-1, audio
+*INV:	I want you to tell me everything that you see going on in that
+	picture . 0_3757
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|10|OBJ 12|10|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|2|PUNCT
+*INV:	just tell me everything that you see happening there . 3757_6035
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:rel|that
+	pro:per|you v|see n:gerund|happen-PRESP adv|there .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ2 4|2|OBJ 5|7|LINK 6|7|SUBJ 7|4|CMOD 8|7|OBJ
+	9|7|JCT 10|2|PUNCT
+*PAR:	the boy's &uh fallin(g) off the stool . 6035_13351
+%mor:	det:art|the n|boy~aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	the [/] the girl's got her hand up . 13351_17373
+%mor:	det:art|the n|girl~aux|be&3S part|get&PASTP det:poss|her n|hand
+	adv|up .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|PUNCT
+*PAR:	the lady's &wa dryin(g) dishes . 17373_21502
+%mor:	det:art|the n|lady~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the water is spillin(g) on the floor . 21502_24440
+%mor:	det:art|the n|water aux|be&3S part|spill-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	faucet's on . [+ gram] 24440_27881
+%mor:	n|faucet~cop|be&3S adv|on .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|PUNCT
+*PAR:	the boy's tryin(g) to get a cookie jar out . 27881_36475
+%mor:	det:art|the n|boy~aux|be&3S part|try-PRESP inf|to v|get det:art|a
+	n|cookie v|jar adv|out .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|8|DET 8|9|SUBJ
+	9|6|COMP 10|9|JCT 11|4|PUNCT
+*PAR:	&l lid's off of it . 36475_40780
+%mor:	n|lid~cop|be&3S adv|off prep|of pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|3|JCT 5|4|POBJ 6|2|PUNCT
+*INV:	okay ? 40780_53482
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	sink's by the window . [+ gram] 53482_56789
+%mor:	n|sink~cop|be&3S prep|by det:art|the n|window .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	(th)at's all I know . [+ exc] 56789_58287
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I v|know .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|SUBJ 5|3|CMOD 6|2|PUNCT
+*INV:	okay that's great . 58287_59334
+%mor:	co|okay pro:dem|that~cop|be&3S adj|great .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

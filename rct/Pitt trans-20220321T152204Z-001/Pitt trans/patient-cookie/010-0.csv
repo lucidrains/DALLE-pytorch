@@ -1,0 +1,149 @@
+@UTF8
+@PID:	11312/t-00002427-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|male|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	010-0, audio
+*INV:	here's the picture . 0_2194
+%mor:	pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*PAR:	oh boy . [+ exc] 2194_3657
+%mor:	co|oh n|boy .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	wowie the boy's going up on a cookie+jar [: stool] [* s:r] to get
+	cookies and he's falling off the jar [: stool] [* s:r] and his
+	sister is just wondering about it . 3957_12022
+%mor:	co|wowie det:art|the n|boy~aux|be&3S part|go-PRESP adv|up prep|on
+	det:art|a n|stool inf|to v|get n|cookie-PL coord|and
+	pro:sub|he~aux|be&3S part|fall-PRESP prep|off det:art|the n|stool
+	coord|and det:poss|his n|sister aux|be&3S adv|just part|wonder-PRESP
+	prep|about pro:per|it .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|11|INF 11|5|XJCT 12|11|OBJ 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|11|CJCT 17|16|JCT 18|19|DET 19|17|POBJ 20|25|LINK 21|22|DET 22|25|SUBJ
+	23|25|AUX 24|25|JCT 25|16|CJCT 26|25|JCT 27|26|POBJ 28|5|PUNCT
+*PAR:	will he hit the bottom ? 12022_13230
+%mor:	mod|will pro:sub|he v|hit&ZERO det:art|the n|bottom ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	mama has an [//] &ov a sink that's overrunning with [/] with &uh
+	water splashin(g) down onto her shoes . 13230_21278
+%mor:	n|mama v|have&3S det:art|a n|sink pro:rel|that~cop|be&3S
+	over#n:gerund|run-PRESP prep|with n|water part|splash-PRESP adv|down
+	prep|onto det:poss|her n|shoe-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|LINK 6|4|CMOD 7|6|PRED 8|7|JCT
+	9|8|POBJ 10|9|XMOD 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|2|PUNCT
+*PAR:	she's in the process of drying dishes . 21278_24639
+%mor:	pro:sub|she~cop|be&3S prep|in det:art|the n|process prep|of
+	part|dry-PRESP n|dish-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|5|NJCT 7|6|POBJ 8|7|OBJ
+	9|2|PUNCT
+*PAR:	she's looking out an open window at the same time . 24639_28139
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|a adj|open
+	n|window prep|at det:art|the adj|same n|time .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|7|DET 6|7|MOD 7|4|POBJ 8|3|JCT
+	9|11|DET 10|11|MOD 11|8|POBJ 12|3|PUNCT
+*PAR:	the cookie jar is open . 28139_30068
+%mor:	det:art|the n|cookie n|jar cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	and the girl has her finger to her lips . 30068_33527
+%mor:	coord|and det:art|the n|girl v|have&3S det:poss|her n|finger
+	prep|to det:poss|her n|lip-PL .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	well let me see . [+ exc] 33527_36000
+%mor:	co|well v|let&ZERO pro:obj|me v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	&uh everything that's going to happen, huh ? [+ exc] 36000_37537
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP inf|to
+	v|happen cm|cm co|huh ?
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|6|INF 6|4|COMP 7|6|LP 8|4|COM
+	9|1|PUNCT
+*INV:	mhm . 37537_39069
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	looking out the window <maybe it> [//] I don't know if it's &uh the
+	breeze blowin(g) the curtains because <the curtains look a little
+	wee bit> [//] &th <over the> [/] <over the window blind> [//] over
+	the window they look a little wee bit puffy . 39069_50574
+%mor:	part|look-PRESP prep|out det:art|the n|window pro:sub|I
+	mod|do~neg|not v|know comp|if pro:per|it~aux|be&3S det:art|the
+	n|breeze part|blow-PRESP det:art|the n|curtain-PL conj|because
+	prep|over det:art|the n|window pro:sub|they v|look det:art|a
+	adj|little n|wee n|bit adj|puff&dn-Y .
+%gra:	1|8|XJCT 2|1|JCT 3|4|DET 4|2|POBJ 5|8|SUBJ 6|8|AUX 7|6|NEG 8|0|ROOT
+	9|14|LINK 10|14|SUBJ 11|14|AUX 12|13|DET 13|14|SUBJ 14|8|COMP 15|16|DET
+	16|14|OBJ 17|18|LINK 18|22|JCT 19|20|DET 20|18|POBJ 21|22|SUBJ 22|8|CJCT
+	23|26|DET 24|25|MOD 25|26|MOD 26|22|OBJ 27|26|POSTMOD 28|8|PUNCT
+*PAR:	so maybe there's a slight breeze coming <in the> [/] in the kitchen
+	window . 50574_55268
+%mor:	co|so adv|maybe pro:exist|there~cop|be&3S det:art|a adj|slight
+	n|breeze part|come-PRESP prep|in det:art|the n|kitchen n|window .
+%gra:	1|4|COM 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|7|DET 6|7|MOD 7|4|PRED 8|7|XMOD
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|4|PUNCT
+*PAR:	mama's drying the dishes and she forgettin(g) herself and the water
+	is overflowing from the sink down onto the floor splashing into her
+	shoes . 55268_63032
+%mor:	n|mama~aux|be&3S part|dry-PRESP det:art|the n|dish-PL coord|and
+	pro:sub|she part|forget-PRESP pro:refl|herself coord|and det:art|the
+	n|water aux|be&3S over#part|flow-PRESP prep|from det:art|the n|sink
+	adv|down prep|onto det:art|the n|floor part|splash-PRESP prep|into
+	det:poss|her n|shoe-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|CONJ 7|6|COORD 8|7|XMOD
+	9|8|OBJ 10|14|LINK 11|12|DET 12|14|SUBJ 13|14|AUX 14|8|CJCT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|14|JCT 19|22|JCT 20|21|DET 21|19|POBJ 22|14|XJCT
+	23|22|JCT 24|25|DET 25|23|POBJ 26|3|PUNCT
+*PAR:	alright there are two cups and a plate on the counter to the right
+	of the sink . 63032_72041
+%mor:	co|alright adv|there cop|be&PRES det:num|two n|cup-PL coord|and
+	det:art|a n|plate prep|on det:art|the n|counter prep|to det:art|the
+	adj|right prep|of det:art|the n|sink .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|3|CONJ 7|8|DET 8|6|COORD
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|8|NJCT 13|14|DET 14|12|POBJ 15|14|JCT
+	16|17|DET 17|15|POBJ 18|3|PUNCT
+*PAR:	and &uh <the boy> [//] well I did tell you the boy is gettin(g)
+	ready to fall off of the chair [: stool] [* s:r] . 72041_80100
+%mor:	coord|and n|well pro:sub|I mod|do&PAST v|tell pro:per|you
+	det:art|the n|boy aux|be&3S part|get-PRESP adj|ready inf|to v|fall
+	adv|off prep|of det:art|the n|stool .
+%gra:	1|5|LINK 2|5|LINK 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ2 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|5|COMP 11|10|PRED 12|13|INF 13|11|XMOD 14|13|JCT 15|13|JCT
+	16|17|DET 17|15|POBJ 18|5|PUNCT
+*PAR:	his sister is reaching up for a cookie, gettin(g) it from the
+	cookie jar . 80100_85455
+%mor:	det:poss|his n|sister aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|a n|cookie cm|cm part|get-PRESP pro:per|it prep|from
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|LP 10|4|XJCT 11|10|OBJ 12|10|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|4|PUNCT
+*PAR:	so what else ? [+ exc] 85455_86893
+%mor:	adv|so pro:int|what post|else ?
+%gra:	1|2|JCT 2|0|INCROOT 3|2|PQ 4|2|PUNCT
+*PAR:	the [/] the door is open of_course to get into the cupboard . 86893_89919
+%mor:	det:art|the n|door cop|be&3S adj|open co|of_course inf|to v|get
+	prep|into det:art|the n|cupboard .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|7|COM 6|7|INF 7|3|CPRED 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|PUNCT
+*PAR:	xxx doin(g) . [+ jar] 89919_95222
+%mor:	part|do-PRESP .
+%gra:	1|0|INCROOT 2|1|PUNCT
+%com:	PAR talking under his breath, inaudible .
+*PAR:	xxx . [+ exc] 95222_102000
+%com:	PAR talking under his breath, inaudible .
+*PAR:	three [//] three legged stool . [+ gram] 102000_105598
+%mor:	det:num|three adj|legged n|stool .
+%gra:	1|3|QUANT 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*INV:	and that's about it . 105598_109162
+%mor:	coord|and pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|3|PUNCT
+*PAR:	I would venture to say that is it . [+ exc] 109162_111332
+%mor:	pro:sub|I mod|will&COND v|venture inf|to co|say adv|that aux|be&3S
+	pro:per|it .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|8|COM 6|8|JCT 7|8|AUX 8|3|OBJ
+	9|3|PUNCT
+*INV:	okay . 111332_112999
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

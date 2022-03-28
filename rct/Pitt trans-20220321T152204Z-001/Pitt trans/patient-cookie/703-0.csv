@@ -1,0 +1,65 @@
+@UTF8
+@PID:	11312/t-00002728-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|73;|female|ProbableAD||Participant|13||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	703-0, audio
+*INV:	that's happening in that picture . 0_1948
+%mor:	pro:rel|that~aux|be&3S part|happen-PRESP prep|in det:dem|that
+	n|picture .
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*INV:	what do you see going on in there ? 1948_3767
+%mor:	pro:int|what mod|do pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in adv|there ?
+%gra:	1|4|LINK 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	&uh well here's the child reaching up but he's on a stool and he's
+	falling off . 3767_7949
+%mor:	co|well pro:exist|here~cop|be&3S det:art|the n|child
+	part|reach-PRESP adv|up conj|but pro:sub|he~cop|be&3S prep|on
+	det:art|a n|stool coord|and pro:sub|he~aux|be&3S part|fall-PRESP
+	adv|off .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|XMOD 7|6|JCT 8|10|LINK
+	9|10|SUBJ 10|3|CJCT 11|10|JCT 12|13|DET 13|11|POBJ 14|17|LINK 15|17|SUBJ
+	16|17|AUX 17|10|CJCT 18|17|JCT 19|3|PUNCT
+*INV:	mhm . 7949_8972
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she's drying dishes at the window . 8972_11606
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP n|dish-PL prep|at det:art|the
+	n|window .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*INV:	mhm . 11606_12100
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she also spilled the water . 12100_13307
+%mor:	pro:sub|she adv|also v|spill-PAST det:art|the n|water .
+%gra:	1|3|SUBJ 2|3|JCT 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*INV:	mhm . 13307_14729
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else happening on there ? 14729_20247
+%mor:	pro:indef|anything post|else part|happen-PRESP prep|on n|there ?
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	oh they [//] like I said they were climbing . 20247_25102
+%mor:	co|oh conj|like pro:sub|I v|say&PAST pro:sub|they aux|be&PAST
+	part|climb-PRESP .
+%gra:	1|7|COM 2|4|LINK 3|4|SUBJ 4|7|CJCT 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|7|PUNCT
+*PAR:	she's doing dishes . 25102_26749
+%mor:	pro:sub|she~aux|be&3S part|do-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	mhm . 26749_27446
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	she spilled the water too <out o(f) the sink> [//] over the sink I
+	should say . 27446_34019
+%mor:	pro:sub|she v|spill-PAST det:art|the n|water adv|too prep|over
+	det:art|the n|sink pro:sub|I mod|should v|say .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|2|JCT 7|8|DET 8|6|POBJ
+	9|11|SUBJ 10|11|AUX 11|2|CJCT 12|2|PUNCT
+*INV:	okay great . 34019_35348
+%mor:	co|okay adj|great .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

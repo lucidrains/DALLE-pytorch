@@ -1,0 +1,61 @@
+@UTF8
+@PID:	11312/t-00002655-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|female|ProbableAD||Participant|21||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	466-1, audio
+*INV:	the picture . 0_1059
+%mor:	det:art|the n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	(.) what ? [+ exc] 1059_4436
+%mor:	pro:int|what ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	tell me what you see going on in the picture . 4436_7581
+%mor:	v|tell pro:obj|me pro:int|what pro:per|you v|see n:gerund|go-PRESP
+	adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|SUBJ 5|1|COMP 6|5|OBJ 7|5|JCT 8|5|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*PAR:	the boy's &uh handing &uh some cookies to the little girl . 7581_14133
+%mor:	det:art|the n|boy~aux|be&3S part|hand-PRESP qn|some n|cookie-PL
+	prep|to det:art|the adj|little n|girl .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|4|PUNCT
+*PAR:	and &um the stool is tipping over . 14133_18490
+%mor:	coord|and det:art|the n|stool aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	and &uh (..) &hm the water's overrunning onto the floor . 18490_34754
+%mor:	coord|and det:art|the adj|water&dn-POSS over#n:gerund|run-PRESP
+	prep|onto det:art|the n|floor .
+%gra:	1|3|LINK 2|3|DET 3|0|INCROOT 4|3|XMOD 5|4|JCT 6|7|DET 7|5|POBJ
+	8|3|PUNCT
+*INV:	do you see anything else ? 49943_53679
+%mor:	mod|do pro:per|you v|see pro:indef|anything post|else ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|PQ 6|3|PUNCT
+*INV:	anything else going on in the picture that you wanna mention ? 53679_59484
+%mor:	pro:indef|anything post|else part|go-PRESP adv|on prep|in
+	det:art|the n|picture pro:rel|that pro:per|you v|want~inf|to
+	v|mention ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|XJCT 4|3|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|SUBJ 10|7|CMOD 11|12|INF 12|10|COMP 13|1|PUNCT
+*INV:	(...) is there anything else you wanna mention ? 59484_76052
+%mor:	cop|be&3S adv|there pro:indef|anything post|else pro:per|you
+	v|want~inf|to v|mention ?
+%gra:	1|0|ROOT 2|1|SUBJ 3|1|PRED 4|3|PQ 5|6|SUBJ 6|3|CMOD 7|8|INF 8|6|COMP
+	9|1|PUNCT
+*PAR:	she's standing in a puddle of water . 76052_78271
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|in det:art|a n|puddle
+	prep|of n|water .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|7|POBJ
+	9|3|PUNCT
+*INV:	(..) okay . 78565_88805
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	(.) I guess that's about all . [+ exc] 88805_95577
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S adv|about adv|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|6|JCT 6|4|PRED 7|2|PUNCT
+*INV:	okay . 95577_96776
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

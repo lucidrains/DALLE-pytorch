@@ -1,0 +1,112 @@
+@UTF8
+@PID:	11312/t-00002417-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|77;|female|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	691-0, audio
+*INV:	okay good . 0_997
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	the picture . 997_1828
+%mor:	det:art|the n|picture .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+*PAR:	alright . [+ exc] 1828_2842
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the little boy [//] girl's reaching up there and she's got her
+	finger to her lips . 2842_6800
+%mor:	det:art|the adj|little n|girl~aux|be&3S part|reach-PRESP prep|up
+	n|there coord|and pro:sub|she~aux|be&3S part|get&PASTP det:poss|her
+	n|finger prep|to det:poss|her n|lip-PL .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|11|LINK
+	9|11|SUBJ 10|11|AUX 11|5|CJCT 12|13|DET 13|11|OBJ 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|5|PUNCT
+*PAR:	and the boy's <on a stool> [//] standing on a stool but its gonna
+	fall pretty soon . 6800_9902
+%mor:	coord|and det:art|the n|boy~aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool conj|but det:poss|its part|go-PRESP~inf|to v|fall
+	adv|pretty adv|soon .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|CONJ 10|11|DET 11|9|COORD 12|13|INF 13|11|COMP 14|13|JCT 15|13|JCT
+	16|5|PUNCT
+*PAR:	he's reaching for cookies . 9902_11373
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|for n|cookie-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT
+*PAR:	and the mother has their [: her] [* s:r] back to (th)em . 11373_13268
+%mor:	coord|and det:art|the n|mother aux|have&3S pro:obj|her adv|back
+	prep|to pro:obj|them .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|5|PUNCT
+*PAR:	she doesn't see them but her [//] she hasn't payed any attention to
+	her sink . 13268_16250
+%mor:	pro:sub|she mod|do&3S~neg|not v|see pro:obj|them conj|but
+	pro:sub|she aux|have&3S~neg|not part|pay-PASTP qn|any n|attention
+	prep|to det:poss|her n|sink .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|10|LINK 7|10|SUBJ 8|10|AUX
+	9|8|NEG 10|4|CJCT 11|12|QUANT 12|10|OBJ 13|12|NJCT 14|15|DET 15|13|POBJ
+	16|4|PUNCT
+*PAR:	it's running all over the place . 16250_17657
+%mor:	pro:per|it~aux|be&3S part|run-PRESP adv|all prep|over det:art|the
+	n|place .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	her window is open and there's a nice garden and a garage out back
+	. 17657_21747
+%mor:	det:poss|her n|window cop|be&3S adj|open coord|and
+	pro:exist|there~cop|be&3S det:art|a adj|nice n|garden coord|and
+	det:art|a n|garage adv|out adv|back .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|7|LINK 6|7|SUBJ 7|3|CJCT 8|10|DET
+	9|10|MOD 10|7|PRED 11|10|CONJ 12|13|DET 13|11|COORD 14|13|NJCT 15|14|JCT
+	16|3|PUNCT
+*PAR:	she's drying some dishes . 21747_23760
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP qn|some n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|PUNCT
+*PAR:	she has an apron on . 23760_24957
+%mor:	pro:sub|she v|have&3S det:art|a n|apron adv|on .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|2|PUNCT
+*PAR:	her &s dress is sleeveless . 24957_26587
+%mor:	det:poss|her n|dress cop|be&3S adj|sleeve&dn-LESS .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	has a pretty nice kitchen like &uh pretty nice curtains on it .
+	[+ gram] 26587_33013
+%mor:	v|have&3S det:art|a adj|pretty adj|nice n|kitchen prep|like
+	adv|pretty adj|nice n|curtain-PL prep|on pro:per|it .
+%gra:	1|0|ROOT 2|5|DET 3|5|MOD 4|5|MOD 5|1|OBJ 6|5|NJCT 7|8|JCT 8|9|MOD
+	9|6|POBJ 10|1|JCT 11|10|POBJ 12|1|PUNCT
+*PAR:	and &um <the jar> [//] the cookie jar lid is off . 33013_39221
+%mor:	coord|and det:art|the n|cookie n|jar n|lid cop|be&3S adv|off .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|5|MOD 5|6|SUBJ 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*PAR:	she has a couple cups and she has a couple plates but she better
+	mop up that floor &=laughs . 39221_48390
+%mor:	pro:sub|she v|have&3S det:art|a qn|couple n|cup-PL coord|and
+	pro:sub|she v|have&3S det:art|a qn|couple n|plate-PL conj|but
+	pro:sub|she adv|good&CP v|mop prep|up det:dem|that n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|QUANT 5|2|OBJ 6|8|LINK 7|8|SUBJ 8|2|CJCT
+	9|11|DET 10|11|QUANT 11|8|OBJ 12|15|LINK 13|15|SUBJ 14|15|JCT 15|8|CJCT
+	16|15|JCT 17|18|DET 18|16|POBJ 19|2|PUNCT
+*PAR:	the little girl has socks and shoes on and a short dress and <long
+	hair> [//] medium long hair . 48390_55900
+%mor:	det:art|the adj|little n|girl aux|have&3S n|sock-PL coord|and
+	n|shoe-PL adv|on coord|and det:art|a adj|short n|dress coord|and
+	adj|medium adj|long n|hair .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|CONJ 7|6|COORD 8|7|NJCT
+	9|8|CONJ 10|12|DET 11|12|MOD 12|9|COORD 13|12|CONJ 14|16|MOD 15|16|MOD
+	16|13|COORD 17|5|PUNCT
+*PAR:	and the boy has his shorts on and a short sleeved s:irt [: shirt]
+	[* p:n] so it must be summer . 55900_61757
+%mor:	coord|and det:art|the n|boy aux|have&3S det:poss|his n|shorts
+	adv|on coord|and det:art|a adj|short adj|sleeved n|shirt conj|so
+	pro:per|it mod|must cop|be n|summer .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|DET 6|0|INCROOT 7|6|JCT 8|6|CONJ
+	9|12|DET 10|12|MOD 11|12|MOD 12|8|COORD 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|6|CJCT 17|16|PRED 18|6|PUNCT
+*PAR:	trees are in bloom outside and the flowers out there . 61757_65617
+%mor:	n|tree-PL cop|be&PRES prep|in n|bloom adv|outside coord|and
+	det:art|the n|flower-PL prep|out n|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|3|POBJ 5|2|JCT 6|5|CONJ 7|8|DET 8|6|COORD
+	9|8|NJCT 10|9|POBJ 11|2|PUNCT
+*INV:	okay that's fine . 65617_70330
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

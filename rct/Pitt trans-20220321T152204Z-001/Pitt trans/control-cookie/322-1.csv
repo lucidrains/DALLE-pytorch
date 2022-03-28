@@ -1,0 +1,68 @@
+@UTF8
+@PID:	11312/t-00002402-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|56;|male|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	322-1, audio
+*INV:	&chir I'd like you to tell me everything you see going on in the
+	picture . 0_3829
+%mor:	pro:sub|I~mod|genmod v|like pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:per|you v|see n:gerund|go-PRESP adv|on
+	prep|in det:art|the n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|INF 6|3|COMP 7|6|OBJ 8|6|OBJ
+	9|10|SUBJ 10|6|COMP 11|10|OBJ 12|10|JCT 13|10|JCT 14|15|DET 15|13|POBJ
+	16|3|PUNCT
+*INV:	and there's the picture . 3829_6805
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	action type things ? [+ exc] 6805_10197
+%mor:	n|action n|type n|thing-PL ?
+%gra:	1|3|MOD 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	there is water coming out_of a faucet into a basin which is
+	overflowing onto the floor . 10197_19502
+%mor:	pro:exist|there cop|be&3S n|water part|come-PRESP prep|out_of
+	det:art|a n|faucet prep|into det:art|a n|basin pro:rel|which
+	cop|be&3S over#n:gerund|flow-PRESP prep|onto det:art|the n|floor .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|XMOD 5|4|JCT 6|7|DET 7|5|POBJ 8|2|JCT
+	9|10|DET 10|8|POBJ 11|12|LINK 12|10|CMOD 13|12|PRED 14|13|JCT 15|16|DET
+	16|14|POBJ 17|2|PUNCT
+*PAR:	the mother is drying dishes . 19502_23751
+%mor:	det:art|the n|mother aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	and she's walking in the water that is flowing on the floor . 23751_27987
+%mor:	coord|and pro:sub|she~aux|be&3S part|walk-PRESP prep|in det:art|the
+	n|water pro:rel|that aux|be&3S part|flow-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|10|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	two children are stealing cookies . 27987_32417
+%mor:	det:num|two n|child&PL aux|be&PRES part|steal-PRESP n|cookie-PL .
+%gra:	1|2|QUANT 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	one of whom is up on a &uh stool that is about to fall . [+ gram] 32417_41635
+%mor:	det:num|one prep|of pro:int|whom cop|be&3S adv|up prep|on det:art|a
+	n|stool pro:rel|that cop|be&3S adv|about inf|to v|fall .
+%gra:	1|4|SUBJ 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|10|LINK 10|8|CMOD 11|13|JCT 12|13|INF 13|10|CPRED 14|4|PUNCT
+*PAR:	he's removing cookies from an upper shelf in the closet . 41635_46286
+%mor:	pro:sub|he~aux|be&3S part|remove-PRESP n|cookie-PL prep|from
+	det:art|a adj|upper n|shelf prep|in det:art|the n|closet .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	the wind appears to be blowing because the curtains appear to be
+	you_know puffed . 46286_58534
+%mor:	det:art|the n|wind v|appear-3S inf|to aux|be part|blow-PRESP
+	conj|because det:art|the n|curtain-PL v|appear inf|to cop|be
+	co|you_know v|puff-PAST .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|6|INF 5|6|AUX 6|3|COMP 7|10|LINK 8|9|DET
+	9|10|SUBJ 10|3|CJCT 11|12|INF 12|10|COMP 13|14|COM 14|12|PRED 15|3|PUNCT
+*PAR:	those are the only action things that I can see . [+ exc] 58534_63111
+%mor:	pro:dem|those cop|be&PRES det:art|the qn|only n|action n|thing-PL
+	pro:rel|that pro:sub|I mod|can v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|DET 4|5|QUANT 5|6|MOD 6|2|PRED 7|10|LINK
+	8|10|SUBJ 9|10|AUX 10|6|CMOD 11|2|PUNCT
+*INV:	okay good . 63111_64498
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

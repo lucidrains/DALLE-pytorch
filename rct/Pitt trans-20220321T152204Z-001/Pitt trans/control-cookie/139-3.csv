@@ -1,0 +1,38 @@
+@UTF8
+@PID:	11312/t-00002297-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|53;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	139-3, audio
+*INV:	good . 0_533
+%mor:	adj|good .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	okay . [+ exc] 533_1829
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh the little boy is falling off the stool . 1829_4430
+%mor:	det:art|the adj|little n|boy aux|be&3S part|fall-PRESP prep|off
+	det:art|the n|stool .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	he is giving cookies to the little girl . 4400_6770
+%mor:	pro:sub|he aux|be&3S part|give-PRESP n|cookie-PL prep|to
+	det:art|the adj|little n|girl .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	the little girl is telling him to be quiet so that mother will not
+	hear . 6770_10800
+%mor:	det:art|the adj|little n|girl aux|be&3S part|tell-PRESP pro:obj|him
+	inf|to cop|be adj|quiet conj|so det:dem|that n|mother mod|will
+	neg|not v|hear .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|8|INF 8|5|COMP
+	9|8|PRED 10|15|LINK 11|12|DET 12|15|SUBJ 13|15|AUX 14|13|NEG 15|5|CJCT
+	16|5|PUNCT
+*PAR:	mother is drying the dishes while the sink is overflowing . 10800_16123
+%mor:	n|mother aux|be&3S part|dry-PRESP det:art|the n|dish-PL conj|while
+	det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|3|PUNCT
+@End

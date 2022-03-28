@@ -1,0 +1,64 @@
+@UTF8
+@PID:	11312/t-00002503-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|79;|male|MCI||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	120-2, audio
+*PAR:	okay . [+ exc] 0_1364
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well the boy is getting some cookies handing one to his sister . 1364_4795
+%mor:	co|well det:art|the n|boy aux|be&3S part|get-PRESP qn|some
+	n|cookie-PL part|hand-PRESP det:num|one prep|to det:poss|his
+	n|sister .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|QUANT 7|5|OBJ 8|7|XMOD
+	9|8|OBJ 10|9|JCT 11|12|DET 12|10|POBJ 13|5|PUNCT
+*PAR:	his sister is shushing so that the mother won't turn around and see
+	. 4795_8968
+%mor:	det:poss|his n|sister aux|be&3S part|shush-PRESP adv|so
+	pro:rel|that det:art|the n|mother mod|will~neg|not v|turn adv|around
+	coord|and v|see .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|11|JCT 6|11|LINK 7|8|DET 8|11|SUBJ
+	9|11|AUX 10|9|NEG 11|4|COMP 12|11|JCT 13|11|CONJ 14|13|COORD 15|4|PUNCT
+*PAR:	the stool is going to tip over .8968_10928
+%mor:	det:art|the n|stool aux|be&3S part|go-PRESP inf|to v|tip adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|4|PUNCT
+*PAR:	it won't be very quiet .10928_12238
+%mor:	pro:per|it mod|will~neg|not cop|be adv|very adj|quiet .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|JCT 6|4|PRED 7|4|PUNCT
+*PAR:	and &uh the mother is washing the dishes &=laughs as the sink is
+	running over and spilling on the floor .12238_20203
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP
+	det:art|the n|dish-PL conj|as det:art|the n|sink aux|be&3S
+	part|run-PRESP adv|over coord|and part|spill-PRESP prep|on
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|12|LINK
+	9|10|DET 10|12|SUBJ 11|12|AUX 12|5|CJCT 13|12|JCT 14|12|CONJ 15|14|COORD
+	16|15|JCT 17|18|DET 18|16|POBJ 19|5|PUNCT
+*PAR:	&uh and she's water [//] &uh stepping in the moisture .20203_26426
+%mor:	coord|and pro:sub|she~cop|be&3S n:gerund|step-PRESP prep|in
+	det:art|the n|moisture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*PAR:	&um any more action ? [+ exc] 26426_29509
+%mor:	qn|any qn|more n|action ?
+%gra:	1|3|QUANT 2|3|QUANT 3|0|INCROOT 4|3|PUNCT
+*PAR:	&um outside there's nothing special going on in the way of action
+	.29509_37398
+%mor:	adv|outside pro:exist|there~cop|be&3S pro:indef|nothing adj|special
+	part|go-PRESP adv|on prep|in det:art|the n|way prep|of n|action .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|PRED 6|5|XMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|10|NJCT 12|11|POBJ 13|3|PUNCT
+*PAR:	and that's all the action I see . [+ exc] 37398_41870
+%mor:	coord|and pro:dem|that~cop|be&3S adv|all det:art|the n|action
+	pro:sub|I v|see .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|DET 6|3|PRED 7|8|SUBJ 8|6|CMOD
+	9|3|PUNCT
+*INV:	okay that's fine .41870_43818
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*PAR:	mhm okay . [+ exc] 43818_44877
+%mor:	co|mhm=yes co|okay .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

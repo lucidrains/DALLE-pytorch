@@ -1,0 +1,67 @@
+@UTF8
+@PID:	11312/t-00002254-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|58;|male|Control||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	107-1, audio
+*INV:	and there's the picture . 0_2413
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	(.) boy's fallin(g) off a stool . [+ gram] 2413_10290
+%mor:	n|boy~aux|be&3S part|fall-PRESP prep|off det:art|a n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the lid is fallin(g) off a cookie jar . 10290_12750
+%mor:	det:art|the n|lid aux|be&3S part|fall-PRESP prep|off det:art|a
+	n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	he's grabbin(g) a cookie in his hand . 12750_15212
+%mor:	pro:sub|he~aux|be&3S part|grab-PRESP det:art|a n|cookie prep|in
+	det:poss|his n|hand .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	the girl is reachin(g) up . 15212_16608
+%mor:	det:art|the n|girl aux|be&3S part|reach-PRESP adv|up .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	she's touchin(g) her nose . 16608_19618
+%mor:	pro:sub|she~aux|be&3S part|touch-PRESP det:poss|her n|nose .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	xxx . [+ exc] 19300_23223
+*PAR:	the other side, the mother's washin(g) dishes . [+ gram] 23223_26798
+%mor:	det:art|the qn|other n|side cm|cm det:art|the n|mother~aux|be&3S
+	part|wash-PRESP n|dish-PL .
+%gra:	1|3|DET 2|3|QUANT 3|0|INCROOT 4|3|LP 5|6|DET 6|8|SUBJ 7|8|AUX 8|3|CMOD
+	9|8|OBJ 10|3|PUNCT
+*PAR:	the sink is runnin(g) over . 26798_28171
+%mor:	det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	(.) her feet's [* m:a] gettin(g) wet (.) as she's lookin(g) out the
+	window . [+ gram] 28171_43376
+%mor:	det:poss|her adj|foot&PL&dn-POSS part|get-PRESP adj|wet conj|as
+	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|the n|window
+	.
+%gra:	1|3|DET 2|3|MOD 3|0|ROOT 4|3|PRED 5|8|LINK 6|8|SUBJ 7|8|AUX 8|3|CJCT
+	9|8|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	that'd be pretty difficult to look out the window and get your feet
+	gettin(g) wet at the same time but that's what it is . [+ exc] 43376_50084
+%mor:	pro:rel|that~mod|genmod cop|be adv|pretty adj|difficult inf|to
+	v|look prep|out det:art|the n|window coord|and v|get det:poss|your
+	n|foot&PL part|get-PRESP adj|wet prep|at det:art|the adj|same n|time
+	conj|but pro:rel|that~cop|be&3S pro:int|what pro:per|it cop|be&3S .
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|5|JCT 5|3|PRED 6|7|INF 7|5|XMOD 8|7|JCT
+	9|10|DET 10|8|POBJ 11|3|CONJ 12|11|COORD 13|14|DET 14|12|OBJ 15|16|XMOD
+	16|14|POSTMOD 17|16|JCT 18|20|DET 19|20|MOD 20|17|POBJ 21|3|CONJ 22|23|LINK
+	23|21|COORD 24|26|LINK 25|26|SUBJ 26|23|PRED 27|3|PUNCT
+*INV:	+< &=laughs . [+ exc] 48500_49500
+*PAR:	okay . [+ exc] 50084_51730
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay ? 51730_52278
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 52278_52961
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

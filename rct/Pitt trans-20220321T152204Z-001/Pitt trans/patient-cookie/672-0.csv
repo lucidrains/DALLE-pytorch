@@ -1,0 +1,63 @@
+@UTF8
+@PID:	11312/t-00002719-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|male|PossibleAD||Participant|18||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	672-0, audio
+*INV:	I'd like for you to take a look at that picture and tell me
+	everything that you see happening or going on in that picture . 0_7442
+%mor:	pro:sub|I~mod|genmod co|like prep|for pro:per|you inf|to v|take
+	det:art|a v|look prep|at det:dem|that n|picture coord|and v|tell
+	pro:obj|me pro:indef|everything pro:rel|that pro:per|you v|see
+	n:gerund|happen-PRESP coord|or part|go-PRESP adv|on prep|in
+	det:dem|that n|picture .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|7|INF 7|4|CPOBJ 8|9|DET
+	9|7|OBJ 10|9|JCT 11|12|DET 12|10|POBJ 13|9|CONJ 14|13|COORD 15|14|OBJ2
+	16|14|OBJ 17|19|LINK 18|19|SUBJ 19|16|CMOD 20|19|OBJ 21|19|CONJ 22|21|COORD
+	23|22|JCT 24|22|JCT 25|26|DET 26|24|POBJ 27|3|PUNCT
+*INV:	(..) what's happening in that picture ? 7442_17383
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP prep|in det:dem|that
+	n|picture ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	the water's overflowin(g) out_of the sink . 17383_20200
+%mor:	det:art|the adj|water&dn-POSS over#n:gerund|flow-PRESP prep|out_of
+	det:art|the n|sink .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*PAR:	and he's fallin(g) off the chair [: stool] [* s:r] . 20200_21635
+%mor:	coord|and pro:sub|he~aux|be&3S part|fall-PRESP prep|off det:art|the
+	n|stool .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*INV:	mhm . 21635_22506
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	that's it . [+ exc] 22506_26165
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	nothing else going on in there ? 26165_28390
+%mor:	pro:indef|nothing post|else part|go-PRESP adv|on prep|in adv|there
+	?
+%gra:	1|3|SUBJ 2|1|PQ 3|0|ROOT 4|3|JCT 5|3|JCT 6|5|POBJ 7|3|PUNCT
+*PAR:	he's fallin(g) off the chair [: stool] [* s:r] and he's &k
+	reachin(g) for that &uh &w dishes or somethin(g) . 28390_33850
+%mor:	pro:sub|he~aux|be&3S part|fall-PRESP prep|off det:art|the n|stool
+	coord|and pro:sub|he~aux|be&3S part|reach-PRESP prep|for adv|that
+	n|dish-PL coord|or pro:indef|something .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|3|CJCT 11|10|JCT 12|13|JCT 13|11|POBJ 14|13|CONJ 15|14|COORD
+	16|3|PUNCT
+*INV:	mhm . 33850_34570
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and the girl is just lookin(g) up . 34570_37308
+%mor:	coord|and det:art|the n|girl aux|be&3S adv|just part|look-PRESP
+	adv|up .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|JCT 8|6|PUNCT
+*PAR:	and (.) that's all . [+ exc] 37308_39984
+%mor:	coord|and pro:dem|that~cop|be&3S pro:indef|all .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+*INV:	okay fine . 39984_41059
+%mor:	co|okay adv|fine .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

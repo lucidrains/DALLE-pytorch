@@ -1,0 +1,25 @@
+@UTF8
+@PID:	11312/t-00002525-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	168-0, audio
+@Comment:	overlapping recording
+*INV:	action that you [/] &sh you see in there . 0_2491
+%mor:	n|action pro:rel|that pro:per|you v|see prep|in n|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|SUBJ 4|1|CMOD 5|4|JCT 6|5|POBJ 7|1|PUNCT
+*PAR:	&uh the &b boy's &f gonna fall off of the [/] &um the stool . 2491_8546
+%mor:	det:art|the n|boy~aux|be&3S part|go-PRESP~inf|to v|fall adv|off
+	prep|of det:art|the n|stool .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	&uh the water is going on the floor . 8546_13807
+%mor:	det:art|the n|water aux|be&3S part|go-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*INV:	<see a thing for that> [//] see anything else ? 30500_32533
+%mor:	v|see pro:indef|anything post|else ?
+%gra:	1|0|ROOT 2|1|OBJ 3|2|PQ 4|1|PUNCT
+@End

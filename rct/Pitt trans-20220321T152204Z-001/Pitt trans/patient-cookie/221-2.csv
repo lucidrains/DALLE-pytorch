@@ -1,0 +1,80 @@
+@UTF8
+@PID:	11312/t-00002566-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|MCI||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	221-2, audio
+*PAR:	little girl is reaching up for some cookies . 0_3426
+%mor:	adj|little n|girl aux|be&3S part|reach-PRESP adv|up prep|for
+	qn|some n|cookie-PL .
+%gra:	1|2|MOD 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|QUANT 8|6|POBJ
+	9|4|PUNCT
+*PAR:	and it appears that she may be telling her brother to be quiet . 3426_9044
+%mor:	coord|and pro:per|it v|appear-3S comp|that pro:sub|she mod|may
+	aux|be part|tell-PRESP det:poss|her n|brother inf|to cop|be
+	adj|quiet .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|8|LINK 5|8|SUBJ 6|8|AUX 7|8|AUX 8|3|COMP
+	9|10|DET 10|8|OBJ 11|12|INF 12|10|XMOD 13|12|PRED 14|3|PUNCT
+*PAR:	they may be &uh taking them while the mother is abstracted
+	[: distracted] [* s:r] there at the window . 9044_16027
+%mor:	pro:sub|they mod|may aux|be part|take-PRESP pro:obj|them conj|while
+	det:art|the n|mother aux|be&3S part|distract-PASTP adv|there prep|at
+	det:art|the n|window .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|4|OBJ 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|4|CJCT 11|10|JCT 12|10|JCT 13|14|DET 14|12|POBJ 15|4|PUNCT
+*PAR:	yeah she is abstracted [: distracted] [* s:r] . 16027_17538
+%mor:	co|yeah pro:sub|she aux|be&3S part|distract-PASTP .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	she doesn't even know the sink &s is overflowing . 17538_20616
+%mor:	pro:sub|she mod|do&3S~neg|not adv|even v|know det:art|the n|sink
+	aux|be&3S over#part|flow-PRESP .
+%gra:	1|5|SUBJ 2|5|AUX 3|2|NEG 4|5|JCT 5|0|ROOT 6|7|DET 7|9|SUBJ 8|9|AUX
+	9|5|COMP 10|5|PUNCT
+*PAR:	the boy getting the cookies from the cookie jar in his haste has
+	(.) tipped over the lid of the cookie jar and also has caused the
+	stool to slip over backwards so that he will very shortly be <on the
+	ground> [//] on the floor rather . 20616_48464
+%mor:	det:art|the n|boy part|get-PRESP det:art|the n|cookie-PL prep|from
+	det:art|the n|cookie n|jar prep|in det:poss|his n|haste aux|have&3S
+	part|tip-PASTP prep|over det:art|the n|lid prep|of det:art|the
+	n|cookie n|jar coord|and adv|also aux|have&3S part|cause-PASTP
+	det:art|the n|stool inf|to v|slip adv|over adv|backwards adv|so
+	comp|that pro:sub|he mod|will adv|very adv|short&dadj-LY cop|be
+	prep|on det:art|the n|floor adv|rather .
+%gra:	1|2|DET 2|14|SUBJ 3|2|XMOD 4|5|DET 5|3|OBJ 6|3|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|14|AUX 14|0|ROOT 15|14|JCT
+	16|17|DET 17|15|POBJ 18|17|NJCT 19|21|DET 20|21|MOD 21|18|POBJ 22|14|CONJ
+	23|25|JCT 24|25|AUX 25|22|COORD 26|27|DET 27|25|OBJ 28|29|INF 29|25|XJCT
+	30|29|JCT 31|29|JCT 32|38|JCT 33|38|LINK 34|37|SUBJ 35|37|AUX 36|37|JCT
+	37|38|JCT 38|29|COMP 39|38|JCT 40|41|DET 41|39|POBJ 42|38|JCT 43|14|PUNCT
+*PAR:	and &uh the mother's still day dreaming and the sink's still
+	overflowing and she's looking out at the garden and a tree . 48464_58999
+%mor:	coord|and det:art|the adj|mother&dn-POSS adj|still n|day
+	part|dream-PRESP coord|and det:art|the adj|sink&dn-POSS adj|still
+	over#part|flow-PRESP coord|and pro:sub|she~aux|be&3S part|look-PRESP
+	adv|out prep|at det:art|the n|garden coord|and det:art|a n|tree .
+%gra:	1|5|LINK 2|3|DET 3|5|MOD 4|5|MOD 5|0|INCROOT 6|5|XMOD 7|6|CONJ 8|9|DET
+	9|11|MOD 10|11|MOD 11|7|COORD 12|15|LINK 13|15|SUBJ 14|15|AUX 15|5|CJCT
+	16|15|JCT 17|15|JCT 18|19|DET 19|17|POBJ 20|15|CONJ 21|22|DET
+	22|20|COORD 23|5|PUNCT
+*PAR:	and she has a towel in her hand . 58999_62528
+%mor:	coord|and pro:sub|she v|have&3S det:art|a n|towel prep|in
+	det:poss|her n|hand .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	and <she still has a &s no> [//] she's probably dried a few dishes
+	. 62528_69964
+%mor:	coord|and pro:sub|she~aux|be&3S adv|probable&dadj-LY part|dry-PASTP
+	det:art|a n|few n|dish-PL .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|5|PUNCT
+*PAR:	well that's about it for me +/. [+ exc] 69964_72936
+%mor:	co|well pro:dem|that~cop|be&3S adv|about pro:per|it prep|for
+	pro:obj|me +/.
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|5|JCT 7|6|POBJ 8|3|PUNCT
+*INV:	+< okay good . 72336_73546
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

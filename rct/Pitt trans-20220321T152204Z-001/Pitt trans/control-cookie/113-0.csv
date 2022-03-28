@@ -1,0 +1,61 @@
+@UTF8
+@PID:	11312/t-00002259-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|47;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	113-0, audio
+*INV:	and here's the picture . 0_2610
+%mor:	coord|and pro:exist|here~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	(.) the little girl's pointing to her mouth . 2610_7730
+%mor:	det:art|the adj|little n|girl~aux|be&3S part|point-PRESP prep|to
+	det:poss|her n|mouth .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	she wants a cookie . 7730_9172
+%mor:	pro:sub|she v|want-3S det:art|a n|cookie .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	the little boy is getting cookies and he's about to fall off his
+	stool . 9172_13750
+%mor:	det:art|the adj|little n|boy aux|be&3S part|get-PRESP n|cookie-PL
+	coord|and pro:sub|he~cop|be&3S adv|about inf|to v|fall prep|off
+	det:poss|his n|stool .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|9|LINK 8|9|SUBJ
+	9|5|CJCT 10|12|JCT 11|12|INF 12|9|CPRED 13|12|JCT 14|15|DET 15|13|POBJ
+	16|5|PUNCT
+*PAR:	the mother's washing dishes . 13750_16608
+%mor:	det:art|the n|mother~aux|be&3S part|wash-PRESP n|dish-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	she's wiping a plate . 16608_18915
+%mor:	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|a n|plate .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	the faucet is running . 18915_21378
+%mor:	det:art|the n|faucet aux|be&3S part|run-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the sink is running over . 21378_23353
+%mor:	det:art|the n|sink aux|be&3S part|run-PRESP adv|over .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	the water is running on the floor . 23353_25672
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP prep|on det:art|the
+	n|floor .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	&um the curtains are blowing . 25672_29290
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|blow-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	(..) so there hasta be a breeze outside &=laughs . 29290_39100
+%mor:	co|so pro:exist|there mod|have&3S~inf|to cop|be det:art|a n|breeze
+	adv|outside .
+%gra:	1|5|COM 2|5|SUBJ 3|5|AUX 4|5|INF 5|0|ROOT 6|7|DET 7|5|PRED 8|7|NJCT
+	9|5|PUNCT
+*INV:	okay ? 39100_39800
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	that's all I can see .[+ exc] 39800_41009
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I mod|can v|see .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|SUBJ 5|6|AUX 6|3|CMOD 7|2|PUNCT
+*INV:	that's fine . 41146_41827
+%mor:	pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

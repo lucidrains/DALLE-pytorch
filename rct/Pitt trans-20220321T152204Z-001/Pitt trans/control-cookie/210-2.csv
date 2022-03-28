@@ -1,0 +1,128 @@
+@UTF8
+@PID:	11312/t-00002346-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|69;|male|Control||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	210-2, audio
+*INV:	tell me everything that you see going on in this picture . 0_3361
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that pro:per|you
+	v|see n:gerund|go-PRESP adv|on prep|in det:dem|this n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|1|PUNCT
+*INV:	tell me everything that's happening there . 3361_5542
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|happen-PRESP adv|there .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|1|PUNCT
+*PAR:	young boy is up at the cookie jar . [+ gram] 5542_12466
+%mor:	adj|young n|boy cop|be&3S adv|up prep|at det:art|the n|cookie n|jar
+	.
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|3|PUNCT
+*PAR:	he has the cookie jar opened . 12466_14179
+%mor:	pro:sub|he v|have&3S det:art|the n|cookie n|jar v|open-PAST .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|6|SUBJ 6|2|COMP 7|2|PUNCT
+*PAR:	he's reachin(g) for one for himself . 14179_17028
+%mor:	pro:sub|he~aux|be&3S part|reach-PRESP prep|for pro:indef|one
+	prep|for pro:refl|himself .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|JCT 7|6|POBJ 8|3|PUNCT
+*PAR:	he's handing one down to his sister . 17028_19844
+%mor:	pro:sub|he~aux|be&3S part|hand-PRESP det:num|one adv|down prep|to
+	det:poss|his n|sister .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|JCT 6|3|JCT 7|8|DET 8|6|POBJ
+	9|3|PUNCT
+*PAR:	the three legged stool is coming down with him . 19844_25883
+%mor:	det:art|the det:num|three adj|legged n|stool aux|be&3S
+	part|come-PRESP adv|down prep|with pro:obj|him .
+%gra:	1|2|DET 2|4|QUANT 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|JCT
+	9|8|POBJ 10|6|PUNCT
+*PAR:	&uh they're nicely dressed kids but &uh the boy needs his socks
+	pulled up . 25883_33072
+%mor:	pro:sub|they~aux|be&PRES adv|nice&dadj-LY part|dress-PASTP n|kid-PL
+	conj|but det:art|the n|boy v|need-3S det:poss|his n|sock-PL
+	v|pull-PAST adv|up .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|OBJ 6|9|LINK 7|8|DET 8|9|SUBJ
+	9|4|CJCT 10|11|DET 11|12|SUBJ 12|9|COMP 13|12|JCT 14|4|PUNCT
+*PAR:	&mm that's all I see there . [+ exc] 33072_36442
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I v|see adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|SUBJ 5|3|CMOD 6|5|JCT 7|2|PUNCT
+*PAR:	mother [//] I presume it's mother is at the sink . 36442_39422
+%mor:	pro:sub|I v|presume pro:per|it~cop|be&3S n|mother cop|be&3S prep|at
+	det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|6|SUBJ 6|4|PRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|2|PUNCT
+*PAR:	the water is &r running over out_of sink . 39422_43610
+%mor:	det:art|the n|water aux|be&3S part|run-PRESP adv|over prep|out_of
+	n|sink .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|6|POBJ 8|4|PUNCT
+*PAR:	she's drying a dish . 43610_45417
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	she's looking out the window . 45417_48371
+%mor:	pro:sub|she~aux|be&3S part|look-PRESP prep|out det:art|the n|window
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	there are two cups and a dish, I presume that's a dish, that are
+	already dry I guess and sitting on the side of the sink . 48371_57958
+%mor:	pro:exist|there cop|be&PRES det:num|two n|cup-PL coord|and
+	det:art|a n|dish cm|cm pro:sub|I v|presume pro:dem|that~cop|be&3S
+	det:art|a n|dish cm|cm pro:rel|that cop|be&PRES adv|already adj|dry
+	pro:sub|I v|guess coord|and part|sit-PRESP prep|on det:art|the
+	n|side prep|of det:art|the n|sink .
+%gra:	1|2|SUBJ 2|10|CJCT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD 8|2|LP
+	9|10|SUBJ 10|0|ROOT 11|12|SUBJ 12|10|COMP 13|14|DET 14|12|PRED 15|14|LP
+	16|17|LINK 17|14|CMOD 18|17|JCT 19|17|PRED 20|21|SUBJ 21|19|CMOD
+	22|21|CONJ 23|22|COORD 24|23|JCT 25|26|DET 26|24|POBJ 27|26|NJCT 28|29|DET
+	29|27|POBJ 30|10|PUNCT
+*PAR:	&uh nicely groomed . [+ gram] 57958_63935
+%mor:	adv|nice&dadj-LY part|groom-PASTP .
+%gra:	1|2|JCT 2|0|ROOT 3|2|PUNCT
+*PAR:	nice curtains pulled back . [+ gram] 63935_67283
+%mor:	adj|nice n|curtain-PL v|pull-PAST adv|back .
+%gra:	1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	it's apparently summer outside because the window's open and it
+	looks like shrubs are growing . 67283_73448
+%mor:	pro:per|it~cop|be&3S adv|apparent&dadj-LY n|summer adv|outside
+	conj|because det:art|the adj|window&dn-POSS adj|open coord|and
+	pro:per|it v|look-3S prep|like n|shrub-PL aux|be&PRES
+	part|grow-PRESP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|3|POBJ 5|2|JCT 6|2|PRED 7|9|DET 8|9|MOD
+	9|6|PRED 10|12|LINK 11|12|SUBJ 12|9|CMOD 13|16|LINK 14|16|SUBJ 15|16|AUX
+	16|12|COMP 17|2|PUNCT
+*PAR:	you can see a window in the other part of the house . 73448_77077
+%mor:	pro:per|you mod|can v|see det:art|a n|window prep|in det:art|the
+	qn|other n|part prep|of det:art|the n|house .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|JCT 7|9|DET 8|9|QUANT
+	9|6|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|3|PUNCT
+*PAR:	I presume that's still their house . 77077_79283
+%mor:	pro:sub|I v|presume comp|that~aux|be&3S v|still det:poss|their
+	n|house .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|7|DET 7|5|OBJ 8|2|PUNCT
+*PAR:	and there's a driveway bordered with grass . 79283_82832
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|+n|drive+n|way
+	v|border-PAST prep|with n|grass .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|CPRED 7|6|JCT 8|7|POBJ
+	9|3|PUNCT
+*PAR:	and there's a tree out there somewhere that you can see part of the
+	trunk and part of the foliage . 82832_90006
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|tree prep|out
+	n|there adv|somewhere comp|that pro:per|you mod|can v|see n|part
+	prep|of det:art|the n|trunk coord|and n|part prep|of det:art|the
+	n|foliage .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|6|POBJ 8|5|NJCT
+	9|12|LINK 10|12|SUBJ 11|12|AUX 12|8|COMP 13|12|OBJ 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|12|CONJ 18|17|COORD 19|18|NJCT 20|21|DET 21|19|POBJ
+	22|3|PUNCT
+*PAR:	and &uh I see cabinets around the kitchen, other cabinets . 90006_97661
+%mor:	coord|and pro:sub|I v|see n|cabinet-PL prep|around det:art|the
+	n|kitchen cm|cm qn|other n|cabinet-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|JCT 6|7|DET 7|5|POBJ 8|3|LP
+	9|10|QUANT 10|3|OBJ 11|3|PUNCT
+*PAR:	and that's about it . [+ exc] 97661_99840
+%mor:	coord|and pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|PRED 6|3|PUNCT
+*INV:	okay . 99840_100478
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

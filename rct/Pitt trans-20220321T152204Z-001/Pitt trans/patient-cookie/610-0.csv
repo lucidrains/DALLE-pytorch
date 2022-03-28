@@ -1,0 +1,66 @@
+@UTF8
+@PID:	11312/t-00002703-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|ProbableAD||Participant|20||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	610-0, audio
+*INV:	I'd like for you to look at this picture and tell me what you see
+	going on there . 0_7005
+%mor:	pro:sub|I~mod|genmod co|like prep|for pro:per|you inf|to v|look
+	prep|at det:dem|this n|picture coord|and v|tell pro:obj|me
+	pro:int|what pro:per|you v|see n:gerund|go-PRESP prep|on n|there .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|7|INF 7|4|CPOBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|CONJ 12|11|COORD 13|12|OBJ 14|16|LINK 15|16|SUBJ
+	16|12|COMP 17|16|OBJ 18|16|JCT 19|18|POBJ 20|3|PUNCT
+*INV:	what's happening in that picture ? 7005_9059
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP prep|in det:dem|that
+	n|picture ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	(.) they're baking . 9059_12529
+%mor:	pro:sub|they~aux|be&PRES part|bake-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*INV:	(.) what else is going on ? 12529_16170
+%mor:	pro:int|what post|else aux|be&3S part|go-PRESP adv|on ?
+%gra:	1|4|LINK 2|1|PQ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	making a mess out_of the place . [+ gram] 16170_20887
+%mor:	part|make-PRESP det:art|a n|mess prep|out_of det:art|the n|place .
+%gra:	1|0|INCROOT 2|3|DET 3|1|OBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+*INV:	how ? 20887_23207
+%mor:	pro:rel|how ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	<by not putting> [//] by not [//] no neatness . [+ gram] [+ exc] 23207_27270
+%mor:	prep|by qn|no n|neat&dadj-NESS .
+%gra:	1|0|INCROOT 2|3|QUANT 3|1|POBJ 4|1|PUNCT
+*INV:	(.) do you see anything else happening there ? 27270_33151
+%mor:	mod|do pro:per|you v|see pro:indef|anything post|else
+	part|happen-PRESP adv|there ?
+%gra:	1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|PQ 6|3|XJCT 7|6|JCT 8|3|PUNCT
+*PAR:	yes there's a few accidents . 33151_35936
+%mor:	co|yes pro:exist|there~cop|be&3S det:art|a qn|few n|accident-PL .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|QUANT 6|3|PRED 7|3|PUNCT
+*PAR:	the little boy is &sta standing on a chair [: stool] [* s:r] which
+	is crooked . 35936_41166
+%mor:	det:art|the adj|little n|boy aux|be&3S part|stand-PRESP prep|on
+	det:art|a n|stool pro:rel|which cop|be&3S adj|crooked .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|10|LINK 10|8|CMOD 11|10|PRED 12|5|PUNCT
+*PAR:	the lady has water running out_of her (.) sink and (.) towel in her
+	hand which is dangerous . 41166_52885
+%mor:	det:art|the n|lady v|have&3S n|water part|run-PRESP prep|out_of
+	det:poss|her n|sink coord|and n|towel prep|in det:poss|her n|hand
+	pro:rel|which cop|be&3S adj|dangerous .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|XMOD 6|5|JCT 7|8|DET 8|6|POBJ
+	9|3|CONJ 10|9|COORD 11|10|NJCT 12|13|DET 13|11|POBJ 14|15|LINK 15|3|CJCT
+	16|15|PRED 17|3|PUNCT
+*PAR:	<cookies are coming down> [//] the cookie jar is coming down . 52885_59578
+%mor:	det:art|the n|cookie n|jar aux|be&3S part|come-PRESP adv|down .
+%gra:	1|3|DET 2|3|MOD 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	and the place is very pretty . 59578_63670
+%mor:	coord|and det:art|the n|place cop|be&3S adv|very adv|pretty .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|JCT 6|4|PRED 7|4|PUNCT
+*INV:	okay good . 63670_65632
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

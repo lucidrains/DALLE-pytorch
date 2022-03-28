@@ -1,0 +1,69 @@
+@UTF8
+@PID:	11312/t-00002642-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|PossibleAD||Participant|19||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	361-0, audio
+*INV:	just tell me everything you see going on in the picture . 0_2976
+%mor:	adv|just v|tell pro:obj|me pro:indef|everything pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|OBJ 5|6|SUBJ 6|2|COMP 7|6|OBJ 8|6|JCT
+	9|6|JCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	&=sighs the boy is snitching cookies . 2976_7198
+%mor:	det:art|the n|boy aux|be&3S part|snitch-PRESP n|cookie-PL .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	the sister's laughin(g) . 7198_9122
+%mor:	det:art|the n|sister~aux|be&3S part|laugh-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	the [/] the <bench [: stool] [* s:r-ret] he> [//] &uh stool he's on
+	is [/] is slanted . 9122_15900
+%mor:	det:art|the n|stool pro:sub|he~aux|be&3S adv|on aux|be&3S
+	part|slant-PASTP .
+%gra:	1|2|DET 2|0|INCROOT 3|7|SUBJ 4|7|AUX 5|7|JCT 6|7|AUX 7|2|CMOD 8|2|PUNCT
+*PAR:	&uh (.) oh <the mother then did> [//] the water &s spilled over in
+	the sink (.) on [/] &t on to the floor . 15900_28000
+%mor:	co|oh det:art|the n|water v|spill-PAST adv|over prep|in det:art|the
+	n|sink adv|on prep|to det:art|the n|floor .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|JCT 10|4|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	and (.) there's dishes on the +... 28000_32675
+%mor:	coord|and pro:exist|there~cop|be&3S n|dish-PL prep|on det:art|the
+	+...
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|5|POBJ 7|3|PUNCT
+*PAR:	she's dryin(g) &uh a plate . 32675_35408
+%mor:	pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|plate .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	curtains . [+ gram] 35408_39549
+%mor:	n|curtain-PL .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh a good view just +... 39549_45743
+%mor:	det:art|a adj|good n|view adv|just +...
+%gra:	1|3|DET 2|3|MOD 3|0|INCROOT 4|3|NJCT 5|3|PUNCT
+*PAR:	(..) and the +... 45743_46947
+%mor:	coord|and det:art|the +...
+%gra:	1|0|INCROOT 2|3|DET 3|1|PUNCT
+*INV:	okay . 46947_47500
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	anything else ? 47500_50068
+%mor:	pro:indef|anything post|else ?
+%gra:	1|0|INCROOT 2|1|PQ 3|1|PUNCT
+*PAR:	(.) well &uh you can see the [/] &uh I guess the backyard . 50068_58518
+%mor:	co|well pro:per|you mod|can v|see pro:sub|I v|guess det:art|the
+	n|+n|back+n|yard .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|8|DET 8|6|OBJ
+	9|4|PUNCT
+*PAR:	and &uh (..) &d (.) I don't know if that would be a part of the
+	house or a garage or &uh &th the walk . 58518_74766
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know comp|if pro:dem|that
+	mod|will&COND cop|be det:art|a n|part prep|of det:art|the n|house
+	coord|or det:art|a n|garage coord|or det:art|the n|walk .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|COMP 10|11|DET 11|9|PRED 12|11|NJCT 13|14|DET 14|12|POBJ 15|5|CONJ
+	16|17|DET 17|15|COORD 18|17|CONJ 19|20|DET 20|18|COORD 21|5|PUNCT
+*INV:	(..) okay that's fine . 74766_87095
+%mor:	co|okay pro:dem|that~cop|be&3S adj|fine .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+@End

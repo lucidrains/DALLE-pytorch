@@ -1,0 +1,77 @@
+@UTF8
+@PID:	11312/t-00002399-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|58;|male|Control||Participant|28||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	318-0, audio
+*INV:	just the action and there's the picture . 0_2569
+%mor:	adv|just det:art|the n|action coord|and pro:exist|there~cop|be&3S
+	det:art|the n|picture .
+%gra:	1|3|JCT 2|3|DET 3|0|INCROOT 4|6|LINK 5|6|SUBJ 6|3|CMOD 7|8|DET 8|6|PRED
+	9|3|PUNCT
+*PAR:	(.) (w)ell the girl is reaching for a cookie that the boy is trying
+	to get for her while he's +//. 2569_11000
+%mor:	co|well det:art|the n|girl aux|be&3S part|reach-PRESP prep|for
+	det:art|a n|cookie pro:rel|that det:art|the n|boy aux|be&3S
+	part|try-PRESP inf|to v|get prep|for pro:obj|her conj|while
+	pro:sub|he~cop|be&3S +//.
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|8|CMOD 14|15|INF 15|13|COMP
+	16|15|JCT 17|16|POBJ 18|20|LINK 19|20|SUBJ 20|5|CJCT 21|5|PUNCT
+*PAR:	am I goin(g) too fast ? [+ exc] 11000_12220
+%mor:	aux|be&1S pro:sub|I n:gerund|go-PRESP post|too adv|fast ?
+%gra:	1|0|INCROOT 2|1|PRED 3|2|OBJ 4|3|PQ 5|3|JCT 6|1|PUNCT
+*INV:	hmhunh go ahead . 12220_13495
+%mor:	co|no v|go adv|ahead .
+%gra:	1|2|COM 2|0|ROOT 3|2|JCT 4|2|PUNCT
+*PAR:	+, while he's falling off a ladder [: stool] [* s:r] . 12601_15376
+%mor:	conj|while pro:sub|he~aux|be&3S part|fall-PRESP prep|off det:art|a
+	n|stool .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and the mother is washing dishes . 15376_18365
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	drying a plate . [+ gram] 18365_20793
+%mor:	part|dry-PRESP det:art|a n|plate .
+%gra:	1|0|INCROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*PAR:	while the sink is spilling over with water that is overflown from
+	the spigot that is still running . [+ gram] 20793_27000
+%mor:	conj|while det:art|the n|sink aux|be&3S part|spill-PRESP adv|over
+	prep|with n|water pro:rel|that aux|be&3S over#part|fly&PASTP
+	prep|from det:art|the n|spigot pro:rel|that aux|be&3S adv|still
+	part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|11|LINK 10|11|AUX 11|8|CMOD 12|11|JCT 13|14|DET 14|12|POBJ 15|18|LINK
+	16|18|AUX 17|18|JCT 18|14|CMOD 19|5|PUNCT
+*PAR:	and water is gushing out . 27000_28902
+%mor:	coord|and n|water aux|be&3S part|gush-PRESP adv|out .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	(..) and the girl is signaling to be quiet (.) not to let her
+	mother know that the boy is getting the cookie for her . 28902_49103
+%mor:	coord|and det:art|the n|girl aux|be&3S part|signal-PRESP inf|to
+	cop|be adj|quiet neg|not inf|to v|let&ZERO pro:obj|her n|mother
+	v|know comp|that det:art|the n|boy aux|be&3S part|get-PRESP
+	det:art|the n|cookie prep|for pro:obj|her .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|PRED
+	9|7|NEG 10|11|INF 11|7|XJCT 12|11|OBJ 13|14|SUBJ 14|11|COMP 15|19|LINK
+	16|17|DET 17|19|SUBJ 18|19|AUX 19|14|COMP 20|21|DET 21|19|OBJ 22|19|JCT
+	23|22|POBJ 24|5|PUNCT
+*PAR:	(..) and I did say that she's drying the dish with the towel .
+	[+ exc] 49103_60465
+%mor:	coord|and pro:sub|I mod|do&PAST v|say comp|that
+	pro:sub|she~aux|be&3S part|dry-PRESP det:art|the n|dish prep|with
+	det:art|the n|towel .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|COMP
+	9|10|DET 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	(..) and the water's splashing on the floor . 60465_65617
+%mor:	coord|and det:art|the n|water~aux|be&3S part|splash-PRESP prep|on
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*INV:	okay good . 65617_67734
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

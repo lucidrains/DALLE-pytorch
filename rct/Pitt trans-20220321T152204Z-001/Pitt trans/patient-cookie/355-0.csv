@@ -1,0 +1,74 @@
+@UTF8
+@PID:	11312/t-00002634-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|85;|female|ProbableAD||Participant|24||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	355-0, audio
+*INV:	www . 0_1200
+*INV:	picture okay ? 1200_3276
+%mor:	n|picture adj|okay ?
+%gra:	1|2|MOD 2|0|ROOT 3|2|PUNCT
+*PAR:	now wait a minute . [+ exc] 3379_4095
+%mor:	adv|now v|wait det:art|a n|minute .
+%gra:	1|2|JCT 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*PAR:	everything that's going on in the picture just by looking at it ?
+	[+ exc] 4095_7700
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in det:art|the n|picture adv|just prep|by n:gerund|look-PRESP
+	prep|at pro:per|it ?
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|10|JCT 10|4|JCT 11|10|POBJ 12|11|JCT 13|12|POBJ 14|1|PUNCT
+*INV:	mhm . 7700_8231
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	well, she's wiping dishes . 8231_10127
+%mor:	co|well cm|cm pro:sub|she~aux|be&3S part|wipe-PRESP n|dish-PL .
+%gra:	1|5|COM 2|1|LP 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and the boy is gettin(g) cookies out_of a jar . 10127_13784
+%mor:	coord|and det:art|the n|boy aux|be&3S part|get-PRESP n|cookie-PL
+	prep|out_of det:art|a n|jar .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	and he's on a stool . 13784_15247
+%mor:	coord|and pro:sub|he~cop|be&3S prep|on det:art|a n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and there's cups over here . 15247_18074
+%mor:	coord|and pro:exist|there~cop|be&3S v|cup-3S prep|over n|here .
+%gra:	1|3|LINK 2|3|SUBJ 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*PAR:	and the water's going on the floor . 18074_20203
+%mor:	coord|and det:art|the n|water~aux|be&3S part|go-PRESP prep|on
+	det:art|the n|floor .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and the housewife, the mother, is wiping the dishes . 20203_24500
+%mor:	coord|and det:art|the n|housewife cm|cm det:art|the n|mother cm|cm
+	aux|be&3S part|wipe-PRESP det:art|the n|dish-PL .
+%gra:	1|9|LINK 2|3|DET 3|9|SUBJ 4|3|LP 5|6|DET 6|3|APP 7|6|LP 8|9|AUX
+	9|0|ROOT 10|11|DET 11|9|OBJ 12|9|PUNCT
+*PAR:	and she's standing by the window . 24500_26724
+%mor:	coord|and pro:sub|she~aux|be&3S part|stand-PRESP prep|by
+	det:art|the n|window .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and &uh she's lettin(g) the water run out_of the faucet onto the
+	floor . 26724_31907
+%mor:	coord|and pro:sub|she~aux|be&3S part|let-PRESP det:art|the n|water
+	v|run prep|out_of det:art|the n|faucet prep|onto det:art|the n|floor
+	.
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|7|SUBJ 7|4|COMP 8|7|JCT
+	9|10|DET 10|8|POBJ 11|7|JCT 12|13|DET 13|11|POBJ 14|4|PUNCT
+*PAR:	and the [/] &k the ladder is fallin(g) over when he's gettin(g) the
+	cookies out . 31907_37836
+%mor:	coord|and det:art|the n|ladder aux|be&3S part|fall-PRESP adv|over
+	conj|when pro:sub|he~aux|be&3S part|get-PRESP det:art|the
+	n|cookie-PL adv|out .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|5|XJCT 11|12|DET 12|10|OBJ 13|10|JCT 14|5|PUNCT
+*PAR:	what else you want ? [+ exc] 37836_39799
+%mor:	pro:int|what post|else pro:per|you v|want ?
+%gra:	1|4|LINK 2|1|PQ 3|4|SUBJ 4|0|ROOT 5|4|PUNCT
+*INV:	that's good . 39799_40684
+%mor:	pro:dem|that~cop|be&3S adj|good .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+@End

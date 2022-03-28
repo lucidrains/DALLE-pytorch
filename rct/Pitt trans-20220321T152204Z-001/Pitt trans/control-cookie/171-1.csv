@@ -1,0 +1,45 @@
+@UTF8
+@PID:	11312/t-00002328-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|female|Control||Participant|30||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	171-1, audio
+*INV:	and there's the picture . 0_1932
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	well let's see . [+ exc] 1932_5673
+%mor:	co|well v|let~pro:obj|us v|see .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|COMP 5|2|PUNCT
+*PAR:	the boy is taking cookies out_of the cookie jar . 5673_8865
+%mor:	det:art|the n|boy aux|be&3S part|take-PRESP n|cookie-PL prep|out_of
+	det:art|the n|cookie n|jar .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|JCT 7|9|DET 8|9|MOD
+	9|6|POBJ 10|4|PUNCT
+*PAR:	and the little girl is laughing . 8865_10655
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|laugh-PRESP
+	.
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*PAR:	and the boy is falling off the stool . 10655_12699
+%mor:	coord|and det:art|the n|boy aux|be&3S part|fall-PRESP prep|off
+	det:art|the n|stool .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ
+	9|5|PUNCT
+*PAR:	and the mother's washing dishes . 12699_14273
+%mor:	coord|and det:art|the n|mother~aux|be&3S part|wash-PRESP n|dish-PL
+	.
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	and the water is running over . 14273_17371
+%mor:	coord|and det:art|the n|water aux|be&3S part|run-PRESP adv|over .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*PAR:	and (..) I don't know whether the wind is blowing or not &=laughs .
+	[+ exc] 17371_28218
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know comp|whether det:art|the
+	n|wind aux|be&3S part|blow-PRESP coord|or neg|not .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|10|LINK 7|8|DET 8|10|SUBJ
+	9|10|AUX 10|5|COMP 11|10|CONJ 12|11|COORD 13|5|PUNCT
+*INV:	okay . 28218_31703
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

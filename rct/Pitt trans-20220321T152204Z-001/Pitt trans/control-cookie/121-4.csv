@@ -1,0 +1,130 @@
+@UTF8
+@PID:	11312/t-00002277-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	121-4, audio
+*PAR:	alright . [+ exc] 0_444
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the &um little boy is on the stool which is tipping . 444_3601
+%mor:	det:art|the adj|little n|boy cop|be&3S prep|on det:art|the n|stool
+	pro:rel|which aux|be&3S part|tip-PRESP .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|10|LINK
+	9|10|AUX 10|7|CMOD 11|4|PUNCT
+*PAR:	and he has the cookie jar open . 3601_6908
+%mor:	coord|and pro:sub|he v|have&3S det:art|the n|cookie n|jar adj|open
+	.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|6|POSTMOD
+	8|3|PUNCT
+*PAR:	he (i)s [//] has his a hand on one cookie up in the jar and another
+	one &h with his left hand which he's &uh going to I believe hand to
+	his sister who's standing beside the &tips tippy stool . 6908_19891
+%mor:	pro:sub|he aux|have&3S det:poss|his det:art|a n|hand prep|on
+	det:num|one n|cookie adv|up prep|in det:art|the n|jar coord|and
+	qn|another pro:indef|one prep|with det:poss|his adj|left n|hand
+	pro:rel|which pro:sub|he~aux|be&3S part|go-PRESP inf|to pro:sub|I
+	v|believe n|hand prep|to det:poss|his n|sister pro:rel|who~aux|be&3S
+	part|stand-PRESP prep|beside det:art|the adj|tip&dv-Y n|stool .
+%gra:	1|5|SUBJ 2|5|AUX 3|5|DET 4|5|DET 5|0|INCROOT 6|5|NJCT 7|8|QUANT
+	8|6|POBJ 9|5|JCT 10|5|JCT 11|12|DET 12|10|POBJ 13|5|CONJ 14|15|QUANT
+	15|13|COORD 16|15|NJCT 17|19|DET 18|19|MOD 19|16|POBJ 20|23|LINK 21|23|SUBJ
+	22|23|AUX 23|19|CMOD 24|26|INF 25|26|SUBJ 26|23|COMP 27|26|OBJ 28|26|JCT
+	29|30|DET 30|28|POBJ 31|33|LINK 32|33|AUX 33|30|CMOD 34|33|JCT 35|37|DET
+	36|37|MOD 37|34|POBJ 38|5|PUNCT
+*PAR:	she has her [/] her finger up close to her mouth . 19891_23800
+%mor:	pro:sub|she aux|have&3S det:poss|her n|finger adv|up adj|close
+	prep|to det:poss|her n|mouth .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|DET 4|0|ROOT 5|4|NJCT 6|5|POBJ 7|6|JCT 8|9|DET
+	9|7|POBJ 10|4|PUNCT
+*PAR:	I think she's trying to say be [//] &care either be careful or [/]
+	or be quiet . 23800_28824
+%mor:	pro:sub|I v|think pro:sub|she~aux|be&3S part|try-PRESP inf|to v|say
+	adv|either cop|be adj|care&dn-FULL coord|or cop|be adj|quiet .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|AUX 5|2|COMP 6|7|INF 7|5|COMP 8|9|JCT
+	9|7|COMP 10|9|PRED 11|9|CONJ 12|11|COORD 13|12|PRED 14|2|PUNCT
+*PAR:	and [/] and she's reaching up for the cookie . 28824_31859
+%mor:	coord|and pro:sub|she~aux|be&3S part|reach-PRESP adv|up prep|for
+	det:art|the n|cookie .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	&uh the mother is standing with her back <to the> [//] to her son .
+	31859_36971
+%mor:	det:art|the n|mother aux|be&3S part|stand-PRESP prep|with
+	pro:obj|her adv|back prep|to det:poss|her n|son .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*PAR:	can't see him . [+ gram] 36971_38071
+%mor:	mod|can~neg|not v|see pro:obj|him .
+%gra:	1|3|AUX 2|1|NEG 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	and she's drying a dish but letting the water spill over in the
+	sink &um which is full of water and &sh [//] and washing the dishes
+	. 38071_48686
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|dish
+	conj|but n:gerund|let-PRESP det:art|the n|water v|spill adv|over
+	prep|in det:art|the n|sink pro:rel|which cop|be&3S adj|full prep|of
+	n|water coord|and coord|and part|wash-PRESP det:art|the n|dish-PL .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|LINK 8|11|JCT
+	9|10|DET 10|11|SUBJ 11|4|CJCT 12|11|JCT 13|11|JCT 14|15|DET 15|13|POBJ
+	16|17|LINK 17|11|COMP 18|17|PRED 19|18|JCT 20|19|POBJ 21|17|CONJ
+	22|21|COORD 23|22|COORD 24|25|DET 25|23|OBJ 26|4|PUNCT
+*PAR:	but the water's still running and it's making a puddle on the floor
+	. 48686_52075
+%mor:	conj|but det:art|the n|water~aux|be&3S adv|still part|run-PRESP
+	coord|and pro:per|it~aux|be&3S part|make-PRESP det:art|a n|puddle
+	prep|on det:art|the n|floor .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|10|LINK 8|10|SUBJ
+	9|10|AUX 10|6|CJCT 11|12|DET 12|10|OBJ 13|10|JCT 14|15|DET 15|13|POBJ
+	16|6|PUNCT
+*PAR:	and she's [//] her &f right foot is right in the puddle . 52075_55311
+%mor:	coord|and det:poss|her adj|right n|foot cop|be&3S adv|right prep|in
+	det:art|the n|puddle .
+%gra:	1|5|LINK 2|4|DET 3|4|MOD 4|5|SUBJ 5|0|ROOT 6|7|JCT 7|5|JCT 8|9|DET
+	9|7|POBJ 10|5|PUNCT
+*PAR:	she's &um wearing an apron . 55311_58083
+%mor:	pro:sub|she~aux|be&3S part|wear-PRESP det:art|a n|apron .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	<the window's> [//] &uh there are some dishes on the counter . 58083_64620
+%mor:	pro:exist|there cop|be&PRES qn|some n|dish-PL prep|on det:art|the
+	n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|2|PUNCT
+*PAR:	&um the window is open and &uh the curtains <are sort_of> [//] look
+	as if they might be blowing a little in the wind . 64620_78286
+%mor:	det:art|the n|window cop|be&3S adj|open coord|and det:art|the
+	n|curtain-PL v|look adv|as conj|if pro:sub|they mod|might aux|be
+	part|blow-PRESP det:art|a adj|little prep|in det:art|the n|wind .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|8|LINK 6|7|DET 7|8|SUBJ 8|3|CJCT
+	9|8|JCT 10|14|LINK 11|14|SUBJ 12|14|AUX 13|14|AUX 14|8|CJCT 15|16|DET
+	16|14|OBJ 17|16|JCT 18|19|DET 19|17|POBJ 20|3|PUNCT
+*PAR:	you can see the garage . 78286_79949
+%mor:	pro:per|you mod|can v|see det:art|the n|garage .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*PAR:	or no another part of the house . [+ gram] 79949_82309
+%mor:	coord|or co|no qn|another n|part prep|of det:art|the n|house .
+%gra:	1|4|LINK 2|4|COM 3|4|QUANT 4|0|INCROOT 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|4|PUNCT
+*PAR:	it has curtains in that window . 82309_84217
+%mor:	pro:per|it aux|have&3S n|curtain-PL prep|in det:dem|that n|window .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	&um the mother's mouth is a little bit open . 84217_88686
+%mor:	det:art|the adj|mother&dn-POSS n|mouth cop|be&3S det:art|a
+	adj|little n|bit adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|7|DET 6|7|MOD 7|4|PRED 8|7|POSTMOD
+	9|4|PUNCT
+*PAR:	she could be either singing or talking . 88686_91481
+%mor:	pro:sub|she mod|could cop|be adv|either part|sing-PRESP coord|or
+	part|talk-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|XJCT 6|5|CONJ 7|6|COORD 8|3|PUNCT
+*INV:	okay ? 91481_95545
+%mor:	co|okay ?
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	alright . [+ exc] 95545_95998
+%mor:	co|alright .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 95998_97132
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

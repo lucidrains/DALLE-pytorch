@@ -1,0 +1,192 @@
+@UTF8
+@PID:	11312/t-00002487-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|ProbableAD||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	076-2, audio
+*INV:	tell me all the action you see going on in the picture . 0_3259
+%mor:	v|tell pro:obj|me adv|all det:art|the n|action pro:per|you v|see
+	n:gerund|go-PRESP adv|on prep|in det:art|the n|picture .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|JCT 4|5|DET 5|1|OBJ 6|7|SUBJ 7|5|CMOD 8|7|OBJ
+	9|7|JCT 10|7|JCT 11|12|DET 12|10|POBJ 13|1|PUNCT
+*PAR:	oh my . [+ exc] 3259_4140
+%mor:	co|oh det:poss|my .
+%gra:	1|0|INCROOT 2|3|DET 3|1|PUNCT
+*PAR:	you mean how much or just &t the ones ? [+ exc] 4140_6133
+%mor:	pro:per|you v|mean pro:int|how adv|much coord|or adv|just
+	det:art|the pro:indef|one-PL ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|JCT 5|4|CONJ 6|8|JCT 7|8|DET 8|5|COORD
+	9|2|PUNCT
+*INV:	+< just tell me all the action . 5703_7232
+%mor:	adv|just v|tell pro:obj|me adv|all det:art|the n|action .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|6|JCT 5|6|DET 6|2|OBJ 7|2|PUNCT
+*INV:	tell me what's going on . 7232_8397
+%mor:	v|tell pro:obj|me pro:int|what~aux|be&3S part|go-PRESP adv|on .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|LINK 4|5|AUX 5|1|COMP 6|5|JCT 7|1|PUNCT
+*PAR:	+< oh . [+ exc] 8200_8700
+%mor:	co|oh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	there's [//] the sink is overflowing while she's wiping &uh &uh &k
+	&uh a plate and not looking &=laughs . 8700_15845
+%mor:	det:art|the n|sink aux|be&3S over#part|flow-PRESP conj|while
+	pro:sub|she~aux|be&3S part|wipe-PRESP det:art|a n|plate coord|and
+	neg|not part|look-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|8|LINK 6|8|SUBJ 7|8|AUX 8|4|CJCT
+	9|10|DET 10|8|OBJ 11|8|CONJ 12|13|NEG 13|11|COORD 14|4|PUNCT
+*INV:	mhm . 15845_16826
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	the little boy is hungry . 16826_18190
+%mor:	det:art|the adj|little n|boy cop|be&3S adj|hungry .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	he wants to get some cookies . 18190_19537
+%mor:	pro:sub|he v|want-3S inf|to v|get qn|some n|cookie-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|INF 4|2|COMP 5|6|QUANT 6|4|OBJ 7|2|PUNCT
+*PAR:	and he's standing on &uh &um a stool . 19537_22500
+%mor:	coord|and pro:sub|he~aux|be&3S part|stand-PRESP prep|on det:art|a
+	n|stool .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and it's tipping over . 22500_24157
+%mor:	coord|and pro:per|it~aux|be&3S part|tip-PRESP adv|over .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*PAR:	and I don't know whether he's gonna bring the cookie jar with him
+	or what &=laughs . 24157_28074
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know comp|whether
+	pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|bring det:art|the
+	n|cookie n|jar prep|with pro:obj|him coord|or pro:int|what .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|COMP 10|11|INF 11|9|COMP 12|14|DET 13|14|MOD 14|11|OBJ 15|11|JCT
+	16|15|POBJ 17|11|CONJ 18|17|COORD 19|5|PUNCT
+*PAR:	and the little girl is &um &uh holding up her hand wanting some . 28074_34626
+%mor:	coord|and det:art|the adj|little n|girl aux|be&3S part|hold-PRESP
+	prep|up det:poss|her n|hand part|want-PRESP qn|some .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|6|XJCT 11|10|OBJ 12|6|PUNCT
+*PAR:	and he's gonna give to him [: her] [* s:r] . 34626_35800
+%mor:	coord|and pro:sub|he~aux|be&3S part|go-PRESP~inf|to v|give prep|to
+	pro:obj|her .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	but &uh I don't know if she has a finger to her mouth but +... 35800_39300
+%mor:	conj|but pro:sub|I mod|do~neg|not v|know comp|if pro:sub|she
+	v|have&3S det:art|a n|finger prep|to det:poss|her n|mouth conj|but
+	+...
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|8|LINK 7|8|SUBJ 8|5|COMP
+	9|10|DET 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|5|OM 15|5|PUNCT
+*PAR:	and she knows that he's gonna be tipping over it looks like to me .
+	39300_42492
+%mor:	coord|and pro:sub|she v|know-3S comp|that pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to aux|be part|tip-PRESP adv|over pro:per|it
+	v|look-3S co|like prep|to pro:obj|me .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|COMP 8|10|INF
+	9|10|AUX 10|13|XJCT 11|10|JCT 12|13|SUBJ 13|7|COMP 14|13|COMP 15|14|JCT
+	16|15|POBJ 17|3|PUNCT
+*INV:	uhhuh . 42492_43573
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	or maybe she's just not noticing it and making her mouth get ready
+	for this good cookie . 43573_49881
+%mor:	coord|or adv|maybe pro:sub|she~aux|be&3S adv|just neg|not
+	part|notice-PRESP pro:per|it coord|and part|make-PRESP det:poss|her
+	n|mouth v|get v|ready prep|for det:dem|this adj|good n|cookie .
+%gra:	1|7|LINK 2|7|JCT 3|7|SUBJ 4|7|AUX 5|6|JCT 6|4|NEG 7|0|ROOT 8|7|OBJ
+	9|7|CONJ 10|9|COORD 11|12|DET 12|13|SUBJ 13|10|COMP 14|13|COMP 15|14|JCT
+	16|18|DET 17|18|MOD 18|15|POBJ 19|7|PUNCT
+*PAR:	I don't know which way it is for the little girl . [+ exc] 49881_51977
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|which n|way pro:per|it
+	cop|be&3S prep|for det:art|the adj|little n|girl .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|8|LINK 6|8|JCT 7|8|SUBJ 8|4|COMP
+	9|8|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|4|PUNCT
+*PAR:	(be)cause she's smiling . [+ gram] 51977_53333
+%mor:	conj|because pro:sub|she~aux|be&3S part|smile-PRESP .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	I think if she saw him falling over she'd do something to [/] to
+	help him so he wouldn't get hurt . 53333_58673
+%mor:	pro:sub|I v|think comp|if pro:sub|she v|see&PAST pro:obj|him
+	part|fall-PRESP adv|over pro:sub|she~mod|genmod v|do
+	pro:indef|something inf|to v|help pro:obj|him conj|so pro:sub|he
+	mod|will&COND~neg|not aux|get part|hurt&PASTP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|LINK 4|5|SUBJ 5|2|COMP 6|5|OBJ 7|11|XJCT 8|7|JCT
+	9|11|SUBJ 10|11|AUX 11|5|COMP 12|11|OBJ 13|14|INF 14|12|COMP 15|14|OBJ
+	16|21|LINK 17|21|SUBJ 18|21|AUX 19|18|NEG 20|21|AUX 21|2|CJCT 22|2|PUNCT
+*PAR:	I_mean she'd grab it or something . 58673_60374
+%mor:	co|I_mean pro:sub|she~mod|genmod v|grab pro:per|it coord|or
+	pro:indef|something .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|CONJ 7|6|COORD 8|4|PUNCT
+*INV:	+< mhm . 60000_60462
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	but she's just looking up at him you_know lookin(g) up at those
+	good cookies and waitin(g) for them to come to her hand . 60462_66129
+%mor:	conj|but pro:sub|she~aux|be&3S adv|just part|look-PRESP adv|up
+	prep|at pro:obj|him co|you_know part|look-PRESP adv|up prep|at
+	det:dem|those adj|good n|cookie-PL coord|and part|wait-PRESP
+	prep|for pro:obj|them inf|to v|come prep|to det:poss|her n|hand .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|5|JCT 5|0|ROOT 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|5|COM 10|5|XJCT 11|10|JCT 12|10|JCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|10|CONJ 17|16|COORD 18|17|JCT 19|18|POBJ 20|21|INF 21|17|XJCT 22|21|JCT
+	23|24|DET 24|22|POBJ 25|5|PUNCT
+*PAR:	but this little finger in her mouth is +... 66129_69579
+%mor:	conj|but det:dem|this adj|little n|finger prep|in det:poss|her
+	n|mouth cop|be&3S +...
+%gra:	1|8|LINK 2|4|DET 3|4|MOD 4|8|SUBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|8|PUNCT
+*PAR:	&uh I'm not quite sure what it means . [+ exc] 69579_71718
+%mor:	pro:sub|I~cop|be&1S neg|not adv|quite adj|sure pro:int|what
+	pro:per|it v|mean-3S .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|NEG 4|5|JCT 5|2|PRED 6|8|LINK 7|8|SUBJ 8|5|CMOD
+	9|2|PUNCT
+*PAR:	I think it means that it's gonna be good &=laughs . 71718_73913
+%mor:	pro:sub|I v|think pro:per|it v|mean-3S adv|that
+	pro:per|it~aux|be&3S part|go-PRESP~inf|to cop|be adj|good .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|4|JCT 6|8|SUBJ 7|8|AUX 8|4|XJCT
+	9|10|INF 10|8|COMP 11|10|PRED 12|2|PUNCT
+*INV:	+< mhm probably . 73323_74845
+%mor:	co|mhm=yes adv|probable&dadj-LY .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	yeah . [+ exc] 74845_75450
+%mor:	co|yeah .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	okay . 75450_76557
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and &uh I don't know whether the mother knows this is wet yet
+	&=laughs . 76557_80140
+%mor:	coord|and pro:sub|I mod|do~neg|not v|know comp|whether det:art|the
+	n|mother v|know-3S pro:dem|this cop|be&3S adj|wet adv|yet .
+%gra:	1|5|LINK 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|9|LINK 7|8|DET 8|9|SUBJ
+	9|5|COMP 10|11|SUBJ 11|5|COMP 12|11|PRED 13|11|JCT 14|5|PUNCT
+*INV:	she's gonna find out isn't she ? 80140_82195
+%mor:	pro:sub|she~aux|be&3S part|go-PRESP~inf|to v|find adv|out
+	cop|be&3S~neg|not pro:sub|she ?
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|INF 5|3|COMP 6|7|JCT 7|5|COMP 8|7|NEG
+	9|7|PRED 10|3|PUNCT
+*PAR:	+< she's thinking something else I think . 81700_83446
+%mor:	pro:sub|she~aux|be&3S part|think-PRESP pro:indef|something
+	post|else pro:sub|I v|think .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|PQ 6|7|SUBJ 7|3|CJCT 8|3|PUNCT
+*PAR:	I don't know what it is . [+ exc] 83446_84960
+%mor:	pro:sub|I mod|do~neg|not v|know pro:int|what pro:per|it cop|be&3S .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|COMP 8|4|PUNCT
+*PAR:	+" <what are> [//] what's [//] what are we going to have for lunch
+	? 84960_87700
+%mor:	pro:int|what cop|be&PRES pro:sub|we part|go-PRESP inf|to v|have
+	prep|for n|lunch ?
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|XMOD 5|6|INF 6|4|COMP 7|6|JCT 8|7|POBJ
+	9|2|PUNCT
+*PAR:	or [/] &=laughs or she's got something in her mind (be)cause
+	certainly she'd see this if she didn't hear it . 87700_88133
+%mor:	coord|or pro:sub|she~aux|be&3S part|get&PASTP pro:indef|something
+	prep|in det:poss|her n|mind conj|because adv|certain&dadj-LY
+	pro:sub|she~mod|genmod v|see det:dem|this conj|if pro:sub|she
+	mod|do&PAST~neg|not v|hear pro:per|it .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|13|LINK 10|13|JCT 11|13|SUBJ 12|13|AUX 13|4|CJCT 14|15|DET 15|19|LINK
+	16|19|SUBJ 17|19|AUX 18|17|NEG 19|13|COMP 20|19|OBJ 21|4|PUNCT
+*INV:	okay . 93350_94765
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< &=laughs . [+ exc] 93939_95065
+@End

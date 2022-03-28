@@ -1,0 +1,83 @@
+@UTF8
+@PID:	11312/t-00002674-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|78;|female|ProbableAD||Participant|12||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	515-1, audio
+*INV:	I want you to take a look at that picture . 0_3104
+%mor:	pro:sub|I v|want pro:per|you inf|to v|take det:art|a v|look prep|at
+	det:dem|that n|picture .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|7|DET 7|5|OBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|2|PUNCT
+*PAR:	ah oh boy &=laughs . [+ exc] 3104_6000
+%mor:	co|ah co|oh n|boy .
+%gra:	1|3|COM 2|3|COM 3|0|INCROOT 4|3|PUNCT
+*INV:	I want you to tell me everything you see happening there . 6000_8778
+%mor:	pro:sub|I v|want pro:per|you inf|to v|tell pro:obj|me
+	pro:indef|everything pro:per|you v|see n:gerund|happen-PRESP
+	adv|there .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|INF 5|2|COMP 6|5|OBJ 7|5|OBJ 8|9|SUBJ
+	9|5|COMP 10|9|OBJ 11|9|JCT 12|2|PUNCT
+*PAR:	+< &mm . [+ exc] 7000_7778
+*PAR:	mhm &=laughs . [+ exc] 8778_9400
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	everything that's going on in that picture . 9400_11800
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|go-PRESP adv|on
+	prep|in det:dem|that n|picture .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|1|PUNCT
+*PAR:	+< oh the kids are tryin(g) to get the cookies . 10500_13592
+%mor:	co|oh det:art|the n|kid-PL aux|be&PRES part|try-PRESP inf|to v|get
+	det:art|the n|cookie-PL .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|9|DET
+	9|7|OBJ 10|5|PUNCT
+*PAR:	and she's laughing but holdin(g) her hand up to him . 13592_17283
+%mor:	coord|and pro:sub|she~aux|be&3S part|laugh-PRESP conj|but
+	n:gerund|hold-PRESP det:poss|her n|hand adv|up prep|to pro:obj|him .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|CONJ 6|5|COORD 7|8|DET 8|6|OBJ
+	9|6|JCT 10|6|JCT 11|10|POBJ 12|4|PUNCT
+*PAR:	and the [//] they know he's gonna fall off the chair [: stool]
+	[* s:r] &=laughs . 17283_21291
+%mor:	coord|and pro:sub|they v|know pro:sub|he~aux|be&3S
+	part|go-PRESP~inf|to v|fall prep|off det:art|the n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|SUBJ 5|6|AUX 6|3|COMP 7|8|INF 8|6|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|3|PUNCT
+*PAR:	and their mother's doing the dishes and <not doing> [//] not being
+	careful . 21291_26444
+%mor:	coord|and det:poss|their n|mother~aux|be&3S part|do-PRESP
+	det:art|the n|dish-PL coord|and neg|not part|be-PRESP co|careful .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|CONJ
+	9|10|NEG 10|8|COORD 11|10|PRED 12|5|PUNCT
+*PAR:	she didn't turn the water off and the water's all goin(g) to the
+	floor instead of gettin(g) the dishes all dry . 26444_33103
+%mor:	pro:sub|she mod|do&PAST~neg|not v|turn det:art|the n|water adv|off
+	coord|and det:art|the adj|water&dn-POSS post|all part|go-PRESP
+	prep|to det:art|the n|floor adv|instead prep|of n:gerund|get-PRESP
+	det:art|the n|dish-PL adv|all adj|dry .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|CONJ
+	9|10|DET 10|8|COORD 11|10|PQ 12|10|XMOD 13|12|JCT 14|15|DET 15|13|POBJ
+	16|12|JCT 17|16|JCT 18|17|POBJ 19|20|DET 20|17|POBJ 21|22|JCT 22|20|POSTMOD
+	23|4|PUNCT
+*PAR:	&hm that's all I can +/. [+ exc] 33103_35314
+%mor:	pro:dem|that~cop|be&3S pro:indef|all pro:sub|I mod|can +/.
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|SUBJ 5|2|PRED 6|2|PUNCT
+*INV:	+< okay . 35000_35600
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	+< and tup [//] two cups and a plate . [+ gram] 35000_37013
+%mor:	coord|and det:num|two n|cup-PL coord|and det:art|a n|plate .
+%gra:	1|3|LINK 2|3|QUANT 3|0|INCROOT 4|3|CONJ 5|6|DET 6|4|COORD 7|3|PUNCT
+*INV:	+< great . 36156_36800
+%mor:	adj|great .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	that's it . 37013_37927
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*INV:	thanks . 37927_38560
+%mor:	co|thanks .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&mm . [+ exc] 38560_39258
+@End

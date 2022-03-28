@@ -1,0 +1,46 @@
+@UTF8
+@PID:	11312/t-00002396-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|Control||Participant|27||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	302-0, audio
+@Comment:	overlapping audio
+*INV:	just tell me all of the action . 0_1963
+%mor:	adv|just v|tell pro:obj|me post|all prep|of det:art|the n|action .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|COMP 5|4|JCT 6|7|DET 7|5|POBJ 8|2|PUNCT
+*PAR:	little girl with her finger to her lips . [+ gram] 1963_7624
+%mor:	adj|little n|girl prep|with det:poss|her n|finger prep|to
+	det:poss|her n|lip-PL .
+%gra:	1|2|MOD 2|0|INCROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|5|NJCT 7|8|DET 8|6|POBJ
+	9|2|PUNCT
+*PAR:	the boy on the stool . [+ gram] 7624_11845
+%mor:	det:art|the n|boy prep|on det:art|the n|stool .
+%gra:	1|2|DET 2|0|INCROOT 3|2|NJCT 4|5|DET 5|3|POBJ 6|2|PUNCT
+*PAR:	stool tipping over . [+ gram] 11845_15783
+%mor:	n|stool part|tip-PRESP adv|over .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|1|PUNCT
+*PAR:	getting cookies out_of the cookie jar . [+ gram] 15783_21012
+%mor:	part|get-PRESP n|cookie-PL prep|out_of det:art|the n|cookie n|jar .
+%gra:	1|0|INCROOT 2|1|OBJ 3|1|JCT 4|6|DET 5|6|MOD 6|3|POBJ 7|1|PUNCT
+*PAR:	&uh mother washing dishes . [+ gram] 21012_25898
+%mor:	n|mother part|wash-PRESP n|dish-PL .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|OBJ 4|1|PUNCT
+*PAR:	water running . [+ gram] 25898_28871
+%mor:	n|water part|run-PRESP .
+%gra:	1|0|INCROOT 2|1|XMOD 3|1|PUNCT
+*PAR:	sink overflowing . [+ gram] 28871_32125
+%mor:	n|sink over#part|flow-PRESP .
+%gra:	1|2|MOD 2|0|ROOT 3|2|PUNCT
+*PAR:	xxx those curtains are blowing or not . 32125_38318
+%mor:	det:dem|those n|curtain-PL aux|be&PRES part|blow-PRESP coord|or
+	neg|not .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|CONJ 6|5|COORD 7|4|PUNCT
+*PAR:	(..) that's about it . [+ exc] 38318_47485
+%mor:	pro:dem|that~cop|be&3S adv|about pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*INV:	okay good . 47485_48372
+%mor:	co|okay adj|good .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+@End

@@ -1,0 +1,91 @@
+@UTF8
+@PID:	11312/t-00002442-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|67;|male|ProbableAD||Participant|21||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	029-0, audio
+*INV:	there it is . 0_1791
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	there's a little girl (..) reaching for the cookie jar an(d) she
+	can't reach it apparently . 1791_15603
+%mor:	pro:exist|there~cop|be&3S det:art|a adj|little n|girl
+	part|reach-PRESP prep|for det:art|the n|cookie n|jar coord|and
+	pro:sub|she mod|can~neg|not v|reach pro:per|it adv|apparent&dadj-LY
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|XMOD 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|15|LINK 12|15|SUBJ 13|15|AUX 14|13|NEG 15|2|CJCT
+	16|15|OBJ 17|15|JCT 18|2|PUNCT
+*PAR:	and the [/] the young man is helping her . 15603_17752
+%mor:	coord|and det:art|the adj|young n|man aux|be&3S part|help-PRESP
+	pro:obj|her .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+*PAR:	he's on a stool and he's reaching for the cookie jar .17752_20677
+%mor:	pro:sub|he~cop|be&3S prep|on det:art|a n|stool coord|and
+	pro:sub|he~aux|be&3S part|reach-PRESP prep|for det:art|the n|cookie
+	n|jar .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|2|CJCT 10|9|JCT 11|13|DET 12|13|MOD 13|10|POBJ 14|2|PUNCT
+*PAR:	an(d) [/] &uh (.) an(d) the lady is drying dishes . 20677_28595
+%mor:	coord|and det:art|the n|lady aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*PAR:	an(d) the water is pouring outta [: out of] the sink for some
+	reason . 28595_35318
+%mor:	coord|and det:art|the n|water aux|be&3S part|pour-PRESP adv|out
+	prep|of det:art|the n|sink prep|for qn|some n|reason .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|5|JCT 11|12|QUANT 12|10|POBJ 13|5|PUNCT
+*PAR:	there's &uh &m some plates <on the> [/] on the counter . 35111_41800
+%mor:	pro:exist|there~cop|be&3S qn|some n|plate-PL prep|on det:art|the
+	n|counter .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|NJCT 6|7|DET 7|5|POBJ
+	8|2|PUNCT
+*PAR:	an(d) she's drying a dish . 41800_44823
+%mor:	coord|and pro:sub|she~aux|be&3S part|dry-PRESP det:art|a n|dish .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*PAR:	I may (h)ave said that . [+ exc] 44823_46286
+%mor:	pro:sub|I mod|may aux|have part|say&PASTP comp|that .
+%gra:	1|4|SUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*PAR:	an(d) the young man is going to fall off the stool . 46286_52550
+%mor:	coord|and det:art|the adj|young n|man aux|be&3S part|go-PRESP
+	inf|to v|fall prep|off det:art|the n|stool .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP
+	9|8|JCT 10|11|DET 11|9|POBJ 12|6|PUNCT
+*PAR:	I guess maybe I said that too . [+ exc] 52550_54038
+%mor:	pro:sub|I v|guess adv|maybe pro:sub|I v|say&PAST comp|that adv|too
+	.
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|5|SUBJ 5|2|COMP 6|5|OBJ 7|6|JCT 8|2|PUNCT
+*PAR:	and they're reachin(g) for the cookie jar . 54038_57464
+%mor:	coord|and pro:sub|they~aux|be&PRES part|reach-PRESP prep|for
+	det:art|the n|cookie n|jar .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|4|PUNCT
+*PAR:	<and the> [/] &s an(d) the sink is overflowing . 57464_65908
+%mor:	coord|and det:art|the n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*PAR:	I guess I might (h)ave said that too . [+ exc] 65908_67371
+%mor:	pro:sub|I v|guess pro:sub|I mod|might aux|have part|say&PASTP
+	comp|that adv|too .
+%gra:	1|2|SUBJ 2|0|ROOT 3|6|SUBJ 4|6|AUX 5|6|AUX 6|2|COMP 7|6|OBJ 8|7|JCT
+	9|2|PUNCT
+*PAR:	an(d) I guess that's about &uh all the salient things of it +/.
+	[+ exc] 67371_73709
+%mor:	coord|and pro:sub|I v|guess comp|that~aux|be&3S adv|about qn|all
+	det:art|the adj|salient n|thing-PL prep|of pro:per|it +/.
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|INCROOT 6|7|JCT 7|10|QUANT
+	8|10|DET 9|10|MOD 10|5|PRED 11|10|NJCT 12|11|POBJ 13|5|PUNCT
+*INV:	that's it . 73709_74209
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	+, I can see . [+ exc] 74184_75344
+%mor:	pro:sub|I mod|can v|see .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*INV:	okay . 74209_75440
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	thank you . 75440_76028
+%mor:	v|thank pro:per|you .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@End

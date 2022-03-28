@@ -1,0 +1,129 @@
+@UTF8
+@PID:	11312/t-00002585-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|75;|female|ProbableAD||Participant|22||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	257-0, audio
+*INV:	so we can hear you because I usually can't get it all written down
+	. 0_4032
+%mor:	co|so pro:sub|we mod|can v|hear pro:per|you conj|because pro:sub|I
+	adv|usual&dadj-LY mod|can~neg|not v|get pro:per|it adv|all
+	part|write&PASTP adv|down .
+%gra:	1|4|COM 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|11|LINK 7|11|SUBJ 8|11|JCT
+	9|11|AUX 10|9|NEG 11|4|CJCT 12|11|OBJ 13|14|JCT 14|11|COMP 15|14|JCT
+	16|4|PUNCT
+*PAR:	okay uhhuh . 4032_5558
+%mor:	co|okay co|uhhuh .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*INV:	+< so if you tell me what you see . 4133_6046
+%mor:	adv|so conj|if pro:per|you v|tell pro:obj|me pro:int|what
+	pro:per|you v|see .
+%gra:	1|2|JCT 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|8|LINK 7|8|SUBJ 8|4|COMP
+	9|4|PUNCT
+*PAR:	well the boy's up on the ladder [: stool] [* s:r] . 6046_8423
+%mor:	co|well det:art|the n|boy~cop|be&3S adv|up prep|on det:art|the
+	n|stool .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	oh the stool gonna fall with the cookie jar and the lid tɪpəld@u
+	[: toppled] [* p:n] over . [+ gram] 8423_12466
+%mor:	co|oh det:art|the n|stool part|go-PRESP~inf|to v|fall prep|with
+	det:art|the n|cookie n|jar coord|and det:art|the n|lid v|topple-PAST
+	adv|over .
+%gra:	1|4|COM 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|INF 6|4|COMP 7|6|JCT 8|10|DET
+	9|10|MOD 10|7|POBJ 11|14|LINK 12|13|DET 13|14|SUBJ 14|4|CJCT 15|14|JCT
+	16|4|PUNCT
+*PAR:	and &uh what about the young lady ? [+ exc] 12466_15800
+%mor:	coord|and pro:int|what adv|about det:art|the adj|young n|lady ?
+%gra:	1|6|LINK 2|6|MOD 3|6|JCT 4|6|DET 5|6|MOD 6|0|INCROOT 7|6|PUNCT
+*PAR:	the little lady, she's helpin(g) him get the cookies I guess . 15800_19846
+%mor:	det:art|the adj|little n|lady cm|cm pro:sub|she~aux|be&3S
+	part|help-PRESP pro:obj|him v|get det:art|the n|cookie-PL pro:sub|I
+	v|guess .
+%gra:	1|3|DET 2|3|MOD 3|7|JCT 4|3|LP 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|9|SUBJ
+	9|7|COMP 10|11|DET 11|9|OBJ 12|13|SUBJ 13|7|CJCT 14|7|PUNCT
+*PAR:	the momma she's doin(g) the dishes and <let the> [//] &s what did
+	she let the &uh spigot run &=laughs over for on the floor all over
+	the place . 19846_27999
+%mor:	det:art|the n|momma pro:sub|she~aux|be&3S part|do-PRESP det:art|the
+	n|dish-PL coord|and pro:int|what mod|do&PAST pro:sub|she v|let&ZERO
+	det:art|the n|spigot v|run adv|over prep|for adv|on det:art|the
+	n|floor adv|all prep|over det:art|the n|place .
+%gra:	1|2|DET 2|0|INCROOT 3|5|SUBJ 4|5|AUX 5|2|CMOD 6|7|DET 7|5|OBJ 8|12|LINK
+	9|12|SUBJ 10|12|AUX 11|12|SUBJ 12|2|CMOD 13|14|DET 14|15|SUBJ
+	15|12|COMP 16|15|JCT 17|15|JCT 18|17|JCT 19|20|DET 20|18|POBJ 21|22|JCT
+	22|20|NJCT 23|24|DET 24|22|POBJ 25|2|PUNCT
+*PAR:	and [/] &uh and there's dishes there, plates and cups and saucers .
+	27999_33851
+%mor:	coord|and pro:exist|there~cop|be&3S v|dish-3S adv|there cm|cm
+	n|plate-PL coord|and n|cup-PL coord|and n|saucer-PL .
+%gra:	1|3|LINK 2|3|SUBJ 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|4|LP 7|4|OBJ 8|7|CONJ
+	9|8|COORD 10|9|CONJ 11|10|COORD 12|4|PUNCT
+*PAR:	and what else ? [+ exc ] 33851_35880
+%mor:	coord|and pro:int|what post|else ?
+%gra:	1|0|INCROOT 2|1|COORD 3|2|PQ 4|1|PUNCT
+*PAR:	just what's there hon(ey) . [+ exc] 35880_37511
+%mor:	adv|just pro:int|what~cop|be&3S adv|there n|honey .
+%gra:	1|2|JCT 2|3|SUBJ 3|0|ROOT 4|3|JCT 5|3|PRED 6|3|PUNCT
+*PAR:	it's a nice yard out there and curtains in the window it looks like
+	. 37511_40871
+%mor:	pro:per|it~cop|be&3S det:art|a adj|nice n|yard prep|out n|there
+	coord|and n|curtain-PL prep|in det:art|the n|window pro:per|it
+	v|look-3S conj|like .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|5|NJCT 7|6|POBJ 8|5|CONJ
+	9|8|COORD 10|9|NJCT 11|12|DET 12|10|POBJ 13|14|SUBJ 14|5|CMOD 15|14|COMP
+	16|2|PUNCT
+*PAR:	three pieces of (.) to eat on . [+ gram] 40871_45793
+%mor:	det:num|three n|piece-PL prep|of inf|to v|eat adv|on .
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|NJCT 4|5|INF 5|3|POBJ 6|5|JCT 7|2|PUNCT
+*INV:	pardon me ? 45793_47906
+%mor:	v|pardon pro:obj|me ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*PAR:	I said three pieces of (.) &=laughs to eat on food platter and
+	cups, saucer . [+ gram] [+ exc] 47906_55051
+%mor:	pro:sub|I v|say&PAST det:num|three n|piece-PL prep|of inf|to v|eat
+	prep|on n|food n|platter coord|and n|cup-PL cm|cm n|saucer .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|OBJ 5|4|NJCT 6|7|INF 7|5|POBJ 8|7|JCT
+	9|10|MOD 10|8|POBJ 11|7|CONJ 12|14|MOD 13|12|LP 14|11|COORD 15|2|PUNCT
+*PAR:	I guess that's for the under sink to put things . [+ cir] 55051_59440
+%mor:	pro:sub|I n|guess pro:rel|that~cop|be&3S prep|for det:art|the
+	adv|under n|sink inf|to v|put&ZERO n|thing-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|LINK 4|2|CMOD 5|4|JCT 6|8|DET 7|8|JCT 8|5|POBJ
+	9|10|INF 10|8|XMOD 11|10|OBJ 12|2|PUNCT
+*PAR:	&hm (.) not much interest <in the> [/] in the housekeeping &=laughs
+	. [+ gram] 59440_66023
+%mor:	neg|not qn|much n|interest prep|in det:art|the n|+n|house+n|keeping
+	.
+%gra:	1|2|NEG 2|3|QUANT 3|0|INCROOT 4|3|NJCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	&=laughs it's about all . [+ exc] 66023_67020
+%mor:	pro:per|it~cop|be&3S adv|about adv|all .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+*PAR:	that's the curtains . 67020_68567
+%mor:	pro:dem|that~cop|be&3S det:art|the n|curtain-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+*INV:	+< see anything else ? 67555_68902
+%mor:	v|see pro:indef|anything post|else ?
+%gra:	1|0|ROOT 2|1|OBJ 3|2|PQ 4|1|PUNCT
+*PAR:	the ones are nice, sunny . [+ es] 68902_70931
+%mor:	det:art|the det:num|one-PL cop|be&PRES adj|nice cm|cm adj|sun&dn-Y
+	.
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|LP 6|3|PRED 7|3|PUNCT
+*PAR:	there's one spill the water in there . [+ gram] 70931_74221
+%mor:	pro:exist|there~cop|be&3S pro:indef|one v|spill det:art|the n|water
+	prep|in n|there .
+%gra:	1|2|SUBJ 2|4|LINK 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|7|POBJ
+	9|4|PUNCT
+*PAR:	xxx . [+ exc ] 74221_76966
+*PAR:	guess [//] wonder if he <got the> [//] &cook got a cookie &=laughs
+	. [+ gram] 76966_80900
+%mor:	v|wonder comp|if pro:sub|he v|get&PAST det:art|a n|cookie .
+%gra:	1|0|ROOT 2|4|LINK 3|4|SUBJ 4|1|COMP 5|6|DET 6|4|OBJ 7|1|PUNCT
+*INV:	&=laughs is that it ? 80900_82189
+%mor:	cop|be&3S comp|that pro:per|it ?
+%gra:	1|0|ROOT 2|1|PRED 3|2|OBJ 4|1|PUNCT
+*PAR:	uhhuh . [+ exc ] 82189_83000
+%mor:	co|uhhuh .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

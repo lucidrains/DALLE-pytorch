@@ -1,0 +1,89 @@
+@UTF8
+@PID:	11312/t-00002215-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||male|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	045-2, audio
+*PAR:	what's going on ? [+ exc] 0_6300
+%mor:	pro:int|what~aux|be&3S part|go-PRESP adv|on ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|PUNCT
+*PAR:	okay . [+ exc] 6300_7497
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	&uh mother's &uh drying dishes . 7497_10772
+%mor:	n|mother~aux|be&3S part|dry-PRESP n|dish-PL .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*PAR:	sink is overflowing . [+ gram] 10772_12670
+%mor:	n|sink aux|be&3S over#part|flow-PRESP .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	son is &uh falling off a stool . [+ gram] 12670_16546
+%mor:	n|son aux|be&3S part|fall-PRESP prep|off det:art|a n|stool .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	son is &uh raiding the cookie jar . [+ gram] 16546_20935
+%mor:	n|son aux|be&3S part|raid-PRESP det:art|the n|cookie n|jar .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|PUNCT
+*PAR:	&uh sister is &uh laughing at her brother . [+ gram] 20935_26055
+%mor:	n|sister aux|be&3S part|laugh-PRESP prep|at det:poss|her n|brother
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	and she's reaching for a cookie . 26055_28615
+%mor:	coord|and pro:sub|she~aux|be&3S part|reach-PRESP prep|for det:art|a
+	n|cookie .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|7|DET 7|5|POBJ 8|4|PUNCT
+*PAR:	and &uh the window is open . 28615_34201
+%mor:	coord|and det:art|the n|window cop|be&3S adj|open .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	&uh <the cup> [//] two cups and &uh a dish on the counter top .
+	[+ gram] 34201_39609
+%mor:	det:num|two n|cup-PL coord|and det:art|a n|dish prep|on det:art|the
+	n|counter n|top .
+%gra:	1|2|QUANT 2|0|INCROOT 3|2|CONJ 4|5|DET 5|3|COORD 6|5|NJCT 7|9|DET
+	8|9|MOD 9|6|POBJ 10|2|PUNCT
+*PAR:	and <the picture I_mean> [//] the window <has two> [//] has a pair
+	of drapes or curtains . 39609_51378
+%mor:	coord|and det:art|the n|window v|have&3S det:art|a n|pair prep|of
+	v|drape-3S coord|or n|curtain-PL .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|6|NJCT 8|7|POBJ
+	9|8|CONJ 10|9|COORD 11|4|PUNCT
+*PAR:	single basin sink . [+ gram] 51378_58549
+%mor:	n|single n|basin n|sink .
+%gra:	1|3|MOD 2|3|MOD 3|0|INCROOT 4|3|PUNCT
+*PAR:	&uh there's [/] &uh (.) there's a tree on the outside view of the
+	kitchen . 58549_72324
+%mor:	pro:exist|there~cop|be&3S det:art|a n|tree prep|on det:art|the
+	adj|outside n|view prep|of det:art|the n|kitchen .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|NJCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|2|PUNCT
+*PAR:	and the l@l section of the house appears to be outside the view and
+	there's a pathway <between them> [//] between the two . 72324_85957
+%mor:	coord|and det:art|the n:let|l n|section prep|of det:art|the n|house
+	v|appear-3S inf|to cop|be prep|outside det:art|the n|view coord|and
+	pro:exist|there~cop|be&3S det:art|a n|+n|path+n|way prep|between
+	det:art|the det:num|two .
+%gra:	1|8|LINK 2|4|DET 3|4|MOD 4|8|SUBJ 5|4|NJCT 6|7|DET 7|5|POBJ 8|0|ROOT
+	9|10|INF 10|8|COMP 11|10|JCT 12|13|DET 13|11|POBJ 14|16|LINK 15|16|SUBJ
+	16|8|CJCT 17|18|DET 18|16|PRED 19|18|NJCT 20|21|DET 21|19|POBJ 22|8|PUNCT
+*PAR:	there are hedges also, the tree side . 85957_95592
+%mor:	pro:exist|there cop|be&PRES n|hedge-PL adv|also cm|cm det:art|the
+	n|tree n|side .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|JCT 5|2|LP 6|8|DET 7|8|MOD 8|2|PRED
+	9|2|PUNCT
+*PAR:	that's it . [+ exc] 95592_97571
+%mor:	pro:dem|that~cop|be&3S pro:per|it .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+*PAR:	no the mother's wearin(g) an apron . 97571_99949
+%mor:	qn|no det:art|the n|mother~aux|be&3S part|wear-PRESP det:art|a
+	n|apron .
+%gra:	1|3|QUANT 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*INV:	okay . 99949_101412
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and water's splashin(g) . 101412_106898
+%mor:	coord|and n|water~aux|be&3S part|splash-PRESP .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	okay . [+ exc] 106898_107589
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

@@ -1,0 +1,66 @@
+@UTF8
+@PID:	11312/t-00002510-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|77;|female|ProbableAD||Participant|24||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	134-0, audio
+*INV:	there it is . 0_1497
+%mor:	adv|there pro:per|it cop|be&3S .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|3|PUNCT
+*PAR:	well there's a boy trying to get some cookies in [//] from the
+	cupboard . 1497_7799
+%mor:	co|well pro:exist|there~cop|be&3S det:art|a n|boy part|try-PRESP
+	inf|to v|get qn|some n|cookie-PL prep|from det:art|the n|cupboard .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|XMOD 7|8|INF 8|6|COMP
+	9|10|QUANT 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|3|PUNCT
+*PAR:	and then the little girl has her hand up for one . 7799_13769
+%mor:	coord|and adv:tem|then det:art|the adj|little n|girl aux|have&3S
+	det:poss|her n|hand adv|up prep|for pro:indef|one .
+%gra:	1|8|LINK 2|8|JCT 3|5|DET 4|5|MOD 5|8|SUBJ 6|8|AUX 7|8|DET 8|0|ROOT
+	9|8|JCT 10|8|NJCT 11|10|POBJ 12|8|PUNCT
+*PAR:	and (.) there's &um a stool that's ready to fall &uh that he's
+	standing on . 13769_22991
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|stool
+	pro:rel|that~cop|be&3S adj|ready inf|to v|fall comp|that
+	pro:sub|he~aux|be&3S part|stand-PRESP adv|on .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|7|LINK 7|5|CMOD 8|7|PRED
+	9|10|INF 10|8|XMOD 11|14|LINK 12|14|SUBJ 13|14|AUX 14|10|COMP 15|14|JCT
+	16|3|PUNCT
+*PAR:	and there's a lady washing dishes <and she spilled> [//] and her
+	sink is filled up full of water and it spilled all on the floor . 22991_32297
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|a n|lady
+	part|wash-PRESP n|dish-PL coord|and det:poss|her n|sink aux|be&3S
+	part|fill-PASTP adv|up adj|full prep|of n|water coord|and pro:per|it
+	part|spill-PASTP adv|all prep|on det:art|the n|floor .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|7|MOD 7|12|SUBJ 8|7|CONJ
+	9|10|DET 10|8|COORD 11|12|AUX 12|5|XMOD 13|12|JCT 14|12|JCT 15|14|JCT
+	16|15|POBJ 17|19|LINK 18|19|SUBJ 19|14|XJCT 20|19|JCT 21|19|JCT 22|23|DET
+	23|21|POBJ 24|3|PUNCT
+*PAR:	she's standing by the window . 32297_38024
+%mor:	pro:sub|she~aux|be&3S part|stand-PRESP prep|by det:art|the n|window
+	.
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*PAR:	xxx . [+ exc] 38024_40140
+*PAR:	see the grass and the shrubbery outside . 40140_45429
+%mor:	v|see det:art|the n|grass coord|and det:art|the n|shrubbery
+	adv|outside .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|3|CONJ 5|6|DET 6|4|COORD 7|6|NJCT 8|1|PUNCT
+*PAR:	and <the two is> [//] two cups and a plate to be &uh [//] that's
+	laying <on> [/] on the sink . 45429_55820
+%mor:	coord|and det:num|two n|cup-PL coord|and det:art|a n|plate inf|to
+	cop|be pro:rel|that~aux|be&3S part|lay-PRESP prep|on det:art|the
+	n|sink .
+%gra:	1|3|LINK 2|3|QUANT 3|0|INCROOT 4|3|CONJ 5|6|DET 6|4|COORD 7|8|INF
+	8|6|XMOD 9|11|LINK 10|11|AUX 11|8|PRED 12|11|JCT 13|14|DET 14|12|POBJ
+	15|3|PUNCT
+*PAR:	I don't know if it's to be dried or what . 55820_58549
+%mor:	pro:sub|I mod|do~neg|not v|know comp|if pro:per|it~cop|be&3S inf|to
+	aux|be part|dry-PASTP coord|or pro:int|what .
+%gra:	1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|7|LINK 6|7|SUBJ 7|4|COMP 8|10|INF
+	9|10|AUX 10|7|XMOD 11|10|CONJ 12|11|COORD 13|4|PUNCT
+*INV:	okay thank you . 58549_61056
+%mor:	co|okay v|thank pro:per|you .
+%gra:	1|2|COM 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@End

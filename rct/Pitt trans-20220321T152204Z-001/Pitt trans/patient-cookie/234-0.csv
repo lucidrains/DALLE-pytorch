@@ -1,0 +1,68 @@
+@UTF8
+@PID:	11312/t-00002573-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|66;|male|Vascular||Participant|16||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	234-0, audio
+*INV:	what do you see happening in that picture ? 0_1699
+%mor:	pro:int|what mod|do pro:per|you co|see n:gerund|happen-PRESP adv|in
+	det:dem|that n|picture ?
+%gra:	1|5|LINK 2|5|AUX 3|5|SUBJ 4|5|COM 5|0|ROOT 6|5|JCT 7|8|DET 8|5|JCT
+	9|5|PUNCT
+*PAR:	mhm . [+ exc] 1699_2300
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*INV:	+< what's happening ? 1699_2554
+%mor:	pro:int|what~aux|be&3S part|happen-PRESP ?
+%gra:	1|3|LINK 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*PAR:	well the kids is [* m:a] robbin(g) a cookie jar . 2554_5014
+%mor:	co|well det:art|the n|kid-PL aux|be&3S part|rob-PRESP det:art|a
+	n|cookie n|jar .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|8|DET 7|8|MOD 8|5|OBJ
+	9|5|PUNCT
+*PAR:	and &uh the mother is &uh washin(g) dishes and forgettin(g) that
+	the water is runnin(g) . 5014_9400
+%mor:	coord|and det:art|the n|mother aux|be&3S part|wash-PRESP n|dish-PL
+	coord|and part|forget-PRESP comp|that det:art|the n|water aux|be&3S
+	part|run-PRESP .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|CONJ 8|7|COORD
+	9|13|LINK 10|11|DET 11|13|SUBJ 12|13|AUX 13|8|COMP 14|5|PUNCT
+*PAR:	it's runnin(g) on the floor . 9400_10337
+%mor:	pro:per|it~aux|be&3S part|run-PRESP prep|on det:art|the n|floor .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT
+*INV:	mhm . 10368_11863
+%mor:	co|mhm=yes .
+%gra:	1|0|INCROOT 2|1|PUNCT
+*PAR:	and his stool is about to dump him &=laughs . 11206_15020
+%mor:	coord|and det:poss|his n|stool cop|be&3S adv|about inf|to v|dump
+	pro:obj|him .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|JCT 6|7|INF 7|4|XJCT 8|7|OBJ
+	9|4|PUNCT
+*PAR:	see here ? [+ exc] 15020_15704
+%mor:	v|see adv|here ?
+%gra:	1|0|ROOT 2|1|JCT 3|1|PUNCT
+*INV:	uhhuh yeah . 15704_16885
+%mor:	co|uhhuh co|yeah .
+%gra:	1|2|COM 2|0|INCROOT 3|2|PUNCT
+*PAR:	+< he's about to go . 16485_17917
+%mor:	pro:sub|he~cop|be&3S adv|about inf|to v|go .
+%gra:	1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|INF 5|2|CPRED 6|2|PUNCT
+*PAR:	now I think that's just about all I can see that's [//] that you
+	might be lookin(g) for . [+ exc] 17946_25807
+%mor:	adv|now pro:sub|I v|think pro:dem|that~cop|be&3S adv|just adv|about
+	adv|all pro:sub|I mod|can v|see comp|that pro:per|you mod|might
+	aux|be part|look-PRESP prep|for .
+%gra:	1|3|JCT 2|3|SUBJ 3|0|ROOT 4|5|SUBJ 5|3|COMP 6|7|JCT 7|11|JCT 8|11|JCT
+	9|11|SUBJ 10|11|AUX 11|5|CPRED 12|16|LINK 13|16|SUBJ 14|16|AUX 15|16|AUX
+	16|11|COMP 17|16|JCT 18|3|PUNCT
+*PAR:	he's about to drop off that stool too . 25807_28796
+%mor:	pro:sub|he~cop|be&3S adv|about prep|to n|drop prep|off det:dem|that
+	n|stool adv|too .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|JCT 4|2|JCT 5|4|POBJ 6|2|JCT 7|8|DET 8|6|POBJ
+	9|2|JCT 10|2|PUNCT
+*INV:	okay . 28280_29293
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

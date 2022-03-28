@@ -1,0 +1,111 @@
+@UTF8
+@PID:	11312/t-00002689-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR|57;|female|MCI||Participant|29||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	578-0, audio
+*INV:	and there's the picture . 0_1921
+%mor:	coord|and pro:exist|there~cop|be&3S det:art|the n|picture .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+*PAR:	oh I see a woman drying a dish with a dish towel . 1921_6001
+%mor:	co|oh pro:sub|I v|see det:art|a n|woman part|dry-PRESP det:art|a
+	n|dish prep|with det:art|a n|dish n|towel .
+%gra:	1|3|COM 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|XMOD 7|8|DET 8|6|OBJ
+	9|6|JCT 10|12|DET 11|12|MOD 12|9|POBJ 13|3|PUNCT
+*PAR:	I see water overflowing from the sink . 6001_8688
+%mor:	pro:sub|I v|see n|water over#n:gerund|flow-PRESP prep|from
+	det:art|the n|sink .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|3|POSTMOD 5|4|JCT 6|7|DET 7|5|POBJ
+	8|2|PUNCT
+*PAR:	the faucet is running . 8688_10267
+%mor:	det:art|the n|faucet aux|be&3S part|run-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*PAR:	&um curtains hanging on the wall . [+ gram] 10267_13597
+%mor:	n|curtain-PL part|hang-PRESP prep|on det:art|the n|wall .
+%gra:	1|0|INCROOT 2|1|XMOD 3|2|JCT 4|5|DET 5|3|POBJ 6|1|PUNCT
+*PAR:	the window, the picture outside of a pathway and grass and hedges
+	and looks like a part of the extension of the house . [+ gram] 13597_21380
+%mor:	det:art|the n|window cm|cm det:art|the n|picture adv|outside
+	prep|of det:art|a n|+n|path+n|way coord|and n|grass coord|and
+	n|hedge-PL coord|and v|look-3S prep|like det:art|a n|part prep|of
+	det:art|the n|extension prep|of det:art|the n|house .
+%gra:	1|2|DET 2|0|INCROOT 3|2|LP 4|5|DET 5|2|ENUM 6|5|NJCT 7|6|JCT 8|9|DET
+	9|7|POBJ 10|5|CONJ 11|10|COORD 12|5|CONJ 13|12|COORD 14|5|CONJ 15|14|COORD
+	16|15|JCT 17|18|DET 18|16|POBJ 19|18|NJCT 20|21|DET 21|19|POBJ
+	22|21|NJCT 23|24|DET 24|22|POBJ 25|2|PUNCT
+*PAR:	I see the cabinets below her . 21380_24209
+%mor:	pro:sub|I v|see det:art|the n|cabinet-PL prep|below pro:obj|her .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|5|POBJ 7|2|PUNCT
+*PAR:	she's wearin(g) shoes dress and apron . 24209_27178
+%mor:	pro:sub|she~aux|be&3S part|wear-PRESP n|shoe-PL n|dress coord|and
+	n|apron .
+%gra:	1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|MOD 5|3|OBJ 6|5|CONJ 7|6|COORD 8|3|PUNCT
+*PAR:	&um I see the cabinets on the far end of the wall with two children
+	. 27178_33000
+%mor:	pro:sub|I v|see det:art|the n|cabinet-PL prep|on det:art|the
+	adj|far n|end prep|of det:art|the n|wall prep|with det:num|two
+	n|child&PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|JCT 6|8|DET 7|8|MOD 8|5|POBJ
+	9|8|NJCT 10|11|DET 11|9|POBJ 12|2|JCT 13|14|QUANT 14|12|POBJ 15|2|PUNCT
+*PAR:	a stool tilting with a boy on it reaching for cookies from a cookie
+	jar on the shelf . 33000_39000
+%mor:	det:art|a n|stool part|tilt-PRESP prep|with det:art|a n|boy prep|on
+	pro:per|it part|reach-PRESP prep|for n|cookie-PL prep|from det:art|a
+	n|cookie n|jar prep|on det:art|the n|shelf .
+%gra:	1|2|DET 2|0|INCROOT 3|2|XMOD 4|3|JCT 5|6|DET 6|4|POBJ 7|6|NJCT 8|7|POBJ
+	9|2|XMOD 10|9|JCT 11|10|POBJ 12|11|NJCT 13|15|DET 14|15|MOD 15|12|POBJ
+	16|9|JCT 17|18|DET 18|16|POBJ 19|2|PUNCT
+*PAR:	I see the girl reaching up to him with the motion of silence to her
+	mouth her fingers up to her lips and standing as the stool is &um
+	tilting . 39133_50606
+%mor:	pro:sub|I v|see det:art|the n|girl part|reach-PRESP adv|up prep|to
+	pro:obj|him prep|with det:art|the n|motion prep|of n|silence prep|to
+	det:poss|her n|mouth det:poss|her n|finger-PL adv|up prep|to
+	det:poss|her n|lip-PL coord|and part|stand-PRESP conj|as det:art|the
+	n|stool aux|be&3S part|tilt-PRESP .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|XMOD 6|5|JCT 7|5|JCT 8|7|POBJ
+	9|2|JCT 10|11|DET 11|9|POBJ 12|11|NJCT 13|12|POBJ 14|13|NJCT 15|16|DET
+	16|14|POBJ 17|18|DET 18|2|OBJ 19|18|NJCT 20|18|NJCT 21|22|DET 22|20|POBJ
+	23|18|CONJ 24|23|COORD 25|29|LINK 26|27|DET 27|29|SUBJ 28|29|AUX 29|18|CJCT
+	30|2|PUNCT
+*PAR:	the cupboard door is open . 50606_52700
+%mor:	det:art|the n|cupboard n|door cop|be&3S adj|open .
+%gra:	1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+*PAR:	the bottom doors of the cabinets are closed . 52700_55816
+%mor:	det:art|the adj|bottom n|door-PL prep|of det:art|the n|cabinet-PL
+	aux|be&PRES part|close-PASTP .
+%gra:	1|3|DET 2|3|MOD 3|8|SUBJ 4|3|NJCT 5|6|DET 6|4|POBJ 7|8|AUX 8|0|ROOT
+	9|8|PUNCT
+*PAR:	&um the woman is standing in water on the floor from the spilling .
+	55816_62014
+%mor:	det:art|the n|woman aux|be&3S part|stand-PRESP prep|in n|water
+	prep|on det:art|the n|floor prep|from det:art|the
+	n:gerund|spill-PRESP .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|JCT 8|9|DET
+	9|7|POBJ 10|4|JCT 11|12|DET 12|10|POBJ 13|4|PUNCT
+*PAR:	there's handles &um &uh that I can see on two sets of cabinets . 62014_68110
+%mor:	pro:exist|there~cop|be&3S n|handle-PL pro:rel|that pro:sub|I
+	mod|can v|see prep|on det:num|two n|set-PL prep|of n|cabinet-PL .
+%gra:	1|2|SUBJ 2|0|ROOT 3|2|PRED 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CMOD 8|7|JCT
+	9|10|QUANT 10|8|POBJ 11|10|NJCT 12|11|POBJ 13|2|PUNCT
+*PAR:	&uh the curtains are tied back by a tie . 68110_71500
+%mor:	det:art|the n|curtain-PL aux|be&PRES part|tie-PASTP adv|back
+	prep|by det:art|a n|tie .
+%gra:	1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|JCT 7|8|DET 8|6|POBJ
+	9|4|PUNCT
+*PAR:	on the counter are two cups and a plate . 71500_74080
+%mor:	prep|on det:art|the n|counter cop|be&PRES det:num|two n|cup-PL
+	coord|and det:art|a n|plate .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|QUANT 6|4|PRED 7|6|CONJ 8|9|DET
+	9|7|COORD 10|4|PUNCT
+*PAR:	there's two faucets and a spout . 74080_77738
+%mor:	pro:exist|there~cop|be&3S det:num|two n|faucet-PL coord|and
+	det:art|a n|spout .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|QUANT 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD
+	8|2|PUNCT
+*INV:	okay . 77738_81754
+%mor:	co|okay .
+%gra:	1|0|INCROOT 2|1|PUNCT
+@End

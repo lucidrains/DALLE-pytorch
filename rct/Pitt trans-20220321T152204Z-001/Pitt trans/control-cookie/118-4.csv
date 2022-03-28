@@ -1,0 +1,73 @@
+@UTF8
+@PID:	11312/t-00002272-1
+@Begin
+@Languages:	eng
+@Participants:	PAR Participant, INV Investigator
+@ID:	eng|Pitt|PAR||female|Control||Participant|||
+@ID:	eng|Pitt|INV|||||Investigator|||
+@Media:	118-4, audio
+*INV:	tell me everything that's going on in that picture . 0_2957
+%mor:	v|tell pro:obj|me pro:indef|everything pro:rel|that~aux|be&3S
+	part|go-PRESP adv|on prep|in det:dem|that n|picture .
+%gra:	1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|6|LINK 5|6|AUX 6|3|CMOD 7|6|JCT 8|6|JCT
+	9|10|DET 10|8|POBJ 11|1|PUNCT
+*INV:	everything that's happening there . 2957_4670
+%mor:	pro:indef|everything pro:rel|that~aux|be&3S part|happen-PRESP
+	adv|there .
+%gra:	1|0|INCROOT 2|4|LINK 3|4|AUX 4|1|CMOD 5|4|JCT 6|1|PUNCT
+*PAR:	well the water's runnin(g) over outta [: out of] the sink . 4670_10373
+%mor:	co|well det:art|the n|water~aux|be&3S part|run-PRESP prep|over
+	adv|out prep|of det:art|the n|sink .
+%gra:	1|5|COM 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|7|JCT
+	9|10|DET 10|8|POBJ 11|5|PUNCT
+*PAR:	and the little boy is stealin(g) a cookie . 10373_14994
+%mor:	coord|and det:art|the adj|little n|boy aux|be&3S part|steal-PRESP
+	det:art|a n|cookie .
+%gra:	1|6|LINK 2|4|DET 3|4|MOD 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ
+	9|6|PUNCT
+*PAR:	and he's about to fall off the stool . 14994_18984
+%mor:	coord|and pro:sub|he~cop|be&3S adv|about inf|to v|fall prep|off
+	det:art|the n|stool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|JCT 5|6|INF 6|3|CPRED 7|6|JCT 8|9|DET
+	9|7|POBJ 10|3|PUNCT
+*PAR:	and &uh the girl has her hand up to her mouth so she didn't want
+	the mother to know what they were up to . 18984_28493
+%mor:	coord|and det:art|the n|girl v|have&3S det:poss|her n|hand adv|up
+	prep|to det:poss|her n|mouth co|so pro:sub|she mod|do&PAST~neg|not
+	v|want det:art|the n|mother inf|to v|know pro:int|what pro:sub|they
+	cop|be&PAST adv|up prep|to .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|JCT 8|4|JCT
+	9|10|DET 10|8|POBJ 11|15|COM 12|15|SUBJ 13|15|AUX 14|13|NEG 15|4|CJCT
+	16|17|DET 17|15|OBJ 18|19|INF 19|17|XMOD 20|22|LINK 21|22|SUBJ 22|19|COMP
+	23|22|JCT 24|22|JCT 25|4|PUNCT
+*PAR:	and the window's open . 28667_31027
+%mor:	coord|and det:art|the adj|window&dn-POSS adj|open .
+%gra:	1|4|LINK 2|4|DET 3|4|MOD 4|0|INCROOT 5|4|PUNCT
+*PAR:	and it must be nice weather because the grass is pretty high and
+	needs cut . 31027_37795
+%mor:	coord|and pro:per|it mod|must cop|be adj|nice n|weather
+	conj|because det:art|the n|grass cop|be&3S adv|pretty adj|high
+	coord|and n|need-PL v|cut&ZERO .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|6|MOD 6|4|PRED 7|10|LINK 8|9|DET
+	9|10|SUBJ 10|4|CJCT 11|12|JCT 12|10|PRED 13|10|CONJ 14|15|SUBJ
+	15|13|COORD 16|4|PUNCT
+*PAR:	and &=sighs (.) the mother is daydreamin(g) or she'd see that the
+	water was goin(g) on the floor and she's gonna get wet or is wet . 37795_53139
+%mor:	coord|and det:art|the n|mother aux|be&3S part|+n|day+n|dream-PRESP
+	coord|or pro:sub|she~mod|genmod v|see comp|that det:art|the n|water
+	aux|be&PAST&13S part|go-PRESP prep|on det:art|the n|floor coord|and
+	pro:sub|she~aux|be&3S part|go-PRESP~inf|to v|get adj|wet coord|or
+	cop|be&3S adj|wet .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|9|LINK 7|9|SUBJ 8|9|AUX
+	9|5|CJCT 10|14|LINK 11|12|DET 12|14|SUBJ 13|14|AUX 14|9|COMP 15|14|JCT
+	16|17|DET 17|15|POBJ 18|21|LINK 19|21|SUBJ 20|21|AUX 21|14|CJCT 22|23|INF
+	23|21|COMP 24|23|PRED 25|23|CONJ 26|25|COORD 27|26|PRED 28|5|PUNCT
+*PAR:	and the curtains seem to blowin(g) brisk in the breeze . 53139_59240
+%mor:	coord|and det:art|the n|curtain-PL cop|seem inf|to
+	n:gerund|blow-PRESP adj|brisk prep|in det:art|the n|breeze .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|INF 6|4|PRED 7|6|PRED 8|7|JCT
+	9|10|DET 10|8|POBJ 11|4|PUNCT
+*INV:	okay fine thanks . 59240_60935
+%mor:	co|okay co|fine co|thanks .
+%gra:	1|3|COM 2|3|COM 3|0|INCROOT 4|3|PUNCT
+@End
