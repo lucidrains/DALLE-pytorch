@@ -62,6 +62,8 @@ Thanks to the amazing "mega b#6696" you can generate from this checkpoint in col
 
 - (5/2/21) First <a href="https://github.com/sberbank-ai/ru-dalle">1.3B DALL-E</a> from 🇷🇺 has been trained and released to the public! 🎉
 
+- (4/8/22) Moving onwards to <a href="https://github.com/lucidrains/dalle2-pytorch">DALLE-2</a>!
+
 ## Install
 
 ```bash
