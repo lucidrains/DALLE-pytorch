@@ -525,18 +525,7 @@ class DALLE(nn.Module):
 
             text, image = out[:, :text_seq_len], out[:, text_seq_len:]
 
-            if cond_scale != 1 and use_cache:
-                # copy the cache state to infer from the same place twice
-                prev_cache = cache.copy()
-
-            logits = self(text, image, cache = cache)
-
-            if cond_scale != 1:
-                # discovery by Katherine Crowson
-                # https://twitter.com/RiversHaveWings/status/1478093658716966912
-                null_cond_logits = self(text, image, null_cond_prob = 1., cache = prev_cache)
-                logits = null_cond_logits + (logits - null_cond_logits) * cond_scale
-
+            logits = self.forward_with_cond_scale(text, image, cond_scale = cond_scale, cache = cache)
             logits = logits[:, -1, :]
 
             filtered_logits = top_k(logits, thres = filter_thres)
@@ -555,6 +544,18 @@ class DALLE(nn.Module):
             return images, scores
 
         return images
+
+    def forward_with_cond_scale(self, *args, cond_scale = 1, cache = None, **kwargs):
+        if cond_scale == 1:
+            return self(*args, **kwargs)
+
+        prev_cache = cache.copy() if exists(cache) else None
+        logits = self(*args, cache = cache, **kwargs)
+
+        # discovery by Katherine Crowson
+        # https://twitter.com/RiversHaveWings/status/1478093658716966912
+        null_cond_logits = self(*args, null_cond_prob = 1., cache = prev_cache, **kwargs)
+        return null_cond_logits + (logits - null_cond_logits) * cond_scale
 
     def forward(
         self,
