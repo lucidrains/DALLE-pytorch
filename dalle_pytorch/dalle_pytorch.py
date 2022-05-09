@@ -119,6 +119,7 @@ class DiscreteVAE(nn.Module):
         assert num_layers >= 1, 'number of layers must be greater than or equal to 1'
         has_resblocks = num_resnet_blocks > 0
 
+        self.channels = channels
         self.image_size = image_size
         self.num_tokens = num_tokens
         self.num_layers = num_layers

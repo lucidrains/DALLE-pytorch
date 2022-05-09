@@ -268,7 +268,6 @@ if RESUME:
     else:
         vae = OpenAIDiscreteVAE()
 
-    IMAGE_SIZE = vae.image_size
     resume_epoch = loaded_obj.get('epoch', 0)
 else:
     if exists(VAE_PATH):
@@ -296,8 +295,6 @@ else:
         else:
             vae = OpenAIDiscreteVAE()
 
-    IMAGE_SIZE = vae.image_size
-
     dalle_params = dict(
         num_text_tokens=tokenizer.vocab_size,
         text_seq_len=TEXT_SEQ_LEN,
@@ -318,6 +315,10 @@ else:
         share_input_output_emb=SHARE_INPUT_OUTPUT_EMB,
     )
     resume_epoch = 0
+
+IMAGE_SIZE = vae.image_size
+CHANNELS = vae.channels
+IMAGE_MODE = 'RGBA' if CHANNELS == 4 else 'RGB'
 
 # configure OpenAI VAE for float16s
 
@@ -345,8 +346,8 @@ def group_weight(model):
 is_shuffle = not distributed_utils.using_backend(distributed_utils.HorovodBackend)
 
 imagepreproc = T.Compose([
-    T.Lambda(lambda img: img.convert('RGB')
-    if img.mode != 'RGB' else img),
+    T.Lambda(lambda img: img.convert(IMAGE_MODE)
+    if img.mode != IMAGE_MODE else img),
     T.RandomResizedCrop(IMAGE_SIZE,
                         scale=(args.resize_ratio, 1.),
                         ratio=(1., 1.)),

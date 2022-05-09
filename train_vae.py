@@ -68,6 +68,8 @@ model_group.add_argument('--hidden_dim', type = int, default = 256, help = 'hidd
 
 model_group.add_argument('--kl_loss_weight', type = float, default = 0., help = 'KL loss weight')
 
+model_group.add_argument('--transparent', dest = 'transparent', action = 'store_true')
+
 args = parser.parse_args()
 
 # constants
@@ -88,6 +90,10 @@ EMB_DIM = args.emb_dim
 HIDDEN_DIM = args.hidden_dim
 KL_LOSS_WEIGHT = args.kl_loss_weight
 
+TRANSPARENT = args.transparent
+CHANNELS = 4 if TRANSPARENT else 3
+IMAGE_MODE = 'RGBA' if TRANSPARENT else 'RGB'
+
 STARTING_TEMP = args.starting_temp
 TEMP_MIN = args.temp_min
 ANNEAL_RATE = args.anneal_rate
@@ -107,7 +113,7 @@ using_deepspeed = \
 ds = ImageFolder(
     IMAGE_PATH,
     T.Compose([
-        T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
+        T.Lambda(lambda img: img.convert(IMAGE_MODE) if img.mode != IMAGE_MODE else img),
         T.Resize(IMAGE_SIZE),
         T.CenterCrop(IMAGE_SIZE),
         T.ToTensor()
@@ -127,6 +133,7 @@ vae_params = dict(
     image_size = IMAGE_SIZE,
     num_layers = NUM_LAYERS,
     num_tokens = NUM_TOKENS,
+    channels = CHANNELS,
     codebook_dim = EMB_DIM,
     hidden_dim   = HIDDEN_DIM,
     num_resnet_blocks = NUM_RESNET_BLOCKS
