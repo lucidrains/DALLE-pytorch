@@ -318,6 +318,7 @@ else:
 
 IMAGE_SIZE = vae.image_size
 CHANNELS = vae.channels
+TRANSPARENT = CHANNELS == 4
 IMAGE_MODE = 'RGBA' if CHANNELS == 4 else 'RGB'
 
 # configure OpenAI VAE for float16s
