@@ -14,6 +14,7 @@ class TextImageDataset(Dataset):
                  image_size=128,
                  truncate_captions=False,
                  resize_ratio=0.75,
+                 transparent=False,
                  tokenizer=None,
                  shuffle=False
                  ):
@@ -43,9 +44,12 @@ class TextImageDataset(Dataset):
         self.truncate_captions = truncate_captions
         self.resize_ratio = resize_ratio
         self.tokenizer = tokenizer
+
+        image_mode = 'RGBA' if transparent else 'RGB'
+
         self.image_transform = T.Compose([
-            T.Lambda(lambda img: img.convert('RGB')
-            if img.mode != 'RGB' else img),
+            T.Lambda(lambda img: img.convert(image_mode)
+            if img.mode != image_mode else img),
             T.RandomResizedCrop(image_size,
                                 scale=(self.resize_ratio, 1.),
                                 ratio=(1., 1.)),

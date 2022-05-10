@@ -390,6 +390,7 @@ else:
         args.image_text_folder,
         text_len=TEXT_SEQ_LEN,
         image_size=IMAGE_SIZE,
+        transparent=TRANSPARENT,
         resize_ratio=args.resize_ratio,
         truncate_captions=args.truncate_captions,
         tokenizer=tokenizer,

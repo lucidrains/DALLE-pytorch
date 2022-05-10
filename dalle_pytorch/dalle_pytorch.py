@@ -112,7 +112,7 @@ class DiscreteVAE(nn.Module):
         temperature = 0.9,
         straight_through = False,
         kl_div_loss_weight = 0.,
-        normalization = ((0.5,) * 3, (0.5,) * 3)
+        normalization = ((*((0.5,) * 3), 0), (*((0.5,) * 3), 1))
     ):
         super().__init__()
         assert log2(image_size).is_integer(), 'image size must be a power of 2'
@@ -163,7 +163,7 @@ class DiscreteVAE(nn.Module):
         self.kl_div_loss_weight = kl_div_loss_weight
 
         # take care of normalization within class
-        self.normalization = normalization
+        self.normalization = tuple(map(lambda t: t[:channels], normalization))
 
         self._register_external_parameters()
 
@@ -594,7 +594,8 @@ class DALLE(nn.Module):
 
             if is_raw_image:
                 image_size = self.vae.image_size
-                assert tuple(image.shape[1:]) == (3, image_size, image_size), f'invalid image of dimensions {image.shape} passed in during training'
+                channels = self.vae.channels
+                assert tuple(image.shape[1:]) == (channels, image_size, image_size), f'invalid image of dimensions {image.shape} passed in during training'
 
                 image = self.vae.get_codebook_indices(image)
 
