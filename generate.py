@@ -15,6 +15,7 @@ from torchvision.utils import make_grid, save_image
 
 # dalle related classes and utils
 
+from dalle_pytorch import __version__
 from dalle_pytorch import DiscreteVAE, OpenAIDiscreteVAE, VQGanVAE, DALLE
 from dalle_pytorch.tokenizer import tokenizer, HugTokenizer, YttmTokenizer, ChineseTokenizer
 
