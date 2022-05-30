@@ -12,6 +12,7 @@ from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
+from dalle_pytorch import __version__
 from dalle_pytorch import OpenAIDiscreteVAE, VQGanVAE, DiscreteVAE, DALLE
 from dalle_pytorch import distributed_utils
 from dalle_pytorch.loader import TextImageDataset
@@ -146,10 +147,6 @@ def exists(val):
 
 def get_trainable_params(model):
     return [params for params in model.parameters() if params.requires_grad]
-
-def get_pkg_version():
-    from pkg_resources import get_distribution
-    return get_distribution('dalle_pytorch').version
 
 def cp_path_to_dir(cp_path, tag):
     """Convert a checkpoint path to a directory with `tag` inserted.
@@ -540,7 +537,7 @@ def save_model(path, epoch=0):
         'hparams': dalle_params,
         'vae_params': vae_params,
         'epoch': epoch,
-        'version': get_pkg_version(),
+        'version': __version__,
         'vae_class_name': vae.__class__.__name__
     }
 
