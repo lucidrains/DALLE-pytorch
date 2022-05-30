@@ -23,6 +23,7 @@ setup(
     'DALL-E',
     'einops>=0.3.2',
     'ftfy',
+    'packaging',
     'pillow',
     'regex',
     'rotary-embedding-torch',
