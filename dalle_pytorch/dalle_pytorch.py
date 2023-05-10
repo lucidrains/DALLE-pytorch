@@ -111,6 +111,7 @@ class DiscreteVAE(nn.Module):
         smooth_l1_loss = False,
         temperature = 0.9,
         straight_through = False,
+        reinmax = False,
         kl_div_loss_weight = 0.,
         normalization = ((*((0.5,) * 3), 0), (*((0.5,) * 3), 1))
     ):
@@ -125,6 +126,8 @@ class DiscreteVAE(nn.Module):
         self.num_layers = num_layers
         self.temperature = temperature
         self.straight_through = straight_through
+        self.reinmax = reinmax
+
         self.codebook = nn.Embedding(num_tokens, codebook_dim)
 
         hdim = hidden_dim
@@ -227,8 +230,20 @@ class DiscreteVAE(nn.Module):
             return logits # return logits for getting hard image indices for DALL-E training
 
         temp = default(temp, self.temperature)
-        soft_one_hot = F.gumbel_softmax(logits, tau = temp, dim = 1, hard = self.straight_through)
-        sampled = einsum('b n h w, n d -> b d h w', soft_one_hot, self.codebook.weight)
+
+        one_hot = F.gumbel_softmax(logits, tau = temp, dim = 1, hard = self.straight_through)
+
+        if self.straight_through and self.reinmax:
+            # use reinmax for better second-order accuracy - https://arxiv.org/abs/2304.08612
+            # algorithm 2
+            one_hot = one_hot.detach()
+            π0 = logits.softmax(dim = 1)
+            π1 = (one_hot + (logits / temp).softmax(dim = 1)) / 2
+            π1 = ((π1.log() - logits).detach() + logits).softmax(dim = 1)
+            π2 = 2 * π1 - 0.5 * π0
+            one_hot = π2 - π2.detach() + one_hot
+
+        sampled = einsum('b n h w, n d -> b d h w', one_hot, self.codebook.weight)
         out = self.decoder(sampled)
 
         if not return_loss:

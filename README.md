@@ -751,4 +751,14 @@ $ python generate.py --chinese --text '追老鼠的猫'
 }
 ```
 
+```bibtex
+@article{Liu2023BridgingDA,
+    title   = {Bridging Discrete and Backpropagation: Straight-Through and Beyond},
+    author  = {Liyuan Liu and Chengyu Dong and Xiaodong Liu and Bin Yu and Jianfeng Gao},
+    journal = {ArXiv},
+    year    = {2023},
+    volume  = {abs/2304.08612}
+}
+```
+
 *Those who do not want to imitate anything, produce nothing.* - Dali
