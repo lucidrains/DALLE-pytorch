@@ -51,7 +51,7 @@ def eval_decorator(fn):
 # sampling helpers
 
 def log(t, eps = 1e-20):
-    return torch.log(t + eps)
+    return torch.log(t.clamp(min = eps))
 
 def gumbel_noise(t):
     noise = torch.zeros_like(t).uniform_(0, 1)
@@ -239,7 +239,7 @@ class DiscreteVAE(nn.Module):
             one_hot = one_hot.detach()
             π0 = logits.softmax(dim = 1)
             π1 = (one_hot + (logits / temp).softmax(dim = 1)) / 2
-            π1 = ((π1.log() - logits).detach() + logits).softmax(dim = 1)
+            π1 = ((log(π1) - logits).detach() + logits).softmax(dim = 1)
             π2 = 2 * π1 - 0.5 * π0
             one_hot = π2 - π2.detach() + one_hot
 
