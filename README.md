@@ -24,7 +24,7 @@ For generating video and audio, please see <a href="https://github.com/lucidrain
 
 ## Appreciation
   
-This library could not have been possible without the contributions of <a href="https://github.com/janEbert">janEbert</a>, <a href="https://github.com/afiaka87">Clay</a>, <a href="https://github.com/robvanvolt">robvanvolt</a>, <a href="https://github.com/rom1504">Romaine</a>, and <a href="https://github.com/borzunov">Alexander</a>! 🙏
+This library could not have been possible without the contributions of <a href="https://github.com/janEbert">janEbert</a>, <a href="https://github.com/afiaka87">Clay</a>, <a href="https://github.com/robvanvolt">robvanvolt</a>, <a href="https://github.com/rom1504">Romain Beaumont</a>, and <a href="https://github.com/borzunov">Alexander</a>! 🙏
 
 ## Status
 <p align='center'>
