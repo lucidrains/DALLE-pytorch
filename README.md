@@ -1,4 +1,4 @@
-# DALL-E in Pytorch
+# DALL-E
 
 <p align='center'>
   <a href="https://colab.research.google.com/gist/afiaka87/b29213684a1dd633df20cab49d05209d/train_dalle_pytorch.ipynb">
